@@ -2,11 +2,11 @@
 title: 21 ideas
 cover: /img/main-section/main_light_en.png
 coverDark: /img/main-section/main_dark_en.png
-h1: "Educational Bitcoin-Only Resource"
-description: "Educational Bitcoin-Only Resource"
+h1: Educational Bitcoin-Only Resource
+description: Educational Bitcoin-Only Resource
 ---
 
-21ideas is an forked open-source project curated by Pisu. It provides free access to the most comprehensive library of Bitcoin knowledge for anyone interested.
+Ciaoooo!!! 21ideas is a forked open-source project curated by Pisu. It provides free access to the most comprehensive library of Bitcoin knowledge for anyone interested.
 
 {{< tabs "explanation" >}}
 {{< tab "Study" >}}
@@ -79,3 +79,15 @@ Videos made by prominent bitcoiners and community members.
 
 Links to podcasts, audiobooks, and other types of materials provided in audio format.
 {{< /expand >}}
+
+## Per Cominciare
+
+Per prima cosa bisogna eseguire il server locale, aprendo il terminale dentro alla cartella Home/Projects/21ideas/21ideas.org e digirando "hugo server -D". In questo moto verrà compilato e pubblicato real time il sito locale all'indirizzo: http://localhost:1313
+
+Ora si può utilizzare Obsidian per fare tutte le modifiche del caso ed il sito si aggiornerà in tempo reale (con un minimo di delay dovuto alla compilazione run time)
+
+Per pushare le modifiche sul repository integrato, sempre da terminale bisogna inserire i comandi da dento alla cartella Home/Projects/21ideas/21ideas.org
+- git status
+- git add .
+- git commit -m "message"
+- git push https://github.com/trama81/21ideas.org
