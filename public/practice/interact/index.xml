@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Взаимодействие on 21ideas</title>
+    <title>Interact on 21ideas</title>
     <link>http://localhost:1313/practice/interact/</link>
-    <description>Recent content in Взаимодействие on 21ideas</description>
-    <generator>Hugo</generator>
-    <language>ru-RU</language>
+    <description>Recent content in Interact on 21ideas</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
     <atom:link href="http://localhost:1313/practice/interact/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Каждому следует запустить собственную Биткоин-ноду!</title>
+      <title>Why You Should Run Your Own Bitcoin Node</title>
       <link>http://localhost:1313/practice/bitcoin-node/</link>
-      <pubDate>Tue, 01 Mar 2022 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 03 Aug 2021 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/practice/bitcoin-node/</guid>
-      <description>&lt;p&gt;Предлагаю начать с того, что такое биткоин-нода и после перейти к причинам, по которым стоит запустить собственную ноду.&lt;/p&gt;&#xA;&lt;h1 id=&#34;что-такое-биткоин-нода&#34;&gt;&#xA;  Что такое биткоин-нода?&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%d1%87%d1%82%d0%be-%d1%82%d0%b0%d0%ba%d0%be%d0%b5-%d0%b1%d0%b8%d1%82%d0%ba%d0%be%d0%b8%d0%bd-%d0%bd%d0%be%d0%b4%d0%b0&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;Биткоин – это одноранговая &lt;a href=&#34;http://localhost:1313/bitcoin-zoloto-2-0&#34;&gt;цифровая наличность&lt;/a&gt;, которая регулируется сетью узлов (нод). Нода – это просто компьютер, на котором установлено программное обеспечение Биткоин. Биткоин-ноды – это компьютеры со специально установленным программным обеспечением, которые обмениваются транзакциями с другими узлами сети и проверяют их действительность. Пользователи Биткоин-нод сотрудничают с Биткоин-майнерами для поддержания целостности системы.&lt;/p&gt;</description>
+      <description>Here’s why it&amp;rsquo;s necessary to participate in the Bitcoin Core network of nodes, for six simple reasons.&#xA;This article by Arman The Parman was published in Bitcoin Magazine.&#xA;Contribute.&#xA;Let me explain quickly that a Bitcoin node is any computer which runs a piece of software (Bitcoin Core) that has some important jobs:&#xA;Your Bitcoin node needs to keep a copy of the entire Bitcoin blockchain. It has to connect with other nodes, forming a network of communication, which propagates transactions (transactions are kept in a “mempool”, i.</description>
     </item>
     <item>
-      <title>Оранжпиллинг за 5 минут</title>
+      <title>Orangepilling in 5 min</title>
       <link>http://localhost:1313/orangepilling-in-5-min/</link>
       <pubDate>Tue, 03 Jan 2023 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/orangepilling-in-5-min/</guid>
-      <description>&lt;p&gt;Что делать, если на вечеринке или в кругу друзей вам задали краткий вопрос: “Что такое Биткоин?” – подразумевающий &lt;em&gt;очень&lt;/em&gt; объемный ответ?&lt;/p&gt;&#xA;&lt;blockquote class=&#34;book-hint btc&#34;&gt;&#xA;  &lt;p&gt;Эта заметка основана на &lt;a href=&#34;https://twitter.com/HectorAlvero/status/1610322878226137088?s=20&#34;&gt;трэде&lt;/a&gt; Гектора Альверо. Русскоязычная версия подготовлена &lt;a href=&#34;https://snort.social/p/npub10awzknjg5r5lajnr53438ndcyjylgqsrnrtq5grs495v42qc6awsj45ys7&#34;&gt;Тони⚡️&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/contribute/&#34;&gt;Поддержать проект&lt;/a&gt;&lt;/p&gt;&#xA;&#xA;&lt;/blockquote&gt;&#xA;&#xA;&lt;p&gt;Что делать, если на вечеринке или в кругу друзей вам задали краткий вопрос: “Что такое Биткоин?” – подразумевающий &lt;em&gt;очень&lt;/em&gt; объемный ответ?&lt;/p&gt;&#xA;&lt;p&gt;Многие согласятся, что лучший способ что-то донести – это задавать наводящие вопросы, которые способны вызвать еще большее любопытство. Это отлично работает с близкими и знакомыми людьми, но как быть с незнакомцами, с теми, кого вы только что встретили и, возможно, больше никогда не увидите? Можно ли раскрыть их сознание всего за несколько минут?&lt;/p&gt;</description>
+      <description>This thread was published by Hector Alvero in Twitter.&#xA;Contribute.&#xA;What do you do when you meet someone casually at a party or social event and they ask you the tiny question with the huge answer:&#xA;What is Bitcoin?&#xA;We know the best way to orange pill someone is by asking questions to plant seeds that nurture curiosity. That works great with people we know or see often, but what about strangers you’ve just met and may never see again?</description>
     </item>
     <item>
-      <title>5 советов по обучению Биткоину</title>
+      <title>5 tips for teaching Bitcoin</title>
       <link>http://localhost:1313/5-tips-for-teaching-bitcoin/</link>
       <pubDate>Fri, 23 Sep 2022 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/5-tips-for-teaching-bitcoin/</guid>
-      <description>&lt;p&gt;Принять Биткоин и осознать его значимость для себя несложно, но поделиться своими знаниями с другими – не такое уж и простое задание. Предлагаю ознакомиться с инструкцией, как поделиться своим энтузиазмом к Биткоину с теми, кто вам дорог.&lt;/p&gt;&#xA;&lt;blockquote class=&#34;book-hint btc&#34;&gt;&#xA;  &lt;p&gt;Эта статья основана на &lt;a href=&#34;https://blog.keys.casa/teaching-bitcoin-to-friends-and-loved-ones/&#34;&gt;публикации&lt;/a&gt; Джона Тинкеленберга.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/contribute/&#34;&gt;Поддержать проект&lt;/a&gt;&lt;/p&gt;&#xA;&#xA;&lt;/blockquote&gt;&#xA;&#xA;&lt;p&gt;Принять Биткоин и осознать его значимость для себя несложно, но поделиться своими знаниями с другими – или, как нередко высказываются максималисты, “заоранжпиллить” (убедить принять оранжевую пилюлю) – не такое уж и простое задание. Биткоин часто оказывается сложной темой для обсуждения с друзьями и родственниками, кроме того, это совершенно новый вид актива, который накладывает ответственность на его обладателя –  нужно самостоятельно хранить свои сбережения и управлять ими.&lt;/p&gt;</description>
+      <description>This article by John Tinkelenberg was published in Casa blog.&#xA;Contribute.&#xA;It’s easy to adopt bitcoin as an individual, but sharing your knowledge with others — or orange-pilling as we say in the industry — can be hard. Bitcoin is often a tricky subject to discuss with friends and relatives in addition to being a completely different asset to own and manage.&#xA;Now that bitcoin is mainstream, most of us are exploring bitcoin for the first time.</description>
     </item>
   </channel>
 </rss>

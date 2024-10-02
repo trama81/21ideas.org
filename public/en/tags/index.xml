@@ -4,7 +4,7 @@
     <title>Tags on 21ideas</title>
     <link>http://localhost:1313/en/tags/</link>
     <description>Recent content in Tags on 21ideas</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Wed, 20 Mar 2024 09:34:04 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/en/tags/index.xml" rel="self" type="application/rss+xml" />

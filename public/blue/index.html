@@ -1,20 +1,22 @@
 <!DOCTYPE html>
-<html lang="ru-RU" dir="ltr">
+<html lang="en" dir="ltr">
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&display=swap" rel="stylesheet">  <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Как хранить свои биткоины на мобильном устройстве? Безопасное горячее и холодное хранение биткоина.">
+<meta name="description" content="This guide by @econoalchemist was published in Bitcoin Magazine.
+Contribute.
+If you have an iPhone and have bitcoin, then I highly recommend using Blue Wallet to secure your BTC. This article will walk you through the basic steps for installing, securing and using Blue Wallet on iPhone. But, before getting started, it is a good idea to have a pen and paper ready. Remember to start with small amounts of bitcoin until these concepts make more sense and you are comfortable putting your funds in a mobile wallet.">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark">
-<meta name="lightning" content="21ideas@getalby.com"><meta property="og:title" content="Кошелек Blue" />
-<meta property="og:description" content="Как хранить свои биткоины на мобильном устройстве? Безопасное горячее и холодное хранение биткоина." />
+<meta name="lightning" content="21ideas@getalby.com"><meta property="og:title" content="Installing Blue Wallet" />
+<meta property="og:description" content="" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://localhost:1313/blue/" />
 <meta property="og:image" content="http://localhost:1313/img/111.png"/>
 
-<title>Кошелек Blue | 21ideas</title>
+<title>Installing Blue Wallet | 21ideas</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -22,10 +24,10 @@
 <link rel="apple-touch-icon" media="(prefers-color-scheme: dark)" sizes="180x180" href="/apple-touch-icon-dark.png">
 <link rel="icon" type="image/png" media="(prefers-color-scheme: dark)" sizes="32x32" href="/favicon-32x32-dark.png">
 <link rel="icon" type="image/png" media="(prefers-color-scheme: dark)" sizes="16x16" href="/favicon-16x16-dark.png">
-  <link rel="alternate" hreflang="en" href="http://localhost:1313/en/blue/" title="Installing Blue Wallet">
+  <link rel="alternate" hreflang="ru-RU" href="http://localhost:1313/ru/blue/" title="Кошелек Blue">
 <link rel="stylesheet" href="/book.min.44d288673620af09aba4fb7b29ef4c1d1f9c0258f725bd228507764ec1740f0a.css" integrity="sha256-RNKIZzYgrwmrpPt7Ke9MHR&#43;cAlj3Jb0ihQd2TsF0Dwo=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/ru.search.min.760cb93fca4cc9af4d5d957f0e91325f35c604c9b72da7d0d0517ae0f7424f53.js" integrity="sha256-dgy5P8pMya9NXZV/DpEyXzXGBMm3LafQ0FF64PdCT1M=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.322caf709709c011df0f8373a87ef3ce291ba22a62fdd5b8cf00bf824b20d5f8.js" integrity="sha256-MiyvcJcJwBHfD4NzqH7zzikboipi/dW4zwC/gksg1fg=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -53,7 +55,7 @@ https://github.com/alex-shpak/hugo-book
 
 
 <div class="book-search">
-  <input type="text" id="book-search-input" placeholder="Поиск" aria-label="Поиск" maxlength="64" data-hotkeys="s/" />
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
   <div class="book-search-spinner hidden"></div>
   <ul id="book-search-results"></ul>
 </div>
@@ -78,15 +80,15 @@ https://github.com/alex-shpak/hugo-book
     <label for="languages" class="flex justify-between">
       <a role="button" class="flex align-center">
         <img src="/svg/translate.svg" class="book-icon" alt="Languages" />
-        Русский
+        English
       </a>
     </label>
 
     <ul>
       
       <li>
-        <a href="http://localhost:1313/en/blue/">
-          English
+        <a href="http://localhost:1313/ru/blue/">
+          Русский
         </a>
       </li>
       
@@ -120,7 +122,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-4b959577bbd662d890894b4ef656e45e" class="toggle"  />
     <label for="section-4b959577bbd662d890894b4ef656e45e" class="flex justify-between">
-      <a href="/start/" class="">Старт</a>
+      <a role="button" class="">Start</a>
     </label>
   
 
@@ -134,7 +136,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/start/start/" class="">Что такое Биткоин?</a>
+    <a href="/start/start/" class="">Bitcoin Basics</a>
   
 
         </li>
@@ -147,7 +149,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/start/guide/" class="">Используем биткоин</a>
+    <a href="/start/guide/" class="">Using Bitcoin</a>
   
 
         </li>
@@ -160,33 +162,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/course/" class="">Биткоин от А до Я</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/bitcoin-myths/" class="">Разрушаем мифы о Биткоине</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/shitcoin-casino/" class="">Не играйте в щиткоин-казино</a>
+    <a href="/shitcoin-gambling-games/" class="">Don’t Play Shitcoin Gambling Games</a>
   
 
         </li>
@@ -206,7 +182,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-c8e2b39e67e72b49a36ee1ec8355ecba" class="toggle"  />
     <label for="section-c8e2b39e67e72b49a36ee1ec8355ecba" class="flex justify-between">
-      <a href="/theory/" class="">Теория</a>
+      <a href="/theory/" class="">Theory</a>
     </label>
   
 
@@ -222,7 +198,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-981a6953479a2e41da30ae73c119d6e2" class="toggle"  />
     <label for="section-981a6953479a2e41da30ae73c119d6e2" class="flex justify-between">
-      <a href="/economics/" class="">Экономика</a>
+      <a href="/economics/" class="">Economics</a>
     </label>
   
 
@@ -238,7 +214,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-43f26905d14df4de3737d0d5dfd90ca0" class="toggle"  />
     <label for="section-43f26905d14df4de3737d0d5dfd90ca0" class="flex justify-between">
-      <a href="/pzv/" class="">Постепенно, затем внезапно</a>
+      <a href="/gradually-then-suddenly/" class="">Gradually, Then Suddenly</a>
     </label>
   
 
@@ -252,7 +228,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/postepenno-zatem-vnezapno/" class="">Введение</a>
+    <a href="/gradually-then-suddenly/intro/" class="">Intro</a>
   
 
         </li>
@@ -265,7 +241,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-nelzya-skopirovat/" class="">Биткоин нельзя скопировать</a>
+    <a href="/gradually-then-suddenly/bitcoin-cant-be-copied/" class="">Bitcoin Can’t Be Copied</a>
   
 
         </li>
@@ -278,7 +254,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-ne-slishkom-volatilen/" class="">Биткоин не слишком волатилен</a>
+    <a href="/gradually-then-suddenly/bitcoin-is-not-too-volatile/" class="">Bitcoin Is Not Too Volatile</a>
   
 
         </li>
@@ -291,7 +267,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-ne-tratit-energiyu-zrya/" class="">Биткоин не тратит энергию зря</a>
+    <a href="/gradually-then-suddenly/bitcoin-does-not-waste-energy/" class="">Bitcoin Does Not Waste Energy</a>
   
 
         </li>
@@ -304,7 +280,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-ne-slishkom-medlennyj/" class="">Биткоин не слишком медленный</a>
+    <a href="/gradually-then-suddenly/bitcoin-is-not-too-slow/" class="">Bitcoin is Not Too Slow</a>
   
 
         </li>
@@ -317,7 +293,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-eto-ispravit/" class="">Биткоин это исправит</a>
+    <a href="/gradually-then-suddenly/bitcoin-fixes-this/" class="">Bitcoin Fixes This</a>
   
 
         </li>
@@ -330,7 +306,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-ne-blokchejn/" class="">Биткоин, не блокчейн</a>
+    <a href="/gradually-then-suddenly/bitcoin-not-blockchain/" class="">Bitcoin, Not Blockchain</a>
   
 
         </li>
@@ -343,7 +319,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-nichem-ne-podkreplen/" class="">Биткоин ничем не подкреплен?</a>
+    <a href="/gradually-then-suddenly/bitcoin-is-not-backed-by-nothing/" class="">Bitcoin is Not Backed by Nothing</a>
   
 
         </li>
@@ -356,7 +332,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-ne-finansovaya-piramida/" class="">Биткоин — не финансовая пирамида</a>
+    <a href="/gradually-then-suddenly/bitcoin-is-not-a-pyramid-scheme/" class="">Bitcoin is Not a Pyramid Scheme</a>
   
 
         </li>
@@ -369,7 +345,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-ne-mozhet-byt-zabanen/" class="">Биткоин не может быть забанен</a>
+    <a href="/gradually-then-suddenly/bitcoin-cannot-be-banned/" class="">Bitcoin Cannot be Banned</a>
   
 
         </li>
@@ -382,7 +358,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-ne-dlya-prestupnikov/" class="">Биткоин не для преступников</a>
+    <a href="/gradually-then-suddenly/bitcoin-is-not-for-criminals/" class="">Bitcoin is Not for Criminals</a>
   
 
         </li>
@@ -395,7 +371,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-obescenivaet-ostalnye-dengi/" class="">Биткоин обесценивает остальные деньги</a>
+    <a href="/gradually-then-suddenly/bitcoin-obsoletes-all-other-money/" class="">Bitcoin Obsoletes All Other Money</a>
   
 
         </li>
@@ -408,7 +384,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-zov-k-edineniyu/" class="">Биткоин — зов к единению</a>
+    <a href="/gradually-then-suddenly/bitcoin-is-a-rally-cry/" class="">Bitcoin is a Rally Cry</a>
   
 
         </li>
@@ -421,7 +397,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-eto-zdravyj-smysl/" class="">Биткоин — это здравый смысл</a>
+    <a href="/gradually-then-suddenly/bitcoin-is-common-sense/" class="">Bitcoin is Common Sense</a>
   
 
         </li>
@@ -434,7 +410,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-antihrupok/" class="">Биткоин антихрупок</a>
+    <a href="/gradually-then-suddenly/bitcoin-is-antifragile/" class="">Bitcoin is Antifragile</a>
   
 
         </li>
@@ -447,7 +423,20 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-velikaya-definancializaciya/" class="">Биткоин — великая дефинанcиализация</a>
+    <a href="/gradually-then-suddenly/bitcoin-is-one-for-all/" class="">Bitcoin is One for All</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/gradually-then-suddenly/bitcoin-is-the-great-definancialization/" class="">Bitcoin is the Great Definancialization</a>
   
 
         </li>
@@ -467,7 +456,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-070af377b46d38e45de9a60dd3c8e7d0" class="toggle"  />
     <label for="section-070af377b46d38e45de9a60dd3c8e7d0" class="flex justify-between">
-      <a href="/sb/" class="">Становление Биткоина</a>
+      <a href="/discovering-bitcoin/" class="">Discovering Bitcoin</a>
     </label>
   
 
@@ -481,7 +470,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sb/stanovlenie-intro/" class="">Введение</a>
+    <a href="/discovering-bitcoin/intro/" class="">Introduction</a>
   
 
         </li>
@@ -494,7 +483,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sb/stanovlenie-1/" class="">О времени</a>
+    <a href="/discovering-bitcoin/about-time/" class="">About Time</a>
   
 
         </li>
@@ -507,7 +496,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sb/stanovlenie-2/" class="">О людях</a>
+    <a href="/discovering-bitcoin/about-people/" class="">About People</a>
   
 
         </li>
@@ -520,7 +509,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sb/stanovlenie-3/" class="">Знакомьтесь: деньги</a>
+    <a href="/discovering-bitcoin/introducing-money/" class="">Introducing Money</a>
   
 
         </li>
@@ -533,7 +522,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sb/stanovlenie-4/" class="">Поворот не туда</a>
+    <a href="/discovering-bitcoin/a-wrong-turn-new-plan-needed/" class="">A Wrong Turn (New Plan Needed)!</a>
   
 
         </li>
@@ -546,7 +535,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sb/stanovlenie-5/" class="">Цифровая редкость</a>
+    <a href="/discovering-bitcoin/digital-scarcity/" class="">Digital Scarcity</a>
   
 
         </li>
@@ -559,7 +548,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sb/stanovlenie-6/" class="">Цифровые контракты</a>
+    <a href="/discovering-bitcoin/digital-contracts/" class="">Digital Contracts</a>
   
 
         </li>
@@ -572,7 +561,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sb/stanovlenie-7/" class="">Недостающие части головоломки</a>
+    <a href="/discovering-bitcoin/the-missing-pieces/" class="">The Missing Pieces</a>
   
 
         </li>
@@ -590,7 +579,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitkoin-ne-vredit-okruzhayushej-srede/" class="">Биткоин и окружающая среда</a>
+    <a href="/bitcoin-is-not-harmful-for-the-environment/" class="">Bitcoin Is Not Harmful For The Environment</a>
   
 
         </li>
@@ -603,7 +592,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sem-setevyh-effektov-bitkoina/" class="">Семь сетевых эффектов Биткоина</a>
+    <a href="/seven-network-effects-of-bitcoin/" class="">The Seven Network Effects of Bitcoin</a>
   
 
         </li>
@@ -616,7 +605,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/hozyaeva-i-raby-deneg/" class="">Хозяева и рабы денег</a>
+    <a href="/masters-and-slaves-of-money/" class="">Masters and Slaves of Money</a>
   
 
         </li>
@@ -629,7 +618,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/strukturnaya-perestrojka/" class="">Структурная перестройка</a>
+    <a href="/structural-adjustment/" class="">Structural Adjustment</a>
   
 
         </li>
@@ -642,7 +631,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/v-zashchitu-deflyacii/" class="">В защиту дефляции</a>
+    <a href="/in-defense-of-deflation/" class="">In Defense Of Deflation</a>
   
 
         </li>
@@ -655,7 +644,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sravnenie-monetarnyh-standartov/" class="">Сравнение монетарных стандартов</a>
+    <a href="/comparison-of-monetary-standards/" class="">Comparison of Monetary Standards</a>
   
 
         </li>
@@ -668,7 +657,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sravnenie-monetarnyh-standartov/" class="">Сравнение монетарных стандартов</a>
+    <a href="/petrodollar-negative-effects/" class="">Petrodollar Negative Effects</a>
   
 
         </li>
@@ -681,7 +670,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/negativnye-effekty-neftedollara/" class="">Негативные внешние эффекты нефтедоллара</a>
+    <a href="/shelling-out/" class="">Shelling Out: The Origins of Money</a>
   
 
         </li>
@@ -694,7 +683,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/raskoshelivaemsya/" class="">Раскошеливаемся (Shelling Out): Происхождение денег</a>
+    <a href="/bitcoin-rhythms-of-history/" class="">Bitcoin and the Rhythms of History</a>
   
 
         </li>
@@ -707,7 +696,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-i-ritmy-istorii/" class="">Биткоин и ритмы истории</a>
+    <a href="/bitcoin-and-the-hopf-cycle-of-the-internet/" class="">Bitcoin &amp; the HOPF Cycle of the Internet</a>
   
 
         </li>
@@ -720,7 +709,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-i-internet-cikly-hopfa/" class="">Биткоин и интернет-циклы Хопфа</a>
+    <a href="/money-blockchains-and-social-scalability/" class="">Money, blockchains, and social scalability</a>
   
 
         </li>
@@ -733,7 +722,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/dengi-blokchejny-i-socialnaya-masshtabiruemost/" class="">Деньги, блокчейны и социальная масштабируемость</a>
+    <a href="/what-is-money/" class="">What Is Money</a>
   
 
         </li>
@@ -746,7 +735,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/chto-takoe-dengi/" class="">Что такое деньги</a>
+    <a href="/only-the-strong-survive/" class="">Only The Strong Survive</a>
   
 
         </li>
@@ -759,7 +748,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/vyzhivaet-silnejshij/" class="">Выживает сильнейший</a>
+    <a href="/dollar-cost-averaging/" class="">Dollar-Cost Averaging</a>
   
 
         </li>
@@ -772,33 +761,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/strategiya-dca/" class="">Стратегия DCA</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/jevons-paradox/" class="">Парадокс Джевонса: Обратная истина</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/kak-rabotajut-dengi/" class="">Как работают деньги</a>
+    <a href="/jevons-paradox/" class="">Jevons Paradox: Contrary Truth</a>
   
 
         </li>
@@ -818,7 +781,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-4d5bb6cd046af3ae6f08884281ee0445" class="toggle"  />
     <label for="section-4d5bb6cd046af3ae6f08884281ee0445" class="flex justify-between">
-      <a href="/security/" class="">Безопасность</a>
+      <a href="/security/" class="">Security</a>
     </label>
   
 
@@ -832,7 +795,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/kak-hranit-kljuchi/" class="">Биткоин-кошельки. Зачем и как хранить свои приватные ключи</a>
+    <a href="/how-to-hold-private-keys/" class="">Bitcoin Wallets: How, Why and When to Hold Your Own Private Keys</a>
   
 
         </li>
@@ -845,7 +808,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/seed/" class="">Что такое сид-фраза?</a>
+    <a href="/seed/" class="">What is a bitcoin seed phrase and how does it work?</a>
   
 
         </li>
@@ -858,7 +821,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/seed-security/" class="">Как обезопасить свои сид-фразы?</a>
+    <a href="/seed-security/" class="">Ultimate guide to storing your bitcoin seed phrase backups</a>
   
 
         </li>
@@ -871,7 +834,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/passphrase/" class="">Насколько надежна ваша парольная фраза?</a>
+    <a href="/passphrase/" class="">Is your passphrase strong enough?</a>
   
 
         </li>
@@ -884,7 +847,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/multisig/" class="">Все о мультисиг</a>
+    <a href="/what-is-multisig/" class="">What is multisig?</a>
   
 
         </li>
@@ -897,7 +860,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/hwws/" class="">Сравнение аппаратных кошельков</a>
+    <a href="/hwws/" class="">The best Bitcoin hardware wallets</a>
   
 
         </li>
@@ -910,7 +873,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/multisig-1/" class="">Мультисиг. Часть I</a>
+    <a href="/multisig-1/" class="">Multisig Part I: Why Multisig?</a>
   
 
         </li>
@@ -923,7 +886,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/multisig-2/" class="">Мультисиг. Часть II: Отдельные ключи – основа мультиподписи</a>
+    <a href="/multisig-2/" class="">Multisig Part II: Single Keys are the Foundation of Multisignature</a>
   
 
         </li>
@@ -943,7 +906,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-e5dc95f8c3734f1c9cf3045c3ba217e8" class="toggle"  />
     <label for="section-e5dc95f8c3734f1c9cf3045c3ba217e8" class="flex justify-between">
-      <a href="/privacy/" class="">Приватность</a>
+      <a href="/privacy/" class="">Privacy</a>
     </label>
   
 
@@ -957,7 +920,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/privacy/luchshie-praktiki/" class="">Как сохранить приватность?</a>
+    <a href="/privacy/best-practices/" class="">Bitcoin Privacy: Best Practices</a>
   
 
         </li>
@@ -970,7 +933,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/privacy/no-kyc/" class="">Никаких KYC, берегите персональные данные</a>
+    <a href="/privacy/no-kyc/" class="">no-KYC only. Avoid the creep</a>
   
 
         </li>
@@ -983,7 +946,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/privatnost-v-seti-bitcoin/" class="">Приватность в сети Биткоин</a>
+    <a href="/wiki-bitcoin-privacy/" class="">Bitcoin Privacy</a>
   
 
         </li>
@@ -996,7 +959,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-stanovitsya-kriticheski-vazhnym/" class="">Биткоин становится критически важным</a>
+    <a href="/bitcoin-becomes-critical/" class="">Bitcoin Becomes Critical</a>
   
 
         </li>
@@ -1009,7 +972,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bip47-ili-gadkij-utenok/" class="">BIP47, или гадкий утенок</a>
+    <a href="/bip47-the-ugly-duckling/" class="">BIP47, the ugly duckling</a>
   
 
         </li>
@@ -1024,7 +987,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-7626e3de66018c98c264d84fe366e13a" class="toggle"  />
     <label for="section-7626e3de66018c98c264d84fe366e13a" class="flex justify-between">
-      <a href="/privacy/oxt/" class="">Понимание приватности в сети Биткоин с помощью OXT</a>
+      <a href="/privacy/oxt/" class="">Understanding Bitcoin Privacy with OXT</a>
     </label>
   
 
@@ -1038,7 +1001,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/privacy/oxt-1/" class="">Часть 1: Анализ цепочки и приватность транзакций</a>
+    <a href="/privacy/oxt-1/" class="">Part 1: Chain Analysis And Transaction Privacy</a>
   
 
         </li>
@@ -1051,7 +1014,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/privacy/oxt-2/" class="">Часть 2: Ключевые концепции анализа цепочки</a>
+    <a href="/privacy/oxt-2/" class="">Part 2: Chain Analysis Core Concepts</a>
   
 
         </li>
@@ -1064,7 +1027,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/privacy/oxt-3/" class="">Часть 3: Защита от анализа цепочки</a>
+    <a href="/privacy/oxt-3/" class="">Part 3: Defences Against Chain Analysis</a>
   
 
         </li>
@@ -1077,7 +1040,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/privacy/oxt-4/" class="">Часть 4: Применение концепций анализа цепочки для улучшения приватности пользователей</a>
+    <a href="/privacy/oxt-4/" class="">Part 4: Applying Chain Analysis Concepts To Improve User Privacy</a>
   
 
         </li>
@@ -1095,7 +1058,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/privacy/coinjoin/" class="">Понимание и использование CoinJoin</a>
+    <a href="/privacy/coinjoin/" class="">CoinJoin Overview</a>
   
 
         </li>
@@ -1108,7 +1071,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-fungibility/" class="">Взаимозаменяемость Биткоина</a>
+    <a href="/bitcoin-fungibility/" class="">Bitcoin Fungibility</a>
   
 
         </li>
@@ -1141,7 +1104,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-591754e4c6a4e23cb58f7ff9d9022ef1" class="toggle"  />
     <label for="section-591754e4c6a4e23cb58f7ff9d9022ef1" class="flex justify-between">
-      <a href="/protocol/" class="">Протокол</a>
+      <a href="/protocol/" class="">Protocol</a>
     </label>
   
 
@@ -1155,7 +1118,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/kto-kontroliruet-bitkoin-kor/" class="">Кто контролирует Bitcoin Core?</a>
+    <a href="/who-controls-bitcoin-core/" class="">Who Controls Bitcoin Core?</a>
   
 
         </li>
@@ -1168,7 +1131,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/vechnaja-borba/" class="">Вечная борьба Биткоина</a>
+    <a href="/bitcoins-eternal-struggle/" class="">Bitcoin&#39;s Eternal Struggle</a>
   
 
         </li>
@@ -1181,7 +1144,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/ob-udobstve-vzaimodejstvija-s-bitcoinom/" class="">Об удобстве взаимодействия с Биткоином</a>
+    <a href="/on-bitcoins-ux/" class="">On Bitcoin’s UX</a>
   
 
         </li>
@@ -1194,7 +1157,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-zoloto-2-0/" class="">Биткоин: цифровое золото или пиринговая наличность?</a>
+    <a href="/bitcoin-digital-gold-or-ecash/" class="">Bitcoin: Digital Gold or Peer-to-Peer Cash?</a>
   
 
         </li>
@@ -1207,7 +1170,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/upravlenie-bitcoin/" class="">Управление Биткоином</a>
+    <a href="/bitcoin-governance/" class="">Bitcoin Governance</a>
   
 
         </li>
@@ -1220,7 +1183,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/doverennye-tretyi-storony/" class="">Доверенные третьи стороны — это бреши в системе безопасности</a>
+    <a href="/trusted-third-parties/" class="">Trusted Third Parties are Security Holes</a>
   
 
         </li>
@@ -1233,7 +1196,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/21-million-ne-podlezhit-obsuzhdeniyu/" class="">21 миллион не подлежит обсуждению</a>
+    <a href="/21-million-is-non-negotiable/" class="">21 Million is Non-Negotiable</a>
   
 
         </li>
@@ -1246,7 +1209,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/proof-of-work/" class="">Proof of Work: доказательство проделанной работы</a>
+    <a href="/proof-of-work/" class="">Proof of Work, a pictorial essay</a>
   
 
         </li>
@@ -1259,7 +1222,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/proof-of-stake-eto-skam/" class="">Proof of Stake – это скам</a>
+    <a href="/proof-of-stake-is-a-scam/" class="">Proof of stake is a scam</a>
   
 
         </li>
@@ -1272,7 +1235,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/byl-li-satoshi-zhadnym-majnerom/" class="">Был ли Сатоши жадным майнером?</a>
+    <a href="/was-satoshi-a-greedy-miner/" class="">Was Satoshi a Greedy Miner?</a>
   
 
         </li>
@@ -1285,7 +1248,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/segwit/" class="">Что такое SegWit</a>
+    <a href="/segwit/" class="">What Is SegWit</a>
   
 
         </li>
@@ -1298,7 +1261,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/taproot/" class="">Что такое Taproot</a>
+    <a href="/taproot/" class="">What Is Taproot</a>
   
 
         </li>
@@ -1311,7 +1274,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bomby-slozhnosti-ethereum/" class="">Бомбы сложности Ethereum</a>
+    <a href="/coercion-of-ethereums-difficulty-bomb/" class="">The Coercion Of Ethereum&#39;s Difficulty Bomb</a>
   
 
         </li>
@@ -1324,7 +1287,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/rgb/" class="">Разбирая протокол RGB</a>
+    <a href="/rgb/" class="">Understanding the RGB protocol</a>
   
 
         </li>
@@ -1337,7 +1300,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/halving/" class="">Что такое Биткоин-халвинг?</a>
+    <a href="/difficulty/" class="">Bitcoin Difficulty Adjustment</a>
   
 
         </li>
@@ -1350,7 +1313,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/difficulty/" class="">О корректировке сложности майнинга</a>
+    <a href="/bitcoin-address-types/" class="">Bitcoin address types</a>
   
 
         </li>
@@ -1363,7 +1326,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sravnenie-tipov-bitcoin-adresov/" class="">Типы биткоин-адресов</a>
+    <a href="/myths-about-halving/" class="">Myths About the Bitcoin Halving</a>
   
 
         </li>
@@ -1376,20 +1339,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/myths-about-halving/" class="">Мифы о Биткоин-халвинге</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/mining-walkthrough/" class="">SHA256 и майнинг в сети Биткоин</a>
+    <a href="/mining-walkthrough/" class="">SHA256 and Bitcoin Mining Walkthrough</a>
   
 
         </li>
@@ -1404,7 +1354,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-c6baffdfa73d6dd5df13795b95ab68ac" class="toggle"  />
     <label for="section-c6baffdfa73d6dd5df13795b95ab68ac" class="flex justify-between">
-      <a href="/protocol/utxo/" class="">Что такое UTXO и как ими управлять?</a>
+      <a href="/protocol/utxo/" class="">What Is UTXO And How To Manage Them</a>
     </label>
   
 
@@ -1418,7 +1368,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/protocol/utxo-1/" class="">Что такое UTXO?</a>
+    <a href="/protocol/utxo-1/" class="">What is a Bitcoin UTXO</a>
   
 
         </li>
@@ -1431,7 +1381,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/protocol/utxo-2/" class="">Как избежать высоких комиссий при большом количестве UTXO</a>
+    <a href="/protocol/utxo-2/" class="">Too Many UTXOs: How To Avoid High Fees</a>
   
 
         </li>
@@ -1444,7 +1394,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/protocol/utxo-3/" class="">Приватность UTXO</a>
+    <a href="/protocol/utxo-3/" class="">UTXOs Privacy</a>
   
 
         </li>
@@ -1462,7 +1412,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/transaction-size/" class="">Размер транзакции</a>
+    <a href="/transaction-size/" class="">Transaction Size</a>
   
 
         </li>
@@ -1482,7 +1432,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-2cc3faa5b078e8edfc892bc463882294" class="toggle"  />
     <label for="section-2cc3faa5b078e8edfc892bc463882294" class="flex justify-between">
-      <a href="/history/" class="">История</a>
+      <a href="/history/" class="">History</a>
     </label>
   
 
@@ -1498,7 +1448,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-11903f72dc1c8e68f0d748ad1bb6164d" class="toggle"  />
     <label for="section-11903f72dc1c8e68f0d748ad1bb6164d" class="flex justify-between">
-      <a href="/gf/" class="">Генезис-файлы</a>
+      <a href="/gf/" class="">The Genesis Files</a>
     </label>
   
 
@@ -1512,7 +1462,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/gf/genesis-intro/" class="">Пролог</a>
+    <a href="/gf/genesis-intro/" class="">Intro</a>
   
 
         </li>
@@ -1525,7 +1475,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/gf/genesis-1/" class="">Часть I: eCash Дэвида Чаума и зарождение мечты шифропанков</a>
+    <a href="/gf/genesis-1/" class="">Part I: How David Chaum’s eCash Spawned a Cypherpunk Dream</a>
   
 
         </li>
@@ -1538,7 +1488,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/gf/genesis-2/" class="">Часть II: Hashcash или как Адам Бэк разработал сердце Биткоина</a>
+    <a href="/gf/genesis-2/" class="">Part II: Hashcash or How Adam Back Designed Bitcoin’s Motor Block</a>
   
 
         </li>
@@ -1551,7 +1501,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/gf/genesis-3/" class="">Часть III: Если у Биткоина был прототип, то это были b-money Вэя Дая</a>
+    <a href="/gf/genesis-3/" class="">Part III: If Bitcoin Had a First Draft, Wei Dai’s B-Money Was It</a>
   
 
         </li>
@@ -1564,7 +1514,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/gf/genesis-4/" class="">Часть IV: Создавая Bit Gold, Сабо был в двух шагах от изобретения Биткоина</a>
+    <a href="/gf/genesis-4/" class="">Part IV: With Bit Gold, Szabo Was Inches Away From Inventing Bitcoin</a>
   
 
         </li>
@@ -1577,7 +1527,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/gf/genesis-5/" class="">Часть V: Как поиски цифровой наличности привели Хэла Финни к созданию RPOW (и не только)</a>
+    <a href="/gf/genesis-5/" class="">Part V: How Hal Finney’s Quest For Digital Cash Led To RPOW (And More)</a>
   
 
         </li>
@@ -1595,7 +1545,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/hal-finney/" class="">Хэл Финни — жизнь и смерть легенды движения шифропанков</a>
+    <a href="/hal-finney/" class="">Hal Finney — The Life And Death Of A Cypherpunk Legend</a>
   
 
         </li>
@@ -1608,7 +1558,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-and-me/" class="">Биткоин и я</a>
+    <a href="/bitcoin-and-me/" class="">Bitcoin and Me</a>
   
 
         </li>
@@ -1621,7 +1571,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-reformaciya/" class="">Биткоин-Реформация</a>
+    <a href="/bitcoin-reformation/" class="">The Bitcoin Reformation</a>
   
 
         </li>
@@ -1634,7 +1584,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-forks/" class="">Полная история консенсус-форков Биткоина</a>
+    <a href="/bitcoin-forks/" class="">A complete history of Bitcoin’s consensus forks</a>
   
 
         </li>
@@ -1647,7 +1597,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/analyzing-2013-fork/" class="">Анализ форка Биткоина 2013 года</a>
+    <a href="/analyzing-2013-fork/" class="">Analyzing the 2013 Bitcoin fork</a>
   
 
         </li>
@@ -1667,7 +1617,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-ac2daa2484c1be670f7cc1e0d8d82356" class="toggle"  />
     <label for="section-ac2daa2484c1be670f7cc1e0d8d82356" class="flex justify-between">
-      <a href="/philosophy/" class="">Философия</a>
+      <a href="/philosophy/" class="">Philosophy</a>
     </label>
   
 
@@ -1683,7 +1633,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-b11b531f912b5e92a8260d0a526b85b6" class="toggle"  />
     <label for="section-b11b531f912b5e92a8260d0a526b85b6" class="flex justify-between">
-      <a href="/chemu-ya-nauchilsya-u-bitcoina/" class="">Чему я научился у Биткоина?</a>
+      <a href="/what-i-learned-from-bitcoin/" class="">What I&#39;ve Learned From Bitcoin</a>
     </label>
   
 
@@ -1697,7 +1647,33 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/chemu-ya-nauchilsya-u-bitcoina/filosofskie-uroki-bitcoina/" class="">Часть1. Философские уроки Биткоина</a>
+    <a href="/what-i-learned-from-bitcoin-1/" class="">Part I. Philosophical Teachings of Bitcoin</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/what-i-learned-from-bitcoin-2/" class="">Part II. Economic Teachings of Bitcoin</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/what-i-learned-from-bitcoin-3/" class="">Part III. Technological Teachings of Bitcoin</a>
   
 
         </li>
@@ -1715,7 +1691,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/ne-shitcoin/" class="">Биткоин, не щиткоин</a>
+    <a href="/not-shitcoin/" class="">Why Bitcoin, Not Shitcoin</a>
   
 
         </li>
@@ -1728,7 +1704,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/neotemlemye-prava-sobstvennosti/" class="">Неотъемлемые права собственности</a>
+    <a href="/inalienable-property-rights/" class="">Inalienable Property Rights</a>
   
 
         </li>
@@ -1741,7 +1717,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/manifest-kriptoanarhista/" class="">Манифест криптоанархиста</a>
+    <a href="/crypto-anarchist-manifesto/" class="">The Crypto Anarchist Manifesto</a>
   
 
         </li>
@@ -1754,7 +1730,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/manifest-shifropanka/" class="">Манифест шифропанка</a>
+    <a href="/cypherpunks-manifesto/" class="">A Cypherpunk&#39;s Manifesto</a>
   
 
         </li>
@@ -1767,7 +1743,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/tyulpannaya-lihoradka/" class="">Биткоин — современная голландская тюльпанная лихорадка?</a>
+    <a href="/dutch-tulip-bubble/" class="">Is Bitcoin Like the Dutch Tulip Bubble?</a>
   
 
         </li>
@@ -1780,7 +1756,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/vse-moshenniki/" class="">Все — мошенники</a>
+    <a href="/everyones-a-scammer/" class="">Everyone&#39;s a Scammer</a>
   
 
         </li>
@@ -1793,7 +1769,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/svoboda-cennosti/" class="">Свобода ценности</a>
+    <a href="/freedom-of-value/" class="">The Freedom of Value</a>
   
 
         </li>
@@ -1806,7 +1782,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-meme/" class="">Биткоин — единственный реальный мем</a>
+    <a href="/bitcoin-meme/" class="">Bitcoin Is The Only Real Meme</a>
   
 
         </li>
@@ -1819,7 +1795,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/nol-i-bitcoin/" class="">Ноль и Биткоин</a>
+    <a href="/number-zero-and-bitcoin/" class="">The Number Zero and Bitcoin</a>
   
 
         </li>
@@ -1832,7 +1808,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/crypto-bro/" class="">Дорогие крипто- и фиат-бро</a>
+    <a href="/crypto-bro/" class="">Dear Crypto &amp; Fiat Bros</a>
   
 
         </li>
@@ -1845,7 +1821,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/boremsya-s-poddelnymi-bitcoin/" class="">Боремся с поддельными биткоинами</a>
+    <a href="/fighting-fake-bitcoin/" class="">Fighting Fake Bitcoin</a>
   
 
         </li>
@@ -1858,7 +1834,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bit%D1%81oin-eto-micelij/" class="">Биткоин — это мицелий</a>
+    <a href="/bitcoin-is-the-mycelium/" class="">Bitcoin is The Mycelium of Money</a>
   
 
         </li>
@@ -1871,7 +1847,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pochemu-bitcoin-zhivoj-organizm/" class="">Доказательство жизни. Почему Биткоин — живой организм</a>
+    <a href="/proof-of-life/" class="">Proof of Life. Why Bitcoin is a Living Organism</a>
   
 
         </li>
@@ -1884,7 +1860,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/samaya-mirnaya-revolyuciya/" class="">Самая мирная революция</a>
+    <a href="/most-peaceful-revolution/" class="">A Most Peaceful Revolution</a>
   
 
         </li>
@@ -1897,7 +1873,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/o-bitcoin-vselennoj/" class="">О Биткоин-вселенной</a>
+    <a href="/bitcoin-universe/" class="">Bitcoin Universe</a>
   
 
         </li>
@@ -1910,7 +1886,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-dissidenty/" class="">Биткоин-диссиденты</a>
+    <a href="/bitcoin-dissidents/" class="">Bitcoin Dissidents</a>
   
 
         </li>
@@ -1923,7 +1899,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-svoboda/" class="">Биткоин = свобода</a>
+    <a href="/bitcoin-equals-freedom/" class="">Bitcoin Equals Freedom</a>
   
 
         </li>
@@ -1943,7 +1919,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-0ffd899989a7340537ceb8e2b6a04097" class="toggle"  />
     <label for="section-0ffd899989a7340537ceb8e2b6a04097" class="flex justify-between">
-      <a href="/future/" class="">Будущее</a>
+      <a href="/future/" class="">Future</a>
     </label>
   
 
@@ -1959,7 +1935,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-206fb3aae5266e1ff42aa0abc8ae8411" class="toggle"  />
     <label for="section-206fb3aae5266e1ff42aa0abc8ae8411" class="flex justify-between">
-      <a href="/ba/" class="">Биткоин-астрономия</a>
+      <a href="/ba/" class="">Bitcoin Astronomy</a>
     </label>
   
 
@@ -1973,7 +1949,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/ba/1/" class="">Постгипербиткоинизация</a>
+    <a href="/ba/1/" class="">Part I</a>
   
 
         </li>
@@ -1986,7 +1962,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/ba/2/" class="">Миллион крошечных миров</a>
+    <a href="/ba/2/" class="">Part II</a>
   
 
         </li>
@@ -1999,7 +1975,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/ba/3/" class="">Первый контакт</a>
+    <a href="/ba/3/" class="">Part III</a>
   
 
         </li>
@@ -2017,7 +1993,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/ej-bitcoin-pritormozi/" class="">Эй, Биткоин, притормози</a>
+    <a href="/hey-bitcoin-slow-down/" class="">Hey Bitcoin, Slow Down!</a>
   
 
         </li>
@@ -2030,7 +2006,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/apokalipsis/" class="">Сможет ли Биткоин пережить апокалипсис?</a>
+    <a href="/apocalypse/" class="">Can Bitcoin Survive An Apocalypse?</a>
   
 
         </li>
@@ -2043,7 +2019,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-i-teplovaya-energiya-okeanov/" class="">Биткоин и тепловая энергия океанов</a>
+    <a href="/bitcoin-and-oceans/" class="">Bitcoin and Ocean Thermal Energy</a>
   
 
         </li>
@@ -2063,7 +2039,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-94dfdc9d0099b419c9e2d6a83381dbe2" class="toggle"  />
     <label for="section-94dfdc9d0099b419c9e2d6a83381dbe2" class="flex justify-between">
-      <a href="/lightning/" class="">Лайтнинг</a>
+      <a href="/lightning/" class="">Lightning</a>
     </label>
   
 
@@ -2077,7 +2053,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/chto-takoe-laitning/" class="">Что такое Лайтнинг?</a>
+    <a href="/what-is-lightning-network/" class="">What is Lightning Network?</a>
   
 
         </li>
@@ -2090,7 +2066,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/lajtning-koshelki/" class="">Лайтнинг-кошельки</a>
+    <a href="/lightning-wallets/" class="">Lightning Wallets</a>
   
 
         </li>
@@ -2103,7 +2079,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/lajtning-adresa/" class="">Лайтнинг-адреса</a>
+    <a href="/how-lightning-address-works/" class="">How Lightning Address Works</a>
   
 
         </li>
@@ -2116,7 +2092,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/privatnost-v-lajtning/" class="">Приватность в сети Lightning</a>
+    <a href="/lightning-network-privacy/" class="">Lightning Network Privacy</a>
   
 
         </li>
@@ -2129,7 +2105,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/centralizovanna-li-set-lightning/" class="">Централизованна ли сеть Lightning?</a>
+    <a href="/is-lightning-centralized/" class="">Is Lightning centralized?</a>
   
 
         </li>
@@ -2142,7 +2118,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/mekhanizm-raboty-lightning/" class="">Механизм работы Lightning Network</a>
+    <a href="/lightning-network-explained/" class="">Lightning Network Explained</a>
   
 
         </li>
@@ -2155,7 +2131,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/problema-vhodyashchej-likvidnosti/" class="">Решение проблемы входящей ликвидности</a>
+    <a href="/inbound-liquidity-problem/" class="">Solutions to inbound liquidity problem</a>
   
 
         </li>
@@ -2180,7 +2156,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-334a33758c01abfe631e1e37dc0d1f40" class="toggle" checked />
     <label for="section-334a33758c01abfe631e1e37dc0d1f40" class="flex justify-between">
-      <a href="/practice/" class="">Практика</a>
+      <a href="/practice/" class="">Practice</a>
     </label>
   
 
@@ -2196,7 +2172,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-a94c5b45bfdc8ef0dd89b00612026092" class="toggle"  />
     <label for="section-a94c5b45bfdc8ef0dd89b00612026092" class="flex justify-between">
-      <a href="/practice/buy/" class="">Покупка</a>
+      <a href="/practice/buy/" class="">Buy</a>
     </label>
   
 
@@ -2210,7 +2186,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/newbie-buy/" class="">Покупка и хранение биткоина для новичков</a>
+    <a href="/newbie-buy/" class="">Buy and Hodl Bitcoin for Beginners</a>
   
 
         </li>
@@ -2223,7 +2199,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/hodl-hodl/" class="">Покупка биткоина без KYC на Hodl Hodl</a>
+    <a href="/hodl-hodl/" class="">Buy noKYC Bitcoin with HodlHodl</a>
   
 
         </li>
@@ -2236,7 +2212,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/robosats/" class="">RoboSats: Приватный p2p обмен</a>
+    <a href="/robosats/" class="">RoboSats: Private P2P Exchange</a>
   
 
         </li>
@@ -2256,7 +2232,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-7e14ce7fc5fdbe001466044f77bdd564" class="toggle" checked />
     <label for="section-7e14ce7fc5fdbe001466044f77bdd564" class="flex justify-between">
-      <a href="/practice/hodl/" class="">Хранение</a>
+      <a href="/practice/hodl/" class="">Hodl</a>
     </label>
   
 
@@ -2270,7 +2246,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/electrum/" class="">Кошелек Электрум</a>
+    <a href="/electrum/" class="">Electrum Bitcoin Wallet</a>
   
 
         </li>
@@ -2283,7 +2259,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/blue/" class="active">Кошелек Blue</a>
+    <a href="/blue/" class="active">Installing Blue Wallet</a>
   
 
         </li>
@@ -2296,7 +2272,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/seedsigner/" class="">SeedSigner: оффлайн-крепость для ваших биткоинов</a>
+    <a href="/seedsigner/" class="">SeedSigner: DIY Bitcoin Signing Device</a>
   
 
         </li>
@@ -2309,20 +2285,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/holodnyj-koshelek-iz-starogo-smartfona/" class="">Холодный кошелек из старого смартфона</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/coldcard/" class="">Что такое Coldcard?</a>
+    <a href="/coldcard/" class="">What is Coldcard?</a>
   
 
         </li>
@@ -2342,7 +2305,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-88cf9017cf07549621f025a2843cb148" class="toggle"  />
     <label for="section-88cf9017cf07549621f025a2843cb148" class="flex justify-between">
-      <a href="/practice/interact/" class="">Взаимодействие</a>
+      <a href="/practice/interact/" class="">Interact</a>
     </label>
   
 
@@ -2356,7 +2319,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/practice/bitcoin-node/" class="">Каждому следует запустить собственную Биткоин-ноду!</a>
+    <a href="/practice/bitcoin-node/" class="">Why You Should Run Your Own Bitcoin Node</a>
   
 
         </li>
@@ -2369,7 +2332,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/orangepilling-in-5-min/" class="">Оранжпиллинг за 5 минут</a>
+    <a href="/orangepilling-in-5-min/" class="">Orangepilling in 5 min</a>
   
 
         </li>
@@ -2382,7 +2345,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/5-tips-for-teaching-bitcoin/" class="">5 советов по обучению Биткоину</a>
+    <a href="/5-tips-for-teaching-bitcoin/" class="">5 tips for teaching Bitcoin</a>
   
 
         </li>
@@ -2402,7 +2365,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-32dccf00abb46a5281b7aae069126928" class="toggle"  />
     <label for="section-32dccf00abb46a5281b7aae069126928" class="flex justify-between">
-      <a href="/practice-privacy/" class="">Практики приватности</a>
+      <a href="/practice-privacy/" class="">Privacy</a>
     </label>
   
 
@@ -2418,7 +2381,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-ae30dbe7c31a834e8bfe23314d9a5ff6" class="toggle"  />
     <label for="section-ae30dbe7c31a834e8bfe23314d9a5ff6" class="flex justify-between">
-      <a href="/practice-privacy/dojo/" class="">Установка Биткоин-узла Dojo на x86</a>
+      <a href="/practice-privacy/dojo/" class="">Dojo x86 Bitcoin Node Guide</a>
     </label>
   
 
@@ -2432,7 +2395,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/practice-privacy/dojo-0/" class="">Введение</a>
+    <a href="/practice-privacy/dojo-0/" class="">Introduction</a>
   
 
         </li>
@@ -2445,7 +2408,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/practice-privacy/dojo-1/" class="">Установка Bitcoin Core и Tor</a>
+    <a href="/practice-privacy/dojo-1/" class="">Installing Bitcoin Core &amp; Tor</a>
   
 
         </li>
@@ -2458,7 +2421,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/practice-privacy/dojo-2/" class="">Установка индексатора Fulcrum</a>
+    <a href="/practice-privacy/dojo-2/" class="">Installing Fulcrum Indexer</a>
   
 
         </li>
@@ -2471,7 +2434,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/practice-privacy/dojo-3/" class="">Установка блокчейн-обозревателя Mempool</a>
+    <a href="/practice-privacy/dojo-3/" class="">Installing Mempool Explorer</a>
   
 
         </li>
@@ -2484,7 +2447,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/practice-privacy/dojo-4/" class="">Установка Samourai Dojo</a>
+    <a href="/practice-privacy/dojo-4/" class="">Installing Samourai Dojo</a>
   
 
         </li>
@@ -2497,7 +2460,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/practice-privacy/dojo-5/" class="">Конфигурация межсетевого экрана</a>
+    <a href="/practice-privacy/dojo-5/" class="">Firewall Configuration</a>
   
 
         </li>
@@ -2510,7 +2473,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/practice-privacy/dojo-6/" class="">Установка обновлений пакетов</a>
+    <a href="/practice-privacy/dojo-6/" class="">Installing Package Updates</a>
   
 
         </li>
@@ -2528,7 +2491,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/practice-privacy/ronindojo/" class="">Установка RoninDojo на x86</a>
+    <a href="/practice-privacy/ronindojo/" class="">RoninDojo x86 Installation Guide</a>
   
 
         </li>
@@ -2541,7 +2504,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/grapheneos/" class="">GrapheneOS: Избавляемся от слежки Google на смартфоне</a>
+    <a href="/grapheneos/" class="">GrapheneOS: De-Google your phone</a>
   
 
         </li>
@@ -2561,7 +2524,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-9425a98499a6d50bed8efd403e1db980" class="toggle"  />
     <label for="section-9425a98499a6d50bed8efd403e1db980" class="flex justify-between">
-      <a href="/practice/lightning/" class="">Лайтнинг на практике</a>
+      <a href="/practice/lightning/" class="">Lightning</a>
     </label>
   
 
@@ -2575,7 +2538,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/phoenix/" class="">Кошелек Phoenix</a>
+    <a href="/phoenix/" class="">Phoenix: The Non-Custodial Lightning Wallet</a>
   
 
         </li>
@@ -2588,7 +2551,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/lnbits/" class="">LNbits – швейцарский нож среди лайтнинг-приложений</a>
+    <a href="/lnbits/" class="">LNbits: A Swiss knife among Lightning apps</a>
   
 
         </li>
@@ -2601,7 +2564,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/alby-i-nostr/" class="">Alby и Nostr</a>
+    <a href="/alby-and-nostr/" class="">Alby and Nostr</a>
   
 
         </li>
@@ -2614,7 +2577,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/zapplanner/" class="">Подписки с помощью Лайтнинг</a>
+    <a href="/zapplanner/" class="">Recurring Lightning Payments</a>
   
 
         </li>
@@ -2627,7 +2590,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/lntips/" class="">Телеграм-бот @LightningTipBot</a>
+    <a href="/lntips/" class="">Telegram bot @LightningTipBot</a>
   
 
         </li>
@@ -2640,7 +2603,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/ochishchaem-bitcoin-cherez-lajtning/" class="">Очищаем биткоины через сеть Лайтнинг</a>
+    <a href="/lightning-liquidity-management-guide/" class="">Lightning Liquidity Management Guide</a>
   
 
         </li>
@@ -2653,20 +2616,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/likvidnost-v-lajtning/" class="">Руководство по управлению ликвидностью в сети Lightning</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/mutiny/" class="">Кошелек Mutiny</a>
+    <a href="/mutiny/" class="">Starting with Mutiny Wallet</a>
   
 
         </li>
@@ -2691,84 +2641,12 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-d286fdc9558f9b3466aa6f3d4805be77" class="toggle"  />
     <label for="section-d286fdc9558f9b3466aa6f3d4805be77" class="flex justify-between">
-      <a href="/rabbithole/" class="">Кроличья нора</a>
+      <a href="/rabbithole/" class="">Rabbithole</a>
     </label>
   
 
           
   <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/books/" class="">Книги</a>
-  
-
-          
-  <ul>
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/videos/" class="">Видео</a>
-  
-
-          
-  <ul>
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/audiobooks/" class="">Аудиокниги</a>
-  
-
-          
-  <ul>
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/pods/" class="">Подкасты</a>
-  
-
-          
-  <ul>
-    
-  </ul>
-
-        </li>
-      
     
   </ul>
 
@@ -2799,37 +2677,9 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/posts/" class="">Блог</a>
-  
-
-        
-    
-  </li>
-  
-  <li>
-    
-        
-  
-  
-
-  
-    <a href="/calendar/" class="">Биткоин-календарь</a>
-  
-
-        
-    
-  </li>
-  
-  <li>
-    
-        
-  
-  
-
-  
     <input type="checkbox" id="section-9329cf488076ba9f91ca728aef24f607" class="toggle"  />
     <label for="section-9329cf488076ba9f91ca728aef24f607" class="flex justify-between">
-      <a href="/contribute/" class="">Принять участие</a>
+      <a href="/contribute/" class="">Contribute</a>
     </label>
   
 
@@ -2844,33 +2694,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/syntax/" class="">Оформление статей</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/github/" class="">Как добавить статью?</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/obsidian/" class="">Публикация статей через Obsidian</a>
+    <a href="/github/" class="">Adding an Article</a>
   
 
         </li>
@@ -2889,7 +2713,21 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/feedback/" class="">Обратная связь</a>
+    <span>Blog</span>
+  
+
+        
+    
+  </li>
+  
+  <li>
+    
+        
+  
+  
+
+  
+    <a href="/feedback/" class="">Feedback</a>
   
 
         
@@ -2967,7 +2805,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Кошелек Blue</strong>
+  <strong>Installing Blue Wallet</strong>
 
   <label for="toc-control">
     
@@ -2985,33 +2823,12 @@ https://github.com/alex-shpak/hugo-book
   <ul>
     <li>
       <ul>
-        <li><a href="#bluewallet--мобильная-крепость-для-ваших-биткоинов">BlueWallet – мобильная крепость для ваших биткоинов</a></li>
-        <li><a href="#функции-для-чайников">Функции для чайников</a>
-          <ul>
-            <li><a href="#многочисленные-биткоин-кошельки">Многочисленные биткоин-кошельки</a></li>
-          </ul>
-        </li>
-        <li><a href="#интеграция-lightning">Интеграция Lightning</a>
-          <ul>
-            <li><a href="#управление-транзакциями-и-комиссиями">Управление транзакциями и комиссиями</a></li>
-          </ul>
-        </li>
-        <li><a href="#продвинутые-функции">Продвинутые функции</a>
-          <ul>
-            <li><a href="#watch-only-кошелек">Watch-only кошелек</a></li>
-            <li><a href="#мультисиг-хранилище">Мультисиг-хранилище</a></li>
-          </ul>
-        </li>
-        <li><a href="#дополнительные-функции">Дополнительные функции</a>
-          <ul>
-            <li><a href="#возможность-отрицания">Возможность отрицания</a></li>
-            <li><a href="#восстановление-кошельков">Восстановление кошельков</a></li>
-            <li><a href="#совмещение-пакетирование-транзакций">Совмещение (пакетирование) транзакций</a></li>
-            <li><a href="#виджет-для-мобильных-устройств">Виджет для мобильных устройств</a></li>
-            <li><a href="#интеграции">Интеграции</a></li>
-            <li><a href="#и-многое-другое">..И многое другое</a></li>
-          </ul>
-        </li>
+        <li><a href="#step-one-install-blue-wallet">Step One: Install Blue Wallet</a></li>
+        <li><a href="#step-two-wallet-setup">Step Two: Wallet Setup</a></li>
+        <li><a href="#step-thee-secure-the-seed-phrase">Step Thee: Secure The Seed Phrase</a></li>
+        <li><a href="#step-four-receive-bitcoin">Step Four: Receive Bitcoin</a></li>
+        <li><a href="#step-five-spend-bitcoin">Step Five: Spend Bitcoin</a></li>
+        <li><a href="#conclusion">Conclusion</a></li>
       </ul>
     </li>
   </ul>
@@ -3036,206 +2853,169 @@ https://github.com/alex-shpak/hugo-book
 
 <h1>
     
-    BlueWallet: мультисиг, холодные хранилища, поддержка кошельков watch-only и многое другое
+    Installing Blue Wallet
     
 </h1>
 <div class="pageDate">
-    6 сентября 2022 г.
+    March 17, 2021
 </div>
 
-  <article class="markdown"><p>Как хранить свои биткоины на мобильном устройстве? Безопасное горячее и холодное хранение биткоина.</p>
-<blockquote class="book-hint btc">
-  Гид подготовлен <a href="https://snort.social/p/npub10awzknjg5r5lajnr53438ndcyjylgqsrnrtq5grs495v42qc6awsj45ys7">Тони⚡️</a>. <a href="/contribute/">Поддержать проект</a>.
+  <article class="markdown"><blockquote class="book-hint btc">
+  <p>This guide by <a href="https://twitter.com/econoalchemist">@econoalchemist</a> was published in <a href="https://bitcoinmagazine.com/guides/bitcoin-wallets-for-beginners-part-three-installing-blue-wallet">Bitcoin Magazine</a>.</p>
+<p><a href="/contribute/">Contribute</a>.</p>
+
 </blockquote>
 
-<p>BlueWallet может похвастаться множеством функций, недоступных даже на некоторых десктоп-кошельках. Именно об этих функциях сегодня и пойдет речь..</p>
+<p>If you have an iPhone and have bitcoin, then I highly recommend using <a href="https://bluewallet.io/">Blue Wallet</a> to secure your BTC. This article will walk you through the basic steps for installing, securing and using Blue Wallet on iPhone. But, before getting started, it is a good idea to have a pen and paper ready. Remember to start with small amounts of bitcoin until these concepts make more sense and you are comfortable putting your funds in a mobile wallet. And always backup your seed phrase!</p>
+<h2 id="step-one-install-blue-wallet">
+  Step One: Install Blue Wallet
+  <a class="anchor" href="#step-one-install-blue-wallet">#</a>
+</h2>
+<p>Blue Wallet installs just like any other app on your iPhone. Navigate to your Apple App store app and select download. Check Blue Wallet&rsquo;s <a href="https://bluewallet.io/">website</a> for more details.</p>
+<div class="imageWrapper">
+    <img src="/img/bluewallet/01.webp">
+</div>
+<p>If prompted, enter your Apple ID password. Once installed, launch the Blue Wallet application.</p>
+<div class="imageWrapper">
+    <img src="/img/bluewallet/02.png">
+</div>
+<h2 id="step-two-wallet-setup">
+  Step Two: Wallet Setup
+  <a class="anchor" href="#step-two-wallet-setup">#</a>
+</h2>
+<p>Users can decide to use Blue Wallet with the standard settings or with advanced settings enabled. Advanced settings allow users to utilize more features, like adding entropy (randomness) to their seeds with dice rolls or coin flips, to set up wallets for different Bitcoin address types and more.</p>
+<p>To enable advanced options, select the three-dot menu in the upper-righthand corner of the homescreen, then select &ldquo;General.&rdquo;</p>
+<div class="imageWrapper">
+    <img src="/img/bluewallet/03.png">
+</div>
+<div class="imageWrapper">
+    <img src="/img/bluewallet/04.png">
+</div>
+<p>Then toggle the &ldquo;Advanced Mode&rdquo; slider and select the back arrow to return to the wallet homescreen.</p>
+<p>From there, select &ldquo;Add a wallet.&rdquo;</p>
+<div class="imageWrapper">
+    <img src="/img/bluewallet/05.png">
+</div>
+<div class="imageWrapper">
+    <img src="/img/bluewallet/06.png">
+</div>
+<p>You can name your wallet anything that is convenient for you, I chose &ldquo;BW Demo&rdquo; for this example.</p>
+<p>Then you can choose the kind of wallet that you would like to create. I chose a Bitcoin wallet for this example.</p>
+<p>If you decided to enable the advanced options, you will notice that you can choose the address type for your new Bitcoin wallet. I recommend sticking with the BIP84 Bech32 native SegWit address type. These are the addresses that start with &ldquo;bc1&rdquo; and typically, they can save you on data space in your transactions which translate to less expensive miner fees.</p>
+<p>Then, if you would like to provide your own entropy in your wallet seed, you can select &ldquo;Provide entropy via dice rolls&rdquo; and then you will be able to select various sided dice or you can flip coins to generate random numbers to include in the generation of your seed. This is not required, but it is a nice option to have.</p>
+<p>Alternatively, select the blue &ldquo;Create&rdquo; button when you are ready to move on.</p>
+<div class="imageWrapper">
+    <img src="/img/bluewallet/07.png">
+</div>
+<div class="imageWrapper">
+    <img src="/img/bluewallet/08.png">
+</div>
+<h2 id="step-thee-secure-the-seed-phrase">
+  Step Thee: Secure The Seed Phrase
+  <a class="anchor" href="#step-thee-secure-the-seed-phrase">#</a>
+</h2>
+<p>Note: This is the most important step.</p>
+<ol>
+<li>Write down your words in order on a piece of paper</li>
+<li>Secure this piece of paper as though it were gold or jewelry
+<ol>
+<li>Do not screen-shot these words</li>
+<li>Do not save these words on a computer or on your phone</li>
+<li>Do not say these words out loud</li>
+<li>Never share these words with anyone for any reason</li>
+<li>Your bitcoin is only as secure as your 12 words</li>
+</ol>
+</li>
+<li>Double check your work then confirm acknowledgement that you have secured your 12 words</li>
+<li>Select “OK, I wrote this down”</li>
+</ol>
+<p>Note: If you utilized the advanced option to provide your own entropy, then you should have 24 words to write down. Once you get more serious about Bitcoin, consider <a href="https://www.econoalchemist.com/post/backup">securing your seed phrases</a> in metal instead of on paper.</p>
+<div class="imageWrapper">
+    <img src="/img/bluewallet/09.png">
+</div>
+<h2 id="step-four-receive-bitcoin">
+  Step Four: Receive Bitcoin
+  <a class="anchor" href="#step-four-receive-bitcoin">#</a>
+</h2>
+<p>Now that your new Bitcoin wallet is set up and you have secured your 12-word seed phrase, you are ready to start receiving bitcoin.</p>
+<p>From the homescreen, simply select the wallet icon for the wallet you just created.</p>
+<p>This will bring you into the wallet where you can then select the &ldquo;Receive&rdquo; button at the bottom of the screen to display your first Bitcoin address QR code.</p>
+<div class="imageWrapper">
+    <img src="/img/bluewallet/10.png">
+</div>
+<div class="imageWrapper">
+    <img src="/img/bluewallet/11.png">
+</div>
+<p>Before displaying your QR code, Blue Wallet will double check with you to be sure that you have written down your seed phrase. Then you will be asked if you would like to receive notifications of incoming payments.</p>
+<div class="imageWrapper">
+    <img src="/img/bluewallet/12.png">
+</div>
+<div class="imageWrapper">
+    <img src="/img/bluewallet/13.png">
+</div>
+<p>Now you should see your first Bitcoin address QR code. You can physically display this QR code to someone and they can scan it with their wallet to send you bitcoin. Or you can copy/paste the address text and send your receiving address to someone that way. Be aware of the privacy implications when sharing your Bitcoin address; all transactions on the <a href="https://bitcoinmagazine.com/guides/what-is-blockchain">blockchain</a> are available to the public, so it is a good idea to keep this information separate from your identity.</p>
+<p>Once a payment transaction from your sender is broadcast to the network, you should see the pending receipt in your wallet within moments. Your transaction will remain in a &ldquo;pending&rdquo; state until it has a certain number of confirmations. Each confirmation means that an additional block has been added to the Bitcoin blockchain after the block that contains your transaction. Typically, it is recommended to allow at least three to six block confirmations before trusting that your received funds are secure.</p>
+<div class="imageWrapper">
+    <img src="/img/bluewallet/14.png">
+</div>
+<div class="imageWrapper">
+    <img src="/img/bluewallet/15.png">
+</div>
+<h2 id="step-five-spend-bitcoin">
+  Step Five: Spend Bitcoin
+  <a class="anchor" href="#step-five-spend-bitcoin">#</a>
+</h2>
+<p>Once your received funds have been confirmed, a green deposit arrow will be displayed next to the transaction. Likewise, spent funds will have a red withdrawal arrow next to them once they have been confirmed.</p>
+<p>As you make transactions from your wallet, they will appear in a list when you open your wallet. To spend bitcoin that is available in your wallet, simply select the &ldquo;Send&rdquo; button at the bottom of your screen.</p>
+<p>You will be prompted for additional details on the next screen.</p>
+<div class="imageWrapper">
+    <img src="/img/bluewallet/16.png">
+</div>
+<p>On the next screen, you will be asked for the Bitcoin address that you want to send funds to. You can either paste an address if you have copied one onto your clipboard, or you can select the &ldquo;Scan&rdquo; icon in the address dialog box to initialize your iPhone&rsquo;s camera and physically scan a Bitcoin address QR code from someone that you are sending funds to.</p>
+<p>Once scanned, the address text will be displayed in the address dialog box. It is important to check and double check that the address text matches the address you are trying to send funds to.</p>
+<div class="imageWrapper">
+    <img src="/img/bluewallet/17.png">
+</div>
+<div class="imageWrapper">
+    <img src="/img/bluewallet/18.png">
+</div>
+<p>If you want, you can spend your wallet&rsquo;s full balance by selecting the three-dot menu in the upper-righthand corner. Then select &ldquo;Use Full Balance.&rdquo; You will be asked to confirm that you want to spend the entire balance of your wallet.</p>
+<p>Blue Wallet also has the option of advanced features like coin control, replace by fee and more from this menu.</p>
+<div class="imageWrapper">
+    <img src="/img/bluewallet/19.png">
+</div>
+<div class="imageWrapper">
+    <img src="/img/bluewallet/20.png">
+</div>
+<p>Finally, you will be asked to select a miners’ fee rate. This is based on the data size of your transaction and is used as an incentive to get your transaction included in the blockchain more quickly. You can select from three predetermined speeds or you can choose a custom fee rate.</p>
+<p>Once ready, confirm the details of your transaction one last time and then select the blue &ldquo;Send now&rdquo; button.</p>
+<p>Your transaction will be broadcast to the Bitcoin network. Remember, if you are not using your own node, you are trusting someone else&rsquo;s. Running your own node goes beyond the scope of this article but for some good resources check <a href="https://bitcoiner.guide/node/">here</a>, <a href="https://www.youtube.com/watch?v=pyylkpR4DDk&amp;feature=youtu.be">here</a> and <a href="https://twitter.com/meister_ancap/status/1343836228194623488?s=21">here</a>.</p>
+<div class="imageWrapper">
+    <img src="/img/bluewallet/21.png">
+</div>
+<div class="imageWrapper">
+    <img src="/img/bluewallet/22.png">
+</div>
+<p>Once your transaction has been sent, it will be displayed in your transaction list in your wallet.</p>
+<div class="imageWrapper">
+    <img src="/img/bluewallet/23.png">
+</div>
+<p>You can also watch <a href="https://youtu.be/i7dXYGjn1u8">this video</a> for more on installing and setting up Blue Wallet on iPhone:</p>
 
 <div class="youtubeWrapper">
     <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-        <iframe src="https://www.youtube.com/embed/67ghAeSTLbY" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video" loading="lazy"></iframe>
-    </div>
-    <div class="youtubeWrapper_hint">
-        <em>Материал также доступен в видеоформате, но обратите внимание, что после выхода видео команда BlueWallet отказалась от кастодиальных услуг по управлению вашими ЛН-сатошиками.</em>
+        <iframe src="https://www.youtube.com/embed/i7dXYGjn1u8" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video" loading="lazy"></iframe>
     </div>
 </div>
 
-<hr>
-<p>Мобильные кошельки часто воспринимаются как менее надежные инструменты защиты ваших сбережений и, как правило, используются для хранения незначительных сумм и проведения небольших платежей. В случае большинства мобильных кошельков этот подход является верным, а если вы еще не уверены в своем подходе к хранению собственных сбережений, мы рекомендуем обратить внимание на посвященную этой теме статью &ldquo;<a href="/storing-keys/">Биткоин-кошельки: зачем и как хранить свои приватные ключи</a>&rdquo;.</p>
-<h2 id="bluewallet--мобильная-крепость-для-ваших-биткоинов">
-  BlueWallet – мобильная крепость для ваших биткоинов
-  <a class="anchor" href="#bluewallet--%d0%bc%d0%be%d0%b1%d0%b8%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d0%ba%d1%80%d0%b5%d0%bf%d0%be%d1%81%d1%82%d1%8c-%d0%b4%d0%bb%d1%8f-%d0%b2%d0%b0%d1%88%d0%b8%d1%85-%d0%b1%d0%b8%d1%82%d0%ba%d0%be%d0%b8%d0%bd%d0%be%d0%b2">#</a>
+<h2 id="conclusion">
+  Conclusion
+  <a class="anchor" href="#conclusion">#</a>
 </h2>
-<p>Хотя большинство пользователей мобильных кошельков привыкли использовать их исключительно для хранения и передачи незначительных сумм, некоторые проекты выводят возможности таких клиентов на новый уровень, повышая безопасность хранения, предоставляя дополнительные функции и расширяя возможности пользователей. Одним из таких проектов является Lightning-кошелек <a href="https://bluewallet.io/">BlueWallet</a>.</p>
-<p>Я пользуюсь кошельком BlueWallet практически с момента его запуска и имел возможность наблюдать за его развитием. Изначально приложение и правда представляло собой немногим более, чем кошельки-конкуренты с поддержкой сети Lightning, но сегодня, спустя всего пару лет, BlueWallet может похвастаться множеством функций, недоступных даже на некоторых десктоп-кошельках. Именно об этих функциях сегодня и пойдет речь.</p>
-<hr>
-<h2 id="функции-для-чайников">
-  Функции для чайников
-  <a class="anchor" href="#%d1%84%d1%83%d0%bd%d0%ba%d1%86%d0%b8%d0%b8-%d0%b4%d0%bb%d1%8f-%d1%87%d0%b0%d0%b9%d0%bd%d0%b8%d0%ba%d0%be%d0%b2">#</a>
-</h2>
-<h3 id="многочисленные-биткоин-кошельки">
-  Многочисленные биткоин-кошельки
-  <a class="anchor" href="#%d0%bc%d0%bd%d0%be%d0%b3%d0%be%d1%87%d0%b8%d1%81%d0%bb%d0%b5%d0%bd%d0%bd%d1%8b%d0%b5-%d0%b1%d0%b8%d1%82%d0%ba%d0%be%d0%b8%d0%bd-%d0%ba%d0%be%d1%88%d0%b5%d0%bb%d1%8c%d0%ba%d0%b8">#</a>
-</h3>
-<p>Архитектура с несколькими кошельками обеспечивает максимальную гибкость. BlueWallet стремится поддерживать самые высокие стандарты кошельков. Помимо создания биткоин- и Lightning-кошельков, Watch-only кошельков и мультисиг-хранилищ, BlueWallet может импортировать большинство стандартов кошельков, включая кошельки Electrum и Bread.</p>
-<div class="imageWrapper">
-    <img src="/img/112.png">
-</div>
-<div class="imageWrapper">
-    <img src="/img/113.png">
-</div>
-<div class="imageWrapper">
-    <img src="/img/114.png">
-</div>
-<hr>
-<h2 id="интеграция-lightning">
-  Интеграция Lightning
-  <a class="anchor" href="#%d0%b8%d0%bd%d1%82%d0%b5%d0%b3%d1%80%d0%b0%d1%86%d0%b8%d1%8f-lightning">#</a>
-</h2>
-<p>Кошелек Blue позволяет вам импортировать Лайтнинг-кошельки для удобного взаимодействия с вашими сатошиками в самой быстрой и доступной сети для передачи биткоина. Вы можете импортировать как кастодиальные решения, например, Alby, так и некастодиальные кошельки, запущенные на собственном узле благодаря таким программным решениям как Umbrel, MyNode и Start9.</p>
-<div class="imageWrapper">
-    <img src="/img/115.png">
-</div>
-<p><em>Возможности:</em></p>
-<ul>
-<li>импорт кастодиального кошелька-браузерного расширения Alby (или любого другого) позволяет вам управлять вашими средствами с мобильного телефона создавать инвойсы, отправлять и получать средства;</li>
-<li>подключение собственного лайтнинг узла дает вам все преимущества самостоятельного управления своими лайтнинг-сатошиками, позволяя при этом оставаться мобильным</li>
-<li>LNurl: позволяет вам проще взаимодействовать с сервисами, поддерживающими LNurl;</li>
-<li>marketplace (рынок приложений): доступ к совместимым с Lightning сервисам, возможность участия в киберэкономике второго слоя;</li>
-<li>Лайтнинг-браузер: прямой доступ к вашим любимым приложениям, поддерживающим Lightning, из BlueWallet-браузера.</li>
-</ul>
-<h3 id="управление-транзакциями-и-комиссиями">
-  Управление транзакциями и комиссиями
-  <a class="anchor" href="#%d1%83%d0%bf%d1%80%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%b8%d0%b5-%d1%82%d1%80%d0%b0%d0%bd%d0%b7%d0%b0%d0%ba%d1%86%d0%b8%d1%8f%d0%bc%d0%b8-%d0%b8-%d0%ba%d0%be%d0%bc%d0%b8%d1%81%d1%81%d0%b8%d1%8f%d0%bc%d0%b8">#</a>
-</h3>
-<p>BlueWallet предоставляет возможность оценки комиссий, предлагая выбор цели подтверждения транзакции через 10 минут, 3 часа или 1 день. Кошелек также рассчитывает в реальном времени, сколько будет потрачено в качестве комиссионных.</p>
-<div class="imageWrapper">
-    <img src="/img/117.png">
-</div>
-<p>Помимо этого есть возможность отменить отправленные транзакции, воспользоваться функциями &ldquo;Сменить комиссию&rdquo; (RBF) или &ldquo;Ребенок платит за родителя&rdquo; (CPFP).</p>
-<hr>
-<h2 id="продвинутые-функции">
-  Продвинутые функции
-  <a class="anchor" href="#%d0%bf%d1%80%d0%be%d0%b4%d0%b2%d0%b8%d0%bd%d1%83%d1%82%d1%8b%d0%b5-%d1%84%d1%83%d0%bd%d0%ba%d1%86%d0%b8%d0%b8">#</a>
-</h2>
-<h3 id="watch-only-кошелек">
-  Watch-only кошелек
-  <a class="anchor" href="#watch-only-%d0%ba%d0%be%d1%88%d0%b5%d0%bb%d0%b5%d0%ba">#</a>
-</h3>
-<p>Кошельки с функцией Watch-only (только наблюдение) позволяют следить за своим холодным хранилищем или бумажным кошельком, не прикасаясь к приватному ключу. С легкостью импортируйте свой публичный адрес, xpub или ypub и следите за ним из приложения, не перемещая средств.</p>
-<div class="imageWrapper">
-    <img src="/img/118.png">
-</div>
-<p><em>Возможности:</em></p>
-<ul>
-<li>xpub/ypub/zpub: адрес x/y/zpub или адрес главного публичного ключа можно передать для генерации адресов получения;</li>
-<li>публичный адрес: отслеживайте интересующие вас адреса;</li>
-<li>получение: генерируйте адреса и QR-коды для получения;</li>
-<li>подпись в режиме оффлайн: отправляйте транзакции, подписывая их в режиме оффлайн или с помощью другого кошелька;</li>
-<li>анимированные QR-коды: для улучшения опыта при совершении крупных транзакций;</li>
-<li>аппаратные кошельки: поддержка аппаратных кошельков или вашего решения для холодного хранения.</li>
-</ul>
-<div class="imageWrapper">
-    <img src="/img/119.png">
-<p><em>Первые шаги пользователя Lightning</em></p>
-</div>
-<p>Упомянув поддержку аппаратных кошельков, хотим обратить ваше внимание на наше любимое решение в данном сегменте, кошелек Coldcard. Подробнее о кошельке и его настройке можно узнать из нашего гида &ldquo;<a href="/coldcard">Что такое Coldcard?</a>&rdquo;.</p>
-<h3 id="мультисиг-хранилище">
-  Мультисиг-хранилище
-  <a class="anchor" href="#%d0%bc%d1%83%d0%bb%d1%8c%d1%82%d0%b8%d1%81%d0%b8%d0%b3-%d1%85%d1%80%d0%b0%d0%bd%d0%b8%d0%bb%d0%b8%d1%89%d0%b5">#</a>
-</h3>
-<div class="imageWrapper">
-    <img src="/img/120.png">
-</div>
-<p>Мультисиг [<a href="/multisig-1">1</a>] [<a href="/multisig-2">2</a>] – самая безопасная схема хранения биткоинов. Мультисиг напоминает хранилище, где для расходования монет требуется несколько ключей. Рекомендуется для холодного хранения и хранения больших сумм.</p>
-<p><em>Возможности:</em></p>
-<ul>
-<li>простота создания: абсолютная гибкость в выборе количества ключей и типов адресов.</li>
-<li>широкие возможности импорта: с легкостью импортируйте или восстанавливайте любую схему. Поддерживается совместимость с большинством кошельков;</li>
-<li>резервное копирование ключей: безопасное резервное копирование ключей для подписи одновременно со всеми pubkeys;</li>
-<li>резервное копирование watch-only кошельков: с легкостью создавайте резервные копии и распределяйте координационные настройки (pubkeys) для повышения безопасности;</li>
-<li>воздушный зазор (air gap): поддержка PSBT (частично подписанной биткоин-транзакции) и QR-кодов для достижения максимальной безопасности;</li>
-<li>возможность редактирования настроек: с легкостью меняйте настройки, проводите ротацию ключей или открывайте возможность быстрой подписи в чрезвычайных ситуациях.</li>
-</ul>
-
-<div class="youtubeWrapper">
-    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-        <iframe src="https://www.youtube.com/embed/V7hzuerITOM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video" loading="lazy"></iframe>
-    </div>
-    <div class="youtubeWrapper_hint">
-        <em>Демо-видео мультисиг-тракнзакции с BlueWallet:</em>
-    </div>
-</div>
-
-<hr>
-<h2 id="дополнительные-функции">
-  Дополнительные функции
-  <a class="anchor" href="#%d0%b4%d0%be%d0%bf%d0%be%d0%bb%d0%bd%d0%b8%d1%82%d0%b5%d0%bb%d1%8c%d0%bd%d1%8b%d0%b5-%d1%84%d1%83%d0%bd%d0%ba%d1%86%d0%b8%d0%b8">#</a>
-</h2>
-<h3 id="возможность-отрицания">
-  Возможность отрицания
-  <a class="anchor" href="#%d0%b2%d0%be%d0%b7%d0%bc%d0%be%d0%b6%d0%bd%d0%be%d1%81%d1%82%d1%8c-%d0%be%d1%82%d1%80%d0%b8%d1%86%d0%b0%d0%bd%d0%b8%d1%8f">#</a>
-</h3>
-<div class="imageWrapper">
-    <img src="/img/121.png">
-</div>
-<p>Функция, повышающая вашу личную безопасность. BlueWallet позволяет вам задать приложению дополнительный пароль, который будет расшифровывать определенный кошелек-обманку. Эта функция будет полезна в любой ситуации, где вы можете оказаться вынуждены раскрыть свои ключи или когда вы просто не хотите показывать свой настоящий кошелек.</p>
-<h3 id="восстановление-кошельков">
-  Восстановление кошельков
-  <a class="anchor" href="#%d0%b2%d0%be%d1%81%d1%81%d1%82%d0%b0%d0%bd%d0%be%d0%b2%d0%bb%d0%b5%d0%bd%d0%b8%d0%b5-%d0%ba%d0%be%d1%88%d0%b5%d0%bb%d1%8c%d0%ba%d0%be%d0%b2">#</a>
-</h3>
-<div class="imageWrapper">
-    <img src="/img/122.png">
-</div>
-<p>“Волшебная форма&quot;, в которую вы можете импортировать все, что угодно. Она сделает все возможное, чтобы понять формат и импортировать ваш кошелек в приложение BlueWallet.</p>
-<h3 id="совмещение-пакетирование-транзакций">
-  Совмещение (пакетирование) транзакций
-  <a class="anchor" href="#%d1%81%d0%be%d0%b2%d0%bc%d0%b5%d1%89%d0%b5%d0%bd%d0%b8%d0%b5-%d0%bf%d0%b0%d0%ba%d0%b5%d1%82%d0%b8%d1%80%d0%be%d0%b2%d0%b0%d0%bd%d0%b8%d0%b5-%d1%82%d1%80%d0%b0%d0%bd%d0%b7%d0%b0%d0%ba%d1%86%d0%b8%d0%b9">#</a>
-</h3>
-<div class="imageWrapper">
-    <img src="/img/123.png">
-</div>
-<p>Отправляйте несколько транзакций одним пакетом. Это полезно, если вам нужно отправить несколько транзакций и вы хотите сэкономить на комиссиях. Все ваши транзакции будут объединены и вы оплатите комиссию лишь однажды, что сэкономит вам саты.</p>
-<h3 id="виджет-для-мобильных-устройств">
-  Виджет для мобильных устройств
-  <a class="anchor" href="#%d0%b2%d0%b8%d0%b4%d0%b6%d0%b5%d1%82-%d0%b4%d0%bb%d1%8f-%d0%bc%d0%be%d0%b1%d0%b8%d0%bb%d1%8c%d0%bd%d1%8b%d1%85-%d1%83%d1%81%d1%82%d1%80%d0%be%d0%b9%d1%81%d1%82%d0%b2">#</a>
-</h3>
-<div class="imageWrapper">
-    <img src="/img/124.png">
-<p><em>Добавьте виджет BlueWallet на дисплей своего iPhone или iPad</em></p>
-</div>
-<p>Пользователей iOS порадуют виджеты BlueWallet. Возможно, постоянное предоставление информации о балансах кошелька на домашнем дисплее придется по душе не каждому, но возможность просматривать текущую цену биткоина, цену сатоши к доллару и текущую стоимость комиссий пригодится многим.</p>
-<h3 id="интеграции">
-  Интеграции
-  <a class="anchor" href="#%d0%b8%d0%bd%d1%82%d0%b5%d0%b3%d1%80%d0%b0%d1%86%d0%b8%d0%b8">#</a>
-</h3>
-<p>Помимо всего вышеупомянутого BlueWallet также позволяет интегрировать множество сторонних приложений в свой UI. Вы можете объединить его с <a href="https://t.me/lntxbot">lntxbot</a>, подключить кошелек к собственной ноде, воспользоваться опцией Local Trader, предоставленной одноранговой площадкой для купли-продажи биткоинов HODL HODL. Подробнее о площадке и способах покупки биткоинов в обход процедуры KYC можно узнать из нашего видеогида:</p>
-
-<div class="youtubeWrapper">
-    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-        <iframe src="https://www.youtube.com/embed/aZQ-9rZG0-w" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video" loading="lazy"></iframe>
-    </div>
-    <div class="youtubeWrapper_hint">
-        <em>Также доступна <a href="/hodl-hodl">текстовая версия</a></em>
-    </div>
-</div>
-
-<h3 id="и-многое-другое">
-  ..И многое другое
-  <a class="anchor" href="#%d0%b8-%d0%bc%d0%bd%d0%be%d0%b3%d0%be%d0%b5-%d0%b4%d1%80%d1%83%d0%b3%d0%be%d0%b5">#</a>
-</h3>
-<p>BlueWallet предоставляет еще множество функций, но их разбор займет слишком много времени и будет полезен не каждому. Мы лишь перечислим самые интересные на наш взгляд …</p>
-<ul>
-<li>Контроль монет: Позволяет видеть, помечать, замораживать или выбирать неизрасходованные транзакционные выходы (UTXO) для создания транзакций, что расширяет возможности управления кошельком, помогает повысить приватность и эффективность взаимодействия с Биткоином.</li>
-<li>Payjoin: Payjoin или Pay-to-endpoint – это функция, которая позволяет нарушить распространенную эвристику анализа цепочки, когда два участника строят транзакцию вместе.</li>
-<li>Режим оффлайн: Если у вас нет подключения к Интернету, BlueWallet позволит вам генерировать кошельки или адреса, чтобы получать средства в режиме оффлайн.</li>
-<li>Энтропия от пользователя: Возможность вручную генерировать энтропию для создания кошелька через броски монет или игральных костей. Это продвинутая функция, будьте внимательны и осторожны при ее использовании.</li>
-<li>Трансляция транзакций: Возможность транслировать транзакцию, которая была ранее подписана BlueWallet или другим Биткоин-приложением.</li>
-<li>Распределенное хранение: Помимо хранилища для всех ваших кошельков, вы можете настроить несколько зашифрованных хранилищ, доступ к которым можно получить с помощью разных паролей. Это полезно в том случае, если вы не хотите хранить все свои кошельки в одном месте, или у вас есть другие члены семьи или сотрудники с доступом к приложению.</li>
-<li>Открытый исходный код: BlueWallet создан на основе публичного репозитория, обновляемого и доступного на <a href="https://github.com/bluewallet/bluewallet">GitHub</a>. Это означает, что любой пользователь может создать и запустить его самостоятельно. Проверяйте код и вносите свой вклад в развитие кошелька.</li>
-</ul>
-<p>… и порекомендуем скачать BlueWallet <a href="https://bluewallet.io/">с официального сайта</a>, чтобы воспользоваться его функциями:</p>
-<p><em>Увидимся на той стороне кроличьей норы</em></p>
-<p><em>Тони</em> ⚡️</p>
+<p>Blue Wallet is a sleek and powerful wallet available on iPhone as well as Android. I only covered the iPhone application in this article.</p>
+<p>Blue Wallet is packed with advanced features like user-provided entropy via dice rolls and coin toss, coin control, variable miners fees, duress wallet, and Lightning integration. But my favorite feature is the ability to handle partially-signed bitcoin transactions (PSBT). With PSBT, you can import your hardware wallet xpub and use Blue Wallet as a watch-only wallet. This allows you to monitor the balance on your hardware wallet while on the go as well as to generate receiving addresses for your hardware wallet. Watch-only wallets cannot spend from your hardware wallet, so your funds are always secure.</p>
+<p>When you want to spend from your hardware wallet, you can enter the watch-only wallet in your Blue Wallet application, construct the spend transaction and then export it as a PSBT. Then you can load this PSBT into your hardware wallet via the MicroSD card option and sign the transaction with your hardware wallet’s private key. Once signed, the transaction can be passed back to your Blue Wallet and broadcast to the network.</p>
+<p>You should now have a basic understanding of how to install Blue Wallet on your iPhone, how to secure your wallet’s 12-word seed phrase and how to receive/send bitcoin.</p>
 </article>
   <hr>
 
@@ -3287,33 +3067,12 @@ https://github.com/alex-shpak/hugo-book
   <ul>
     <li>
       <ul>
-        <li><a href="#bluewallet--мобильная-крепость-для-ваших-биткоинов">BlueWallet – мобильная крепость для ваших биткоинов</a></li>
-        <li><a href="#функции-для-чайников">Функции для чайников</a>
-          <ul>
-            <li><a href="#многочисленные-биткоин-кошельки">Многочисленные биткоин-кошельки</a></li>
-          </ul>
-        </li>
-        <li><a href="#интеграция-lightning">Интеграция Lightning</a>
-          <ul>
-            <li><a href="#управление-транзакциями-и-комиссиями">Управление транзакциями и комиссиями</a></li>
-          </ul>
-        </li>
-        <li><a href="#продвинутые-функции">Продвинутые функции</a>
-          <ul>
-            <li><a href="#watch-only-кошелек">Watch-only кошелек</a></li>
-            <li><a href="#мультисиг-хранилище">Мультисиг-хранилище</a></li>
-          </ul>
-        </li>
-        <li><a href="#дополнительные-функции">Дополнительные функции</a>
-          <ul>
-            <li><a href="#возможность-отрицания">Возможность отрицания</a></li>
-            <li><a href="#восстановление-кошельков">Восстановление кошельков</a></li>
-            <li><a href="#совмещение-пакетирование-транзакций">Совмещение (пакетирование) транзакций</a></li>
-            <li><a href="#виджет-для-мобильных-устройств">Виджет для мобильных устройств</a></li>
-            <li><a href="#интеграции">Интеграции</a></li>
-            <li><a href="#и-многое-другое">..И многое другое</a></li>
-          </ul>
-        </li>
+        <li><a href="#step-one-install-blue-wallet">Step One: Install Blue Wallet</a></li>
+        <li><a href="#step-two-wallet-setup">Step Two: Wallet Setup</a></li>
+        <li><a href="#step-thee-secure-the-seed-phrase">Step Thee: Secure The Seed Phrase</a></li>
+        <li><a href="#step-four-receive-bitcoin">Step Four: Receive Bitcoin</a></li>
+        <li><a href="#step-five-spend-bitcoin">Step Five: Spend Bitcoin</a></li>
+        <li><a href="#conclusion">Conclusion</a></li>
       </ul>
     </li>
   </ul>

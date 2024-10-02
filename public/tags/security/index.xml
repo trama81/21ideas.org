@@ -4,16 +4,93 @@
     <title>Security on 21ideas</title>
     <link>http://localhost:1313/tags/security/</link>
     <description>Recent content in Security on 21ideas</description>
-    <generator>Hugo</generator>
-    <language>ru-RU</language>
-    <lastBuildDate>Sat, 04 May 2024 21:50:09 +0300</lastBuildDate>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 18 Mar 2024 10:46:09 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/security/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Кошелек Mutiny</title>
+      <title>Phoenix: The Non-Custodial Lightning Wallet</title>
+      <link>http://localhost:1313/phoenix/</link>
+      <pubDate>Thu, 02 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/phoenix/</guid>
+      <description>How to use the Lightning Network without trusting anyone? Take Back Control of Your Sats in the Lightning Network.&#xA;The guide written by Tony⚡️.&#xA;Contribute.&#xA;Intro # I would like to share a guide on Phoenix — the non-custodial Lightning wallet. This guide will be useful for those who already are familiar with the Lightning Network and have some experience using it. Let&amp;rsquo;s say you&amp;rsquo;ve already been using a custodial wallet like Wallet Of Satoshi and you want to gain more control over your funds, hold your sats in Lightning Network, and minimize the level of trust to a third party.</description>
+    </item>
+    <item>
+      <title>Electrum Bitcoin Wallet</title>
+      <link>http://localhost:1313/electrum/</link>
+      <pubDate>Tue, 18 Oct 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/electrum/</guid>
+      <description>This guide by Arman The Parman was published in his blog.&#xA;Contribute.&#xA;Why Electrum? # This is a detailed guide on how to use the Electrum Bitcoin Wallet, with solutions to all its traps and quirks -something I’ve developed after several years of use, and teaching students about Bitcoin security/privacy. Electrum is not the best Bitcoin wallet for the person who wants to keep everything as simple as possible, and preferring to remain at the beginner level.</description>
+    </item>
+    <item>
+      <title>Bitcoin Wallets: How, Why and When to Hold Your Own Private Keys</title>
+      <link>http://localhost:1313/how-to-hold-private-keys/</link>
+      <pubDate>Wed, 13 May 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/how-to-hold-private-keys/</guid>
+      <description>Not Your Keys, Not Your Bitcoin.&#xA;This article by Brandon Quittem was published on swanbitcoin.com website.&#xA;Contribute.&#xA;Alright so you’ve acquired some Bitcoin, now what’s the best way to store it? Here we’ll take you through the process of finding the right Bitcoin wallet for you.&#xA;Although it seems like a straight­for­ward question, there is a surprising amount of nuance to consider. How much Bitcoin do you have? How often do you plan to spend it?</description>
+    </item>
+    <item>
+      <title>LNbits: A Swiss knife among Lightning apps</title>
+      <link>http://localhost:1313/lnbits/</link>
+      <pubDate>Mon, 02 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/lnbits/</guid>
+      <description>LNbits is the Swiss knife among lightning apps – invoices, tips, paywalls, onchain wallet monitoring, event ticketing and more.&#xA;The guide written by Tony⚡️.&#xA;Contribute.&#xA;LNbits # Today, we&amp;rsquo;re going to take a look at a wallet app accessible right from the browser that boasts so many features that it&amp;rsquo;s the envy of any software. This is LNbits.&#xA;It is worth starting with the fact that this service is still in the phase of active development, and some functionality is yet to be implemented.</description>
+    </item>
+    <item>
+      <title>Using Bitcoin</title>
+      <link>http://localhost:1313/start/guide/</link>
+      <pubDate>Tue, 06 Dec 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/start/guide/</guid>
+      <description> The guide is not yet available in English. Want to cover this topic or support the pproject? Visit the Contribute page. </description>
+    </item>
+    <item>
+      <title>Why You Should Run Your Own Bitcoin Node</title>
+      <link>http://localhost:1313/practice/bitcoin-node/</link>
+      <pubDate>Tue, 03 Aug 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/practice/bitcoin-node/</guid>
+      <description>Here’s why it&amp;rsquo;s necessary to participate in the Bitcoin Core network of nodes, for six simple reasons.&#xA;This article by Arman The Parman was published in Bitcoin Magazine.&#xA;Contribute.&#xA;Let me explain quickly that a Bitcoin node is any computer which runs a piece of software (Bitcoin Core) that has some important jobs:&#xA;Your Bitcoin node needs to keep a copy of the entire Bitcoin blockchain. It has to connect with other nodes, forming a network of communication, which propagates transactions (transactions are kept in a “mempool”, i.</description>
+    </item>
+    <item>
+      <title>Installing Blue Wallet</title>
+      <link>http://localhost:1313/blue/</link>
+      <pubDate>Wed, 17 Mar 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blue/</guid>
+      <description>This guide by @econoalchemist was published in Bitcoin Magazine.&#xA;Contribute.&#xA;If you have an iPhone and have bitcoin, then I highly recommend using Blue Wallet to secure your BTC. This article will walk you through the basic steps for installing, securing and using Blue Wallet on iPhone. But, before getting started, it is a good idea to have a pen and paper ready. Remember to start with small amounts of bitcoin until these concepts make more sense and you are comfortable putting your funds in a mobile wallet.</description>
+    </item>
+    <item>
+      <title>Buy noKYC Bitcoin with HodlHodl</title>
+      <link>http://localhost:1313/hodl-hodl/</link>
+      <pubDate>Tue, 04 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/hodl-hodl/</guid>
+      <description>This guide by Bitcoin Q+A was published on bitcoiner.guide website.&#xA;Contribute.&#xA;What is Hodl Hodl? # Like Bisq, HodlHodl is a decentralised bitcoin exchange. However, Hodl Hodl is accessed via a web browser rather than a dedicated app. At the application layer, it requires no KYC information although certain sellers do require this. I would advise you to go with a seller that doesn’t ask for your selfie, after all, that’s why we’re here!</description>
+    </item>
+    <item>
+      <title>RoboSats: Private P2P Exchange</title>
+      <link>http://localhost:1313/robosats/</link>
+      <pubDate>Mon, 22 May 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/robosats/</guid>
+      <description>This guide by Bitcoin Q+A was published on bitcoiner.guide website.&#xA;Contribute.&#xA;noKYC # The de-facto way to obtain Bitcoin today, especially as a newcomer, is to do so through a regulated Bitcoin exchange. You hop onto a website, provide an egregious amount of your personal information, often including your name, address, banking details, drivers license and sometimes even a scan of your entire face or a recording of your voice!</description>
+    </item>
+    <item>
+      <title>SeedSigner: DIY Bitcoin Signing Device</title>
+      <link>http://localhost:1313/seedsigner/</link>
+      <pubDate>Fri, 27 May 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/seedsigner/</guid>
+      <description>This comprehensive how-to guide walks you through unboxing, setting up and signing bitcoin transactions with the air-gapped SeedSigner device.&#xA;This guide by @econoalchemist was published in Bitcoin Magazine.&#xA;Contribute.&#xA;This guide demonstrates how to self-custody bitcoin using the SeedSigner. SeedSigner is a project that brings together free and open-source code, inexpensive and general-purpose hardware, and a do-it-yourself (DIY) approach to taking personal responsibility of your bitcoin.&#xA;Source&#xA;Unboxing # This section demonstrates what is included in the full SeedSigner kit.</description>
+    </item>
+    <item>
+      <title>What is Coldcard?</title>
+      <link>http://localhost:1313/coldcard/</link>
+      <pubDate>Fri, 03 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/coldcard/</guid>
+      <description>This guide by Bitcoin Q+A was published on bitcoiner.guide website.&#xA;Contribute.&#xA;What is Coldcard? # Coldcard is a hardware wallet designed by the Coinkite team. A hardware wallets is a device with one main purpose, to keep your bitcoin private keys safe and secure. Anyone with access to your private keys has access to all of the bitcoin in that wallet. Coldcard does not come with its own app or any additional software.</description>
+    </item>
+    <item>
+      <title>Starting with Mutiny Wallet</title>
       <link>http://localhost:1313/mutiny/</link>
-      <pubDate>Sat, 16 Mar 2024 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 02 Mar 2023 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/mutiny/</guid>
-      <description>&lt;p&gt;Недавно я послушал эпизод &lt;a href=&#34;https://fountain.fm/episode/JLUwVlKLRjkUpbffvQEC&#34;&gt;SLP551&lt;/a&gt;, в котором  &lt;a href=&#34;https://stacker.news/stephanlivera&#34;&gt;@stephanlivera&lt;/a&gt; и &lt;a href=&#34;https://stacker.news/benthecarman&#34;&gt;@benthecarman&lt;/a&gt; рассказывали о кошельке Mutiny. Бен наглядно описал несложный процесс начала работы с Mutiny — простая отправка ссылки подключает вас непосредственно к &lt;a href=&#34;http://localhost:1313/what-is-lightning-network&#34;&gt;сети Лайтнинг&lt;/a&gt;. Мне уже давно было интересно узнать о Mutiny, так что самое время проверить его в деле. Давайте окунемся глубже и посмотрим, что же это такое.&lt;/p&gt;&#xA;&lt;blockquote class=&#34;book-hint btc&#34;&gt;&#xA;  &lt;p&gt;Перевод &lt;a href=&#34;https://stacker.news/items/467711/r/Tony&#34;&gt;руководства&lt;/a&gt; от &lt;a href=&#34;https://stacker.news/runningbitcoin&#34;&gt;@runningbitcoin&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/contribute/&#34;&gt;Поддержать проект&lt;/a&gt;.&lt;/p&gt;&#xA;&#xA;&lt;/blockquote&gt;&#xA;&#xA;&lt;h2 id=&#34;возможности-кошелька-mutiny&#34;&gt;&#xA;  Возможности кошелька Mutiny&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%d0%b2%d0%be%d0%b7%d0%bc%d0%be%d0%b6%d0%bd%d0%be%d1%81%d1%82%d0%b8-%d0%ba%d0%be%d1%88%d0%b5%d0%bb%d1%8c%d0%ba%d0%b0-mutiny&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Mutiny — это мобильный Lightning-кошелек с открытым исходным кодом&lt;/li&gt;&#xA;&lt;li&gt;Некастодиальный &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;&#xA;&lt;li&gt;Возможность запуска собственного сервера &lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt; &lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt; &lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;&#xA;&lt;li&gt;Веб-приложение, работающее в браузере&lt;/li&gt;&#xA;&lt;li&gt;Приложения в &lt;a href=&#34;https://blog.mutinywallet.com/mutiny-wallet-android-and-ios/&#34;&gt;App Store и Google Play&lt;/a&gt; &lt;sup id=&#34;fnref:5&#34;&gt;&lt;a href=&#34;#fn:5&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;5&lt;/a&gt;&lt;/sup&gt;, а также доступна установка из файла &lt;a href=&#34;https://github.com/MutinyWallet/mutiny-web/releases&#34;&gt;.apk&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Встроенный поставщик услуг Lightning (LSP) &lt;a href=&#34;https://voltage.cloud&#34;&gt;Voltage&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Интеграция Nostr&lt;/li&gt;&#xA;&lt;li&gt;Авторизация кошелька в Nostr-клиентах (Nostr Wallet Auth)&lt;/li&gt;&#xA;&lt;li&gt;Подарки (простой способ привлечения новых пользователей)&lt;/li&gt;&#xA;&lt;li&gt;Федерации&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;blockquote class=&#34;book-hint btc&#34;&gt;&#xA;  Помимо Mutiny представлено множество кошельков, которые подойдут как новичку, так и опытному пользователю. Советуем ознакомиться с нашим сравнительным гидом по Лайтнинг-кошелькам &lt;a href=&#34;http://localhost:1313/lightning-wallets&#34;&gt;здесь&lt;/a&gt;.&#xA;&lt;/blockquote&gt;&#xA;&#xA;&lt;h2 id=&#34;начало-работы-с-кошельком-mutiny&#34;&gt;&#xA;  Начало работы с кошельком Mutiny&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%d0%bd%d0%b0%d1%87%d0%b0%d0%bb%d0%be-%d1%80%d0%b0%d0%b1%d0%be%d1%82%d1%8b-%d1%81-%d0%ba%d0%be%d1%88%d0%b5%d0%bb%d1%8c%d0%ba%d0%be%d0%bc-mutiny&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;Для начала посетите сайт &lt;a href=&#34;https://www.mutinywallet.com/&#34;&gt;mutinywallet.com&lt;/a&gt;. Здесь у нас есть возможность использовать Mutiny непосредственно &lt;a href=&#34;https://app.mutinywallet.com/&#34;&gt;в браузере&lt;/a&gt; или загрузить приложение из &lt;a href=&#34;https://apps.apple.com/us/app/mutiny-wallet/id6471030760&#34;&gt;App Store&lt;/a&gt; или &lt;a href=&#34;https://play.google.com/store/apps/details?id=com.mutinywallet.mutinywallet&#34;&gt;Google Play&lt;/a&gt;.&lt;/p&gt;</description>
+      <description>Recently, I listened to an episode of SLP551 featuring a discussion between @stephanlivera and @benthecarman about Mutiny Wallet. Ben illustrated the straightforward process of getting started with Mutiny — merely sending a link connects you directly to the Lightning Network. I&amp;rsquo;ve been curious about Mutiny for a while now, so it&amp;rsquo;s about time I checked it out for myself. Let’s dive in and see what it’s all about.&#xA;This article by @runningbitcoin was published on stacker.</description>
     </item>
   </channel>
 </rss>

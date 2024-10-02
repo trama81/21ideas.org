@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Wallets on 21ideas</title>
+    <link>http://localhost:1313/tags/wallets/</link>
+    <description>Recent content in Wallets on 21ideas</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 20 Mar 2024 09:34:04 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/wallets/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bitcoin Wallets: How, Why and When to Hold Your Own Private Keys</title>
+      <link>http://localhost:1313/how-to-hold-private-keys/</link>
+      <pubDate>Wed, 13 May 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/how-to-hold-private-keys/</guid>
+      <description>Not Your Keys, Not Your Bitcoin.&#xA;This article by Brandon Quittem was published on swanbitcoin.com website.&#xA;Contribute.&#xA;Alright so you’ve acquired some Bitcoin, now what’s the best way to store it? Here we’ll take you through the process of finding the right Bitcoin wallet for you.&#xA;Although it seems like a straight­for­ward question, there is a surprising amount of nuance to consider. How much Bitcoin do you have? How often do you plan to spend it?</description>
+    </item>
+    <item>
+      <title>Lightning Wallets</title>
+      <link>http://localhost:1313/lightning-wallets/</link>
+      <pubDate>Tue, 16 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/lightning-wallets/</guid>
+      <description>With repeated bumps of the popularity of monkey JPEGs on the Bitcoin blockchain and in anticipation of the upcoming bull market, onchain fees are a thing to consider in the upcoming future.&#xA;Fees in the network can reach hundreds of sats per virtual byte, and this is far from the limit. Source.&#xA;Lightning Network provides a solution to the painful problem of high fees, but you need to act thoughtfully, without rushing.</description>
+    </item>
+  </channel>
+</rss>

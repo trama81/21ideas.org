@@ -1,20 +1,22 @@
 <!DOCTYPE html>
-<html lang="ru-RU" dir="ltr">
+<html lang="en" dir="ltr">
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&display=swap" rel="stylesheet">  <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Лучший способ покупки биткоинов, не требующий документов.">
+<meta name="description" content="This guide by Bitcoin Q&#43;A was published on bitcoiner.guide website.
+Contribute.
+noKYC # The de-facto way to obtain Bitcoin today, especially as a newcomer, is to do so through a regulated Bitcoin exchange. You hop onto a website, provide an egregious amount of your personal information, often including your name, address, banking details, drivers license and sometimes even a scan of your entire face or a recording of your voice!">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark">
-<meta name="lightning" content="21ideas@getalby.com"><meta property="og:title" content="RoboSats: Приватный p2p обмен" />
-<meta property="og:description" content="Лучший способ покупки биткоинов, не требующий документов." />
+<meta name="lightning" content="21ideas@getalby.com"><meta property="og:title" content="RoboSats: Private P2P Exchange" />
+<meta property="og:description" content="" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://localhost:1313/robosats/" />
-<meta property="og:image" content="http://localhost:1313/img/robosats/cover.png"/>
+<meta property="og:image" content="http://localhost:1313/img/robosats/robo-01-en.png"/>
 
-<title>RoboSats: Приватный p2p обмен | 21ideas</title>
+<title>RoboSats: Private P2P Exchange | 21ideas</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -22,10 +24,10 @@
 <link rel="apple-touch-icon" media="(prefers-color-scheme: dark)" sizes="180x180" href="/apple-touch-icon-dark.png">
 <link rel="icon" type="image/png" media="(prefers-color-scheme: dark)" sizes="32x32" href="/favicon-32x32-dark.png">
 <link rel="icon" type="image/png" media="(prefers-color-scheme: dark)" sizes="16x16" href="/favicon-16x16-dark.png">
-  <link rel="alternate" hreflang="en" href="http://localhost:1313/en/robosats/" title="RoboSats: Private P2P Exchange">
+  <link rel="alternate" hreflang="ru-RU" href="http://localhost:1313/ru/robosats/" title="RoboSats: Приватный p2p обмен">
 <link rel="stylesheet" href="/book.min.44d288673620af09aba4fb7b29ef4c1d1f9c0258f725bd228507764ec1740f0a.css" integrity="sha256-RNKIZzYgrwmrpPt7Ke9MHR&#43;cAlj3Jb0ihQd2TsF0Dwo=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/ru.search.min.760cb93fca4cc9af4d5d957f0e91325f35c604c9b72da7d0d0517ae0f7424f53.js" integrity="sha256-dgy5P8pMya9NXZV/DpEyXzXGBMm3LafQ0FF64PdCT1M=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.322caf709709c011df0f8373a87ef3ce291ba22a62fdd5b8cf00bf824b20d5f8.js" integrity="sha256-MiyvcJcJwBHfD4NzqH7zzikboipi/dW4zwC/gksg1fg=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -53,7 +55,7 @@ https://github.com/alex-shpak/hugo-book
 
 
 <div class="book-search">
-  <input type="text" id="book-search-input" placeholder="Поиск" aria-label="Поиск" maxlength="64" data-hotkeys="s/" />
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
   <div class="book-search-spinner hidden"></div>
   <ul id="book-search-results"></ul>
 </div>
@@ -78,15 +80,15 @@ https://github.com/alex-shpak/hugo-book
     <label for="languages" class="flex justify-between">
       <a role="button" class="flex align-center">
         <img src="/svg/translate.svg" class="book-icon" alt="Languages" />
-        Русский
+        English
       </a>
     </label>
 
     <ul>
       
       <li>
-        <a href="http://localhost:1313/en/robosats/">
-          English
+        <a href="http://localhost:1313/ru/robosats/">
+          Русский
         </a>
       </li>
       
@@ -120,7 +122,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-4b959577bbd662d890894b4ef656e45e" class="toggle"  />
     <label for="section-4b959577bbd662d890894b4ef656e45e" class="flex justify-between">
-      <a href="/start/" class="">Старт</a>
+      <a role="button" class="">Start</a>
     </label>
   
 
@@ -134,7 +136,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/start/start/" class="">Что такое Биткоин?</a>
+    <a href="/start/start/" class="">Bitcoin Basics</a>
   
 
         </li>
@@ -147,7 +149,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/start/guide/" class="">Используем биткоин</a>
+    <a href="/start/guide/" class="">Using Bitcoin</a>
   
 
         </li>
@@ -160,33 +162,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/course/" class="">Биткоин от А до Я</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/bitcoin-myths/" class="">Разрушаем мифы о Биткоине</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/shitcoin-casino/" class="">Не играйте в щиткоин-казино</a>
+    <a href="/shitcoin-gambling-games/" class="">Don’t Play Shitcoin Gambling Games</a>
   
 
         </li>
@@ -206,7 +182,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-c8e2b39e67e72b49a36ee1ec8355ecba" class="toggle"  />
     <label for="section-c8e2b39e67e72b49a36ee1ec8355ecba" class="flex justify-between">
-      <a href="/theory/" class="">Теория</a>
+      <a href="/theory/" class="">Theory</a>
     </label>
   
 
@@ -222,7 +198,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-981a6953479a2e41da30ae73c119d6e2" class="toggle"  />
     <label for="section-981a6953479a2e41da30ae73c119d6e2" class="flex justify-between">
-      <a href="/economics/" class="">Экономика</a>
+      <a href="/economics/" class="">Economics</a>
     </label>
   
 
@@ -238,7 +214,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-43f26905d14df4de3737d0d5dfd90ca0" class="toggle"  />
     <label for="section-43f26905d14df4de3737d0d5dfd90ca0" class="flex justify-between">
-      <a href="/pzv/" class="">Постепенно, затем внезапно</a>
+      <a href="/gradually-then-suddenly/" class="">Gradually, Then Suddenly</a>
     </label>
   
 
@@ -252,7 +228,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/postepenno-zatem-vnezapno/" class="">Введение</a>
+    <a href="/gradually-then-suddenly/intro/" class="">Intro</a>
   
 
         </li>
@@ -265,7 +241,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-nelzya-skopirovat/" class="">Биткоин нельзя скопировать</a>
+    <a href="/gradually-then-suddenly/bitcoin-cant-be-copied/" class="">Bitcoin Can’t Be Copied</a>
   
 
         </li>
@@ -278,7 +254,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-ne-slishkom-volatilen/" class="">Биткоин не слишком волатилен</a>
+    <a href="/gradually-then-suddenly/bitcoin-is-not-too-volatile/" class="">Bitcoin Is Not Too Volatile</a>
   
 
         </li>
@@ -291,7 +267,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-ne-tratit-energiyu-zrya/" class="">Биткоин не тратит энергию зря</a>
+    <a href="/gradually-then-suddenly/bitcoin-does-not-waste-energy/" class="">Bitcoin Does Not Waste Energy</a>
   
 
         </li>
@@ -304,7 +280,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-ne-slishkom-medlennyj/" class="">Биткоин не слишком медленный</a>
+    <a href="/gradually-then-suddenly/bitcoin-is-not-too-slow/" class="">Bitcoin is Not Too Slow</a>
   
 
         </li>
@@ -317,7 +293,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-eto-ispravit/" class="">Биткоин это исправит</a>
+    <a href="/gradually-then-suddenly/bitcoin-fixes-this/" class="">Bitcoin Fixes This</a>
   
 
         </li>
@@ -330,7 +306,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-ne-blokchejn/" class="">Биткоин, не блокчейн</a>
+    <a href="/gradually-then-suddenly/bitcoin-not-blockchain/" class="">Bitcoin, Not Blockchain</a>
   
 
         </li>
@@ -343,7 +319,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-nichem-ne-podkreplen/" class="">Биткоин ничем не подкреплен?</a>
+    <a href="/gradually-then-suddenly/bitcoin-is-not-backed-by-nothing/" class="">Bitcoin is Not Backed by Nothing</a>
   
 
         </li>
@@ -356,7 +332,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-ne-finansovaya-piramida/" class="">Биткоин — не финансовая пирамида</a>
+    <a href="/gradually-then-suddenly/bitcoin-is-not-a-pyramid-scheme/" class="">Bitcoin is Not a Pyramid Scheme</a>
   
 
         </li>
@@ -369,7 +345,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-ne-mozhet-byt-zabanen/" class="">Биткоин не может быть забанен</a>
+    <a href="/gradually-then-suddenly/bitcoin-cannot-be-banned/" class="">Bitcoin Cannot be Banned</a>
   
 
         </li>
@@ -382,7 +358,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-ne-dlya-prestupnikov/" class="">Биткоин не для преступников</a>
+    <a href="/gradually-then-suddenly/bitcoin-is-not-for-criminals/" class="">Bitcoin is Not for Criminals</a>
   
 
         </li>
@@ -395,7 +371,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-obescenivaet-ostalnye-dengi/" class="">Биткоин обесценивает остальные деньги</a>
+    <a href="/gradually-then-suddenly/bitcoin-obsoletes-all-other-money/" class="">Bitcoin Obsoletes All Other Money</a>
   
 
         </li>
@@ -408,7 +384,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-zov-k-edineniyu/" class="">Биткоин — зов к единению</a>
+    <a href="/gradually-then-suddenly/bitcoin-is-a-rally-cry/" class="">Bitcoin is a Rally Cry</a>
   
 
         </li>
@@ -421,7 +397,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-eto-zdravyj-smysl/" class="">Биткоин — это здравый смысл</a>
+    <a href="/gradually-then-suddenly/bitcoin-is-common-sense/" class="">Bitcoin is Common Sense</a>
   
 
         </li>
@@ -434,7 +410,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-antihrupok/" class="">Биткоин антихрупок</a>
+    <a href="/gradually-then-suddenly/bitcoin-is-antifragile/" class="">Bitcoin is Antifragile</a>
   
 
         </li>
@@ -447,7 +423,20 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-velikaya-definancializaciya/" class="">Биткоин — великая дефинанcиализация</a>
+    <a href="/gradually-then-suddenly/bitcoin-is-one-for-all/" class="">Bitcoin is One for All</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/gradually-then-suddenly/bitcoin-is-the-great-definancialization/" class="">Bitcoin is the Great Definancialization</a>
   
 
         </li>
@@ -467,7 +456,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-070af377b46d38e45de9a60dd3c8e7d0" class="toggle"  />
     <label for="section-070af377b46d38e45de9a60dd3c8e7d0" class="flex justify-between">
-      <a href="/sb/" class="">Становление Биткоина</a>
+      <a href="/discovering-bitcoin/" class="">Discovering Bitcoin</a>
     </label>
   
 
@@ -481,7 +470,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sb/stanovlenie-intro/" class="">Введение</a>
+    <a href="/discovering-bitcoin/intro/" class="">Introduction</a>
   
 
         </li>
@@ -494,7 +483,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sb/stanovlenie-1/" class="">О времени</a>
+    <a href="/discovering-bitcoin/about-time/" class="">About Time</a>
   
 
         </li>
@@ -507,7 +496,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sb/stanovlenie-2/" class="">О людях</a>
+    <a href="/discovering-bitcoin/about-people/" class="">About People</a>
   
 
         </li>
@@ -520,7 +509,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sb/stanovlenie-3/" class="">Знакомьтесь: деньги</a>
+    <a href="/discovering-bitcoin/introducing-money/" class="">Introducing Money</a>
   
 
         </li>
@@ -533,7 +522,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sb/stanovlenie-4/" class="">Поворот не туда</a>
+    <a href="/discovering-bitcoin/a-wrong-turn-new-plan-needed/" class="">A Wrong Turn (New Plan Needed)!</a>
   
 
         </li>
@@ -546,7 +535,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sb/stanovlenie-5/" class="">Цифровая редкость</a>
+    <a href="/discovering-bitcoin/digital-scarcity/" class="">Digital Scarcity</a>
   
 
         </li>
@@ -559,7 +548,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sb/stanovlenie-6/" class="">Цифровые контракты</a>
+    <a href="/discovering-bitcoin/digital-contracts/" class="">Digital Contracts</a>
   
 
         </li>
@@ -572,7 +561,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sb/stanovlenie-7/" class="">Недостающие части головоломки</a>
+    <a href="/discovering-bitcoin/the-missing-pieces/" class="">The Missing Pieces</a>
   
 
         </li>
@@ -590,7 +579,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitkoin-ne-vredit-okruzhayushej-srede/" class="">Биткоин и окружающая среда</a>
+    <a href="/bitcoin-is-not-harmful-for-the-environment/" class="">Bitcoin Is Not Harmful For The Environment</a>
   
 
         </li>
@@ -603,7 +592,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sem-setevyh-effektov-bitkoina/" class="">Семь сетевых эффектов Биткоина</a>
+    <a href="/seven-network-effects-of-bitcoin/" class="">The Seven Network Effects of Bitcoin</a>
   
 
         </li>
@@ -616,7 +605,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/hozyaeva-i-raby-deneg/" class="">Хозяева и рабы денег</a>
+    <a href="/masters-and-slaves-of-money/" class="">Masters and Slaves of Money</a>
   
 
         </li>
@@ -629,7 +618,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/strukturnaya-perestrojka/" class="">Структурная перестройка</a>
+    <a href="/structural-adjustment/" class="">Structural Adjustment</a>
   
 
         </li>
@@ -642,7 +631,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/v-zashchitu-deflyacii/" class="">В защиту дефляции</a>
+    <a href="/in-defense-of-deflation/" class="">In Defense Of Deflation</a>
   
 
         </li>
@@ -655,7 +644,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sravnenie-monetarnyh-standartov/" class="">Сравнение монетарных стандартов</a>
+    <a href="/comparison-of-monetary-standards/" class="">Comparison of Monetary Standards</a>
   
 
         </li>
@@ -668,7 +657,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sravnenie-monetarnyh-standartov/" class="">Сравнение монетарных стандартов</a>
+    <a href="/petrodollar-negative-effects/" class="">Petrodollar Negative Effects</a>
   
 
         </li>
@@ -681,7 +670,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/negativnye-effekty-neftedollara/" class="">Негативные внешние эффекты нефтедоллара</a>
+    <a href="/shelling-out/" class="">Shelling Out: The Origins of Money</a>
   
 
         </li>
@@ -694,7 +683,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/raskoshelivaemsya/" class="">Раскошеливаемся (Shelling Out): Происхождение денег</a>
+    <a href="/bitcoin-rhythms-of-history/" class="">Bitcoin and the Rhythms of History</a>
   
 
         </li>
@@ -707,7 +696,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-i-ritmy-istorii/" class="">Биткоин и ритмы истории</a>
+    <a href="/bitcoin-and-the-hopf-cycle-of-the-internet/" class="">Bitcoin &amp; the HOPF Cycle of the Internet</a>
   
 
         </li>
@@ -720,7 +709,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-i-internet-cikly-hopfa/" class="">Биткоин и интернет-циклы Хопфа</a>
+    <a href="/money-blockchains-and-social-scalability/" class="">Money, blockchains, and social scalability</a>
   
 
         </li>
@@ -733,7 +722,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/dengi-blokchejny-i-socialnaya-masshtabiruemost/" class="">Деньги, блокчейны и социальная масштабируемость</a>
+    <a href="/what-is-money/" class="">What Is Money</a>
   
 
         </li>
@@ -746,7 +735,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/chto-takoe-dengi/" class="">Что такое деньги</a>
+    <a href="/only-the-strong-survive/" class="">Only The Strong Survive</a>
   
 
         </li>
@@ -759,7 +748,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/vyzhivaet-silnejshij/" class="">Выживает сильнейший</a>
+    <a href="/dollar-cost-averaging/" class="">Dollar-Cost Averaging</a>
   
 
         </li>
@@ -772,33 +761,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/strategiya-dca/" class="">Стратегия DCA</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/jevons-paradox/" class="">Парадокс Джевонса: Обратная истина</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/kak-rabotajut-dengi/" class="">Как работают деньги</a>
+    <a href="/jevons-paradox/" class="">Jevons Paradox: Contrary Truth</a>
   
 
         </li>
@@ -818,7 +781,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-4d5bb6cd046af3ae6f08884281ee0445" class="toggle"  />
     <label for="section-4d5bb6cd046af3ae6f08884281ee0445" class="flex justify-between">
-      <a href="/security/" class="">Безопасность</a>
+      <a href="/security/" class="">Security</a>
     </label>
   
 
@@ -832,7 +795,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/kak-hranit-kljuchi/" class="">Биткоин-кошельки. Зачем и как хранить свои приватные ключи</a>
+    <a href="/how-to-hold-private-keys/" class="">Bitcoin Wallets: How, Why and When to Hold Your Own Private Keys</a>
   
 
         </li>
@@ -845,7 +808,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/seed/" class="">Что такое сид-фраза?</a>
+    <a href="/seed/" class="">What is a bitcoin seed phrase and how does it work?</a>
   
 
         </li>
@@ -858,7 +821,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/seed-security/" class="">Как обезопасить свои сид-фразы?</a>
+    <a href="/seed-security/" class="">Ultimate guide to storing your bitcoin seed phrase backups</a>
   
 
         </li>
@@ -871,7 +834,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/passphrase/" class="">Насколько надежна ваша парольная фраза?</a>
+    <a href="/passphrase/" class="">Is your passphrase strong enough?</a>
   
 
         </li>
@@ -884,7 +847,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/multisig/" class="">Все о мультисиг</a>
+    <a href="/what-is-multisig/" class="">What is multisig?</a>
   
 
         </li>
@@ -897,7 +860,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/hwws/" class="">Сравнение аппаратных кошельков</a>
+    <a href="/hwws/" class="">The best Bitcoin hardware wallets</a>
   
 
         </li>
@@ -910,7 +873,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/multisig-1/" class="">Мультисиг. Часть I</a>
+    <a href="/multisig-1/" class="">Multisig Part I: Why Multisig?</a>
   
 
         </li>
@@ -923,7 +886,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/multisig-2/" class="">Мультисиг. Часть II: Отдельные ключи – основа мультиподписи</a>
+    <a href="/multisig-2/" class="">Multisig Part II: Single Keys are the Foundation of Multisignature</a>
   
 
         </li>
@@ -943,7 +906,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-e5dc95f8c3734f1c9cf3045c3ba217e8" class="toggle"  />
     <label for="section-e5dc95f8c3734f1c9cf3045c3ba217e8" class="flex justify-between">
-      <a href="/privacy/" class="">Приватность</a>
+      <a href="/privacy/" class="">Privacy</a>
     </label>
   
 
@@ -957,7 +920,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/privacy/luchshie-praktiki/" class="">Как сохранить приватность?</a>
+    <a href="/privacy/best-practices/" class="">Bitcoin Privacy: Best Practices</a>
   
 
         </li>
@@ -970,7 +933,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/privacy/no-kyc/" class="">Никаких KYC, берегите персональные данные</a>
+    <a href="/privacy/no-kyc/" class="">no-KYC only. Avoid the creep</a>
   
 
         </li>
@@ -983,7 +946,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/privatnost-v-seti-bitcoin/" class="">Приватность в сети Биткоин</a>
+    <a href="/wiki-bitcoin-privacy/" class="">Bitcoin Privacy</a>
   
 
         </li>
@@ -996,7 +959,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-stanovitsya-kriticheski-vazhnym/" class="">Биткоин становится критически важным</a>
+    <a href="/bitcoin-becomes-critical/" class="">Bitcoin Becomes Critical</a>
   
 
         </li>
@@ -1009,7 +972,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bip47-ili-gadkij-utenok/" class="">BIP47, или гадкий утенок</a>
+    <a href="/bip47-the-ugly-duckling/" class="">BIP47, the ugly duckling</a>
   
 
         </li>
@@ -1024,7 +987,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-7626e3de66018c98c264d84fe366e13a" class="toggle"  />
     <label for="section-7626e3de66018c98c264d84fe366e13a" class="flex justify-between">
-      <a href="/privacy/oxt/" class="">Понимание приватности в сети Биткоин с помощью OXT</a>
+      <a href="/privacy/oxt/" class="">Understanding Bitcoin Privacy with OXT</a>
     </label>
   
 
@@ -1038,7 +1001,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/privacy/oxt-1/" class="">Часть 1: Анализ цепочки и приватность транзакций</a>
+    <a href="/privacy/oxt-1/" class="">Part 1: Chain Analysis And Transaction Privacy</a>
   
 
         </li>
@@ -1051,7 +1014,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/privacy/oxt-2/" class="">Часть 2: Ключевые концепции анализа цепочки</a>
+    <a href="/privacy/oxt-2/" class="">Part 2: Chain Analysis Core Concepts</a>
   
 
         </li>
@@ -1064,7 +1027,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/privacy/oxt-3/" class="">Часть 3: Защита от анализа цепочки</a>
+    <a href="/privacy/oxt-3/" class="">Part 3: Defences Against Chain Analysis</a>
   
 
         </li>
@@ -1077,7 +1040,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/privacy/oxt-4/" class="">Часть 4: Применение концепций анализа цепочки для улучшения приватности пользователей</a>
+    <a href="/privacy/oxt-4/" class="">Part 4: Applying Chain Analysis Concepts To Improve User Privacy</a>
   
 
         </li>
@@ -1095,7 +1058,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/privacy/coinjoin/" class="">Понимание и использование CoinJoin</a>
+    <a href="/privacy/coinjoin/" class="">CoinJoin Overview</a>
   
 
         </li>
@@ -1108,7 +1071,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-fungibility/" class="">Взаимозаменяемость Биткоина</a>
+    <a href="/bitcoin-fungibility/" class="">Bitcoin Fungibility</a>
   
 
         </li>
@@ -1141,7 +1104,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-591754e4c6a4e23cb58f7ff9d9022ef1" class="toggle"  />
     <label for="section-591754e4c6a4e23cb58f7ff9d9022ef1" class="flex justify-between">
-      <a href="/protocol/" class="">Протокол</a>
+      <a href="/protocol/" class="">Protocol</a>
     </label>
   
 
@@ -1155,7 +1118,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/kto-kontroliruet-bitkoin-kor/" class="">Кто контролирует Bitcoin Core?</a>
+    <a href="/who-controls-bitcoin-core/" class="">Who Controls Bitcoin Core?</a>
   
 
         </li>
@@ -1168,7 +1131,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/vechnaja-borba/" class="">Вечная борьба Биткоина</a>
+    <a href="/bitcoins-eternal-struggle/" class="">Bitcoin&#39;s Eternal Struggle</a>
   
 
         </li>
@@ -1181,7 +1144,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/ob-udobstve-vzaimodejstvija-s-bitcoinom/" class="">Об удобстве взаимодействия с Биткоином</a>
+    <a href="/on-bitcoins-ux/" class="">On Bitcoin’s UX</a>
   
 
         </li>
@@ -1194,7 +1157,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-zoloto-2-0/" class="">Биткоин: цифровое золото или пиринговая наличность?</a>
+    <a href="/bitcoin-digital-gold-or-ecash/" class="">Bitcoin: Digital Gold or Peer-to-Peer Cash?</a>
   
 
         </li>
@@ -1207,7 +1170,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/upravlenie-bitcoin/" class="">Управление Биткоином</a>
+    <a href="/bitcoin-governance/" class="">Bitcoin Governance</a>
   
 
         </li>
@@ -1220,7 +1183,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/doverennye-tretyi-storony/" class="">Доверенные третьи стороны — это бреши в системе безопасности</a>
+    <a href="/trusted-third-parties/" class="">Trusted Third Parties are Security Holes</a>
   
 
         </li>
@@ -1233,7 +1196,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/21-million-ne-podlezhit-obsuzhdeniyu/" class="">21 миллион не подлежит обсуждению</a>
+    <a href="/21-million-is-non-negotiable/" class="">21 Million is Non-Negotiable</a>
   
 
         </li>
@@ -1246,7 +1209,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/proof-of-work/" class="">Proof of Work: доказательство проделанной работы</a>
+    <a href="/proof-of-work/" class="">Proof of Work, a pictorial essay</a>
   
 
         </li>
@@ -1259,7 +1222,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/proof-of-stake-eto-skam/" class="">Proof of Stake – это скам</a>
+    <a href="/proof-of-stake-is-a-scam/" class="">Proof of stake is a scam</a>
   
 
         </li>
@@ -1272,7 +1235,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/byl-li-satoshi-zhadnym-majnerom/" class="">Был ли Сатоши жадным майнером?</a>
+    <a href="/was-satoshi-a-greedy-miner/" class="">Was Satoshi a Greedy Miner?</a>
   
 
         </li>
@@ -1285,7 +1248,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/segwit/" class="">Что такое SegWit</a>
+    <a href="/segwit/" class="">What Is SegWit</a>
   
 
         </li>
@@ -1298,7 +1261,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/taproot/" class="">Что такое Taproot</a>
+    <a href="/taproot/" class="">What Is Taproot</a>
   
 
         </li>
@@ -1311,7 +1274,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bomby-slozhnosti-ethereum/" class="">Бомбы сложности Ethereum</a>
+    <a href="/coercion-of-ethereums-difficulty-bomb/" class="">The Coercion Of Ethereum&#39;s Difficulty Bomb</a>
   
 
         </li>
@@ -1324,7 +1287,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/rgb/" class="">Разбирая протокол RGB</a>
+    <a href="/rgb/" class="">Understanding the RGB protocol</a>
   
 
         </li>
@@ -1337,7 +1300,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/halving/" class="">Что такое Биткоин-халвинг?</a>
+    <a href="/difficulty/" class="">Bitcoin Difficulty Adjustment</a>
   
 
         </li>
@@ -1350,7 +1313,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/difficulty/" class="">О корректировке сложности майнинга</a>
+    <a href="/bitcoin-address-types/" class="">Bitcoin address types</a>
   
 
         </li>
@@ -1363,7 +1326,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sravnenie-tipov-bitcoin-adresov/" class="">Типы биткоин-адресов</a>
+    <a href="/myths-about-halving/" class="">Myths About the Bitcoin Halving</a>
   
 
         </li>
@@ -1376,20 +1339,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/myths-about-halving/" class="">Мифы о Биткоин-халвинге</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/mining-walkthrough/" class="">SHA256 и майнинг в сети Биткоин</a>
+    <a href="/mining-walkthrough/" class="">SHA256 and Bitcoin Mining Walkthrough</a>
   
 
         </li>
@@ -1404,7 +1354,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-c6baffdfa73d6dd5df13795b95ab68ac" class="toggle"  />
     <label for="section-c6baffdfa73d6dd5df13795b95ab68ac" class="flex justify-between">
-      <a href="/protocol/utxo/" class="">Что такое UTXO и как ими управлять?</a>
+      <a href="/protocol/utxo/" class="">What Is UTXO And How To Manage Them</a>
     </label>
   
 
@@ -1418,7 +1368,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/protocol/utxo-1/" class="">Что такое UTXO?</a>
+    <a href="/protocol/utxo-1/" class="">What is a Bitcoin UTXO</a>
   
 
         </li>
@@ -1431,7 +1381,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/protocol/utxo-2/" class="">Как избежать высоких комиссий при большом количестве UTXO</a>
+    <a href="/protocol/utxo-2/" class="">Too Many UTXOs: How To Avoid High Fees</a>
   
 
         </li>
@@ -1444,7 +1394,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/protocol/utxo-3/" class="">Приватность UTXO</a>
+    <a href="/protocol/utxo-3/" class="">UTXOs Privacy</a>
   
 
         </li>
@@ -1462,7 +1412,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/transaction-size/" class="">Размер транзакции</a>
+    <a href="/transaction-size/" class="">Transaction Size</a>
   
 
         </li>
@@ -1482,7 +1432,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-2cc3faa5b078e8edfc892bc463882294" class="toggle"  />
     <label for="section-2cc3faa5b078e8edfc892bc463882294" class="flex justify-between">
-      <a href="/history/" class="">История</a>
+      <a href="/history/" class="">History</a>
     </label>
   
 
@@ -1498,7 +1448,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-11903f72dc1c8e68f0d748ad1bb6164d" class="toggle"  />
     <label for="section-11903f72dc1c8e68f0d748ad1bb6164d" class="flex justify-between">
-      <a href="/gf/" class="">Генезис-файлы</a>
+      <a href="/gf/" class="">The Genesis Files</a>
     </label>
   
 
@@ -1512,7 +1462,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/gf/genesis-intro/" class="">Пролог</a>
+    <a href="/gf/genesis-intro/" class="">Intro</a>
   
 
         </li>
@@ -1525,7 +1475,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/gf/genesis-1/" class="">Часть I: eCash Дэвида Чаума и зарождение мечты шифропанков</a>
+    <a href="/gf/genesis-1/" class="">Part I: How David Chaum’s eCash Spawned a Cypherpunk Dream</a>
   
 
         </li>
@@ -1538,7 +1488,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/gf/genesis-2/" class="">Часть II: Hashcash или как Адам Бэк разработал сердце Биткоина</a>
+    <a href="/gf/genesis-2/" class="">Part II: Hashcash or How Adam Back Designed Bitcoin’s Motor Block</a>
   
 
         </li>
@@ -1551,7 +1501,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/gf/genesis-3/" class="">Часть III: Если у Биткоина был прототип, то это были b-money Вэя Дая</a>
+    <a href="/gf/genesis-3/" class="">Part III: If Bitcoin Had a First Draft, Wei Dai’s B-Money Was It</a>
   
 
         </li>
@@ -1564,7 +1514,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/gf/genesis-4/" class="">Часть IV: Создавая Bit Gold, Сабо был в двух шагах от изобретения Биткоина</a>
+    <a href="/gf/genesis-4/" class="">Part IV: With Bit Gold, Szabo Was Inches Away From Inventing Bitcoin</a>
   
 
         </li>
@@ -1577,7 +1527,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/gf/genesis-5/" class="">Часть V: Как поиски цифровой наличности привели Хэла Финни к созданию RPOW (и не только)</a>
+    <a href="/gf/genesis-5/" class="">Part V: How Hal Finney’s Quest For Digital Cash Led To RPOW (And More)</a>
   
 
         </li>
@@ -1595,7 +1545,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/hal-finney/" class="">Хэл Финни — жизнь и смерть легенды движения шифропанков</a>
+    <a href="/hal-finney/" class="">Hal Finney — The Life And Death Of A Cypherpunk Legend</a>
   
 
         </li>
@@ -1608,7 +1558,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-and-me/" class="">Биткоин и я</a>
+    <a href="/bitcoin-and-me/" class="">Bitcoin and Me</a>
   
 
         </li>
@@ -1621,7 +1571,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-reformaciya/" class="">Биткоин-Реформация</a>
+    <a href="/bitcoin-reformation/" class="">The Bitcoin Reformation</a>
   
 
         </li>
@@ -1634,7 +1584,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-forks/" class="">Полная история консенсус-форков Биткоина</a>
+    <a href="/bitcoin-forks/" class="">A complete history of Bitcoin’s consensus forks</a>
   
 
         </li>
@@ -1647,7 +1597,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/analyzing-2013-fork/" class="">Анализ форка Биткоина 2013 года</a>
+    <a href="/analyzing-2013-fork/" class="">Analyzing the 2013 Bitcoin fork</a>
   
 
         </li>
@@ -1667,7 +1617,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-ac2daa2484c1be670f7cc1e0d8d82356" class="toggle"  />
     <label for="section-ac2daa2484c1be670f7cc1e0d8d82356" class="flex justify-between">
-      <a href="/philosophy/" class="">Философия</a>
+      <a href="/philosophy/" class="">Philosophy</a>
     </label>
   
 
@@ -1683,7 +1633,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-b11b531f912b5e92a8260d0a526b85b6" class="toggle"  />
     <label for="section-b11b531f912b5e92a8260d0a526b85b6" class="flex justify-between">
-      <a href="/chemu-ya-nauchilsya-u-bitcoina/" class="">Чему я научился у Биткоина?</a>
+      <a href="/what-i-learned-from-bitcoin/" class="">What I&#39;ve Learned From Bitcoin</a>
     </label>
   
 
@@ -1697,7 +1647,33 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/chemu-ya-nauchilsya-u-bitcoina/filosofskie-uroki-bitcoina/" class="">Часть1. Философские уроки Биткоина</a>
+    <a href="/what-i-learned-from-bitcoin-1/" class="">Part I. Philosophical Teachings of Bitcoin</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/what-i-learned-from-bitcoin-2/" class="">Part II. Economic Teachings of Bitcoin</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/what-i-learned-from-bitcoin-3/" class="">Part III. Technological Teachings of Bitcoin</a>
   
 
         </li>
@@ -1715,7 +1691,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/ne-shitcoin/" class="">Биткоин, не щиткоин</a>
+    <a href="/not-shitcoin/" class="">Why Bitcoin, Not Shitcoin</a>
   
 
         </li>
@@ -1728,7 +1704,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/neotemlemye-prava-sobstvennosti/" class="">Неотъемлемые права собственности</a>
+    <a href="/inalienable-property-rights/" class="">Inalienable Property Rights</a>
   
 
         </li>
@@ -1741,7 +1717,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/manifest-kriptoanarhista/" class="">Манифест криптоанархиста</a>
+    <a href="/crypto-anarchist-manifesto/" class="">The Crypto Anarchist Manifesto</a>
   
 
         </li>
@@ -1754,7 +1730,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/manifest-shifropanka/" class="">Манифест шифропанка</a>
+    <a href="/cypherpunks-manifesto/" class="">A Cypherpunk&#39;s Manifesto</a>
   
 
         </li>
@@ -1767,7 +1743,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/tyulpannaya-lihoradka/" class="">Биткоин — современная голландская тюльпанная лихорадка?</a>
+    <a href="/dutch-tulip-bubble/" class="">Is Bitcoin Like the Dutch Tulip Bubble?</a>
   
 
         </li>
@@ -1780,7 +1756,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/vse-moshenniki/" class="">Все — мошенники</a>
+    <a href="/everyones-a-scammer/" class="">Everyone&#39;s a Scammer</a>
   
 
         </li>
@@ -1793,7 +1769,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/svoboda-cennosti/" class="">Свобода ценности</a>
+    <a href="/freedom-of-value/" class="">The Freedom of Value</a>
   
 
         </li>
@@ -1806,7 +1782,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-meme/" class="">Биткоин — единственный реальный мем</a>
+    <a href="/bitcoin-meme/" class="">Bitcoin Is The Only Real Meme</a>
   
 
         </li>
@@ -1819,7 +1795,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/nol-i-bitcoin/" class="">Ноль и Биткоин</a>
+    <a href="/number-zero-and-bitcoin/" class="">The Number Zero and Bitcoin</a>
   
 
         </li>
@@ -1832,7 +1808,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/crypto-bro/" class="">Дорогие крипто- и фиат-бро</a>
+    <a href="/crypto-bro/" class="">Dear Crypto &amp; Fiat Bros</a>
   
 
         </li>
@@ -1845,7 +1821,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/boremsya-s-poddelnymi-bitcoin/" class="">Боремся с поддельными биткоинами</a>
+    <a href="/fighting-fake-bitcoin/" class="">Fighting Fake Bitcoin</a>
   
 
         </li>
@@ -1858,7 +1834,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bit%D1%81oin-eto-micelij/" class="">Биткоин — это мицелий</a>
+    <a href="/bitcoin-is-the-mycelium/" class="">Bitcoin is The Mycelium of Money</a>
   
 
         </li>
@@ -1871,7 +1847,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pochemu-bitcoin-zhivoj-organizm/" class="">Доказательство жизни. Почему Биткоин — живой организм</a>
+    <a href="/proof-of-life/" class="">Proof of Life. Why Bitcoin is a Living Organism</a>
   
 
         </li>
@@ -1884,7 +1860,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/samaya-mirnaya-revolyuciya/" class="">Самая мирная революция</a>
+    <a href="/most-peaceful-revolution/" class="">A Most Peaceful Revolution</a>
   
 
         </li>
@@ -1897,7 +1873,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/o-bitcoin-vselennoj/" class="">О Биткоин-вселенной</a>
+    <a href="/bitcoin-universe/" class="">Bitcoin Universe</a>
   
 
         </li>
@@ -1910,7 +1886,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-dissidenty/" class="">Биткоин-диссиденты</a>
+    <a href="/bitcoin-dissidents/" class="">Bitcoin Dissidents</a>
   
 
         </li>
@@ -1923,7 +1899,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-svoboda/" class="">Биткоин = свобода</a>
+    <a href="/bitcoin-equals-freedom/" class="">Bitcoin Equals Freedom</a>
   
 
         </li>
@@ -1943,7 +1919,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-0ffd899989a7340537ceb8e2b6a04097" class="toggle"  />
     <label for="section-0ffd899989a7340537ceb8e2b6a04097" class="flex justify-between">
-      <a href="/future/" class="">Будущее</a>
+      <a href="/future/" class="">Future</a>
     </label>
   
 
@@ -1959,7 +1935,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-206fb3aae5266e1ff42aa0abc8ae8411" class="toggle"  />
     <label for="section-206fb3aae5266e1ff42aa0abc8ae8411" class="flex justify-between">
-      <a href="/ba/" class="">Биткоин-астрономия</a>
+      <a href="/ba/" class="">Bitcoin Astronomy</a>
     </label>
   
 
@@ -1973,7 +1949,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/ba/1/" class="">Постгипербиткоинизация</a>
+    <a href="/ba/1/" class="">Part I</a>
   
 
         </li>
@@ -1986,7 +1962,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/ba/2/" class="">Миллион крошечных миров</a>
+    <a href="/ba/2/" class="">Part II</a>
   
 
         </li>
@@ -1999,7 +1975,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/ba/3/" class="">Первый контакт</a>
+    <a href="/ba/3/" class="">Part III</a>
   
 
         </li>
@@ -2017,7 +1993,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/ej-bitcoin-pritormozi/" class="">Эй, Биткоин, притормози</a>
+    <a href="/hey-bitcoin-slow-down/" class="">Hey Bitcoin, Slow Down!</a>
   
 
         </li>
@@ -2030,7 +2006,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/apokalipsis/" class="">Сможет ли Биткоин пережить апокалипсис?</a>
+    <a href="/apocalypse/" class="">Can Bitcoin Survive An Apocalypse?</a>
   
 
         </li>
@@ -2043,7 +2019,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-i-teplovaya-energiya-okeanov/" class="">Биткоин и тепловая энергия океанов</a>
+    <a href="/bitcoin-and-oceans/" class="">Bitcoin and Ocean Thermal Energy</a>
   
 
         </li>
@@ -2063,7 +2039,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-94dfdc9d0099b419c9e2d6a83381dbe2" class="toggle"  />
     <label for="section-94dfdc9d0099b419c9e2d6a83381dbe2" class="flex justify-between">
-      <a href="/lightning/" class="">Лайтнинг</a>
+      <a href="/lightning/" class="">Lightning</a>
     </label>
   
 
@@ -2077,7 +2053,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/chto-takoe-laitning/" class="">Что такое Лайтнинг?</a>
+    <a href="/what-is-lightning-network/" class="">What is Lightning Network?</a>
   
 
         </li>
@@ -2090,7 +2066,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/lajtning-koshelki/" class="">Лайтнинг-кошельки</a>
+    <a href="/lightning-wallets/" class="">Lightning Wallets</a>
   
 
         </li>
@@ -2103,7 +2079,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/lajtning-adresa/" class="">Лайтнинг-адреса</a>
+    <a href="/how-lightning-address-works/" class="">How Lightning Address Works</a>
   
 
         </li>
@@ -2116,7 +2092,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/privatnost-v-lajtning/" class="">Приватность в сети Lightning</a>
+    <a href="/lightning-network-privacy/" class="">Lightning Network Privacy</a>
   
 
         </li>
@@ -2129,7 +2105,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/centralizovanna-li-set-lightning/" class="">Централизованна ли сеть Lightning?</a>
+    <a href="/is-lightning-centralized/" class="">Is Lightning centralized?</a>
   
 
         </li>
@@ -2142,7 +2118,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/mekhanizm-raboty-lightning/" class="">Механизм работы Lightning Network</a>
+    <a href="/lightning-network-explained/" class="">Lightning Network Explained</a>
   
 
         </li>
@@ -2155,7 +2131,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/problema-vhodyashchej-likvidnosti/" class="">Решение проблемы входящей ликвидности</a>
+    <a href="/inbound-liquidity-problem/" class="">Solutions to inbound liquidity problem</a>
   
 
         </li>
@@ -2180,7 +2156,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-334a33758c01abfe631e1e37dc0d1f40" class="toggle" checked />
     <label for="section-334a33758c01abfe631e1e37dc0d1f40" class="flex justify-between">
-      <a href="/practice/" class="">Практика</a>
+      <a href="/practice/" class="">Practice</a>
     </label>
   
 
@@ -2196,7 +2172,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-a94c5b45bfdc8ef0dd89b00612026092" class="toggle" checked />
     <label for="section-a94c5b45bfdc8ef0dd89b00612026092" class="flex justify-between">
-      <a href="/practice/buy/" class="">Покупка</a>
+      <a href="/practice/buy/" class="">Buy</a>
     </label>
   
 
@@ -2210,7 +2186,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/newbie-buy/" class="">Покупка и хранение биткоина для новичков</a>
+    <a href="/newbie-buy/" class="">Buy and Hodl Bitcoin for Beginners</a>
   
 
         </li>
@@ -2223,7 +2199,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/hodl-hodl/" class="">Покупка биткоина без KYC на Hodl Hodl</a>
+    <a href="/hodl-hodl/" class="">Buy noKYC Bitcoin with HodlHodl</a>
   
 
         </li>
@@ -2236,7 +2212,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/robosats/" class="active">RoboSats: Приватный p2p обмен</a>
+    <a href="/robosats/" class="active">RoboSats: Private P2P Exchange</a>
   
 
         </li>
@@ -2256,7 +2232,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-7e14ce7fc5fdbe001466044f77bdd564" class="toggle"  />
     <label for="section-7e14ce7fc5fdbe001466044f77bdd564" class="flex justify-between">
-      <a href="/practice/hodl/" class="">Хранение</a>
+      <a href="/practice/hodl/" class="">Hodl</a>
     </label>
   
 
@@ -2270,7 +2246,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/electrum/" class="">Кошелек Электрум</a>
+    <a href="/electrum/" class="">Electrum Bitcoin Wallet</a>
   
 
         </li>
@@ -2283,7 +2259,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/blue/" class="">Кошелек Blue</a>
+    <a href="/blue/" class="">Installing Blue Wallet</a>
   
 
         </li>
@@ -2296,7 +2272,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/seedsigner/" class="">SeedSigner: оффлайн-крепость для ваших биткоинов</a>
+    <a href="/seedsigner/" class="">SeedSigner: DIY Bitcoin Signing Device</a>
   
 
         </li>
@@ -2309,20 +2285,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/holodnyj-koshelek-iz-starogo-smartfona/" class="">Холодный кошелек из старого смартфона</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/coldcard/" class="">Что такое Coldcard?</a>
+    <a href="/coldcard/" class="">What is Coldcard?</a>
   
 
         </li>
@@ -2342,7 +2305,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-88cf9017cf07549621f025a2843cb148" class="toggle"  />
     <label for="section-88cf9017cf07549621f025a2843cb148" class="flex justify-between">
-      <a href="/practice/interact/" class="">Взаимодействие</a>
+      <a href="/practice/interact/" class="">Interact</a>
     </label>
   
 
@@ -2356,7 +2319,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/practice/bitcoin-node/" class="">Каждому следует запустить собственную Биткоин-ноду!</a>
+    <a href="/practice/bitcoin-node/" class="">Why You Should Run Your Own Bitcoin Node</a>
   
 
         </li>
@@ -2369,7 +2332,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/orangepilling-in-5-min/" class="">Оранжпиллинг за 5 минут</a>
+    <a href="/orangepilling-in-5-min/" class="">Orangepilling in 5 min</a>
   
 
         </li>
@@ -2382,7 +2345,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/5-tips-for-teaching-bitcoin/" class="">5 советов по обучению Биткоину</a>
+    <a href="/5-tips-for-teaching-bitcoin/" class="">5 tips for teaching Bitcoin</a>
   
 
         </li>
@@ -2402,7 +2365,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-32dccf00abb46a5281b7aae069126928" class="toggle"  />
     <label for="section-32dccf00abb46a5281b7aae069126928" class="flex justify-between">
-      <a href="/practice-privacy/" class="">Практики приватности</a>
+      <a href="/practice-privacy/" class="">Privacy</a>
     </label>
   
 
@@ -2418,7 +2381,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-ae30dbe7c31a834e8bfe23314d9a5ff6" class="toggle"  />
     <label for="section-ae30dbe7c31a834e8bfe23314d9a5ff6" class="flex justify-between">
-      <a href="/practice-privacy/dojo/" class="">Установка Биткоин-узла Dojo на x86</a>
+      <a href="/practice-privacy/dojo/" class="">Dojo x86 Bitcoin Node Guide</a>
     </label>
   
 
@@ -2432,7 +2395,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/practice-privacy/dojo-0/" class="">Введение</a>
+    <a href="/practice-privacy/dojo-0/" class="">Introduction</a>
   
 
         </li>
@@ -2445,7 +2408,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/practice-privacy/dojo-1/" class="">Установка Bitcoin Core и Tor</a>
+    <a href="/practice-privacy/dojo-1/" class="">Installing Bitcoin Core &amp; Tor</a>
   
 
         </li>
@@ -2458,7 +2421,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/practice-privacy/dojo-2/" class="">Установка индексатора Fulcrum</a>
+    <a href="/practice-privacy/dojo-2/" class="">Installing Fulcrum Indexer</a>
   
 
         </li>
@@ -2471,7 +2434,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/practice-privacy/dojo-3/" class="">Установка блокчейн-обозревателя Mempool</a>
+    <a href="/practice-privacy/dojo-3/" class="">Installing Mempool Explorer</a>
   
 
         </li>
@@ -2484,7 +2447,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/practice-privacy/dojo-4/" class="">Установка Samourai Dojo</a>
+    <a href="/practice-privacy/dojo-4/" class="">Installing Samourai Dojo</a>
   
 
         </li>
@@ -2497,7 +2460,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/practice-privacy/dojo-5/" class="">Конфигурация межсетевого экрана</a>
+    <a href="/practice-privacy/dojo-5/" class="">Firewall Configuration</a>
   
 
         </li>
@@ -2510,7 +2473,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/practice-privacy/dojo-6/" class="">Установка обновлений пакетов</a>
+    <a href="/practice-privacy/dojo-6/" class="">Installing Package Updates</a>
   
 
         </li>
@@ -2528,7 +2491,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/practice-privacy/ronindojo/" class="">Установка RoninDojo на x86</a>
+    <a href="/practice-privacy/ronindojo/" class="">RoninDojo x86 Installation Guide</a>
   
 
         </li>
@@ -2541,7 +2504,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/grapheneos/" class="">GrapheneOS: Избавляемся от слежки Google на смартфоне</a>
+    <a href="/grapheneos/" class="">GrapheneOS: De-Google your phone</a>
   
 
         </li>
@@ -2561,7 +2524,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-9425a98499a6d50bed8efd403e1db980" class="toggle"  />
     <label for="section-9425a98499a6d50bed8efd403e1db980" class="flex justify-between">
-      <a href="/practice/lightning/" class="">Лайтнинг на практике</a>
+      <a href="/practice/lightning/" class="">Lightning</a>
     </label>
   
 
@@ -2575,7 +2538,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/phoenix/" class="">Кошелек Phoenix</a>
+    <a href="/phoenix/" class="">Phoenix: The Non-Custodial Lightning Wallet</a>
   
 
         </li>
@@ -2588,7 +2551,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/lnbits/" class="">LNbits – швейцарский нож среди лайтнинг-приложений</a>
+    <a href="/lnbits/" class="">LNbits: A Swiss knife among Lightning apps</a>
   
 
         </li>
@@ -2601,7 +2564,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/alby-i-nostr/" class="">Alby и Nostr</a>
+    <a href="/alby-and-nostr/" class="">Alby and Nostr</a>
   
 
         </li>
@@ -2614,7 +2577,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/zapplanner/" class="">Подписки с помощью Лайтнинг</a>
+    <a href="/zapplanner/" class="">Recurring Lightning Payments</a>
   
 
         </li>
@@ -2627,7 +2590,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/lntips/" class="">Телеграм-бот @LightningTipBot</a>
+    <a href="/lntips/" class="">Telegram bot @LightningTipBot</a>
   
 
         </li>
@@ -2640,7 +2603,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/ochishchaem-bitcoin-cherez-lajtning/" class="">Очищаем биткоины через сеть Лайтнинг</a>
+    <a href="/lightning-liquidity-management-guide/" class="">Lightning Liquidity Management Guide</a>
   
 
         </li>
@@ -2653,20 +2616,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/likvidnost-v-lajtning/" class="">Руководство по управлению ликвидностью в сети Lightning</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/mutiny/" class="">Кошелек Mutiny</a>
+    <a href="/mutiny/" class="">Starting with Mutiny Wallet</a>
   
 
         </li>
@@ -2691,84 +2641,12 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-d286fdc9558f9b3466aa6f3d4805be77" class="toggle"  />
     <label for="section-d286fdc9558f9b3466aa6f3d4805be77" class="flex justify-between">
-      <a href="/rabbithole/" class="">Кроличья нора</a>
+      <a href="/rabbithole/" class="">Rabbithole</a>
     </label>
   
 
           
   <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/books/" class="">Книги</a>
-  
-
-          
-  <ul>
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/videos/" class="">Видео</a>
-  
-
-          
-  <ul>
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/audiobooks/" class="">Аудиокниги</a>
-  
-
-          
-  <ul>
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/pods/" class="">Подкасты</a>
-  
-
-          
-  <ul>
-    
-  </ul>
-
-        </li>
-      
     
   </ul>
 
@@ -2799,37 +2677,9 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/posts/" class="">Блог</a>
-  
-
-        
-    
-  </li>
-  
-  <li>
-    
-        
-  
-  
-
-  
-    <a href="/calendar/" class="">Биткоин-календарь</a>
-  
-
-        
-    
-  </li>
-  
-  <li>
-    
-        
-  
-  
-
-  
     <input type="checkbox" id="section-9329cf488076ba9f91ca728aef24f607" class="toggle"  />
     <label for="section-9329cf488076ba9f91ca728aef24f607" class="flex justify-between">
-      <a href="/contribute/" class="">Принять участие</a>
+      <a href="/contribute/" class="">Contribute</a>
     </label>
   
 
@@ -2844,33 +2694,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/syntax/" class="">Оформление статей</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/github/" class="">Как добавить статью?</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/obsidian/" class="">Публикация статей через Obsidian</a>
+    <a href="/github/" class="">Adding an Article</a>
   
 
         </li>
@@ -2889,7 +2713,21 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/feedback/" class="">Обратная связь</a>
+    <span>Blog</span>
+  
+
+        
+    
+  </li>
+  
+  <li>
+    
+        
+  
+  
+
+  
+    <a href="/feedback/" class="">Feedback</a>
   
 
         
@@ -2967,7 +2805,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>RoboSats: Приватный p2p обмен</strong>
+  <strong>RoboSats: Private P2P Exchange</strong>
 
   <label for="toc-control">
     
@@ -2983,33 +2821,59 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li>
+    <li><a href="#nokyc">noKYC</a>
       <ul>
-        <li><a href="#что-такое-robosats">Что такое RoboSats?</a>
+        <li><a href="#so-whats-the-alternative">So what’s the alternative?</a></li>
+      </ul>
+    </li>
+    <li><a href="#what-is-robosats">What is RoboSats?</a></li>
+    <li><a href="#before-you-start">Before You Start</a>
+      <ul>
+        <li><a href="#things-you-need-to-know">Things you need to know</a>
           <ul>
-            <li><a href="#терминология1">Терминология</a></li>
+            <li><a href="#jargon-buster">Jargon Buster</a></li>
           </ul>
         </li>
-        <li><a href="#что-вам-понадобится">Что вам понадобится</a>
+        <li><a href="#things-you-need-to-have">Things you need to have</a>
           <ul>
-            <li><a href="#лайтнинг-кошелек">Лайтнинг-кошелек</a></li>
-            <li><a href="#немного-сат">Немного сат</a></li>
-            <li><a href="#доступ-к-площадке">Доступ к площадке</a></li>
+            <li><a href="#a-lightning-wallet">A Lightning Wallet</a></li>
+            <li><a href="#some-bitcoin">Some Bitcoin</a></li>
+            <li><a href="#access-to-robosats">Access to RoboSats</a></li>
           </ul>
         </li>
-        <li><a href="#покупкапродажа-биткоина">Покупка/продажа биткоина</a></li>
-        <li><a href="#создание-оффера">Создание оффера</a></li>
-        <li><a href="#дополнительные-функции">Дополнительные функции</a>
+      </ul>
+    </li>
+    <li><a href="#buying-bitcoin">Buying Bitcoin</a></li>
+    <li><a href="#additional-features">Additional Features</a>
+      <ul>
+        <li><a href="#robot-garage">Robot Garage</a></li>
+        <li><a href="#creating-orders">Creating Orders</a></li>
+        <li><a href="#on-chain-payouts">On-chain Payouts</a></li>
+        <li><a href="#p2p-swaps">P2P Swaps</a></li>
+        <li><a href="#run-your-own-robosats-client">Run your own RoboSats Client</a></li>
+      </ul>
+    </li>
+    <li><a href="#faq">FAQ</a>
+      <ul>
+        <li><a href="#can-i-be-scammed">Can I be scammed?</a></li>
+        <li><a href="#how-do-i-cancel-a-trade">How do I cancel a trade?</a></li>
+        <li><a href="#does-robosats-work-with-x-payment-method">Does RoboSats work with ‘X’ payment method?</a></li>
+        <li><a href="#what-does-robosats-learn-about-me-when-i-use-it">What does RoboSats learn about me when I use it?</a></li>
+      </ul>
+    </li>
+    <li><a href="#coming-soon">Coming Soon</a>
+      <ul>
+        <li><a href="#federation">Federation</a></li>
+      </ul>
+    </li>
+    <li><a href="#learn-more">Learn More</a>
+      <ul>
+        <li><a href="#written-guides">Written Guides</a></li>
+        <li><a href="#video-guides">Video Guides</a>
           <ul>
-            <li><a href="#гараж-роботов">Гараж роботов</a></li>
-            <li><a href="#всевозможные-методы-оплаты">Всевозможные методы оплаты</a></li>
-            <li><a href="#сделки-лицом-к-лицу">Сделки лицом к лицу</a></li>
-            <li><a href="#p2p-свопы">P2P-свопы</a></li>
-            <li><a href="#самостоятельный-хостинг-клиента">Самостоятельный хостинг клиента</a></li>
-            <li><a href="#федерации">Федерации</a></li>
+            <li><a href="#useful-links">Useful Links</a></li>
           </ul>
         </li>
-        <li><a href="#полезные-ссылки">Полезные ссылки</a></li>
       </ul>
     </li>
   </ul>
@@ -3028,327 +2892,371 @@ https://github.com/alex-shpak/hugo-book
 <div class="pageCover">
     <picture>
         
-        <img src="/img/robosats/cover.png" alt="Cover" />
+        <img src="/img/robosats/robo-01-en.png" alt="Cover" />
     </picture>
 </div>
 
 <h1>
     
-    RoboSats – Простой и приватный способ обмена биткоина
+    RoboSats: A simple and private Lightning based P2P exchange
     
 </h1>
 <div class="pageDate">
-    18 января 2024 г.
+    May 22, 2023
 </div>
 
-  <article class="markdown"><p>Живя в цифровую эпоху важно уделять внимание приватности. Информация всегда стремится на волю, и имеет смысл делиться с окружающими как можно меньшим количеством персональных данных. Это особенно критично, когда речь заходит о финансах – никто не хочет, чтобы размеры их сбережений стали общедоступной информацией. К сожалению, большинство продолжает пользоваться централизованными биржами и проходить процедуру  KYC, связывая все свои последующие покупки с собственной личностью. Биржи часто подвергаются взломам, при которых не только крадут биткоины, но и копируют персональные данные пользователей и продают их в даркнете. Цель сегодняшней статьи – детально описать один из наиболее приватных методов покупки и продажи биткоина, где вам не нужно предоставлять даже адрес электронной почты. Встречайте: RoboSats.</p>
-<h2 id="что-такое-robosats">
-  Что такое RoboSats?
-  <a class="anchor" href="#%d1%87%d1%82%d0%be-%d1%82%d0%b0%d0%ba%d0%be%d0%b5-robosats">#</a>
+  <article class="markdown"><blockquote class="book-hint btc">
+  <p>This guide by <a href="https://twitter.com/BitcoinQ_A">Bitcoin Q+A</a> was published on <a href="https://bitcoiner.guide/robosats">bitcoiner.guide</a> website.</p>
+<p><a href="/contribute/">Contribute</a>.</p>
+
+</blockquote>
+
+<h1 id="nokyc">
+  noKYC
+  <a class="anchor" href="#nokyc">#</a>
+</h1>
+<p>The de-facto way to obtain Bitcoin today, especially as a newcomer, is to do so through a regulated Bitcoin exchange. You hop onto a website, provide an egregious amount of your personal information, often including your name, address, banking details, drivers license and sometimes even a scan of your entire face or a recording of your voice!</p>
+<p>You then wait for background checks to come through before you’re accepted and can finally smash buy some sats. After all that you still don’t really own any Bitcoin! What you have at this stage is an IOU and you still need to get those sats into a wallet where you control the private keys.</p>
+<p>A pretty horrible experience, and hardly in the spirit of Bitcoin I think you’ll agree! Let’s also not forget that some company now has your personal information stored on a server somewhere waiting for an attacker to come along and compromise it. Sounds far-fetched, but these types of breaches happen all too often, just search for the names ‘Mt Gox’, ‘Binance’ and ‘Ledger’.</p>
+<h2 id="so-whats-the-alternative">
+  So what’s the alternative?
+  <a class="anchor" href="#so-whats-the-alternative">#</a>
 </h2>
-<p>RoboSats – это так называемая пиринговая торговая площадка, попросту место, где встречаются и проводят сделки покупатели и продавцы биткоина. В этом RoboSats напоминает Hodl Hodl, о которой мы рассказывали <a href="/hodl-hodl">здесь</a>. При этом RoboSats может похвастаться рядом уникальных функций:</p>
-<ul>
-<li><strong>Акцент на приватности пользователей:</strong> RoboSats использует браузер Tor. Площадка также не требует от вас каких-либо данных, даже email. Вместо этого при входе вы можете либо сгенерировать новый аккаунт, либо использовать сгенерированный ранее.</li>
-<li><strong>Поддержка сети лайтнинг:</strong> По умолчанию RoboSats использует сеть лайтнинг, что особенно привлекательно на сегодняшний день, учитывая высокие ончейн-комиссии. При этом площадка предоставляет возможность отправить или получить биткоин ончейн.</li>
-</ul>
-<h3 id="терминология1">
-  Терминология<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>
-  <a class="anchor" href="#%d1%82%d0%b5%d1%80%d0%bc%d0%b8%d0%bd%d0%be%d0%bb%d0%be%d0%b3%d0%b8%d1%8f1">#</a>
+<p>Buying Bitcoin <a href="/en/privacy/no-kyc">noKYConly!</a></p>
+<p>There are many ways to obtain Bitcoin without having to provide all of your personal details to a company that may or may not know how to properly secure that data. I have guides on using peer-to-peer markets like <a href="https://bitcoiner.guide/bisq">Bisq</a> and <a href="https://bitcoiner.guide/hodlhodl">HodlHodl</a>, but one of the new kids on the noKYC block is RoboSats.</p>
+<div class="imageWrapper">
+    <img src="/img/193.png">
+</div>
+<h1 id="what-is-robosats">
+  What is RoboSats?
+  <a class="anchor" href="#what-is-robosats">#</a>
+</h1>
+<p><a href="https://github.com/RoboSats/robosats">RoboSats</a> is an Open Source peer-to-peer exchange for buying and selling sats using the Lightning Network. It requires zero sign up information, is accessible via the Tor browser or an Android app and allows you to obtain sats directly to your own wallet. Because RoboSats is native to the Lightning Network, trades can be completed in as little as 5 minutes (<em>if both peers are online at the same time</em>) and for incredibly low fees.</p>
+<p>RoboSats operates globally, supporting all popular fiat currencies and payment methods. All you need is a peer wanting to do trade in your chosen currency/method pairing. If your chosen method is not listed, you can create your own offer and wait for someone to come to you. Certain payment methods come with more risk than others, so be sure to be aware of the <a href="https://learn.robosats.com/docs/payment-methods/">trade-offs</a> of your chosen method.</p>
+<h1 id="before-you-start">
+  Before You Start
+  <a class="anchor" href="#before-you-start">#</a>
+</h1>
+<h2 id="things-you-need-to-know">
+  Things you need to know
+  <a class="anchor" href="#things-you-need-to-know">#</a>
+</h2>
+<h3 id="jargon-buster">
+  Jargon Buster
+  <a class="anchor" href="#jargon-buster">#</a>
 </h3>
 <table>
-  <thead>
-      <tr>
-          <th style="text-align: left">Термин</th>
-          <th style="text-align: left">Описание</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td style="text-align: left">Робот</td>
-          <td style="text-align: left">Ваш автоматически сгенерированный личный торговый идентификатор. Не используйте одного и того же робота более одного раза, так как это снижает уровень приватности.</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">Токен</td>
-          <td style="text-align: left">Строка случайных символов, используемая для генерации вашего уникального робота.</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">Мейкер</td>
-          <td style="text-align: left">Пользователь, который создает предложение о покупке или продаже биткоина.</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">Тейкер</td>
-          <td style="text-align: left">Пользователь, который принимает чужое предложение покупки или продажи биткоина.</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">Бонд</td>
-          <td style="text-align: left">Биткоины, заблокированные обоими участниками в качестве обязательства выполнить свою часть сделки. Бонды обычно составляют 3% от общей суммы сделки и взимаются через так называемые холд-инвойсы.</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">Эскроу</td>
-          <td style="text-align: left">Используется продавцом в качестве метода хранения торговой суммы, опять же с помощью холд-инвойсов.</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">Комиссии</td>
-          <td style="text-align: left">RoboSats взимает 0.2% от суммы сделки. Сумма распределяется между продавцом и покупателем. Тейкер платит 0.175 %, а мейкер – 0.025 %.</td>
-      </tr>
-  </tbody>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://learn.robosats.com/docs/robots/">Robot</a></td>
+<td>Your automatically generated private trade identity. Do not re-use the same robot more than once as this can degrade your privacy.</td>
+</tr>
+<tr>
+<td><a href="https://learn.robosats.com/docs/robots/#robot-re-use-not-recommended">Token</a></td>
+<td>A string of random characters used to generate your unique robot.</td>
+</tr>
+<tr>
+<td><a href="https://bitcoiner.guide/robosats/">Maker</a></td>
+<td>A user who creates an offer to buy or sell Bitcoin.</td>
+</tr>
+<tr>
+<td><a href="https://bitcoiner.guide/robosats/">Taker</a></td>
+<td>A user who takes another user up on their offer to buy or sell Bitcoin.</td>
+</tr>
+<tr>
+<td><a href="https://learn.robosats.com/docs/bonds/">Bond</a></td>
+<td>An amount of Bitcoin locked up by both peers as a pledge to play fair and complete their part of the trade. Bonds are typically 3% of the total trade amount and are powered by <a href="https://github.com/lightningnetwork/lnd/pull/2022">Hodl Invoices</a>.</td>
+</tr>
+<tr>
+<td><a href="https://learn.robosats.com/docs/escrow/">Trade Escrow</a></td>
+<td>Used by the seller as a method of holding the trade amount of Bitcoin, again using Hodl Invoices.</td>
+</tr>
+<tr>
+<td><a href="https://learn.robosats.com/docs/fees/">Fees</a></td>
+<td>RoboSats charges <strong>0.2%</strong> of the trade amount, which is split between both maker and taker. The taker pays <strong>0.175%</strong> and the maker pays <strong>0.025%</strong>.</td>
+</tr>
+</tbody>
 </table>
-<h2 id="что-вам-понадобится">
-  Что вам понадобится
-  <a class="anchor" href="#%d1%87%d1%82%d0%be-%d0%b2%d0%b0%d0%bc-%d0%bf%d0%be%d0%bd%d0%b0%d0%b4%d0%be%d0%b1%d0%b8%d1%82%d1%81%d1%8f">#</a>
+<h2 id="things-you-need-to-have">
+  Things you need to have
+  <a class="anchor" href="#things-you-need-to-have">#</a>
 </h2>
-<h3 id="лайтнинг-кошелек">
-  Лайтнинг-кошелек
-  <a class="anchor" href="#%d0%bb%d0%b0%d0%b9%d1%82%d0%bd%d0%b8%d0%bd%d0%b3-%d0%ba%d0%be%d1%88%d0%b5%d0%bb%d0%b5%d0%ba">#</a>
+<h3 id="a-lightning-wallet">
+  A Lightning Wallet
+  <a class="anchor" href="#a-lightning-wallet">#</a>
 </h3>
-<p>RoboSats работает на основе технологии лайтнинг, поэтому вам понадобится кошелек с поддержкой этой сети. Если вы еще не определились с кошельком, <a href="/lajtning-koshelki">этот гид</a> поможет вам с выбором.</p>
-<h3 id="немного-сат">
-  Немного сат
-  <a class="anchor" href="#%d0%bd%d0%b5%d0%bc%d0%bd%d0%be%d0%b3%d0%be-%d1%81%d0%b0%d1%82">#</a>
+<p>RoboSats is Lightning native, so you’re going to need a Lightning Wallet to fund the bond and receive the purchased sats as a buyer. You should take care when choosing your wallet, due to the technology used to make RoboSats function, not all are <a href="https://learn.robosats.com/docs/wallets/">compatible</a>.</p>
+<p>If you’re a node runner, <a href="https://zeusln.app/">Zeus</a> is by far the best option. If you don’t have your own node, I’d highly recommend <a href="https://phoenix.acinq.co/">Phoenix</a>, a cross platform mobile wallet with simple setup and access to Lightning. Phoenix was used in the production of this guide.</p>
+<h3 id="some-bitcoin">
+  Some Bitcoin
+  <a class="anchor" href="#some-bitcoin">#</a>
 </h3>
-<p>Прежде чем совершить сделку, покупатели и продавцы должны пополнить счет. Обычно это небольшая сумма, около 3% от суммы сделки.</p>
-<blockquote class="book-hint info">
-  Используете RoboSats для покупки своих первых сатов? Вы можете попросить друга одолжить вам небольшую сумму, необходимую для начала работы. Если среди ваших знакомых еще нет биткоинеров, напишите в <a href="https://t.me/robosats_ru">русскоязычный чат RoboSats</a>, уверены, что кто-то из участников сообщества будет не прочь помочь с первыми шагами.
-</blockquote>
-
-<h3 id="доступ-к-площадке">
-  Доступ к площадке
-  <a class="anchor" href="#%d0%b4%d0%be%d1%81%d1%82%d1%83%d0%bf-%d0%ba-%d0%bf%d0%bb%d0%be%d1%89%d0%b0%d0%b4%d0%ba%d0%b5">#</a>
+<p>Buyers and sellers need to fund a bond before any trade can take place. This is usually a very small amount (<em>~3% of the trade amount</em>), but is a prerequisite nonetheless.</p>
+<p>Using RoboSats to buy your first sats? Why not get a friend to loan you the tiny amount required to get started!? If you’re flying solo, <a href="https://bitcoiner.guide/nokyconly">here</a> are some other great options to obtain some noKYC sats to get you started.</p>
+<h3 id="access-to-robosats">
+  Access to RoboSats
+  <a class="anchor" href="#access-to-robosats">#</a>
 </h3>
-<p>Очевидно, вам понадобится доступ к RoboSats! Площадка предлагает четыре основных способа взаимодействия:</p>
+<p>Obviously you’re going to need to access RoboSats! There are four main ways in which you can do this:</p>
 <ul>
-<li><a href="http://robosats6tkf3eva7x2voqso3a5wcorsnw34jveyxfqi2fu7oyheasid.onion/">Через браузер Tor</a> (рекомендуется!)</li>
-<li><a href="https://unsafe.robosats.com/">Через обычный веб-браузер</a> (Не рекомендуется!)<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></li>
-<li><a href="https://github.com/RoboSats/robosats/releases/latest">Через APK для Android</a></li>
+<li><a href="http://robosats6tkf3eva7x2voqso3a5wcorsnw34jveyxfqi2fu7oyheasid.onion/">Via Tor Browser</a> (<em>Recommended!</em>)</li>
+<li><a href="https://unsafe.robosats.com/">Via a regular web-browser</a> (<em>Not recommended!</em>)</li>
+<li><a href="https://github.com/RoboSats/robosats/releases/latest">Via the Android APK</a></li>
+<li><a href="https://bitcoiner.guide/robosats/#run-your-own-robosats-client">Your own client</a></li>
 </ul>
-<p>Если вы ранее не пользовались Tor, узнать больше об этом браузере и скачать его можно <a href="https://www.torproject.org/ru/">здесь</a>.</p>
-<blockquote class="book-hint warning">
-  <strong>Пользователям iOS</strong>, желающим получить доступ к RoboSats через Tor со своего телефона: <em>&lsquo;Onion Browser&rsquo; ≠ ‘Tor Browser’</em>. Вместо него используйте Orbot + Safari и Orbot + DuckDuckGo.
-</blockquote>
-
-<h2 id="покупкапродажа-биткоина">
-  Покупка/продажа биткоина
-  <a class="anchor" href="#%d0%bf%d0%be%d0%ba%d1%83%d0%bf%d0%ba%d0%b0%d0%bf%d1%80%d0%be%d0%b4%d0%b0%d0%b6%d0%b0-%d0%b1%d0%b8%d1%82%d0%ba%d0%be%d0%b8%d0%bd%d0%b0">#</a>
-</h2>
-<p>Начнем с покупки биткоина.</p>
-<blockquote class="book-hint info">
-  Данный гид был написан в январе 2024 года с использованием версии 0.6.0-alpha через браузер Tor. Опыт использования на других платформах или с использованием следующих версий может немного отличаться.
-</blockquote>
-
-<p>Скачиваем браузер <a href="https://www.torproject.org/ru/">Tor</a> и переходим на onion-сайт RoboSats <a href="http://robosats6tkf3eva7x2voqso3a5wcorsnw34jveyxfqi2fu7oyheasid.onion/">здесь</a>.
-Первый раз посетив площадку вы увидите приветственное сообщение. По умолчанию вас встретят на английском языке. Изменить язык можно сразу, перейдя в настройки. Далее жмем “Старт”.</p>
-<div class="imageWrapper">
-    <img src="/img/robosats/start.png">
-<p><em>Как вы можете видеть на скриншоте выше, RoboSats также предлагает возможность переиспользования ранее созданных токенов. Делать это не рекомендуется, так как это снижает уровень вашей приватности.</em></p>
-</div>
-<p>Следующим шагом является создание токена. Процесс очень прост и интуитивен.</p>
-<div class="imageWrapper">
-    <img src="/img/robosats/token.png">
-<p><em>Не забудьте сохранить полученный токен в приложение заметок на вашем устройстве. Это делается лишь на время данной сессии на случай, если ваше соединение прервется.</em></p>
-</div>
-<p>Дойдя до четвертого экрана, выбираем “Офферы” или “Создать”. Предлагаю начать с более простого подхода, где мы примем чей-то уже размещенный оффер. Позже мы опишем и процесс создания собственного оффера.</p>
-<p>Выбрав опцию “Офферы” вы попадете на страницу с доступными предложениями.</p>
-<div class="imageWrapper">
-    <img src="/img/robosats/list.png">
-</div>
-<p>Здесь вы можете:</p>
+<p>If you’re new to the Tor browser, learn more and download it <a href="https://www.torproject.org/">here</a>.</p>
+<p>A quick note for iOS users looking to access RoboSats via Tor from their phones. ‘Onion Browser’ is <strong>not</strong> Tor Browser. Instead use Orbot + Safari and Orbot + DuckDuckGo.</p>
+<h1 id="buying-bitcoin">
+  Buying Bitcoin
+  <a class="anchor" href="#buying-bitcoin">#</a>
+</h1>
+<p>The following steps were conducted in May 2023 using version 0.5.0, accessed via the Tor browser. The steps should be identical for users accessing RoboSats via the Android APK.</p>
+<p>At the time of writing RoboSats is still undergoing active development, so the interface may change a little in the future, but the basic steps required to complete the trade should remain largely unchanged.</p>
 <ol>
-<li>Отфильтровать только предложения по свопу. RoboSats предоставляет возможность обмена сатоши между сетью лайтнинг и ончейн (подробнее об этом в подразделе <a href="/robosats/#p2p-%d1%81%d0%b2%d0%be%d0%bf%d1%8b">&ldquo;P2P свопы&rdquo;</a>). Кликнув по этой кнопке, вы увидите все такие предложения.</li>
-<li>Отфильтровать по валюте.</li>
-<li>Отфильтровать по методу оплаты. Можно уточнить предпочитаемый банк или даже подарочные сертификаты (об этом чуть <a href="/robosats/#%d0%b2%d1%81%d0%b5%d0%b2%d0%be%d0%b7%d0%bc%d0%be%d0%b6%d0%bd%d1%8b%d0%b5-%d0%bc%d0%b5%d1%82%d0%be%d0%b4%d1%8b-%d0%be%d0%bf%d0%bb%d0%b0%d1%82%d1%8b">позже</a>).</li>
+<li>When you first load RoboSats you’ll be met with this landing page. Click Start.</li>
 </ol>
-<p>Применив желаемые фильтры, выберите подходящее предложение.</p>
 <div class="imageWrapper">
-    <img src="/img/robosats/choose.png">
+    <img src="/img/robosats/robo-02-en.png">
 </div>
-<p>Вам будут представлены подробности сделки:</p>
+<ol start="2">
+<li>Generate your token and store it somewhere safe like an <a href="https://standardnotes.com/">encrypted notes</a> app or <a href="https://bitwarden.com/">password manager</a>. This token can be used to recover your temporary Robot ID in the event that your browser or app closes mid way through a trade.</li>
+</ol>
 <div class="imageWrapper">
-    <img src="/img/robosats/details.png">
+    <img src="/img/robosats/robo-03-en.png">
 </div>
-<p>Приняв ордер, вам нужно будет заблокировать примерно 3% от общей суммы, используя сеть лайтнинг. Эти средства замораживаются на вашем лайтнинг-кошельке на время проведения сделки в качестве залога.</p>
+<ol start="3">
+<li>Meet your new Robot identity, then click Continue.</li>
+</ol>
 <div class="imageWrapper">
-    <img src="/img/robosats/lock.png">
-<p><em>Чтобы заблокировать средства, отсканируйте представленный QR-код вашим <a href="/lajtning-koshelki">лайтнинг-кошельком</a>.</em></p>
+    <img src="/img/robosats/robo-04-en.png">
 </div>
-<p>Далее необходимо предоставить реквизиты получения биткоина. Вы можете либо предоставить лайтнинг-инвойс для получения сат:</p>
-<div class="imageWrapper">
-    <img src="/img/robosats/address.png">
-</div>
-<p>&hellip;либо воспользоваться сервисом для свопа<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> сат в основную сеть Биткоин:</p>
-<div class="imageWrapper">
-    <img src="/img/robosats/onchain.png">
-</div>
-<p>После того, как вы укажете адрес получения средств, следует отправить фиат оговоренным способом и подтвердить отправку на платформе:</p>
-<div class="imageWrapper">
-    <img src="/img/robosats/check.png">
-</div>
-<p>Когда продавец получит фиат и подтвердит получение, вы получите средства на ваш кошелек и сделка будет завершена.</p>
-<div class="imageWrapper">
-    <img src="/img/robosats/finish-buy.png">
-</div>
-<p>Поздравляем! Вы приобрели свои первые сатоши приватным и некастодиальным способом.</p>
-<h2 id="создание-оффера">
-  Создание оффера
-  <a class="anchor" href="#%d1%81%d0%be%d0%b7%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-%d0%be%d1%84%d1%84%d0%b5%d1%80%d0%b0">#</a>
-</h2>
-<p>Создать оффер на площадке RoboSats не сложнее, чем принять чье-то предложение. Чтобы создать оффер перейдите во вкладку “Создать” в нижней части экрана.</p>
-<div class="imageWrapper">
-    <img src="/img/robosats/create1.png">
-</div>
-<p>Здесь необходимо:</p>
+<ol start="4">
+<li>Click Offers to browse the order book. At the top of the page you can then filter to your preferences. Be sure to take note of the bond percentages and <a href="https://learn.robosats.com/docs/premium/">premium</a> over the average exchange rate.</li>
+</ol>
 <ul>
-<li>Отметить, хотите вы купить биткоин или продать,</li>
-<li>Указать сумму,</li>
-<li>Выбрать валюту,</li>
-<li>Уточнить метод оплаты: вы можете добавить метод оплаты, если подходящего еще нет в списке (подробнее об этом <a href="/robosats/#%d0%b2%d1%81%d0%b5%d0%b2%d0%be%d0%b7%d0%bc%d0%be%d0%b6%d0%bd%d1%8b%d0%b5-%d0%bc%d0%b5%d1%82%d0%be%d0%b4%d1%8b-%d0%be%d0%bf%d0%bb%d0%b0%d1%82%d1%8b">ниже</a>),</li>
-<li>Сигнализировать, если желаете провести встречу лицом к лицу и оплату биткоинов наличными. Для этого отметьте место встречи на карте (подробнее),</li>
-<li>Определиться с наценкой. Ваш интерес как мейкера в процентном соотношении от среднерыночного,</li>
-<li>Нажать “Create Order” (создать ордер).</li>
-</ul>
-<p>Далее вам будет предложено сохранить токен робота.</p>
-<div class="imageWrapper">
-    <img src="/img/robosats/create2.png">
-<p><em>Сохраните токен в приложении заметок на вашем устройстве. Это делается лишь на время данной сессии на случай, если ваше соединение прервется.</em></p>
-</div>
-<p>Внимательно проверьте всю информацию и оплатите холд-инвойс. Это – необходимая часть заключения сделки на RoboSats. Эти средства замораживаются на вашем кошельке на случай, если вы внезапно откажетесь от сделки или проиграете в диспуте.</p>
-<div class="imageWrapper">
-    <img src="/img/robosats/create3.png">
-<p><em>Замораживается, как правило, 3% от общей суммы предстоящей сделки. Эти средства служат гарантом того, что контрагенты не будут себя злонамеренно вести.</em></p>
-</div>
-<p>После успешного завершения сделки средства размораживаются.</p>
-<p>Чтобы заморозить средства необходимо оплатить инвойс (счет) через сеть лайтнинг. Для этого переходим в свой лайтнинг-кошелек и сканируем представленный площадкой RoboSats QR-код (как на скриншоте выше).</p>
-<p>После оплаты инвойса мы будем перенаправлены на вкладку “Ордер”, отображающую размещенное вами предложение</p>
-<div class="imageWrapper">
-    <img src="/img/robosats/order.png">
-</div>
-<p>Ваш ордер теперь отображается в общем списке и ожидает контрагента. Когда кто-то примет ваше предложение, вы услышите звуковой сигнал и должны будете отреагировать в течение 3 часов. В противном случае ваш бонд (залог) сгорит. Вы также можете включить уведомления через Телеграм:</p>
-<div class="imageWrapper">
-    <img src="/img/robosats/tg.png">
-</div>
-<p>Когда покупатель объявится и внесет залог, вам будет представлено следующее сообщение…</p>
-<div class="imageWrapper">
-    <img src="/img/robosats/taker.png">
-</div>
-<p>… и предложено оплатить всю сумму в биткоинах через сеть лайтнинг.</p>
-<div class="imageWrapper">
-    <img src="/img/robosats/pay.png">
-</div>
-<blockquote class="book-hint warning">
-  Продать биткоин на RoboSats можно только через сеть лайтнинг. Но не дайте этому вас оттолкнуть: существует <a href="https://youtu.be/xH--uHmtF-Q">множество способов вывести ваши биткоины в сеть лайтнинг</a>. Пожалуй, самым простым решением будет отправка необходимой суммы (с небольшим запасом) на заранее установленный кошелек Wallet of Satoshi (чуть подробнее о нем <a href="/lajtning-koshelki/#wallet-of-satoshi-wos">здесь</a>) и оплата лайтнинг-инвойса с его помощью.
-</blockquote>
-
-<p>Оплатив инвойс, вам нужно будет подождать пока покупатель предоставит лайтнинг-инвойс или ончейн-адрес для получения средств.</p>
-<div class="imageWrapper">
-    <img src="/img/robosats/waiting.png">
-</div>
-<p>Далее откроется окно чата, где вы можете обсудить детали отправки фиата, другие подробности и методы передачи. Для обеспечения максимального уровня приватности и безопасности в чате используется сквозное шифрование.</p>
-<div class="imageWrapper">
-    <img src="/img/robosats/chat.png">
-</div>
-<blockquote class="book-hint warning">
-  При продаже биткоина вам придется предоставлять платежные данные для получения фиата. Если будете пользоваться банковской картой, возможно, стоит обзавестись отдельной картой для операций с биткоином. Вы также можете выбрать более приватные способы, например принять оплату <a href="/robosats/#%d0%b2%d1%81%d0%b5%d0%b2%d0%be%d0%b7%d0%bc%d0%be%d0%b6%d0%bd%d1%8b%d0%b5-%d0%bc%d0%b5%d1%82%d0%be%d0%b4%d1%8b-%d0%be%d0%bf%d0%bb%d0%b0%d1%82%d1%8b">ваучерами интернет-магазина</a> или <a href="/robosats/#%d1%81%d0%b4%d0%b5%d0%bb%d0%ba%d0%b8-%d0%bb%d0%b8%d1%86%d0%be%d0%bc-%d0%ba-%d0%bb%d0%b8%d1%86%d1%83">наличными при личной встрече</a>.
-</blockquote>
-
-<p>Когда вы получите средства и подтвердите получение, саты будут отправлены покупателю.</p>
-<div class="imageWrapper">
-    <img src="/img/robosats/confirm.png">
-<p><em>Подтвердите получение фиата, чтобы завершить сделку</em></p>
-</div>
-<p>Готово! Сделка завершена. Не забудьте оставить отзыв.</p>
-<div class="imageWrapper">
-    <img src="/img/robosats/finish.png">
-</div>
-<p>Что ж, мы ознакомились с базовым уровнем использования RoboSats. Давайте взглянем на некоторые продвинутые функции площадки.</p>
-<h2 id="дополнительные-функции">
-  Дополнительные функции
-  <a class="anchor" href="#%d0%b4%d0%be%d0%bf%d0%be%d0%bb%d0%bd%d0%b8%d1%82%d0%b5%d0%bb%d1%8c%d0%bd%d1%8b%d0%b5-%d1%84%d1%83%d0%bd%d0%ba%d1%86%d0%b8%d0%b8">#</a>
-</h2>
-<h3 id="гараж-роботов">
-  Гараж роботов
-  <a class="anchor" href="#%d0%b3%d0%b0%d1%80%d0%b0%d0%b6-%d1%80%d0%be%d0%b1%d0%be%d1%82%d0%be%d0%b2">#</a>
-</h3>
-<p>RoboSats предоставляет возможность создания и “парковки” нескольких роботов. Эта опция будет полезна активным пользователям, позволяя одновременно создавать несколько офферов и проводить несколько сделок, используя разные ID и повышая уровень своей приватности.</p>
-<div class="imageWrapper">
-    <img src="/img/robosats/garage.png">
-</div>
-<h3 id="всевозможные-методы-оплаты">
-  Всевозможные методы оплаты
-  <a class="anchor" href="#%d0%b2%d1%81%d0%b5%d0%b2%d0%be%d0%b7%d0%bc%d0%be%d0%b6%d0%bd%d1%8b%d0%b5-%d0%bc%d0%b5%d1%82%d0%be%d0%b4%d1%8b-%d0%be%d0%bf%d0%bb%d0%b0%d1%82%d1%8b">#</a>
-</h3>
-<p>RoboSats, будучи открытой площадкой, предоставляет возможность использовать любые удобные пользователям методы передачи средств в обмен на саты. На площадке уже представлены классические методы, такие как оплата через Сбербанк и Тинькофф, но кроме этого вы можете воспользоваться &ldquo;нетрадиционными&rdquo; методами или даже указать свой, если он еще не представлен на площадке:</p>
-<div class="imageWrapper">
-    <img src="/img/robosats/add.png">
-<p><em>Чтобы добавить новый метод оплаты, просто введите его название (1) и нажмите &ldquo;Добавить новый&rdquo; (2)</em></p>
-</div>
-<blockquote class="book-hint info">
-  Пользователи по всему миру используют самые разные сертификаты и ваучеры для обмена на биткоин, например подарочные карты Sony и Microsoft, а также сертификаты Amazon. В большинстве случаев такой подход помогает повысить уровень приватности получателя средств - вам не нужно разглашать ваш номер телефона или карты, и ваша фамилия и инциалы не сообщаются отправителю фиата.
-</blockquote>
-
-<p>Для пользователей из РФ полезными для повышения приватности будут сертификаты Ozon – вы можете купить их за саты, а позже обменять их на любой товар от спичек до двухметрового телевизора. Просто укажите, что готовы обменять биткоины на сертификаты Ozon при создании оффера или примите оффер с этим методом оплаты. Далее покупателю биткоина останется лишь <a href="https://www.ozon.ru/landing/giftcertificates">приобрести сертификат</a> и сообщить его код продавцу (вместо отправки фиата на карту).</p>
-<h3 id="сделки-лицом-к-лицу">
-  Сделки лицом к лицу
-  <a class="anchor" href="#%d1%81%d0%b4%d0%b5%d0%bb%d0%ba%d0%b8-%d0%bb%d0%b8%d1%86%d0%be%d0%bc-%d0%ba-%d0%bb%d0%b8%d1%86%d1%83">#</a>
-</h3>
-<p>Еще одним альтернативным способом передачи фиата в обмен н биткоин явдяется передача наличных в оффлайн-среде. Для этого на платформе доступна карта мира, а детали встречи вы можете обсудить в зашифрованном чате.</p>
-<div class="imageWrapper">
-    <img src="/img/robosats/map.png">
-<p><em>В случае личных встреч выбирайте людные места с установленными камерами видеонаблюдения, такие как почтовое отделение.</em></p>
-</div>
-<h3 id="p2p-свопы">
-  P2P-свопы
-  <a class="anchor" href="#p2p-%d1%81%d0%b2%d0%be%d0%bf%d1%8b">#</a>
-</h3>
-<p>RoboSats предлагает отдельную вкладку для желающих осуществить своп<sup id="fnref1:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> (обмен) лайтнинг-сат в ончейн или сайдчейны Биткоина. Пользователи Samourai Wallet и Sparrow также могут воспользоваться функцией Stowaway (PayJoin). Также поддерживаются свопы в/из LBTC, RBTC, WBTC. Будьте внимательны, выполняя свопы!</p>
-<div class="imageWrapper">
-    <img src="/img/robosats/swap.png">
-</div>
-<p>Чтобы найти подходящее предложение, нажмите на вкладку странички свопов (1), выберите “в” или “из” (2) актива вы хотите произвести своп и укажите актив (3). Теперь из представленных опций можно выбрать подходящее предложение. Подобно стандартным ордерам на куплю/продажу вы можете самостоятельно создать и ордер на своп – процесс аналогичен.</p>
-<h3 id="самостоятельный-хостинг-клиента">
-  Самостоятельный хостинг клиента
-  <a class="anchor" href="#%d1%81%d0%b0%d0%bc%d0%be%d1%81%d1%82%d0%be%d1%8f%d1%82%d0%b5%d0%bb%d1%8c%d0%bd%d1%8b%d0%b9-%d1%85%d0%be%d1%81%d1%82%d0%b8%d0%bd%d0%b3-%d0%ba%d0%bb%d0%b8%d0%b5%d0%bd%d1%82%d0%b0">#</a>
-</h3>
-<p>Пользователи Umbrel, Start9 и Citadel могут установить клиент RoboSats прямо на свои узлы (домашние серверы). Это предоставит пользователям следующие <a href="https://github.com/RoboSats/robosats/tree/main/nodeapp#why-host-your-own-robosats-client">бенефиты</a>:</p>
-<ul>
-<li>Ускорен процесс запуска приложения;</li>
-<li>Улучшена безопасность: контроль над клиентом RoboSats только у вас;</li>
-<li>Обеспечен безопасный доступ к RoboSats из любого браузера и с любого устройства. Нет необходимости использовать TOR, если вы находитесь в вашей локальной сети или используете VPN;</li>
-<li>Предоставлена возможность контролировать, к какому P2P координатору вы подключаетесь (по умолчанию – robosats6tkf3eva7x2voq3a5wcorsnw34jveyxfqi2fu7oyheasid.onion)</li>
+<li>Choose Buy</li>
+<li>Choose your currency</li>
+<li>Choose your payment method(s)</li>
 </ul>
 <div class="imageWrapper">
-    <img src="/img/robosats/self.png">
+    <img src="/img/robosats/robo-05-en.png">
 </div>
-<h3 id="федерации">
-  Федерации
-  <a class="anchor" href="#%d1%84%d0%b5%d0%b4%d0%b5%d1%80%d0%b0%d1%86%d0%b8%d0%b8">#</a>
-</h3>
-<p>С версией 0.6.0-alpha RoboSats <a href="https://learn.robosats.com/robosats/update/pre-release-robosats-decentralized/">представили</a> федерации – возможность каждому желающему запустить собственную версию площадки и координировать торги. Это огромный шаг в сторону децентрализации и цензуростойкости платформы. С развитием этого направления мы поделимся с вами особенностями запуска федераций. Следите за обновлениями и появлением стабильной публичной версии.</p>
-<h2 id="полезные-ссылки">
-  Полезные ссылки
-  <a class="anchor" href="#%d0%bf%d0%be%d0%bb%d0%b5%d0%b7%d0%bd%d1%8b%d0%b5-%d1%81%d1%81%d1%8b%d0%bb%d0%ba%d0%b8">#</a>
+<ol start="5">
+<li>Click on the offer you’d like to take. Enter the amount (<em>in your chosen fiat currency</em>) that you’d like to purchase from the seller, then have a final check of the details and click Take Order.</li>
+</ol>
+<p>If the seller is not online (<em>denoted by a red dot on their profile image</em>), you’ll see a warning that the trade could take longer than usual. If you continue and the seller does not proceed in time, you’ll be compensated 50% of their bond amount for your wasted time.</p>
+<div class="imageWrapper">
+    <img src="/img/robosats/robo-06-en.png">
+</div>
+<ol start="6">
+<li>Next, you need to lock up your trade bond by paying the invoice on screen. This is a hold invoice that freezes in your wallet. It will only be charged if you fail to complete your side of the trade.</li>
+</ol>
+<div class="imageWrapper">
+    <img src="/img/robosats/robo-07-en.png">
+</div>
+<ol start="7">
+<li>In your Lightning Wallet, scan the QR code and pay the invoice.</li>
+</ol>
+<div class="imageWrapper">
+    <img src="/img/robosats/robo-08-en.png">
+</div>
+<ol start="8">
+<li>Next, in your Lightning Wallet generate an invoice for the amount shown and paste into the space provided.</li>
+</ol>
+<div class="imageWrapper">
+    <img src="/img/robosats/robo-09-en.png">
+</div>
+<ol start="9">
+<li>Wait for the seller to lock their trade amount. When this takes place, RoboSats will automatically move to the next step where the chat window will open. Say Hi and ask the seller for their fiat payment information. Once provided, send the payment via the chosen method then confirm this in RoboSats. All chat in RoboSats is PGP encrypted meaning only you and your trade peer can read the messages.</li>
+</ol>
+<div class="imageWrapper">
+    <img src="/img/robosats/robo-10-en.png">
+</div>
+<ol start="10">
+<li>Once the seller confirms receipt of the payment, RoboSats automatically releases the payment using the invoice provided earlier.</li>
+</ol>
+<div class="imageWrapper">
+    <img src="/img/robosats/robo-11-en.png">
+</div>
+<ol start="11">
+<li>When the invoice is paid, the trade is finished and your bond is unlocked. You’ll then see a trade summary.</li>
+</ol>
+<div class="imageWrapper">
+    <img src="/img/robosats/robo-12-en.png">
+</div>
+<ol start="12">
+<li>Check your Lightning Wallet for confirmation that the sats have arrived.</li>
+</ol>
+<div class="imageWrapper">
+    <img src="/img/robosats/robo-13-en.png">
+</div>
+<h1 id="additional-features">
+  Additional Features
+  <a class="anchor" href="#additional-features">#</a>
+</h1>
+<p>As well as the obvious buying and selling of Bitcoin, RoboSats has a few other features you should know about.</p>
+<h2 id="robot-garage">
+  Robot Garage
+  <a class="anchor" href="#robot-garage">#</a>
 </h2>
-<p>RoboSats – проект с открытым исходным кодом и активным сообществом. Всю необходимую информацию можно найти, перейдя по следующим ссылкам:</p>
-<ul>
-<li><a href="https://github.com/RoboSats/robosats">GitHub</a></li>
-<li><a href="https://learn.robosats.com/docs/quick-start/">Документация</a></li>
-<li><a href="https://t.me/robosats_ru">Телеграм чат</a> (ру)</li>
-<li><a href="https://simplex.chat/contact/#/?v=1-2&amp;smp=smp%3A%2F%2F0YuTwO05YJWS8rkjn9eLJDjQhFKvIYd8d4xG8X1blIU%3D%40smp8.simplex.im%2FyEX_vdhWew_FkovCQC3mRYRWZB1j_cBq%23%2F%3Fv%3D1-2%26dh%3DMCowBQYDK2VuAyEAnrf9Jw3Ajdp4EQw71kqA64VgsIIzw8YNn68WjF09jFY%253D%26srv%3Dbeccx4yfxxbvyhqypaavemqurytl6hozr47wfc7uuecacjqdvwpw2xid.onion&amp;data=%7B%22type%22%3A%22group%22%2C%22groupLinkId%22%3A%22hWnMVPnJl-KT3-virDk0JA%3D%3D%22%7D">SimpleX чат</a> (eng)</li>
-<li><a href="https://matrix.to/#/#robosats:matrix.org">Matrix чат</a> (eng)</li>
-</ul>
-<p>Надеемся, этот гид оказался полезен. Остались вопросы? Есть предложения? Оставляйте комментарии через Ностр ниже или пишите нам <a href="/feedback">другими способами</a>.</p>
-<div class="footnotes" role="doc-endnotes">
-<hr>
+<p>Want to have multiple trades going at the same time, but don’t want to share the same identity across them? No problem! Click on the Robot tab, generate an additional Robot and create or take your next order.</p>
+<div class="imageWrapper">
+    <img src="/img/robosats/robo-14-en.png">
+</div>
+<h2 id="creating-orders">
+  Creating Orders
+  <a class="anchor" href="#creating-orders">#</a>
+</h2>
+<p>As well as taking someone else’s offer, you can create your own and wait for another Robot to come to you.</p>
 <ol>
-<li id="fn:1">
-<p>Подразделы “Терминология” и “Что вам понадобится” позаимствованы из <a href="https://bitcoiner.guide/robosats/">гида</a> Bitcoin QnA&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
-</li>
-<li id="fn:2">
-<p>На момент написания статьи версия clearnet не доступна.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
-</li>
-<li id="fn:3">
-<p>Так как площадка RoboSats оперирует поверх сети лайтнинг, &ldquo;нативной валютой&rdquo; считаются сатоши в этой сети (на втором уровне). Для отправки средств получателям ончейн RoboSats прибегает к так называемым свопам - бездоверительным сделкам, обменивающим саты в сети лайтнинг на ончейн-монеты. <strong>В итоге все происходит под капотом, вам заблаговременно сообщают о комиссиях, и вы получаете биткоины ончейн.</strong>&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a>&#160;<a href="#fnref1:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
-</li>
+<li>Open the Create page.</li>
+<li>Define if your order is to buy or sell Bitcoin.</li>
+<li>Enter the amount and currency you want to Buy/Sell with.</li>
+<li>Enter the payment method(s) you’re willing to use.</li>
+<li>Enter the ‘Premium over Market’ % you’re willing to accept. Note that this can be a negative figure to bid at a discount vs than the current market price.</li>
+<li>Click Create Order.</li>
+<li>Pay the Lightning invoice to lock your Maker Bond.</li>
+<li>Your order is now live. Sit back and wait for someone to accept it.</li>
 </ol>
+<div class="imageWrapper">
+    <img src="/img/robosats/robo-15-en.png">
 </div>
+<h2 id="on-chain-payouts">
+  On-chain Payouts
+  <a class="anchor" href="#on-chain-payouts">#</a>
+</h2>
+<p>RoboSats is Lightning focused, but buyers do have the option to receive their sats to an on-chain Bitcoin address. Buyers can select this option after locking up their bond. After selecting on-chain, the buyer will see an overview of the fees. The additional fees for this service include:</p>
+<ol>
+<li><strong>A swap fee collected by RoboSats</strong> - This fee is dynamic and moves depending on how busy the Bitcoin network is.</li>
+<li><strong>A mining fee for the payout transaction</strong> - This is configurable by the buyer.</li>
+</ol>
+<div class="imageWrapper">
+    <img src="/img/robosats/robo-16-en.png">
+</div>
+<h2 id="p2p-swaps">
+  P2P Swaps
+  <a class="anchor" href="#p2p-swaps">#</a>
+</h2>
+<p>RoboSats allows users to swap sats into or out of their Lightning Wallet. Simply click the swap button at the top of the offers page to view the current swap offers.</p>
+<p>As the buyer of a ‘Swap In’ offer, you send on-chain Bitcoin to the peer and receive sats back, minus the advertised fees and/or premiums, to your Lightning Wallet. As the buyer of a ‘Swap Out’ offer, you send sats via Lightning and receive Bitcoin, minus any fees and/or premiums, to your on-chain address. Samourai or Sparrow Wallet users can also leverage the Stowaway feature to complete a swap.</p>
+<p>RoboSats swap offers can also incorporate pegged alternatives to Bitcoin that include RBTC, LBTC and WBTC. You should take extreme care if interacting with these tokens as they all come with various tradeoffs. Pegged Bitcoin is not Bitcoin!</p>
+<div class="imageWrapper">
+    <img src="/img/robosats/robo-17-en.png">
+</div>
+<h2 id="run-your-own-robosats-client">
+  Run your own RoboSats Client
+  <a class="anchor" href="#run-your-own-robosats-client">#</a>
+</h2>
+<p>Umbrel, Citadel and Start9 node runners can install their own RoboSats client directly onto their node. The <a href="https://github.com/RoboSats/robosats/tree/main/nodeapp#why-host-your-own-robosats-client">benefits</a> of doing so are listed as:</p>
+<ol>
+<li>Dramatically faster load times.</li>
+<li>Safer: you control what RoboSats client app you run.</li>
+<li>Access RoboSats safely from any browser / device. No need to use TOR if you are on your local network or using VPN: your node backend handles the torification needed for anonymization.</li>
+<li>Allows control over what P2P market coordinator you connect to (<em>defaults to robosats6tkf3eva7x2voqso3a5wcorsnw34jveyxfqi2fu7oyheasid.onion</em>)</li>
+</ol>
+<div class="imageWrapper">
+    <img src="/img/robosats/robo-18-en.png">
+</div>
+<h1 id="faq">
+  FAQ
+  <a class="anchor" href="#faq">#</a>
+</h1>
+<h2 id="can-i-be-scammed">
+  Can I be scammed?
+  <a class="anchor" href="#can-i-be-scammed">#</a>
+</h2>
+<p>As a buyer, if you’ve sent the fiat required for your side of the trade, but the seller fails to release the sats to you then you can open a dispute. If during this dispute process you can prove to the RoboSats arbitrators that you did send the fiat, the sellers escrowed funds and their trade bond will be released to you.</p>
+<h2 id="how-do-i-cancel-a-trade">
+  How do I cancel a trade?
+  <a class="anchor" href="#how-do-i-cancel-a-trade">#</a>
+</h2>
+<p>You can cancel a trade after posting your bond by clicking the Collaborative Cancel button within the trade menu. If your trade peer is happy to cancel, you will incur no fees. But if your trade partner wants to complete the trade and you go ahead and cancel anyway, you’ll lose your trade bond.</p>
+<h2 id="does-robosats-work-with-x-payment-method">
+  Does RoboSats work with ‘X’ payment method?
+  <a class="anchor" href="#does-robosats-work-with-x-payment-method">#</a>
+</h2>
+<p>There are no restrictions on payment methods in RoboSats. If you don’t see any offers in your desired method, create your own offer using it!</p>
+<div class="imageWrapper">
+    <img src="/img/robosats/robo-19-en.png">
+</div>
+<h2 id="what-does-robosats-learn-about-me-when-i-use-it">
+  What does RoboSats learn about me when I use it?
+  <a class="anchor" href="#what-does-robosats-learn-about-me-when-i-use-it">#</a>
+</h2>
+<p>Providing you use RoboSats via Tor or the Android app, nothing at all! Learn more <a href="https://learn.robosats.com/docs/private/">here.</a></p>
+<ul>
+<li>Tor protects your network privacy.</li>
+<li>PGP encryption keeps your trade chat private.</li>
+<li>No accounts means one Robot per trade. This means RoboSats can’t correlate multiple trades to a single entity.</li>
+</ul>
+<p>However, there are some caveats! Lightning is fairly private as a sender, but not as a receiver. If you receive to your own Lightning node, your node ID is shared in your invoices. This node ID gives anyone with knowledge of it a starting point to try and link your on-chain activity. This is also true if a user opts to receive their trade via an on-chain payout.</p>
+<p>To mitigate this, users can opt to use a solution such as a <a href="https://learn.robosats.com/docs/proxy-wallets/">Proxy Wallet</a> for Lightning or <a href="https://bitcoiner.guide/privacy/separate/">Coinjoin</a> for on-chain.</p>
+<h1 id="coming-soon">
+  Coming Soon
+  <a class="anchor" href="#coming-soon">#</a>
+</h1>
+<h2 id="federation">
+  Federation
+  <a class="anchor" href="#federation">#</a>
+</h2>
+<p>Right now there is a single RoboSats coordinator operated by the RoboSats developer team. In Bitcoin, any form of centralisation makes for an easier target for governments or regulators who may not look fondly upon a specific service.</p>
+<p>With RoboSats being an Open Source project, anybody could take the code and start running their own coordinator. Whilst this does somewhat decentralise the risk away from a single target, it also fragments an already thin liquidity market.</p>
+<p>The RoboSats team realise this and have started work on a <a href="https://github.com/RoboSats/robosats/issues/228">federated model</a>. As an end user, this should not change the trade flow demonstrated above by much, but there will be extra views or screens for you to add or remove different coordinators that arise.</p>
+<h1 id="learn-more">
+  Learn More
+  <a class="anchor" href="#learn-more">#</a>
+</h1>
+<h2 id="written-guides">
+  Written Guides
+  <a class="anchor" href="#written-guides">#</a>
+</h2>
+<p>Check out <a href="https://www.athena-alpha.com/how-to-buy-bitcoins-using-robosats/">Athena Alpha</a> for their guide on how to buy bitcoins with RoboSats or their full review <a href="https://www.athena-alpha.com/robosats-review/">here</a>.</p>
+<h2 id="video-guides">
+  Video Guides
+  <a class="anchor" href="#video-guides">#</a>
+</h2>
+<p>See RoboSats in action with these awesome video guides by <a href="https://www.youtube.com/@BTCSessions">BTC Sessions</a> and <a href="https://www.youtube.com/@IanMajor">Ian Major</a>.</p>
+
+<div class="youtubeWrapper">
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+        <iframe src="https://www.youtube.com/embed/XW_wzRz_BDI" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video" loading="lazy"></iframe>
+    </div>
+</div>
+
+
+<div class="youtubeWrapper">
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+        <iframe src="https://www.youtube.com/embed/QISRoZxQaAs" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video" loading="lazy"></iframe>
+    </div>
+</div>
+
+<h3 id="useful-links">
+  Useful Links
+  <a class="anchor" href="#useful-links">#</a>
+</h3>
+<p>RoboSats is completely Open-Source. You can find the code source <a href="https://github.com/RoboSats/robosats">here</a> and their extensive documentation <a href="https://learn.robosats.com/">here</a></p>
+<p>Use RoboSats by any of the following methods:</p>
+<ul>
+<li><a href="http://robosats6tkf3eva7x2voqso3a5wcorsnw34jveyxfqi2fu7oyheasid.onion/">Tor</a></li>
+<li><a href="https://unsafe.robosats.com/">Clearnet</a> (<em>Not recommended!</em>)</li>
+<li><a href="https://github.com/RoboSats/robosats/releases/latest">Android APK</a></li>
+<li><a href="https://bitcoiner.guide/robosats/#run-your-own-robosats-client">Your own client</a></li>
+</ul>
+<p>If you have any questions or feedback, get involved via these options:</p>
+<ul>
+<li><a href="https://simplex.chat/contact/#/?v=1-2&amp;smp=smp%3A%2F%2F0YuTwO05YJWS8rkjn9eLJDjQhFKvIYd8d4xG8X1blIU%3D%40smp8.simplex.im%2FyEX_vdhWew_FkovCQC3mRYRWZB1j_cBq%23%2F%3Fv%3D1-2%26dh%3DMCowBQYDK2VuAyEAnrf9Jw3Ajdp4EQw71kqA64VgsIIzw8YNn68WjF09jFY%253D%26srv%3Dbeccx4yfxxbvyhqypaavemqurytl6hozr47wfc7uuecacjqdvwpw2xid.onion&amp;data=%7B%22type%22%3A%22group%22%2C%22groupLinkId%22%3A%22hWnMVPnJl-KT3-virDk0JA%3D%3D%22%7D">SimpleX</a></li>
+<li><a href="https://reddit.com/r/robosats">Reddit</a></li>
+<li><a href="https://matrix.to/#/#robosats:matrix.org">Matrix</a></li>
+</ul>
+<p><em>Starting from June 12th, 2023, the Robosats Telegram group will no longer be active. More info <a href="https://twitter.com/RoboSats/status/1668043842275229696?s=20">here</a></em>.</p>
+<p>Remember - No RoboSats representative will ever contact you unannounced via any of these platforms. If someone does, they are almost certainly a scammer and should be blocked.</p>
+<p>And finally, don’t forget to follow them on <a href="https://twitter.com/RoboSats">Twitter</a> and <a href="https://snort.social/p/npub1p2psats79rypr8lpnl9t5qdekfp700x660qsgw284xvq4s09lqrqqk3m82">Nostr</a> to stay up to date!</p>
 </article>
   <hr>
 
@@ -3398,33 +3306,59 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li>
+    <li><a href="#nokyc">noKYC</a>
       <ul>
-        <li><a href="#что-такое-robosats">Что такое RoboSats?</a>
+        <li><a href="#so-whats-the-alternative">So what’s the alternative?</a></li>
+      </ul>
+    </li>
+    <li><a href="#what-is-robosats">What is RoboSats?</a></li>
+    <li><a href="#before-you-start">Before You Start</a>
+      <ul>
+        <li><a href="#things-you-need-to-know">Things you need to know</a>
           <ul>
-            <li><a href="#терминология1">Терминология</a></li>
+            <li><a href="#jargon-buster">Jargon Buster</a></li>
           </ul>
         </li>
-        <li><a href="#что-вам-понадобится">Что вам понадобится</a>
+        <li><a href="#things-you-need-to-have">Things you need to have</a>
           <ul>
-            <li><a href="#лайтнинг-кошелек">Лайтнинг-кошелек</a></li>
-            <li><a href="#немного-сат">Немного сат</a></li>
-            <li><a href="#доступ-к-площадке">Доступ к площадке</a></li>
+            <li><a href="#a-lightning-wallet">A Lightning Wallet</a></li>
+            <li><a href="#some-bitcoin">Some Bitcoin</a></li>
+            <li><a href="#access-to-robosats">Access to RoboSats</a></li>
           </ul>
         </li>
-        <li><a href="#покупкапродажа-биткоина">Покупка/продажа биткоина</a></li>
-        <li><a href="#создание-оффера">Создание оффера</a></li>
-        <li><a href="#дополнительные-функции">Дополнительные функции</a>
+      </ul>
+    </li>
+    <li><a href="#buying-bitcoin">Buying Bitcoin</a></li>
+    <li><a href="#additional-features">Additional Features</a>
+      <ul>
+        <li><a href="#robot-garage">Robot Garage</a></li>
+        <li><a href="#creating-orders">Creating Orders</a></li>
+        <li><a href="#on-chain-payouts">On-chain Payouts</a></li>
+        <li><a href="#p2p-swaps">P2P Swaps</a></li>
+        <li><a href="#run-your-own-robosats-client">Run your own RoboSats Client</a></li>
+      </ul>
+    </li>
+    <li><a href="#faq">FAQ</a>
+      <ul>
+        <li><a href="#can-i-be-scammed">Can I be scammed?</a></li>
+        <li><a href="#how-do-i-cancel-a-trade">How do I cancel a trade?</a></li>
+        <li><a href="#does-robosats-work-with-x-payment-method">Does RoboSats work with ‘X’ payment method?</a></li>
+        <li><a href="#what-does-robosats-learn-about-me-when-i-use-it">What does RoboSats learn about me when I use it?</a></li>
+      </ul>
+    </li>
+    <li><a href="#coming-soon">Coming Soon</a>
+      <ul>
+        <li><a href="#federation">Federation</a></li>
+      </ul>
+    </li>
+    <li><a href="#learn-more">Learn More</a>
+      <ul>
+        <li><a href="#written-guides">Written Guides</a></li>
+        <li><a href="#video-guides">Video Guides</a>
           <ul>
-            <li><a href="#гараж-роботов">Гараж роботов</a></li>
-            <li><a href="#всевозможные-методы-оплаты">Всевозможные методы оплаты</a></li>
-            <li><a href="#сделки-лицом-к-лицу">Сделки лицом к лицу</a></li>
-            <li><a href="#p2p-свопы">P2P-свопы</a></li>
-            <li><a href="#самостоятельный-хостинг-клиента">Самостоятельный хостинг клиента</a></li>
-            <li><a href="#федерации">Федерации</a></li>
+            <li><a href="#useful-links">Useful Links</a></li>
           </ul>
         </li>
-        <li><a href="#полезные-ссылки">Полезные ссылки</a></li>
       </ul>
     </li>
   </ul>

@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html lang="ru-RU" dir="ltr">
+<html lang="en" dir="ltr">
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&display=swap" rel="stylesheet">  <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Как пользоваться сетью Лайтнинг, никому не доверяя? Возвращаем контроль над своими сатами в сети Лайтнинг.">
+<meta name="description" content="How to use the Lightning Network without trusting anyone?">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark">
-<meta name="lightning" content="21ideas@getalby.com"><meta property="og:title" content="Кошелек Phoenix" />
-<meta property="og:description" content="Как пользоваться сетью Лайтнинг, никому не доверяя? Возвращаем контроль над своими сатами в сети Лайтнинг." />
+<meta name="lightning" content="21ideas@getalby.com"><meta property="og:title" content="Phoenix: The Non-Custodial Lightning Wallet" />
+<meta property="og:description" content="How to use the Lightning Network without trusting anyone?" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://localhost:1313/phoenix/" />
 <meta property="og:image" content="http://localhost:1313/img/134.jpg"/>
 
-<title>Кошелек Phoenix | 21ideas</title>
+<title>Phoenix: The Non-Custodial Lightning Wallet | 21ideas</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -22,10 +22,10 @@
 <link rel="apple-touch-icon" media="(prefers-color-scheme: dark)" sizes="180x180" href="/apple-touch-icon-dark.png">
 <link rel="icon" type="image/png" media="(prefers-color-scheme: dark)" sizes="32x32" href="/favicon-32x32-dark.png">
 <link rel="icon" type="image/png" media="(prefers-color-scheme: dark)" sizes="16x16" href="/favicon-16x16-dark.png">
-  <link rel="alternate" hreflang="en" href="http://localhost:1313/en/phoenix/" title="Phoenix: The Non-Custodial Lightning Wallet">
+  <link rel="alternate" hreflang="ru-RU" href="http://localhost:1313/ru/phoenix/" title="Кошелек Phoenix">
 <link rel="stylesheet" href="/book.min.44d288673620af09aba4fb7b29ef4c1d1f9c0258f725bd228507764ec1740f0a.css" integrity="sha256-RNKIZzYgrwmrpPt7Ke9MHR&#43;cAlj3Jb0ihQd2TsF0Dwo=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/ru.search.min.760cb93fca4cc9af4d5d957f0e91325f35c604c9b72da7d0d0517ae0f7424f53.js" integrity="sha256-dgy5P8pMya9NXZV/DpEyXzXGBMm3LafQ0FF64PdCT1M=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.322caf709709c011df0f8373a87ef3ce291ba22a62fdd5b8cf00bf824b20d5f8.js" integrity="sha256-MiyvcJcJwBHfD4NzqH7zzikboipi/dW4zwC/gksg1fg=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -53,7 +53,7 @@ https://github.com/alex-shpak/hugo-book
 
 
 <div class="book-search">
-  <input type="text" id="book-search-input" placeholder="Поиск" aria-label="Поиск" maxlength="64" data-hotkeys="s/" />
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
   <div class="book-search-spinner hidden"></div>
   <ul id="book-search-results"></ul>
 </div>
@@ -78,15 +78,15 @@ https://github.com/alex-shpak/hugo-book
     <label for="languages" class="flex justify-between">
       <a role="button" class="flex align-center">
         <img src="/svg/translate.svg" class="book-icon" alt="Languages" />
-        Русский
+        English
       </a>
     </label>
 
     <ul>
       
       <li>
-        <a href="http://localhost:1313/en/phoenix/">
-          English
+        <a href="http://localhost:1313/ru/phoenix/">
+          Русский
         </a>
       </li>
       
@@ -120,7 +120,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-4b959577bbd662d890894b4ef656e45e" class="toggle"  />
     <label for="section-4b959577bbd662d890894b4ef656e45e" class="flex justify-between">
-      <a href="/start/" class="">Старт</a>
+      <a role="button" class="">Start</a>
     </label>
   
 
@@ -134,7 +134,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/start/start/" class="">Что такое Биткоин?</a>
+    <a href="/start/start/" class="">Bitcoin Basics</a>
   
 
         </li>
@@ -147,7 +147,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/start/guide/" class="">Используем биткоин</a>
+    <a href="/start/guide/" class="">Using Bitcoin</a>
   
 
         </li>
@@ -160,33 +160,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/course/" class="">Биткоин от А до Я</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/bitcoin-myths/" class="">Разрушаем мифы о Биткоине</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/shitcoin-casino/" class="">Не играйте в щиткоин-казино</a>
+    <a href="/shitcoin-gambling-games/" class="">Don’t Play Shitcoin Gambling Games</a>
   
 
         </li>
@@ -206,7 +180,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-c8e2b39e67e72b49a36ee1ec8355ecba" class="toggle"  />
     <label for="section-c8e2b39e67e72b49a36ee1ec8355ecba" class="flex justify-between">
-      <a href="/theory/" class="">Теория</a>
+      <a href="/theory/" class="">Theory</a>
     </label>
   
 
@@ -222,7 +196,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-981a6953479a2e41da30ae73c119d6e2" class="toggle"  />
     <label for="section-981a6953479a2e41da30ae73c119d6e2" class="flex justify-between">
-      <a href="/economics/" class="">Экономика</a>
+      <a href="/economics/" class="">Economics</a>
     </label>
   
 
@@ -238,7 +212,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-43f26905d14df4de3737d0d5dfd90ca0" class="toggle"  />
     <label for="section-43f26905d14df4de3737d0d5dfd90ca0" class="flex justify-between">
-      <a href="/pzv/" class="">Постепенно, затем внезапно</a>
+      <a href="/gradually-then-suddenly/" class="">Gradually, Then Suddenly</a>
     </label>
   
 
@@ -252,7 +226,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/postepenno-zatem-vnezapno/" class="">Введение</a>
+    <a href="/gradually-then-suddenly/intro/" class="">Intro</a>
   
 
         </li>
@@ -265,7 +239,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-nelzya-skopirovat/" class="">Биткоин нельзя скопировать</a>
+    <a href="/gradually-then-suddenly/bitcoin-cant-be-copied/" class="">Bitcoin Can’t Be Copied</a>
   
 
         </li>
@@ -278,7 +252,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-ne-slishkom-volatilen/" class="">Биткоин не слишком волатилен</a>
+    <a href="/gradually-then-suddenly/bitcoin-is-not-too-volatile/" class="">Bitcoin Is Not Too Volatile</a>
   
 
         </li>
@@ -291,7 +265,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-ne-tratit-energiyu-zrya/" class="">Биткоин не тратит энергию зря</a>
+    <a href="/gradually-then-suddenly/bitcoin-does-not-waste-energy/" class="">Bitcoin Does Not Waste Energy</a>
   
 
         </li>
@@ -304,7 +278,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-ne-slishkom-medlennyj/" class="">Биткоин не слишком медленный</a>
+    <a href="/gradually-then-suddenly/bitcoin-is-not-too-slow/" class="">Bitcoin is Not Too Slow</a>
   
 
         </li>
@@ -317,7 +291,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-eto-ispravit/" class="">Биткоин это исправит</a>
+    <a href="/gradually-then-suddenly/bitcoin-fixes-this/" class="">Bitcoin Fixes This</a>
   
 
         </li>
@@ -330,7 +304,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-ne-blokchejn/" class="">Биткоин, не блокчейн</a>
+    <a href="/gradually-then-suddenly/bitcoin-not-blockchain/" class="">Bitcoin, Not Blockchain</a>
   
 
         </li>
@@ -343,7 +317,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-nichem-ne-podkreplen/" class="">Биткоин ничем не подкреплен?</a>
+    <a href="/gradually-then-suddenly/bitcoin-is-not-backed-by-nothing/" class="">Bitcoin is Not Backed by Nothing</a>
   
 
         </li>
@@ -356,7 +330,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-ne-finansovaya-piramida/" class="">Биткоин — не финансовая пирамида</a>
+    <a href="/gradually-then-suddenly/bitcoin-is-not-a-pyramid-scheme/" class="">Bitcoin is Not a Pyramid Scheme</a>
   
 
         </li>
@@ -369,7 +343,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-ne-mozhet-byt-zabanen/" class="">Биткоин не может быть забанен</a>
+    <a href="/gradually-then-suddenly/bitcoin-cannot-be-banned/" class="">Bitcoin Cannot be Banned</a>
   
 
         </li>
@@ -382,7 +356,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-ne-dlya-prestupnikov/" class="">Биткоин не для преступников</a>
+    <a href="/gradually-then-suddenly/bitcoin-is-not-for-criminals/" class="">Bitcoin is Not for Criminals</a>
   
 
         </li>
@@ -395,7 +369,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-obescenivaet-ostalnye-dengi/" class="">Биткоин обесценивает остальные деньги</a>
+    <a href="/gradually-then-suddenly/bitcoin-obsoletes-all-other-money/" class="">Bitcoin Obsoletes All Other Money</a>
   
 
         </li>
@@ -408,7 +382,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-zov-k-edineniyu/" class="">Биткоин — зов к единению</a>
+    <a href="/gradually-then-suddenly/bitcoin-is-a-rally-cry/" class="">Bitcoin is a Rally Cry</a>
   
 
         </li>
@@ -421,7 +395,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-eto-zdravyj-smysl/" class="">Биткоин — это здравый смысл</a>
+    <a href="/gradually-then-suddenly/bitcoin-is-common-sense/" class="">Bitcoin is Common Sense</a>
   
 
         </li>
@@ -434,7 +408,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-antihrupok/" class="">Биткоин антихрупок</a>
+    <a href="/gradually-then-suddenly/bitcoin-is-antifragile/" class="">Bitcoin is Antifragile</a>
   
 
         </li>
@@ -447,7 +421,20 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-velikaya-definancializaciya/" class="">Биткоин — великая дефинанcиализация</a>
+    <a href="/gradually-then-suddenly/bitcoin-is-one-for-all/" class="">Bitcoin is One for All</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/gradually-then-suddenly/bitcoin-is-the-great-definancialization/" class="">Bitcoin is the Great Definancialization</a>
   
 
         </li>
@@ -467,7 +454,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-070af377b46d38e45de9a60dd3c8e7d0" class="toggle"  />
     <label for="section-070af377b46d38e45de9a60dd3c8e7d0" class="flex justify-between">
-      <a href="/sb/" class="">Становление Биткоина</a>
+      <a href="/discovering-bitcoin/" class="">Discovering Bitcoin</a>
     </label>
   
 
@@ -481,7 +468,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sb/stanovlenie-intro/" class="">Введение</a>
+    <a href="/discovering-bitcoin/intro/" class="">Introduction</a>
   
 
         </li>
@@ -494,7 +481,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sb/stanovlenie-1/" class="">О времени</a>
+    <a href="/discovering-bitcoin/about-time/" class="">About Time</a>
   
 
         </li>
@@ -507,7 +494,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sb/stanovlenie-2/" class="">О людях</a>
+    <a href="/discovering-bitcoin/about-people/" class="">About People</a>
   
 
         </li>
@@ -520,7 +507,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sb/stanovlenie-3/" class="">Знакомьтесь: деньги</a>
+    <a href="/discovering-bitcoin/introducing-money/" class="">Introducing Money</a>
   
 
         </li>
@@ -533,7 +520,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sb/stanovlenie-4/" class="">Поворот не туда</a>
+    <a href="/discovering-bitcoin/a-wrong-turn-new-plan-needed/" class="">A Wrong Turn (New Plan Needed)!</a>
   
 
         </li>
@@ -546,7 +533,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sb/stanovlenie-5/" class="">Цифровая редкость</a>
+    <a href="/discovering-bitcoin/digital-scarcity/" class="">Digital Scarcity</a>
   
 
         </li>
@@ -559,7 +546,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sb/stanovlenie-6/" class="">Цифровые контракты</a>
+    <a href="/discovering-bitcoin/digital-contracts/" class="">Digital Contracts</a>
   
 
         </li>
@@ -572,7 +559,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sb/stanovlenie-7/" class="">Недостающие части головоломки</a>
+    <a href="/discovering-bitcoin/the-missing-pieces/" class="">The Missing Pieces</a>
   
 
         </li>
@@ -590,7 +577,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitkoin-ne-vredit-okruzhayushej-srede/" class="">Биткоин и окружающая среда</a>
+    <a href="/bitcoin-is-not-harmful-for-the-environment/" class="">Bitcoin Is Not Harmful For The Environment</a>
   
 
         </li>
@@ -603,7 +590,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sem-setevyh-effektov-bitkoina/" class="">Семь сетевых эффектов Биткоина</a>
+    <a href="/seven-network-effects-of-bitcoin/" class="">The Seven Network Effects of Bitcoin</a>
   
 
         </li>
@@ -616,7 +603,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/hozyaeva-i-raby-deneg/" class="">Хозяева и рабы денег</a>
+    <a href="/masters-and-slaves-of-money/" class="">Masters and Slaves of Money</a>
   
 
         </li>
@@ -629,7 +616,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/strukturnaya-perestrojka/" class="">Структурная перестройка</a>
+    <a href="/structural-adjustment/" class="">Structural Adjustment</a>
   
 
         </li>
@@ -642,7 +629,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/v-zashchitu-deflyacii/" class="">В защиту дефляции</a>
+    <a href="/in-defense-of-deflation/" class="">In Defense Of Deflation</a>
   
 
         </li>
@@ -655,7 +642,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sravnenie-monetarnyh-standartov/" class="">Сравнение монетарных стандартов</a>
+    <a href="/comparison-of-monetary-standards/" class="">Comparison of Monetary Standards</a>
   
 
         </li>
@@ -668,7 +655,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sravnenie-monetarnyh-standartov/" class="">Сравнение монетарных стандартов</a>
+    <a href="/petrodollar-negative-effects/" class="">Petrodollar Negative Effects</a>
   
 
         </li>
@@ -681,7 +668,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/negativnye-effekty-neftedollara/" class="">Негативные внешние эффекты нефтедоллара</a>
+    <a href="/shelling-out/" class="">Shelling Out: The Origins of Money</a>
   
 
         </li>
@@ -694,7 +681,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/raskoshelivaemsya/" class="">Раскошеливаемся (Shelling Out): Происхождение денег</a>
+    <a href="/bitcoin-rhythms-of-history/" class="">Bitcoin and the Rhythms of History</a>
   
 
         </li>
@@ -707,7 +694,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-i-ritmy-istorii/" class="">Биткоин и ритмы истории</a>
+    <a href="/bitcoin-and-the-hopf-cycle-of-the-internet/" class="">Bitcoin &amp; the HOPF Cycle of the Internet</a>
   
 
         </li>
@@ -720,7 +707,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-i-internet-cikly-hopfa/" class="">Биткоин и интернет-циклы Хопфа</a>
+    <a href="/money-blockchains-and-social-scalability/" class="">Money, blockchains, and social scalability</a>
   
 
         </li>
@@ -733,7 +720,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/dengi-blokchejny-i-socialnaya-masshtabiruemost/" class="">Деньги, блокчейны и социальная масштабируемость</a>
+    <a href="/what-is-money/" class="">What Is Money</a>
   
 
         </li>
@@ -746,7 +733,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/chto-takoe-dengi/" class="">Что такое деньги</a>
+    <a href="/only-the-strong-survive/" class="">Only The Strong Survive</a>
   
 
         </li>
@@ -759,7 +746,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/vyzhivaet-silnejshij/" class="">Выживает сильнейший</a>
+    <a href="/dollar-cost-averaging/" class="">Dollar-Cost Averaging</a>
   
 
         </li>
@@ -772,33 +759,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/strategiya-dca/" class="">Стратегия DCA</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/jevons-paradox/" class="">Парадокс Джевонса: Обратная истина</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/kak-rabotajut-dengi/" class="">Как работают деньги</a>
+    <a href="/jevons-paradox/" class="">Jevons Paradox: Contrary Truth</a>
   
 
         </li>
@@ -818,7 +779,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-4d5bb6cd046af3ae6f08884281ee0445" class="toggle"  />
     <label for="section-4d5bb6cd046af3ae6f08884281ee0445" class="flex justify-between">
-      <a href="/security/" class="">Безопасность</a>
+      <a href="/security/" class="">Security</a>
     </label>
   
 
@@ -832,7 +793,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/kak-hranit-kljuchi/" class="">Биткоин-кошельки. Зачем и как хранить свои приватные ключи</a>
+    <a href="/how-to-hold-private-keys/" class="">Bitcoin Wallets: How, Why and When to Hold Your Own Private Keys</a>
   
 
         </li>
@@ -845,7 +806,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/seed/" class="">Что такое сид-фраза?</a>
+    <a href="/seed/" class="">What is a bitcoin seed phrase and how does it work?</a>
   
 
         </li>
@@ -858,7 +819,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/seed-security/" class="">Как обезопасить свои сид-фразы?</a>
+    <a href="/seed-security/" class="">Ultimate guide to storing your bitcoin seed phrase backups</a>
   
 
         </li>
@@ -871,7 +832,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/passphrase/" class="">Насколько надежна ваша парольная фраза?</a>
+    <a href="/passphrase/" class="">Is your passphrase strong enough?</a>
   
 
         </li>
@@ -884,7 +845,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/multisig/" class="">Все о мультисиг</a>
+    <a href="/what-is-multisig/" class="">What is multisig?</a>
   
 
         </li>
@@ -897,7 +858,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/hwws/" class="">Сравнение аппаратных кошельков</a>
+    <a href="/hwws/" class="">The best Bitcoin hardware wallets</a>
   
 
         </li>
@@ -910,7 +871,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/multisig-1/" class="">Мультисиг. Часть I</a>
+    <a href="/multisig-1/" class="">Multisig Part I: Why Multisig?</a>
   
 
         </li>
@@ -923,7 +884,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/multisig-2/" class="">Мультисиг. Часть II: Отдельные ключи – основа мультиподписи</a>
+    <a href="/multisig-2/" class="">Multisig Part II: Single Keys are the Foundation of Multisignature</a>
   
 
         </li>
@@ -943,7 +904,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-e5dc95f8c3734f1c9cf3045c3ba217e8" class="toggle"  />
     <label for="section-e5dc95f8c3734f1c9cf3045c3ba217e8" class="flex justify-between">
-      <a href="/privacy/" class="">Приватность</a>
+      <a href="/privacy/" class="">Privacy</a>
     </label>
   
 
@@ -957,7 +918,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/privacy/luchshie-praktiki/" class="">Как сохранить приватность?</a>
+    <a href="/privacy/best-practices/" class="">Bitcoin Privacy: Best Practices</a>
   
 
         </li>
@@ -970,7 +931,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/privacy/no-kyc/" class="">Никаких KYC, берегите персональные данные</a>
+    <a href="/privacy/no-kyc/" class="">no-KYC only. Avoid the creep</a>
   
 
         </li>
@@ -983,7 +944,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/privatnost-v-seti-bitcoin/" class="">Приватность в сети Биткоин</a>
+    <a href="/wiki-bitcoin-privacy/" class="">Bitcoin Privacy</a>
   
 
         </li>
@@ -996,7 +957,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-stanovitsya-kriticheski-vazhnym/" class="">Биткоин становится критически важным</a>
+    <a href="/bitcoin-becomes-critical/" class="">Bitcoin Becomes Critical</a>
   
 
         </li>
@@ -1009,7 +970,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bip47-ili-gadkij-utenok/" class="">BIP47, или гадкий утенок</a>
+    <a href="/bip47-the-ugly-duckling/" class="">BIP47, the ugly duckling</a>
   
 
         </li>
@@ -1024,7 +985,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-7626e3de66018c98c264d84fe366e13a" class="toggle"  />
     <label for="section-7626e3de66018c98c264d84fe366e13a" class="flex justify-between">
-      <a href="/privacy/oxt/" class="">Понимание приватности в сети Биткоин с помощью OXT</a>
+      <a href="/privacy/oxt/" class="">Understanding Bitcoin Privacy with OXT</a>
     </label>
   
 
@@ -1038,7 +999,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/privacy/oxt-1/" class="">Часть 1: Анализ цепочки и приватность транзакций</a>
+    <a href="/privacy/oxt-1/" class="">Part 1: Chain Analysis And Transaction Privacy</a>
   
 
         </li>
@@ -1051,7 +1012,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/privacy/oxt-2/" class="">Часть 2: Ключевые концепции анализа цепочки</a>
+    <a href="/privacy/oxt-2/" class="">Part 2: Chain Analysis Core Concepts</a>
   
 
         </li>
@@ -1064,7 +1025,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/privacy/oxt-3/" class="">Часть 3: Защита от анализа цепочки</a>
+    <a href="/privacy/oxt-3/" class="">Part 3: Defences Against Chain Analysis</a>
   
 
         </li>
@@ -1077,7 +1038,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/privacy/oxt-4/" class="">Часть 4: Применение концепций анализа цепочки для улучшения приватности пользователей</a>
+    <a href="/privacy/oxt-4/" class="">Part 4: Applying Chain Analysis Concepts To Improve User Privacy</a>
   
 
         </li>
@@ -1095,7 +1056,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/privacy/coinjoin/" class="">Понимание и использование CoinJoin</a>
+    <a href="/privacy/coinjoin/" class="">CoinJoin Overview</a>
   
 
         </li>
@@ -1108,7 +1069,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-fungibility/" class="">Взаимозаменяемость Биткоина</a>
+    <a href="/bitcoin-fungibility/" class="">Bitcoin Fungibility</a>
   
 
         </li>
@@ -1141,7 +1102,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-591754e4c6a4e23cb58f7ff9d9022ef1" class="toggle"  />
     <label for="section-591754e4c6a4e23cb58f7ff9d9022ef1" class="flex justify-between">
-      <a href="/protocol/" class="">Протокол</a>
+      <a href="/protocol/" class="">Protocol</a>
     </label>
   
 
@@ -1155,7 +1116,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/kto-kontroliruet-bitkoin-kor/" class="">Кто контролирует Bitcoin Core?</a>
+    <a href="/who-controls-bitcoin-core/" class="">Who Controls Bitcoin Core?</a>
   
 
         </li>
@@ -1168,7 +1129,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/vechnaja-borba/" class="">Вечная борьба Биткоина</a>
+    <a href="/bitcoins-eternal-struggle/" class="">Bitcoin&#39;s Eternal Struggle</a>
   
 
         </li>
@@ -1181,7 +1142,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/ob-udobstve-vzaimodejstvija-s-bitcoinom/" class="">Об удобстве взаимодействия с Биткоином</a>
+    <a href="/on-bitcoins-ux/" class="">On Bitcoin’s UX</a>
   
 
         </li>
@@ -1194,7 +1155,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-zoloto-2-0/" class="">Биткоин: цифровое золото или пиринговая наличность?</a>
+    <a href="/bitcoin-digital-gold-or-ecash/" class="">Bitcoin: Digital Gold or Peer-to-Peer Cash?</a>
   
 
         </li>
@@ -1207,7 +1168,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/upravlenie-bitcoin/" class="">Управление Биткоином</a>
+    <a href="/bitcoin-governance/" class="">Bitcoin Governance</a>
   
 
         </li>
@@ -1220,7 +1181,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/doverennye-tretyi-storony/" class="">Доверенные третьи стороны — это бреши в системе безопасности</a>
+    <a href="/trusted-third-parties/" class="">Trusted Third Parties are Security Holes</a>
   
 
         </li>
@@ -1233,7 +1194,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/21-million-ne-podlezhit-obsuzhdeniyu/" class="">21 миллион не подлежит обсуждению</a>
+    <a href="/21-million-is-non-negotiable/" class="">21 Million is Non-Negotiable</a>
   
 
         </li>
@@ -1246,7 +1207,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/proof-of-work/" class="">Proof of Work: доказательство проделанной работы</a>
+    <a href="/proof-of-work/" class="">Proof of Work, a pictorial essay</a>
   
 
         </li>
@@ -1259,7 +1220,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/proof-of-stake-eto-skam/" class="">Proof of Stake – это скам</a>
+    <a href="/proof-of-stake-is-a-scam/" class="">Proof of stake is a scam</a>
   
 
         </li>
@@ -1272,7 +1233,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/byl-li-satoshi-zhadnym-majnerom/" class="">Был ли Сатоши жадным майнером?</a>
+    <a href="/was-satoshi-a-greedy-miner/" class="">Was Satoshi a Greedy Miner?</a>
   
 
         </li>
@@ -1285,7 +1246,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/segwit/" class="">Что такое SegWit</a>
+    <a href="/segwit/" class="">What Is SegWit</a>
   
 
         </li>
@@ -1298,7 +1259,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/taproot/" class="">Что такое Taproot</a>
+    <a href="/taproot/" class="">What Is Taproot</a>
   
 
         </li>
@@ -1311,7 +1272,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bomby-slozhnosti-ethereum/" class="">Бомбы сложности Ethereum</a>
+    <a href="/coercion-of-ethereums-difficulty-bomb/" class="">The Coercion Of Ethereum&#39;s Difficulty Bomb</a>
   
 
         </li>
@@ -1324,7 +1285,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/rgb/" class="">Разбирая протокол RGB</a>
+    <a href="/rgb/" class="">Understanding the RGB protocol</a>
   
 
         </li>
@@ -1337,7 +1298,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/halving/" class="">Что такое Биткоин-халвинг?</a>
+    <a href="/difficulty/" class="">Bitcoin Difficulty Adjustment</a>
   
 
         </li>
@@ -1350,7 +1311,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/difficulty/" class="">О корректировке сложности майнинга</a>
+    <a href="/bitcoin-address-types/" class="">Bitcoin address types</a>
   
 
         </li>
@@ -1363,7 +1324,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sravnenie-tipov-bitcoin-adresov/" class="">Типы биткоин-адресов</a>
+    <a href="/myths-about-halving/" class="">Myths About the Bitcoin Halving</a>
   
 
         </li>
@@ -1376,20 +1337,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/myths-about-halving/" class="">Мифы о Биткоин-халвинге</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/mining-walkthrough/" class="">SHA256 и майнинг в сети Биткоин</a>
+    <a href="/mining-walkthrough/" class="">SHA256 and Bitcoin Mining Walkthrough</a>
   
 
         </li>
@@ -1404,7 +1352,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-c6baffdfa73d6dd5df13795b95ab68ac" class="toggle"  />
     <label for="section-c6baffdfa73d6dd5df13795b95ab68ac" class="flex justify-between">
-      <a href="/protocol/utxo/" class="">Что такое UTXO и как ими управлять?</a>
+      <a href="/protocol/utxo/" class="">What Is UTXO And How To Manage Them</a>
     </label>
   
 
@@ -1418,7 +1366,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/protocol/utxo-1/" class="">Что такое UTXO?</a>
+    <a href="/protocol/utxo-1/" class="">What is a Bitcoin UTXO</a>
   
 
         </li>
@@ -1431,7 +1379,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/protocol/utxo-2/" class="">Как избежать высоких комиссий при большом количестве UTXO</a>
+    <a href="/protocol/utxo-2/" class="">Too Many UTXOs: How To Avoid High Fees</a>
   
 
         </li>
@@ -1444,7 +1392,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/protocol/utxo-3/" class="">Приватность UTXO</a>
+    <a href="/protocol/utxo-3/" class="">UTXOs Privacy</a>
   
 
         </li>
@@ -1462,7 +1410,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/transaction-size/" class="">Размер транзакции</a>
+    <a href="/transaction-size/" class="">Transaction Size</a>
   
 
         </li>
@@ -1482,7 +1430,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-2cc3faa5b078e8edfc892bc463882294" class="toggle"  />
     <label for="section-2cc3faa5b078e8edfc892bc463882294" class="flex justify-between">
-      <a href="/history/" class="">История</a>
+      <a href="/history/" class="">History</a>
     </label>
   
 
@@ -1498,7 +1446,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-11903f72dc1c8e68f0d748ad1bb6164d" class="toggle"  />
     <label for="section-11903f72dc1c8e68f0d748ad1bb6164d" class="flex justify-between">
-      <a href="/gf/" class="">Генезис-файлы</a>
+      <a href="/gf/" class="">The Genesis Files</a>
     </label>
   
 
@@ -1512,7 +1460,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/gf/genesis-intro/" class="">Пролог</a>
+    <a href="/gf/genesis-intro/" class="">Intro</a>
   
 
         </li>
@@ -1525,7 +1473,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/gf/genesis-1/" class="">Часть I: eCash Дэвида Чаума и зарождение мечты шифропанков</a>
+    <a href="/gf/genesis-1/" class="">Part I: How David Chaum’s eCash Spawned a Cypherpunk Dream</a>
   
 
         </li>
@@ -1538,7 +1486,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/gf/genesis-2/" class="">Часть II: Hashcash или как Адам Бэк разработал сердце Биткоина</a>
+    <a href="/gf/genesis-2/" class="">Part II: Hashcash or How Adam Back Designed Bitcoin’s Motor Block</a>
   
 
         </li>
@@ -1551,7 +1499,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/gf/genesis-3/" class="">Часть III: Если у Биткоина был прототип, то это были b-money Вэя Дая</a>
+    <a href="/gf/genesis-3/" class="">Part III: If Bitcoin Had a First Draft, Wei Dai’s B-Money Was It</a>
   
 
         </li>
@@ -1564,7 +1512,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/gf/genesis-4/" class="">Часть IV: Создавая Bit Gold, Сабо был в двух шагах от изобретения Биткоина</a>
+    <a href="/gf/genesis-4/" class="">Part IV: With Bit Gold, Szabo Was Inches Away From Inventing Bitcoin</a>
   
 
         </li>
@@ -1577,7 +1525,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/gf/genesis-5/" class="">Часть V: Как поиски цифровой наличности привели Хэла Финни к созданию RPOW (и не только)</a>
+    <a href="/gf/genesis-5/" class="">Part V: How Hal Finney’s Quest For Digital Cash Led To RPOW (And More)</a>
   
 
         </li>
@@ -1595,7 +1543,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/hal-finney/" class="">Хэл Финни — жизнь и смерть легенды движения шифропанков</a>
+    <a href="/hal-finney/" class="">Hal Finney — The Life And Death Of A Cypherpunk Legend</a>
   
 
         </li>
@@ -1608,7 +1556,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-and-me/" class="">Биткоин и я</a>
+    <a href="/bitcoin-and-me/" class="">Bitcoin and Me</a>
   
 
         </li>
@@ -1621,7 +1569,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-reformaciya/" class="">Биткоин-Реформация</a>
+    <a href="/bitcoin-reformation/" class="">The Bitcoin Reformation</a>
   
 
         </li>
@@ -1634,7 +1582,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-forks/" class="">Полная история консенсус-форков Биткоина</a>
+    <a href="/bitcoin-forks/" class="">A complete history of Bitcoin’s consensus forks</a>
   
 
         </li>
@@ -1647,7 +1595,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/analyzing-2013-fork/" class="">Анализ форка Биткоина 2013 года</a>
+    <a href="/analyzing-2013-fork/" class="">Analyzing the 2013 Bitcoin fork</a>
   
 
         </li>
@@ -1667,7 +1615,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-ac2daa2484c1be670f7cc1e0d8d82356" class="toggle"  />
     <label for="section-ac2daa2484c1be670f7cc1e0d8d82356" class="flex justify-between">
-      <a href="/philosophy/" class="">Философия</a>
+      <a href="/philosophy/" class="">Philosophy</a>
     </label>
   
 
@@ -1683,7 +1631,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-b11b531f912b5e92a8260d0a526b85b6" class="toggle"  />
     <label for="section-b11b531f912b5e92a8260d0a526b85b6" class="flex justify-between">
-      <a href="/chemu-ya-nauchilsya-u-bitcoina/" class="">Чему я научился у Биткоина?</a>
+      <a href="/what-i-learned-from-bitcoin/" class="">What I&#39;ve Learned From Bitcoin</a>
     </label>
   
 
@@ -1697,7 +1645,33 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/chemu-ya-nauchilsya-u-bitcoina/filosofskie-uroki-bitcoina/" class="">Часть1. Философские уроки Биткоина</a>
+    <a href="/what-i-learned-from-bitcoin-1/" class="">Part I. Philosophical Teachings of Bitcoin</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/what-i-learned-from-bitcoin-2/" class="">Part II. Economic Teachings of Bitcoin</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/what-i-learned-from-bitcoin-3/" class="">Part III. Technological Teachings of Bitcoin</a>
   
 
         </li>
@@ -1715,7 +1689,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/ne-shitcoin/" class="">Биткоин, не щиткоин</a>
+    <a href="/not-shitcoin/" class="">Why Bitcoin, Not Shitcoin</a>
   
 
         </li>
@@ -1728,7 +1702,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/neotemlemye-prava-sobstvennosti/" class="">Неотъемлемые права собственности</a>
+    <a href="/inalienable-property-rights/" class="">Inalienable Property Rights</a>
   
 
         </li>
@@ -1741,7 +1715,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/manifest-kriptoanarhista/" class="">Манифест криптоанархиста</a>
+    <a href="/crypto-anarchist-manifesto/" class="">The Crypto Anarchist Manifesto</a>
   
 
         </li>
@@ -1754,7 +1728,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/manifest-shifropanka/" class="">Манифест шифропанка</a>
+    <a href="/cypherpunks-manifesto/" class="">A Cypherpunk&#39;s Manifesto</a>
   
 
         </li>
@@ -1767,7 +1741,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/tyulpannaya-lihoradka/" class="">Биткоин — современная голландская тюльпанная лихорадка?</a>
+    <a href="/dutch-tulip-bubble/" class="">Is Bitcoin Like the Dutch Tulip Bubble?</a>
   
 
         </li>
@@ -1780,7 +1754,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/vse-moshenniki/" class="">Все — мошенники</a>
+    <a href="/everyones-a-scammer/" class="">Everyone&#39;s a Scammer</a>
   
 
         </li>
@@ -1793,7 +1767,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/svoboda-cennosti/" class="">Свобода ценности</a>
+    <a href="/freedom-of-value/" class="">The Freedom of Value</a>
   
 
         </li>
@@ -1806,7 +1780,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-meme/" class="">Биткоин — единственный реальный мем</a>
+    <a href="/bitcoin-meme/" class="">Bitcoin Is The Only Real Meme</a>
   
 
         </li>
@@ -1819,7 +1793,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/nol-i-bitcoin/" class="">Ноль и Биткоин</a>
+    <a href="/number-zero-and-bitcoin/" class="">The Number Zero and Bitcoin</a>
   
 
         </li>
@@ -1832,7 +1806,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/crypto-bro/" class="">Дорогие крипто- и фиат-бро</a>
+    <a href="/crypto-bro/" class="">Dear Crypto &amp; Fiat Bros</a>
   
 
         </li>
@@ -1845,7 +1819,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/boremsya-s-poddelnymi-bitcoin/" class="">Боремся с поддельными биткоинами</a>
+    <a href="/fighting-fake-bitcoin/" class="">Fighting Fake Bitcoin</a>
   
 
         </li>
@@ -1858,7 +1832,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bit%D1%81oin-eto-micelij/" class="">Биткоин — это мицелий</a>
+    <a href="/bitcoin-is-the-mycelium/" class="">Bitcoin is The Mycelium of Money</a>
   
 
         </li>
@@ -1871,7 +1845,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pochemu-bitcoin-zhivoj-organizm/" class="">Доказательство жизни. Почему Биткоин — живой организм</a>
+    <a href="/proof-of-life/" class="">Proof of Life. Why Bitcoin is a Living Organism</a>
   
 
         </li>
@@ -1884,7 +1858,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/samaya-mirnaya-revolyuciya/" class="">Самая мирная революция</a>
+    <a href="/most-peaceful-revolution/" class="">A Most Peaceful Revolution</a>
   
 
         </li>
@@ -1897,7 +1871,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/o-bitcoin-vselennoj/" class="">О Биткоин-вселенной</a>
+    <a href="/bitcoin-universe/" class="">Bitcoin Universe</a>
   
 
         </li>
@@ -1910,7 +1884,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-dissidenty/" class="">Биткоин-диссиденты</a>
+    <a href="/bitcoin-dissidents/" class="">Bitcoin Dissidents</a>
   
 
         </li>
@@ -1923,7 +1897,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-svoboda/" class="">Биткоин = свобода</a>
+    <a href="/bitcoin-equals-freedom/" class="">Bitcoin Equals Freedom</a>
   
 
         </li>
@@ -1943,7 +1917,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-0ffd899989a7340537ceb8e2b6a04097" class="toggle"  />
     <label for="section-0ffd899989a7340537ceb8e2b6a04097" class="flex justify-between">
-      <a href="/future/" class="">Будущее</a>
+      <a href="/future/" class="">Future</a>
     </label>
   
 
@@ -1959,7 +1933,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-206fb3aae5266e1ff42aa0abc8ae8411" class="toggle"  />
     <label for="section-206fb3aae5266e1ff42aa0abc8ae8411" class="flex justify-between">
-      <a href="/ba/" class="">Биткоин-астрономия</a>
+      <a href="/ba/" class="">Bitcoin Astronomy</a>
     </label>
   
 
@@ -1973,7 +1947,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/ba/1/" class="">Постгипербиткоинизация</a>
+    <a href="/ba/1/" class="">Part I</a>
   
 
         </li>
@@ -1986,7 +1960,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/ba/2/" class="">Миллион крошечных миров</a>
+    <a href="/ba/2/" class="">Part II</a>
   
 
         </li>
@@ -1999,7 +1973,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/ba/3/" class="">Первый контакт</a>
+    <a href="/ba/3/" class="">Part III</a>
   
 
         </li>
@@ -2017,7 +1991,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/ej-bitcoin-pritormozi/" class="">Эй, Биткоин, притормози</a>
+    <a href="/hey-bitcoin-slow-down/" class="">Hey Bitcoin, Slow Down!</a>
   
 
         </li>
@@ -2030,7 +2004,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/apokalipsis/" class="">Сможет ли Биткоин пережить апокалипсис?</a>
+    <a href="/apocalypse/" class="">Can Bitcoin Survive An Apocalypse?</a>
   
 
         </li>
@@ -2043,7 +2017,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-i-teplovaya-energiya-okeanov/" class="">Биткоин и тепловая энергия океанов</a>
+    <a href="/bitcoin-and-oceans/" class="">Bitcoin and Ocean Thermal Energy</a>
   
 
         </li>
@@ -2063,7 +2037,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-94dfdc9d0099b419c9e2d6a83381dbe2" class="toggle"  />
     <label for="section-94dfdc9d0099b419c9e2d6a83381dbe2" class="flex justify-between">
-      <a href="/lightning/" class="">Лайтнинг</a>
+      <a href="/lightning/" class="">Lightning</a>
     </label>
   
 
@@ -2077,7 +2051,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/chto-takoe-laitning/" class="">Что такое Лайтнинг?</a>
+    <a href="/what-is-lightning-network/" class="">What is Lightning Network?</a>
   
 
         </li>
@@ -2090,7 +2064,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/lajtning-koshelki/" class="">Лайтнинг-кошельки</a>
+    <a href="/lightning-wallets/" class="">Lightning Wallets</a>
   
 
         </li>
@@ -2103,7 +2077,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/lajtning-adresa/" class="">Лайтнинг-адреса</a>
+    <a href="/how-lightning-address-works/" class="">How Lightning Address Works</a>
   
 
         </li>
@@ -2116,7 +2090,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/privatnost-v-lajtning/" class="">Приватность в сети Lightning</a>
+    <a href="/lightning-network-privacy/" class="">Lightning Network Privacy</a>
   
 
         </li>
@@ -2129,7 +2103,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/centralizovanna-li-set-lightning/" class="">Централизованна ли сеть Lightning?</a>
+    <a href="/is-lightning-centralized/" class="">Is Lightning centralized?</a>
   
 
         </li>
@@ -2142,7 +2116,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/mekhanizm-raboty-lightning/" class="">Механизм работы Lightning Network</a>
+    <a href="/lightning-network-explained/" class="">Lightning Network Explained</a>
   
 
         </li>
@@ -2155,7 +2129,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/problema-vhodyashchej-likvidnosti/" class="">Решение проблемы входящей ликвидности</a>
+    <a href="/inbound-liquidity-problem/" class="">Solutions to inbound liquidity problem</a>
   
 
         </li>
@@ -2180,7 +2154,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-334a33758c01abfe631e1e37dc0d1f40" class="toggle" checked />
     <label for="section-334a33758c01abfe631e1e37dc0d1f40" class="flex justify-between">
-      <a href="/practice/" class="">Практика</a>
+      <a href="/practice/" class="">Practice</a>
     </label>
   
 
@@ -2196,7 +2170,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-a94c5b45bfdc8ef0dd89b00612026092" class="toggle"  />
     <label for="section-a94c5b45bfdc8ef0dd89b00612026092" class="flex justify-between">
-      <a href="/practice/buy/" class="">Покупка</a>
+      <a href="/practice/buy/" class="">Buy</a>
     </label>
   
 
@@ -2210,7 +2184,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/newbie-buy/" class="">Покупка и хранение биткоина для новичков</a>
+    <a href="/newbie-buy/" class="">Buy and Hodl Bitcoin for Beginners</a>
   
 
         </li>
@@ -2223,7 +2197,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/hodl-hodl/" class="">Покупка биткоина без KYC на Hodl Hodl</a>
+    <a href="/hodl-hodl/" class="">Buy noKYC Bitcoin with HodlHodl</a>
   
 
         </li>
@@ -2236,7 +2210,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/robosats/" class="">RoboSats: Приватный p2p обмен</a>
+    <a href="/robosats/" class="">RoboSats: Private P2P Exchange</a>
   
 
         </li>
@@ -2256,7 +2230,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-7e14ce7fc5fdbe001466044f77bdd564" class="toggle"  />
     <label for="section-7e14ce7fc5fdbe001466044f77bdd564" class="flex justify-between">
-      <a href="/practice/hodl/" class="">Хранение</a>
+      <a href="/practice/hodl/" class="">Hodl</a>
     </label>
   
 
@@ -2270,7 +2244,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/electrum/" class="">Кошелек Электрум</a>
+    <a href="/electrum/" class="">Electrum Bitcoin Wallet</a>
   
 
         </li>
@@ -2283,7 +2257,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/blue/" class="">Кошелек Blue</a>
+    <a href="/blue/" class="">Installing Blue Wallet</a>
   
 
         </li>
@@ -2296,7 +2270,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/seedsigner/" class="">SeedSigner: оффлайн-крепость для ваших биткоинов</a>
+    <a href="/seedsigner/" class="">SeedSigner: DIY Bitcoin Signing Device</a>
   
 
         </li>
@@ -2309,20 +2283,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/holodnyj-koshelek-iz-starogo-smartfona/" class="">Холодный кошелек из старого смартфона</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/coldcard/" class="">Что такое Coldcard?</a>
+    <a href="/coldcard/" class="">What is Coldcard?</a>
   
 
         </li>
@@ -2342,7 +2303,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-88cf9017cf07549621f025a2843cb148" class="toggle"  />
     <label for="section-88cf9017cf07549621f025a2843cb148" class="flex justify-between">
-      <a href="/practice/interact/" class="">Взаимодействие</a>
+      <a href="/practice/interact/" class="">Interact</a>
     </label>
   
 
@@ -2356,7 +2317,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/practice/bitcoin-node/" class="">Каждому следует запустить собственную Биткоин-ноду!</a>
+    <a href="/practice/bitcoin-node/" class="">Why You Should Run Your Own Bitcoin Node</a>
   
 
         </li>
@@ -2369,7 +2330,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/orangepilling-in-5-min/" class="">Оранжпиллинг за 5 минут</a>
+    <a href="/orangepilling-in-5-min/" class="">Orangepilling in 5 min</a>
   
 
         </li>
@@ -2382,7 +2343,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/5-tips-for-teaching-bitcoin/" class="">5 советов по обучению Биткоину</a>
+    <a href="/5-tips-for-teaching-bitcoin/" class="">5 tips for teaching Bitcoin</a>
   
 
         </li>
@@ -2402,7 +2363,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-32dccf00abb46a5281b7aae069126928" class="toggle"  />
     <label for="section-32dccf00abb46a5281b7aae069126928" class="flex justify-between">
-      <a href="/practice-privacy/" class="">Практики приватности</a>
+      <a href="/practice-privacy/" class="">Privacy</a>
     </label>
   
 
@@ -2418,7 +2379,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-ae30dbe7c31a834e8bfe23314d9a5ff6" class="toggle"  />
     <label for="section-ae30dbe7c31a834e8bfe23314d9a5ff6" class="flex justify-between">
-      <a href="/practice-privacy/dojo/" class="">Установка Биткоин-узла Dojo на x86</a>
+      <a href="/practice-privacy/dojo/" class="">Dojo x86 Bitcoin Node Guide</a>
     </label>
   
 
@@ -2432,7 +2393,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/practice-privacy/dojo-0/" class="">Введение</a>
+    <a href="/practice-privacy/dojo-0/" class="">Introduction</a>
   
 
         </li>
@@ -2445,7 +2406,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/practice-privacy/dojo-1/" class="">Установка Bitcoin Core и Tor</a>
+    <a href="/practice-privacy/dojo-1/" class="">Installing Bitcoin Core &amp; Tor</a>
   
 
         </li>
@@ -2458,7 +2419,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/practice-privacy/dojo-2/" class="">Установка индексатора Fulcrum</a>
+    <a href="/practice-privacy/dojo-2/" class="">Installing Fulcrum Indexer</a>
   
 
         </li>
@@ -2471,7 +2432,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/practice-privacy/dojo-3/" class="">Установка блокчейн-обозревателя Mempool</a>
+    <a href="/practice-privacy/dojo-3/" class="">Installing Mempool Explorer</a>
   
 
         </li>
@@ -2484,7 +2445,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/practice-privacy/dojo-4/" class="">Установка Samourai Dojo</a>
+    <a href="/practice-privacy/dojo-4/" class="">Installing Samourai Dojo</a>
   
 
         </li>
@@ -2497,7 +2458,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/practice-privacy/dojo-5/" class="">Конфигурация межсетевого экрана</a>
+    <a href="/practice-privacy/dojo-5/" class="">Firewall Configuration</a>
   
 
         </li>
@@ -2510,7 +2471,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/practice-privacy/dojo-6/" class="">Установка обновлений пакетов</a>
+    <a href="/practice-privacy/dojo-6/" class="">Installing Package Updates</a>
   
 
         </li>
@@ -2528,7 +2489,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/practice-privacy/ronindojo/" class="">Установка RoninDojo на x86</a>
+    <a href="/practice-privacy/ronindojo/" class="">RoninDojo x86 Installation Guide</a>
   
 
         </li>
@@ -2541,7 +2502,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/grapheneos/" class="">GrapheneOS: Избавляемся от слежки Google на смартфоне</a>
+    <a href="/grapheneos/" class="">GrapheneOS: De-Google your phone</a>
   
 
         </li>
@@ -2561,7 +2522,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-9425a98499a6d50bed8efd403e1db980" class="toggle" checked />
     <label for="section-9425a98499a6d50bed8efd403e1db980" class="flex justify-between">
-      <a href="/practice/lightning/" class="">Лайтнинг на практике</a>
+      <a href="/practice/lightning/" class="">Lightning</a>
     </label>
   
 
@@ -2575,7 +2536,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/phoenix/" class="active">Кошелек Phoenix</a>
+    <a href="/phoenix/" class="active">Phoenix: The Non-Custodial Lightning Wallet</a>
   
 
         </li>
@@ -2588,7 +2549,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/lnbits/" class="">LNbits – швейцарский нож среди лайтнинг-приложений</a>
+    <a href="/lnbits/" class="">LNbits: A Swiss knife among Lightning apps</a>
   
 
         </li>
@@ -2601,7 +2562,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/alby-i-nostr/" class="">Alby и Nostr</a>
+    <a href="/alby-and-nostr/" class="">Alby and Nostr</a>
   
 
         </li>
@@ -2614,7 +2575,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/zapplanner/" class="">Подписки с помощью Лайтнинг</a>
+    <a href="/zapplanner/" class="">Recurring Lightning Payments</a>
   
 
         </li>
@@ -2627,7 +2588,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/lntips/" class="">Телеграм-бот @LightningTipBot</a>
+    <a href="/lntips/" class="">Telegram bot @LightningTipBot</a>
   
 
         </li>
@@ -2640,7 +2601,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/ochishchaem-bitcoin-cherez-lajtning/" class="">Очищаем биткоины через сеть Лайтнинг</a>
+    <a href="/lightning-liquidity-management-guide/" class="">Lightning Liquidity Management Guide</a>
   
 
         </li>
@@ -2653,20 +2614,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/likvidnost-v-lajtning/" class="">Руководство по управлению ликвидностью в сети Lightning</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/mutiny/" class="">Кошелек Mutiny</a>
+    <a href="/mutiny/" class="">Starting with Mutiny Wallet</a>
   
 
         </li>
@@ -2691,84 +2639,12 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-d286fdc9558f9b3466aa6f3d4805be77" class="toggle"  />
     <label for="section-d286fdc9558f9b3466aa6f3d4805be77" class="flex justify-between">
-      <a href="/rabbithole/" class="">Кроличья нора</a>
+      <a href="/rabbithole/" class="">Rabbithole</a>
     </label>
   
 
           
   <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/books/" class="">Книги</a>
-  
-
-          
-  <ul>
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/videos/" class="">Видео</a>
-  
-
-          
-  <ul>
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/audiobooks/" class="">Аудиокниги</a>
-  
-
-          
-  <ul>
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/pods/" class="">Подкасты</a>
-  
-
-          
-  <ul>
-    
-  </ul>
-
-        </li>
-      
     
   </ul>
 
@@ -2799,37 +2675,9 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/posts/" class="">Блог</a>
-  
-
-        
-    
-  </li>
-  
-  <li>
-    
-        
-  
-  
-
-  
-    <a href="/calendar/" class="">Биткоин-календарь</a>
-  
-
-        
-    
-  </li>
-  
-  <li>
-    
-        
-  
-  
-
-  
     <input type="checkbox" id="section-9329cf488076ba9f91ca728aef24f607" class="toggle"  />
     <label for="section-9329cf488076ba9f91ca728aef24f607" class="flex justify-between">
-      <a href="/contribute/" class="">Принять участие</a>
+      <a href="/contribute/" class="">Contribute</a>
     </label>
   
 
@@ -2844,33 +2692,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/syntax/" class="">Оформление статей</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/github/" class="">Как добавить статью?</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/obsidian/" class="">Публикация статей через Obsidian</a>
+    <a href="/github/" class="">Adding an Article</a>
   
 
         </li>
@@ -2889,7 +2711,21 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/feedback/" class="">Обратная связь</a>
+    <span>Blog</span>
+  
+
+        
+    
+  </li>
+  
+  <li>
+    
+        
+  
+  
+
+  
+    <a href="/feedback/" class="">Feedback</a>
   
 
         
@@ -2967,7 +2803,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Кошелек Phoenix</strong>
+  <strong>Phoenix: The Non-Custodial Lightning Wallet</strong>
 
   <label for="toc-control">
     
@@ -2985,34 +2821,33 @@ https://github.com/alex-shpak/hugo-book
   <ul>
     <li>
       <ul>
-        <li><a href="#интро">Интро</a>
+        <li><a href="#intro">Intro</a>
           <ul>
-            <li><a href="#терминология">Терминология</a></li>
+            <li><a href="#terminology">Terminology</a></li>
           </ul>
         </li>
-        <li><a href="#почему-phoenix">Почему Phoenix?</a></li>
-        <li><a href="#лайтнинг-максимализм">Лайтнинг-максимализм</a></li>
-        <li><a href="#практика">Практика</a>
+        <li><a href="#why-phoenix">Why Phoenix?</a></li>
+        <li><a href="#lightning-maximalism">Lightning maximalism</a></li>
+        <li><a href="#practice">Practice</a>
           <ul>
-            <li><a href="#пополнение-кошелька">Пополнение кошелька</a></li>
-            <li><a href="#интерфейс">Интерфейс</a></li>
+            <li><a href="#receiving-sats">Receiving sats</a></li>
+            <li><a href="#user-interface">User Interface</a></li>
           </ul>
         </li>
-        <li><a href="#особенности">Особенности</a>
+        <li><a href="#features">Features</a>
           <ul>
-            <li><a href="#платежные-каналы">Платежные каналы</a></li>
-            <li><a href="#функции-и-комиссии">Функции и комиссии</a></li>
+            <li><a href="#payment-channels">Payment channels</a></li>
           </ul>
         </li>
-        <li><a href="#нюансы-и-инструменты-восстановления">Нюансы и инструменты восстановления</a>
+        <li><a href="#specifics-and-recovery-tools">Specifics and recovery tools</a>
           <ul>
-            <li><a href="#получение-платежей">Получение платежей</a></li>
-            <li><a href="#как-восстановить-средства-в-случае-принудительного-закрытия-каналов">Как восстановить средства в случае принудительного закрытия каналов?</a></li>
-            <li><a href="#phoenix-требует-доверия">Phoenix требует доверия?</a></li>
-            <li><a href="#приватность-phoenix">Приватность Phoenix</a></li>
+            <li><a href="#receiving-payments">Receiving payments</a></li>
+            <li><a href="#how-to-recover-funds-in-case-of-channel-force-close">How to recover funds in case of channel force close?</a></li>
+            <li><a href="#do-i-have-to-trust-phoenix-wallet">Do I have to trust Phoenix Wallet?</a></li>
+            <li><a href="#phoenix-privacy">Phoenix privacy</a></li>
           </ul>
         </li>
-        <li><a href="#итоги">Итоги</a></li>
+        <li><a href="#conclusion">Conclusion</a></li>
       </ul>
     </li>
   </ul>
@@ -3037,241 +2872,221 @@ https://github.com/alex-shpak/hugo-book
 
 <h1>
     
-    Кошелек Phoenix: восстанавливаем контроль над своими сатошиками в сети Лайтнинг
+    Phoenix Wallet: Take Back Control of Your Sats in the Lightning Network
     
 </h1>
 <div class="pageDate">
-    2 марта 2023 г.
+    March 2, 2023
 </div>
 
-  <article class="markdown"><p>Как пользоваться сетью Лайтнинг, никому не доверяя? Возвращаем контроль над своими сатами в сети Лайтнинг.</p>
+  <article class="markdown"><p>How to use the Lightning Network without trusting anyone? Take Back Control of Your Sats in the Lightning Network.</p>
 <blockquote class="book-hint btc">
-  Гид подготовлен <a href="https://njump.me/npub10awzknjg5r5lajnr53438ndcyjylgqsrnrtq5grs495v42qc6awsj45ys7">Тони⚡️</a>. <a href="/contribute/">Поддержать проект</a>.
+  <p>The guide written by <a href="https://snort.social/p/npub10awzknjg5r5lajnr53438ndcyjylgqsrnrtq5grs495v42qc6awsj45ys7">Tony⚡️</a>.</p>
+<p><a href="/contribute/">Contribute</a>.</p>
+
 </blockquote>
 
-
-<div class="youtubeWrapper">
-    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-        <iframe src="https://www.youtube.com/embed/iZx86vbC9II" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video" loading="lazy"></iframe>
-    </div>
-    <div class="youtubeWrapper_hint">
-        <em>Этот гид и многие другие видео также доступны на <a href="https://www.youtube.com/@21ideas/">YouTube-канале 21 идея</a></em>
-    </div>
-</div>
-
-<h2 id="интро">
-  Интро
-  <a class="anchor" href="#%d0%b8%d0%bd%d1%82%d1%80%d0%be">#</a>
+<h2 id="intro">
+  Intro
+  <a class="anchor" href="#intro">#</a>
 </h2>
-<p>Сегодня я хочу предоставить вашему вниманию гид по <strong>некастодиальному</strong>лайтнинг-кошельку <a href="https://phoenix.acinq.co/">Phoenix</a>. Этот гид будет полезен тем, кто уже немного познакомился с сетью Молния и оценил взаимодействие с ней на практике. Предположим, вы уже пользовались кастодиальным кошельком, например <a href="https://www.walletofsatoshi.com/">Wallet of Satoshi</a>, и хотите получить больше контроля над своими средствами, самостоятельно хранить свои сатоши в сети лайтнинг и <strong>минимизировать</strong> уровень доверия к третьей стороне. Я не случайно говорю именно минимизировать, а не избавиться, но подробнее я это поясню в конце этого гида.</p>
-<p>Кошелек Phoenix может послужить отличным <em>промежуточным решением</em> между использованием кастодиального кошелька и запуском собственного лайтнинг-узла.</p>
+<p>I would like to share a guide on <a href="https://phoenix.acinq.co/">Phoenix</a> — the non-custodial Lightning wallet. This guide will be useful for those who already are familiar with the Lightning Network and have some experience using it. Let&rsquo;s say you&rsquo;ve already been using a custodial wallet like <a href="https://www.walletofsatoshi.com/">Wallet Of Satoshi</a> and you want to gain more control over your funds, hold your sats in Lightning Network, and <strong>minimize</strong> the level of trust to a third party. I say &lsquo;minimize&rsquo; rather than &lsquo;avoid&rsquo; for a reason, but I&rsquo;ll clarify this later in the guide.</p>
+<p>Phoenix Wallet can serve as a great <em>intermediate solution</em> between using a custodial wallet and running your own Lightning node.</p>
 <div class="imageWrapper">
-    <img src="/img/135.png">
+    <img src="/img/135-en.png">
 </div>
-<p>Хорошим примером тому стали недавние события – <a href="https://fountain.fm/episode/12910067678">закрытие и практически невозможность вывода средств из популярного Телеграм-бота LNtxBot</a> и <a href="https://fountain.fm/episode/13070007081">проблемы у кастодиального лайтнинг-кошелька Blue Wallet</a>.</p>
+<p>A good example was the recent cases of — <a href="https://stacker.news/items/122992">the shutdown of the popular Telegram LNtxBot wallet</a> and <a href="https://twitter.com/hi__im__dave/status/1619680373314813953">Blue Wallet issues with custodial Lightning implementation</a>.</p>
 <hr>
-<h3 id="терминология">
-  Терминология
-  <a class="anchor" href="#%d1%82%d0%b5%d1%80%d0%bc%d0%b8%d0%bd%d0%be%d0%bb%d0%be%d0%b3%d0%b8%d1%8f">#</a>
+<h3 id="terminology">
+  Terminology
+  <a class="anchor" href="#terminology">#</a>
 </h3>
 <ul>
-<li><strong>Ончейн</strong> – транзакции, проводящиеся на основной цепи Биткоин и отражающиеся в блокчейне сети Биткоин.</li>
-<li><strong>Оффчейн</strong> – транзакции вне основной сети, например, в сети Лайтнинг.</li>
-<li><strong>Кастодиальное хранение</strong> – хранение / использование “крипты” – будь то биткоин, саты в сети Молния, эфир или любой другой щиткоин, – полагаясь на третье лицо, так называемого кастодиана. Кастодиан хранит ваши средства и получает / отправляет их по вашей просьбе.</li>
-<li><strong>Некастодиальное хранение</strong> – самостоятельное хранение и контроль собственных средств.</li>
-<li><strong>Сеть Лайтнинг, сеть Молния, ЛН, LIghtning Network, LN</strong> – термины, относящиеся к сети второго уровня, развернутой поверх основной сети Биткоин, в оригинале – Lightning Network (подробнее о ней в этом разделе).</li>
-<li><strong>Инвойс / лайтнинг-инвойс</strong> – счет, использующийся в сети Молния. Устройство Лайтнинг отличается от механизма, используемого в сети Биткоин. Вместо привычных адресов получения пользователи обмениваются счетами-фактурами для получения средств (подробности работы сети Молния освещены <a href="https://youtu.be/xH--uHmtF-Q">в этом видео</a>).</li>
-<li><strong>Ликвидность</strong> – объем средств, которые вы можете отправить (исходящая) или получить (входящая)</li>
+<li><strong>Onchain</strong> – transactions in the Bitcoin mainnet recorded to the blockchain.</li>
+<li><strong>Offchain</strong> – transactions outside the mainnet, such as in the Lightning Network.</li>
+<li><strong>Custodial storage</strong> – holding / using the &ldquo;crypto&rdquo; (Bitcoin, Lightning Network sats, Ether or any other shitcoin) relying on a third party, a so-called custodian. The custodian holds your funds and receives / sends them at your request.</li>
+<li><strong>Non-custodial storage</strong> – self custody and control of your own funds.</li>
+<li><strong>LIghtning Network or LN</strong> – Layer 2 network implemented &ldquo;on top&rdquo; of the main Bitcoin network.</li>
+<li><strong>Invoice</strong> – Lightning Network mechanism differs from the one used in the Bitcoin network. Instead of addresses, users must exchange invoices to receive funds (the details of the Lightning Network are covered <a href="https://www.youtube.com/watch?v=yKdK-7AtAMQ">in this video</a>).</li>
+<li><strong>Liquidity</strong> – the volume of funds you can send (outbound) or receive (inbound).</li>
 </ul>
 <hr>
-<h2 id="почему-phoenix">
-  Почему Phoenix?
-  <a class="anchor" href="#%d0%bf%d0%be%d1%87%d0%b5%d0%bc%d1%83-phoenix">#</a>
+<h2 id="why-phoenix">
+  Why Phoenix?
+  <a class="anchor" href="#why-phoenix">#</a>
 </h2>
-<p>Кошелек Phoenix предлагает возможность некастодиально использовать сеть Молния. Ваш кошелек выступает в качестве лайтнинг-узла и вы сами контролируете количество и размер своих каналов. При создании кошелька вам предоставляется сид-фраза, по которой вы можете восстановить свои средства в случае какой-то критической ошибки. Вам просто нужно будет принудительно закрыть свои каналы и средства попадут на ваш ончейн-кошелек, который вы сможете восстановить через, например, <a href="/electrum">кошелек Electrum</a>.</p>
-<h2 id="лайтнинг-максимализм">
-  Лайтнинг-максимализм
-  <a class="anchor" href="#%d0%bb%d0%b0%d0%b9%d1%82%d0%bd%d0%b8%d0%bd%d0%b3-%d0%bc%d0%b0%d0%ba%d1%81%d0%b8%d0%bc%d0%b0%d0%bb%d0%b8%d0%b7%d0%bc">#</a>
+<p>Phoenix Wallet allows you to use the Lightning Network in a non-custodial way. Your wallet acts similar to a Lightning node and lets you control the capacity of your channels. When you create a new wallet, you will get a mnemonic backup phrase by which will let you recover your funds in case of some critical error. You just need to force close your channels and the sats will go to your on-chain wallet, which you can recover through <a href="/en/electrum">Electrum Wallet</a>, or any other wallet that supports BIP39 seed phrases.</p>
+<h2 id="lightning-maximalism">
+  Lightning maximalism
+  <a class="anchor" href="#lightning-maximalism">#</a>
 </h2>
-<p>Phoenix будет, возможно, не так привычен пользователям, привыкшим к кошелькам “два в одном”. <a href="/blue">Blue Wallet предлагает</a> (или предлагал😜) несколько видов кошельков в одном приложении, а такие кошельки как Wallet of Satoshi и <a href="https://muun.com/">Muun</a> вовсе “объединяют лайтнинг и ончейн средства в одно целое”, где пользователь даже не замечает разницы между его “аккаунтами”. Phoenix же является исключительно лайтнинг-кошельком. </p>
+<p>Phoenix will perhaps be less common to users accustomed to &ldquo;two-in-one&rdquo; wallets. <a href="/blue">Blue Wallet offers</a> (or offered😜) several types of wallets in one app, and wallets like <a href="https://muun.com/">Muun</a> &ldquo;combine&rdquo; Lightning and on-chain funds into one balance, where users don&rsquo;t even notice the difference between their &ldquo;accounts&rdquo;. Phoenix, on the other hand, is a purely Lightning wallet.</p>
 <div class="imageWrapper">
     <img src="/img/30.jpeg">
 </div>
-<p>Да, у него есть возможность получать ончейн-платежи, но они будут моментально конвертироваться в лайтнинг-саты. Вы также можете сделать так называемый <strong>Swap-out</strong> и отправить ЛН-саты на ончейн-адрес. Просто преобразование будет происходить “под капотом”. Технические подробности процесса лежат вне рамок сегодняшнего ознакомительного гида, просто обратите внимание на то, что Phoenix не стоит воспринимать как классический ончейн-кошелек. В каком-то смысле кошелек Phoenix можно назвать <em>лайтнинг-максималистом</em>⚡️.</p>
-<p><em>О том, как биткоины высвобождаются в сеть Молния и о других технических аспектах ее работы смотрите в этом видео:</em>
+<p>Yes, Phoenix lets you receive onchain payments, but they will be instantly swapped to LN sats. You can also do <strong>Swap-out</strong> and send LN sats to the onchain address. Swaps take place &ldquo;under the hood&rdquo;. The technical details of the process lie outside the scope of this guide, just note that Phoenix should not be thought of as an onchain wallet. In a sense, Phoenix can be called a <em>Lightning Maximalist Wallet</em> ⚡️.</p>
+<p><em>To see how bitcoins are released into the Lightning Network and other technical aspects of how it works, check out this video:</em>
 
 <div class="youtubeWrapper">
     <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-        <iframe src="https://www.youtube.com/embed/xH--uHmtF-Q" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video" loading="lazy"></iframe>
+        <iframe src="https://www.youtube.com/embed/yKdK-7AtAMQ" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video" loading="lazy"></iframe>
     </div>
 </div>
 </p>
-<h2 id="практика">
-  Практика
-  <a class="anchor" href="#%d0%bf%d1%80%d0%b0%d0%ba%d1%82%d0%b8%d0%ba%d0%b0">#</a>
+<h2 id="practice">
+  Practice
+  <a class="anchor" href="#practice">#</a>
 </h2>
-<p>Phoenix обладает простым, удобным и интуитивным интерфейсом. Он <a href="https://phoenix.acinq.co/download">доступен</a> на всех мобильных платформах – iOS и Android, а истинные <a href="/manifest-shifropanka">шифропанки</a> – фанаты <a href="/grapheneos">DeGoogled Android</a> – или, например, пользователи смартфонов Huawei, могут скачать <a href="https://github.com/ACINQ/phoenix/releases">APK-файл</a> и установить приложение в обход Google Play.</p>
-<h3 id="пополнение-кошелька">
-  Пополнение кошелька
-  <a class="anchor" href="#%d0%bf%d0%be%d0%bf%d0%be%d0%bb%d0%bd%d0%b5%d0%bd%d0%b8%d0%b5-%d0%ba%d0%be%d1%88%d0%b5%d0%bb%d1%8c%d0%ba%d0%b0">#</a>
+<p>Phoenix has a simple, user-friendly and intuitive interface. It is <a href="https://phoenix.acinq.co/download">available</a> for all mobile platforms – iOS and Android. The true <a href="/en/cypherpunks-manifesto">cypherpunks</a> – <a href="/en/grapheneos">De-Googled Android</a> fans – or, for example, Huawei users, can download the <a href="https://github.com/ACINQ/phoenix/releases">APK file</a> and install the app bypassing Google Play.</p>
+<h3 id="receiving-sats">
+  Receiving sats
+  <a class="anchor" href="#receiving-sats">#</a>
 </h3>
-<p>Первым делом после установки следует пополнить кошелек сатошиками. Это можно сделать как ончейн-средствами, так и через сеть Молния. После нескольких приветствующих экранов нас встречает экран, предлагающий оплатить “открытый” лайтнинг-инвойс (инвойс, где вы можете на свое усмотрение  указать оплачиваемую сумму). Обратите внимание, что минимальная сумма пополнения равна 10,000 сат, что вызвано необходимостью открыть канал, через который вы впоследствии будете отправлять и получать саты. Открытие канала производится через ончейн-транзакцию, которая требует оплаты комиссии майнерам.</p>
+<p>The first thing to do after installation is to fund your wallet with sats. This can be done either with onchain bitcoins or via the Lightning Network. After a few welcome screens, we are greeted by a screen offering to pay an open Lightning invoice (an invoice where you can specify the amount to be paid at your choice). Please note that the minimum deposit amount is 10,000 sats, which is due to the need to open a channel through which you will later send and receive sats. Opening a channel is done with onchain transaction, which is associated with miner fees.</p>
 <div class="imageWrapper">
-    <img src="/img/136.png">
-<p><em>Пополнение кошелька через Лайтнинг / открытие канала</em></p>
+    <img src="/img/136-en.png">
+<p><em>Funding a wallet via Lightning / opening a channel</em></p>
 </div>
-<p>Вы также можете пополнить кошелек ончейн-транзакцией. Для этого нажмите <strong>Show a Bitcoin address</strong> внизу экрана.</p>
+<p>You can also fund your wallet with an on-chain transaction. To do this, click <strong>Show a Bitcoin address</strong> at the bottom of the screen.</p>
 <div class="imageWrapper">
-    <img src="/img/137.png">
-<p><em>Пополнение кошелька ончейн / открытие канала</em></p>
+    <img src="/img/137-en.png">
+<p><em>Funding a wallet onchain / opening a channel</em></p>
 </div>
-<p>Обратите внимание, что в обоих случаях первое пополнение снимет с вас ончейн комиссию майнерам + одноразовая плата 1000 сат в пользу разработчиков кошелька. Это связано с необходимостью открытия канала. Расценивайте это как плату, необходимую чтобы отказаться от кастодиального хранения сатов.</p>
-<h3 id="интерфейс">
-  Интерфейс
-  <a class="anchor" href="#%d0%b8%d0%bd%d1%82%d0%b5%d1%80%d1%84%d0%b5%d0%b9%d1%81">#</a>
+<p>Please note that in both cases, the first deposit will require an onchain miner fee and a one-time fee of 1000 sats to the wallet developers. This is due to the need to open the channel. Consider it as a fee for escaping from custodial storage of your sats.</p>
+<h3 id="user-interface">
+  User Interface
+  <a class="anchor" href="#user-interface">#</a>
 </h3>
-<p>Обратите внимание на функции, предлагаемые кошельком:</p>
+<p>Main functions of the wallet:</p>
 <div class="imageWrapper">
-    <img src="/img/138.png">
-<p><em>Домашний экран</em></p>
+    <img src="/img/138-en.png">
+<p><em>Home screen</em></p>
 </div>
 <ol>
-<li>Настройки</li>
-<li>История транзакций</li>
-<li>Баланс (скрытый/USD/sat)</li>
-<li>Состояние сети</li>
-<li>Ресурсы (обратная связь)</li>
-<li>Получить</li>
-<li>Отправить</li>
+<li>Settings</li>
+<li>Transaction history</li>
+<li>Balance (hidden/USD/sat)</li>
+<li>Network state</li>
+<li>Links (feedback)</li>
+<li>Receive</li>
+<li>Send</li>
 </ol>
-<p>Настройки довольно тривиальны. Хочу лишь указать на 3 пункта – вкладка отображения сид-фразы (1), вкладка экстренного закрытия каналов и вывода средств ончейн (2), вкладка, отображающая ваши каналы и их ликвидность (3).</p>
+<p>The settings are quite simple. I just want to point out 3 items - the tab displaying mnemonic recovery phrase (1), the tab to force close all channels and withdraw funds on-chain (2), the tab displaying your channels and their liquidity (3).</p>
 <div class="imageWrapper">
     <img src="/img/139.png">
-<p><em>Меню настроек</em></p>
+<p><em>Settings screen</em></p>
 </div>
-<h2 id="особенности">
-  Особенности
-  <a class="anchor" href="#%d0%be%d1%81%d0%be%d0%b1%d0%b5%d0%bd%d0%bd%d0%be%d1%81%d1%82%d0%b8">#</a>
+<h2 id="features">
+  Features
+  <a class="anchor" href="#features">#</a>
 </h2>
-<h3 id="платежные-каналы">
-  Платежные каналы
-  <a class="anchor" href="#%d0%bf%d0%bb%d0%b0%d1%82%d0%b5%d0%b6%d0%bd%d1%8b%d0%b5-%d0%ba%d0%b0%d0%bd%d0%b0%d0%bb%d1%8b">#</a>
+<h3 id="payment-channels">
+  Payment channels
+  <a class="anchor" href="#payment-channels">#</a>
 </h3>
-<p>Недавнее обновление значительно упростило жизнь пользователей Phoenix. Команда решила перенести управление каналами &ldquo;за кулисы&rdquo; и позаботиться обо всех фоновых операциях самостоятельно. В отличие от прежних времен, когда вам приходилось управлять несколькими каналами и следить за входящей ликвидностью каждого из них, теперь вам нужно лишь указать комиссии, которые вас устраивают, а все остальное сделает приложение.</p>
+<p>Recent update has made life of Phoenix users much simpler. The team has  decided to move channel management under the hood and take care of all the background operations behind the scenes. Unlike before, when you had to manage multiple channels and watch the inbound liquidity on each one, all you have to do is specify fee conditions you are comfortable with and the rest will be done by the app.</p>
 <div class="imageWrapper">
     <img src="/img/phoenix/channel.png">
-<p><em>Экран управления каналом</em></p>
+<p><em>Channel management screen</em></p>
 </div>
-<h3 id="функции-и-комиссии">
-  Функции и комиссии
-  <a class="anchor" href="#%d1%84%d1%83%d0%bd%d0%ba%d1%86%d0%b8%d0%b8-%d0%b8-%d0%ba%d0%be%d0%bc%d0%b8%d1%81%d1%81%d0%b8%d0%b8">#</a>
-</h3>
-<p>С точки зрения пользователя Phoenix ведет себя практически идентично кастодиальному кошельку (смотрите главы <a href="https://youtu.be/67ghAeSTLbY?t=1701">Платим в сети Молния</a> и <a href="https://youtu.be/67ghAeSTLbY?t=1875">Получаем оплату в сети Молния</a> в <a href="https://youtu.be/67ghAeSTLbY?t=1701">этом гиде по Blue Wallet</a>). Единственное отличие заключается в том, что в зависимости от особенностей использования (например, если вы регулярно получаете больше, чем отправляете), вы можете время от времени сталкиваться с дополнительными комиссиями. В этом случае вы можете воспользоваться услугой ACINQ по предоставлению ликвидности, где вы можете приобрести дополнительную ликвидность, чтобы избежать неожиданных сборов. В качестве альтернативы вы можете просто следить за своей ликвидностью в том же разделе приложения и выполнять свопы (отправлять саты на собственный ончейн-адрес), чтобы убедиться, что у вас достаточно входящей ликвидности.</p>
+<p>From a user&rsquo;s perspective, Phoenix acts almost identically to a custodial Lightning wallet. The only difference is that depending on your usage peculiarities (for example if you regularly receive more than you send), you will once in a while run into additional fees. In this case you could utilize ACINQ&rsquo;s liquidity provision service, where you can purchase additional liquidity to avoid unexpected charges. Alternatively, you can simply keep an eye on your liquidity in the same section of the app and swap some sats out (send sats to own onchain address) to ensure you have enough inbound liquidity.</p>
 <div class="imageWrapper">
     <img src="/img/phoenix/liquidity.png">
-<p><em>Экран управления ликвидностью</em></p>
+<p><em>Liquidity management screen</em></p>
 </div>
 <blockquote class="book-hint btc">
-  Как видно на скриншоте выше, на кошельке хранится всего 22 738 сат. Однако входящая ликвидность составляет более 2 миллионов сат. Я никогда не покупал ликвидность на Phoenix (когда я начал им пользоваться, такой возможности даже не было), вместо этого я открыл большой канал на 2M+ сат и затем постепенно тратил эти саты из кошелька. Теперь это позволяет мне получать саты через Lightning и не арендовать входящую ликвидность.
+  As you can see on the screenshot above, there are only 22,738 sats held on the wallet. However, the inbound liquidity is at 2M sats. I never purchased any liquidity from Phoenix (when I started using it, there wasn&rsquo;t even such an option), instead I opened a big 2M+ channel and then gradually spent these sats from the wallet. This now allows me to receive sats via Lightning while not having to rent any inbound liquidity.
 </blockquote>
 
-<p><strong>Стандартные функции Phoenix и связанные с ними комиссии:</strong></p>
+<p><strong>Regular Phoenix functions and related fees:</strong></p>
 <ul>
-<li><strong>Получение ЛН-платежей</strong> (бесплатно, разве что приходится открывать новый канал)</li>
-<li><strong>Отправка ЛН-платежей</strong> (0.4% от отправленной суммы  + 4 sat)</li>
+<li><strong>Receiving LN payments</strong> (free, unless you have to open a new channel)</li>
+<li><strong>Sending LN payments</strong> (0.4% of the amount sent + 4 sats)</li>
 </ul>
 <div class="imageWrapper">
     <img src="/img/142.png">
-<p><em>Экран подтверждения отправки платежа</em></p>
+<p><em>Payment confirmation screen</em></p>
 </div>
 <ul>
-<li><strong>Swap-in</strong> – получение сат ончейн и конвертация их в ЛН (комиссия майнерам + 1000 сат разработчикам. Получаемая сумма должна быть не менее 10,000 сат.)</li>
-<li><strong>Swap-out</strong> – отправка ЛН сат (конвертация) на ончейн-адрес (Стоимость является переменной, зависящей от загруженности <a href="https://t.me/bitcoin21ideas/2606">мемпула</a> и текущего набора UTXO ACINQ. Обратите внимание, что кошелек не взимает никаких комиссий за этот своп, все доходы переходят майнерам).</li>
+<li><strong>Swap-in</strong> – receiving sats onchain and swapping them to LN (miner fees + 1000 sat to developers. The amount received must be at least 10,000 sat).</li>
+<li><strong>Swap-out</strong> – sending LN sats (swap) to an onchain address. The fee is variable, depending on the Bitcoin mempool size and the current set of UTXO on ACINQ side. Note that the wallet does not charge any fees for this swap, all fees go to the miners.</li>
 </ul>
-<p><em>О разных способах конвертации средств между основной сетью и сетью Молния я рассказывал в этом видео:</em>
-
-<div class="youtubeWrapper">
-    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-        <iframe src="https://www.youtube.com/embed/j9lZiKB-0Oc" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video" loading="lazy"></iframe>
-    </div>
-</div>
-</p>
-<h2 id="нюансы-и-инструменты-восстановления">
-  Нюансы и инструменты восстановления
-  <a class="anchor" href="#%d0%bd%d1%8e%d0%b0%d0%bd%d1%81%d1%8b-%d0%b8-%d0%b8%d0%bd%d1%81%d1%82%d1%80%d1%83%d0%bc%d0%b5%d0%bd%d1%82%d1%8b-%d0%b2%d0%be%d1%81%d1%81%d1%82%d0%b0%d0%bd%d0%be%d0%b2%d0%bb%d0%b5%d0%bd%d0%b8%d1%8f">#</a>
+<h2 id="specifics-and-recovery-tools">
+  Specifics and recovery tools
+  <a class="anchor" href="#specifics-and-recovery-tools">#</a>
 </h2>
-<h3 id="получение-платежей">
-  Получение платежей
-  <a class="anchor" href="#%d0%bf%d0%be%d0%bb%d1%83%d1%87%d0%b5%d0%bd%d0%b8%d0%b5-%d0%bf%d0%bb%d0%b0%d1%82%d0%b5%d0%b6%d0%b5%d0%b9">#</a>
+<h3 id="receiving-payments">
+  Receiving payments
+  <a class="anchor" href="#receiving-payments">#</a>
 </h3>
-<p>На самом деле с получением ЛН-платежей дела обстоят немного сложнее. Например, у вас может быть канал с исходящей ликвидностью в 5,000 сат и емкостью 25,000 сат. Однако это не означает, что вы можете получить 20,000 сат в этом канале, так как его входящая ликвидность меньше общего значения.</p>
-<p>Часть средств канала &ldquo;заблокирована&rdquo;, как того требует протокол Lightning, по соображениям безопасности (в основном для оплаты ончейн-комиссий в случае одностороннего закрытия канала и для поддержания резерва канала на стороне ACINQ).</p>
-<p>Заблокированная сумма варьируется в зависимости от ончейн-комиссий и может быть значительной. Соответственно, я советую один раз открыть хотя бы один объемный канал, чтобы вам не приходилось впоследствии переживать, что входящей ликвидности будет недостаточно для получения платежа.</p>
-<p>С добавлением сплайсинг-функционала в <a href="https://acinq.co/blog/phoenix-splicing-update">последней</a> версии Phoenix у каждого пользователя теперь есть всего один канал, который меняется в объёме в зависимости от входящей ликвидности. Это является, пожалуй, одним из самых заметных различиий между использованием некастодиального мобильного кошелька и полного узла.</p>
-<h3 id="как-восстановить-средства-в-случае-принудительного-закрытия-каналов">
-  Как восстановить средства в случае принудительного закрытия каналов?
-  <a class="anchor" href="#%d0%ba%d0%b0%d0%ba-%d0%b2%d0%be%d1%81%d1%81%d1%82%d0%b0%d0%bd%d0%be%d0%b2%d0%b8%d1%82%d1%8c-%d1%81%d1%80%d0%b5%d0%b4%d1%81%d1%82%d0%b2%d0%b0-%d0%b2-%d1%81%d0%bb%d1%83%d1%87%d0%b0%d0%b5-%d0%bf%d1%80%d0%b8%d0%bd%d1%83%d0%b4%d0%b8%d1%82%d0%b5%d0%bb%d1%8c%d0%bd%d0%be%d0%b3%d0%be-%d0%b7%d0%b0%d0%ba%d1%80%d1%8b%d1%82%d0%b8%d1%8f-%d0%ba%d0%b0%d0%bd%d0%b0%d0%bb%d0%be%d0%b2">#</a>
+<p>In fact, it is a bit more difficult to deal with receiving LN payments. For example, you may have a channel with an outbound liquidity of 5,000 sat and a capacity of 25,000 sat. However, this does not mean that you can receive 20,000 sat in this channel because its inbound liquidity is less than the total value.</p>
+<p>Some channel funds are &ldquo;locked&rdquo; as required by the Lightning protocol for security reasons (mainly to pay onchain fees in case of channel force closure and to keep a channel reserve on the ACINQ side).</p>
+<p>The locked amount varies depending on the onchain fees and can be significant. Accordingly, I recommend opening at least one high capacity channel, so that you don&rsquo;t have to worry later that the inbound liquidity will not be sufficient to receive the payment.</p>
+<p>With the introduction of splicing in the <a href="https://acinq.co/blog/phoenix-splicing-update">latest</a> version of Phoenix, each user now has just one channel which changes its capacity based on inbound liquidity. This is perhaps one of the most important differences between using a non-custodial mobile wallet and a full node.</p>
+<h3 id="how-to-recover-funds-in-case-of-channel-force-close">
+  How to recover funds in case of channel force close?
+  <a class="anchor" href="#how-to-recover-funds-in-case-of-channel-force-close">#</a>
 </h3>
-<p>Во-первых, не удаляйте приложение (и не сбрасывайте его настройки) до тех пор, пока не восстановите средства.</p>
-<p>Во-вторых, обратите внимание, что если ваши каналы были принудительно закрыты, вы столкнетесь с задержкой (обычно 720 блоков, или ≈ 5 дней, но может быть и больше), при выводе средств.</p>
-<p>В случае “армагеддона” все, что вам нужно для восстановления средств, – это сохраненный сид, который для вас изначально сгенерировал кошелек. Phoenix использует стандартный сид BIP39 и следует стандартному пути деривации BIP84, вы можете использовать любой совместимый кошелек для восстановления ваших средств. Я рекомендую использовать (настольный) Electrum. Подробнее об этом кошельке можно узнать из <a href="/electrum">этого пошагового гида</a>.</p>
-<p><strong>Пошаговое руководство:</strong></p>
+<p>First, do not uninstall the app (or reset its settings) until you have restored the funds.</p>
+<p>Second, note that if your channels have been force closed, you will face a delay for withdrawal (usually 720 blocks, or ≈ 5 days, but can be longer).</p>
+<p>In case of an &ldquo;apocalypse&rdquo;, all you need to restore your funds is the saved mnemonic backup phrase that the wallet originally generated for you. Phoenix uses the standard BIP39 seed and follows the standard BIP84 derivation path, you can use any compatible wallet to recover your funds. I recommend using Electrum (for desktop). You can learn more about Electrum wallet from <a href="/en/electrum">this guide</a>.</p>
+<p><strong>Step-by-step guide:</strong></p>
 <ol>
-<li>Скачайте <a href="https://electrum.org/#home">Electrum</a>.</li>
-<li>Создайте новый <strong>Стандартный кошелек</strong>.</li>
+<li>Download <a href="https://electrum.org/#home">Electrum</a>.</li>
+<li>Create new <strong>Standard wallet</strong>.</li>
 </ol>
 <div class="imageWrapper">
-    <img src="/img/143.png">
+    <img src="/img/143-en.png">
 </div>
 <ol start="3">
-<li>Выберите <strong>У меня уже есть сид</strong>.</li>
+<li>Choose <strong>I already have a seed</strong>.</li>
 </ol>
 <div class="imageWrapper">
-    <img src="/img/144.png">
+    <img src="/img/144-en.png">
 </div>
 <ol start="4">
-<li>Введите ваши 12 слов, нажмите <strong>Options</strong> и отметьте <strong>BIP39 seed</strong>.</li>
+<li>Type your 12 words, click <strong>Options</strong> and check <strong>BIP39 seed</strong>.</li>
 </ol>
 <div class="imageWrapper">
-    <img src="/img/145.png">
+    <img src="/img/145-en.png">
 </div>
 <ol start="5">
-<li>Выберите <strong>native segwit</strong> <strong>(p2wpkh)</strong>.</li>
+<li>Choose <strong>native segwit (p2wpkh)</strong>.</li>
 </ol>
 <div class="imageWrapper">
-    <img src="/img/146.png">
+    <img src="/img/146-en.png">
 </div>
 <ol start="6">
-<li>Ожидайте появления средств.</li>
+<li>Wait for funds to become available.</li>
 </ol>
-<h3 id="phoenix-требует-доверия">
-  Phoenix требует доверия?
-  <a class="anchor" href="#phoenix-%d1%82%d1%80%d0%b5%d0%b1%d1%83%d0%b5%d1%82-%d0%b4%d0%be%d0%b2%d0%b5%d1%80%d0%b8%d1%8f">#</a>
+<h3 id="do-i-have-to-trust-phoenix-wallet">
+  Do I have to trust Phoenix Wallet?
+  <a class="anchor" href="#do-i-have-to-trust-phoenix-wallet">#</a>
 </h3>
-<p>Phoenix минимизирует необходимость в доверии, но не лишает ее полностью. Следующие операции требуют доверия:</p>
+<p>Phoenix minimizes the need for trust, but does not completely remove it. The following operations require trust:</p>
 <ul>
-<li>открытие канала (до момента подтверждения финансирования транзакции);</li>
-<li>свопы (пользователь платит, а затем узел ACINQ выполняет своп).</li>
+<li>channel opening (until transaction confirmation);</li>
+<li>swaps (user pays, and then the ACINQ node performs the swap).</li>
 </ul>
-<p>Вы можете настроить Phoenix на использование собственного Electrum-сервера для оценки блокчейна и мониторинга ваших каналов. Это значительно снизит вашу зависимость от третьих сторон для обеспечения безопасности вашего кошелька. Тем не менее, привязка собственного сервера требует наличия SSL-сертификата.</p>
-<h3 id="приватность-phoenix">
-  Приватность Phoenix
-  <a class="anchor" href="#%d0%bf%d1%80%d0%b8%d0%b2%d0%b0%d1%82%d0%bd%d0%be%d1%81%d1%82%d1%8c-phoenix">#</a>
+<p>You can configure Phoenix to use your own Electrum server to get mempool data and monitor your channels. This will greatly reduce your reliance on third parties to keep your wallet secure. However, using your own server requires an SSL certificate.</p>
+<h3 id="phoenix-privacy">
+  Phoenix privacy
+  <a class="anchor" href="#phoenix-privacy">#</a>
 </h3>
-<p>Текущая версия Phoenix не предлагает никаких преимуществ в отношении приватности по сравнению с кастодиальными кошельками. ACINQ – разработчик кошелька и держатель узла, с которым открываются каналы, знает конечное место назначения и сумму платежей.</p>
-<p>Более поздние версии будут гораздо более приватными, но эти нововведения пока находятся в процессе разработки. Более подробная информацию можно найти <a href="https://medium.com/@ACINQ/phoenix-wallet-part-4-trampoline-payments-fb1befd027c8">здесь</a> и <a href="https://phoenix.acinq.co/privacy">здесь</a>.</p>
-<h2 id="итоги">
-  Итоги
-  <a class="anchor" href="#%d0%b8%d1%82%d0%be%d0%b3%d0%b8">#</a>
+<p>The current Phoenix version offers no privacy advantages over custodial wallets. ACINQ is the wallet developer and also the node operator, you open your channels to, knows the final destination and the amount of payments.</p>
+<p>Future versions will be much more private, but these improvements are still under development. More information can be found <a href="https://medium.com/@ACINQ/phoenix-wallet-part-4-trampoline-payments-fb1befd027c8">here</a> and <a href="https://phoenix.acinq.co/privacy">here</a>.</p>
+<h2 id="conclusion">
+  Conclusion
+  <a class="anchor" href="#conclusion">#</a>
 </h2>
-<p>Как я уже говорил, Phoenix является хорошим промежуточным решением для пользователей уровня “не новичок”. У кошелька есть свои минусы:</p>
+<p>As I said before, Phoenix is a good intermediate solution for &ldquo;non-beginner&rdquo; level users. The wallet has its own disadvantages:</p>
 <ul>
-<li>Необходимость в определенной мере доверять операторам узла ACINQ</li>
-<li>Возможные высокие комиссии, связанные с непредвиденным открытием каналов (требует внимания пользователя к наличию входящей ликвидности)</li>
-<li>Приватность платежей в Phoenix не лучше таковой у кастодиальных ЛН-кошельков, но команда работает над улучшением приватности.</li>
+<li>You need to trust ACINQ node operators to a certain extent.</li>
+<li>Possible high fees related to unexpected channel opening (requires user attention to inbound liquidity).</li>
+<li>Payments privacy is no greater than in custodial LN wallets, but the team is working to improve privacy.</li>
 </ul>
-<p>Несмотря на ряд недочетов (я считаю их вполне приемлемыми для пользователей, переезжающих с кастодиальных решений) Phoenix остается хорошим выбором среди ЛН-кошельков – ему удалось создать продукт, четко следующий заявленной философии: предоставить некастодиальный ЛН-кошелек с удобным и интуитивным интерфейсом.</p>
-<p>Остались вопросы? Зайдите в <a href="https://phoenix.acinq.co/faq">F.A.Q.</a> кошелька.</p>
+<p>Despite a number of downsides (I consider them quite acceptable for users moving away from custodial solutions) Phoenix remains a good choice among LN wallets – it has managed to create a product that clearly follows its stated philosophy: to provide a non-custodial LN wallet with a user-friendly and intuitive interface.</p>
+<p>Still have a questions? Please visit wallet <a href="https://phoenix.acinq.co/faq">FAQ</a>.</p>
 </article>
   <hr>
 
@@ -3323,34 +3138,33 @@ https://github.com/alex-shpak/hugo-book
   <ul>
     <li>
       <ul>
-        <li><a href="#интро">Интро</a>
+        <li><a href="#intro">Intro</a>
           <ul>
-            <li><a href="#терминология">Терминология</a></li>
+            <li><a href="#terminology">Terminology</a></li>
           </ul>
         </li>
-        <li><a href="#почему-phoenix">Почему Phoenix?</a></li>
-        <li><a href="#лайтнинг-максимализм">Лайтнинг-максимализм</a></li>
-        <li><a href="#практика">Практика</a>
+        <li><a href="#why-phoenix">Why Phoenix?</a></li>
+        <li><a href="#lightning-maximalism">Lightning maximalism</a></li>
+        <li><a href="#practice">Practice</a>
           <ul>
-            <li><a href="#пополнение-кошелька">Пополнение кошелька</a></li>
-            <li><a href="#интерфейс">Интерфейс</a></li>
+            <li><a href="#receiving-sats">Receiving sats</a></li>
+            <li><a href="#user-interface">User Interface</a></li>
           </ul>
         </li>
-        <li><a href="#особенности">Особенности</a>
+        <li><a href="#features">Features</a>
           <ul>
-            <li><a href="#платежные-каналы">Платежные каналы</a></li>
-            <li><a href="#функции-и-комиссии">Функции и комиссии</a></li>
+            <li><a href="#payment-channels">Payment channels</a></li>
           </ul>
         </li>
-        <li><a href="#нюансы-и-инструменты-восстановления">Нюансы и инструменты восстановления</a>
+        <li><a href="#specifics-and-recovery-tools">Specifics and recovery tools</a>
           <ul>
-            <li><a href="#получение-платежей">Получение платежей</a></li>
-            <li><a href="#как-восстановить-средства-в-случае-принудительного-закрытия-каналов">Как восстановить средства в случае принудительного закрытия каналов?</a></li>
-            <li><a href="#phoenix-требует-доверия">Phoenix требует доверия?</a></li>
-            <li><a href="#приватность-phoenix">Приватность Phoenix</a></li>
+            <li><a href="#receiving-payments">Receiving payments</a></li>
+            <li><a href="#how-to-recover-funds-in-case-of-channel-force-close">How to recover funds in case of channel force close?</a></li>
+            <li><a href="#do-i-have-to-trust-phoenix-wallet">Do I have to trust Phoenix Wallet?</a></li>
+            <li><a href="#phoenix-privacy">Phoenix privacy</a></li>
           </ul>
         </li>
-        <li><a href="#итоги">Итоги</a></li>
+        <li><a href="#conclusion">Conclusion</a></li>
       </ul>
     </li>
   </ul>

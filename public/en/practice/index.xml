@@ -4,7 +4,7 @@
     <title>Practice on 21ideas</title>
     <link>http://localhost:1313/en/practice/</link>
     <description>Recent content in Practice on 21ideas</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <atom:link href="http://localhost:1313/en/practice/index.xml" rel="self" type="application/rss+xml" />
   </channel>

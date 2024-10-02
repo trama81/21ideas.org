@@ -4,155 +4,64 @@
     <title>Tags on 21ideas</title>
     <link>http://localhost:1313/tags/</link>
     <description>Recent content in Tags on 21ideas</description>
-    <generator>Hugo</generator>
-    <language>ru-RU</language>
-    <lastBuildDate>Sat, 28 Sep 2024 11:46:17 +0400</lastBuildDate>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 20 Mar 2024 09:34:04 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Безопасность</title>
-      <link>http://localhost:1313/tags/%D0%B1%D0%B5%D0%B7%D0%BE%D0%BF%D0%B0%D1%81%D0%BD%D0%BE%D1%81%D1%82%D1%8C/</link>
-      <pubDate>Sun, 24 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/%D0%B1%D0%B5%D0%B7%D0%BE%D0%BF%D0%B0%D1%81%D0%BD%D0%BE%D1%81%D1%82%D1%8C/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Биткоин</title>
-      <link>http://localhost:1313/tags/%D0%B1%D0%B8%D1%82%D0%BA%D0%BE%D0%B8%D0%BD/</link>
-      <pubDate>Sun, 24 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/%D0%B1%D0%B8%D1%82%D0%BA%D0%BE%D0%B8%D0%BD/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Ключи</title>
-      <link>http://localhost:1313/tags/%D0%BA%D0%BB%D1%8E%D1%87%D0%B8/</link>
-      <pubDate>Sun, 24 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/%D0%BA%D0%BB%D1%8E%D1%87%D0%B8/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Холодное Хранение</title>
-      <link>http://localhost:1313/tags/%D1%85%D0%BE%D0%BB%D0%BE%D0%B4%D0%BD%D0%BE%D0%B5-%D1%85%D1%80%D0%B0%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5/</link>
-      <pubDate>Sun, 24 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/%D1%85%D0%BE%D0%BB%D0%BE%D0%B4%D0%BD%D0%BE%D0%B5-%D1%85%D1%80%D0%B0%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Хранение</title>
-      <link>http://localhost:1313/tags/%D1%85%D1%80%D0%B0%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5/</link>
-      <pubDate>Sun, 24 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/%D1%85%D1%80%D0%B0%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5/</guid>
-      <description></description>
-    </item>
     <item>
       <title>Bitcoin</title>
       <link>http://localhost:1313/tags/bitcoin/</link>
-      <pubDate>Sat, 16 Mar 2024 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 16 Jan 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/bitcoin/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Guide</title>
+      <link>http://localhost:1313/tags/guide/</link>
+      <pubDate>Tue, 16 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/guide/</guid>
       <description></description>
     </item>
     <item>
       <title>Hodl</title>
       <link>http://localhost:1313/tags/hodl/</link>
-      <pubDate>Sat, 16 Mar 2024 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 16 Jan 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/hodl/</guid>
       <description></description>
     </item>
     <item>
       <title>Lightning</title>
       <link>http://localhost:1313/tags/lightning/</link>
-      <pubDate>Sat, 16 Mar 2024 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 16 Jan 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/lightning/</guid>
       <description></description>
     </item>
     <item>
-      <title>Mobile Wallet</title>
-      <link>http://localhost:1313/tags/mobile-wallet/</link>
-      <pubDate>Sat, 16 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/mobile-wallet/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Private Keys</title>
-      <link>http://localhost:1313/tags/private-keys/</link>
-      <pubDate>Sat, 16 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/private-keys/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Security</title>
-      <link>http://localhost:1313/tags/security/</link>
-      <pubDate>Sat, 16 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/security/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>No-Kyc</title>
-      <link>http://localhost:1313/tags/no-kyc/</link>
-      <pubDate>Thu, 18 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/no-kyc/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Покупка</title>
-      <link>http://localhost:1313/tags/%D0%BF%D0%BE%D0%BA%D1%83%D0%BF%D0%BA%D0%B0/</link>
-      <pubDate>Thu, 18 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/%D0%BF%D0%BE%D0%BA%D1%83%D0%BF%D0%BA%D0%B0/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Приватность</title>
-      <link>http://localhost:1313/tags/%D0%BF%D1%80%D0%B8%D0%B2%D0%B0%D1%82%D0%BD%D0%BE%D1%81%D1%82%D1%8C/</link>
-      <pubDate>Thu, 18 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/%D0%BF%D1%80%D0%B8%D0%B2%D0%B0%D1%82%D0%BD%D0%BE%D1%81%D1%82%D1%8C/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Гид</title>
-      <link>http://localhost:1313/tags/%D0%B3%D0%B8%D0%B4/</link>
+      <title>Lightning Network</title>
+      <link>http://localhost:1313/tags/lightning-network/</link>
       <pubDate>Tue, 16 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/%D0%B3%D0%B8%D0%B4/</guid>
+      <guid>http://localhost:1313/tags/lightning-network/</guid>
       <description></description>
     </item>
     <item>
-      <title>Кошельки</title>
-      <link>http://localhost:1313/tags/%D0%BA%D0%BE%D1%88%D0%B5%D0%BB%D1%8C%D0%BA%D0%B8/</link>
+      <title>Payments</title>
+      <link>http://localhost:1313/tags/payments/</link>
       <pubDate>Tue, 16 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/%D0%BA%D0%BE%D1%88%D0%B5%D0%BB%D1%8C%D0%BA%D0%B8/</guid>
+      <guid>http://localhost:1313/tags/payments/</guid>
       <description></description>
     </item>
     <item>
-      <title>Лайтнинг</title>
-      <link>http://localhost:1313/tags/%D0%BB%D0%B0%D0%B9%D1%82%D0%BD%D0%B8%D0%BD%D0%B3/</link>
+      <title>Scalability</title>
+      <link>http://localhost:1313/tags/scalability/</link>
       <pubDate>Tue, 16 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/%D0%BB%D0%B0%D0%B9%D1%82%D0%BD%D0%B8%D0%BD%D0%B3/</guid>
+      <guid>http://localhost:1313/tags/scalability/</guid>
       <description></description>
     </item>
     <item>
-      <title>Масштабирование</title>
-      <link>http://localhost:1313/tags/%D0%BC%D0%B0%D1%81%D1%88%D1%82%D0%B0%D0%B1%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5/</link>
+      <title>Wallets</title>
+      <link>http://localhost:1313/tags/wallets/</link>
       <pubDate>Tue, 16 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/%D0%BC%D0%B0%D1%81%D1%88%D1%82%D0%B0%D0%B1%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Платежи</title>
-      <link>http://localhost:1313/tags/%D0%BF%D0%BB%D0%B0%D1%82%D0%B5%D0%B6%D0%B8/</link>
-      <pubDate>Tue, 16 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/%D0%BF%D0%BB%D0%B0%D1%82%D0%B5%D0%B6%D0%B8/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Сеть Лайтнинг</title>
-      <link>http://localhost:1313/tags/%D1%81%D0%B5%D1%82%D1%8C-%D0%BB%D0%B0%D0%B9%D1%82%D0%BD%D0%B8%D0%BD%D0%B3/</link>
-      <pubDate>Tue, 16 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/%D1%81%D0%B5%D1%82%D1%8C-%D0%BB%D0%B0%D0%B9%D1%82%D0%BD%D0%B8%D0%BD%D0%B3/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Сеть Молния</title>
-      <link>http://localhost:1313/tags/%D1%81%D0%B5%D1%82%D1%8C-%D0%BC%D0%BE%D0%BB%D0%BD%D0%B8%D1%8F/</link>
-      <pubDate>Tue, 16 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/%D1%81%D0%B5%D1%82%D1%8C-%D0%BC%D0%BE%D0%BB%D0%BD%D0%B8%D1%8F/</guid>
+      <guid>http://localhost:1313/tags/wallets/</guid>
       <description></description>
     </item>
     <item>
@@ -191,17 +100,24 @@
       <description></description>
     </item>
     <item>
-      <title>Добавление Статей</title>
-      <link>http://localhost:1313/tags/%D0%B4%D0%BE%D0%B1%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D1%81%D1%82%D0%B0%D1%82%D0%B5%D0%B9/</link>
+      <title>Adding an Article</title>
+      <link>http://localhost:1313/tags/adding-an-article/</link>
       <pubDate>Sat, 12 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/%D0%B4%D0%BE%D0%B1%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D1%81%D1%82%D0%B0%D1%82%D0%B5%D0%B9/</guid>
+      <guid>http://localhost:1313/tags/adding-an-article/</guid>
       <description></description>
     </item>
     <item>
-      <title>Статьи</title>
-      <link>http://localhost:1313/tags/%D1%81%D1%82%D0%B0%D1%82%D1%8C%D0%B8/</link>
+      <title>Article</title>
+      <link>http://localhost:1313/tags/article/</link>
       <pubDate>Sat, 12 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/%D1%81%D1%82%D0%B0%D1%82%D1%8C%D0%B8/</guid>
+      <guid>http://localhost:1313/tags/article/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Contribute</title>
+      <link>http://localhost:1313/tags/contribute/</link>
+      <pubDate>Sat, 12 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/contribute/</guid>
       <description></description>
     </item>
     <item>
@@ -219,6 +135,13 @@
       <description></description>
     </item>
     <item>
+      <title>Статьи</title>
+      <link>http://localhost:1313/tags/%D1%81%D1%82%D0%B0%D1%82%D1%8C%D0%B8/</link>
+      <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/%D1%81%D1%82%D0%B0%D1%82%D1%8C%D0%B8/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Формат</title>
       <link>http://localhost:1313/tags/%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%82/</link>
       <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate>
@@ -226,24 +149,87 @@
       <description></description>
     </item>
     <item>
-      <title>Мобильный Кошелек</title>
-      <link>http://localhost:1313/tags/%D0%BC%D0%BE%D0%B1%D0%B8%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9-%D0%BA%D0%BE%D1%88%D0%B5%D0%BB%D0%B5%D0%BA/</link>
+      <title>Buy</title>
+      <link>http://localhost:1313/tags/buy/</link>
+      <pubDate>Mon, 22 May 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/buy/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>No-Kyc</title>
+      <link>http://localhost:1313/tags/no-kyc/</link>
+      <pubDate>Mon, 22 May 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/no-kyc/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Privacy</title>
+      <link>http://localhost:1313/tags/privacy/</link>
+      <pubDate>Mon, 22 May 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/privacy/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Security</title>
+      <link>http://localhost:1313/tags/security/</link>
+      <pubDate>Mon, 22 May 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/security/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mobile Wallet</title>
+      <link>http://localhost:1313/tags/mobile-wallet/</link>
       <pubDate>Thu, 02 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/%D0%BC%D0%BE%D0%B1%D0%B8%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9-%D0%BA%D0%BE%D1%88%D0%B5%D0%BB%D0%B5%D0%BA/</guid>
+      <guid>http://localhost:1313/tags/mobile-wallet/</guid>
       <description></description>
     </item>
     <item>
-      <title>Кошелек</title>
-      <link>http://localhost:1313/tags/%D0%BA%D0%BE%D1%88%D0%B5%D0%BB%D0%B5%D0%BA/</link>
+      <title>Private Keys</title>
+      <link>http://localhost:1313/tags/private-keys/</link>
+      <pubDate>Thu, 02 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/private-keys/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Wallet</title>
+      <link>http://localhost:1313/tags/wallet/</link>
       <pubDate>Mon, 02 Jan 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/%D0%BA%D0%BE%D1%88%D0%B5%D0%BB%D0%B5%D0%BA/</guid>
+      <guid>http://localhost:1313/tags/wallet/</guid>
       <description></description>
     </item>
     <item>
-      <title>Основы</title>
-      <link>http://localhost:1313/tags/%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D1%8B/</link>
+      <title>Basics</title>
+      <link>http://localhost:1313/tags/basics/</link>
       <pubDate>Tue, 06 Dec 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D1%8B/</guid>
+      <guid>http://localhost:1313/tags/basics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Buying</title>
+      <link>http://localhost:1313/tags/buying/</link>
+      <pubDate>Tue, 06 Dec 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/buying/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>For Beginners</title>
+      <link>http://localhost:1313/tags/for-beginners/</link>
+      <pubDate>Tue, 06 Dec 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/for-beginners/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Keys</title>
+      <link>http://localhost:1313/tags/keys/</link>
+      <pubDate>Tue, 06 Dec 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/keys/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Storing</title>
+      <link>http://localhost:1313/tags/storing/</link>
+      <pubDate>Tue, 06 Dec 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/storing/</guid>
       <description></description>
     </item>
     <item>
@@ -254,6 +240,13 @@
       <description></description>
     </item>
     <item>
+      <title>Биткоин</title>
+      <link>http://localhost:1313/tags/%D0%B1%D0%B8%D1%82%D0%BA%D0%BE%D0%B8%D0%BD/</link>
+      <pubDate>Sun, 02 Oct 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/%D0%B1%D0%B8%D1%82%D0%BA%D0%BE%D0%B8%D0%BD/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Редкость</title>
       <link>http://localhost:1313/tags/%D1%80%D0%B5%D0%B4%D0%BA%D0%BE%D1%81%D1%82%D1%8C/</link>
       <pubDate>Sun, 02 Oct 2022 00:00:00 +0000</pubDate>
@@ -261,38 +254,45 @@
       <description></description>
     </item>
     <item>
-      <title>Сатоши</title>
-      <link>http://localhost:1313/tags/%D1%81%D0%B0%D1%82%D0%BE%D1%88%D0%B8/</link>
+      <title>Satoshi</title>
+      <link>http://localhost:1313/tags/satoshi/</link>
       <pubDate>Fri, 16 Sep 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/%D1%81%D0%B0%D1%82%D0%BE%D1%88%D0%B8/</guid>
+      <guid>http://localhost:1313/tags/satoshi/</guid>
       <description></description>
     </item>
     <item>
-      <title>Второй Уровень</title>
-      <link>http://localhost:1313/tags/%D0%B2%D1%82%D0%BE%D1%80%D0%BE%D0%B9-%D1%83%D1%80%D0%BE%D0%B2%D0%B5%D0%BD%D1%8C/</link>
+      <title>Second Layer</title>
+      <link>http://localhost:1313/tags/second-layer/</link>
       <pubDate>Mon, 12 Sep 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/%D0%B2%D1%82%D0%BE%D1%80%D0%BE%D0%B9-%D1%83%D1%80%D0%BE%D0%B2%D0%B5%D0%BD%D1%8C/</guid>
+      <guid>http://localhost:1313/tags/second-layer/</guid>
       <description></description>
     </item>
     <item>
-      <title>Адреса</title>
-      <link>http://localhost:1313/tags/%D0%B0%D0%B4%D1%80%D0%B5%D1%81%D0%B0/</link>
+      <title>Addresses</title>
+      <link>http://localhost:1313/tags/addresses/</link>
       <pubDate>Sat, 03 Sep 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/%D0%B0%D0%B4%D1%80%D0%B5%D1%81%D0%B0/</guid>
+      <guid>http://localhost:1313/tags/addresses/</guid>
       <description></description>
     </item>
     <item>
-      <title>Деньги</title>
-      <link>http://localhost:1313/tags/%D0%B4%D0%B5%D0%BD%D1%8C%D0%B3%D0%B8/</link>
-      <pubDate>Sun, 03 Apr 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/%D0%B4%D0%B5%D0%BD%D1%8C%D0%B3%D0%B8/</guid>
+      <title>Cold Storage</title>
+      <link>http://localhost:1313/tags/cold-storage/</link>
+      <pubDate>Fri, 27 May 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/cold-storage/</guid>
       <description></description>
     </item>
     <item>
-      <title>Свобода</title>
-      <link>http://localhost:1313/tags/%D1%81%D0%B2%D0%BE%D0%B1%D0%BE%D0%B4%D0%B0/</link>
+      <title>Freedom</title>
+      <link>http://localhost:1313/tags/freedom/</link>
       <pubDate>Sun, 03 Apr 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/%D1%81%D0%B2%D0%BE%D0%B1%D0%BE%D0%B4%D0%B0/</guid>
+      <guid>http://localhost:1313/tags/freedom/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Money</title>
+      <link>http://localhost:1313/tags/money/</link>
+      <pubDate>Sun, 03 Apr 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/money/</guid>
       <description></description>
     </item>
     <item>
@@ -303,10 +303,10 @@
       <description></description>
     </item>
     <item>
-      <title>Аппаратный Кошелек</title>
-      <link>http://localhost:1313/tags/%D0%B0%D0%BF%D0%BF%D0%B0%D1%80%D0%B0%D1%82%D0%BD%D1%8B%D0%B9-%D0%BA%D0%BE%D1%88%D0%B5%D0%BB%D0%B5%D0%BA/</link>
-      <pubDate>Sat, 18 Sep 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/%D0%B0%D0%BF%D0%BF%D0%B0%D1%80%D0%B0%D1%82%D0%BD%D1%8B%D0%B9-%D0%BA%D0%BE%D1%88%D0%B5%D0%BB%D0%B5%D0%BA/</guid>
+      <title>Деньги</title>
+      <link>http://localhost:1313/tags/%D0%B4%D0%B5%D0%BD%D1%8C%D0%B3%D0%B8/</link>
+      <pubDate>Tue, 02 Nov 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/%D0%B4%D0%B5%D0%BD%D1%8C%D0%B3%D0%B8/</guid>
       <description></description>
     </item>
     <item>
@@ -317,24 +317,17 @@
       <description></description>
     </item>
     <item>
-      <title>Альткоин</title>
-      <link>http://localhost:1313/tags/%D0%B0%D0%BB%D1%8C%D1%82%D0%BA%D0%BE%D0%B8%D0%BD/</link>
+      <title>Altcoin</title>
+      <link>http://localhost:1313/tags/altcoin/</link>
       <pubDate>Fri, 11 Jun 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/%D0%B0%D0%BB%D1%8C%D1%82%D0%BA%D0%BE%D0%B8%D0%BD/</guid>
+      <guid>http://localhost:1313/tags/altcoin/</guid>
       <description></description>
     </item>
     <item>
-      <title>Максимализм</title>
-      <link>http://localhost:1313/tags/%D0%BC%D0%B0%D0%BA%D1%81%D0%B8%D0%BC%D0%B0%D0%BB%D0%B8%D0%B7%D0%BC/</link>
+      <title>Not Shitcoin</title>
+      <link>http://localhost:1313/tags/not-shitcoin/</link>
       <pubDate>Fri, 11 Jun 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/%D0%BC%D0%B0%D0%BA%D1%81%D0%B8%D0%BC%D0%B0%D0%BB%D0%B8%D0%B7%D0%BC/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Не Щиткоины</title>
-      <link>http://localhost:1313/tags/%D0%BD%D0%B5-%D1%89%D0%B8%D1%82%D0%BA%D0%BE%D0%B8%D0%BD%D1%8B/</link>
-      <pubDate>Fri, 11 Jun 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/%D0%BD%D0%B5-%D1%89%D0%B8%D1%82%D0%BA%D0%BE%D0%B8%D0%BD%D1%8B/</guid>
+      <guid>http://localhost:1313/tags/not-shitcoin/</guid>
       <description></description>
     </item>
     <item>
@@ -345,6 +338,13 @@
       <description></description>
     </item>
     <item>
+      <title>Environment</title>
+      <link>http://localhost:1313/tags/environment/</link>
+      <pubDate>Mon, 12 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/environment/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Pow</title>
       <link>http://localhost:1313/tags/pow/</link>
       <pubDate>Mon, 12 Apr 2021 00:00:00 +0000</pubDate>
@@ -352,24 +352,17 @@
       <description></description>
     </item>
     <item>
-      <title>Окружающая Среда</title>
-      <link>http://localhost:1313/tags/%D0%BE%D0%BA%D1%80%D1%83%D0%B6%D0%B0%D1%8E%D1%89%D0%B0%D1%8F-%D1%81%D1%80%D0%B5%D0%B4%D0%B0/</link>
-      <pubDate>Mon, 12 Apr 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/%D0%BE%D0%BA%D1%80%D1%83%D0%B6%D0%B0%D1%8E%D1%89%D0%B0%D1%8F-%D1%81%D1%80%D0%B5%D0%B4%D0%B0/</guid>
+      <title>Blockchain</title>
+      <link>http://localhost:1313/tags/blockchain/</link>
+      <pubDate>Mon, 08 Mar 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/blockchain/</guid>
       <description></description>
     </item>
     <item>
-      <title>Блокчейн</title>
-      <link>http://localhost:1313/tags/%D0%B1%D0%BB%D0%BE%D0%BA%D1%87%D0%B5%D0%B9%D0%BD/</link>
+      <title>Future</title>
+      <link>http://localhost:1313/tags/future/</link>
       <pubDate>Mon, 08 Mar 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/%D0%B1%D0%BB%D0%BE%D0%BA%D1%87%D0%B5%D0%B9%D0%BD/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Будущее</title>
-      <link>http://localhost:1313/tags/%D0%B1%D1%83%D0%B4%D1%83%D1%89%D0%B5%D0%B5/</link>
-      <pubDate>Mon, 08 Mar 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/%D0%B1%D1%83%D0%B4%D1%83%D1%89%D0%B5%D0%B5/</guid>
+      <guid>http://localhost:1313/tags/future/</guid>
       <description></description>
     </item>
     <item>
@@ -380,136 +373,122 @@
       <description></description>
     </item>
     <item>
-      <title>Акции</title>
-      <link>http://localhost:1313/tags/%D0%B0%D0%BA%D1%86%D0%B8%D0%B8/</link>
+      <title>Economics</title>
+      <link>http://localhost:1313/tags/economics/</link>
       <pubDate>Wed, 23 Dec 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/%D0%B0%D0%BA%D1%86%D0%B8%D0%B8/</guid>
+      <guid>http://localhost:1313/tags/economics/</guid>
       <description></description>
     </item>
     <item>
-      <title>Инфляция</title>
-      <link>http://localhost:1313/tags/%D0%B8%D0%BD%D1%84%D0%BB%D1%8F%D1%86%D0%B8%D1%8F/</link>
+      <title>Gradually Then Suddenly</title>
+      <link>http://localhost:1313/tags/gradually-then-suddenly/</link>
       <pubDate>Wed, 23 Dec 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/%D0%B8%D0%BD%D1%84%D0%BB%D1%8F%D1%86%D0%B8%D1%8F/</guid>
+      <guid>http://localhost:1313/tags/gradually-then-suddenly/</guid>
       <description></description>
     </item>
     <item>
-      <title>Постепенно Затем Внезапно</title>
-      <link>http://localhost:1313/tags/%D0%BF%D0%BE%D1%81%D1%82%D0%B5%D0%BF%D0%B5%D0%BD%D0%BD%D0%BE-%D0%B7%D0%B0%D1%82%D0%B5%D0%BC-%D0%B2%D0%BD%D0%B5%D0%B7%D0%B0%D0%BF%D0%BD%D0%BE/</link>
-      <pubDate>Wed, 23 Dec 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/%D0%BF%D0%BE%D1%81%D1%82%D0%B5%D0%BF%D0%B5%D0%BD%D0%BD%D0%BE-%D0%B7%D0%B0%D1%82%D0%B5%D0%BC-%D0%B2%D0%BD%D0%B5%D0%B7%D0%B0%D0%BF%D0%BD%D0%BE/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Сбережения</title>
-      <link>http://localhost:1313/tags/%D1%81%D0%B1%D0%B5%D1%80%D0%B5%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F/</link>
-      <pubDate>Wed, 23 Dec 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/%D1%81%D0%B1%D0%B5%D1%80%D0%B5%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Экономика</title>
-      <link>http://localhost:1313/tags/%D1%8D%D0%BA%D0%BE%D0%BD%D0%BE%D0%BC%D0%B8%D0%BA%D0%B0/</link>
-      <pubDate>Wed, 23 Dec 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/%D1%8D%D0%BA%D0%BE%D0%BD%D0%BE%D0%BC%D0%B8%D0%BA%D0%B0/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Практика</title>
-      <link>http://localhost:1313/tags/%D0%BF%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D0%B0/</link>
+      <title>Practice</title>
+      <link>http://localhost:1313/tags/practice/</link>
       <pubDate>Sun, 20 Sep 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/%D0%BF%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D0%B0/</guid>
+      <guid>http://localhost:1313/tags/practice/</guid>
       <description></description>
     </item>
     <item>
-      <title>Протокол</title>
-      <link>http://localhost:1313/tags/%D0%BF%D1%80%D0%BE%D1%82%D0%BE%D0%BA%D0%BE%D0%BB/</link>
+      <title>Protocol</title>
+      <link>http://localhost:1313/tags/protocol/</link>
       <pubDate>Sun, 20 Sep 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/%D0%BF%D1%80%D0%BE%D1%82%D0%BE%D0%BA%D0%BE%D0%BB/</guid>
+      <guid>http://localhost:1313/tags/protocol/</guid>
       <description></description>
     </item>
     <item>
-      <title>Теория</title>
-      <link>http://localhost:1313/tags/%D1%82%D0%B5%D0%BE%D1%80%D0%B8%D1%8F/</link>
+      <title>Theory</title>
+      <link>http://localhost:1313/tags/theory/</link>
       <pubDate>Sun, 20 Sep 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/%D1%82%D0%B5%D0%BE%D1%80%D0%B8%D1%8F/</guid>
+      <guid>http://localhost:1313/tags/theory/</guid>
       <description></description>
     </item>
     <item>
-      <title>Децентрализация</title>
-      <link>http://localhost:1313/tags/%D0%B4%D0%B5%D1%86%D0%B5%D0%BD%D1%82%D1%80%D0%B0%D0%BB%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F/</link>
+      <title>Hardware Wallet</title>
+      <link>http://localhost:1313/tags/hardware-wallet/</link>
+      <pubDate>Fri, 03 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/hardware-wallet/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hold</title>
+      <link>http://localhost:1313/tags/hold/</link>
+      <pubDate>Wed, 13 May 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/hold/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Decentralization</title>
+      <link>http://localhost:1313/tags/decentralization/</link>
       <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/%D0%B4%D0%B5%D1%86%D0%B5%D0%BD%D1%82%D1%80%D0%B0%D0%BB%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F/</guid>
+      <guid>http://localhost:1313/tags/decentralization/</guid>
       <description></description>
     </item>
     <item>
-      <title>Мицелий</title>
-      <link>http://localhost:1313/tags/%D0%BC%D0%B8%D1%86%D0%B5%D0%BB%D0%B8%D0%B9/</link>
+      <title>Inflation</title>
+      <link>http://localhost:1313/tags/inflation/</link>
       <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/%D0%BC%D0%B8%D1%86%D0%B5%D0%BB%D0%B8%D0%B9/</guid>
+      <guid>http://localhost:1313/tags/inflation/</guid>
       <description></description>
     </item>
     <item>
-      <title>Генезис</title>
-      <link>http://localhost:1313/tags/%D0%B3%D0%B5%D0%BD%D0%B5%D0%B7%D0%B8%D1%81/</link>
+      <title>Mycelium</title>
+      <link>http://localhost:1313/tags/mycelium/</link>
+      <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/mycelium/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cypherpunks</title>
+      <link>http://localhost:1313/tags/cypherpunks/</link>
       <pubDate>Mon, 06 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/%D0%B3%D0%B5%D0%BD%D0%B5%D0%B7%D0%B8%D1%81/</guid>
+      <guid>http://localhost:1313/tags/cypherpunks/</guid>
       <description></description>
     </item>
     <item>
-      <title>История</title>
-      <link>http://localhost:1313/tags/%D0%B8%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%8F/</link>
+      <title>Genesis</title>
+      <link>http://localhost:1313/tags/genesis/</link>
       <pubDate>Mon, 06 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/%D0%B8%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%8F/</guid>
+      <guid>http://localhost:1313/tags/genesis/</guid>
       <description></description>
     </item>
     <item>
-      <title>Шифропанки</title>
-      <link>http://localhost:1313/tags/%D1%88%D0%B8%D1%84%D1%80%D0%BE%D0%BF%D0%B0%D0%BD%D0%BA%D0%B8/</link>
+      <title>History</title>
+      <link>http://localhost:1313/tags/history/</link>
       <pubDate>Mon, 06 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/%D1%88%D0%B8%D1%84%D1%80%D0%BE%D0%BF%D0%B0%D0%BD%D0%BA%D0%B8/</guid>
+      <guid>http://localhost:1313/tags/history/</guid>
       <description></description>
     </item>
     <item>
-      <title>Энтропия</title>
-      <link>http://localhost:1313/tags/%D1%8D%D0%BD%D1%82%D1%80%D0%BE%D0%BF%D0%B8%D1%8F/</link>
+      <title>Entropy</title>
+      <link>http://localhost:1313/tags/entropy/</link>
       <pubDate>Thu, 19 Dec 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/%D1%8D%D0%BD%D1%82%D1%80%D0%BE%D0%BF%D0%B8%D1%8F/</guid>
+      <guid>http://localhost:1313/tags/entropy/</guid>
       <description></description>
     </item>
     <item>
-      <title>Наркотики</title>
-      <link>http://localhost:1313/tags/%D0%BD%D0%B0%D1%80%D0%BA%D0%BE%D1%82%D0%B8%D0%BA%D0%B8/</link>
+      <title>Criminals</title>
+      <link>http://localhost:1313/tags/criminals/</link>
       <pubDate>Fri, 29 Nov 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/%D0%BD%D0%B0%D1%80%D0%BA%D0%BE%D1%82%D0%B8%D0%BA%D0%B8/</guid>
+      <guid>http://localhost:1313/tags/criminals/</guid>
       <description></description>
     </item>
     <item>
-      <title>Преступность</title>
-      <link>http://localhost:1313/tags/%D0%BF%D1%80%D0%B5%D1%81%D1%82%D1%83%D0%BF%D0%BD%D0%BE%D1%81%D1%82%D1%8C/</link>
+      <title>Drugs</title>
+      <link>http://localhost:1313/tags/drugs/</link>
       <pubDate>Fri, 29 Nov 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/%D0%BF%D1%80%D0%B5%D1%81%D1%82%D1%83%D0%BF%D0%BD%D0%BE%D1%81%D1%82%D1%8C/</guid>
+      <guid>http://localhost:1313/tags/drugs/</guid>
       <description></description>
     </item>
     <item>
-      <title>Блокировка</title>
-      <link>http://localhost:1313/tags/%D0%B1%D0%BB%D0%BE%D0%BA%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B0/</link>
-      <pubDate>Fri, 08 Nov 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/%D0%B1%D0%BB%D0%BE%D0%BA%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B0/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Запрет</title>
-      <link>http://localhost:1313/tags/%D0%B7%D0%B0%D0%BF%D1%80%D0%B5%D1%82/</link>
-      <pubDate>Fri, 08 Nov 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/%D0%B7%D0%B0%D0%BF%D1%80%D0%B5%D1%82/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Пирамида</title>
-      <link>http://localhost:1313/tags/%D0%BF%D0%B8%D1%80%D0%B0%D0%BC%D0%B8%D0%B4%D0%B0/</link>
+      <title>Pyramid</title>
+      <link>http://localhost:1313/tags/pyramid/</link>
       <pubDate>Fri, 18 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/%D0%BF%D0%B8%D1%80%D0%B0%D0%BC%D0%B8%D0%B4%D0%B0/</guid>
+      <guid>http://localhost:1313/tags/pyramid/</guid>
       <description></description>
     </item>
     <item>
@@ -520,59 +499,45 @@
       <description></description>
     </item>
     <item>
-      <title>Количественное Смягчение</title>
-      <link>http://localhost:1313/tags/%D0%BA%D0%BE%D0%BB%D0%B8%D1%87%D0%B5%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D0%B5-%D1%81%D0%BC%D1%8F%D0%B3%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/</link>
+      <title>Scarcity</title>
+      <link>http://localhost:1313/tags/scarcity/</link>
       <pubDate>Fri, 27 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/%D0%BA%D0%BE%D0%BB%D0%B8%D1%87%D0%B5%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D0%B5-%D1%81%D0%BC%D1%8F%D0%B3%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/</guid>
+      <guid>http://localhost:1313/tags/scarcity/</guid>
       <description></description>
     </item>
     <item>
-      <title>Масштабируемость</title>
-      <link>http://localhost:1313/tags/%D0%BC%D0%B0%D1%81%D1%88%D1%82%D0%B0%D0%B1%D0%B8%D1%80%D1%83%D0%B5%D0%BC%D0%BE%D1%81%D1%82%D1%8C/</link>
-      <pubDate>Fri, 23 Aug 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/%D0%BC%D0%B0%D1%81%D1%88%D1%82%D0%B0%D0%B1%D0%B8%D1%80%D1%83%D0%B5%D0%BC%D0%BE%D1%81%D1%82%D1%8C/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Платежная Система</title>
-      <link>http://localhost:1313/tags/%D0%BF%D0%BB%D0%B0%D1%82%D0%B5%D0%B6%D0%BD%D0%B0%D1%8F-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0/</link>
-      <pubDate>Fri, 23 Aug 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/%D0%BF%D0%BB%D0%B0%D1%82%D0%B5%D0%B6%D0%BD%D0%B0%D1%8F-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Скорость</title>
-      <link>http://localhost:1313/tags/%D1%81%D0%BA%D0%BE%D1%80%D0%BE%D1%81%D1%82%D1%8C/</link>
-      <pubDate>Fri, 23 Aug 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/%D1%81%D0%BA%D0%BE%D1%80%D0%BE%D1%81%D1%82%D1%8C/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Энергоэффективность</title>
-      <link>http://localhost:1313/tags/%D1%8D%D0%BD%D0%B5%D1%80%D0%B3%D0%BE%D1%8D%D1%84%D1%84%D0%B5%D0%BA%D1%82%D0%B8%D0%B2%D0%BD%D0%BE%D1%81%D1%82%D1%8C/</link>
+      <title>Pow&#34;</title>
+      <link>http://localhost:1313/tags/pow/</link>
       <pubDate>Fri, 16 Aug 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/%D1%8D%D0%BD%D0%B5%D1%80%D0%B3%D0%BE%D1%8D%D1%84%D1%84%D0%B5%D0%BA%D1%82%D0%B8%D0%B2%D0%BD%D0%BE%D1%81%D1%82%D1%8C/</guid>
+      <guid>http://localhost:1313/tags/pow/</guid>
       <description></description>
     </item>
     <item>
-      <title>Волатильность</title>
-      <link>http://localhost:1313/tags/%D0%B2%D0%BE%D0%BB%D0%B0%D1%82%D0%B8%D0%BB%D1%8C%D0%BD%D0%BE%D1%81%D1%82%D1%8C/</link>
+      <title>Volatility</title>
+      <link>http://localhost:1313/tags/volatility/</link>
       <pubDate>Fri, 09 Aug 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/%D0%B2%D0%BE%D0%BB%D0%B0%D1%82%D0%B8%D0%BB%D1%8C%D0%BD%D0%BE%D1%81%D1%82%D1%8C/</guid>
+      <guid>http://localhost:1313/tags/volatility/</guid>
       <description></description>
     </item>
     <item>
-      <title>Жизнь</title>
-      <link>http://localhost:1313/tags/%D0%B6%D0%B8%D0%B7%D0%BD%D1%8C/</link>
+      <title>Life</title>
+      <link>http://localhost:1313/tags/life/</link>
       <pubDate>Wed, 07 Aug 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/%D0%B6%D0%B8%D0%B7%D0%BD%D1%8C/</guid>
+      <guid>http://localhost:1313/tags/life/</guid>
       <description></description>
     </item>
     <item>
-      <title>Токеномика</title>
-      <link>http://localhost:1313/tags/%D1%82%D0%BE%D0%BA%D0%B5%D0%BD%D0%BE%D0%BC%D0%B8%D0%BA%D0%B0/</link>
+      <title>Altcoins</title>
+      <link>http://localhost:1313/tags/altcoins/</link>
       <pubDate>Fri, 02 Aug 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/%D1%82%D0%BE%D0%BA%D0%B5%D0%BD%D0%BE%D0%BC%D0%B8%D0%BA%D0%B0/</guid>
+      <guid>http://localhost:1313/tags/altcoins/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tokenomics</title>
+      <link>http://localhost:1313/tags/tokenomics/</link>
+      <pubDate>Fri, 02 Aug 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/tokenomics/</guid>
       <description></description>
     </item>
     <item>
@@ -580,6 +545,13 @@
       <link>http://localhost:1313/tags/%D0%B2%D1%81%D1%82%D1%83%D0%BF%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5/</link>
       <pubDate>Mon, 17 Jun 2019 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/%D0%B2%D1%81%D1%82%D1%83%D0%BF%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Основы</title>
+      <link>http://localhost:1313/tags/%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D1%8B/</link>
+      <pubDate>Mon, 17 Jun 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D1%8B/</guid>
       <description></description>
     </item>
     <item>
@@ -597,52 +569,87 @@
       <description></description>
     </item>
     <item>
-      <title>Философия</title>
-      <link>http://localhost:1313/tags/%D1%84%D0%B8%D0%BB%D0%BE%D1%81%D0%BE%D1%84%D0%B8%D1%8F/</link>
-      <pubDate>Fri, 21 Dec 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/%D1%84%D0%B8%D0%BB%D0%BE%D1%81%D0%BE%D1%84%D0%B8%D1%8F/</guid>
+      <title>Philosophy</title>
+      <link>http://localhost:1313/tags/philosophy/</link>
+      <pubDate>Tue, 02 Apr 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/philosophy/</guid>
       <description></description>
     </item>
     <item>
-      <title>Консенсус</title>
-      <link>http://localhost:1313/tags/%D0%BA%D0%BE%D0%BD%D1%81%D0%B5%D0%BD%D1%81%D1%83%D1%81/</link>
+      <title>Chainsplit</title>
+      <link>http://localhost:1313/tags/chainsplit/</link>
       <pubDate>Thu, 28 Dec 2017 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/%D0%BA%D0%BE%D0%BD%D1%81%D0%B5%D0%BD%D1%81%D1%83%D1%81/</guid>
+      <guid>http://localhost:1313/tags/chainsplit/</guid>
       <description></description>
     </item>
     <item>
-      <title>Разделение Цепочки</title>
-      <link>http://localhost:1313/tags/%D1%80%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D1%86%D0%B5%D0%BF%D0%BE%D1%87%D0%BA%D0%B8/</link>
+      <title>Consensus</title>
+      <link>http://localhost:1313/tags/consensus/</link>
       <pubDate>Thu, 28 Dec 2017 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/%D1%80%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D1%86%D0%B5%D0%BF%D0%BE%D1%87%D0%BA%D0%B8/</guid>
+      <guid>http://localhost:1313/tags/consensus/</guid>
       <description></description>
     </item>
     <item>
-      <title>Софтфорк</title>
-      <link>http://localhost:1313/tags/%D1%81%D0%BE%D1%84%D1%82%D1%84%D0%BE%D1%80%D0%BA/</link>
+      <title>Hardfork</title>
+      <link>http://localhost:1313/tags/hardfork/</link>
       <pubDate>Thu, 28 Dec 2017 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/%D1%81%D0%BE%D1%84%D1%82%D1%84%D0%BE%D1%80%D0%BA/</guid>
+      <guid>http://localhost:1313/tags/hardfork/</guid>
       <description></description>
     </item>
     <item>
-      <title>Хардфорк</title>
-      <link>http://localhost:1313/tags/%D1%85%D0%B0%D1%80%D0%B4%D1%84%D0%BE%D1%80%D0%BA/</link>
+      <title>Softfork</title>
+      <link>http://localhost:1313/tags/softfork/</link>
       <pubDate>Thu, 28 Dec 2017 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/%D1%85%D0%B0%D1%80%D0%B4%D1%84%D0%BE%D1%80%D0%BA/</guid>
+      <guid>http://localhost:1313/tags/softfork/</guid>
       <description></description>
     </item>
     <item>
-      <title>Первая Криптовалюта</title>
-      <link>http://localhost:1313/tags/%D0%BF%D0%B5%D1%80%D0%B2%D0%B0%D1%8F-%D0%BA%D1%80%D0%B8%D0%BF%D1%82%D0%BE%D0%B2%D0%B0%D0%BB%D1%8E%D1%82%D0%B0/</link>
+      <title>Network Effect</title>
+      <link>http://localhost:1313/tags/network-effect/</link>
       <pubDate>Mon, 29 Jun 2015 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/%D0%BF%D0%B5%D1%80%D0%B2%D0%B0%D1%8F-%D0%BA%D1%80%D0%B8%D0%BF%D1%82%D0%BE%D0%B2%D0%B0%D0%BB%D1%8E%D1%82%D0%B0/</guid>
+      <guid>http://localhost:1313/tags/network-effect/</guid>
       <description></description>
     </item>
     <item>
-      <title>Сетевой Эффект</title>
-      <link>http://localhost:1313/tags/%D1%81%D0%B5%D1%82%D0%B5%D0%B2%D0%BE%D0%B9-%D1%8D%D1%84%D1%84%D0%B5%D0%BA%D1%82/</link>
-      <pubDate>Mon, 29 Jun 2015 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/%D1%81%D0%B5%D1%82%D0%B5%D0%B2%D0%BE%D0%B9-%D1%8D%D1%84%D1%84%D0%B5%D0%BA%D1%82/</guid>
+      <title>Development</title>
+      <link>http://localhost:1313/tags/development/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/development/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Go</title>
+      <link>http://localhost:1313/tags/go/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/go/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Golang</title>
+      <link>http://localhost:1313/tags/golang/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/golang/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hugo</title>
+      <link>http://localhost:1313/tags/hugo/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/hugo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Templates</title>
+      <link>http://localhost:1313/tags/templates/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/templates/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Themes</title>
+      <link>http://localhost:1313/tags/themes/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/themes/</guid>
       <description></description>
     </item>
     <item>
@@ -737,10 +744,31 @@
       <description></description>
     </item>
     <item>
+      <title>Сатоши</title>
+      <link>http://localhost:1313/tags/%D1%81%D0%B0%D1%82%D0%BE%D1%88%D0%B8/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/%D1%81%D0%B0%D1%82%D0%BE%D1%88%D0%B8/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Теория</title>
+      <link>http://localhost:1313/tags/%D1%82%D0%B5%D0%BE%D1%80%D0%B8%D1%8F/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/%D1%82%D0%B5%D0%BE%D1%80%D0%B8%D1%8F/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Чтение</title>
       <link>http://localhost:1313/tags/%D1%87%D1%82%D0%B5%D0%BD%D0%B8%D0%B5/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/%D1%87%D1%82%D0%B5%D0%BD%D0%B8%D0%B5/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Экономика</title>
+      <link>http://localhost:1313/tags/%D1%8D%D0%BA%D0%BE%D0%BD%D0%BE%D0%BC%D0%B8%D0%BA%D0%B0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/%D1%8D%D0%BA%D0%BE%D0%BD%D0%BE%D0%BC%D0%B8%D0%BA%D0%B0/</guid>
       <description></description>
     </item>
     <item>

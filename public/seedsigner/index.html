@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html lang="ru-RU" dir="ltr">
+<html lang="en" dir="ltr">
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&display=swap" rel="stylesheet">  <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Как лучше всего хранить свои биткоины? Безопасное и доступное холодное хранение биткоина.">
+<meta name="description" content="This comprehensive how-to guide walks you through unboxing, setting up and signing bitcoin transactions with the air-gapped SeedSigner device.">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark">
-<meta name="lightning" content="21ideas@getalby.com"><meta property="og:title" content="SeedSigner: оффлайн-крепость для ваших биткоинов" />
-<meta property="og:description" content="Как лучше всего хранить свои биткоины? Безопасное и доступное холодное хранение биткоина." />
+<meta name="lightning" content="21ideas@getalby.com"><meta property="og:title" content="SeedSigner: DIY Bitcoin Signing Device" />
+<meta property="og:description" content="This comprehensive how-to guide walks you through unboxing, setting up and signing bitcoin transactions with the air-gapped SeedSigner device." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://localhost:1313/seedsigner/" />
-<meta property="og:image" content="http://localhost:1313/img/76.png"/>
+<meta property="og:image" content="http://localhost:1313/img/seedsigner/01.webp"/>
 
-<title>SeedSigner: оффлайн-крепость для ваших биткоинов | 21ideas</title>
+<title>SeedSigner: DIY Bitcoin Signing Device | 21ideas</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -22,10 +22,10 @@
 <link rel="apple-touch-icon" media="(prefers-color-scheme: dark)" sizes="180x180" href="/apple-touch-icon-dark.png">
 <link rel="icon" type="image/png" media="(prefers-color-scheme: dark)" sizes="32x32" href="/favicon-32x32-dark.png">
 <link rel="icon" type="image/png" media="(prefers-color-scheme: dark)" sizes="16x16" href="/favicon-16x16-dark.png">
-  <link rel="alternate" hreflang="en" href="http://localhost:1313/en/seedsigner/" title="SeedSigner: DIY Bitcoin Signing Device">
+  <link rel="alternate" hreflang="ru-RU" href="http://localhost:1313/ru/seedsigner/" title="SeedSigner: оффлайн-крепость для ваших биткоинов">
 <link rel="stylesheet" href="/book.min.44d288673620af09aba4fb7b29ef4c1d1f9c0258f725bd228507764ec1740f0a.css" integrity="sha256-RNKIZzYgrwmrpPt7Ke9MHR&#43;cAlj3Jb0ihQd2TsF0Dwo=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/ru.search.min.760cb93fca4cc9af4d5d957f0e91325f35c604c9b72da7d0d0517ae0f7424f53.js" integrity="sha256-dgy5P8pMya9NXZV/DpEyXzXGBMm3LafQ0FF64PdCT1M=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.322caf709709c011df0f8373a87ef3ce291ba22a62fdd5b8cf00bf824b20d5f8.js" integrity="sha256-MiyvcJcJwBHfD4NzqH7zzikboipi/dW4zwC/gksg1fg=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -53,7 +53,7 @@ https://github.com/alex-shpak/hugo-book
 
 
 <div class="book-search">
-  <input type="text" id="book-search-input" placeholder="Поиск" aria-label="Поиск" maxlength="64" data-hotkeys="s/" />
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
   <div class="book-search-spinner hidden"></div>
   <ul id="book-search-results"></ul>
 </div>
@@ -78,15 +78,15 @@ https://github.com/alex-shpak/hugo-book
     <label for="languages" class="flex justify-between">
       <a role="button" class="flex align-center">
         <img src="/svg/translate.svg" class="book-icon" alt="Languages" />
-        Русский
+        English
       </a>
     </label>
 
     <ul>
       
       <li>
-        <a href="http://localhost:1313/en/seedsigner/">
-          English
+        <a href="http://localhost:1313/ru/seedsigner/">
+          Русский
         </a>
       </li>
       
@@ -120,7 +120,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-4b959577bbd662d890894b4ef656e45e" class="toggle"  />
     <label for="section-4b959577bbd662d890894b4ef656e45e" class="flex justify-between">
-      <a href="/start/" class="">Старт</a>
+      <a role="button" class="">Start</a>
     </label>
   
 
@@ -134,7 +134,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/start/start/" class="">Что такое Биткоин?</a>
+    <a href="/start/start/" class="">Bitcoin Basics</a>
   
 
         </li>
@@ -147,7 +147,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/start/guide/" class="">Используем биткоин</a>
+    <a href="/start/guide/" class="">Using Bitcoin</a>
   
 
         </li>
@@ -160,33 +160,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/course/" class="">Биткоин от А до Я</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/bitcoin-myths/" class="">Разрушаем мифы о Биткоине</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/shitcoin-casino/" class="">Не играйте в щиткоин-казино</a>
+    <a href="/shitcoin-gambling-games/" class="">Don’t Play Shitcoin Gambling Games</a>
   
 
         </li>
@@ -206,7 +180,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-c8e2b39e67e72b49a36ee1ec8355ecba" class="toggle"  />
     <label for="section-c8e2b39e67e72b49a36ee1ec8355ecba" class="flex justify-between">
-      <a href="/theory/" class="">Теория</a>
+      <a href="/theory/" class="">Theory</a>
     </label>
   
 
@@ -222,7 +196,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-981a6953479a2e41da30ae73c119d6e2" class="toggle"  />
     <label for="section-981a6953479a2e41da30ae73c119d6e2" class="flex justify-between">
-      <a href="/economics/" class="">Экономика</a>
+      <a href="/economics/" class="">Economics</a>
     </label>
   
 
@@ -238,7 +212,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-43f26905d14df4de3737d0d5dfd90ca0" class="toggle"  />
     <label for="section-43f26905d14df4de3737d0d5dfd90ca0" class="flex justify-between">
-      <a href="/pzv/" class="">Постепенно, затем внезапно</a>
+      <a href="/gradually-then-suddenly/" class="">Gradually, Then Suddenly</a>
     </label>
   
 
@@ -252,7 +226,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/postepenno-zatem-vnezapno/" class="">Введение</a>
+    <a href="/gradually-then-suddenly/intro/" class="">Intro</a>
   
 
         </li>
@@ -265,7 +239,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-nelzya-skopirovat/" class="">Биткоин нельзя скопировать</a>
+    <a href="/gradually-then-suddenly/bitcoin-cant-be-copied/" class="">Bitcoin Can’t Be Copied</a>
   
 
         </li>
@@ -278,7 +252,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-ne-slishkom-volatilen/" class="">Биткоин не слишком волатилен</a>
+    <a href="/gradually-then-suddenly/bitcoin-is-not-too-volatile/" class="">Bitcoin Is Not Too Volatile</a>
   
 
         </li>
@@ -291,7 +265,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-ne-tratit-energiyu-zrya/" class="">Биткоин не тратит энергию зря</a>
+    <a href="/gradually-then-suddenly/bitcoin-does-not-waste-energy/" class="">Bitcoin Does Not Waste Energy</a>
   
 
         </li>
@@ -304,7 +278,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-ne-slishkom-medlennyj/" class="">Биткоин не слишком медленный</a>
+    <a href="/gradually-then-suddenly/bitcoin-is-not-too-slow/" class="">Bitcoin is Not Too Slow</a>
   
 
         </li>
@@ -317,7 +291,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-eto-ispravit/" class="">Биткоин это исправит</a>
+    <a href="/gradually-then-suddenly/bitcoin-fixes-this/" class="">Bitcoin Fixes This</a>
   
 
         </li>
@@ -330,7 +304,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-ne-blokchejn/" class="">Биткоин, не блокчейн</a>
+    <a href="/gradually-then-suddenly/bitcoin-not-blockchain/" class="">Bitcoin, Not Blockchain</a>
   
 
         </li>
@@ -343,7 +317,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-nichem-ne-podkreplen/" class="">Биткоин ничем не подкреплен?</a>
+    <a href="/gradually-then-suddenly/bitcoin-is-not-backed-by-nothing/" class="">Bitcoin is Not Backed by Nothing</a>
   
 
         </li>
@@ -356,7 +330,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-ne-finansovaya-piramida/" class="">Биткоин — не финансовая пирамида</a>
+    <a href="/gradually-then-suddenly/bitcoin-is-not-a-pyramid-scheme/" class="">Bitcoin is Not a Pyramid Scheme</a>
   
 
         </li>
@@ -369,7 +343,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-ne-mozhet-byt-zabanen/" class="">Биткоин не может быть забанен</a>
+    <a href="/gradually-then-suddenly/bitcoin-cannot-be-banned/" class="">Bitcoin Cannot be Banned</a>
   
 
         </li>
@@ -382,7 +356,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-ne-dlya-prestupnikov/" class="">Биткоин не для преступников</a>
+    <a href="/gradually-then-suddenly/bitcoin-is-not-for-criminals/" class="">Bitcoin is Not for Criminals</a>
   
 
         </li>
@@ -395,7 +369,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-obescenivaet-ostalnye-dengi/" class="">Биткоин обесценивает остальные деньги</a>
+    <a href="/gradually-then-suddenly/bitcoin-obsoletes-all-other-money/" class="">Bitcoin Obsoletes All Other Money</a>
   
 
         </li>
@@ -408,7 +382,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-zov-k-edineniyu/" class="">Биткоин — зов к единению</a>
+    <a href="/gradually-then-suddenly/bitcoin-is-a-rally-cry/" class="">Bitcoin is a Rally Cry</a>
   
 
         </li>
@@ -421,7 +395,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-eto-zdravyj-smysl/" class="">Биткоин — это здравый смысл</a>
+    <a href="/gradually-then-suddenly/bitcoin-is-common-sense/" class="">Bitcoin is Common Sense</a>
   
 
         </li>
@@ -434,7 +408,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-antihrupok/" class="">Биткоин антихрупок</a>
+    <a href="/gradually-then-suddenly/bitcoin-is-antifragile/" class="">Bitcoin is Antifragile</a>
   
 
         </li>
@@ -447,7 +421,20 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-velikaya-definancializaciya/" class="">Биткоин — великая дефинанcиализация</a>
+    <a href="/gradually-then-suddenly/bitcoin-is-one-for-all/" class="">Bitcoin is One for All</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/gradually-then-suddenly/bitcoin-is-the-great-definancialization/" class="">Bitcoin is the Great Definancialization</a>
   
 
         </li>
@@ -467,7 +454,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-070af377b46d38e45de9a60dd3c8e7d0" class="toggle"  />
     <label for="section-070af377b46d38e45de9a60dd3c8e7d0" class="flex justify-between">
-      <a href="/sb/" class="">Становление Биткоина</a>
+      <a href="/discovering-bitcoin/" class="">Discovering Bitcoin</a>
     </label>
   
 
@@ -481,7 +468,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sb/stanovlenie-intro/" class="">Введение</a>
+    <a href="/discovering-bitcoin/intro/" class="">Introduction</a>
   
 
         </li>
@@ -494,7 +481,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sb/stanovlenie-1/" class="">О времени</a>
+    <a href="/discovering-bitcoin/about-time/" class="">About Time</a>
   
 
         </li>
@@ -507,7 +494,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sb/stanovlenie-2/" class="">О людях</a>
+    <a href="/discovering-bitcoin/about-people/" class="">About People</a>
   
 
         </li>
@@ -520,7 +507,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sb/stanovlenie-3/" class="">Знакомьтесь: деньги</a>
+    <a href="/discovering-bitcoin/introducing-money/" class="">Introducing Money</a>
   
 
         </li>
@@ -533,7 +520,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sb/stanovlenie-4/" class="">Поворот не туда</a>
+    <a href="/discovering-bitcoin/a-wrong-turn-new-plan-needed/" class="">A Wrong Turn (New Plan Needed)!</a>
   
 
         </li>
@@ -546,7 +533,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sb/stanovlenie-5/" class="">Цифровая редкость</a>
+    <a href="/discovering-bitcoin/digital-scarcity/" class="">Digital Scarcity</a>
   
 
         </li>
@@ -559,7 +546,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sb/stanovlenie-6/" class="">Цифровые контракты</a>
+    <a href="/discovering-bitcoin/digital-contracts/" class="">Digital Contracts</a>
   
 
         </li>
@@ -572,7 +559,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sb/stanovlenie-7/" class="">Недостающие части головоломки</a>
+    <a href="/discovering-bitcoin/the-missing-pieces/" class="">The Missing Pieces</a>
   
 
         </li>
@@ -590,7 +577,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitkoin-ne-vredit-okruzhayushej-srede/" class="">Биткоин и окружающая среда</a>
+    <a href="/bitcoin-is-not-harmful-for-the-environment/" class="">Bitcoin Is Not Harmful For The Environment</a>
   
 
         </li>
@@ -603,7 +590,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sem-setevyh-effektov-bitkoina/" class="">Семь сетевых эффектов Биткоина</a>
+    <a href="/seven-network-effects-of-bitcoin/" class="">The Seven Network Effects of Bitcoin</a>
   
 
         </li>
@@ -616,7 +603,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/hozyaeva-i-raby-deneg/" class="">Хозяева и рабы денег</a>
+    <a href="/masters-and-slaves-of-money/" class="">Masters and Slaves of Money</a>
   
 
         </li>
@@ -629,7 +616,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/strukturnaya-perestrojka/" class="">Структурная перестройка</a>
+    <a href="/structural-adjustment/" class="">Structural Adjustment</a>
   
 
         </li>
@@ -642,7 +629,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/v-zashchitu-deflyacii/" class="">В защиту дефляции</a>
+    <a href="/in-defense-of-deflation/" class="">In Defense Of Deflation</a>
   
 
         </li>
@@ -655,7 +642,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sravnenie-monetarnyh-standartov/" class="">Сравнение монетарных стандартов</a>
+    <a href="/comparison-of-monetary-standards/" class="">Comparison of Monetary Standards</a>
   
 
         </li>
@@ -668,7 +655,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sravnenie-monetarnyh-standartov/" class="">Сравнение монетарных стандартов</a>
+    <a href="/petrodollar-negative-effects/" class="">Petrodollar Negative Effects</a>
   
 
         </li>
@@ -681,7 +668,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/negativnye-effekty-neftedollara/" class="">Негативные внешние эффекты нефтедоллара</a>
+    <a href="/shelling-out/" class="">Shelling Out: The Origins of Money</a>
   
 
         </li>
@@ -694,7 +681,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/raskoshelivaemsya/" class="">Раскошеливаемся (Shelling Out): Происхождение денег</a>
+    <a href="/bitcoin-rhythms-of-history/" class="">Bitcoin and the Rhythms of History</a>
   
 
         </li>
@@ -707,7 +694,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-i-ritmy-istorii/" class="">Биткоин и ритмы истории</a>
+    <a href="/bitcoin-and-the-hopf-cycle-of-the-internet/" class="">Bitcoin &amp; the HOPF Cycle of the Internet</a>
   
 
         </li>
@@ -720,7 +707,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-i-internet-cikly-hopfa/" class="">Биткоин и интернет-циклы Хопфа</a>
+    <a href="/money-blockchains-and-social-scalability/" class="">Money, blockchains, and social scalability</a>
   
 
         </li>
@@ -733,7 +720,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/dengi-blokchejny-i-socialnaya-masshtabiruemost/" class="">Деньги, блокчейны и социальная масштабируемость</a>
+    <a href="/what-is-money/" class="">What Is Money</a>
   
 
         </li>
@@ -746,7 +733,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/chto-takoe-dengi/" class="">Что такое деньги</a>
+    <a href="/only-the-strong-survive/" class="">Only The Strong Survive</a>
   
 
         </li>
@@ -759,7 +746,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/vyzhivaet-silnejshij/" class="">Выживает сильнейший</a>
+    <a href="/dollar-cost-averaging/" class="">Dollar-Cost Averaging</a>
   
 
         </li>
@@ -772,33 +759,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/strategiya-dca/" class="">Стратегия DCA</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/jevons-paradox/" class="">Парадокс Джевонса: Обратная истина</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/kak-rabotajut-dengi/" class="">Как работают деньги</a>
+    <a href="/jevons-paradox/" class="">Jevons Paradox: Contrary Truth</a>
   
 
         </li>
@@ -818,7 +779,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-4d5bb6cd046af3ae6f08884281ee0445" class="toggle"  />
     <label for="section-4d5bb6cd046af3ae6f08884281ee0445" class="flex justify-between">
-      <a href="/security/" class="">Безопасность</a>
+      <a href="/security/" class="">Security</a>
     </label>
   
 
@@ -832,7 +793,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/kak-hranit-kljuchi/" class="">Биткоин-кошельки. Зачем и как хранить свои приватные ключи</a>
+    <a href="/how-to-hold-private-keys/" class="">Bitcoin Wallets: How, Why and When to Hold Your Own Private Keys</a>
   
 
         </li>
@@ -845,7 +806,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/seed/" class="">Что такое сид-фраза?</a>
+    <a href="/seed/" class="">What is a bitcoin seed phrase and how does it work?</a>
   
 
         </li>
@@ -858,7 +819,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/seed-security/" class="">Как обезопасить свои сид-фразы?</a>
+    <a href="/seed-security/" class="">Ultimate guide to storing your bitcoin seed phrase backups</a>
   
 
         </li>
@@ -871,7 +832,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/passphrase/" class="">Насколько надежна ваша парольная фраза?</a>
+    <a href="/passphrase/" class="">Is your passphrase strong enough?</a>
   
 
         </li>
@@ -884,7 +845,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/multisig/" class="">Все о мультисиг</a>
+    <a href="/what-is-multisig/" class="">What is multisig?</a>
   
 
         </li>
@@ -897,7 +858,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/hwws/" class="">Сравнение аппаратных кошельков</a>
+    <a href="/hwws/" class="">The best Bitcoin hardware wallets</a>
   
 
         </li>
@@ -910,7 +871,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/multisig-1/" class="">Мультисиг. Часть I</a>
+    <a href="/multisig-1/" class="">Multisig Part I: Why Multisig?</a>
   
 
         </li>
@@ -923,7 +884,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/multisig-2/" class="">Мультисиг. Часть II: Отдельные ключи – основа мультиподписи</a>
+    <a href="/multisig-2/" class="">Multisig Part II: Single Keys are the Foundation of Multisignature</a>
   
 
         </li>
@@ -943,7 +904,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-e5dc95f8c3734f1c9cf3045c3ba217e8" class="toggle"  />
     <label for="section-e5dc95f8c3734f1c9cf3045c3ba217e8" class="flex justify-between">
-      <a href="/privacy/" class="">Приватность</a>
+      <a href="/privacy/" class="">Privacy</a>
     </label>
   
 
@@ -957,7 +918,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/privacy/luchshie-praktiki/" class="">Как сохранить приватность?</a>
+    <a href="/privacy/best-practices/" class="">Bitcoin Privacy: Best Practices</a>
   
 
         </li>
@@ -970,7 +931,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/privacy/no-kyc/" class="">Никаких KYC, берегите персональные данные</a>
+    <a href="/privacy/no-kyc/" class="">no-KYC only. Avoid the creep</a>
   
 
         </li>
@@ -983,7 +944,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/privatnost-v-seti-bitcoin/" class="">Приватность в сети Биткоин</a>
+    <a href="/wiki-bitcoin-privacy/" class="">Bitcoin Privacy</a>
   
 
         </li>
@@ -996,7 +957,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-stanovitsya-kriticheski-vazhnym/" class="">Биткоин становится критически важным</a>
+    <a href="/bitcoin-becomes-critical/" class="">Bitcoin Becomes Critical</a>
   
 
         </li>
@@ -1009,7 +970,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bip47-ili-gadkij-utenok/" class="">BIP47, или гадкий утенок</a>
+    <a href="/bip47-the-ugly-duckling/" class="">BIP47, the ugly duckling</a>
   
 
         </li>
@@ -1024,7 +985,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-7626e3de66018c98c264d84fe366e13a" class="toggle"  />
     <label for="section-7626e3de66018c98c264d84fe366e13a" class="flex justify-between">
-      <a href="/privacy/oxt/" class="">Понимание приватности в сети Биткоин с помощью OXT</a>
+      <a href="/privacy/oxt/" class="">Understanding Bitcoin Privacy with OXT</a>
     </label>
   
 
@@ -1038,7 +999,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/privacy/oxt-1/" class="">Часть 1: Анализ цепочки и приватность транзакций</a>
+    <a href="/privacy/oxt-1/" class="">Part 1: Chain Analysis And Transaction Privacy</a>
   
 
         </li>
@@ -1051,7 +1012,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/privacy/oxt-2/" class="">Часть 2: Ключевые концепции анализа цепочки</a>
+    <a href="/privacy/oxt-2/" class="">Part 2: Chain Analysis Core Concepts</a>
   
 
         </li>
@@ -1064,7 +1025,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/privacy/oxt-3/" class="">Часть 3: Защита от анализа цепочки</a>
+    <a href="/privacy/oxt-3/" class="">Part 3: Defences Against Chain Analysis</a>
   
 
         </li>
@@ -1077,7 +1038,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/privacy/oxt-4/" class="">Часть 4: Применение концепций анализа цепочки для улучшения приватности пользователей</a>
+    <a href="/privacy/oxt-4/" class="">Part 4: Applying Chain Analysis Concepts To Improve User Privacy</a>
   
 
         </li>
@@ -1095,7 +1056,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/privacy/coinjoin/" class="">Понимание и использование CoinJoin</a>
+    <a href="/privacy/coinjoin/" class="">CoinJoin Overview</a>
   
 
         </li>
@@ -1108,7 +1069,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-fungibility/" class="">Взаимозаменяемость Биткоина</a>
+    <a href="/bitcoin-fungibility/" class="">Bitcoin Fungibility</a>
   
 
         </li>
@@ -1141,7 +1102,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-591754e4c6a4e23cb58f7ff9d9022ef1" class="toggle"  />
     <label for="section-591754e4c6a4e23cb58f7ff9d9022ef1" class="flex justify-between">
-      <a href="/protocol/" class="">Протокол</a>
+      <a href="/protocol/" class="">Protocol</a>
     </label>
   
 
@@ -1155,7 +1116,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/kto-kontroliruet-bitkoin-kor/" class="">Кто контролирует Bitcoin Core?</a>
+    <a href="/who-controls-bitcoin-core/" class="">Who Controls Bitcoin Core?</a>
   
 
         </li>
@@ -1168,7 +1129,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/vechnaja-borba/" class="">Вечная борьба Биткоина</a>
+    <a href="/bitcoins-eternal-struggle/" class="">Bitcoin&#39;s Eternal Struggle</a>
   
 
         </li>
@@ -1181,7 +1142,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/ob-udobstve-vzaimodejstvija-s-bitcoinom/" class="">Об удобстве взаимодействия с Биткоином</a>
+    <a href="/on-bitcoins-ux/" class="">On Bitcoin’s UX</a>
   
 
         </li>
@@ -1194,7 +1155,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-zoloto-2-0/" class="">Биткоин: цифровое золото или пиринговая наличность?</a>
+    <a href="/bitcoin-digital-gold-or-ecash/" class="">Bitcoin: Digital Gold or Peer-to-Peer Cash?</a>
   
 
         </li>
@@ -1207,7 +1168,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/upravlenie-bitcoin/" class="">Управление Биткоином</a>
+    <a href="/bitcoin-governance/" class="">Bitcoin Governance</a>
   
 
         </li>
@@ -1220,7 +1181,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/doverennye-tretyi-storony/" class="">Доверенные третьи стороны — это бреши в системе безопасности</a>
+    <a href="/trusted-third-parties/" class="">Trusted Third Parties are Security Holes</a>
   
 
         </li>
@@ -1233,7 +1194,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/21-million-ne-podlezhit-obsuzhdeniyu/" class="">21 миллион не подлежит обсуждению</a>
+    <a href="/21-million-is-non-negotiable/" class="">21 Million is Non-Negotiable</a>
   
 
         </li>
@@ -1246,7 +1207,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/proof-of-work/" class="">Proof of Work: доказательство проделанной работы</a>
+    <a href="/proof-of-work/" class="">Proof of Work, a pictorial essay</a>
   
 
         </li>
@@ -1259,7 +1220,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/proof-of-stake-eto-skam/" class="">Proof of Stake – это скам</a>
+    <a href="/proof-of-stake-is-a-scam/" class="">Proof of stake is a scam</a>
   
 
         </li>
@@ -1272,7 +1233,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/byl-li-satoshi-zhadnym-majnerom/" class="">Был ли Сатоши жадным майнером?</a>
+    <a href="/was-satoshi-a-greedy-miner/" class="">Was Satoshi a Greedy Miner?</a>
   
 
         </li>
@@ -1285,7 +1246,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/segwit/" class="">Что такое SegWit</a>
+    <a href="/segwit/" class="">What Is SegWit</a>
   
 
         </li>
@@ -1298,7 +1259,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/taproot/" class="">Что такое Taproot</a>
+    <a href="/taproot/" class="">What Is Taproot</a>
   
 
         </li>
@@ -1311,7 +1272,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bomby-slozhnosti-ethereum/" class="">Бомбы сложности Ethereum</a>
+    <a href="/coercion-of-ethereums-difficulty-bomb/" class="">The Coercion Of Ethereum&#39;s Difficulty Bomb</a>
   
 
         </li>
@@ -1324,7 +1285,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/rgb/" class="">Разбирая протокол RGB</a>
+    <a href="/rgb/" class="">Understanding the RGB protocol</a>
   
 
         </li>
@@ -1337,7 +1298,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/halving/" class="">Что такое Биткоин-халвинг?</a>
+    <a href="/difficulty/" class="">Bitcoin Difficulty Adjustment</a>
   
 
         </li>
@@ -1350,7 +1311,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/difficulty/" class="">О корректировке сложности майнинга</a>
+    <a href="/bitcoin-address-types/" class="">Bitcoin address types</a>
   
 
         </li>
@@ -1363,7 +1324,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sravnenie-tipov-bitcoin-adresov/" class="">Типы биткоин-адресов</a>
+    <a href="/myths-about-halving/" class="">Myths About the Bitcoin Halving</a>
   
 
         </li>
@@ -1376,20 +1337,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/myths-about-halving/" class="">Мифы о Биткоин-халвинге</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/mining-walkthrough/" class="">SHA256 и майнинг в сети Биткоин</a>
+    <a href="/mining-walkthrough/" class="">SHA256 and Bitcoin Mining Walkthrough</a>
   
 
         </li>
@@ -1404,7 +1352,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-c6baffdfa73d6dd5df13795b95ab68ac" class="toggle"  />
     <label for="section-c6baffdfa73d6dd5df13795b95ab68ac" class="flex justify-between">
-      <a href="/protocol/utxo/" class="">Что такое UTXO и как ими управлять?</a>
+      <a href="/protocol/utxo/" class="">What Is UTXO And How To Manage Them</a>
     </label>
   
 
@@ -1418,7 +1366,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/protocol/utxo-1/" class="">Что такое UTXO?</a>
+    <a href="/protocol/utxo-1/" class="">What is a Bitcoin UTXO</a>
   
 
         </li>
@@ -1431,7 +1379,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/protocol/utxo-2/" class="">Как избежать высоких комиссий при большом количестве UTXO</a>
+    <a href="/protocol/utxo-2/" class="">Too Many UTXOs: How To Avoid High Fees</a>
   
 
         </li>
@@ -1444,7 +1392,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/protocol/utxo-3/" class="">Приватность UTXO</a>
+    <a href="/protocol/utxo-3/" class="">UTXOs Privacy</a>
   
 
         </li>
@@ -1462,7 +1410,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/transaction-size/" class="">Размер транзакции</a>
+    <a href="/transaction-size/" class="">Transaction Size</a>
   
 
         </li>
@@ -1482,7 +1430,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-2cc3faa5b078e8edfc892bc463882294" class="toggle"  />
     <label for="section-2cc3faa5b078e8edfc892bc463882294" class="flex justify-between">
-      <a href="/history/" class="">История</a>
+      <a href="/history/" class="">History</a>
     </label>
   
 
@@ -1498,7 +1446,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-11903f72dc1c8e68f0d748ad1bb6164d" class="toggle"  />
     <label for="section-11903f72dc1c8e68f0d748ad1bb6164d" class="flex justify-between">
-      <a href="/gf/" class="">Генезис-файлы</a>
+      <a href="/gf/" class="">The Genesis Files</a>
     </label>
   
 
@@ -1512,7 +1460,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/gf/genesis-intro/" class="">Пролог</a>
+    <a href="/gf/genesis-intro/" class="">Intro</a>
   
 
         </li>
@@ -1525,7 +1473,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/gf/genesis-1/" class="">Часть I: eCash Дэвида Чаума и зарождение мечты шифропанков</a>
+    <a href="/gf/genesis-1/" class="">Part I: How David Chaum’s eCash Spawned a Cypherpunk Dream</a>
   
 
         </li>
@@ -1538,7 +1486,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/gf/genesis-2/" class="">Часть II: Hashcash или как Адам Бэк разработал сердце Биткоина</a>
+    <a href="/gf/genesis-2/" class="">Part II: Hashcash or How Adam Back Designed Bitcoin’s Motor Block</a>
   
 
         </li>
@@ -1551,7 +1499,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/gf/genesis-3/" class="">Часть III: Если у Биткоина был прототип, то это были b-money Вэя Дая</a>
+    <a href="/gf/genesis-3/" class="">Part III: If Bitcoin Had a First Draft, Wei Dai’s B-Money Was It</a>
   
 
         </li>
@@ -1564,7 +1512,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/gf/genesis-4/" class="">Часть IV: Создавая Bit Gold, Сабо был в двух шагах от изобретения Биткоина</a>
+    <a href="/gf/genesis-4/" class="">Part IV: With Bit Gold, Szabo Was Inches Away From Inventing Bitcoin</a>
   
 
         </li>
@@ -1577,7 +1525,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/gf/genesis-5/" class="">Часть V: Как поиски цифровой наличности привели Хэла Финни к созданию RPOW (и не только)</a>
+    <a href="/gf/genesis-5/" class="">Part V: How Hal Finney’s Quest For Digital Cash Led To RPOW (And More)</a>
   
 
         </li>
@@ -1595,7 +1543,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/hal-finney/" class="">Хэл Финни — жизнь и смерть легенды движения шифропанков</a>
+    <a href="/hal-finney/" class="">Hal Finney — The Life And Death Of A Cypherpunk Legend</a>
   
 
         </li>
@@ -1608,7 +1556,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-and-me/" class="">Биткоин и я</a>
+    <a href="/bitcoin-and-me/" class="">Bitcoin and Me</a>
   
 
         </li>
@@ -1621,7 +1569,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-reformaciya/" class="">Биткоин-Реформация</a>
+    <a href="/bitcoin-reformation/" class="">The Bitcoin Reformation</a>
   
 
         </li>
@@ -1634,7 +1582,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-forks/" class="">Полная история консенсус-форков Биткоина</a>
+    <a href="/bitcoin-forks/" class="">A complete history of Bitcoin’s consensus forks</a>
   
 
         </li>
@@ -1647,7 +1595,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/analyzing-2013-fork/" class="">Анализ форка Биткоина 2013 года</a>
+    <a href="/analyzing-2013-fork/" class="">Analyzing the 2013 Bitcoin fork</a>
   
 
         </li>
@@ -1667,7 +1615,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-ac2daa2484c1be670f7cc1e0d8d82356" class="toggle"  />
     <label for="section-ac2daa2484c1be670f7cc1e0d8d82356" class="flex justify-between">
-      <a href="/philosophy/" class="">Философия</a>
+      <a href="/philosophy/" class="">Philosophy</a>
     </label>
   
 
@@ -1683,7 +1631,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-b11b531f912b5e92a8260d0a526b85b6" class="toggle"  />
     <label for="section-b11b531f912b5e92a8260d0a526b85b6" class="flex justify-between">
-      <a href="/chemu-ya-nauchilsya-u-bitcoina/" class="">Чему я научился у Биткоина?</a>
+      <a href="/what-i-learned-from-bitcoin/" class="">What I&#39;ve Learned From Bitcoin</a>
     </label>
   
 
@@ -1697,7 +1645,33 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/chemu-ya-nauchilsya-u-bitcoina/filosofskie-uroki-bitcoina/" class="">Часть1. Философские уроки Биткоина</a>
+    <a href="/what-i-learned-from-bitcoin-1/" class="">Part I. Philosophical Teachings of Bitcoin</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/what-i-learned-from-bitcoin-2/" class="">Part II. Economic Teachings of Bitcoin</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/what-i-learned-from-bitcoin-3/" class="">Part III. Technological Teachings of Bitcoin</a>
   
 
         </li>
@@ -1715,7 +1689,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/ne-shitcoin/" class="">Биткоин, не щиткоин</a>
+    <a href="/not-shitcoin/" class="">Why Bitcoin, Not Shitcoin</a>
   
 
         </li>
@@ -1728,7 +1702,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/neotemlemye-prava-sobstvennosti/" class="">Неотъемлемые права собственности</a>
+    <a href="/inalienable-property-rights/" class="">Inalienable Property Rights</a>
   
 
         </li>
@@ -1741,7 +1715,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/manifest-kriptoanarhista/" class="">Манифест криптоанархиста</a>
+    <a href="/crypto-anarchist-manifesto/" class="">The Crypto Anarchist Manifesto</a>
   
 
         </li>
@@ -1754,7 +1728,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/manifest-shifropanka/" class="">Манифест шифропанка</a>
+    <a href="/cypherpunks-manifesto/" class="">A Cypherpunk&#39;s Manifesto</a>
   
 
         </li>
@@ -1767,7 +1741,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/tyulpannaya-lihoradka/" class="">Биткоин — современная голландская тюльпанная лихорадка?</a>
+    <a href="/dutch-tulip-bubble/" class="">Is Bitcoin Like the Dutch Tulip Bubble?</a>
   
 
         </li>
@@ -1780,7 +1754,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/vse-moshenniki/" class="">Все — мошенники</a>
+    <a href="/everyones-a-scammer/" class="">Everyone&#39;s a Scammer</a>
   
 
         </li>
@@ -1793,7 +1767,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/svoboda-cennosti/" class="">Свобода ценности</a>
+    <a href="/freedom-of-value/" class="">The Freedom of Value</a>
   
 
         </li>
@@ -1806,7 +1780,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-meme/" class="">Биткоин — единственный реальный мем</a>
+    <a href="/bitcoin-meme/" class="">Bitcoin Is The Only Real Meme</a>
   
 
         </li>
@@ -1819,7 +1793,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/nol-i-bitcoin/" class="">Ноль и Биткоин</a>
+    <a href="/number-zero-and-bitcoin/" class="">The Number Zero and Bitcoin</a>
   
 
         </li>
@@ -1832,7 +1806,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/crypto-bro/" class="">Дорогие крипто- и фиат-бро</a>
+    <a href="/crypto-bro/" class="">Dear Crypto &amp; Fiat Bros</a>
   
 
         </li>
@@ -1845,7 +1819,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/boremsya-s-poddelnymi-bitcoin/" class="">Боремся с поддельными биткоинами</a>
+    <a href="/fighting-fake-bitcoin/" class="">Fighting Fake Bitcoin</a>
   
 
         </li>
@@ -1858,7 +1832,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bit%D1%81oin-eto-micelij/" class="">Биткоин — это мицелий</a>
+    <a href="/bitcoin-is-the-mycelium/" class="">Bitcoin is The Mycelium of Money</a>
   
 
         </li>
@@ -1871,7 +1845,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pochemu-bitcoin-zhivoj-organizm/" class="">Доказательство жизни. Почему Биткоин — живой организм</a>
+    <a href="/proof-of-life/" class="">Proof of Life. Why Bitcoin is a Living Organism</a>
   
 
         </li>
@@ -1884,7 +1858,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/samaya-mirnaya-revolyuciya/" class="">Самая мирная революция</a>
+    <a href="/most-peaceful-revolution/" class="">A Most Peaceful Revolution</a>
   
 
         </li>
@@ -1897,7 +1871,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/o-bitcoin-vselennoj/" class="">О Биткоин-вселенной</a>
+    <a href="/bitcoin-universe/" class="">Bitcoin Universe</a>
   
 
         </li>
@@ -1910,7 +1884,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-dissidenty/" class="">Биткоин-диссиденты</a>
+    <a href="/bitcoin-dissidents/" class="">Bitcoin Dissidents</a>
   
 
         </li>
@@ -1923,7 +1897,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-svoboda/" class="">Биткоин = свобода</a>
+    <a href="/bitcoin-equals-freedom/" class="">Bitcoin Equals Freedom</a>
   
 
         </li>
@@ -1943,7 +1917,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-0ffd899989a7340537ceb8e2b6a04097" class="toggle"  />
     <label for="section-0ffd899989a7340537ceb8e2b6a04097" class="flex justify-between">
-      <a href="/future/" class="">Будущее</a>
+      <a href="/future/" class="">Future</a>
     </label>
   
 
@@ -1959,7 +1933,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-206fb3aae5266e1ff42aa0abc8ae8411" class="toggle"  />
     <label for="section-206fb3aae5266e1ff42aa0abc8ae8411" class="flex justify-between">
-      <a href="/ba/" class="">Биткоин-астрономия</a>
+      <a href="/ba/" class="">Bitcoin Astronomy</a>
     </label>
   
 
@@ -1973,7 +1947,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/ba/1/" class="">Постгипербиткоинизация</a>
+    <a href="/ba/1/" class="">Part I</a>
   
 
         </li>
@@ -1986,7 +1960,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/ba/2/" class="">Миллион крошечных миров</a>
+    <a href="/ba/2/" class="">Part II</a>
   
 
         </li>
@@ -1999,7 +1973,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/ba/3/" class="">Первый контакт</a>
+    <a href="/ba/3/" class="">Part III</a>
   
 
         </li>
@@ -2017,7 +1991,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/ej-bitcoin-pritormozi/" class="">Эй, Биткоин, притормози</a>
+    <a href="/hey-bitcoin-slow-down/" class="">Hey Bitcoin, Slow Down!</a>
   
 
         </li>
@@ -2030,7 +2004,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/apokalipsis/" class="">Сможет ли Биткоин пережить апокалипсис?</a>
+    <a href="/apocalypse/" class="">Can Bitcoin Survive An Apocalypse?</a>
   
 
         </li>
@@ -2043,7 +2017,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-i-teplovaya-energiya-okeanov/" class="">Биткоин и тепловая энергия океанов</a>
+    <a href="/bitcoin-and-oceans/" class="">Bitcoin and Ocean Thermal Energy</a>
   
 
         </li>
@@ -2063,7 +2037,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-94dfdc9d0099b419c9e2d6a83381dbe2" class="toggle"  />
     <label for="section-94dfdc9d0099b419c9e2d6a83381dbe2" class="flex justify-between">
-      <a href="/lightning/" class="">Лайтнинг</a>
+      <a href="/lightning/" class="">Lightning</a>
     </label>
   
 
@@ -2077,7 +2051,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/chto-takoe-laitning/" class="">Что такое Лайтнинг?</a>
+    <a href="/what-is-lightning-network/" class="">What is Lightning Network?</a>
   
 
         </li>
@@ -2090,7 +2064,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/lajtning-koshelki/" class="">Лайтнинг-кошельки</a>
+    <a href="/lightning-wallets/" class="">Lightning Wallets</a>
   
 
         </li>
@@ -2103,7 +2077,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/lajtning-adresa/" class="">Лайтнинг-адреса</a>
+    <a href="/how-lightning-address-works/" class="">How Lightning Address Works</a>
   
 
         </li>
@@ -2116,7 +2090,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/privatnost-v-lajtning/" class="">Приватность в сети Lightning</a>
+    <a href="/lightning-network-privacy/" class="">Lightning Network Privacy</a>
   
 
         </li>
@@ -2129,7 +2103,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/centralizovanna-li-set-lightning/" class="">Централизованна ли сеть Lightning?</a>
+    <a href="/is-lightning-centralized/" class="">Is Lightning centralized?</a>
   
 
         </li>
@@ -2142,7 +2116,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/mekhanizm-raboty-lightning/" class="">Механизм работы Lightning Network</a>
+    <a href="/lightning-network-explained/" class="">Lightning Network Explained</a>
   
 
         </li>
@@ -2155,7 +2129,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/problema-vhodyashchej-likvidnosti/" class="">Решение проблемы входящей ликвидности</a>
+    <a href="/inbound-liquidity-problem/" class="">Solutions to inbound liquidity problem</a>
   
 
         </li>
@@ -2180,7 +2154,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-334a33758c01abfe631e1e37dc0d1f40" class="toggle" checked />
     <label for="section-334a33758c01abfe631e1e37dc0d1f40" class="flex justify-between">
-      <a href="/practice/" class="">Практика</a>
+      <a href="/practice/" class="">Practice</a>
     </label>
   
 
@@ -2196,7 +2170,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-a94c5b45bfdc8ef0dd89b00612026092" class="toggle"  />
     <label for="section-a94c5b45bfdc8ef0dd89b00612026092" class="flex justify-between">
-      <a href="/practice/buy/" class="">Покупка</a>
+      <a href="/practice/buy/" class="">Buy</a>
     </label>
   
 
@@ -2210,7 +2184,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/newbie-buy/" class="">Покупка и хранение биткоина для новичков</a>
+    <a href="/newbie-buy/" class="">Buy and Hodl Bitcoin for Beginners</a>
   
 
         </li>
@@ -2223,7 +2197,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/hodl-hodl/" class="">Покупка биткоина без KYC на Hodl Hodl</a>
+    <a href="/hodl-hodl/" class="">Buy noKYC Bitcoin with HodlHodl</a>
   
 
         </li>
@@ -2236,7 +2210,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/robosats/" class="">RoboSats: Приватный p2p обмен</a>
+    <a href="/robosats/" class="">RoboSats: Private P2P Exchange</a>
   
 
         </li>
@@ -2256,7 +2230,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-7e14ce7fc5fdbe001466044f77bdd564" class="toggle" checked />
     <label for="section-7e14ce7fc5fdbe001466044f77bdd564" class="flex justify-between">
-      <a href="/practice/hodl/" class="">Хранение</a>
+      <a href="/practice/hodl/" class="">Hodl</a>
     </label>
   
 
@@ -2270,7 +2244,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/electrum/" class="">Кошелек Электрум</a>
+    <a href="/electrum/" class="">Electrum Bitcoin Wallet</a>
   
 
         </li>
@@ -2283,7 +2257,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/blue/" class="">Кошелек Blue</a>
+    <a href="/blue/" class="">Installing Blue Wallet</a>
   
 
         </li>
@@ -2296,7 +2270,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/seedsigner/" class="active">SeedSigner: оффлайн-крепость для ваших биткоинов</a>
+    <a href="/seedsigner/" class="active">SeedSigner: DIY Bitcoin Signing Device</a>
   
 
         </li>
@@ -2309,20 +2283,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/holodnyj-koshelek-iz-starogo-smartfona/" class="">Холодный кошелек из старого смартфона</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/coldcard/" class="">Что такое Coldcard?</a>
+    <a href="/coldcard/" class="">What is Coldcard?</a>
   
 
         </li>
@@ -2342,7 +2303,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-88cf9017cf07549621f025a2843cb148" class="toggle"  />
     <label for="section-88cf9017cf07549621f025a2843cb148" class="flex justify-between">
-      <a href="/practice/interact/" class="">Взаимодействие</a>
+      <a href="/practice/interact/" class="">Interact</a>
     </label>
   
 
@@ -2356,7 +2317,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/practice/bitcoin-node/" class="">Каждому следует запустить собственную Биткоин-ноду!</a>
+    <a href="/practice/bitcoin-node/" class="">Why You Should Run Your Own Bitcoin Node</a>
   
 
         </li>
@@ -2369,7 +2330,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/orangepilling-in-5-min/" class="">Оранжпиллинг за 5 минут</a>
+    <a href="/orangepilling-in-5-min/" class="">Orangepilling in 5 min</a>
   
 
         </li>
@@ -2382,7 +2343,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/5-tips-for-teaching-bitcoin/" class="">5 советов по обучению Биткоину</a>
+    <a href="/5-tips-for-teaching-bitcoin/" class="">5 tips for teaching Bitcoin</a>
   
 
         </li>
@@ -2402,7 +2363,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-32dccf00abb46a5281b7aae069126928" class="toggle"  />
     <label for="section-32dccf00abb46a5281b7aae069126928" class="flex justify-between">
-      <a href="/practice-privacy/" class="">Практики приватности</a>
+      <a href="/practice-privacy/" class="">Privacy</a>
     </label>
   
 
@@ -2418,7 +2379,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-ae30dbe7c31a834e8bfe23314d9a5ff6" class="toggle"  />
     <label for="section-ae30dbe7c31a834e8bfe23314d9a5ff6" class="flex justify-between">
-      <a href="/practice-privacy/dojo/" class="">Установка Биткоин-узла Dojo на x86</a>
+      <a href="/practice-privacy/dojo/" class="">Dojo x86 Bitcoin Node Guide</a>
     </label>
   
 
@@ -2432,7 +2393,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/practice-privacy/dojo-0/" class="">Введение</a>
+    <a href="/practice-privacy/dojo-0/" class="">Introduction</a>
   
 
         </li>
@@ -2445,7 +2406,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/practice-privacy/dojo-1/" class="">Установка Bitcoin Core и Tor</a>
+    <a href="/practice-privacy/dojo-1/" class="">Installing Bitcoin Core &amp; Tor</a>
   
 
         </li>
@@ -2458,7 +2419,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/practice-privacy/dojo-2/" class="">Установка индексатора Fulcrum</a>
+    <a href="/practice-privacy/dojo-2/" class="">Installing Fulcrum Indexer</a>
   
 
         </li>
@@ -2471,7 +2432,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/practice-privacy/dojo-3/" class="">Установка блокчейн-обозревателя Mempool</a>
+    <a href="/practice-privacy/dojo-3/" class="">Installing Mempool Explorer</a>
   
 
         </li>
@@ -2484,7 +2445,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/practice-privacy/dojo-4/" class="">Установка Samourai Dojo</a>
+    <a href="/practice-privacy/dojo-4/" class="">Installing Samourai Dojo</a>
   
 
         </li>
@@ -2497,7 +2458,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/practice-privacy/dojo-5/" class="">Конфигурация межсетевого экрана</a>
+    <a href="/practice-privacy/dojo-5/" class="">Firewall Configuration</a>
   
 
         </li>
@@ -2510,7 +2471,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/practice-privacy/dojo-6/" class="">Установка обновлений пакетов</a>
+    <a href="/practice-privacy/dojo-6/" class="">Installing Package Updates</a>
   
 
         </li>
@@ -2528,7 +2489,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/practice-privacy/ronindojo/" class="">Установка RoninDojo на x86</a>
+    <a href="/practice-privacy/ronindojo/" class="">RoninDojo x86 Installation Guide</a>
   
 
         </li>
@@ -2541,7 +2502,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/grapheneos/" class="">GrapheneOS: Избавляемся от слежки Google на смартфоне</a>
+    <a href="/grapheneos/" class="">GrapheneOS: De-Google your phone</a>
   
 
         </li>
@@ -2561,7 +2522,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-9425a98499a6d50bed8efd403e1db980" class="toggle"  />
     <label for="section-9425a98499a6d50bed8efd403e1db980" class="flex justify-between">
-      <a href="/practice/lightning/" class="">Лайтнинг на практике</a>
+      <a href="/practice/lightning/" class="">Lightning</a>
     </label>
   
 
@@ -2575,7 +2536,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/phoenix/" class="">Кошелек Phoenix</a>
+    <a href="/phoenix/" class="">Phoenix: The Non-Custodial Lightning Wallet</a>
   
 
         </li>
@@ -2588,7 +2549,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/lnbits/" class="">LNbits – швейцарский нож среди лайтнинг-приложений</a>
+    <a href="/lnbits/" class="">LNbits: A Swiss knife among Lightning apps</a>
   
 
         </li>
@@ -2601,7 +2562,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/alby-i-nostr/" class="">Alby и Nostr</a>
+    <a href="/alby-and-nostr/" class="">Alby and Nostr</a>
   
 
         </li>
@@ -2614,7 +2575,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/zapplanner/" class="">Подписки с помощью Лайтнинг</a>
+    <a href="/zapplanner/" class="">Recurring Lightning Payments</a>
   
 
         </li>
@@ -2627,7 +2588,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/lntips/" class="">Телеграм-бот @LightningTipBot</a>
+    <a href="/lntips/" class="">Telegram bot @LightningTipBot</a>
   
 
         </li>
@@ -2640,7 +2601,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/ochishchaem-bitcoin-cherez-lajtning/" class="">Очищаем биткоины через сеть Лайтнинг</a>
+    <a href="/lightning-liquidity-management-guide/" class="">Lightning Liquidity Management Guide</a>
   
 
         </li>
@@ -2653,20 +2614,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/likvidnost-v-lajtning/" class="">Руководство по управлению ликвидностью в сети Lightning</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/mutiny/" class="">Кошелек Mutiny</a>
+    <a href="/mutiny/" class="">Starting with Mutiny Wallet</a>
   
 
         </li>
@@ -2691,84 +2639,12 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-d286fdc9558f9b3466aa6f3d4805be77" class="toggle"  />
     <label for="section-d286fdc9558f9b3466aa6f3d4805be77" class="flex justify-between">
-      <a href="/rabbithole/" class="">Кроличья нора</a>
+      <a href="/rabbithole/" class="">Rabbithole</a>
     </label>
   
 
           
   <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/books/" class="">Книги</a>
-  
-
-          
-  <ul>
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/videos/" class="">Видео</a>
-  
-
-          
-  <ul>
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/audiobooks/" class="">Аудиокниги</a>
-  
-
-          
-  <ul>
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/pods/" class="">Подкасты</a>
-  
-
-          
-  <ul>
-    
-  </ul>
-
-        </li>
-      
     
   </ul>
 
@@ -2799,37 +2675,9 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/posts/" class="">Блог</a>
-  
-
-        
-    
-  </li>
-  
-  <li>
-    
-        
-  
-  
-
-  
-    <a href="/calendar/" class="">Биткоин-календарь</a>
-  
-
-        
-    
-  </li>
-  
-  <li>
-    
-        
-  
-  
-
-  
     <input type="checkbox" id="section-9329cf488076ba9f91ca728aef24f607" class="toggle"  />
     <label for="section-9329cf488076ba9f91ca728aef24f607" class="flex justify-between">
-      <a href="/contribute/" class="">Принять участие</a>
+      <a href="/contribute/" class="">Contribute</a>
     </label>
   
 
@@ -2844,33 +2692,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/syntax/" class="">Оформление статей</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/github/" class="">Как добавить статью?</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/obsidian/" class="">Публикация статей через Obsidian</a>
+    <a href="/github/" class="">Adding an Article</a>
   
 
         </li>
@@ -2889,7 +2711,21 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/feedback/" class="">Обратная связь</a>
+    <span>Blog</span>
+  
+
+        
+    
+  </li>
+  
+  <li>
+    
+        
+  
+  
+
+  
+    <a href="/feedback/" class="">Feedback</a>
   
 
         
@@ -2967,7 +2803,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>SeedSigner: оффлайн-крепость для ваших биткоинов</strong>
+  <strong>SeedSigner: DIY Bitcoin Signing Device</strong>
 
   <label for="toc-control">
     
@@ -2985,39 +2821,73 @@ https://github.com/alex-shpak/hugo-book
   <ul>
     <li>
       <ul>
-        <li><a href="#проблема">Проблема</a>
+        <li><a href="#unboxing">Unboxing</a></li>
+        <li><a href="#software">Software</a>
           <ul>
-            <li><a href="#сложности">Сложности</a></li>
-            <li><a href="#опасности">Опасности</a></li>
-            <li><a href="#дороговизна">Дороговизна</a></li>
+            <li><a href="#step-one-download">Step One: Download</a></li>
+            <li><a href="#step-two-a-verify--windows">Step Two, A: Verify — Windows</a></li>
+            <li><a href="#step-two-b-verify--linux">Step Two, B: Verify — Linux</a></li>
+            <li><a href="#step-three-flash">Step Three: Flash</a></li>
           </ul>
         </li>
-        <li><a href="#необходимые-компоненты">Необходимые компоненты</a>
+        <li><a href="#hardware">Hardware</a>
           <ul>
-            <li><a href="#raspberry-pi-zero">Raspberry Pi Zero</a></li>
-            <li><a href="#дисплей">Дисплей</a></li>
-            <li><a href="#камера">Камера</a></li>
-            <li><a href="#карта-microsd">Карта microSD </a></li>
-            <li><a href="#корпус">Корпус</a></li>
-            <li><a href="#цена">Цена</a></li>
+            <li><a href="#the-enclosure">The Enclosure</a></li>
+            <li><a href="#the-camera-and-cable">The Camera And Cable</a></li>
+            <li><a href="#the-raspberry-pi-zero-v13">The Raspberry Pi Zero v1.3</a></li>
+            <li><a href="#the-waveshare-lcd-hat-display">The Waveshare LCD HAT Display</a></li>
           </ul>
         </li>
-        <li><a href="#сборка">Сборка</a>
+        <li><a href="#testing-and-assembly">Testing And Assembly</a>
           <ul>
-            <li><a href="#программное-обеспечение">Программное обеспечение</a></li>
-            <li><a href="#железо">Железо</a></li>
+            <li><a href="#testing">Testing</a></li>
+            <li><a href="#assembly">Assembly</a></li>
           </ul>
         </li>
-        <li><a href="#использование">Использование</a>
+        <li><a href="#generate-a-new-seed">Generate A New Seed</a>
           <ul>
-            <li><a href="#включение">Включение</a></li>
-            <li><a href="#основные-элементы">Основные элементы</a></li>
-            <li><a href="#базовая-настройка">Базовая настройка</a></li>
-            <li><a href="#функции">Функции</a></li>
-            <li><a href="#создание-сид-фразы-и-генерация-qr">Создание сид-фразы и генерация QR</a></li>
-            <li><a href="#получение-и-отправка-средств">Получение и отправка средств</a></li>
+            <li><a href="#method-one-with-camera">Method One: With Camera</a></li>
+            <li><a href="#method-two-with-dice">Method Two: With Dice</a></li>
+            <li><a href="#calculating-a-mnemonic-checksum">Calculating A Mnemonic Checksum</a></li>
+            <li><a href="#importing-a-mnemonic-phrase">Importing A Mnemonic Phrase</a></li>
           </ul>
         </li>
+        <li><a href="#seed-backup">Seed Backup</a>
+          <ul>
+            <li><a href="#note-card">Note Card</a></li>
+            <li><a href="#qr-code-steel-plate">QR Code Steel Plate</a></li>
+            <li><a href="#fire-test">Fire Test</a></li>
+          </ul>
+        </li>
+        <li><a href="#sparrow-wallet">Sparrow Wallet</a>
+          <ul>
+            <li><a href="#step-one-initiate-import">Step One: Initiate Import</a></li>
+            <li><a href="#step-two-device-selection">Step Two: Device Selection</a></li>
+            <li><a href="#step-three-export-watch-only-information">Step Three: Export Watch-Only Information</a></li>
+            <li><a href="#step-four-finalize-import">Step Four: Finalize Import</a></li>
+            <li><a href="#step-five-receiving-bitcoin">Step Five: Receiving Bitcoin</a></li>
+            <li><a href="#creating-a-psbt">Creating A PSBT</a></li>
+            <li><a href="#importing-private-key">Importing Private Key</a></li>
+          </ul>
+        </li>
+        <li><a href="#multisig">Multisig</a>
+          <ul>
+            <li><a href="#step-one-generate-seeds">Step One: Generate Seeds</a></li>
+            <li><a href="#step-two-create-multisig-wallet-in-sparrow">Step Two: Create Multisig Wallet In Sparrow</a></li>
+            <li><a href="#step-three-configure-the-multisig-quorum">Step Three: Configure The Multisig Quorum</a></li>
+            <li><a href="#step-four-initiate-pc-webcam">Step Four: Initiate PC Webcam</a></li>
+            <li><a href="#step-five-export-xpub">Step Five: Export Xpub</a></li>
+            <li><a href="#step-six-confirm-details">Step Six: Confirm Details</a></li>
+            <li><a href="#step-seven-import-xpub">Step Seven: Import Xpub</a></li>
+            <li><a href="#step-eight-confirm-and-repeat">Step Eight: Confirm And Repeat</a></li>
+            <li><a href="#step-nine-finalize">Step Nine: Finalize</a></li>
+            <li><a href="#spending">Spending</a></li>
+            <li><a href="#example">Example</a></li>
+          </ul>
+        </li>
+        <li><a href="#the-importance-of-self-custody">The Importance Of Self Custody</a></li>
+        <li><a href="#video-summary">Video Summary</a></li>
+        <li><a href="#trade-offs">Trade Offs</a></li>
       </ul>
     </li>
   </ul>
@@ -3036,498 +2906,1218 @@ https://github.com/alex-shpak/hugo-book
 <div class="pageCover">
     <picture>
         
-        <img src="/img/76.png" alt="Cover" />
+        <img src="/img/seedsigner/01.webp" alt="Cover" />
     </picture>
 </div>
 
 <h1>
     
-    SeedSigner: аппаратный кошелек своими руками
+    How To Set Up And Use The SeedSigner DIY Bitcoin Signing Device
     
 </h1>
 <div class="pageDate">
-    24 августа 2023 г.
+    May 27, 2022
 </div>
 
-  <article class="markdown"><p>Как лучше всего хранить свои биткоины? Безопасное и доступное холодное хранение биткоина.</p>
+  <article class="markdown"><p>This comprehensive how-to guide walks you through unboxing, setting up and signing bitcoin transactions with the air-gapped SeedSigner device.</p>
 <blockquote class="book-hint btc">
-  Гид подготовлен <a href="https://snort.social/p/npub10awzknjg5r5lajnr53438ndcyjylgqsrnrtq5grs495v42qc6awsj45ys7">Тони⚡️</a>.<a href="/contribute/">Поддержать проект</a>.
+  <p>This guide by <a href="https://twitter.com/econoalchemist">@econoalchemist</a> was published in <a href="https://bitcoinmagazine.com/guides/how-to-use-seedsigner-for-secure-bitcoin">Bitcoin Magazine</a>.</p>
+<p><a href="/contribute/">Contribute</a>.</p>
+
 </blockquote>
 
-<p>SeedSigner - пожалуй, самое необычное аппаратное решение для обеспечения безопасности биткоинов в оффлайн-среде. Многие биткоинеры знают, что долгосрочное хранение монет и особенно крупных сумм на устройствах, подключенных - и даже когда-либо ранее подключавшихся - к интернету, небезопасно. Подробнее о связанных с этим опасностях повествует <a href="/kak-hranit-kljuchi">эта статья</a>. Рассуждения на эту тему будут излишни в контексте данного и без того обещающего быть объемным гида, поэтому перейдем к сути.</p>
-<blockquote class="book-hint btc">
-  SeedSigner разрабатывается энтузиастами. Его код открыт и поддерживается разработчиками абсолютно бесплатно. Если этот проект принес вам пользу, перейдите по <a href="https://seedsigner.com/donate-now/">этой ссылке</a> и поддержите команду, стоящую за ним!
-</blockquote>
-
-<h2 id="проблема">
-  Проблема
-  <a class="anchor" href="#%d0%bf%d1%80%d0%be%d0%b1%d0%bb%d0%b5%d0%bc%d0%b0">#</a>
+<p>This guide demonstrates how to self-custody bitcoin using the SeedSigner. SeedSigner is a project that brings together free and open-source code, inexpensive and general-purpose hardware, and a do-it-yourself (DIY) approach to taking personal responsibility of your bitcoin.</p>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/02.webp">
+<p><a href="https://seedsigner.com/">Source</a></p>
+</div>
+<h2 id="unboxing">
+  Unboxing
+  <a class="anchor" href="#unboxing">#</a>
 </h2>
-<h3 id="сложности">
-  Сложности
-  <a class="anchor" href="#%d1%81%d0%bb%d0%be%d0%b6%d0%bd%d0%be%d1%81%d1%82%d0%b8">#</a>
-</h3>
-<p>На сегодняшний день биткоинерам из России и некоторых прилегающих стран непросто заполучить привычные решения для холодного хранения биткоина. Виной тому санкции и вытекающие из них сложности доставки, высокие таможенные сборы, возросший период ожидания товара.</p>
+<p>This section demonstrates what is included in the full SeedSigner kit. The kit can be purchased from <a href="https://btc-hardware-solutions.square.site/">BTC Hardware Solutions</a> with worldwide shipping available. Alternatively, EU/U.K. customers can purchase the kit from <a href="https://www.gobrrr.me/?v=7516fd43adaa">GoBrrr</a> or <a href="https://diynodes.com/">DIYNodes</a>, and Philippines customers can use <a href="https://www.lazada.com.ph/products/preassembled-seedsigner-in-open-pill-case-i2659439195-s12652647245.html?spm=a2o4l.seller.list.18.111a346bP5V0no&amp;mp=1&amp;freeshipping=1">TechHaven</a>.</p>
 <div class="imageWrapper">
-    <img src="/img/77.png">
-<p><em>Заявление Ledger</em></p>
+    <img src="/img/seedsigner/03.webp">
 </div>
-<p>Распространенным решением ранее были официальные реселлеры, но по вышеупомянутым причинам сегодня они не способны предоставлять свои услуги на территории РФ. И даже ранее, когда проблем с доставкой не было, доверие к ним гарантировалось авторитетом производителей, таких как Ledger и Trezor. Проблемой даже в этом случае является то, что из-за усложнения и “удлинения” логистической цепочки (появляется больше третьих лиц, что повышает вероятность вмешательства и нарушения целостности устройства), кто-то из сотрудников одной из сторон может “пойти во все тяжкие” и подменить внутренности устройства. Мы не раз видели подобное на примере бедолаг, покупавших аппаратный кошелек у третьих лиц, только чтобы отправить свои сбережения на неподконтрольный им адрес, и Trezor здесь является не исключением, а лишь <a href="https://www.kaspersky.com/blog/fake-trezor-hardware-crypto-wallet/48155/">одним примером из многих</a>. </p>
-<h3 id="опасности">
-  Опасности
-  <a class="anchor" href="#%d0%be%d0%bf%d0%b0%d1%81%d0%bd%d0%be%d1%81%d1%82%d0%b8">#</a>
-</h3>
-<p>Именно по этой причине любимчик многих прожженных биткоинеров - самых громких и уважаемых голосов международного пространства - фирма Coinkite, никогда не сотрудничала с реселлерами, и отправляла свои устройства исключительно из своего главного офиса в Канаде. Риск вмешательства в целостность устройства слишком велик, а ставки слишком высоки. Представьте, что вы собираетесь хранить на своем кошельке $1000 долларов - на самом деле не такие уже и большие деньги на сегодняшний день - и решаете сберечь $30, обратившись к реселлеру. Каким бы мизерным не был шанс того, что вам попадется неоригинальный кошелек, он все же существует. Вы правда готовы рискнуть $1000, чтобы сэкономить $30?</p>
-<p>Сегодня времена “минимального риска” уже позади, и мы остались с еще более грустными вариантами - покупкой аппаратных устройств у “вроде-бы-слишком-авторитетных-чтобы-обмануть” частных магазинов и, абсолютно неприемлемой опцией покупки устройства на Wildberries, Ozon и т.п. Я не могу поверить, что люди действительно покупают устройства, на которых планируют хранить крупные суммы, в онлайн-магазинах общего назначения, но это действительно происходит.</p>
-<div class="imageWrapper">
-    <img src="/img/78.png">
-<p><em>Комментарий довольного покупателя кошелька Trezor на Ozon</em></p>
-</div>
-<h3 id="дороговизна">
-  Дороговизна
-  <a class="anchor" href="#%d0%b4%d0%be%d1%80%d0%be%d0%b3%d0%be%d0%b2%d0%b8%d0%b7%d0%bd%d0%b0">#</a>
-</h3>
-<p>В связи со сложностями доставки цены на устройства становятся все менее дружелюбными. Базовая модель популярного кошелька Trezor One продается с 28% наценкой по сравнению с ценами на официальном сайте:</p>
-<div class="imageWrapper">
-    <img src="/img/79.png">
-</div>
-<p>Когда речь заходит о продвинутых моделях, разница в цене приближается к 5,000 рублей:</p>
-<div class="imageWrapper">
-    <img src="/img/80.png">
-</div>
-<p>По всем перечисленным параметрам SeedSigner является абсолютным фаворитом: купив компоненты и самостоятельно собрав устройство, вы можете значительно сэкономить средства (и отправить их в холодное хранилище) и - что на мой взгляд еще важнее - перестать быть вынужденным кому-либо доверять. </p>
-<p>Далее я поделюсь информацией о том, что вам потребуется, чтобы самостоятельно собрать собственный аппаратный кошелек и предоставлю пошаговую инструкцию по сборке и использованию этого устройства, но сначала важно сделать одну техническую оговорку:</p>
-<blockquote class="book-hint btc">
-  SeedSigner технически не является аппаратным кошельком. Это - устройство, подписывающее транзакции, которое не хранит ваши приватные ключи или сид-фразы. Каждый раз, когда устройство выключается, вся информация на нем удаляется. Это огромный плюс с точки зрения безопасности, ведь если вы потеряете устройство или кто-то его украдет, никакой информации о ваших сбережениях злоумышленник не получит, и уж тем более не сможет ничего украсть. О том, как именно осуществляется подписание транзакций мы поговорим позже.
-</blockquote>
-
-<h2 id="необходимые-компоненты">
-  Необходимые компоненты
-  <a class="anchor" href="#%d0%bd%d0%b5%d0%be%d0%b1%d1%85%d0%be%d0%b4%d0%b8%d0%bc%d1%8b%d0%b5-%d0%ba%d0%be%d0%bc%d0%bf%d0%be%d0%bd%d0%b5%d0%bd%d1%82%d1%8b">#</a>
-</h2>
-<p>SeedSigner собирается из общедоступных элементов, использующихся в широком спектре задач. Все, что нам понадобится - это микрокомпьютер, плата с дисплеем и миникамера. </p>
-<h3 id="raspberry-pi-zero">
-  Raspberry Pi Zero
-  <a class="anchor" href="#raspberry-pi-zero">#</a>
-</h3>
-<p>RPi Zero используется энтузиастами во <a href="https://itsfoss.com/raspberry-pi-zero-projects/">множестве проектов</a> - от ТВ-приставок до устройств автоматического полива, скрытых камер и систем сигнализации. Именно небольшие размеры платы и гибкость, которую она предоставляет делает ее лучшим решением при создании аппаратного кошелька. </p>
-<div class="imageWrapper">
-    <img src="/img/81.png">
-</div>
-<p>Приобрести микрокомпьютер можно на <a href="https://aliexpress.ru/item/32897924353.html">AliExpress</a> или в любом магазине электроники на ваш выбор. По ссылке на AliExpress доступна модель с избыточной комплектацией, но многие составляющие здесь полезны - зарядное устройство позволит вам запускать ваше устройство прямо от розетки, избегая подключения к компьютеру. Еще более важной особенностью этой модели является то, что по ссылке доступна Raspberry Pi WH - эта модель уже оснащена так называемыми пинами, к которым мы впоследствии будем подключать плату с дисплеем. Обратите внимание, так как многие продавцы предлагают модель “W”, в которой этих пинов нет. Неудобство этой версии заключается не только в том, что вам придется покупать блок с пинами отдельно, но и то, что вам придется самостоятельно припаивать этот блок. Будьте внимательны.</p>
-<blockquote class="book-hint danger">
-  На рынке доступно две основные версии Raspberry Pi Zero - W и WH. Первая из моделей (W) продается без пинов. Это означает, что вам придется покупать пины отдельно и припаивать их самостоятельно. Я настоятельно рекомендую искать именно модель Raspberry Pi Zero WH.
-</blockquote>
-
-<h3 id="дисплей">
-  Дисплей
-  <a class="anchor" href="#%d0%b4%d0%b8%d1%81%d0%bf%d0%bb%d0%b5%d0%b9">#</a>
-</h3>
-<p>Плата с дисплеем и джойстиком - второй необходимый компонент. С одной стороны он крепится на пины Raspberry, а с другой крепится к микрокомпьютеру на специальные болты. Убедитесь, что болты идут в комплекте. Ссылка на товар на <a href="https://aliexpress.ru/item/32952472064.html">AliExpress</a>. Разумеется, этот элемент также доступен в куче магазинов и вы вольны приобрести его где угодно. Обратите внимание, что если вы планируете использовать устройство в оригинальном корпусе, важно приобрести плату с дисплеем 1.3 дюйма. Также обратите внимание на количество и расположение кнопок. Товар должен быть идентичен тому, что вы увидите на фото ниже:</p>
-<div class="imageWrapper">
-    <img src="/img/82.png">
-</div>
-<h3 id="камера">
-  Камера
-  <a class="anchor" href="#%d0%ba%d0%b0%d0%bc%d0%b5%d1%80%d0%b0">#</a>
-</h3>
-<p>Камера будет использоваться для сканирования QR-кодов и генерации приватных ключей (энтропия берется из сделанной на камеру фотографии). Ссылка на товар на <a href="https://aliexpress.ru/item/1005001382690758.html">AliExpress</a>. Для нашего устройства будет нужен нестандартный шлейф для подключения камеры к Raspberry Pi Zero. Некоторые более дорогие комплекты содержат несколько разных шлейфов. Вы вольны выбрать тот, который приглянулся вам, но мы заказывали шлейф отдельно. Ссылка на шлейф на <a href="https://aliexpress.ru/item/32947418836.html">AliExpress</a>.</p>
-<h3 id="карта-microsd">
-  Карта microSD 
-  <a class="anchor" href="#%d0%ba%d0%b0%d1%80%d1%82%d0%b0-microsd">#</a>
-</h3>
-<p>Карта нужна для установки и запуска программного обеспечения SeedSigner. На официальном сайте указано, что объема в 64MB будет достаточно. Не скупитесь и покупайте самую качественную microSD - она прослужит дольше.</p>
-<h3 id="корпус">
-  Корпус
-  <a class="anchor" href="#%d0%ba%d0%be%d1%80%d0%bf%d1%83%d1%81">#</a>
-</h3>
-<p>Оригинальные корпуса, предлагаемые проектом можно найти в заграничном <a href="https://www.cryptocloaks.com/product/seed-signer-pill/">онлайн-магазине</a>. Корпус, как правило, продается в двух вариантах - открытая и закрытая оранжевая пилюля. Корпуса можно (и рекомендуется) распечатать самостоятельно: обратиться в агенство 3D печати в ближайшем крупном городе или найти энтузиаста, например, на Авито. Проблем с этим возникнуть не должно, а цена вопроса варьируется от 250 до 1000 рублей в зависимости от наглости исполнителя 😄. Я нашел парня, который напечатал мне Orange Pill кейс за 600 рублей.</p>
-<div class="imageWrapper">
-    <img src="/img/83.png">
-</div>
-<blockquote class="book-hint btc">
-  <p>Обратите внимание, что кейс Open Pill (слева) не требует дополнительных деталей, в то время как для сборки Orange Pill (справа) потребуется:</p>
-<ul>
-<li>
-<p>4 шестигранных болта М2.5 female-female длиной 10мм (как <a href="https://aliexpress.ru/item/1005003105961491.html?sku_id=12000024119221757">эти</a>)</p>
-</li>
-<li>
-<p>4 стальных болта M2.5 длиной 6мм (как <a href="https://aliexpress.ru/item/1005005483308499.html?sku_id=12000033264240753&amp;spm=a2g2w.productlist.search_results.0.538e4aa6b7yOZ4">эти</a>)</p>
-</li>
-<li>
-<p>4 стальных болта M2.5 длиной 12мм (как <a href="https://aliexpress.ru/item/1005005483308499.html?sku_id=12000033264240797&amp;spm=a2g2w.productlist.search_results.0.538e4aa6b7yOZ4">эти</a>)</p>
-</li>
-</ul>
-<p>Ссылки на болты предоставлены в ознакомительных целях. Вы можете купить их на рынке или в любом магазине техники.</p>
-
-</blockquote>
-
-<p>На <a href="https://www.printables.com/search/models?q=seedsigner">Printables</a> доступно множество кейсов, спроектированных энтузиастами и вы можете напечатать любой из понравившихся, но обратите внимание, что у кейсов может отличаться разъем для видеокамеры, и многие из них требуют более компактной камеры. Такую камеру можно приобрести по следующей ссылке: <a href="https://aliexpress.ru/item/32901067351.html">AliExpress</a>. </p>
-<div class="imageWrapper">
-    <img src="/img/84.png">
-</div>
-<p>Хочу подчеркнуть, что все элементы, необходимые для сборки SeedSigner, можно приобрести буквально где угодно. В этом и заключается прелесть данного решения. Компоненты доступны на Wildberries и Ozon (хотя ценник там не особо радует), в местных магазинах техники, на разборках и т д. В случае SeedSigner не нужно бояться того, что какие-то детали, купленные с рук могут быть заражены вирусом или каким-либо образом коррумпированы. При генерации сид-фразы используется проверяемое программное обеспечение с открытым исходным кодом, а сама плата (RPi) лишь производит вычисления. Учитывая, что вы никогда не подключаете устройство к интернету, передать какие-либо данные ни у одного злоумышленника также не выйдет.</p>
-<h3 id="цена">
-  Цена
-  <a class="anchor" href="#%d1%86%d0%b5%d0%bd%d0%b0">#</a>
-</h3>
-<p>В итоге SeedSigner в полной комплектации обойдется вам менее, чем в 5,500 рублей, что значительно дешевле базовой модели кошелька Trezor One и всех остальных зарекомендовавших себя устройств. </p>
-<table>
-  <thead>
-      <tr>
-          <th style="text-align: left"></th>
-          <th style="text-align: left"></th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td style="text-align: left">Наименование</td>
-          <td style="text-align: left">Цена в рублях (с учетом доставки в Москву)</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"># Raspberry Pi Zero WH</td>
-          <td style="text-align: left">2,951</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"># ЖК-дисплей IPS 1,3 дюйма</td>
-          <td style="text-align: left">1,274</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"># Модуль камеры Raspberry Pi</td>
-          <td style="text-align: left">322</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"># FFC кабель для Raspberry Pi</td>
-          <td style="text-align: left">107</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">Карта microSD</td>
-          <td style="text-align: left">200</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">Печать корпуса</td>
-          <td style="text-align: left">600</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">Итого</td>
-          <td style="text-align: left">5,454</td>
-      </tr>
-  </tbody>
-</table>
-<h2 id="сборка">
-  Сборка
-  <a class="anchor" href="#%d1%81%d0%b1%d0%be%d1%80%d0%ba%d0%b0">#</a>
-</h2>
-<p>Разжившись всеми компонентами, можно приступать к установке программного обеспечения и сборке.</p>
-<div class="imageWrapper">
-    <img src="/img/85.png">
-<p><em>Составляющие SeedSigner</em></p>
-</div>
-<h3 id="программное-обеспечение">
-  Программное обеспечение
-  <a class="anchor" href="#%d0%bf%d1%80%d0%be%d0%b3%d1%80%d0%b0%d0%bc%d0%bc%d0%bd%d0%be%d0%b5-%d0%be%d0%b1%d0%b5%d1%81%d0%bf%d0%b5%d1%87%d0%b5%d0%bd%d0%b8%d0%b5">#</a>
-</h3>
-<p>Скачиваем ПО из гитхаб-репозитория SeedSigner <a href="https://github.com/SeedSigner/seedsigner/releases/">тут</a>. На момент написания статьи это файл <code>seedsigner_os.0.6.0.pi0.img</code>; после выхода новых релизов или каких-либо других изменений нас будет интересовать файл, чье название заканчивается на <code>...pi0.img</code> . </p>
-<p>Рекомендуется (но не является обязательным условием) проверить ПО на аутентичность. Я не буду подробно останавливаться на этом шаге, но желающие разобраться в этом процессе, могут обратиться к <a href="https://github.com/SeedSigner/seedsigner#verifying-that-the-downloaded-files-are-authentic-optional-but-highly-recommended">этому гиду</a> от команды SeedSigner. </p>
-<p>Устанавливаем приложение <a href="https://etcher.balena.io/">Balena Etcher</a> и прожигаем скачанный образ на microSD.</p>
-<h3 id="железо">
-  Железо
-  <a class="anchor" href="#%d0%b6%d0%b5%d0%bb%d0%b5%d0%b7%d0%be">#</a>
-</h3>
-<p>Сборка компонентов не должна вызвать никаких сложностей. Я опишу сборку элементов без использования корпуса. Если вы обзавелись корпусом и нуждаетесь в видеогиде, можете перейти по <a href="https://youtu.be/aIIc2DiZYcI">этой ссылке</a>.</p>
-<p>Начнем с установки шестигранных болтов (латунные болтики в зиплоке) на плату RPi в отверстия, находящиеся на противоположной стороне от пинов. Эти болты будут выступать в качестве опор для устанавливаемой сверху платы экрана; с одной стороны плата будет крепиться на пины, а с другой - на эти болты.</p>
-<div class="imageWrapper">
-    <img src="/img/86.png">
-</div>
-<p>Оттягиваем зажим для шлейфа (слева на изображении выше) на Raspberry и делаем то же самое на плате камеры. Будьте осторожны, чтобы не сломать зажим, иначе зафиксировать шлейф и, соответственно, подключить камеру не удастся.</p>
-<p>Снимаем шлейф, изначально прикрепленный к камере (белый), и подсоединяем широкую часть золотистого шлейфа к плате камеры, а узкую - к RPi. Контакты (блестящая сторона шлейфа) должны быть направлены в сторону камеры, а у RPi - в противоположную сторону от пинов. Прижимаем зажимы обратно к платам равномерно с обеих сторон. Не переусердствуйте, но убедитесь, что шлейф плотно прилегает к платам. Если вы не уверены в том, как присоединить шлейф, обратитесь к видео, которым я делился выше.</p>
-<div class="imageWrapper">
-    <img src="/img/87.png">
-</div>
-<p>Далее нежно загибаем шлейф, чтобы он обогнул RPi сверху (вдоль пинов). Это делается для того, чтобы камера потом не висела на шлейфе, а была аккуратно установлена на обратной стороне устройства.</p>
-<p>Устанавливаем плату с дисплеем сверху RPi и продетого шлейфа камеры. Убедитесь, что пины точно расположены по отношению к разъемам в плате и равномерно нажмите на плату сверху. Результат должен выглядеть примерно так: </p>
-<div class="imageWrapper">
-    <img src="/img/88.png">
-</div>
-<p>Чтобы закрепить камеру на задней части устройства я использовал кабельные стяжки. Для этого оттягиваем камеру чуть сильнее и отводим ее на заднюю часть устройства. Кабельные стяжки поочередно затягиваем с каждой стороны дисплея, заранее позиционируя их так, чтобы замочки располагались также сзади. Убедитесь, что стяжки не загораживают оба выхода mini USB - один из них нам понадобится, чтобы питать устройство.</p>
-<div class="imageWrapper">
-    <img src="/img/89.png">
-</div>
-<p>Сборка завершена. Хотя такой внешний вид устройства придется по душе не каждому, у него есть свой шифропанковский шарм и вещь больше похожа на какую-то игрушку для ботанов, чем на устройство для подписи биткоин-транзакций. В итоге такой вариант подойдет тем, кто не может найти энтузиаста с 3D принтером или не желает тратить ~600 рублей на корпус и предпочитает превратить их в саты - на момент написания статьи это примерно 25,000 сат 😉. Более того, если вы выберете предложенную выше маленькую камеру, выглядеть устройство будет более аккуратно, а прикрепить ее можно будет на имеющуюся в наборе клейкую ленту. Но имейте в виду, что вы можете столкнуться с проблемой при откреплении камеры, если решите позже использовать кейс.</p>
-<h2 id="использование">
-  Использование
-  <a class="anchor" href="#%d0%b8%d1%81%d0%bf%d0%be%d0%bb%d1%8c%d0%b7%d0%be%d0%b2%d0%b0%d0%bd%d0%b8%d0%b5">#</a>
-</h2>
-<h3 id="включение">
-  Включение
-  <a class="anchor" href="#%d0%b2%d0%ba%d0%bb%d1%8e%d1%87%d0%b5%d0%bd%d0%b8%d0%b5">#</a>
-</h3>
-<p>Я питаю устройство от внешнего аккумулятора. Вы также можете использовать обыкновенное зарядное устройство через розетку. Можно использовать и компьютер, но это противоречит принципам устройств, не подключенных к интернету, поэтому такой подход не рекомендуется.</p>
-<blockquote class="book-hint btc">
-  Процесс включения устройства занимает 45-50 секунд. Не пугайтесь 😄
-</blockquote>
-
-<div class="imageWrapper">
-    <img src="/img/90.png">
-</div>
-<h3 id="основные-элементы">
-  Основные элементы
-  <a class="anchor" href="#%d0%be%d1%81%d0%bd%d0%be%d0%b2%d0%bd%d1%8b%d0%b5-%d1%8d%d0%bb%d0%b5%d0%bc%d0%b5%d0%bd%d1%82%d1%8b">#</a>
-</h3>
-<p>На домашнем экране расположены 5 базовых элементов управления устройством:</p>
-<div class="imageWrapper">
-    <img src="/img/91.png">
-</div>
+<p>The SeedSigner kit includes the following components:</p>
 <ol>
-<li>
-<p>Scan: вызывает камеру для сканирования QR-кода и подписи транзакций.</p>
-</li>
-<li>
-<p>Seeds: предоставляет доступ к хранящимся на устройстве (в период данной сессии) сид-фразам.</p>
-</li>
-<li>
-<p>Tools: инструменты, позволяющие создать новый сид, высчитать контрольную сумму сида или вызвать эксплорер биткоин-адресов.</p>
-</li>
-<li>
-<p>Settings: настройки устройства</p>
-</li>
-<li>
-<p>Power (значек выключения в правом верхнем углу): позволяет выключить или перезагрузить устройство.</p>
-</li>
+<li>Raspberry Pi Zero</li>
+<li>Raspberry Pi Camera</li>
+<li>Ribbon cable for the camera</li>
+<li>WaveShare LCD HAT</li>
+<li>3D-printed, open-face case</li>
+<li>Seven blank QR code/mnemonic phrase cards</li>
+<li>SeedSigner sticker</li>
+<li>&ldquo;Getting Started&rdquo; instructions</li>
+<li>&ldquo;Thank You&rdquo; card</li>
 </ol>
-<h3 id="базовая-настройка">
-  Базовая настройка
-  <a class="anchor" href="#%d0%b1%d0%b0%d0%b7%d0%be%d0%b2%d0%b0%d1%8f-%d0%bd%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b9%d0%ba%d0%b0">#</a>
+<p>The SeedSigner kit comes with most everything you will need to get started, the only pieces you will need to supply yourself are a MicroSD card of at least 4 GB capacity and a micro USB cable. Assembly required.</p>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/04.webp">
+</div>
+<p>The included blank QR code/mnemonic phrase cards measure 64 millimeters (mm) by 89 mm. These cards feature 24 blank spaces for seed words on one side, along with a warning that reads: &ldquo;Never enter seed words into a computer that connects to the internet.&rdquo; On the opposite side, there is a blank 29 by 29 QR code grid with room for the wallet fingerprint and some notes, along with a warning that reads: &ldquo;Never scan seed QR into a computer that connects to the internet.&rdquo;</p>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/05.webp">
+</div>
+<p>Alternatively, one can opt to use the stainless-steel version of the QR code backup. The stainless steel plates are made by <a href="https://twitter.com/SeedMint21">@SeedMint21</a>. All of its high-quality products are available at <a href="https://vulcan21.com/">https://vulcan21.com/</a>.</p>
+<p>The SeedSigner stainless steel plate features a 3 mm by 66 mm by 91 mm plate that can withstand fire and flooding. This is a great alternative from paper because it can handle extreme environments. The plate featured in this guide has the SeedSigner logo on it, but future plates may not have this logo to help prevent revealing that this is a Bitcoin-related product. There is a 29 by 29 QR code grid on the plate and you can mark the indentations with a marker, check that it works and then stamp the marks with a punch to make them permanent.</p>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/06.jpg">
+</div>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/07.jpg">
+</div>
+<p>You can set the SeedSigner kit aside for now while you prepare the software image on your microSD card in the next section.</p>
+<h2 id="software">
+  Software
+  <a class="anchor" href="#software">#</a>
+</h2>
+<p>This section demonstrates how to download the SeedSigner image and flash it to your microSD card. You will need to supply your own microSD card that has at least a 4 GB capacity. Best practice is to test your hardware with the software image to make sure everything works prior to attempting assembly with the 3D-printed enclosure.</p>
+<h3 id="step-one-download">
+  Step One: Download
+  <a class="anchor" href="#step-one-download">#</a>
 </h3>
-<p>В первую очередь рекомендуется проверить корректно ли работают все кнопки. Для этого переходим в раздел ⚙️ Settings → I/O test. Здесь вы сможете убедиться, что все кнопки и джойстик работают исправно.</p>
+<p>Navigate to the <a href="https://github.com/SeedSigner/seedsigner/releases">SeedSigner GitHub repo</a> and look for the latest release.</p>
 <div class="imageWrapper">
-    <img src="/img/92.png">
+    <img src="/img/seedsigner/08.webp">
 </div>
-<p>Еще одной важной опцией устройства является возможность выбрать, будет ли SeedSigner запоминать выставленные вами настройки, такие как поддерживаемые скрипты (SegWit, Taproot) и схемы подписи (мультисиг и единичная подпись). Если вы решите сохранять указанные вами настройки, они будут храниться на SD карте. Сделать это можно также перейдя в ⚙️ Settings → Persistent settings и поставив галочку напротив поля “Enabled”.</p>
+<p>Scroll to the bottom of that release section and click on the link to download the .zip file. If you would like to verify your download, click on the links to download the “.sha256” file and “.sig” file as well. Save these files in the same folder location.</p>
 <div class="imageWrapper">
-    <img src="/img/93.png">
+    <img src="/img/seedsigner/09.webp">
 </div>
-<p>В разделе ⚙️ Settings также можно выбрать:</p>
-<ul>
-<li>Поддерживаемое сопутствующее ПО, то есть программные биткоин-кошельки, с которыми вы впоследствии сможете собпрягать устройство (в подразделе “Coordinator software”).</li>
-</ul>
-<div class="imageWrapper">
-    <img src="/img/94.png">
-</div>
-<ul>
-<li>Формат отображения сумм (в подразделе “Denomination display”).</li>
-</ul>
-<div class="imageWrapper">
-    <img src="/img/95.png">
-</div>
-<p>В продвинутых настройках - “Advanced” вы можете выбрать:</p>
-<ul>
-<li>
-<p>Используемую сеть - основную, тестнет или regtest. По умолчанию указана основная сеть - Mainnet, - которая и будет использоваться большинством. Не меняйте эту настройку, разве что вы знаете что делаете.</p>
-</li>
-<li>
-<p>Плотность генерируемого QR-кода. По умолчанию эта функция установлена на среднее значение. Это нормальная настройка, но я все же рекомендовал сменить ее на “High” - более плотное заполнение точек кода, - если вы собираетесь генерировать сид и QR, где планируете хранить крупные суммы в течение длительного срока. Чем выше плотность, тем выше вероятность того, что каким-либо образом частично испорченный QR все равно считается в будущем. Да, вам придется чуть больше повозиться с переносом кода на бумагу или металл, но оно того стоит.</p>
-</li>
-<li>
-<p>Возможность экспорта Xpub - Xpub export - для использования привычного ПО на вашем компьютере или мобильном в качестве watch-only устройства. Благодаря этой опции вы сможете генерировать адреса получения, конструировать и транслировать транзакции в сеть, в то время как SeedSigner потребуется для подписи транзакций вашим хранящимся оффлайн приватным ключом. Эта функция должна быть включена.</p>
-</li>
-<li>
-<p>Поддерживаемые функции - Sig types - и скрипты - Script types.</p>
-</li>
-</ul>
-<div class="imageWrapper">
-    <img src="/img/96.png">
-</div>
-<ul>
-<li>
-<p>Поддержку пассфразы BIP-39 - важная функция, которую стоит оставить включенной и непременно использовать при создании крупных и долгосрочных кошельков. Лучшим вариантом здесь, пожалуй, является опция “Enabled”. Таким образом при каждом создании приватного ключа устройство будет предлагать вам добавить пассфразу. Такой подход эффективно создает сразу 2 кошелька - один без нее, доступный по простому скану QR-кода или вводу сид-фразы и второй, который открывается, если вы вводите пассфразу сразу после скана QR-кода. Это отличная опция не только для повышения безопасности, но и возможность “прикинуться чайником” или создать подставной кошелек. Вы можете закинуть небольшую сумму на кошелек / сид / QR без пассфразы, что введет злоумышленников - если те каким-то образом получат доступ к вашему QR или сиду - в заблуждение; они решат, что этот кошелек с небольшой суммой и есть ваше основное хранилище. Основной же ваш кошелек со сбережениями будет доступен по тому же QR / сиду в комбинации с пассфразой.</p>
-</li>
-<li>
-<p>Поворот камеры - Camera rotation. Эта опция может пригодиться, если вы будете использовать нестандартный чехол, который заставит вас держать устройство отличным от привычного способа.</p>
-</li>
-<li>
-<p>Формат QR-кодов - CompactSeedQR: компактные или полноценные. Компактные QR-коды упрощают задачу переноса кода на бумагу и добавляют дополнительный уровень “защиты от дураков”, так как этот формат не распознается большинством биткоин-кошельков и QR-сканнеров. При этом, даже в маловероятном случае кончины проекта SeedSigner, вы все равно сможете декодировать ваш QR, содержащий приватный ключ, хоть это и потребует дополнительных усилий. Я использую компактный формат QR-кода. Подробнее об этом можно узнать из документации проекта <a href="https://github.com/SeedSigner/seedsigner/blob/dev/docs/seed_qr/README.md">тут</a>.</p>
-</li>
-<li>
-<p>Поддержку “дочерних сидов” - BIP-85 child seeds: эта функция позволяет создавать новые сид-фразы на основе мастер-сида. Таким образом вы можете генерировать до 10,000 новых кошельков, каждый из которых можно будет восстановить, имея лишь основной мастер-сид. Этой опции есть множество применений; подробнее о ней можно узнать <a href="https://bip85.com/">здесь</a>.   </p>
-</li>
-<li>
-<p>Отображение предупреждающих сообщений - Show privacy warnings, Show dire warnings: эти оповещения появляются, чтобы напомнить вам, что на следующем экране будет отображена приватная информация или что ваши действия вызовут необратимые последствия (удаление сида и т.п.). Эти сообщения можно отключить, если вы считаете себя экспертом и находите подобные напоминания раздражающими.</p>
-</li>
-<li>
-<p>Отображение логотипа партнеров - Show partner logo: если вас раздражает лого HRF при старте устройства, вы можете его отключить в этом подразделе меню.</p>
-</li>
-</ul>
-<h3 id="функции">
-  Функции
-  <a class="anchor" href="#%d1%84%d1%83%d0%bd%d0%ba%d1%86%d0%b8%d0%b8">#</a>
+<h3 id="step-two-a-verify--windows">
+  Step Two, A: Verify — Windows
+  <a class="anchor" href="#step-two-a-verify--windows">#</a>
 </h3>
-<p>SeedSigner поддерживает множество функций: целый ряд скриптов (от легаси до тапрута), мультисиг, парольные фразы и даже BIP-85 - генерацию дочерних сид-фраз. Многие из этих функций довольно комплексные и вряд ли будут использоваться рядовыми пользователями, поэтому я не буду подробно останавливаться на сложных схемах взаимодействия с устройством. При этом я и другие активные участники сообщества всегда рады помочь всем желающим в случае возникновения каких-либо проблем. Вы можете написать лично мне (контакты доступны в разделе <a href="/feedback">обратная связь</a>) или вступить в наш <a href="https://t.me/&#43;Amkl--v9laIyNzk0">закрытый чат</a> (вход стоит 2100 сат и оплачивается единоразово через сеть Лайтнинг). Я же опишу самый базовый вариант использования SeedSigner и посоветую видео участника сообщества, где он подробно разбирает возможности устройства - от генерации ключей до подписи транзакций и использования устройства в схеме мультисиг с настольным и мобильным кошельками.</p>
-<h3 id="создание-сид-фразы-и-генерация-qr">
-  Создание сид-фразы и генерация QR
-  <a class="anchor" href="#%d1%81%d0%be%d0%b7%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-%d1%81%d0%b8%d0%b4-%d1%84%d1%80%d0%b0%d0%b7%d1%8b-%d0%b8-%d0%b3%d0%b5%d0%bd%d0%b5%d1%80%d0%b0%d1%86%d0%b8%d1%8f-qr">#</a>
-</h3>
-<p>Для первоначального создания сид-фразы отправляемся в 🛠️ Tools → New Seed (вы можете выбрать между генерацией фразы из изображения (📷) и через бросок игральных кубиков (🎲). В первом случае устройство предлагает сделать фото на камеру и берет энтропию (необходимые случайные значения) из этого файла; во втором - вы сами бросаете игральную кость, и полученные значения представляют собой случайные числа, ложащиеся в основу сид-фразы. Подробнее о математической составляющей генерации приватных ключей можно узнать из <a href="https://www.youtube.com/live/NmYU0R5cCrI?feature=share">видео</a> Игоря. Вне зависимости от выбранного способа после того, как вы сделали фото или (много раз) бросили кости, вам будет представлен сид. Вы вольны выбрать сид из 12 или 24 слов. Помните, что с одной стороны 24 слова будут надежнее, а с другой - вам придется больше повозиться при переносе QR-кода на бумагу. Я все же убежден, что оно того стоит - вы один раз потратите больше времени, но ваши средства навсегда останутся в разы более защищенными.</p>
-<div class="imageWrapper">
-    <img src="/img/97.png">
-</div>
-<p>Запишите сид и после убедитесь, что вы ничего не перепутали. Устройство вам в этом поможет.</p>
-<div class="imageWrapper">
-    <img src="/img/98.png">
-</div>
-<p>По окончании верификации на экране отобразится так называемый отпечаток, состоящий из 8 букв и цифр. Запишите его рядом с сид-фразой. Этот отпечаток поможет вам определять ваш приватный ключ, если во время сессии на устройстве будет находится более одного приватника. Здесь же вы можете добавить пассфразу, о которой мы говорили ранее. Это настоятельно рекомендуется.</p>
-<blockquote class="book-hint btc">
-  В случае добавления пассфразы отпечаток вашего приватного ключа меняется. Помните, что это, по сути, совершенно новый кошелек.
-</blockquote>
-
-<p>На этом процесс создания сид-фразы завершен. Более того, мы записали саму фразу, то есть у нас есть резервная копия кошелька. Но как нам пользоваться, не жертвуя при этом удобством? Для этого мы будем использовать так называемый watch-only wallet - кошелек, который будет способен получать средства, конструировать и отправлять транзакции, но не будет иметь доступа к сид-фразе и/или приватному ключу. Транзакции будут подписываться через SeedSigner в оффлайн-режиме - ваш приватный ключ никогда не будет касаться интернета, но при этом мы не будем лишены удобства использования привычных нам мобильных или десктопных кошельков.</p>
-<p>В рамках этого гида я предоставлю пример использования мобильного кошелька Blue Wallet в связке с SeedSigner подробнее о кошельке Blue можно узнать в <a href="/blue">этом гиде</a>. Другими совместимыми кошельками являются Nunchuck (мобильный), Sparrow и Specter (десктопные кошельки).</p>
-<p>Для подключения мобильного кошелька на SeedSigner нажимаем “Export Xpub” (экспортировать публичный ключ). Эта опция находится в разделе Seeds основного меню.</p>
-<blockquote class="book-hint danger">
-  Не выключайте устройство посреди процесса генерации и бэкапа - при выключении SeedSigner стирает всю информацию из памяти.
-</blockquote>
-
-<p>Здесь вы можете выбрать Single Sig (подпись только SeedSigner’ом) или Multi Sig - подпись транзакций несколькими устройствами. В данном примере остановимся на более простом варианте - Single Sig; об использовании мультисиг-подхода можно узнать из <a href="https://youtu.be/S5yicNQft70">этого видео</a> (<a href="https://youtu.be/S5yicNQft70?t=2397">таймстемп</a>).</p>
-<p>Далее перед нами встает выбор скрипта - Native Segwit / Legacy / Taproot. На момент написания гида лучшим вариантом является Native Segwit - он по всем параметрам превосходит Legacy, а Taproot пока что недостаточно распространен. Далее выбираем кошелек, в который мы хотим экспортировать публичный ключ.</p>
-<div class="imageWrapper">
-    <img src="/img/99.png">
-</div>
-<p>SeedSigner покажет нам детали публичного ключа: </p>
+<p>This step is optional but recommended. This will ensure that you have downloaded the file that the SeedSigner developers intended on you receiving. This step will demonstrate how to verify on a Windows platform. Skip to “Step Two, B” if you are using a Linux platform.</p>
+<p>Or skip to “Step Three” if you do not wish to verify your software download that will be handling your Bitcoin private keys.</p>
+<p>The following instructions make an assumption that you already use Kleopatra from the <a href="https://www.gpg4win.org/features.html">gpg4win software bundle</a> and have your own PGP key setup.</p>
 <ul>
-<li>
-<p>Отпечаток</p>
-</li>
-<li>
-<p>Путь деривации</p>
-</li>
-<li>
-<p>Xpub</p>
-</li>
+<li>First you will need the SeedSigner public key, which you can find <a href="https://github.com/SeedSigner/seedsigner/blob/main/seedsigner_pubkey.gpg">here</a></li>
+<li>Copy the public key to your clipboard.</li>
+<li>Open Kleopatra, navigate to “Tools” then “Clipboard” then “Certificate Import”</li>
 </ul>
-<p>Нажимаем “Export” и устройство предоставит нам QR-код, который следует отсканировать кошельком. </p>
-<p>Открываем Blue Wallet (или любой другой совместимый кошелек), нажимаем на знак “+” в правом верхнем углу → Импортировать кошелек → Отсканируйте QR-код.</p>
 <div class="imageWrapper">
-    <img src="/img/100.png">
+    <img src="/img/seedsigner/10.webp">
 </div>
-<p>Сканируем код на дисплее SeedSigner камерой BlueWallet и кошелек появляется в мобильном приложении:</p>
+<ul>
+<li>You should receive a dialog that informs you the certificate was imported successfully. Click on “OK.”</li>
+<li>Now you can compare the fingerprint in Kleopatra to a known publicly-displayed fingerprint such as <a href="https://twitter.com/SeedSigner">SeedSigner&rsquo;s Twitter profile</a>.</li>
+</ul>
 <div class="imageWrapper">
-    <img src="/img/101.png">
+    <img src="/img/seedsigner/11.webp">
 </div>
-<p>Импортированный кошелек позволит вам получать средства, создавать транзакции, просматривать историю транзакций, транслировать подписанные транзакции в сеть, то есть, по сути, взаимодействовать со средствами привычным образом за исключением непосредственно подписывания транзакций. Подпись будет осуществляться оффлайн благодаря SeedSigner. Но прежде, чем разбирать как будет выглядеть этот процесс, давайте сначала сделаем резервную копию приватного ключа на бумаге в виде QR-кода. </p>
-<p>Чтобы подготовить наш QR-код, хранящий приватный ключ, нам понадобится простой листик в клеточку. Вы также можете скачать и распечатать формы, подготовленные командой SeedSigner, <a href="https://github.com/SeedSigner/seedsigner/tree/dev/docs/seed_qr/printable_templates">здесь</a>.</p>
-<p>Обратите внимание, что для сид-фраз разной длины потребуются разные размеры QR-кодов:</p>
-<table>
-  <thead>
-      <tr>
-          <th style="text-align: left"></th>
-          <th style="text-align: left"></th>
-          <th style="text-align: left"></th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td style="text-align: left">Количество слов</td>
-          <td style="text-align: left">Тип</td>
-          <td style="text-align: left">Количество клеток</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">12</td>
-          <td style="text-align: left">стандарт</td>
-          <td style="text-align: left">25х25</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">12</td>
-          <td style="text-align: left">компакт</td>
-          <td style="text-align: left">21х21</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">24</td>
-          <td style="text-align: left">стандарт</td>
-          <td style="text-align: left">29х29</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">24</td>
-          <td style="text-align: left">компакт</td>
-          <td style="text-align: left">25х25</td>
-      </tr>
-  </tbody>
-</table>
-<p>Вы можете подготовить QR-код и на простом клетчатом листе бумаги, как это сделал мой подписчик, сделавший мне один из самых крутых подарков, который я когда-либо получал - составляющие SeedSigner и QR приватного ключа с небольшим стеком сатошиков 🧡:</p>
+<ul>
+<li>Now you can right click on the SeedSigner certificate in Kleopatra and select “Certify.”</li>
+<li>You will be prompted to enter your password.</li>
+</ul>
 <div class="imageWrapper">
-    <img src="/img/102.png">
+    <img src="/img/seedsigner/12.webp">
 </div>
-<p>Как видите, исполнение не должно быть идеальным. Устройство отлично справляется со считыванием информации. Единственным условием является точность нанесения точек. SeedSigner предоставляет возможность проверить, корректно ли вы скопировали QR.</p>
+<ul>
+<li>Open the folder containing the .zip file, “.sha256” file and “.sig” file.</li>
+<li>Right click on the “.sig” file.</li>
+<li>Select “More GpgEX options” then “Verify.”</li>
+</ul>
 <div class="imageWrapper">
-    <img src="/img/103.png">
+    <img src="/img/seedsigner/13.webp">
 </div>
-<p>Обратите внимание, что квадраты по углам должны быть полностью закрашены, в то время как остальные точки могут быть более удобно нанесены в виде кружочков. Это особенно важно для тех, кто собирается наносить свой QR-код на металлическую пластину.</p>
+<ul>
+<li>Kleopatra will now use the signature file and the SeedSigner public key to verify the “.sha256” file.</li>
+<li>You should receive a dialog displaying the successful verification.</li>
+</ul>
+<p>It is important to be able to distinguish between a valid and certified signature, a valid signature and an invalid signature. Because the SeedSigner public key was certified by comparing the resulting fingerprint to a known, publicly-displayed fingerprint, the Kleopatra software prints a valid and certified dialog in green.</p>
 <div class="imageWrapper">
-    <img src="/img/104.png">
+    <img src="/img/seedsigner/14.webp">
 </div>
-<p>Итак, теперь у нас есть 2 бэкапа нашей сид-фразы: сами слова и QR-код. Первый способ нельзя назвать удобным для повседневного использования - мало кто захочет вводить сид каждый раз, когда необходимо подтвердить транзакцию. Поэтому сид мы можем как следует спрятать, а QR по необходимости держать поближе. Подходы к обеспечению безопасности сида лежат далеко за рамками этого гида; оставляю этот вопрос на вашей совести. Лишь подчеркну значимость парольной фразы - пары слов, которые обеспечат безопасность ваших средств даже если злоумышленники получат доступ к вашему сиду или QR-коду. Также хочу напомнить об интересной особенности компактных QR-кодов, которые может генерировать SeedSigner. Стандартные коды хранят строку вашего сида в виде 12 или 24 четырехзначных чисел, соответствующих индексам сид-слов. Это позволяет любому биткоин-кошельку легко распознать и конвертировать код в приватный ключ. При том, что это может быть более удобным и универсальным подходом (если вы потеряли ваш SeedSigner, вы можете отсканировать код любым биткоин-кошельком), он вынуждает вас более тщательно прятать ваш QR, так как любой сможет просто отсканировать код камерой кошелька и получить доступ к приватному ключу. Компактные QR-коды занимают меньше места, так как хранят информацию в бинарном формате и не распознаются камерой телефона или кошелька, а точнее воспринимаются ими как непонятный набор символов:</p>
+<p>If you did not take the extra step to certify the SeedSigner public key, then Kleopatra can still determine that the signature is valid, but not certified. Meaning that the public key and accompanying signature are valid but that they could be from some other entity impersonating the developer. These dialogs will be printed in white. This is still a valid matching signature, it&rsquo;s just that unless you take that extra step to certify the fingerprint of the public key, then do you really know it is a valid signature from SeedSigner and not an impersonator?</p>
 <div class="imageWrapper">
-    <img src="/img/105.png">
+    <img src="/img/seedsigner/15.webp">
 </div>
-<p>Это повышает устойчивость вашего кода к “необразованным похитителям”, но не лишает вас возможности декодировать QR даже в отсутсвии SeedSigner, используя, например, приложения <a href="https://zxing.org/w/decode.jspx">ZXing</a> или <a href="https://zbar.sourceforge.net/">ZBar</a>. За подробностями советую обратиться к этому <a href="https://github.com/SeedSigner/seedsigner/blob/dev/docs/seed_qr/README.md">документу</a>. В итоге я советую использовать компактные коды - их проще переносить на бумагу и сложнее расшифровать.</p>
-<h3 id="получение-и-отправка-средств">
-  Получение и отправка средств
-  <a class="anchor" href="#%d0%bf%d0%be%d0%bb%d1%83%d1%87%d0%b5%d0%bd%d0%b8%d0%b5-%d0%b8-%d0%be%d1%82%d0%bf%d1%80%d0%b0%d0%b2%d0%ba%d0%b0-%d1%81%d1%80%d0%b5%d0%b4%d1%81%d1%82%d0%b2">#</a>
+<p>Or if there has been some manipulation in the file you downloaded and it is not authentically signed by the SeedSigner key, Kleopatra will print the dialog in red. This is an invalid signature and you should not proceed with decompressing the .zip file.</p>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/16.webp">
+</div>
+<p>Now that you have verified the authenticity of the accompanying “.sha256” file, you can rest assured that the SHA-256 hash value contained within it is in fact the hash value that you should be able to independently generate on the accompanying .zip file. To generate hash values on files, you can use a convenient freeware hex editor tool called <a href="https://mh-nexus.de/en/hxd/">HxD</a>.</p>
+<ul>
+<li>In HxD, navigate to “File” then “Open” and select the SeedSigner .zip file</li>
+<li>Navigate to “Analysis” then “Checksums” then “SHA256”</li>
+</ul>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/17.webp">
+</div>
+<ul>
+<li>Now you can open the SeedSigner “.sha256” file with a text editor like Notepad.</li>
+<li>Compare the hash values between HxD and the SeedSigner file.</li>
+</ul>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/18.webp">
+</div>
+<p>After verifying the hash value, you know that the .zip file is authentic. If the hash values do not match, then do not decompress the .zip file. It is a good idea to close the .zip file from HxD at this point. You can skip ahead to “Step Three” now.</p>
+<h3 id="step-two-b-verify--linux">
+  Step Two, B: Verify — Linux
+  <a class="anchor" href="#step-two-b-verify--linux">#</a>
 </h3>
-<p>Создав QR-код и экспортировав watch-only кошелек, можно приступать к получению (и, по необходимости, отправке) средств. </p>
-<blockquote class="book-hint danger">
-  Обязательно проверьте корректно ли работает схема получения и отправки на небольшой сумме, прежде чем отправлять все свои сбережения.
-</blockquote>
-
-<p>Процедура получения средств ничем не отличается от привычного использования горячего кошелька: открываем кошелек, нажимаем получить и генерируем адерс: </p>
+<p>Verifying signatures in Linux is a much more straightforward process. PGP tools come built in and can be executed from the command line terminal.</p>
+<p>Before proceeding, ensure you have the .zip file, “.sha256” file and “.sig” file in your downloads directory.</p>
+<ul>
+<li>Open your terminal</li>
+<li>Import the SeedSigner public key to your key-chain with:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>curl https://raw.githubusercontent.com/SeedSigner/seedsigner/main/seedsigner_pubkey.gpg | gpg --import
+</span></span></code></pre></div><ul>
+<li>You should see the terminal print “imported: 1”</li>
+<li>Then change your directory to your downloads folder with “cd Downloads”</li>
+</ul>
 <div class="imageWrapper">
-    <img src="/img/106.png">
+    <img src="/img/seedsigner/19.webp">
 </div>
-<ol>
-<li>
-<p>Нажимаем “Получить”.</p>
-</li>
-<li>
-<p>Сканируем QR-код или копируем адрес, чтобы вставить в кошелек для отправления.</p>
-</li>
-<li>
-<p>Полученные средства отображаются в watch-only кошельке.</p>
-</li>
-</ol>
-<p>Отправка средств также во многом похожа на привычное использование горячего кошелька, но, учитывая, что наши саты теперь хранятся оффлайн, необходимо осуществить пару дополнительных действий:</p>
-<ol>
-<li>Конструируем транзакцию как обычно: нажимаем “Отправить” и вводим адрес получателя и сумму. При первой попытке отправки Blue Wallet попросит подтвердить намерение использования кошелька в связке с SeedSigner.</li>
-</ol>
+<ul>
+<li>Now verify the signature with:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>gpg --verify seedsigner_0_5_0.img.zip.sha256.sig
+</span></span></code></pre></div><p>Be sure to use the version relative to the one you are verifying, this was version 0.5.0 and releases are made often, so always use the latest one from <a href="https://github.com/SeedSigner/seedsigner/releases">SeedSigner’s releases page</a>.</p>
+<ul>
+<li>The terminal should print “Good signature from ‘seedsigner &lt;btc.hardware.solutions@gmail.com&gt;’”</li>
+<li>You will see the warning about the key not being certified, see the example in “Step Two, A” for a detailed explanation. Long story short, this is fine.</li>
+</ul>
 <div class="imageWrapper">
-    <img src="/img/107.png">
+    <img src="/img/seedsigner/20.webp">
 </div>
-<ol start="2">
-<li>Сканируем QR, появившийся на экране телефона своим SeedSigner’ом.</li>
-</ol>
-<blockquote class="book-hint danger">
-  Прежде чем сканировать код сконструированной транзакции, убедитесь, что в ваш SeedSigner загружен приватный ключ, соответствующий вашему watch-only кошельку. Если вы только что включили устройство, нужно сначала отсканировать QR-код вашего приватного ключа, по необходимости ввести пасс-фразу, и только потом отсканировать частично подписанную транзакции с экрана Blue Wallet (Seeds → Scan PSBT).
-</blockquote>
-
+<ul>
+<li>Now you can verify the hash value with:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>shasum -a <span style="color:#ae81ff">256</span> -c seedsigner_0_5_0.img.zip.sha256
+</span></span></code></pre></div><p>Again, making sure to use the version appropriate for you.</p>
+<ul>
+<li>The terminal should print “seedsigner_0_5_0.img.zip: OK”</li>
+<li>You can ignore the warning about improperly formatted lines if you get it.</li>
+</ul>
 <div class="imageWrapper">
-    <img src="/img/108.png">
+    <img src="/img/seedsigner/21.webp">
 </div>
-<blockquote class="book-hint btc">
-  Частично подписанные транзакции хранят в разы больше данных, чем обыкновенные транзакции и QR-коды, генерируемые для экспорта публичных ключей. Убедитесь, что сняли защитную пленку с камеры на SeedSigner, в противном случае вы можете столкнуться с проблемой считывания QR-кода.
-</blockquote>
-
-<ol start="3">
-<li>Проверяем информацию, касающуюся отправления, на SeedSigner - сумму, адрес получателя, адрес сдачи и подтверждаем отправку. </li>
-</ol>
+<p>That&rsquo;s it, you&rsquo;re done verifying the .zip file you downloaded. You can now move on to flashing the image to the microSD card in the next step.</p>
+<h3 id="step-three-flash">
+  Step Three: Flash
+  <a class="anchor" href="#step-three-flash">#</a>
+</h3>
+<p>Using a program like Balena Etcher makes flashing the SeedSigner image easy. Navigate to the <a href="https://www.balena.io/etcher/">Balena Etcher website</a> where you can download the application appropriate for your operating system. Follow your system prompts to install. Make sure you have a microSD card at least 4 GB in size formatted and connected to your computer.</p>
 <div class="imageWrapper">
-    <img src="/img/109.png">
+    <img src="/img/seedsigner/22.webp">
 </div>
-<ol start="4">
-<li>SeedSigner подписывает транзакцию и генерирует еще один QR-код - код подписанной транзакции. Его необходимо отсканировать камерой кошелька Blue Wallet для дальнейшего транслирования в Биткоин-сеть.</li>
-</ol>
+<p>Once you have Balena Etcher installed and opened, select “Flash from file.”</p>
 <div class="imageWrapper">
-    <img src="/img/110.png">
+    <img src="/img/seedsigner/23.webp">
 </div>
-<p>Поздравляю! Вы только что сконструировали, подписали и разослали биткоин-транзакцию, не засветив ваши приватные ключи онлайн. Более того, вы сделали это устройством, которое собрали самостоятельно из общедоступных элементов широкого использования, по определению не способных быть каким-либо образом скомпрометированными. Также вероятность того, что это устройство дешевле и безопаснее большинства коммерческих устройств, доступных на рынке, близка к 100%.</p>
-<p>SeedSigner обладает множеством дополнительных функций и возможностей. Изучайте это устройство, тестируйте возможные опции и поделитесь своим опытом в нашем <a href="https://t.me/&#43;Amkl--v9laIyNzk0">чате</a>. Появились вопросы? Заходите в раздел сайта “<a href="/feedback">Обратная связь</a>”.</p>
+<p>Select the .zip file from the file explorer. The .zip file can remain in its compressed state, Balena Etcher will decompress it.</p>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/24.webp">
+</div>
+<p>Select the target drive that you want to flash the image file to. You want to choose your microSD card here.</p>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/25.png">
+</div>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/26.png">
+</div>
+<p>Click on the “Flash!” button and the flashing process should start automatically. The progress bar will move over to the left-hand side of the application and some promotional dialogs will be displayed on the right-hand side of the application. You do not need to interact with the promotional dialogs, just let the flashing process run.</p>
+<p>There are three stages of the flashing process: decompression, flashing and validation. Just let the software run through all the steps and do not disconnect the microSD card during this process. If you get any operating system prompts saying the drive needs to be formatted, just ignore them.</p>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/27.png">
+</div>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/28.png">
+</div>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/29.png">
+</div>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/30.png">
+</div>
+<p>Once finished, you should receive a message that lets you know the flash was completed successfully. If it was not completed successfully, try again and if the problem persists, then consider using a different microSD card.</p>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/31.webp">
+</div>
+<p>You can close the Balena Etcher application. Safely eject the microSD card from your computer if your system has not done so already. Now you are ready to mock up your hardware and test it prior to final assembly.</p>
+<h2 id="hardware">
+  Hardware
+  <a class="anchor" href="#hardware">#</a>
+</h2>
+<p>This section demonstrates how to test and assemble the SeedSigner kit and also provides details on what each component is and alternative places to purchase these components in case you do not want to purchase the whole kit from one vendor. Best practice is to test that your components power on and the SeedSigner software works prior to assembly. The enclosure and or components can be damaged if you attempt disassembly.</p>
+<h3 id="the-enclosure">
+  The Enclosure
+  <a class="anchor" href="#the-enclosure">#</a>
+</h3>
+<p>The enclosure included in the kit is an open-faced design, alternative designs are available from vendors linked below. The enclosure is 3D printed, you can even <a href="https://github.com/SeedSigner/seedsigner/tree/main/enclosures/open_pill">download the file</a> and print one yourself. Be sure to check out some <a href="https://github.com/SeedSigner/seedsigner#community-designs">community designs</a> as well. The enclosure featured here is designed to be the most basic enclosure and the quickest to reproduce. Various enclosure design files can be downloaded from <a href="https://github.com/SeedSigner/seedsigner/tree/main/enclosures">here</a>, and there are a number of distributors that offer alternate designs <a href="https://www.cryptocloaks.com/product/seed-signer-pill/">here</a>, <a href="https://btc-hardware-solutions.square.site/s/shop">here</a> and <a href="https://robotechy.com/collections/frontpage">here</a>.</p>
+<p>The enclosure outer dimensions are 80 mm by 35 mm by 26 mm and there are a number of retention bumps, support ledges and journals to fit the components snugly inside.</p>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/32.webp">
+</div>
+<p>The enclosure also features openings for the camera lens, micro USB ports, HDMI port and microSD card port.</p>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/33.webp">
+</div>
+<p>If you do not want to get the complete kit, you can buy a standalone enclosure of various designs from the following vendors:</p>
+<ul>
+<li>Worldwide delivery available from <a href="https://btc-hardware-solutions.square.site/product/orange_pill/5?cs=true&amp;cst=custom">BTC Hardware Solutions</a></li>
+<li>Worldwide delivery available from <a href="https://robotechy.com/collections/frontpage/products/seedsigner-3d-printed-pill-case">Robotechy</a></li>
+<li>EU/U.K. delivery available from <a href="https://www.gobrrr.me/product/seedsigner-lilpill-case/?v=7516fd43adaa">GoBrrr</a>, <a href="https://diynodes.com/product/seedsigner-3d-printed-orange-pill-case/">DIYNodes</a> and <a href="https://anchorhodl.com/product/retro-pill-case-for-seedsigner">AnchorHodl</a></li>
+</ul>
+<h3 id="the-camera-and-cable">
+  The Camera And Cable
+  <a class="anchor" href="#the-camera-and-cable">#</a>
+</h3>
+<p>The camera is a 5MP OV5647 sensor, 30 frames per second (FPS), 2,592 pixel by 1,944 pixel resolution video camera module designed for a range of Raspberry Pis. The working voltage is 1.7 volts direct current (VDC) to 3 VDC. This module measures 25 mm by 24 mm by 9 mm. The camera ships with a protective film over the lens — be sure to remove this prior to assembly.</p>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/34.jpg">
+</div>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/35.jpg">
+</div>
+<p>You want the “HBV-Raspberry-160FPC” golden ribbon cable for the Raspberry Pi Zero. This cable has a 16-flat-pin connector side measuring 16 mm, a 22-flat-pin connector side measuring 11 mm and the overall length is 160 mm.</p>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/36.webp">
+</div>
+<p>If you do not want to get the complete kit, you can buy a standalone camera and cable from the following vendors:</p>
+<ul>
+<li>EU/U.K. delivery available from <a href="https://www.gobrrr.me/product/ov5647-pi-cam/?v=7516fd43adaa">GoBrrr</a></li>
+<li>North America delivery available from <a href="https://www.amazon.com/dp/B07RXKZ1KN?th=1">Amazon</a></li>
+<li>Philippines delivery available from <a href="https://www.lazada.com.ph/products/raspberry-pi-camera-i2659578273-s12654014174.html?spm=a2o4l.seller.list.4.111a346bP5V0no&amp;mp=1&amp;freeshipping=1">TechHaven</a></li>
+</ul>
+<h3 id="the-raspberry-pi-zero-v13">
+  The Raspberry Pi Zero v1.3
+  <a class="anchor" href="#the-raspberry-pi-zero-v13">#</a>
+</h3>
+<p>The Raspberry Pi Zero is the smallest single-board computer Raspberry Pi manufactures. The v1.3 computer features a 1 gigahertz (Ghz) single-core CPU, 512 MB of RAM, mini-HDMI port, one micro USB port for power only, one micro USB port for data transfer, a hardware-attached-on-top (HAT)-compatible 40-pin header, composite video and reset headers, a microSD card slot and a CSI camera connector. The full hardware specification can be found <a href="https://www.raspberrypi.com/documentation/computers/raspberry-pi.html">here</a>.</p>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/37.webp">
+</div>
+<p> The Raspberry Pi Zero measures 66 mm by 31 mm by 11 mm.</p>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/38.webp">
+</div>
+<p>If you do not want to get the complete kit, you can buy a standalone Raspberry Pi Zero from the following vendors:</p>
+<ul>
+<li>EU/U.K. delivery available from <a href="https://www.gobrrr.me/product/pizero-wh/?v=7516fd43adaa">GoBrrr</a></li>
+<li>EU delivery available from <a href="https://tienda.bricogeek.com/placas-raspberry-pi/1358-raspberry-pi-zero-v1-3.html">BricoGeek</a> or <a href="https://www.reichelt.com/ch/en/raspberry-pi-zero-v-1-3-1-ghz-512-mb-ram-rasp-pi-zero-p256439.html">Reichelt</a></li>
+<li>North American delivery available from <a href="https://www.adafruit.com/product/2885">Adafruit</a></li>
+<li>Philippines delivery available from <a href="https://www.lazada.com.ph/products/raspberry-pi-zero-version-13-i2659573158-s12653906040.html?spm=a2o4l.seller.list.1.111a346bP5V0no&amp;mp=1&amp;freeshipping=1">TechHaven</a></li>
+</ul>
+<p>If you are having a difficult time finding the Raspberry Pi Zero hardware, some alternative sources are <a href="https://rpilocator.com/">Rpilocator</a> or possibly the <a href="https://www.raspberrypi.com/products/raspberry-pi-zero-2-w/">Raspi Zero W</a> — make sure to do your homework on compatibility with this version prior to purchasing it. Alternatively, if you are only able to find the WiFi- and/or Bluetooth-enabled versions of the Raspberry Pi Zero, then <a href="https://github.com/DesobedienteTecnologico/rpi_disable_wifi_and_bt_by_hardware">this</a> guide by <a href="https://twitter.com/DesobedienteTec">@DesobedienteTec</a> will show you how to disable the communication radios.</p>
+<h3 id="the-waveshare-lcd-hat-display">
+  The Waveshare LCD HAT Display
+  <a class="anchor" href="#the-waveshare-lcd-hat-display">#</a>
+</h3>
+<p>The Waveshare LCD HAT is a 65 mm by 30 mm module that attaches to the 40-pin connector on the Raspberry Pi Zero. This module features a 240 pixel by 240 pixel resolution RGB display measuring 39 mm diagonally. The embedded controls use a joystick and three push buttons. The operating voltage is 3.3 vdc. More specifications can be found <a href="https://www.waveshare.com/wiki/1.3inch_LCD_HAT">here</a>.</p>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/39.jpg">
+</div>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/40.jpg">
+</div>
+<p>If you do not want to get the complete kit, you can buy a standalone Waveshare LCD HAT display from the following vendors:</p>
+<ul>
+<li>EU/U.K. delivery available from <a href="https://www.gobrrr.me/product/waveshare-lcd-display/?v=7516fd43adaa">GoBrrr</a></li>
+<li>EU delivery available from <a href="https://www.welectron.com/Waveshare-14972-13inch-LCD-HAT_1">Welectron</a></li>
+<li>North America delivery available from <a href="https://www.waveshare.com/1.3inch-lcd-hat.htm">WaveShare</a></li>
+<li>Worldwide delivery available from <a href="https://www.aliexpress.com/item/32952472064.html">AliExpress</a></li>
+<li>Philippines delivery available from <a href="https://www.lazada.com.ph/products/waveshare-14972-13inch-lcd-hat-i2659455966-s12653987690.html?spm=a2o4l.seller.list.7.111a346bP5V0no&amp;mp=1&amp;freeshipping=1">TechHaven</a></li>
+</ul>
+<h2 id="testing-and-assembly">
+  Testing And Assembly
+  <a class="anchor" href="#testing-and-assembly">#</a>
+</h2>
+<h3 id="testing">
+  Testing
+  <a class="anchor" href="#testing">#</a>
+</h3>
+<p>Testing the hardware with the SeedSigner software is a good idea. If you assemble everything and then find out that something doesn&rsquo;t work, you can damage the components and/or enclosure trying to disassemble it.</p>
+<h4 id="step-one-release-camera-retainer">
+  Step One: Release Camera Retainer
+  <a class="anchor" href="#step-one-release-camera-retainer">#</a>
+</h4>
+<p>On the Raspberry Pi Zero board, gently pull the tabs out on the camera connection port. When these tabs are depressed, they will lock the ribbon cable in place.</p>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/41.webp">
+</div>
+<h4 id="step-two-connect-ribbon-cable">
+  Step Two: Connect Ribbon Cable
+  <a class="anchor" href="#step-two-connect-ribbon-cable">#</a>
+</h4>
+<p>Make sure the ribbon cable is facing the correct direction, the gold connectors should be facing the bottom side of the Raspberry Pi Zero circuit board. Insert the ribbon cable until it stops, then press the tabs down to lock the ribbon cable in place.</p>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/42.png">
+</div>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/43.png">
+</div>
+<h4 id="step-three-microsd-card">
+  Step Three: MicroSD Card
+  <a class="anchor" href="#step-three-microsd-card">#</a>
+</h4>
+<p>Insert the microSD card with the flashed SeedSigner image. Ensure the MicroSD card is facing the correct direction — again the gold contacts should be facing the bottom of the Raspberry Pi Zero circuit board.</p>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/44.png">
+</div>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/45.png">
+</div>
+<h4 id="step-four-display">
+  Step Four: Display
+  <a class="anchor" href="#step-four-display">#</a>
+</h4>
+<p>Connect the LCD display, making sure that the pins on the Raspberry Pi Zero circuit board are all straight and that they won&rsquo;t get bent by being misaligned. This will just loosely attach to the Raspberry Pi Zero circuit board, it is not going to snap into place until you do the final assembly in the 3D-printed enclosure.</p>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/46.webp">
+</div>
+<h4 id="step-five-power-on-and-test">
+  Step Five: Power On And Test
+  <a class="anchor" href="#step-five-power-on-and-test">#</a>
+</h4>
+<p>Connect your power cable and wait about 45 seconds for the SeedSigner to activate. Then test out the joystick and buttons on the LCD display and ensure that the camera works.</p>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/47.png">
+</div>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/48.png">
+</div>
+<p>Now that you have checked that everything is working, you can power off the SeedSigner by selecting the power icon in the upper right-hand corner from the main menu. Then you can disassemble everything and re-assemble it in the 3D-printed enclosure.</p>
+<h3 id="assembly">
+  Assembly
+  <a class="anchor" href="#assembly">#</a>
+</h3>
+<p>Prior to attempting assembly, ensure that you have tested that everything works by connecting the camera and display to the RaspberryPi Zero, inserting the microSD card with the SeedSigner image loaded, and powering on the device by connecting a micro USB cable to the power input port.</p>
+<h4 id="step-one-materials-check">
+  Step One: Materials Check
+  <a class="anchor" href="#step-one-materials-check">#</a>
+</h4>
+<p>Gather your tested components. You should have the 3D-printed enclosure, Raspberry Pi Zero, microSD card, LCD display, camera module and ribbon cable.</p>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/49.webp">
+</div>
+<h4 id="step-two-camera-module">
+  Step Two: Camera Module
+  <a class="anchor" href="#step-two-camera-module">#</a>
+</h4>
+<p>Remove the protective layer of film from the camera lens. Then snap the camera module into place under the retainer clips. If the ports for the USB connections are facing away from you then the ribbon cable should be going to the right-hand side.</p>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/50.png">
+</div>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/51.png">
+</div>
+<h4 id="step-three-raspberry-pi-zero">
+  Step Three: Raspberry Pi Zero
+  <a class="anchor" href="#step-three-raspberry-pi-zero">#</a>
+</h4>
+<p>Insert the Raspberry Pi Zero circuit board. Make sure you remove the microSD card first. The ribbon cable will fold over the camera module, with the slack tucking underneath the enclosure recess.</p>
+<p>Align the USB connectors with the ports on the enclosure, the circuit board will be at a slight angle, then you can press down on the side with the pins until you hear it snap into place.</p>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/52.png">
+</div>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/53.png">
+</div>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/54.png">
+</div>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/55.png">
+</div>
+<h4 id="step-four-microsd-card">
+  Step Four: MicroSD Card
+  <a class="anchor" href="#step-four-microsd-card">#</a>
+</h4>
+<p>Then you can insert the MicroSD card again. Then press the LCD display into place on the PINs of the Raspberry Pi Zero circuit board, taking care to ensure the pins are aligned. This should fit tightly and not be loose.</p>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/56.png">
+</div>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/57.png">
+</div>
+<h4 id="step-five-power-on-and-test-1">
+  Step Five: Power On And Test
+  <a class="anchor" href="#step-five-power-on-and-test-1">#</a>
+</h4>
+<p>Plug in your power cable and make sure everything works. Then you are ready to start setting up your new Bitcoin seed phrase.</p>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/58.webp">
+</div>
+<p>You may be able to find additional resources in <a href="https://github.com/shishi21m/SeedSigner-Guides/blob/main/SeedSigner%20Build%20Guide.pdf">this</a> guide by <a href="https://twitter.com/shishi21m">@shishi21m</a>.</p>
+<h2 id="generate-a-new-seed">
+  Generate A New Seed
+  <a class="anchor" href="#generate-a-new-seed">#</a>
+</h2>
+<p>This section will demonstrate two methods to generate a new master seed with the SeedSigner, with the camera or with dice, as well as how to calculate the checksum of a mnemonic phrase and also how to import a pre-existing mnemonic phrase.</p>
+<p>The master seed is just a number, a really long and random number. In fact, this number is so long and random that it can be considered truly unique. Practically speaking, the only place in the universe this number exists is on your SeedSigner when you create it. For all intents and purposes, for someone to guess this number would be like guessing the exact same atom from the entire observable universe that you secretly picked.</p>
+<p>This really long random number is used in some clever cryptographic functions to deterministically derive your Bitcoin wallet private/public key pairs. In other words, this is how you can generate many receiving addresses and spend from them. There are several ways to represent these long random numbers; binary ones and zeros, hexadecimal 0 to 9/A to F, a QR code, or even a list of words. Humans have a difficult time handling a numeric representation that is as abstract as 256 ones and zeros, this is why the word lists (or mnemonic phrases) are a popular solution. The long random number is turned into a list of words that are easier for the user to write down and interpret later with accuracy.</p>
+<p>If you want to learn more about the processes used with hierarchical deterministic wallets and mnemonic phrases, check out <a href="https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki">BIP32</a> and <a href="https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki">BIP39</a>.</p>
+<p>Your SeedSigner can communicate this number to you in the form of a list of English words or a QR code; both methods contain the same information, your master seed. Keep in mind that anyone who gains access to this master seed information can use it to re-create your Bitcoin wallet and take the bitcoin from it, so be sure to handle this information securely and privately.</p>
+<p>You will have a couple of choices when creating a new seed: capture an image or roll some dice. Both processes involve randomness, which is a key element in creating a secure master seed that cannot be guessed. Best practice is to use a 256-bit number for your master seed which translates to a 24-word mnemonic; the 12-word mnemonics are made from 128 bits.</p>
+<h3 id="method-one-with-camera">
+  Method One: With Camera
+  <a class="anchor" href="#method-one-with-camera">#</a>
+</h3>
+<p>No two images will be exactly the same and they will all produce drastically different master seeds. The randomness of the image-method involves taking information from several frames prior to the image itself, along with some information in the image as well as the unique serial number of the Raspberry Pi Zero processor and the number of milliseconds the device has been powered on for.</p>
+<h4 id="step-one-initiate-camera">
+  Step One: Initiate Camera
+  <a class="anchor" href="#step-one-initiate-camera">#</a>
+</h4>
+<p>From the SeedSigner main menu, navigate to “Seeds” then “+ Create a seed” then “;camera icon’ New seed.” This will activate the camera. During this time prior to you taking the image, the SeedSigner is capturing frames and using information from these frames to include in the generation of your master seed.</p>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/59.png">
+</div>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/60.png">
+</div>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/61.png">
+</div>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/62.png">
+</div>
+<h4 id="step-two-capture-image">
+  Step Two: Capture Image
+  <a class="anchor" href="#step-two-capture-image">#</a>
+</h4>
+<p>Take an image of something unique. The SeedSigner will display the captured image and then you will have a choice to “reshoot” or “accept,” move the joystick in the appropriate direction for your decision.</p>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/63.png">
+</div>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/64.png">
+</div>
+<h4 id="step-three-mnemonic-length">
+  Step Three: Mnemonic Length
+  <a class="anchor" href="#step-three-mnemonic-length">#</a>
+</h4>
+<p>Next, you will be asked which mnemonic length you want to use, 12-words or 24-words. Accept the warning telling you that this information needs to remain private and secure.</p>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/65.png">
+</div>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/66.png">
+</div>
+<p>Finally, your mnemonic phrase will be displayed. The screen displays four words at a time.</p>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/67.webp">
+</div>
+<p>Follow the directions in the next section, &ldquo;Seed Backup,&rdquo; to see how to secure this information.</p>
+<h3 id="method-two-with-dice">
+  Method Two: With Dice
+  <a class="anchor" href="#method-two-with-dice">#</a>
+</h3>
+<p>The randomness of the dice rolls is pretty self explanatory, best practice is to use a balanced dice. The technical definition of entropy with a six-sided dice is calculated by “log2(6) = 2.58 bits of entropy,” this is why it takes 50 rolls for 128 bits or 99 rolls for 256 bits: “log2(6)*99 = 255.9.” By rolling a dice 99 times, you are providing the randomness necessary to create a random number that is impossible to guess. The dice method will give you a choice between 128 bits/50 rolls/12 words or 256 bits/99 rolls/24 words.</p>
+<h4 id="step-one-initiate-dice-entry">
+  Step One: Initiate Dice Entry
+  <a class="anchor" href="#step-one-initiate-dice-entry">#</a>
+</h4>
+<p>From the SeedSigner main menu, navigate to “Seeds” then “+ Create a seed” then “‘dice icon’ New seed.” Then select which mnemonic length you want to use, 12 words or 24 words. Accept the warning telling you that this information needs to remain private and secure.</p>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/68.png">
+</div>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/69.png">
+</div>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/70.png">
+</div>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/71.png">
+</div>
+<h4 id="step-two-roll-the-dice">
+  Step Two: Roll The Dice
+  <a class="anchor" href="#step-two-roll-the-dice">#</a>
+</h4>
+<p>Next, you can roll your dice and then enter the result by selecting that number on the SeedSigner screen and pushing the joystick. Repeat this process for all of your rolls.</p>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/72.png">
+</div>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/73.png">
+</div>
+<h4 id="step-three-finalize">
+  Step Three: Finalize
+  <a class="anchor" href="#step-three-finalize">#</a>
+</h4>
+<p>When you enter the last roll, the SeedSigner will display the warning about sharing this information. Accept the warning telling you that this information needs to remain private and secure. Finally, your mnemonic phrase will be displayed. The screen displays four words at a time.</p>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/74.webp">
+</div>
+<p>Follow the directions in the next section, &ldquo;Seed Backup,&rdquo; to see how to secure this information.</p>
+<h3 id="calculating-a-mnemonic-checksum">
+  Calculating A Mnemonic Checksum
+  <a class="anchor" href="#calculating-a-mnemonic-checksum">#</a>
+</h3>
+<p>You can also calculate the last word of a mnemonic phrase with the SeedSigner. A 256-bit number is not quite long enough to generate 24 words. Each word represents 11 bits of the original 128 bit or 256 bit master seed. Each 11-bit segment translates to a numeric value on an index from zero to 2,047.</p>
+<p>Each of the 2,048 words on the BIP39 list corresponds to a different numeric value on this index. For example, “256 / 11 = 23.27” but the mnemonic is 24 words or “128 / 11 = 11.63” but the mnemonic is 12 words. The original master seed is hashed with the SHA-256 algorithm, that hash value is hashed again. For a 128-bit master seed, the last four bits from that secondary hash value is appended to the end of the first hash value; for a 256-bit master seed, the last eight bits from that secondary hash value is appended to the end of the first hash value. This provides a checksum, so really your 12th or 24th word is actually a checksum that the rest of the proceeding mnemonic is correct. When you add 4 bits to 128 bits you get 132 bits, which equals 12 11-bit words. When you add 8 bits to 256 bits you get 264 bits, which equals 24 11-bit words.</p>
+<p>SeedSigner can calculate this checksum for you and tell you what the 12th or 24th word is based on the rest of the proceeding mnemonic. This may be helpful if you have a mnemonic phrase that is missing the last word, or if you want to double check a mnemonic, or if you want to pick your own words from the BIP39 list. However, picking your own words from the BIP39 list will probably not be as random as using the random number generator found in tools like the SeedSigner.</p>
+<p>From the main menu navigate to “Seeds” then “+ Create a seed” then “Calc 12th/24th word” then select mnemonic length “12 words” or “24 words.”</p>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/75.png">
+</div>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/76.png">
+</div>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/77.png">
+</div>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/78.png">
+</div>
+<p>On the next screen you can start entering the first 11 words for a 12-word mnemonic or the first 23 words for a 24-word mnemonic. Start by entering the first letter of the desired word, the available letters to choose from for the next letter will be reduced to the only options based on the BIP39 word list. You can also scroll up or down through a list on the right-hand side of the screen using the “KEY1” and “KEY3” buttons on the HAT display. When you find the word you want, push “KEY2” on the HAT display to select that word and move on to the next one. Continue this process until all 11 or 23 words have been entered.</p>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/79.png">
+</div>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/80.png">
+</div>
+<p>After the 11th or 23rd word has been entered, the SeedSigner will display the final word. You will have the option to load that seed into the SeedSigner’s active memory and apply an optional passphrase as well.</p>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/81.webp">
+</div>
+<h3 id="importing-a-mnemonic-phrase">
+  Importing A Mnemonic Phrase
+  <a class="anchor" href="#importing-a-mnemonic-phrase">#</a>
+</h3>
+<p>You can also import a pre-existing 12-word or 24-word mnemonic in its entirety. From the main menu, navigate to “Seeds” then select “Enter 24-word seed” or “Enter 12-word seed.” Then follow the same process above, selecting the first letter of each word until you find the desired word and pressing “KEY2” on the HAT display to select that word. If you enter a word incorrectly, the calculated checksum will be incorrect and the SeedSigner will alert you.</p>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/82.png">
+</div>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/83.png">
+</div>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/84.png">
+</div>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/85.png">
+</div>
+<p>Once all the words have been entered you will be presented with the wallet fingerprint and given the option to apply an optional passphrase.</p>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/86.webp">
+</div>
+<h2 id="seed-backup">
+  Seed Backup
+  <a class="anchor" href="#seed-backup">#</a>
+</h2>
+<p>This section will demonstrate how to backup the master seed generated on the SeedSigner. There are two ways to backup this information: as a mnemonic phrase or as a QR code. A combination of these two methods can be used for redundant backups. Anyone who gains access to this information will be able to steal your bitcoin, so ensure that you take precautions when handling this information. Some basic best practices are to never store this information in a text file, don&rsquo;t save it to a computer, don&rsquo;t take a picture of it and don&rsquo;t speak the words out loud. Handle this information as if it were gold, cash or jewelry.</p>
+<p>Both the mnemonic phrase and the QR code can be transcribed visually from the SeedSigner display without having to connect the SeedSigner to any device to transfer the information. This keeps the SeedSigner completely air gaped while exporting the master seed. The information can be transcribed to an included paper card or to a stainless steel QR code plate, available from <a href="https://vulcan21.com/steelqr/">Vulcan21</a>.</p>
+<p>Paper cards can be quick and easy to fill out, hidden in many different places and easily distributed to different geographic locations. Steel plates can take more time to set up, they may not be as easily concealable, but the steel plates will withstand extreme environmental conditions like fire and flooding; they are much more robust than paper.</p>
+<p>After you generate a new seed on your SeedSigner, either by taking an image or by completing dice rolls, the SeedSigner will direct you to the mnemonic phrase. The mnemonic phrase will be a list of either 12 or 24 English words. If you need to display the mnemonic phrase again after your seed has already been created you can scan in your QR code and navigate to “Backup Seed” then “View Seed Words” then accept the warning and then the list of 12 or 24 words will be displayed. If you did not write down your mnemonic phrase or transcribe your QR code when initially creating your master seed and you have cycled the power on your SeedSigner, then you will need to create a new seed as there is no way for the SeedSigner to store that information in memory. Never deposit any bitcoin to a wallet until you have verified the backup information works to restore the wallet.</p>
+<h3 id="note-card">
+  Note Card
+  <a class="anchor" href="#note-card">#</a>
+</h3>
+<p>When you create a new seed, SeedSigner will direct you to the list of 12 or 24 words. You want to write these words down as they are displayed. The back of the included note cards have space for 24 words. Write these words down legibly and in order. Four words are displayed at a time, select “Next” until you have cycled through all the words.</p>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/87.webp">
+</div>
+<p>Select “Done” when finished and the SeedSigner will prompt you to test yourself on your backup, it is best practice to take this test to ensure your backup was written down correctly. On the reverse side of the note card is a blank 29 by 29 QR code grid. You can visually transcribe your master seed in QR code format onto the note card. This makes importing your wallet into SeedSigner as fast as scanning a QR code can be. After taking the test to confirm the mnemonic phrase, you can scroll down the menu on your SeedSigner to “Backup Seed” then “Export as SeedQR” then “I Understand” then “Begin 29x29.”</p>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/87.png">
+</div>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/88.png">
+</div>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/89.png">
+</div>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/90.png">
+</div>
+<p>The SeedSigner will then display a magnified view of the QR code, one segment at a time starting on A1. You can toggle the joystick to navigate through the rest of the segments and visually transcribe the darkened squares you see on the screen to the card using a permanent marker. There are four predefined squares on the QR code, that are already printed on the card for you.</p>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/91.png">
+</div>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/92.png">
+</div>
+<p>There is error correction built into the QR code scanning software, meaning that if you misplace a few squares, the SeedSigner will still be able to produce your seed. Try to be as accurate as possible though.</p>
+<p>Once you have the QR code transcribed, test it by scanning it and checking the fingerprint, an eight-character string that uniquely identifies your wallet.</p>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/93.webp">
+</div>
+<p>If you are using a passphrase on your wallet, you will need to decide how you want to handle this added piece of information. A passphrase can be thought of as a 13th or 25th word added to your mnemonic phrase; this will create a completely different wallet. A passphrase can be a string of any combination of uppercase letters, lowercase letters, numbers and special characters. Only you will know this passphrase and there is no way for the SeedSigner or anyone to help you recover a lost or forgotten passphrase. By entering a passphrase on your wallet, this added piece of information will be required each time you want to access this wallet in the future.</p>
+<p>There is a tool maintained by <a href="https://twitter.com/BitcoinQ_A">@BitcoinQ_A</a> that can assist you in trying different passphrases over a mnemonic phrase in case you write down the passphrase incorrectly but have a rough idea of what it should be. You can enter your mnemonic words and a receiving address and test different passphrases. Use this tool offline by downloading it, do not enter your mnemonic phrase or passphrase into a network-connected device.</p>
+<p>Visit <a href="https://bitcoiner.guide/seed/">Bitcoiner.Guide/seed/</a> to learn more.</p>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/94.webp">
+</div>
+<p>Decide if you want to write down the fingerprint for the mnemonic phrase wallet, or the fingerprint for the passphrase-applied wallet, or both. In this example, the generated fingerprint once the QR code is scanned is different from the fingerprint generated once the passphrase is applied.</p>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/95.png">
+</div>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/96.png">
+</div>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/97.png">
+</div>
+<p>Or in this example, the primary wallet fingerprint is noted at the top and then the fingerprint for the passphrase-applied wallet is noted at the bottom with the indicator &ldquo;PP&rdquo; for passphrase. Keep in mind too that if you store your mnemonic phrase with your passphrase then an adversary would have all the information they need to steal your bitcoin. However, if you store your passphrase separate from your mnemonic phrase then there is added security.</p>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/98.webp">
+</div>
+<p>One thing to consider as well is that although the fingerprint itself will not put the security of your bitcoin at risk directly, the simple existence of an additional fingerprint could be enough to tip off an adversary that there is another bitcoin wallet which a passphrase is needed to access. If you set up a duress wallet with a small amount of bitcoin in the primary wallet and the majority of bitcoin in the passphrase-applied wallet, this could be a consideration for you.</p>
+<h3 id="qr-code-steel-plate">
+  QR Code Steel Plate
+  <a class="anchor" href="#qr-code-steel-plate">#</a>
+</h3>
+<p>The initial process for creating a steel QR code backup is much the same as for the note card version. After you have saved your mnemonic phrase, on the SeedSigner navigate to “Backup Seed” then “Export as SeedQR” then “I Understand” then “Begin 29x29.” Alternatively, you could transcribe this information from a pre-existing note card QR code if you already have one backup that you are upgrading to steel.</p>
+<p>Use a permanent marker to mark where the punches should be made.</p>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/99.webp">
+</div>
+<p>If you make a mistake, you can remove the permanent marker with acetone and a Q-tip. There is error correction software in the SeedSigner that tolerates some misplaced dots, but it is best practice to be as accurate as possible.</p>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/100.webp">
+</div>
+<p>Prior to stamping the dots with a punch, test the QR code with the SeedSigner.</p>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/101.png">
+</div>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/102.png">
+</div>
+<p>Now you are ready to stamp the dots permanently into the steel plate with a punch. This demonstration uses what is known as a &ldquo;Prick Punch&rdquo; and a 4-pound mini sledge hammer on a concrete floor. Having a solid surface to hammer on and a heavy hammer is key to getting crisp, clear punches.</p>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/103.jpg">
+</div>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/104.jpg">
+</div>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/105.webp">
+</div>
+<p>A letter and number stamp set can be used to mark additional information onto the steel plate such as the fingerprint. Again, make careful considerations of how you will store information related to passphrase applied wallets. In this example, the primary fingerprint is marked on top — this is the resulting fingerprint when the QR code is scanned. On the bottom, the &ldquo;PP&rdquo; indication is used to symbolize “passphrase” followed by the resulting fingerprint when the passphrase is applied.</p>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/106.webp">
+</div>
+<p>Be sure to test your stamped QR code steel plate by scanning it with your SeedSigner. Be aware that you may need to try different lighting conditions.</p>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/107.png">
+</div>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/108.png">
+</div>
+<p>You should have well-defined and clear marks in your steel plate that match the note card QR code.</p>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/109.jpg">
+</div>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/110.jpg">
+</div>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/111.jpg">
+</div>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/112.jpg">
+</div>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/113.jpg">
+</div>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/114.jpg">
+</div>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/115.jpg">
+</div>
+<p>Your Steel QR code is now ready to be securely stored.</p>
+<h3 id="fire-test">
+  Fire Test
+  <a class="anchor" href="#fire-test">#</a>
+</h3>
+<p>To verify that the wallet information could be recovered in the event of catastrophic events such as fire, the steel plate was heated up to just below melting temperatures using an oxygen and acetylene torch. Ideally, in the event of a fire, the QR code on the steel plate would still be able to be scanned and recovered quickly. However, fire can cause the finish on the plate to disappear leaving very little distinction between the plate background and the darkened areas.</p>
+<p>Recovery in this case can still be possible by visually transcribing the information from the burnt QR code steel plate to a paper note card and then scanning the QR code on the note card. This stress test revealed that the steel plate can withstand temperatures just below 1,500° C, well above typical house fire temperatures, and the information contained within the steel plate was still 100% recoverable by visually transcribing the QR code to a paper note card.</p>
+<p>You can watch the fire test in the full video at <a href="https://media.econoalchemist.com/w/du6mSagqhxYSr5uz8CvnzU?start=12m23s">this link</a>.</p>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/116.png">
+</div>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/117.jpg">
+</div>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/118.jpg">
+</div>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/119.jpg">
+</div>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/120.jpg">
+</div>
+<p>The wallet was 100% recoverable by transcribing the information on the burnt steel plate to a note card and then scanning the note card with the SeedSigner. Attempts were made to modify the finish of the steel plate after the fire test to see if enough distinction could be brought back to allow for scanning. A brass bristle brush was used, as well as some solvent to remove any remaining carbon, then some oil was applied which just caused the surface to turn a brown hue, and finally a polish wheel was used on the surface and a permanent marker was used to color in the stationary squares in the four corners of the QR code. But the QR code would not scan. Transcribing it though did work just fine.</p>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/121.png">
+</div>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/122.png">
+</div>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/123.png">
+</div>
+<p>As an example of the error correction in action, you will notice that some dots were mis-stamped in segment B6 when transcribing the QR code to the steel plate. The dots were later re-stamped in the correct place, all three variations of the QR code produced the same seed.</p>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/124.webp">
+</div>
+<h2 id="sparrow-wallet">
+  Sparrow Wallet
+  <a class="anchor" href="#sparrow-wallet">#</a>
+</h2>
+<p>This section will demonstrate how to import your wallet to Sparrow Wallet from SeedSigner. The concept here is that the SeedSigner will use your private key to sign transactions and Sparrow Wallet will generate those transactions for the SeedSigner to sign. This way, you can keep your private key off of a network-connected device while still being able to check your wallet balance and generate receiving addresses safely.</p>
+<p>Importing a wallet in this manner enables you to have a &ldquo;watch-only&rdquo; wallet available on your personal computer (PC) without putting your bitcoin private keys at risk. The watch-only wallet can display your balance and generate receiving addresses without you needing to go through the process of opening your wallet with your SeedSigner each time. You would just use your SeedSigner when you want to sign transactions from this wallet to spend those bitcoin.</p>
+<p>For more information on installing Sparrow Wallet and connecting it to a node, check out the <a href="https://www.sparrowwallet.com/">Sparrow Wallet website</a>.</p>
+<p>This demonstration uses Sparrow Wallet installed on a Windows desktop using <a href="https://bitcoincore.org/">Bitcoin Core</a> as the node backend.</p>
+<h3 id="step-one-initiate-import">
+  Step One: Initiate Import
+  <a class="anchor" href="#step-one-initiate-import">#</a>
+</h3>
+<p>Once you have Sparrow Wallet installed and open on your PC, navigate to “File” then “Import Wallet”</p>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/125.webp">
+</div>
+<h3 id="step-two-device-selection">
+  Step Two: Device Selection
+  <a class="anchor" href="#step-two-device-selection">#</a>
+</h3>
+<p>In the pop-up window, scroll down and select “SeedSigner” then “Scan” to launch your webcam.</p>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/126.webp">
+</div>
+<h3 id="step-three-export-watch-only-information">
+  Step Three: Export Watch-Only Information
+  <a class="anchor" href="#step-three-export-watch-only-information">#</a>
+</h3>
+<ul>
+<li>On your SeedSigner, scan your seed QR code and enter your passphrase</li>
+<li>Then go to “Export Xpub” and select your wallet</li>
+<li>Then choose your quorum type, “Single Sig” or “Multisig” (single sig is used in this demo).</li>
+<li>Then choose your script type (the kind of addresses you want to use) “Native Segwit” or “Nested Segwit”</li>
+<li>Then select your Bitcoin wallet application (Sparrow Wallet in this example).</li>
+</ul>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/127.png">
+</div>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/128.png">
+</div>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/129.png">
+</div>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/130.png">
+</div>
+<p>You will receive a warning about privacy implications of exporting your xpub, then you will have a chance to review the details. Once you select “Export Xpub” the series of animated QR codes will begin and you can hold your SeedSigner up to your PC webcam so that Sparrow Wallet can gather the details it needs to import your watch-only wallet.</p>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/131.png">
+</div>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/132.png">
+</div>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/133.png">
+</div>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/134.png">
+</div>
+<p>If you are having trouble with the brightness of the HAT display, you can hold the joystick in the up or down position during the animated QR code loop to change the brightness of the screen. There are right brightness levels from very dim to very bright.</p>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/135.webp">
+</div>
+<h3 id="step-four-finalize-import">
+  Step Four: Finalize Import
+  <a class="anchor" href="#step-four-finalize-import">#</a>
+</h3>
+<p>Back in Sparrow Wallet, once you scan the animated QR codes, you can name your new wallet and add an optional password. Be careful not to confuse this password with your passphrase. This password in Sparrow Wallet is just to encrypt the wallet file on your PC.</p>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/136.png">
+</div>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/137.png">
+</div>
+<h3 id="step-five-receiving-bitcoin">
+  Step Five: Receiving Bitcoin
+  <a class="anchor" href="#step-five-receiving-bitcoin">#</a>
+</h3>
+<p>Once your node finishes scanning for any transactions (automatic process), you will be at your wallet home screen in Sparrow Wallet. If you click on the “Receive” tab on the left-hand side of the interface, you will see the first address on your SeedSigner that you can deposit some bitcoin to.</p>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/138.png">
+</div>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/139.png">
+</div>
+<p>Once you make a deposit, the transaction should show up right away in Sparrow Wallet as “Unconfirmed” until it receives some block confirmations. Once this deposit is made, a signature from your SeedSigner will be required to spend it.</p>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/140.webp">
+</div>
+<h3 id="creating-a-psbt">
+  Creating A PSBT
+  <a class="anchor" href="#creating-a-psbt">#</a>
+</h3>
+<p>Once you have bitcoin deposited to your wallet, you can create a partially-signed bitcoin transaction (PSBT) in Sparrow Wallet. Then you can exchange QR codes back and forth between the SeedSigner and Sparrow Wallet to sign the transaction in an air-gapped fashion with your SeedSigner.</p>
+<h4 id="step-one-utxo-selection">
+  Step One: UTXO Selection
+  <a class="anchor" href="#step-one-utxo-selection">#</a>
+</h4>
+<p>From Sparrow Wallet, navigate to your “UTXOs” tab on the left-hand side of the interface. Then select the UTXO you want to spend. Alternatively, you could just select the “Send” tab instead and enter an amount, but in this example the entire UTXO is being spent.</p>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/141.webp">
+</div>
+<h4 id="step-two-build-transaction">
+  Step Two: Build Transaction
+  <a class="anchor" href="#step-two-build-transaction">#</a>
+</h4>
+<ul>
+<li>On the next screen, you can enter the address you want to spend the bitcoin to.</li>
+<li>Add a label so you remember what the transaction was for. This is only visible in your local wallet instance, these labels are not included in the transaction information that gets broadcast to the Bitcoin network.</li>
+<li>Enter the amount (or select maximum amount in this case).</li>
+<li>Set your miner fee rate</li>
+<li>Then click on “Create Transaction” once you have all the details filled in.</li>
+</ul>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/142.webp">
+</div>
+<h4 id="step-three-finalize-transaction">
+  Step Three: Finalize Transaction
+  <a class="anchor" href="#step-three-finalize-transaction">#</a>
+</h4>
+<p>On the next screen you will be presented with the transaction ID (txid) and a graph showing the inputs and outputs to the transaction. Click on “Finalize Transaction for Signing.”</p>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/143.webp">
+</div>
+<h4 id="step-four-animated-qr-codes">
+  Step Four: Animated QR Codes
+  <a class="anchor" href="#step-four-animated-qr-codes">#</a>
+</h4>
+<p>On the next screen, click on “Show QR” and Sparrow Wallet will display a series of animated QR codes in a pop-up window. Then you can scan those with your SeedSigner. If you have not done so already, you will need to power on your SeedSigner, scan your QR code seed phrase, enter your passphrase and then select the option to sign the PSBT.</p>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/144.png">
+</div>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/145.jpg">
+</div>
+<h4 id="step-five-confirmation">
+  Step Five: Confirmation
+  <a class="anchor" href="#step-five-confirmation">#</a>
+</h4>
+<p>On your SeedSigner you will confirm several details about this transaction:</p>
+<ul>
+<li>Make sure you select the correct wallet, noting the fingerprint.</li>
+<li>Check the amount and input/output graph.</li>
+<li>You will be warned if this is a full spend.</li>
+<li>Verify that the transaction math checks out.</li>
+</ul>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/146.jpg">
+</div>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/147.jpg">
+</div>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/148.jpg">
+</div>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/149.jpg">
+</div>
+<h4 id="step-six-signing">
+  Step Six: Signing
+  <a class="anchor" href="#step-six-signing">#</a>
+</h4>
+<ul>
+<li>Double check the address you are sending to.</li>
+<li>Approve the PSBT if everything looks good.</li>
+<li>Select the Bitcoin wallet application you are working with (Sparrow Wallet in this case).</li>
+<li>In Sparrow Wallet, select “Scan QR” then hold up the animated series of QR codes flashing on the SeedSigner screen.</li>
+</ul>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/150.jpg">
+</div>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/151.jpg">
+</div>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/152.jpg">
+</div>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/153.png">
+</div>
+<h4 id="step-seven-broadcast">
+  Step Seven: Broadcast
+  <a class="anchor" href="#step-seven-broadcast">#</a>
+</h4>
+<p>Once the details are received by Sparrow Wallet, then select “Broadcast Transaction.”</p>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/154.webp">
+</div>
+<p>Once your transaction is broadcast to the Bitcoin network, then you can use your favorite block explorer to keep an eye on it.</p>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/155.webp">
+</div>
+<h3 id="importing-private-key">
+  Importing Private Key
+  <a class="anchor" href="#importing-private-key">#</a>
+</h3>
+<p>As of Sparrow Wallet version 1.6.4, you can scan your private key QR code and import to Sparrow Wallet. If you are trying to keep your wallet air gapped, then do not attempt this as it will put your private key on a device that is either currently connected to the internet or has been/will be connected to the internet. The risk here is that you could be turning your cold wallet into a hot wallet.</p>
+<p>By following the steps below, Sparrow Wallet will write a wallet file to your PC. This wallet file will contain your private key. If your computer is compromised in the future and this file is found then your bitcoin could be at risk. Using a password to encrypt this wallet file is a minimum-recommended precaution if you choose to proceed. A passphrase will not be stored in the wallet file and this is another safeguard you can use to help protect your bitcoin in the event that your private key is exposed. Importing a private key can be useful for quickly generating your wallet, constructing a transaction and broadcasting it without having to pass details back and forth to the SeedSigner if you find yourself in a situation where time is of the essence and your signing device is unavailable to you.</p>
+<p>If you want the convenience of being able to generate receiving addresses and checking your balance without the security vulnerability of having your private keys on a network-connected device, then use the watch-only wallet option described above. You can also sign a PSBT in Sparrow Wallet using your SeedSigner QR code and Sparrow Wallet will not save that information, if you are in an emergency.</p>
+<h4 id="step-one-initiate-import-1">
+  Step One: Initiate Import
+  <a class="anchor" href="#step-one-initiate-import-1">#</a>
+</h4>
+<p>In Sparrow Wallet, navigate to “File” then “Import Wallet.”</p>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/156.webp">
+</div>
+<h4 id="step-two-select-method">
+  Step Two: Select Method
+  <a class="anchor" href="#step-two-select-method">#</a>
+</h4>
+<p>A window will pop up with several import options. On the “Mnemonic Words” option, click on the drop-down menu and choose “Scan QR.”</p>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/157.webp">
+</div>
+<h4 id="step-three-scan-qr-code">
+  Step Three: Scan QR Code
+  <a class="anchor" href="#step-three-scan-qr-code">#</a>
+</h4>
+<p>Your webcam should automatically launch, hold up your SeedSigner private key QR code so Sparrow Wallet can gather the details.</p>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/158.webp">
+</div>
+<h4 id="step-four-passphrase">
+  Step Four: Passphrase
+  <a class="anchor" href="#step-four-passphrase">#</a>
+</h4>
+<p>If you have a passphrase applied to your wallet, enter it now. Then click on “Discover Wallet.”</p>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/159.webp">
+</div>
+<h4 id="step-five-name-wallet">
+  Step Five: Name Wallet
+  <a class="anchor" href="#step-five-name-wallet">#</a>
+</h4>
+<p>Then you will be asked to name your new wallet. Once you have entered a name, click on “Create Wallet.”</p>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/160.webp">
+</div>
+<h4 id="step-six-add-password">
+  Step Six: Add Password
+  <a class="anchor" href="#step-six-add-password">#</a>
+</h4>
+<p>Optionally, you can add a password to protect this wallet file. This password should not be confused with your <em>passphrase</em>. This password will encrypt the wallet file saved on your PC.</p>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/161.webp">
+</div>
+<h4 id="step-seven-confirm-passphrase">
+  Step Seven: Confirm Passphrase
+  <a class="anchor" href="#step-seven-confirm-passphrase">#</a>
+</h4>
+<p>You will then be asked to confirm the passphrase you entered in step four.</p>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/162.webp">
+</div>
+<p>Now you have a fully-functional wallet from your SeedSigner live in Sparrow Wallet. Remember, if you are using Sparrow Wallet on a network-connected PC then this is no longer an air-gapped wallet. However, you can now quickly construct and broadcast transactions.</p>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/163.webp">
+</div>
+<p>Another benefit is that now you can find your PayNym to start making collaborative transactions and you can use the Sparrow Wallet Whirlpool implementation for the privacy benefits.</p>
+<p>Navigate to “Tools” then “Show PayNym.”</p>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/164.webp">
+</div>
+<p>Then click on “Retrieve PayNym.”</p>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/165.png">
+</div>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/166.png">
+</div>
+<p>To learn more about making collaborative transactions or using Whirlpool, check out the documents section of <a href="https://www.sparrowwallet.com/docs/mixing-whirlpool.html">Sparrow Wallet website</a> or the privacy section of the <a href="https://bitcoiner.guide/articles/">Bitcoiner.Guide website</a>.</p>
+<h2 id="multisig">
+  Multisig
+  <a class="anchor" href="#multisig">#</a>
+</h2>
+<p>This section demonstrates how to set up a multisig wallet using SeedSigner and Sparrow Wallet.</p>
+<h3 id="step-one-generate-seeds">
+  Step One: Generate Seeds
+  <a class="anchor" href="#step-one-generate-seeds">#</a>
+</h3>
+<p>First, create as many new seeds as you want for your multisig quorum. Follow the same process explained in the &ldquo;Generate-Seed&rdquo; section, use either the image capture method or the dice roll method. You can apply an optional passphrase as well.</p>
+<p>In this example, four new seeds were generated to construct a four-of-four multisig. A passphrase was applied to each one.</p>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/167.jpg">
+</div>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/168.jpg">
+</div>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/169.jpg">
+</div>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/170.jpg">
+</div>
+<h3 id="step-two-create-multisig-wallet-in-sparrow">
+  Step Two: Create Multisig Wallet In Sparrow
+  <a class="anchor" href="#step-two-create-multisig-wallet-in-sparrow">#</a>
+</h3>
+<ul>
+<li>In Sparrow Wallet, navigate to “File” then “New Wallet.”</li>
+<li>Then name your new multisig wallet.</li>
+</ul>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/171.png">
+</div>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/172.png">
+</div>
+<h3 id="step-three-configure-the-multisig-quorum">
+  Step Three: Configure The Multisig Quorum
+  <a class="anchor" href="#step-three-configure-the-multisig-quorum">#</a>
+</h3>
+<ul>
+<li>Select “Multi Signature” from the policy type drop-down menu.</li>
+<li>Set the “M of N” cosigners. This is the minimum number of required signatures you want for your wallet. Typical quorums are three-of-five or five-of-seven, etc. Four-of-four was used in this example.</li>
+<li>You will notice that a new keystore tab appears at the bottom of the screen for each of the cosigners you add.</li>
+<li>Once that is set, you can select “Airgapped Hardware Wallet” to import the first cosigner. The xpub information will be exported from SeedSigner for each wallet in this example to preserve the air-gapped advantage.</li>
+</ul>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/173.webp">
+</div>
+<h3 id="step-four-initiate-pc-webcam">
+  Step Four: Initiate PC Webcam
+  <a class="anchor" href="#step-four-initiate-pc-webcam">#</a>
+</h3>
+<p>Once you click on “Airgapped Hardware Wallet,” a window will pop up with several options, next to the SeedSigner icon, click on “Scan.” This will launch your PC webcam.</p>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/174.webp">
+</div>
+<h3 id="step-five-export-xpub">
+  Step Five: Export Xpub
+  <a class="anchor" href="#step-five-export-xpub">#</a>
+</h3>
+<ul>
+<li>On your SeedSigner, you should have all of your seeds loaded that you want to export. If you need to, scan the QR codes to load them now. Select the first one.</li>
+<li>Scroll down to “Export Xpub.”</li>
+<li>Select “Multisig.”</li>
+<li>Select script type, “Native Segwit” was used in this example</li>
+<li>Then select the wallet application, “Sparrow” was used in this example.</li>
+<li>Accept the warning about the potential privacy leak exporting your xpub poses.</li>
+</ul>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/175.jpg">
+</div>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/176.jpg">
+</div>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/177.jpg">
+</div>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/178.jpg">
+</div>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/179.jpg">
+</div>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/180.jpg">
+</div>
+<h3 id="step-six-confirm-details">
+  Step Six: Confirm Details
+  <a class="anchor" href="#step-six-confirm-details">#</a>
+</h3>
+<p>SeedSigner will display the details of what you are about to export. Look them over and confirm everything is correct. You want to ensure that the displayed fingerprint matches the passphrase-applied fingerprint you have written down.</p>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/181.webp">
+</div>
+<h3 id="step-seven-import-xpub">
+  Step Seven: Import Xpub
+  <a class="anchor" href="#step-seven-import-xpub">#</a>
+</h3>
+<p>The SeedSigner will start to flash a series of animated QR codes that contain your xpub information. Hold this up to your PC webcam so that Sparrow Wallet can gather the details necessary to import your first cosigner.</p>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/182.jpg">
+</div>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/183.png">
+</div>
+<h3 id="step-eight-confirm-and-repeat">
+  Step Eight: Confirm And Repeat
+  <a class="anchor" href="#step-eight-confirm-and-repeat">#</a>
+</h3>
+<p>Once Sparrow Wallet gets the details that it needs, it will populate several fields under the first keystore tab. Double check that this information is correct, taking care to ensure the fingerprint is correct. If everything looks good, then click on the second keystore tab and repeat that process with your second cosigner, then again for your third, and so on.</p>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/184.webp">
+</div>
+<h3 id="step-nine-finalize">
+  Step Nine: Finalize
+  <a class="anchor" href="#step-nine-finalize">#</a>
+</h3>
+<p>Once you have all of your cosigners imported, click on “Apply.”</p>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/185.webp">
+</div>
+<p>If you want to add an optional password, you can do so when Sparrow Wallet prompts you. This is not to be confused with your passphrase. The password encrypts the wallet file saved on your PC.</p>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/186.webp">
+</div>
+<h3 id="spending">
+  Spending
+  <a class="anchor" href="#spending">#</a>
+</h3>
+<p>Your new multisig wallet is now ready to deposit to. You can generate receive addresses from Sparrow Wallet and deposit bitcoin. You will need your minimum number of cosigners to each sign the transaction to spend bitcoin deposited to this multisig wallet.</p>
+<p>When you want to spend your bitcoin, navigate to the “Send” tab in Sparrow Wallet and fill out the address you wish to spend to, add a label, set the amount to spend and select a miner fee rate. Then click on “Create Transaction.”</p>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/187.webp">
+</div>
+<p>Then click on “Finalize Transaction for Signing.&quot;</p>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/188.webp">
+</div>
+<p>Then you will have the option to display the transaction QR code so that you can scan it from the SeedSigner with the appropriate cosigners loaded. You will have to do each one individually. Once the SeedSigner receives the information it needs, it will display the signed PSBT as an animated QR code to be scanned by your PC webcam for Sparrow Wallet to receive. This is the same process used for signing transactions covered in the &ldquo;Sparrow Wallet&rdquo; section, only you have to do it for as many minimum number of cosigners you have set on your multisig wallet.</p>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/189.png">
+</div>
+<div class="imageWrapper">
+    <img src="/img/seedsigner/190.png">
+</div>
+<h3 id="example">
+  Example
+  <a class="anchor" href="#example">#</a>
+</h3>
+<p>To spread awareness of SeedSigner, Sparrow Wallet and multisig wallets, 100,000 sats were deposited to the four-of-four multisig wallet in this guide. You can see the transaction here: <a href="https://mempool.space/tx/dec20d2e6e3ce792124ddd738473e60ac7cf5444b3d24e78dff5871a6528c2bc">mempool.space</a>.</p>
+<p>The scavenger hunt was announced on Twitter here: <a href="https://twitter.com/econoalchemist/status/1528497446606606336?s=20&amp;t=l_egT555rddanOrEqpAplQ">econoalchemist</a>.</p>
+<h2 id="the-importance-of-self-custody">
+  The Importance Of Self Custody
+  <a class="anchor" href="#the-importance-of-self-custody">#</a>
+</h2>
+<p>Understanding the context for self custody is a critical aspect of mitigating some of the most pervasive risks involved with Bitcoin, as the saying goes: &ldquo;Not your keys, not your coins.&rdquo; Trusting third parties like exchanges with your bitcoin introduces several risks that have the potential to leave you vulnerable to theft, seizure and unrealized capital gains taxes.</p>
+<p>Additionally, most custodians, if not all of them, are required to comply with know-your-customer (KYC) regulations that introduce you to even more risks associated with data breaches that leak your personally-identifiable information (PII) to the wide open internet. All Bitcoin transactions are public and if your PII is tied to on-chain data, then you are left with no privacy against the trusted custodian who knows your identity and your on-chain balances. In the hands of a hacker, that information can put your life at risk. Also, since these custodians prioritize their relationship with law enforcement and will always make decisions that do not have your best interest in mind; in the hands of your government, this information can put your freedoms at risk.</p>
+<p>If you are interested in learning more about catastrophic events involving trusted third parties, check out these resources:</p>
+<ul>
+<li><a href="https://decrypt.co/5853/complete-story-quadrigacx-190-million">Exchange CEO mysteriously &ldquo;dies&rdquo; taking $190 million dollars worth of cryptocurrency keys to the grave</a>.</li>
+<li><a href="https://decrypt.co/31485/coinbase-license-analytics-irs-dea">Cryptocurrency exchange partners with IRS and DEA</a></li>
+<li><a href="https://decrypt.co/95586/hacker-steals-customer-data-circle-blockfi-big-crypto-firms">Data breach leaks customer information from 30 cryptocurrency companies</a></li>
+<li><a href="https://www.businessinsider.com/one-time-wealth-tax-in-argentina-brought-in-24-billion-2021-5?op=1">Argentina introduces &ldquo;one-off&rdquo; wealth tax</a></li>
+</ul>
+<p>Many of these risks can be mitigated by taking self custody. The trade off is that you are taking the personal responsibility of securing your bitcoin. You and you alone are responsible for your bitcoin. There are no &ldquo;1-800&rdquo; helplines to reverse your transactions and nobody can help you recover a lost or forgotten seed phrase. Luckily there are many tools available to help you achieve safe and private self custody.</p>
+<p>SeedSigner is one such tool that combines general-purpose, inexpensive hardware with free and open-source software to provide you with a DIY signing device so you maintain unrestricted, permissionless access to your bitcoin.</p>
+<p>Customers of Bitcoin hardware wallet manufacturers face certain risks that users should be aware of. There is risk of a supply chain attack where the hardware is intercepted en route and modified in some compromising way prior to final delivery. There is also a risk introduced by exposing personal information to such manufacturers, for example, the <a href="https://www.ledger.com/blog/our-communications-about-data-breach">Ledger data breach</a> exposed the PII of over one million customers which led to sophisticated phishing attacks and potentially aided in <a href="https://coinidol.com/criminals-steal-cryptocurrency/">physical assault and armed robbery</a>. There is also the risk of a <a href="https://medium.com/cryptoadvance/hardware-wallets-can-be-hacked-but-this-is-fine-a6156bbd199">&ldquo;sunset&rdquo; attack</a> where the hardware wallet manufacturer could try different nonces until they guess your master private key based on information obtained by watching your transactions on the public <a href="https://bitcoinmagazine.com/guides/what-is-blockchain">blockchain</a>.</p>
+<p>One helpful feature of SeedSigner is that the required components are widely available, inexpensive and general purpose. This means that these parts can be procured in such a way that no indication of using them for Bitcoin is revealed. SeedSigner is sold in a kit from various vendors, so if you purchase the complete kit then it is obvious what the intended use is. However, throughout this guide you will find links to several vendors for the individual components so that you have the resources you need to procure them individually if you prefer.</p>
+<h2 id="video-summary">
+  Video Summary
+  <a class="anchor" href="#video-summary">#</a>
+</h2>
+<p><a href="https://media.econoalchemist.com/w/du6mSagqhxYSr5uz8CvnzU">This video</a> demonstrates a high-level overview of the content within this guide. The video is not meant as a replacement for the information in this guide, only as a supplemental visual assistant that demonstrates testing, assembly, generating a seed, entering a passphrase, backing up a seed via QR code and fire-testing the steel plate.</p>
+<center><video src="https://v.nostr.build/L5w2.mp4" controls style="width: 100%"></video></center>
+<h2 id="trade-offs">
+  Trade Offs
+  <a class="anchor" href="#trade-offs">#</a>
+</h2>
+<p>No solution is without its trade offs, here are a few things to consider with the SeedSigner (a full list of acknowledged criticisms and vulnerabilities is maintained by SeedSigner <a href="https://github.com/SeedSigner/independent_custody_guide#alright-but-theres-got-to-be-a-catch-right">here</a>):</p>
+<ul>
+<li>There is no safety mechanism that verifies the software like what is found on other hardware wallets. The user is fully responsible for verifying the authenticity of the software used on the SeedSigner. This is explained in detail for both Windows and Linux users in the &ldquo;Software&rdquo; section of this guide. Learn how to use the GPG verification tools to mitigate this concern.</li>
+<li>Saving the private key in a QR code format increases the opportunities that an adversary could get this information. As with any backup information no matter the form, if anyone accesses it they could snap a picture of a list of words or a steel plate or they could just take the backup with them in their pocket. Users benefit from keeping backup information private and secure in the way they would handle gold, jewelry or cash. Having some redundant security in place like a passphrase that is stored separately from the backup information can help mitigate these concerns. Multisig cosigners that are dispersed in different geographic locations can also be beneficial to mitigating a single source of failure.</li>
+<li>Constructing a multisig quorum using the same signing device for all cosigners can introduce a vulnerability if some unforeseen issue arises with that particular signing device. Best practice is to use signing devices from multiple manufacturers to mitigate the risks of a sunset attack and or some security bug that puts your entire multisig balance at risk because you did not diversify the hardware used.</li>
+</ul>
 </article>
   <hr>
 
@@ -3579,39 +4169,73 @@ https://github.com/alex-shpak/hugo-book
   <ul>
     <li>
       <ul>
-        <li><a href="#проблема">Проблема</a>
+        <li><a href="#unboxing">Unboxing</a></li>
+        <li><a href="#software">Software</a>
           <ul>
-            <li><a href="#сложности">Сложности</a></li>
-            <li><a href="#опасности">Опасности</a></li>
-            <li><a href="#дороговизна">Дороговизна</a></li>
+            <li><a href="#step-one-download">Step One: Download</a></li>
+            <li><a href="#step-two-a-verify--windows">Step Two, A: Verify — Windows</a></li>
+            <li><a href="#step-two-b-verify--linux">Step Two, B: Verify — Linux</a></li>
+            <li><a href="#step-three-flash">Step Three: Flash</a></li>
           </ul>
         </li>
-        <li><a href="#необходимые-компоненты">Необходимые компоненты</a>
+        <li><a href="#hardware">Hardware</a>
           <ul>
-            <li><a href="#raspberry-pi-zero">Raspberry Pi Zero</a></li>
-            <li><a href="#дисплей">Дисплей</a></li>
-            <li><a href="#камера">Камера</a></li>
-            <li><a href="#карта-microsd">Карта microSD </a></li>
-            <li><a href="#корпус">Корпус</a></li>
-            <li><a href="#цена">Цена</a></li>
+            <li><a href="#the-enclosure">The Enclosure</a></li>
+            <li><a href="#the-camera-and-cable">The Camera And Cable</a></li>
+            <li><a href="#the-raspberry-pi-zero-v13">The Raspberry Pi Zero v1.3</a></li>
+            <li><a href="#the-waveshare-lcd-hat-display">The Waveshare LCD HAT Display</a></li>
           </ul>
         </li>
-        <li><a href="#сборка">Сборка</a>
+        <li><a href="#testing-and-assembly">Testing And Assembly</a>
           <ul>
-            <li><a href="#программное-обеспечение">Программное обеспечение</a></li>
-            <li><a href="#железо">Железо</a></li>
+            <li><a href="#testing">Testing</a></li>
+            <li><a href="#assembly">Assembly</a></li>
           </ul>
         </li>
-        <li><a href="#использование">Использование</a>
+        <li><a href="#generate-a-new-seed">Generate A New Seed</a>
           <ul>
-            <li><a href="#включение">Включение</a></li>
-            <li><a href="#основные-элементы">Основные элементы</a></li>
-            <li><a href="#базовая-настройка">Базовая настройка</a></li>
-            <li><a href="#функции">Функции</a></li>
-            <li><a href="#создание-сид-фразы-и-генерация-qr">Создание сид-фразы и генерация QR</a></li>
-            <li><a href="#получение-и-отправка-средств">Получение и отправка средств</a></li>
+            <li><a href="#method-one-with-camera">Method One: With Camera</a></li>
+            <li><a href="#method-two-with-dice">Method Two: With Dice</a></li>
+            <li><a href="#calculating-a-mnemonic-checksum">Calculating A Mnemonic Checksum</a></li>
+            <li><a href="#importing-a-mnemonic-phrase">Importing A Mnemonic Phrase</a></li>
           </ul>
         </li>
+        <li><a href="#seed-backup">Seed Backup</a>
+          <ul>
+            <li><a href="#note-card">Note Card</a></li>
+            <li><a href="#qr-code-steel-plate">QR Code Steel Plate</a></li>
+            <li><a href="#fire-test">Fire Test</a></li>
+          </ul>
+        </li>
+        <li><a href="#sparrow-wallet">Sparrow Wallet</a>
+          <ul>
+            <li><a href="#step-one-initiate-import">Step One: Initiate Import</a></li>
+            <li><a href="#step-two-device-selection">Step Two: Device Selection</a></li>
+            <li><a href="#step-three-export-watch-only-information">Step Three: Export Watch-Only Information</a></li>
+            <li><a href="#step-four-finalize-import">Step Four: Finalize Import</a></li>
+            <li><a href="#step-five-receiving-bitcoin">Step Five: Receiving Bitcoin</a></li>
+            <li><a href="#creating-a-psbt">Creating A PSBT</a></li>
+            <li><a href="#importing-private-key">Importing Private Key</a></li>
+          </ul>
+        </li>
+        <li><a href="#multisig">Multisig</a>
+          <ul>
+            <li><a href="#step-one-generate-seeds">Step One: Generate Seeds</a></li>
+            <li><a href="#step-two-create-multisig-wallet-in-sparrow">Step Two: Create Multisig Wallet In Sparrow</a></li>
+            <li><a href="#step-three-configure-the-multisig-quorum">Step Three: Configure The Multisig Quorum</a></li>
+            <li><a href="#step-four-initiate-pc-webcam">Step Four: Initiate PC Webcam</a></li>
+            <li><a href="#step-five-export-xpub">Step Five: Export Xpub</a></li>
+            <li><a href="#step-six-confirm-details">Step Six: Confirm Details</a></li>
+            <li><a href="#step-seven-import-xpub">Step Seven: Import Xpub</a></li>
+            <li><a href="#step-eight-confirm-and-repeat">Step Eight: Confirm And Repeat</a></li>
+            <li><a href="#step-nine-finalize">Step Nine: Finalize</a></li>
+            <li><a href="#spending">Spending</a></li>
+            <li><a href="#example">Example</a></li>
+          </ul>
+        </li>
+        <li><a href="#the-importance-of-self-custody">The Importance Of Self Custody</a></li>
+        <li><a href="#video-summary">Video Summary</a></li>
+        <li><a href="#trade-offs">Trade Offs</a></li>
       </ul>
     </li>
   </ul>

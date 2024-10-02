@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hold on 21ideas</title>
+    <link>http://localhost:1313/tags/hold/</link>
+    <description>Recent content in Hold on 21ideas</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 19 Feb 2024 21:18:00 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/hold/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bitcoin Wallets: How, Why and When to Hold Your Own Private Keys</title>
+      <link>http://localhost:1313/how-to-hold-private-keys/</link>
+      <pubDate>Wed, 13 May 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/how-to-hold-private-keys/</guid>
+      <description>Not Your Keys, Not Your Bitcoin.&#xA;This article by Brandon Quittem was published on swanbitcoin.com website.&#xA;Contribute.&#xA;Alright so you’ve acquired some Bitcoin, now what’s the best way to store it? Here we’ll take you through the process of finding the right Bitcoin wallet for you.&#xA;Although it seems like a straight­for­ward question, there is a surprising amount of nuance to consider. How much Bitcoin do you have? How often do you plan to spend it?</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Кошельки on 21ideas</title>
+    <link>http://localhost:1313/ru/tags/%D0%BA%D0%BE%D1%88%D0%B5%D0%BB%D1%8C%D0%BA%D0%B8/</link>
+    <description>Recent content in Кошельки on 21ideas</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru-RU</language>
+    <lastBuildDate>Thu, 09 May 2024 08:45:35 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/ru/tags/%D0%BA%D0%BE%D1%88%D0%B5%D0%BB%D1%8C%D0%BA%D0%B8/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Биткоин-кошельки. Зачем и как хранить свои приватные ключи</title>
+      <link>http://localhost:1313/ru/kak-hranit-kljuchi/</link>
+      <pubDate>Wed, 13 May 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ru/kak-hranit-kljuchi/</guid>
+      <description>Статья расскажет о лучших практиках хранения своих биткоин-ключей. Это важнейшая информация, необходимая для обеспечения безопасности своих монет.&#xA;Перевод статьи Брендона Квиттема подготовлен Тони ⚡️. Поддержать проект. Итак, вы приобрели немного биткоинов, и теперь столкнулись со следующим вопросом: как их лучше всего хранить? Мы поможем вам подобрать тот кошелек, который подойдет именно вам.&#xA;Хотя ничего сложного, на первый взгляд, в этом нет, выбор кошелька сопряжен с немалым количеством нюансов. Сколько у вас биткоинов?</description>
+    </item>
+    <item>
+      <title>Лайтнинг-кошельки</title>
+      <link>http://localhost:1313/ru/lajtning-koshelki/</link>
+      <pubDate>Tue, 16 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ru/lajtning-koshelki/</guid>
+      <description>С повторяющимися всплесками популярности картинок обезьян в блокчейне Биткоина и в преддверии предстоящего бычьего рынка комиссии в основной сети не особо радуют.&#xA;Комиссии в сети могут достигать сотен сат за виртуальный байт, и это далеко не предел. Источник&#xA;Лайтнинг предоставляет решение наболевшей проблемы высоких комиссий, но действовать нужно продуманно, не торопясь. Поэтому сегодня предлагаю разобрать лучшие доступные лайтнинг-кошельки, оценить плюсы и минусы каждого из них, чтобы вы могли выбрать лучшее решение и наконец забыть (или хотя бы минимизировать стресс) о высоких комиссиях.</description>
+    </item>
+  </channel>
+</rss>

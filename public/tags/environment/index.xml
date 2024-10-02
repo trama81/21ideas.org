@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Environment on 21ideas</title>
+    <link>http://localhost:1313/tags/environment/</link>
+    <description>Recent content in Environment on 21ideas</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 08 Feb 2024 21:22:59 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/environment/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bitcoin Is Not Harmful For The Environment</title>
+      <link>http://localhost:1313/bitcoin-is-not-harmful-for-the-environment/</link>
+      <pubDate>Mon, 12 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/bitcoin-is-not-harmful-for-the-environment/</guid>
+      <description>This article by Peter St. Onge was first published on Mises Institute website.&#xA;Contribute.&#xA;One popular critique of bitcoin is energy cost per transaction. This doesn’t begin to capture bitcoin’s massive energy savings compared to fiat currency.&#xA;Bitcoin’s cost per transaction is well known, and often critiqued; one article in Wired magazine called bitcoin “[a] big middle finger to earth’s climate.” This is because bitcoin’s security, redundancy, and architecture are more energy intensive than traditional payments relying on a single point of failure.</description>
+    </item>
+  </channel>
+</rss>

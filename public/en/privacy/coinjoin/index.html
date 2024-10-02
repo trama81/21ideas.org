@@ -5,22 +5,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&display=swap" rel="stylesheet">  <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="
-  This article by @BitcoinOnly_ and @6102bitcoin was published on 6102bitcoin.com website.
+<meta name="description" content="This article by @BitcoinOnly_ and @6102bitcoin was published on 6102bitcoin.com website.
 Contribute.
-
-
-
-
-  Background
-  #
-
-Bitcoin transactions are public by nature; they map inputs (unspent utxo’s) to outputs (new unspent utxo’s) in a way that is auditable by anyone with access to the bitcoin blockchain (the history of transactions). Yet interpreting these transactions and the Blockchain is a non-trivial task, because Bitcoin transaction are not equivalent to Bitcoin payments.
-
-  The Problem
-  #
-
-Because anyone can see the links between transaction inputs and outputs it’s possible for anyone to analyse previous and future transaction behavior in an attempt to link multiple Bitcoin addresses to the same entity, this process is sometimes called clustering.">
+Background # Bitcoin transactions are public by nature; they map inputs (unspent utxo’s) to outputs (new unspent utxo’s) in a way that is auditable by anyone with access to the bitcoin blockchain (the history of transactions). Yet interpreting these transactions and the Blockchain is a non-trivial task, because Bitcoin transaction are not equivalent to Bitcoin payments.
+The Problem # Because anyone can see the links between transaction inputs and outputs it’s possible for anyone to analyse previous and future transaction behavior in an attempt to link multiple Bitcoin addresses to the same entity, this process is sometimes called clustering.">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark">
 <meta name="lightning" content="21ideas@getalby.com"><meta property="og:title" content="CoinJoin Overview" />
@@ -2918,30 +2906,30 @@ Input 3: 0.1 BTC (Charlie)      Output 3: 0.1 BTC
 <p>How the CoinJoin itself happens in a privacy preserving way.</p>
 <p>Someone has to coordinate the construction of the CoinJoin transaction, lets work through the possible coordination approaches. We will end up with the following result:</p>
 <table>
-  <thead>
-      <tr>
-          <th style="text-align: left">Approach</th>
-          <th style="text-align: left">Guaranteed Risk of Privacy Loss</th>
-          <th style="text-align: left">Guaranteed Risk of Bitcoin Loss</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td style="text-align: left">1</td>
-          <td style="text-align: left">Yes</td>
-          <td style="text-align: left">Yes</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">2</td>
-          <td style="text-align: left">Yes</td>
-          <td style="text-align: left">No</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">3</td>
-          <td style="text-align: left">No</td>
-          <td style="text-align: left">No</td>
-      </tr>
-  </tbody>
+<thead>
+<tr>
+<th>Approach</th>
+<th>Guaranteed Risk of Privacy Loss</th>
+<th>Guaranteed Risk of Bitcoin Loss</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Yes</td>
+<td>No</td>
+</tr>
+<tr>
+<td>3</td>
+<td>No</td>
+<td>No</td>
+</tr>
+</tbody>
 </table>
 <h3 id="coordination-approach-1">
   Coordination Approach 1

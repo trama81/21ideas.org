@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html lang="ru-RU" dir="ltr">
+<html lang="en" dir="ltr">
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&display=swap" rel="stylesheet">  <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Взгляд на то, как технология, лежащая в основе Hashcash – Proof of Work – будет задавать направление исследованиям в области цифровых денег на протяжении более чем десятилетия.">
+<meta name="description" content="A look at how the technology underlying Hashcash — proof of work — would shape research into digital money for more than a decade to come.">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark">
-<meta name="lightning" content="21ideas@getalby.com"><meta property="og:title" content="Часть II: Hashcash или как Адам Бэк разработал сердце Биткоина" />
-<meta property="og:description" content="Взгляд на то, как технология, лежащая в основе Hashcash – Proof of Work – будет задавать направление исследованиям в области цифровых денег на протяжении более чем десятилетия." />
+<meta name="lightning" content="21ideas@getalby.com"><meta property="og:title" content="Part II: Hashcash or How Adam Back Designed Bitcoin’s Motor Block" />
+<meta property="og:description" content="A look at how the technology underlying Hashcash — proof of work — would shape research into digital money for more than a decade to come." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://localhost:1313/gf/genesis-2/" />
 <meta property="og:image" content="http://localhost:1313/img/gf-234.jpg"/>
 
-<title>Часть II: Hashcash или как Адам Бэк разработал сердце Биткоина | 21ideas</title>
+<title>Part II: Hashcash or How Adam Back Designed Bitcoin’s Motor Block | 21ideas</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -22,10 +22,10 @@
 <link rel="apple-touch-icon" media="(prefers-color-scheme: dark)" sizes="180x180" href="/apple-touch-icon-dark.png">
 <link rel="icon" type="image/png" media="(prefers-color-scheme: dark)" sizes="32x32" href="/favicon-32x32-dark.png">
 <link rel="icon" type="image/png" media="(prefers-color-scheme: dark)" sizes="16x16" href="/favicon-16x16-dark.png">
-  <link rel="alternate" hreflang="en" href="http://localhost:1313/en/gf/genesis-2/" title="Part II: Hashcash or How Adam Back Designed Bitcoin’s Motor Block">
+  <link rel="alternate" hreflang="ru-RU" href="http://localhost:1313/ru/gf/genesis-2/" title="Часть II: Hashcash или как Адам Бэк разработал сердце Биткоина">
 <link rel="stylesheet" href="/book.min.44d288673620af09aba4fb7b29ef4c1d1f9c0258f725bd228507764ec1740f0a.css" integrity="sha256-RNKIZzYgrwmrpPt7Ke9MHR&#43;cAlj3Jb0ihQd2TsF0Dwo=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/ru.search.min.760cb93fca4cc9af4d5d957f0e91325f35c604c9b72da7d0d0517ae0f7424f53.js" integrity="sha256-dgy5P8pMya9NXZV/DpEyXzXGBMm3LafQ0FF64PdCT1M=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.322caf709709c011df0f8373a87ef3ce291ba22a62fdd5b8cf00bf824b20d5f8.js" integrity="sha256-MiyvcJcJwBHfD4NzqH7zzikboipi/dW4zwC/gksg1fg=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -53,7 +53,7 @@ https://github.com/alex-shpak/hugo-book
 
 
 <div class="book-search">
-  <input type="text" id="book-search-input" placeholder="Поиск" aria-label="Поиск" maxlength="64" data-hotkeys="s/" />
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
   <div class="book-search-spinner hidden"></div>
   <ul id="book-search-results"></ul>
 </div>
@@ -78,15 +78,15 @@ https://github.com/alex-shpak/hugo-book
     <label for="languages" class="flex justify-between">
       <a role="button" class="flex align-center">
         <img src="/svg/translate.svg" class="book-icon" alt="Languages" />
-        Русский
+        English
       </a>
     </label>
 
     <ul>
       
       <li>
-        <a href="http://localhost:1313/en/gf/genesis-2/">
-          English
+        <a href="http://localhost:1313/ru/gf/genesis-2/">
+          Русский
         </a>
       </li>
       
@@ -120,7 +120,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-4b959577bbd662d890894b4ef656e45e" class="toggle"  />
     <label for="section-4b959577bbd662d890894b4ef656e45e" class="flex justify-between">
-      <a href="/start/" class="">Старт</a>
+      <a role="button" class="">Start</a>
     </label>
   
 
@@ -134,7 +134,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/start/start/" class="">Что такое Биткоин?</a>
+    <a href="/start/start/" class="">Bitcoin Basics</a>
   
 
         </li>
@@ -147,7 +147,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/start/guide/" class="">Используем биткоин</a>
+    <a href="/start/guide/" class="">Using Bitcoin</a>
   
 
         </li>
@@ -160,33 +160,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/course/" class="">Биткоин от А до Я</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/bitcoin-myths/" class="">Разрушаем мифы о Биткоине</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/shitcoin-casino/" class="">Не играйте в щиткоин-казино</a>
+    <a href="/shitcoin-gambling-games/" class="">Don’t Play Shitcoin Gambling Games</a>
   
 
         </li>
@@ -206,7 +180,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-c8e2b39e67e72b49a36ee1ec8355ecba" class="toggle" checked />
     <label for="section-c8e2b39e67e72b49a36ee1ec8355ecba" class="flex justify-between">
-      <a href="/theory/" class="">Теория</a>
+      <a href="/theory/" class="">Theory</a>
     </label>
   
 
@@ -222,7 +196,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-981a6953479a2e41da30ae73c119d6e2" class="toggle"  />
     <label for="section-981a6953479a2e41da30ae73c119d6e2" class="flex justify-between">
-      <a href="/economics/" class="">Экономика</a>
+      <a href="/economics/" class="">Economics</a>
     </label>
   
 
@@ -238,7 +212,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-43f26905d14df4de3737d0d5dfd90ca0" class="toggle"  />
     <label for="section-43f26905d14df4de3737d0d5dfd90ca0" class="flex justify-between">
-      <a href="/pzv/" class="">Постепенно, затем внезапно</a>
+      <a href="/gradually-then-suddenly/" class="">Gradually, Then Suddenly</a>
     </label>
   
 
@@ -252,7 +226,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/postepenno-zatem-vnezapno/" class="">Введение</a>
+    <a href="/gradually-then-suddenly/intro/" class="">Intro</a>
   
 
         </li>
@@ -265,7 +239,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-nelzya-skopirovat/" class="">Биткоин нельзя скопировать</a>
+    <a href="/gradually-then-suddenly/bitcoin-cant-be-copied/" class="">Bitcoin Can’t Be Copied</a>
   
 
         </li>
@@ -278,7 +252,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-ne-slishkom-volatilen/" class="">Биткоин не слишком волатилен</a>
+    <a href="/gradually-then-suddenly/bitcoin-is-not-too-volatile/" class="">Bitcoin Is Not Too Volatile</a>
   
 
         </li>
@@ -291,7 +265,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-ne-tratit-energiyu-zrya/" class="">Биткоин не тратит энергию зря</a>
+    <a href="/gradually-then-suddenly/bitcoin-does-not-waste-energy/" class="">Bitcoin Does Not Waste Energy</a>
   
 
         </li>
@@ -304,7 +278,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-ne-slishkom-medlennyj/" class="">Биткоин не слишком медленный</a>
+    <a href="/gradually-then-suddenly/bitcoin-is-not-too-slow/" class="">Bitcoin is Not Too Slow</a>
   
 
         </li>
@@ -317,7 +291,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-eto-ispravit/" class="">Биткоин это исправит</a>
+    <a href="/gradually-then-suddenly/bitcoin-fixes-this/" class="">Bitcoin Fixes This</a>
   
 
         </li>
@@ -330,7 +304,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-ne-blokchejn/" class="">Биткоин, не блокчейн</a>
+    <a href="/gradually-then-suddenly/bitcoin-not-blockchain/" class="">Bitcoin, Not Blockchain</a>
   
 
         </li>
@@ -343,7 +317,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-nichem-ne-podkreplen/" class="">Биткоин ничем не подкреплен?</a>
+    <a href="/gradually-then-suddenly/bitcoin-is-not-backed-by-nothing/" class="">Bitcoin is Not Backed by Nothing</a>
   
 
         </li>
@@ -356,7 +330,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-ne-finansovaya-piramida/" class="">Биткоин — не финансовая пирамида</a>
+    <a href="/gradually-then-suddenly/bitcoin-is-not-a-pyramid-scheme/" class="">Bitcoin is Not a Pyramid Scheme</a>
   
 
         </li>
@@ -369,7 +343,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-ne-mozhet-byt-zabanen/" class="">Биткоин не может быть забанен</a>
+    <a href="/gradually-then-suddenly/bitcoin-cannot-be-banned/" class="">Bitcoin Cannot be Banned</a>
   
 
         </li>
@@ -382,7 +356,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-ne-dlya-prestupnikov/" class="">Биткоин не для преступников</a>
+    <a href="/gradually-then-suddenly/bitcoin-is-not-for-criminals/" class="">Bitcoin is Not for Criminals</a>
   
 
         </li>
@@ -395,7 +369,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-obescenivaet-ostalnye-dengi/" class="">Биткоин обесценивает остальные деньги</a>
+    <a href="/gradually-then-suddenly/bitcoin-obsoletes-all-other-money/" class="">Bitcoin Obsoletes All Other Money</a>
   
 
         </li>
@@ -408,7 +382,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-zov-k-edineniyu/" class="">Биткоин — зов к единению</a>
+    <a href="/gradually-then-suddenly/bitcoin-is-a-rally-cry/" class="">Bitcoin is a Rally Cry</a>
   
 
         </li>
@@ -421,7 +395,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-eto-zdravyj-smysl/" class="">Биткоин — это здравый смысл</a>
+    <a href="/gradually-then-suddenly/bitcoin-is-common-sense/" class="">Bitcoin is Common Sense</a>
   
 
         </li>
@@ -434,7 +408,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-antihrupok/" class="">Биткоин антихрупок</a>
+    <a href="/gradually-then-suddenly/bitcoin-is-antifragile/" class="">Bitcoin is Antifragile</a>
   
 
         </li>
@@ -447,7 +421,20 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-velikaya-definancializaciya/" class="">Биткоин — великая дефинанcиализация</a>
+    <a href="/gradually-then-suddenly/bitcoin-is-one-for-all/" class="">Bitcoin is One for All</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/gradually-then-suddenly/bitcoin-is-the-great-definancialization/" class="">Bitcoin is the Great Definancialization</a>
   
 
         </li>
@@ -467,7 +454,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-070af377b46d38e45de9a60dd3c8e7d0" class="toggle"  />
     <label for="section-070af377b46d38e45de9a60dd3c8e7d0" class="flex justify-between">
-      <a href="/sb/" class="">Становление Биткоина</a>
+      <a href="/discovering-bitcoin/" class="">Discovering Bitcoin</a>
     </label>
   
 
@@ -481,7 +468,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sb/stanovlenie-intro/" class="">Введение</a>
+    <a href="/discovering-bitcoin/intro/" class="">Introduction</a>
   
 
         </li>
@@ -494,7 +481,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sb/stanovlenie-1/" class="">О времени</a>
+    <a href="/discovering-bitcoin/about-time/" class="">About Time</a>
   
 
         </li>
@@ -507,7 +494,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sb/stanovlenie-2/" class="">О людях</a>
+    <a href="/discovering-bitcoin/about-people/" class="">About People</a>
   
 
         </li>
@@ -520,7 +507,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sb/stanovlenie-3/" class="">Знакомьтесь: деньги</a>
+    <a href="/discovering-bitcoin/introducing-money/" class="">Introducing Money</a>
   
 
         </li>
@@ -533,7 +520,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sb/stanovlenie-4/" class="">Поворот не туда</a>
+    <a href="/discovering-bitcoin/a-wrong-turn-new-plan-needed/" class="">A Wrong Turn (New Plan Needed)!</a>
   
 
         </li>
@@ -546,7 +533,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sb/stanovlenie-5/" class="">Цифровая редкость</a>
+    <a href="/discovering-bitcoin/digital-scarcity/" class="">Digital Scarcity</a>
   
 
         </li>
@@ -559,7 +546,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sb/stanovlenie-6/" class="">Цифровые контракты</a>
+    <a href="/discovering-bitcoin/digital-contracts/" class="">Digital Contracts</a>
   
 
         </li>
@@ -572,7 +559,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sb/stanovlenie-7/" class="">Недостающие части головоломки</a>
+    <a href="/discovering-bitcoin/the-missing-pieces/" class="">The Missing Pieces</a>
   
 
         </li>
@@ -590,7 +577,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitkoin-ne-vredit-okruzhayushej-srede/" class="">Биткоин и окружающая среда</a>
+    <a href="/bitcoin-is-not-harmful-for-the-environment/" class="">Bitcoin Is Not Harmful For The Environment</a>
   
 
         </li>
@@ -603,7 +590,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sem-setevyh-effektov-bitkoina/" class="">Семь сетевых эффектов Биткоина</a>
+    <a href="/seven-network-effects-of-bitcoin/" class="">The Seven Network Effects of Bitcoin</a>
   
 
         </li>
@@ -616,7 +603,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/hozyaeva-i-raby-deneg/" class="">Хозяева и рабы денег</a>
+    <a href="/masters-and-slaves-of-money/" class="">Masters and Slaves of Money</a>
   
 
         </li>
@@ -629,7 +616,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/strukturnaya-perestrojka/" class="">Структурная перестройка</a>
+    <a href="/structural-adjustment/" class="">Structural Adjustment</a>
   
 
         </li>
@@ -642,7 +629,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/v-zashchitu-deflyacii/" class="">В защиту дефляции</a>
+    <a href="/in-defense-of-deflation/" class="">In Defense Of Deflation</a>
   
 
         </li>
@@ -655,7 +642,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sravnenie-monetarnyh-standartov/" class="">Сравнение монетарных стандартов</a>
+    <a href="/comparison-of-monetary-standards/" class="">Comparison of Monetary Standards</a>
   
 
         </li>
@@ -668,7 +655,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sravnenie-monetarnyh-standartov/" class="">Сравнение монетарных стандартов</a>
+    <a href="/petrodollar-negative-effects/" class="">Petrodollar Negative Effects</a>
   
 
         </li>
@@ -681,7 +668,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/negativnye-effekty-neftedollara/" class="">Негативные внешние эффекты нефтедоллара</a>
+    <a href="/shelling-out/" class="">Shelling Out: The Origins of Money</a>
   
 
         </li>
@@ -694,7 +681,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/raskoshelivaemsya/" class="">Раскошеливаемся (Shelling Out): Происхождение денег</a>
+    <a href="/bitcoin-rhythms-of-history/" class="">Bitcoin and the Rhythms of History</a>
   
 
         </li>
@@ -707,7 +694,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-i-ritmy-istorii/" class="">Биткоин и ритмы истории</a>
+    <a href="/bitcoin-and-the-hopf-cycle-of-the-internet/" class="">Bitcoin &amp; the HOPF Cycle of the Internet</a>
   
 
         </li>
@@ -720,7 +707,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-i-internet-cikly-hopfa/" class="">Биткоин и интернет-циклы Хопфа</a>
+    <a href="/money-blockchains-and-social-scalability/" class="">Money, blockchains, and social scalability</a>
   
 
         </li>
@@ -733,7 +720,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/dengi-blokchejny-i-socialnaya-masshtabiruemost/" class="">Деньги, блокчейны и социальная масштабируемость</a>
+    <a href="/what-is-money/" class="">What Is Money</a>
   
 
         </li>
@@ -746,7 +733,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/chto-takoe-dengi/" class="">Что такое деньги</a>
+    <a href="/only-the-strong-survive/" class="">Only The Strong Survive</a>
   
 
         </li>
@@ -759,7 +746,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/vyzhivaet-silnejshij/" class="">Выживает сильнейший</a>
+    <a href="/dollar-cost-averaging/" class="">Dollar-Cost Averaging</a>
   
 
         </li>
@@ -772,33 +759,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/strategiya-dca/" class="">Стратегия DCA</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/jevons-paradox/" class="">Парадокс Джевонса: Обратная истина</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/kak-rabotajut-dengi/" class="">Как работают деньги</a>
+    <a href="/jevons-paradox/" class="">Jevons Paradox: Contrary Truth</a>
   
 
         </li>
@@ -818,7 +779,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-4d5bb6cd046af3ae6f08884281ee0445" class="toggle"  />
     <label for="section-4d5bb6cd046af3ae6f08884281ee0445" class="flex justify-between">
-      <a href="/security/" class="">Безопасность</a>
+      <a href="/security/" class="">Security</a>
     </label>
   
 
@@ -832,7 +793,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/kak-hranit-kljuchi/" class="">Биткоин-кошельки. Зачем и как хранить свои приватные ключи</a>
+    <a href="/how-to-hold-private-keys/" class="">Bitcoin Wallets: How, Why and When to Hold Your Own Private Keys</a>
   
 
         </li>
@@ -845,7 +806,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/seed/" class="">Что такое сид-фраза?</a>
+    <a href="/seed/" class="">What is a bitcoin seed phrase and how does it work?</a>
   
 
         </li>
@@ -858,7 +819,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/seed-security/" class="">Как обезопасить свои сид-фразы?</a>
+    <a href="/seed-security/" class="">Ultimate guide to storing your bitcoin seed phrase backups</a>
   
 
         </li>
@@ -871,7 +832,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/passphrase/" class="">Насколько надежна ваша парольная фраза?</a>
+    <a href="/passphrase/" class="">Is your passphrase strong enough?</a>
   
 
         </li>
@@ -884,7 +845,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/multisig/" class="">Все о мультисиг</a>
+    <a href="/what-is-multisig/" class="">What is multisig?</a>
   
 
         </li>
@@ -897,7 +858,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/hwws/" class="">Сравнение аппаратных кошельков</a>
+    <a href="/hwws/" class="">The best Bitcoin hardware wallets</a>
   
 
         </li>
@@ -910,7 +871,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/multisig-1/" class="">Мультисиг. Часть I</a>
+    <a href="/multisig-1/" class="">Multisig Part I: Why Multisig?</a>
   
 
         </li>
@@ -923,7 +884,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/multisig-2/" class="">Мультисиг. Часть II: Отдельные ключи – основа мультиподписи</a>
+    <a href="/multisig-2/" class="">Multisig Part II: Single Keys are the Foundation of Multisignature</a>
   
 
         </li>
@@ -943,7 +904,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-e5dc95f8c3734f1c9cf3045c3ba217e8" class="toggle"  />
     <label for="section-e5dc95f8c3734f1c9cf3045c3ba217e8" class="flex justify-between">
-      <a href="/privacy/" class="">Приватность</a>
+      <a href="/privacy/" class="">Privacy</a>
     </label>
   
 
@@ -957,7 +918,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/privacy/luchshie-praktiki/" class="">Как сохранить приватность?</a>
+    <a href="/privacy/best-practices/" class="">Bitcoin Privacy: Best Practices</a>
   
 
         </li>
@@ -970,7 +931,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/privacy/no-kyc/" class="">Никаких KYC, берегите персональные данные</a>
+    <a href="/privacy/no-kyc/" class="">no-KYC only. Avoid the creep</a>
   
 
         </li>
@@ -983,7 +944,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/privatnost-v-seti-bitcoin/" class="">Приватность в сети Биткоин</a>
+    <a href="/wiki-bitcoin-privacy/" class="">Bitcoin Privacy</a>
   
 
         </li>
@@ -996,7 +957,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-stanovitsya-kriticheski-vazhnym/" class="">Биткоин становится критически важным</a>
+    <a href="/bitcoin-becomes-critical/" class="">Bitcoin Becomes Critical</a>
   
 
         </li>
@@ -1009,7 +970,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bip47-ili-gadkij-utenok/" class="">BIP47, или гадкий утенок</a>
+    <a href="/bip47-the-ugly-duckling/" class="">BIP47, the ugly duckling</a>
   
 
         </li>
@@ -1024,7 +985,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-7626e3de66018c98c264d84fe366e13a" class="toggle"  />
     <label for="section-7626e3de66018c98c264d84fe366e13a" class="flex justify-between">
-      <a href="/privacy/oxt/" class="">Понимание приватности в сети Биткоин с помощью OXT</a>
+      <a href="/privacy/oxt/" class="">Understanding Bitcoin Privacy with OXT</a>
     </label>
   
 
@@ -1038,7 +999,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/privacy/oxt-1/" class="">Часть 1: Анализ цепочки и приватность транзакций</a>
+    <a href="/privacy/oxt-1/" class="">Part 1: Chain Analysis And Transaction Privacy</a>
   
 
         </li>
@@ -1051,7 +1012,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/privacy/oxt-2/" class="">Часть 2: Ключевые концепции анализа цепочки</a>
+    <a href="/privacy/oxt-2/" class="">Part 2: Chain Analysis Core Concepts</a>
   
 
         </li>
@@ -1064,7 +1025,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/privacy/oxt-3/" class="">Часть 3: Защита от анализа цепочки</a>
+    <a href="/privacy/oxt-3/" class="">Part 3: Defences Against Chain Analysis</a>
   
 
         </li>
@@ -1077,7 +1038,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/privacy/oxt-4/" class="">Часть 4: Применение концепций анализа цепочки для улучшения приватности пользователей</a>
+    <a href="/privacy/oxt-4/" class="">Part 4: Applying Chain Analysis Concepts To Improve User Privacy</a>
   
 
         </li>
@@ -1095,7 +1056,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/privacy/coinjoin/" class="">Понимание и использование CoinJoin</a>
+    <a href="/privacy/coinjoin/" class="">CoinJoin Overview</a>
   
 
         </li>
@@ -1108,7 +1069,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-fungibility/" class="">Взаимозаменяемость Биткоина</a>
+    <a href="/bitcoin-fungibility/" class="">Bitcoin Fungibility</a>
   
 
         </li>
@@ -1141,7 +1102,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-591754e4c6a4e23cb58f7ff9d9022ef1" class="toggle"  />
     <label for="section-591754e4c6a4e23cb58f7ff9d9022ef1" class="flex justify-between">
-      <a href="/protocol/" class="">Протокол</a>
+      <a href="/protocol/" class="">Protocol</a>
     </label>
   
 
@@ -1155,7 +1116,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/kto-kontroliruet-bitkoin-kor/" class="">Кто контролирует Bitcoin Core?</a>
+    <a href="/who-controls-bitcoin-core/" class="">Who Controls Bitcoin Core?</a>
   
 
         </li>
@@ -1168,7 +1129,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/vechnaja-borba/" class="">Вечная борьба Биткоина</a>
+    <a href="/bitcoins-eternal-struggle/" class="">Bitcoin&#39;s Eternal Struggle</a>
   
 
         </li>
@@ -1181,7 +1142,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/ob-udobstve-vzaimodejstvija-s-bitcoinom/" class="">Об удобстве взаимодействия с Биткоином</a>
+    <a href="/on-bitcoins-ux/" class="">On Bitcoin’s UX</a>
   
 
         </li>
@@ -1194,7 +1155,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-zoloto-2-0/" class="">Биткоин: цифровое золото или пиринговая наличность?</a>
+    <a href="/bitcoin-digital-gold-or-ecash/" class="">Bitcoin: Digital Gold or Peer-to-Peer Cash?</a>
   
 
         </li>
@@ -1207,7 +1168,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/upravlenie-bitcoin/" class="">Управление Биткоином</a>
+    <a href="/bitcoin-governance/" class="">Bitcoin Governance</a>
   
 
         </li>
@@ -1220,7 +1181,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/doverennye-tretyi-storony/" class="">Доверенные третьи стороны — это бреши в системе безопасности</a>
+    <a href="/trusted-third-parties/" class="">Trusted Third Parties are Security Holes</a>
   
 
         </li>
@@ -1233,7 +1194,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/21-million-ne-podlezhit-obsuzhdeniyu/" class="">21 миллион не подлежит обсуждению</a>
+    <a href="/21-million-is-non-negotiable/" class="">21 Million is Non-Negotiable</a>
   
 
         </li>
@@ -1246,7 +1207,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/proof-of-work/" class="">Proof of Work: доказательство проделанной работы</a>
+    <a href="/proof-of-work/" class="">Proof of Work, a pictorial essay</a>
   
 
         </li>
@@ -1259,7 +1220,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/proof-of-stake-eto-skam/" class="">Proof of Stake – это скам</a>
+    <a href="/proof-of-stake-is-a-scam/" class="">Proof of stake is a scam</a>
   
 
         </li>
@@ -1272,7 +1233,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/byl-li-satoshi-zhadnym-majnerom/" class="">Был ли Сатоши жадным майнером?</a>
+    <a href="/was-satoshi-a-greedy-miner/" class="">Was Satoshi a Greedy Miner?</a>
   
 
         </li>
@@ -1285,7 +1246,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/segwit/" class="">Что такое SegWit</a>
+    <a href="/segwit/" class="">What Is SegWit</a>
   
 
         </li>
@@ -1298,7 +1259,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/taproot/" class="">Что такое Taproot</a>
+    <a href="/taproot/" class="">What Is Taproot</a>
   
 
         </li>
@@ -1311,7 +1272,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bomby-slozhnosti-ethereum/" class="">Бомбы сложности Ethereum</a>
+    <a href="/coercion-of-ethereums-difficulty-bomb/" class="">The Coercion Of Ethereum&#39;s Difficulty Bomb</a>
   
 
         </li>
@@ -1324,7 +1285,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/rgb/" class="">Разбирая протокол RGB</a>
+    <a href="/rgb/" class="">Understanding the RGB protocol</a>
   
 
         </li>
@@ -1337,7 +1298,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/halving/" class="">Что такое Биткоин-халвинг?</a>
+    <a href="/difficulty/" class="">Bitcoin Difficulty Adjustment</a>
   
 
         </li>
@@ -1350,7 +1311,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/difficulty/" class="">О корректировке сложности майнинга</a>
+    <a href="/bitcoin-address-types/" class="">Bitcoin address types</a>
   
 
         </li>
@@ -1363,7 +1324,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sravnenie-tipov-bitcoin-adresov/" class="">Типы биткоин-адресов</a>
+    <a href="/myths-about-halving/" class="">Myths About the Bitcoin Halving</a>
   
 
         </li>
@@ -1376,20 +1337,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/myths-about-halving/" class="">Мифы о Биткоин-халвинге</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/mining-walkthrough/" class="">SHA256 и майнинг в сети Биткоин</a>
+    <a href="/mining-walkthrough/" class="">SHA256 and Bitcoin Mining Walkthrough</a>
   
 
         </li>
@@ -1404,7 +1352,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-c6baffdfa73d6dd5df13795b95ab68ac" class="toggle"  />
     <label for="section-c6baffdfa73d6dd5df13795b95ab68ac" class="flex justify-between">
-      <a href="/protocol/utxo/" class="">Что такое UTXO и как ими управлять?</a>
+      <a href="/protocol/utxo/" class="">What Is UTXO And How To Manage Them</a>
     </label>
   
 
@@ -1418,7 +1366,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/protocol/utxo-1/" class="">Что такое UTXO?</a>
+    <a href="/protocol/utxo-1/" class="">What is a Bitcoin UTXO</a>
   
 
         </li>
@@ -1431,7 +1379,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/protocol/utxo-2/" class="">Как избежать высоких комиссий при большом количестве UTXO</a>
+    <a href="/protocol/utxo-2/" class="">Too Many UTXOs: How To Avoid High Fees</a>
   
 
         </li>
@@ -1444,7 +1392,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/protocol/utxo-3/" class="">Приватность UTXO</a>
+    <a href="/protocol/utxo-3/" class="">UTXOs Privacy</a>
   
 
         </li>
@@ -1462,7 +1410,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/transaction-size/" class="">Размер транзакции</a>
+    <a href="/transaction-size/" class="">Transaction Size</a>
   
 
         </li>
@@ -1482,7 +1430,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-2cc3faa5b078e8edfc892bc463882294" class="toggle" checked />
     <label for="section-2cc3faa5b078e8edfc892bc463882294" class="flex justify-between">
-      <a href="/history/" class="">История</a>
+      <a href="/history/" class="">History</a>
     </label>
   
 
@@ -1498,7 +1446,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-11903f72dc1c8e68f0d748ad1bb6164d" class="toggle" checked />
     <label for="section-11903f72dc1c8e68f0d748ad1bb6164d" class="flex justify-between">
-      <a href="/gf/" class="">Генезис-файлы</a>
+      <a href="/gf/" class="">The Genesis Files</a>
     </label>
   
 
@@ -1512,7 +1460,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/gf/genesis-intro/" class="">Пролог</a>
+    <a href="/gf/genesis-intro/" class="">Intro</a>
   
 
         </li>
@@ -1525,7 +1473,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/gf/genesis-1/" class="">Часть I: eCash Дэвида Чаума и зарождение мечты шифропанков</a>
+    <a href="/gf/genesis-1/" class="">Part I: How David Chaum’s eCash Spawned a Cypherpunk Dream</a>
   
 
         </li>
@@ -1538,7 +1486,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/gf/genesis-2/" class="active">Часть II: Hashcash или как Адам Бэк разработал сердце Биткоина</a>
+    <a href="/gf/genesis-2/" class="active">Part II: Hashcash or How Adam Back Designed Bitcoin’s Motor Block</a>
   
 
         </li>
@@ -1551,7 +1499,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/gf/genesis-3/" class="">Часть III: Если у Биткоина был прототип, то это были b-money Вэя Дая</a>
+    <a href="/gf/genesis-3/" class="">Part III: If Bitcoin Had a First Draft, Wei Dai’s B-Money Was It</a>
   
 
         </li>
@@ -1564,7 +1512,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/gf/genesis-4/" class="">Часть IV: Создавая Bit Gold, Сабо был в двух шагах от изобретения Биткоина</a>
+    <a href="/gf/genesis-4/" class="">Part IV: With Bit Gold, Szabo Was Inches Away From Inventing Bitcoin</a>
   
 
         </li>
@@ -1577,7 +1525,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/gf/genesis-5/" class="">Часть V: Как поиски цифровой наличности привели Хэла Финни к созданию RPOW (и не только)</a>
+    <a href="/gf/genesis-5/" class="">Part V: How Hal Finney’s Quest For Digital Cash Led To RPOW (And More)</a>
   
 
         </li>
@@ -1595,7 +1543,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/hal-finney/" class="">Хэл Финни — жизнь и смерть легенды движения шифропанков</a>
+    <a href="/hal-finney/" class="">Hal Finney — The Life And Death Of A Cypherpunk Legend</a>
   
 
         </li>
@@ -1608,7 +1556,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-and-me/" class="">Биткоин и я</a>
+    <a href="/bitcoin-and-me/" class="">Bitcoin and Me</a>
   
 
         </li>
@@ -1621,7 +1569,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-reformaciya/" class="">Биткоин-Реформация</a>
+    <a href="/bitcoin-reformation/" class="">The Bitcoin Reformation</a>
   
 
         </li>
@@ -1634,7 +1582,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-forks/" class="">Полная история консенсус-форков Биткоина</a>
+    <a href="/bitcoin-forks/" class="">A complete history of Bitcoin’s consensus forks</a>
   
 
         </li>
@@ -1647,7 +1595,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/analyzing-2013-fork/" class="">Анализ форка Биткоина 2013 года</a>
+    <a href="/analyzing-2013-fork/" class="">Analyzing the 2013 Bitcoin fork</a>
   
 
         </li>
@@ -1667,7 +1615,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-ac2daa2484c1be670f7cc1e0d8d82356" class="toggle"  />
     <label for="section-ac2daa2484c1be670f7cc1e0d8d82356" class="flex justify-between">
-      <a href="/philosophy/" class="">Философия</a>
+      <a href="/philosophy/" class="">Philosophy</a>
     </label>
   
 
@@ -1683,7 +1631,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-b11b531f912b5e92a8260d0a526b85b6" class="toggle"  />
     <label for="section-b11b531f912b5e92a8260d0a526b85b6" class="flex justify-between">
-      <a href="/chemu-ya-nauchilsya-u-bitcoina/" class="">Чему я научился у Биткоина?</a>
+      <a href="/what-i-learned-from-bitcoin/" class="">What I&#39;ve Learned From Bitcoin</a>
     </label>
   
 
@@ -1697,7 +1645,33 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/chemu-ya-nauchilsya-u-bitcoina/filosofskie-uroki-bitcoina/" class="">Часть1. Философские уроки Биткоина</a>
+    <a href="/what-i-learned-from-bitcoin-1/" class="">Part I. Philosophical Teachings of Bitcoin</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/what-i-learned-from-bitcoin-2/" class="">Part II. Economic Teachings of Bitcoin</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/what-i-learned-from-bitcoin-3/" class="">Part III. Technological Teachings of Bitcoin</a>
   
 
         </li>
@@ -1715,7 +1689,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/ne-shitcoin/" class="">Биткоин, не щиткоин</a>
+    <a href="/not-shitcoin/" class="">Why Bitcoin, Not Shitcoin</a>
   
 
         </li>
@@ -1728,7 +1702,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/neotemlemye-prava-sobstvennosti/" class="">Неотъемлемые права собственности</a>
+    <a href="/inalienable-property-rights/" class="">Inalienable Property Rights</a>
   
 
         </li>
@@ -1741,7 +1715,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/manifest-kriptoanarhista/" class="">Манифест криптоанархиста</a>
+    <a href="/crypto-anarchist-manifesto/" class="">The Crypto Anarchist Manifesto</a>
   
 
         </li>
@@ -1754,7 +1728,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/manifest-shifropanka/" class="">Манифест шифропанка</a>
+    <a href="/cypherpunks-manifesto/" class="">A Cypherpunk&#39;s Manifesto</a>
   
 
         </li>
@@ -1767,7 +1741,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/tyulpannaya-lihoradka/" class="">Биткоин — современная голландская тюльпанная лихорадка?</a>
+    <a href="/dutch-tulip-bubble/" class="">Is Bitcoin Like the Dutch Tulip Bubble?</a>
   
 
         </li>
@@ -1780,7 +1754,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/vse-moshenniki/" class="">Все — мошенники</a>
+    <a href="/everyones-a-scammer/" class="">Everyone&#39;s a Scammer</a>
   
 
         </li>
@@ -1793,7 +1767,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/svoboda-cennosti/" class="">Свобода ценности</a>
+    <a href="/freedom-of-value/" class="">The Freedom of Value</a>
   
 
         </li>
@@ -1806,7 +1780,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-meme/" class="">Биткоин — единственный реальный мем</a>
+    <a href="/bitcoin-meme/" class="">Bitcoin Is The Only Real Meme</a>
   
 
         </li>
@@ -1819,7 +1793,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/nol-i-bitcoin/" class="">Ноль и Биткоин</a>
+    <a href="/number-zero-and-bitcoin/" class="">The Number Zero and Bitcoin</a>
   
 
         </li>
@@ -1832,7 +1806,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/crypto-bro/" class="">Дорогие крипто- и фиат-бро</a>
+    <a href="/crypto-bro/" class="">Dear Crypto &amp; Fiat Bros</a>
   
 
         </li>
@@ -1845,7 +1819,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/boremsya-s-poddelnymi-bitcoin/" class="">Боремся с поддельными биткоинами</a>
+    <a href="/fighting-fake-bitcoin/" class="">Fighting Fake Bitcoin</a>
   
 
         </li>
@@ -1858,7 +1832,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bit%D1%81oin-eto-micelij/" class="">Биткоин — это мицелий</a>
+    <a href="/bitcoin-is-the-mycelium/" class="">Bitcoin is The Mycelium of Money</a>
   
 
         </li>
@@ -1871,7 +1845,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pochemu-bitcoin-zhivoj-organizm/" class="">Доказательство жизни. Почему Биткоин — живой организм</a>
+    <a href="/proof-of-life/" class="">Proof of Life. Why Bitcoin is a Living Organism</a>
   
 
         </li>
@@ -1884,7 +1858,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/samaya-mirnaya-revolyuciya/" class="">Самая мирная революция</a>
+    <a href="/most-peaceful-revolution/" class="">A Most Peaceful Revolution</a>
   
 
         </li>
@@ -1897,7 +1871,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/o-bitcoin-vselennoj/" class="">О Биткоин-вселенной</a>
+    <a href="/bitcoin-universe/" class="">Bitcoin Universe</a>
   
 
         </li>
@@ -1910,7 +1884,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-dissidenty/" class="">Биткоин-диссиденты</a>
+    <a href="/bitcoin-dissidents/" class="">Bitcoin Dissidents</a>
   
 
         </li>
@@ -1923,7 +1897,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-svoboda/" class="">Биткоин = свобода</a>
+    <a href="/bitcoin-equals-freedom/" class="">Bitcoin Equals Freedom</a>
   
 
         </li>
@@ -1943,7 +1917,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-0ffd899989a7340537ceb8e2b6a04097" class="toggle"  />
     <label for="section-0ffd899989a7340537ceb8e2b6a04097" class="flex justify-between">
-      <a href="/future/" class="">Будущее</a>
+      <a href="/future/" class="">Future</a>
     </label>
   
 
@@ -1959,7 +1933,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-206fb3aae5266e1ff42aa0abc8ae8411" class="toggle"  />
     <label for="section-206fb3aae5266e1ff42aa0abc8ae8411" class="flex justify-between">
-      <a href="/ba/" class="">Биткоин-астрономия</a>
+      <a href="/ba/" class="">Bitcoin Astronomy</a>
     </label>
   
 
@@ -1973,7 +1947,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/ba/1/" class="">Постгипербиткоинизация</a>
+    <a href="/ba/1/" class="">Part I</a>
   
 
         </li>
@@ -1986,7 +1960,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/ba/2/" class="">Миллион крошечных миров</a>
+    <a href="/ba/2/" class="">Part II</a>
   
 
         </li>
@@ -1999,7 +1973,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/ba/3/" class="">Первый контакт</a>
+    <a href="/ba/3/" class="">Part III</a>
   
 
         </li>
@@ -2017,7 +1991,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/ej-bitcoin-pritormozi/" class="">Эй, Биткоин, притормози</a>
+    <a href="/hey-bitcoin-slow-down/" class="">Hey Bitcoin, Slow Down!</a>
   
 
         </li>
@@ -2030,7 +2004,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/apokalipsis/" class="">Сможет ли Биткоин пережить апокалипсис?</a>
+    <a href="/apocalypse/" class="">Can Bitcoin Survive An Apocalypse?</a>
   
 
         </li>
@@ -2043,7 +2017,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-i-teplovaya-energiya-okeanov/" class="">Биткоин и тепловая энергия океанов</a>
+    <a href="/bitcoin-and-oceans/" class="">Bitcoin and Ocean Thermal Energy</a>
   
 
         </li>
@@ -2063,7 +2037,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-94dfdc9d0099b419c9e2d6a83381dbe2" class="toggle"  />
     <label for="section-94dfdc9d0099b419c9e2d6a83381dbe2" class="flex justify-between">
-      <a href="/lightning/" class="">Лайтнинг</a>
+      <a href="/lightning/" class="">Lightning</a>
     </label>
   
 
@@ -2077,7 +2051,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/chto-takoe-laitning/" class="">Что такое Лайтнинг?</a>
+    <a href="/what-is-lightning-network/" class="">What is Lightning Network?</a>
   
 
         </li>
@@ -2090,7 +2064,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/lajtning-koshelki/" class="">Лайтнинг-кошельки</a>
+    <a href="/lightning-wallets/" class="">Lightning Wallets</a>
   
 
         </li>
@@ -2103,7 +2077,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/lajtning-adresa/" class="">Лайтнинг-адреса</a>
+    <a href="/how-lightning-address-works/" class="">How Lightning Address Works</a>
   
 
         </li>
@@ -2116,7 +2090,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/privatnost-v-lajtning/" class="">Приватность в сети Lightning</a>
+    <a href="/lightning-network-privacy/" class="">Lightning Network Privacy</a>
   
 
         </li>
@@ -2129,7 +2103,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/centralizovanna-li-set-lightning/" class="">Централизованна ли сеть Lightning?</a>
+    <a href="/is-lightning-centralized/" class="">Is Lightning centralized?</a>
   
 
         </li>
@@ -2142,7 +2116,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/mekhanizm-raboty-lightning/" class="">Механизм работы Lightning Network</a>
+    <a href="/lightning-network-explained/" class="">Lightning Network Explained</a>
   
 
         </li>
@@ -2155,7 +2129,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/problema-vhodyashchej-likvidnosti/" class="">Решение проблемы входящей ликвидности</a>
+    <a href="/inbound-liquidity-problem/" class="">Solutions to inbound liquidity problem</a>
   
 
         </li>
@@ -2180,7 +2154,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-334a33758c01abfe631e1e37dc0d1f40" class="toggle"  />
     <label for="section-334a33758c01abfe631e1e37dc0d1f40" class="flex justify-between">
-      <a href="/practice/" class="">Практика</a>
+      <a href="/practice/" class="">Practice</a>
     </label>
   
 
@@ -2196,7 +2170,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-a94c5b45bfdc8ef0dd89b00612026092" class="toggle"  />
     <label for="section-a94c5b45bfdc8ef0dd89b00612026092" class="flex justify-between">
-      <a href="/practice/buy/" class="">Покупка</a>
+      <a href="/practice/buy/" class="">Buy</a>
     </label>
   
 
@@ -2210,7 +2184,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/newbie-buy/" class="">Покупка и хранение биткоина для новичков</a>
+    <a href="/newbie-buy/" class="">Buy and Hodl Bitcoin for Beginners</a>
   
 
         </li>
@@ -2223,7 +2197,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/hodl-hodl/" class="">Покупка биткоина без KYC на Hodl Hodl</a>
+    <a href="/hodl-hodl/" class="">Buy noKYC Bitcoin with HodlHodl</a>
   
 
         </li>
@@ -2236,7 +2210,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/robosats/" class="">RoboSats: Приватный p2p обмен</a>
+    <a href="/robosats/" class="">RoboSats: Private P2P Exchange</a>
   
 
         </li>
@@ -2256,7 +2230,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-7e14ce7fc5fdbe001466044f77bdd564" class="toggle"  />
     <label for="section-7e14ce7fc5fdbe001466044f77bdd564" class="flex justify-between">
-      <a href="/practice/hodl/" class="">Хранение</a>
+      <a href="/practice/hodl/" class="">Hodl</a>
     </label>
   
 
@@ -2270,7 +2244,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/electrum/" class="">Кошелек Электрум</a>
+    <a href="/electrum/" class="">Electrum Bitcoin Wallet</a>
   
 
         </li>
@@ -2283,7 +2257,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/blue/" class="">Кошелек Blue</a>
+    <a href="/blue/" class="">Installing Blue Wallet</a>
   
 
         </li>
@@ -2296,7 +2270,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/seedsigner/" class="">SeedSigner: оффлайн-крепость для ваших биткоинов</a>
+    <a href="/seedsigner/" class="">SeedSigner: DIY Bitcoin Signing Device</a>
   
 
         </li>
@@ -2309,20 +2283,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/holodnyj-koshelek-iz-starogo-smartfona/" class="">Холодный кошелек из старого смартфона</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/coldcard/" class="">Что такое Coldcard?</a>
+    <a href="/coldcard/" class="">What is Coldcard?</a>
   
 
         </li>
@@ -2342,7 +2303,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-88cf9017cf07549621f025a2843cb148" class="toggle"  />
     <label for="section-88cf9017cf07549621f025a2843cb148" class="flex justify-between">
-      <a href="/practice/interact/" class="">Взаимодействие</a>
+      <a href="/practice/interact/" class="">Interact</a>
     </label>
   
 
@@ -2356,7 +2317,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/practice/bitcoin-node/" class="">Каждому следует запустить собственную Биткоин-ноду!</a>
+    <a href="/practice/bitcoin-node/" class="">Why You Should Run Your Own Bitcoin Node</a>
   
 
         </li>
@@ -2369,7 +2330,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/orangepilling-in-5-min/" class="">Оранжпиллинг за 5 минут</a>
+    <a href="/orangepilling-in-5-min/" class="">Orangepilling in 5 min</a>
   
 
         </li>
@@ -2382,7 +2343,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/5-tips-for-teaching-bitcoin/" class="">5 советов по обучению Биткоину</a>
+    <a href="/5-tips-for-teaching-bitcoin/" class="">5 tips for teaching Bitcoin</a>
   
 
         </li>
@@ -2402,7 +2363,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-32dccf00abb46a5281b7aae069126928" class="toggle"  />
     <label for="section-32dccf00abb46a5281b7aae069126928" class="flex justify-between">
-      <a href="/practice-privacy/" class="">Практики приватности</a>
+      <a href="/practice-privacy/" class="">Privacy</a>
     </label>
   
 
@@ -2418,7 +2379,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-ae30dbe7c31a834e8bfe23314d9a5ff6" class="toggle"  />
     <label for="section-ae30dbe7c31a834e8bfe23314d9a5ff6" class="flex justify-between">
-      <a href="/practice-privacy/dojo/" class="">Установка Биткоин-узла Dojo на x86</a>
+      <a href="/practice-privacy/dojo/" class="">Dojo x86 Bitcoin Node Guide</a>
     </label>
   
 
@@ -2432,7 +2393,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/practice-privacy/dojo-0/" class="">Введение</a>
+    <a href="/practice-privacy/dojo-0/" class="">Introduction</a>
   
 
         </li>
@@ -2445,7 +2406,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/practice-privacy/dojo-1/" class="">Установка Bitcoin Core и Tor</a>
+    <a href="/practice-privacy/dojo-1/" class="">Installing Bitcoin Core &amp; Tor</a>
   
 
         </li>
@@ -2458,7 +2419,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/practice-privacy/dojo-2/" class="">Установка индексатора Fulcrum</a>
+    <a href="/practice-privacy/dojo-2/" class="">Installing Fulcrum Indexer</a>
   
 
         </li>
@@ -2471,7 +2432,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/practice-privacy/dojo-3/" class="">Установка блокчейн-обозревателя Mempool</a>
+    <a href="/practice-privacy/dojo-3/" class="">Installing Mempool Explorer</a>
   
 
         </li>
@@ -2484,7 +2445,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/practice-privacy/dojo-4/" class="">Установка Samourai Dojo</a>
+    <a href="/practice-privacy/dojo-4/" class="">Installing Samourai Dojo</a>
   
 
         </li>
@@ -2497,7 +2458,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/practice-privacy/dojo-5/" class="">Конфигурация межсетевого экрана</a>
+    <a href="/practice-privacy/dojo-5/" class="">Firewall Configuration</a>
   
 
         </li>
@@ -2510,7 +2471,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/practice-privacy/dojo-6/" class="">Установка обновлений пакетов</a>
+    <a href="/practice-privacy/dojo-6/" class="">Installing Package Updates</a>
   
 
         </li>
@@ -2528,7 +2489,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/practice-privacy/ronindojo/" class="">Установка RoninDojo на x86</a>
+    <a href="/practice-privacy/ronindojo/" class="">RoninDojo x86 Installation Guide</a>
   
 
         </li>
@@ -2541,7 +2502,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/grapheneos/" class="">GrapheneOS: Избавляемся от слежки Google на смартфоне</a>
+    <a href="/grapheneos/" class="">GrapheneOS: De-Google your phone</a>
   
 
         </li>
@@ -2561,7 +2522,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-9425a98499a6d50bed8efd403e1db980" class="toggle"  />
     <label for="section-9425a98499a6d50bed8efd403e1db980" class="flex justify-between">
-      <a href="/practice/lightning/" class="">Лайтнинг на практике</a>
+      <a href="/practice/lightning/" class="">Lightning</a>
     </label>
   
 
@@ -2575,7 +2536,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/phoenix/" class="">Кошелек Phoenix</a>
+    <a href="/phoenix/" class="">Phoenix: The Non-Custodial Lightning Wallet</a>
   
 
         </li>
@@ -2588,7 +2549,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/lnbits/" class="">LNbits – швейцарский нож среди лайтнинг-приложений</a>
+    <a href="/lnbits/" class="">LNbits: A Swiss knife among Lightning apps</a>
   
 
         </li>
@@ -2601,7 +2562,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/alby-i-nostr/" class="">Alby и Nostr</a>
+    <a href="/alby-and-nostr/" class="">Alby and Nostr</a>
   
 
         </li>
@@ -2614,7 +2575,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/zapplanner/" class="">Подписки с помощью Лайтнинг</a>
+    <a href="/zapplanner/" class="">Recurring Lightning Payments</a>
   
 
         </li>
@@ -2627,7 +2588,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/lntips/" class="">Телеграм-бот @LightningTipBot</a>
+    <a href="/lntips/" class="">Telegram bot @LightningTipBot</a>
   
 
         </li>
@@ -2640,7 +2601,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/ochishchaem-bitcoin-cherez-lajtning/" class="">Очищаем биткоины через сеть Лайтнинг</a>
+    <a href="/lightning-liquidity-management-guide/" class="">Lightning Liquidity Management Guide</a>
   
 
         </li>
@@ -2653,20 +2614,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/likvidnost-v-lajtning/" class="">Руководство по управлению ликвидностью в сети Lightning</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/mutiny/" class="">Кошелек Mutiny</a>
+    <a href="/mutiny/" class="">Starting with Mutiny Wallet</a>
   
 
         </li>
@@ -2691,84 +2639,12 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-d286fdc9558f9b3466aa6f3d4805be77" class="toggle"  />
     <label for="section-d286fdc9558f9b3466aa6f3d4805be77" class="flex justify-between">
-      <a href="/rabbithole/" class="">Кроличья нора</a>
+      <a href="/rabbithole/" class="">Rabbithole</a>
     </label>
   
 
           
   <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/books/" class="">Книги</a>
-  
-
-          
-  <ul>
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/videos/" class="">Видео</a>
-  
-
-          
-  <ul>
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/audiobooks/" class="">Аудиокниги</a>
-  
-
-          
-  <ul>
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/pods/" class="">Подкасты</a>
-  
-
-          
-  <ul>
-    
-  </ul>
-
-        </li>
-      
     
   </ul>
 
@@ -2799,37 +2675,9 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/posts/" class="">Блог</a>
-  
-
-        
-    
-  </li>
-  
-  <li>
-    
-        
-  
-  
-
-  
-    <a href="/calendar/" class="">Биткоин-календарь</a>
-  
-
-        
-    
-  </li>
-  
-  <li>
-    
-        
-  
-  
-
-  
     <input type="checkbox" id="section-9329cf488076ba9f91ca728aef24f607" class="toggle"  />
     <label for="section-9329cf488076ba9f91ca728aef24f607" class="flex justify-between">
-      <a href="/contribute/" class="">Принять участие</a>
+      <a href="/contribute/" class="">Contribute</a>
     </label>
   
 
@@ -2844,33 +2692,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/syntax/" class="">Оформление статей</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/github/" class="">Как добавить статью?</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/obsidian/" class="">Публикация статей через Obsidian</a>
+    <a href="/github/" class="">Adding an Article</a>
   
 
         </li>
@@ -2889,7 +2711,21 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/feedback/" class="">Обратная связь</a>
+    <span>Blog</span>
+  
+
+        
+    
+  </li>
+  
+  <li>
+    
+        
+  
+  
+
+  
+    <a href="/feedback/" class="">Feedback</a>
   
 
         
@@ -2967,7 +2803,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Часть II: Hashcash или как Адам Бэк разработал сердце Биткоина</strong>
+  <strong>Part II: Hashcash or How Adam Back Designed Bitcoin’s Motor Block</strong>
 
   <label for="toc-control">
     
@@ -2983,11 +2819,11 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#ценообразование-через-обработку-или-борьба-со-спамом">&ldquo;Ценообразование через обработку или борьба со спамом&rdquo;</a></li>
-    <li><a href="#адам-бэк-и-шифропанки">Адам Бэк и шифропанки</a></li>
+    <li><a href="#pricing-via-processing-or-combatting-junk-mail">“Pricing via Processing or Combatting Junk Mail”</a></li>
+    <li><a href="#adam-back-and-the-cypherpunks">Adam Back and the Cypherpunks</a></li>
     <li><a href="#hashcash">Hashcash</a></li>
-    <li><a href="#цифровая-редкость">Цифровая редкость</a></li>
-    <li><a href="#биткоин">Биткоин</a></li>
+    <li><a href="#digital-scarcity">Digital Scarcity</a></li>
+    <li><a href="#bitcoin">Bitcoin</a></li>
   </ul>
 </nav>
 
@@ -3010,172 +2846,153 @@ https://github.com/alex-shpak/hugo-book
 
 <h1>
     
-    Генезис-файлы. Часть II: Hashcash или как Адам Бэк разработал сердце Биткоина
+    The Genesis Files. Part II: Hashcash or How Adam Back Designed Bitcoin’s Motor Block
     
 </h1>
 <div class="pageDate">
-    4 июня 2018 г.
+    June 4, 2018
 </div>
 
   <article class="markdown">
 <div class="book-expand">
   <label>
     <div class="book-expand-head flex justify-between">
-      <span>Оглавление</span>
+      <span>Contents</span>
       <span>...</span>
     </div>
     <input type="checkbox" class="hidden" />
     <div class="book-expand-content markdown-inner">
       <ol>
-<li>
-<p><a href="/gf/genesis-intro">Пролог: День, когда криптография изменилась навсегда</a></p>
-</li>
-<li>
-<p><a href="/gf/genesis-1">Часть I: eCash Дэвида Чаума и зарождение мечты шифропанков</a></p>
-</li>
-<li>
-<p><a href="/gf/genesis-2">Часть II: Hashcash или как Адам Бэк разработал сердце Биткоина</a></p>
-</li>
-<li>
-<p><a href="/gf/genesis-3">Часть III: Если у Биткоина был прототип, то это были b-money Вэя Дая</a></p>
-</li>
-<li>
-<p><a href="/gf/genesis-4">Часть IV: Создавая Bit Gold, Сабо был в двух шагах от изобретения Биткоина</a></p>
-</li>
-<li>
-<p><a href="/gf/genesis-5">Часть V: Как поиски цифровой наличности привели Хэла Финни к созданию RPOW (и не только)</a></p>
-</li>
+<li><a href="/en/gf/genesis-intro">Intro: The Day Cryptography Changed Forever</a></li>
+<li><a href="/en/gf/genesis-1">Part I: How David Chaum’s eCash Spawned a Cypherpunk Dream</a></li>
+<li><a href="/en/gf/genesis-2">Part II: Hashcash or How Adam Back Designed Bitcoin’s Motor Block</a></li>
+<li><a href="/en/gf/genesis-3">Part III: If Bitcoin Had a First Draft, Wei Dai’s B-Money Was It</a></li>
+<li><a href="/en/gf/genesis-4">Part IV: With Bit Gold, Szabo Was Inches Away From Inventing Bitcoin</a></li>
+<li><a href="/en/gf/genesis-5">Part V: How Hal Finney’s Quest For Digital Cash Led To RPOW (And More)</a></li>
 </ol>
 
     </div>
   </label>
 </div>
 
-<p>Это – вторая публикация в серии материалов, посвященных становлению движения шифропанков. Эти статьи призваны познакомить сообщество с технологиями, предшествующими киберкоммерции, которую мы сегодня наблюдаем. Понимание истории, осознание мотивов и методов достижения целей первопроходцами в области криптографии и информатики, поможет не только пролить свет на возможные варианты дальнейшего развития событий, но и выстроить более эффективные стратегии по защите собственных средств, приватной информации и личностного суверенитета.</p>
-<p>Взгляд на то, как технология, лежащая в основе Hashcash – Proof of Work <em>(доказательство проделанной работы)</em> – будет задавать направление исследованиям в области цифровых денег на протяжении более чем десятилетия.</p>
+<p>A look at how the technology underlying Hashcash — proof of work — would shape research into digital money for more than a decade to come.</p>
 <blockquote class="book-hint btc">
-  Перевод подготовлен <a href="https://snort.social/p/npub10awzknjg5r5lajnr53438ndcyjylgqsrnrtq5grs495v42qc6awsj45ys7">Тони⚡️</a>. <a href="/contribute/">Поддержать проект</a>.
+  <p>This article by Aaron van Wirdum was published in <a href="https://bitcoinmagazine.com/technical/genesis-files-hashcash-or-how-adam-back-designed-bitcoins-motor-block">Bitcoin Magazine</a>.</p>
+<p><a href="/contribute/">Contribute</a>.</p>
+
 </blockquote>
 
-<p><em><code>[ОБЪЯВЛЕНИЕ] о реализации hash cash как механизма оплаты рассылки почты</code></em></p>
-<p>28 марта 1997 года около 2,000 подписчиков списка рассылки шифропанков получили <a href="https://cypherpunks.venona.com/date/1997/03/msg00774.html">электронное письмо</a> с приведенным выше заголовком. Его отправителем был 26-летний британский аспирант Эксетерского университета, молодой криптограф и активный участник списка рассылки шифропанков Адам Бэк. В письме содержится описание и ранняя реализация того, что он называет <em>&ldquo;схемой почтовой пересылки на основе частичного совпадения хэшей&rdquo;</em> – своего рода эквивалент марки для электронных писем, основанный на интересном криптографическом трюке.</p>
 <blockquote>
-<p>&ldquo;Идея использования частичного совпадения хэшей заключается в том, что их можно сделать произвольно дорогими для вычисления и при этом они могут быть проверены мгновенно.”</p>
+<p><em>[ANNOUNCE] hash cash postage implementation</em></p>
 </blockquote>
-<p>Это предложение криптографа, который впоследствии стал генеральным директором Blockstream, не сразу привлекло должное внимание участников списка рассылки; только один читатель ответил на него, задав технический вопрос о выбранном алгоритме хэширования. Тем не менее, технология, лежащая в основе Hashcash – Proof of Work – будет определять направление развития исследования в области цифровых денег в течение еще более десяти лет.</p>
-<h1 id="ценообразование-через-обработку-или-борьба-со-спамом">
-  &ldquo;Ценообразование через обработку или борьба со спамом&rdquo;
-  <a class="anchor" href="#%d1%86%d0%b5%d0%bd%d0%be%d0%be%d0%b1%d1%80%d0%b0%d0%b7%d0%be%d0%b2%d0%b0%d0%bd%d0%b8%d0%b5-%d1%87%d0%b5%d1%80%d0%b5%d0%b7-%d0%be%d0%b1%d1%80%d0%b0%d0%b1%d0%be%d1%82%d0%ba%d1%83-%d0%b8%d0%bb%d0%b8-%d0%b1%d0%be%d1%80%d1%8c%d0%b1%d0%b0-%d1%81%d0%be-%d1%81%d0%bf%d0%b0%d0%bc%d0%be%d0%bc">#</a>
+<p>The date is March 28, 1997, when the 2,000-or-so subscribers of the Cypherpunks mailing list receive an <a href="https://cypherpunks.venona.com/date/1997/03/msg00774.html">email</a> with the above header in their inbox. The sender is a 26-year-old British postdoc at the University of Exeter, a young cryptographer and prolific contributor to the mailing list named Dr. Adam Back. The email includes a description and early implementation of what he describes as a “partial hash collision based postage scheme” — a sort of stamp equivalent for emails, based on a nifty cryptographic trick.</p>
+<blockquote>
+<p>“The idea of using partial hashes is that they can be made arbitrarily expensive to compute,” wrote Back, explaining the advantage of his system, “and yet can be verified instantly.”</p>
+</blockquote>
+<p>This proposal by the cryptographer who would go on to become the current <a href="https://blockstream.com/">Blockstream</a> CEO did not immediately garner much attention on the email list; just one reader <a href="https://cypherpunks.venona.com/date/1997/03/msg00776.html">responded</a>, with a technical inquiry about the hashing algorithm of choice. Yet, the technology underlying Hashcash — <em>proof of work</em>— would shape research into digital money for more than a decade to come.</p>
+<h1 id="pricing-via-processing-or-combatting-junk-mail">
+  “Pricing via Processing or Combatting Junk Mail”
+  <a class="anchor" href="#pricing-via-processing-or-combatting-junk-mail">#</a>
 </h1>
-<p>Hashcash Бэка на самом деле не был первым решением такого рода. К началу 1990-х годов перспективы интернета, и в частности преимущества электронной почтовой системы, стали очевидны для технарей, обративших на это внимание. Тем не менее, пионеры интернета того времени осознали, что у электронной почты хватало своих проблем.</p>
+<p>Back’s Hashcash was actually not the first solution of its kind.</p>
+<p>By the early 1990s, the promise of the internet, and the advantages of an electronic mailing system in particular, had become obvious to techies paying attention. Still, internet pioneers of the day came to realize that email, as this electronic mailing system was called, presented its own challenges.</p>
 <blockquote>
-<p>&ldquo;Простота и низкая стоимость отправки электронной почты и, в частности, простота отправки одного и того же сообщения многим получателям, практически побуждают к злоупотреблению&rdquo;, – поясняли исследователи IBM доктор Синтия Дворк и доктор Мони Наор в своем документе под названием &ldquo;<a href="http://www.wisdom.weizmann.ac.il/~naor/PAPERS/pvp.pdf">Ценообразование через обработку или борьба со спамом</a>&rdquo; в 1992 году.</p>
+<p>“In particular, the easy and low cost of sending electronic mail, and in particular the simplicity of sending the same message to many parties, all but invite abuse,” IBM researchers Dr. Cynthia Dwork and Dr. Moni Naor explained in their 1992 white paper bearing the name “<a href="http://www.wisdom.weizmann.ac.il/~naor/PAPERS/pvp.pdf">Pricing via Processing or Combatting Junk Mail</a>.”</p>
 </blockquote>
-<p>Действительно, по мере роста популярности электронной почты росли и объемы спама. По мнению первых пользователей интернета, было необходимо решение – и решение это было предложено в документе Дворк и Наора. Дуэт предложил систему, при которой отправители должны будут прикреплять некоторые данные к любому отправленному ими электронному письму. Эти данные были бы решением математической задачи, уникальной для данного письма. В частности, Дворк и Наор предложили три головоломки, которые можно было бы использовать для этой цели. Все они основаны на криптографии с открытым ключом и схемах подписи. Добавить решение в электронное письмо будет не слишком сложно, в идеале для этого потребуется всего пара секунд работы обычного компьютера, а его достоверность может быть легко проверена получателем. Но, в чем и заключался фокус, даже ничтожное количество вычислительной мощности на одно электронное письмо приумножается для рекламодателей, мошенников и хакеров, пытающихся отправить тысячи или даже миллионы сообщений одновременно. Спам, как гласит теория, можно сделать дорогим и, следовательно, невыгодным.</p>
+<p>Indeed, as email rose in popularity, so did spam.</p>
+<p>A solution was needed, early internet users agreed — and a solution is what Dwork and Naor’s paper offered.</p>
+<p>The duo proposed a system where senders would have to attach some data to any email they send. This data would be the solution to a math problem, unique to the email in question. Specifically, Dwork and Naor proposed three candidate puzzles that could be used for the purpose, all based on public-key cryptography and signature schemes.</p>
+<p>Adding a solution to an email wouldn’t be too difficult, ideally requiring only a couple of seconds of processing power from a regular computer, while its validity could easily be checked by the recipient. But, and this is the trick, even a trivial amount of processing power per email adds up for advertisers, scammers and hackers trying to send thousands or even millions of messages at once. Spamming, so was the theory, could be made expensive and, therefore, unprofitable.</p>
 <blockquote>
-<p>&ldquo;Основная идея заключается в том, чтобы потребовать от пользователя вычислить умеренно сложную, но не неразрешимую функцию, чтобы получить доступ к ресурсу, тем самым предотвращая легкомысленное использование&rdquo;</p>
-<p>— Дворк и Наор.</p>
+<p>“The main idea is to require a user to compute a moderately hard, but not intractable, function in order to gain access to the resource, thus preventing frivolous use,” Dwork and Naor explained.</p>
 </blockquote>
-<p>Хотя Дворк и Наор не предлагали этот термин, представленный ими тип решения стал известен как система Proof of Work. Пользователи должны были буквально продемонстрировать, что их компьютер выполнил работу, чтобы доказать, что они потратили реальные ресурсы. Это было отличное решение, но, возможно, оно опередило свое время. Предложение так и не вышло далеко за пределы относительно узкого круга ученых-компьютерщиков.</p>
-<h1 id="адам-бэк-и-шифропанки">
-  Адам Бэк и шифропанки
-  <a class="anchor" href="#%d0%b0%d0%b4%d0%b0%d0%bc-%d0%b1%d1%8d%d0%ba-%d0%b8-%d1%88%d0%b8%d1%84%d1%80%d0%be%d0%bf%d0%b0%d0%bd%d0%ba%d0%b8">#</a>
+<p>While Dwork and Naor did not propose the term, the type of solution they introduced would become known as a “proof of work” system. Users would have to literally show that their computer performed work, to prove that they spent real-world resources.</p>
+<p>A nifty solution, but perhaps too far ahead of its time. The proposal never made it very far beyond a relatively small circle of computer scientists.</p>
+<h1 id="adam-back-and-the-cypherpunks">
+  Adam Back and the Cypherpunks
+  <a class="anchor" href="#adam-back-and-the-cypherpunks">#</a>
 </h1>
-<p>Примерно в то же время, когда Дворк и Наор опубликовали свою “<a href="https://ru.wikipedia.org/wiki/%D0%91%D0%B5%D0%BB%D0%B0%D1%8F_%D0%BA%D0%BD%D0%B8%D0%B3%D0%B0">белую книгу</a>” <em>(whitepaper)</em>, группа либертарианцев и борцов за приватность также осознала огромный потенциал интернета. Эта идеологически мотивированная группа начала организовывать список рассылки, посвященный технологиям, повышающим приватность. Как Дворк и Наор, эти активисты, окрещенные <em>шифропанками</em>, использовали относительно новую в компьютерной сфере науку под названием криптография для достижения своих целей.</p>
-<p>С годами Адам Бэк, получивший докторскую степень в 1996 году, стал одним из самых активных участников этого списка, иногда отправляя десятки писем в месяц. Как и большинство шифропанков, криптограф был увлечен такими темами, как <a href="http://cypherpunks.venona.com/date/1997/03/msg00586.html">приватность</a>, <a href="https://cypherpunks.venona.com/date/1996/09/msg00407.html">свобода слова</a> и <a href="https://cypherpunks.venona.com/date/1996/09/msg01919.html">либертарианство</a>, и участвовал в технических обсуждениях, касающихся <a href="https://cypherpunks.venona.com/date/1996/07/msg00851.html">анонимных ремейлеров</a>, <a href="https://cypherpunks.venona.com/date/1996/07/msg00836.html">зашифрованных файловых систем</a>, <a href="https://cypherpunks.venona.com/date/1996/09/msg01919.html">электронных денег</a>, <a href="/gf/genesis-1">представленных доктором Дэвидом Чаумом</a>, и многого другого. Но некоторое время  Бэк был, пожалуй, наиболее известен тем, что печатал и продавал “боевые” футболки – футболки с напечатанным на них протоколом шифрования, призванные подчеркнуть абсурдность решение правительства США регулировать программу шифрования Фила Циммермана PGP <em>(Pretty Good Privacy)</em> как &ldquo;вооружение&rdquo; в соответствии с определением американских правил экспорта. Ношение футболки Бэка при пересечении границы для выезда из США технически делает вас &ldquo;экспортером оружия&rdquo;.</p>
+<p>Around the same time that Dwork and Naor published their white paper, a group of privacy activists with a libertarian bent came to recognize the enormous potential of the internet as well. The ideologically driven crowd started to organize through a mailing list centred around privacy-enhancing technologies. Like Dwork and Naor, these “Cypherpunks” — as they would come to be called — utilized the relatively new science of cryptography to work toward their goals.</p>
+<p>Over the years, Adam Back — who earned his Ph.D. in 1996 — established himself as one of the more active participants on this list, at times contributing dozens of emails in a single month. Like most Cypherpunks, the cryptographer was passionate about topics including <a href="http://cypherpunks.venona.com/date/1997/03/msg00586.html">privacy</a>, <a href="https://cypherpunks.venona.com/date/1996/09/msg00407.html">free speech</a> and <a href="https://cypherpunks.venona.com/date/1996/09/msg01919.html">libertarianism</a>, and engaged in technical discussions pertaining <a href="https://cypherpunks.venona.com/date/1996/07/msg00851.html">to anonymous remailers</a>, <a href="https://cypherpunks.venona.com/date/1996/07/msg00836.html">encrypted file systems</a>, <a href="https://cypherpunks.venona.com/date/1996/09/msg01919.html">electronic cash</a> as <a href="https://bitcoinmagazine.com/articles/genesis-files-how-david-chaums-ecash-spawned-cypherpunk-dream">introduced</a> by Dr. David Chaum, and more.</p>
+<p>But for a while, Back was perhaps best known for printing and selling “munition” shirts: T-shirts with an encryption protocol printed on them, intended to help point out the absurd decision by the U.S. government to regulate Phil Zimmermann’s PGP (Pretty Good Privacy) encryption program as “munitions” within the definition of the U.S. export regulations. Wearing Back’s shirt while crossing the border to exit the United States technically made you a “munitions exporter.”</p>
 <div class="imageWrapper">
     <img src="/img/gf-235.png">
 </div>
-<p>Как и многие другие, Бэк не знал о предложении Дворка и Наора Proof of Work. Тем не менее, в середине 1990-х годов он прорабатывал аналогичные идеи по борьбе со спамом, а иногда делал это &ldquo;вслух&rdquo; в списке рассылки шифропанков.</p>
+<p>Like many, Back was <a href="http://datwww.mit.edu/bloom-picayune/crypto/2058">not aware</a> of Dwork and Naor’s proof-of-work proposal. But by the mid-1990s, he was thinking of similar ideas to counter spam, sometimes “out loud” on the Cypherpunks mailing list.</p>
 <blockquote>
-<p>&ldquo;Побочным положительным эффектом использования PGP является то, что шифрование PGP должно добавлять спамеру некоторые накладные расходы – вероятно, он может шифровать меньше сообщений в секунду, чем рассылать спам по каналу T3&rdquo;, - <a href="https://cypherpunks.venona.com/date/1997/03/msg00631.html">комментировал</a> Бэк, например, в контексте добавления большей приватности в системы ремейлеров. Эта идея несколько походила на идею Дворка и Наора.</p>
+<p>“A side benefit of using PGP, is that PGP encryption should add some overhead to the spammer — he can probably encrypt less messages per second than he can spam down a T3 link,” Back <a href="http://cypherpunks.venona.com/date/1997/03/msg00631.html">commented</a>, for example, in the context of adding more privacy to remailers; an idea somewhat similar to Dwork and Naor’s.</p>
 </blockquote>
-<p>Список рассылки шифропанков значительно вырос примерно за полдесятилетия. То, что начиналось как дискуссионная площадка для группы людей, которые первоначально собирались в одном из своих стартапов в районе залива, стало небольшим интернет-феноменом с тысячами подписчиков. Часто за день приходило больше писем, чем кто-либо мог в какой-то мере отслеживать. Именно тогда, в 1997 году, когда список рассылки был близок к пику своей популярности, Бэк представил свое предложение Hashcash.</p>
+<p>The Cypherpunks mailing list grew significantly in about half a decade. What started out as an online discussion platform for a group of people that initially gathered at one of their startups in the Bay Area became a small internet phenomenon with thousands of subscribers — and often more emails on a single day than anyone could reasonably keep track of.</p>
+<p>It was around this time — 1997, close to the list’s peak popularity — that Back submitted his Hashcash proposal.</p>
 <h1 id="hashcash">
   Hashcash
   <a class="anchor" href="#hashcash">#</a>
 </h1>
-<p>Hashcash похож на предложение Дворка и Наора по борьбе со спамом и имеет ту же цель, хотя Бэк предложил несколько дополнительных вариантов использования, например, для борьбы со злоупотреблениями анонимными ремейлерами. Но, как следует из названия, Hashcash не был основан на криптографических головоломках, как у Дворка и Наора; он был основан на хэшировании. Хэширование – это криптографический трюк, который берет любые данные – будь то одна буква или целая книга – и превращает их в <em>на первый взгляд</em> случайное число заранее определенной длины.</p>
-<p>Например, хэш SHA-256 предложения <em>This is a sentence</em> дает следующее шестнадцатеричное число:</p>
+<p>Hashcah is similar to Dwork and Naor’s anti-spam proposal and has the same purpose, though Back proposed some additional use cases like countering anonymous remailer abuse. But as the name suggests, Hashcash was not based on cryptographic puzzles like Dwork and Naor’s; it was based on hashing.</p>
+<p>Hashing is a cryptographic trick that takes any data — whether it’s a single letter or an entire book — and turns it into a seemingly random number of predetermined length.</p>
+<p>For example, a SHA-256 hash of the sentence <em>This is a sentence</em> produces this hexadecimal number:</p>
 <div class="imageWrapper">
     <img src="/img/gf-236.png">
 </div>
-<p>Которое можно &ldquo;перевести&rdquo; в обычное десятичное число:</p>
+<p>Which can be “translated” to the regular decimal number:</p>
 <div class="imageWrapper">
     <img src="/img/gf-237.png">
 </div>
-<p>Или в двоичное:</p>
+<p>Or to binary:</p>
 <div class="imageWrapper">
     <img src="/img/gf-238.png">
 </div>
-<p>Между тем, хэш SHA-256 предложения <em>This, is a sentence</em> (с запятой после первого слова) дает следующее шестнадцатеричное число:</p>
+<p>Meanwhile, a SHA-256 hash of the sentence <em>This, is a sentence</em> produces this hexadecimal number:</p>
 <div class="imageWrapper">
     <img src="/img/gf-239.png">
 </div>
-<p>Как видите, простое добавление одной единственной запятой в предложение полностью меняет хэш. И, что важно, хэш любого из предложений совершенно непредсказуем. Даже после хэширования первого предложения нет возможности вычислить по нему хэш второго. Единственный способ узнать правильный хэш – хэшировать оба предложения.</p>
-<p>Hashcash довольно хитро использует этот математический трюк. В Hashcash метаданные электронного письма (адрес отправителя, адрес получателя, время отправки и т.д.) формализованы в виде протокола. Кроме того, отправитель электронного письма должен добавить к этим метаданным случайное число – &ldquo;нонс&rdquo;. Все эти метаданные, включая нонс, затем хэшируются, так что полученный хэш выглядит как одно из случайных чисел, приведенных выше. Вот в чем хитрость: не каждый хэш считается &ldquo;подходящим&rdquo;. Вместо этого двоичная версия хэша должна начинаться с заранее определенного количества нулей. Например: 20 нулей. Отправитель может сгенерировать хэш, начинающийся с 20 нулей, включив в него нонс, который случайным образом дополняет исходные данные до подходящего значения&hellip; но отправитель не может заранее знать, каким должен быть этот нонс. Поэтому для создания достоверного хэша у отправителя есть только один способ – метод проб и ошибок – <em>брутфорс</em>. Он должен продолжать подставлять разные нонсы, пока не найдет правильную комбинацию; в противном случае его письмо будет отклонено почтовым клиентом получателя. Как и решение Дворка и Наора, это решение требует вычислительных ресурсов, это – система Proof of Work.</p>
+<p>As you can see, merely inserting one comma into the sentence completely changes the hash. And, importantly, what the hash of either sentence would be was completely unpredictable; even after the first sentence was hashed, there was no way to calculate the second hash from it. The only way to find out was to actually hash both sentences.</p>
+<p>Hashcash applies this mathematical trick in a clever way.</p>
+<p>With Hashcash, the metadata of an email (the “from” address, the “to” address, the time, etc.) is formalized as a protocol. Additionally, the sender of an email must add a random number to this metadata: a “nonce.” All this metadata, including the nonce, is then hashed, so the resulting hash looks a bit like one of the random numbers above.</p>
+<p>Here’s the trick: not every hash is considered “valid.” Instead, the binary version of the hash must start with a predetermined number of zeroes. For example: 20 zeroes. The sender can generate a hash that starts with 20 zeroes by including a nonce that randomly adds up correctly … but the sender can’t know in advance what that nonce will look like.</p>
+<p>To generate a valid hash, therefore, the sender has only one option: trial and error (“brute force”). He must keep trying different nonces until he finds a valid combination; otherwise, his email will be rejected by the intended recipient’s email client. Like Dwork and Naor’s solution, this requires computational resources: it’s a proof-of-work system.</p>
 <blockquote>
-<p>&ldquo;Если у письма нет 20-битного хэша [&hellip;] у вас есть программа, которая возвращает его отправителю с уведомлением, объясняющим, требования для его отправки, и где можно получить программное обеспечение. Это мгновенно выведет спамеров из бизнеса, поскольку [&hellip;] они не располагают такой вычислительной мощностью&rdquo;. — Адам Бэк в списке рассылки шифропанков.</p>
+<p>“[I]f it hasn’t got a 20 bit hash […] you have a program which bounces it with a notice explaining the required postage, and where to obtain software from,” Back explained on the Cypherpunks mailing list. “This would put spammers out of business overnight, as 1,000,000 x 20 = 100 MIP years which is going to be more compute than they&rsquo;ve got.”</p>
 </blockquote>
-<p>Примечательно, что система Proof of Work Бэка более случайна, чем система Дворка и Наора. Решение дуэта требует решения головоломки, что означает, что более быстрый компьютер каждый раз будет решать ее быстрее, чем медленный. Но статистически Hashcash все равно позволит более медленному компьютеру время от времени находить правильное решение быстрее.</p>
-<blockquote>
-<p>По аналогии, если один человек бегает быстрее другого, то в спринте между ними каждый раз будет побеждать тот, кто быстрее. Но если один человек покупает больше лотерейных билетов, чем другой, второй из них, по статистике, все равно будет иногда выигрывать – просто не так часто.</p>
-</blockquote>
-<h1 id="цифровая-редкость">
-  Цифровая редкость
-  <a class="anchor" href="#%d1%86%d0%b8%d1%84%d1%80%d0%be%d0%b2%d0%b0%d1%8f-%d1%80%d0%b5%d0%b4%d0%ba%d0%be%d1%81%d1%82%d1%8c">#</a>
+<p>Notably, Back’s proof-of-work system is more random than Dwork and Naor’s. The duo’s solution required solving a puzzle, meaning that a faster computer would solve it faster than a slow computer every time. But statistically, Hashcash would still allow for the slower computer to find a correct solution faster some of the time.</p>
+<p>(By analogy, if one person runs faster than another person, the former will win a sprint between them every time. But if one person buys more lottery tickets than another person, the latter will statistically still win some of the time — just not as often.)</p>
+<h1 id="digital-scarcity">
+  Digital Scarcity
+  <a class="anchor" href="#digital-scarcity">#</a>
 </h1>
-<p>Как и предложение Дворка и Наора, идея Hashcash, которую Бэк подробно изложил в 2002 году в белой книге – так и не получила широкого распространения. Она была реализована на платформе SpamAssassin компании Apache с открытым исходным кодом, а компания Microsoft попробовала идею Proof of Work в несовместимом формате &ldquo;почтовых марок&rdquo;. И Бэк, и другие ученые в течение многих лет придумывали различные альтернативные варианты применения этого решения, но большинство из них так и не получили широкого распространения. Для большинства потенциальных приложений отсутствие сетевого эффекта, вероятно, было слишком велико, чтобы его преодолеть.</p>
-<p>Тем не менее, Дворк и Наор, а также Бэк (независимо друг от друга) предложили нечто новое. Если одной из самых мощных характеристик цифровых продуктов является простота копирования, то Proof of Work был, по сути, первой концепцией виртуальной редкости, которая не зависела от центрального органа: она привязывала цифровые данные к реальному, ограниченному ресурсу вычислительной мощности. А редкость, конечно же, является одной из важнейших предпосылок денег. Действительно, Бэк, в частности, отчетливо отнес Hashcash к категории денег во всех своих сообщениях в списке рассылки шифропанков и белой книге, уподобив предложение единственной цифровой наличности, известной миру на тот момент: eCash компании DigiCash Дэвида Чаума.</p>
+<p>Like Dwork and Naor’s proposal, Hashcash — which Back would elaborate on in a <a href="http://www.hashcash.org/papers/hashcash.pdf">white paper</a> in 2002 — never took off in a very big way. It was implemented in Apache’s open-source SpamAssassin platform, and Microsoft gave the proof-of-work idea a spin in the incompatible “email postmark” format. And Back, as well as other academics, came up with various alternative applications for the solution over the years, but most of these never gained much traction. For most potential applications, the lack of any network effect was probably too big to overcome.</p>
+<p>Nevertheless, Dwork and Naor as well as Back (independently) did introduce something new. Where one of the most powerful features of digital products is the ease with which they can be copied, proof of work was essentially the first concept akin to virtual scarcity that didn’t rely on a central party: it tied digital data to the real-world, limited resource of computing power.</p>
+<p>And scarcity, of course, is a prerequisite for money. Indeed, Back in particular explicitly placed Hashcash in the category of money throughout his Cypherpunks mailing list contributions and white paper, mirroring it to the only digital cash the world had seen at that point in time: DigiCash’s Ecash by Chaum.</p>
 <blockquote>
-<p>&ldquo;Hashcash может стать временной мерой, пока Digicash не получит более широкого распространения. Hashcash бесплатен, все, что вам нужно сделать – это запустить несколько циклов на вашем компьютере. Это соответствует культуре свободного обсуждения в сети, где финансово неимущие могут на равных поспорить с миллионерами, отставными правительственными чиновниками и т.д.[&hellip;] Hashcash может предоставить нам запасной способ борьбы со спамом, если Digicash провалится (будет объявлен вне закона или обяжет предоставлять личные данные пользователей).&rdquo;</p>
+<p>“Hashcash may provide a stop gap measure until digicash becomes more widely used,” Back argued on the mailing list. “Hashcash is free, all you’ve got to do is burn some cycles on your PC. It is in keeping with net culture of free discourse, where the financially challenged can duke it out with millionaires, retired government officials, etc on equal terms. [And] Hashcash may provide us with a fall back method for controling [sic] spam if digicash goes sour (gets outlawed or required to escrow user identities).”</p>
 </blockquote>
-<p>Однако, несмотря на название, Hashcash (как и предложение Дворка и Наора) не может самостоятельно функционировать как полноценная наличность. Возможно, важнейшей особенностью является то, что любое &ldquo;полученное&rdquo; доказательство работы бесполезно для получателя. В отличие от денег, его нельзя потратить или применить где-либо еще. Кроме того, поскольку скорость компьютеров росла с каждым годом, они могли производить все больше и больше доказательств с течением времени по более низкой стоимости: Hashcash подвергся бы (гипер)инфляции. Истинная польза Proof of Work заключалась в новой основе для исследований в сфере цифровых денег. Несколько появившихся позже наиболее заметных предложений цифровых денег были основаны на Hashcash, как правило, за счет добавления возможности повторного использования Proof of Work. (Наиболее ярким примером является Reusable Proof of Work – RPOW Хэла Финни).</p>
-<h1 id="биткоин">
-  Биткоин
-  <a class="anchor" href="#%d0%b1%d0%b8%d1%82%d0%ba%d0%be%d0%b8%d0%bd">#</a>
+<p>Despite the name, however, Hashcash couldn’t properly function as a full-fledged cash in itself (nor could Dwork and Naor’s proposal). Perhaps most importantly, any “received” proof of work is useless to the recipient. Unlike money, it could not be re-spent elsewhere. On top of that, as computers increased in speed every year, they could produce more and more proofs over time at lower cost: Hashcash would have been subject to (hyper)inflation.</p>
+<p>What proof of work did offer, more than anything else, was a new basis for research in the digital-money realm. Several of the most notable digital-money proposals that followed were building on Hashcash, typically by allowing the proofs of work to be reused. (With Hal Finney’s Reusable Proof of Work — RPOW — as the most obvious example.)</p>
+<h1 id="bitcoin">
+  Bitcoin
+  <a class="anchor" href="#bitcoin">#</a>
 </h1>
-<p>В конечном итоге, конечно, доказательство работы стало краеугольным камнем для Биткоина, а Hashcash – одной из немногих ссылок в его белой книге.</p>
-<div class="imageWrapper">
-    <img src="/img/gf-240.png">
-<p><em><a href="/epubs/bitcoin_ru.pdf">Скачать белую книгу Биткоина</a></em></p>
-</div>
-<p>Однако в Биткоине Hashcash (вернее, его версия) используется совсем не так, как многие могли бы предположить ранее. В отличие от Hashcash и других основанных на нем предложений, редкость, которую он обеспечивает, сама по себе не используется в качестве денег. Вместо этого Hashcash гарантирует гонку. Тот майнер, который первым создаст валидное доказательство работы – хэш блока Биткоина – получает право решать, какие транзакции будут записаны в блокчейн. По крайней мере, теоретически, каждый может участвовать на равных: подобно лотерее, даже мелкие майнеры статистически оказываются первыми в создании валидного Proof of Work. Кроме того, после добычи нового блока, подтверждающего ряд транзакций, эти транзакции вряд ли можно будет отменить. Злоумышленнику придется предоставить доказательство проведения по крайней мере такого же объема работы, который потребовался, чтобы изначально найти блок … и добавлять ее к каждому дополнительному найденному блоку, что в обычных условиях становится экспоненциально труднее с течением времени. Реальные ресурсы, которые необходимо затратить для обмана, обычно перевешивают потенциальную прибыль, которую можно получить в результате обмана, что дает получателям Биткоин-транзакций уверенность в том, что эти транзакции являются необратимыми. Таким образом, в Биткоине Hashcash убил двух зайцев одним выстрелом. Он решил проблему двойной траты децентрализованным способом, одновременно предоставив возможность выпуска новых монет в обращение, не нуждаясь в централизованном эмитенте.</p>
-<p>Hashcash не стал первой системой электронных денег – эта корона принадлежит eCash, а Proof of Work не может полноценно функционировать в качестве денег. Но без него децентрализованная система электронных денег была бы невозможна.</p>
-<hr>
-<p>Перевод статьи Аарона Ван Вирдума. Оригинал представлен в журнале Bitcoin Magazine:</p>
-<div class="imageWrapper">
-    <img src="/img/gf-234.jpg">
-<p><em><a href="https://bitcoinmagazine.com/technical/genesis-files-hashcash-or-how-adam-back-designed-bitcoins-motor-block">The Genesis Files: Hashcash or How Adam Back Designed Bitcoin’s Motor Block</a></em></p>
-</div>
+<p>Ultimately, of course, proof of work became a cornerstone for Bitcoin, with Hashcash as one of the few citations in the Bitcoin white paper.</p>
+<p>Yet, in Bitcoin, Hashcash (or, rather, a version of it) is utilized very differently than many would have guessed beforehand. Unlike Hashcash and other Hashcash-based proposals, the scarcity it provides is not itself used as money at all. Instead, Hashcash enables a race. Whichever miner is the first to produce a valid proof of work — a hash of a Bitcoin block — gets to decide which transactions go through. At least in theory, anyone can compete equally: much like a lottery, even small miners would statistically be the first to produce a valid proof of work every so often.</p>
+<p>Further, once a new block is mined, confirming a set of transactions, these transactions are unlikely to be reversed. An attacker would have to prove at least as much work as required to find the block in the first place, adding up for every additional block that is found, which under normal circumstances becomes exponentially harder over time. The real-world resources that must be spent in order to cheat typically outweigh the potential profit that can be made by cheating, giving recipients of Bitcoin transactions confidence that these transactions are final.</p>
+<p>This is how, in Bitcoin, Hashcash killed two birds with one stone. It solved the <a href="https://en.wikipedia.org/wiki/Double-spending">double-spending problem</a> in a decentralized way, while providing a trick to get new coins into circulation with no centralized issuer.</p>
+<p>Hashcash did not realize the first electronic cash system — Ecash takes that crown, and proof-of-work could not really function as money. But a <em>decentralized</em> electronic cash system might well have been impossible without it.</p>
 
 <div class="book-expand">
   <label>
     <div class="book-expand-head flex justify-between">
-      <span>Оглавление</span>
+      <span>Contents</span>
       <span>...</span>
     </div>
     <input type="checkbox" class="hidden" />
     <div class="book-expand-content markdown-inner">
       <ol>
-<li>
-<p><a href="/gf/genesis-intro">Пролог: День, когда криптография изменилась навсегда</a></p>
-</li>
-<li>
-<p><a href="/gf/genesis-1">Часть I: eCash Дэвида Чаума и зарождение мечты шифропанков</a></p>
-</li>
-<li>
-<p><a href="/gf/genesis-2">Часть II: Hashcash или как Адам Бэк разработал сердце Биткоина</a></p>
-</li>
-<li>
-<p><a href="/gf/genesis-3">Часть III: Если у Биткоина был прототип, то это были b-money Вэя Дая</a></p>
-</li>
-<li>
-<p><a href="/gf/genesis-4">Часть IV: Создавая Bit Gold, Сабо был в двух шагах от изобретения Биткоина</a></p>
-</li>
-<li>
-<p><a href="/gf/genesis-5">Часть V: Как поиски цифровой наличности привели Хэла Финни к созданию RPOW (и не только)</a></p>
-</li>
+<li><a href="/en/gf/genesis-intro">Intro: The Day Cryptography Changed Forever</a></li>
+<li><a href="/en/gf/genesis-1">Part I: How David Chaum’s eCash Spawned a Cypherpunk Dream</a></li>
+<li><a href="/en/gf/genesis-2">Part II: Hashcash or How Adam Back Designed Bitcoin’s Motor Block</a></li>
+<li><a href="/en/gf/genesis-3">Part III: If Bitcoin Had a First Draft, Wei Dai’s B-Money Was It</a></li>
+<li><a href="/en/gf/genesis-4">Part IV: With Bit Gold, Szabo Was Inches Away From Inventing Bitcoin</a></li>
+<li><a href="/en/gf/genesis-5">Part V: How Hal Finney’s Quest For Digital Cash Led To RPOW (And More)</a></li>
 </ol>
 
     </div>
@@ -3231,11 +3048,11 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#ценообразование-через-обработку-или-борьба-со-спамом">&ldquo;Ценообразование через обработку или борьба со спамом&rdquo;</a></li>
-    <li><a href="#адам-бэк-и-шифропанки">Адам Бэк и шифропанки</a></li>
+    <li><a href="#pricing-via-processing-or-combatting-junk-mail">“Pricing via Processing or Combatting Junk Mail”</a></li>
+    <li><a href="#adam-back-and-the-cypherpunks">Adam Back and the Cypherpunks</a></li>
     <li><a href="#hashcash">Hashcash</a></li>
-    <li><a href="#цифровая-редкость">Цифровая редкость</a></li>
-    <li><a href="#биткоин">Биткоин</a></li>
+    <li><a href="#digital-scarcity">Digital Scarcity</a></li>
+    <li><a href="#bitcoin">Bitcoin</a></li>
   </ul>
 </nav>
 

@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Будущее on 21ideas</title>
+    <title>Future on 21ideas</title>
     <link>http://localhost:1313/future/</link>
-    <description>Recent content in Будущее on 21ideas</description>
-    <generator>Hugo</generator>
-    <language>ru-RU</language>
+    <description>Recent content in Future on 21ideas</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
     <atom:link href="http://localhost:1313/future/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Эй, Биткоин, притормози</title>
-      <link>http://localhost:1313/ej-bitcoin-pritormozi/</link>
+      <title>Hey Bitcoin, Slow Down!</title>
+      <link>http://localhost:1313/hey-bitcoin-slow-down/</link>
       <pubDate>Sat, 25 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/ej-bitcoin-pritormozi/</guid>
-      <description>&lt;p&gt;Сегодня предлагаю заглянуть в будущее и обратить внимание на то, насколько редким является биткоин.&lt;/p&gt;&#xA;&lt;blockquote class=&#34;book-hint btc&#34;&gt;&#xA;  &lt;p&gt;&lt;a href=&#34;https://mtc.medium.com/hey-bitcoin-slow-down-d5a692d07619&#34;&gt;Оригинал&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/contribute/&#34;&gt;Поддержать проект&lt;/a&gt;&lt;/p&gt;&#xA;&#xA;&lt;/blockquote&gt;&#xA;&#xA;&lt;h3 id=&#34;взгляд-на-динамику-появления-биткоинов&#34;&gt;&#xA;  Взгляд на динамику появления биткоинов&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%d0%b2%d0%b7%d0%b3%d0%bb%d1%8f%d0%b4-%d0%bd%d0%b0-%d0%b4%d0%b8%d0%bd%d0%b0%d0%bc%d0%b8%d0%ba%d1%83-%d0%bf%d0%be%d1%8f%d0%b2%d0%bb%d0%b5%d0%bd%d0%b8%d1%8f-%d0%b1%d0%b8%d1%82%d0%ba%d0%be%d0%b8%d0%bd%d0%be%d0%b2&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;p&gt;&lt;em&gt;Сегодня предлагаю заглянуть в будущее и обратить внимание на то, насколько редким является биткоин. С каждой эпохой производство биткоинов будет замедляться все сильнее, а борьба за монеты лишь ужесточится. Статья, подготовленная @mtcbtc, предлагает взглянуть на динамику появления биткоинов самым что ни на есть глобальным образом.&lt;/em&gt;  &lt;/p&gt;</description>
+      <guid>http://localhost:1313/hey-bitcoin-slow-down/</guid>
+      <description>This article by @mtc was published in his Medium blog.&#xA;Contribute.&#xA;A look at one humble bitcoin’s mining velocity # It currently takes about 48 seconds to mine a single bitcoin. This is based on a target block completion time of 10 minutes and a block reward of 12.5 BTC. At the May 2020 halving — when the block reward halves to 6.25 BTC — mining velocity for a single bitcoin will slow, for the first time, to above one minute.</description>
     </item>
     <item>
-      <title>Сможет ли Биткоин пережить апокалипсис?</title>
-      <link>http://localhost:1313/apokalipsis/</link>
+      <title>Can Bitcoin Survive An Apocalypse?</title>
+      <link>http://localhost:1313/apocalypse/</link>
       <pubDate>Sat, 25 Dec 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/apokalipsis/</guid>
-      <description>&lt;p&gt;Может ли Биткоин выжить, подобно таракану, или всемирный коллапс приведет к неизбежной его гибели?&lt;/p&gt;&#xA;&lt;blockquote class=&#34;book-hint btc&#34;&gt;&#xA;  &lt;p&gt;Оригинал статьи опубликован в журнале &lt;a href=&#34;https://bitcoinmagazine.com/technical/can-bitcoin-survive-an-apocalypse&#34;&gt;Bitcoin Magazine&lt;/a&gt;. Перевод подготовлен &lt;a href=&#34;https://snort.social/p/npub10awzknjg5r5lajnr53438ndcyjylgqsrnrtq5grs495v42qc6awsj45ys7&#34;&gt;Тони⚡️&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/contribute/&#34;&gt;Поддержать проект&lt;/a&gt;.&lt;/p&gt;&#xA;&#xA;&lt;/blockquote&gt;&#xA;&#xA;&lt;p&gt;Мы часто используем термин &amp;ldquo;антихрупкий&amp;rdquo; или &amp;ldquo;цензуроустойчивый&amp;rdquo; для описания Биткоина. Но применимы ли эти термины, если интернет будет намеренно отключен или произойдет какое-то ужасное, катастрофическое событие?&lt;/p&gt;&#xA;&lt;p&gt;Короткий ответ — &lt;em&gt;да, Биткоин может пережить апокалипсис&lt;/em&gt;. Более того, Биткоин является самой надежной сетью на планете, а также наиболее вероятным денежным инструментом, который поможет выжить в апокалиптической ситуации.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/apocalypse/</guid>
+      <description>Could Bitcoin stick it out like a roach, or would a worldwide collapse lead to the inevitable demise of Bitcoin?&#xA;This article by Andrew Howard was published in Bitcoin Magazine.&#xA;Contribute.&#xA;We often use the term “anti-fragile” or “censorship-resistant” to describe Bitcoin. But do these terms still apply if the internet is intentionally cut off or if some horrible, catastrophic event ends up happening?&#xA;The short answer? Yes, Bitcoin can survive an apocalypse.</description>
     </item>
     <item>
-      <title>Биткоин и тепловая энергия океанов</title>
-      <link>http://localhost:1313/bitcoin-i-teplovaya-energiya-okeanov/</link>
+      <title>Bitcoin and Ocean Thermal Energy</title>
+      <link>http://localhost:1313/bitcoin-and-oceans/</link>
       <pubDate>Mon, 04 Apr 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/bitcoin-i-teplovaya-energiya-okeanov/</guid>
-      <description>&lt;p&gt;Материал о том, как Биткоин максималист и океанограф Натаниэль Хармон пытается с помощью майнинга Биткоина преодолеть эффект масштаба посредством продвижения идеи технологии преобразования тепловой энергии океана (OTЭC) и обеспечить более миллиарда человек возобновляемой энергией.&lt;/p&gt;&#xA;&lt;blockquote class=&#34;book-hint btc&#34;&gt;&#xA;  &lt;p&gt;Тред &lt;a href=&#34;https://twitter.com/level39&#34;&gt;Level39&lt;/a&gt; переведен пабликом &lt;a href=&#34;https://t.me/gametheoryhub&#34;&gt;∞/21М&lt;/a&gt;. Редактура – Тони ⚡️. &lt;a href=&#34;https://twitter.com/level39/status/1511061780726001665&#34;&gt;Оригинал&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/contribute/&#34;&gt;Поддержать проект&lt;/a&gt;.&lt;/p&gt;&#xA;&#xA;&lt;/blockquote&gt;&#xA;&#xA;&lt;p&gt;Как Биткоин будет способствовать процветанию человечества и обезуглероживанию 1 миллиарда человек? Он превратит океаны Земли в гигантскую солнечную панель с помощью технологии преобразования тепловой энергии океана (OTЭC) 19-го века, которая была загнана в угол из-за эффекта масштаба.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/bitcoin-and-oceans/</guid>
+      <description>This thread by Level39 was published in his Twitter.&#xA;Contribute.&#xA;How will Bitcoin promote human flourishing and decarbonization for 1 Billion people? By turning Earth&amp;rsquo;s oceans into a giant solar panel, through 19th-century Ocean Thermal Energy Conversion (OTEC) technology, that has been stymied by economies of scale.&#xA;Every day the sun rises in the East, and its rays make its way across the planet. As the sun makes its way over the Pacific Ocean, solar miners in Texas wind down and hash rate drops enough to make other miners more profitable.</description>
     </item>
   </channel>
 </rss>

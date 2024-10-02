@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blockchain on 21ideas</title>
+    <link>http://localhost:1313/tags/blockchain/</link>
+    <description>Recent content in Blockchain on 21ideas</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 19 Mar 2024 18:20:58 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/blockchain/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Part I</title>
+      <link>http://localhost:1313/ba/1/</link>
+      <pubDate>Fri, 13 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ba/1/</guid>
+      <description>Contents ... Part I&#xA;Part II&#xA;Part III&#xA;This essay by Dhruv Bansal was published in Unchained blog.&#xA;Contribute.&#xA;The desire to travel far away and start a new currency will become a powerful driver of human expansion into space.&#xA;Earth will run on bitcoin, but colonies on Mars, the outer planets, and distant stars will not. Though faraway colonies will value and trade bitcoin, they will choose to launch, defend and use their own local blockchains.</description>
+    </item>
+    <item>
+      <title>Part II</title>
+      <link>http://localhost:1313/ba/2/</link>
+      <pubDate>Wed, 09 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ba/2/</guid>
+      <description>Contents ... Part I&#xA;Part II&#xA;Part III&#xA;This essay by Dhruv Bansal was published in Unchained blog.&#xA;Contribute.&#xA;This is Part II in a series of speculations about the hyperbitcoinized future. In Part I, we defined the First Law of Bitcoin Astronomy and described how it incentivizes searching for energy to power our growing civilization.&#xA;In this part, we continue to follow the energy and speculate about how money and society coevolve as humanity expands through space.</description>
+    </item>
+    <item>
+      <title>Part III</title>
+      <link>http://localhost:1313/ba/3/</link>
+      <pubDate>Mon, 08 Mar 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ba/3/</guid>
+      <description>Contents ... Part I&#xA;Part II&#xA;Part III&#xA;This essay by Dhruv Bansal was published in Unchained blog.&#xA;Contribute.&#xA;This is Part III in a series of speculations about the hyperbitcoinized future. In Part I, we defined the First Law of Bitcoin Astronomy and described how it leads to new blockchains as humanity expands through the solar system. In Part II, we described a Second Law which leads to nested blockchains the size of solar systems and beyond, hashing vast energies on cosmic timescales.</description>
+    </item>
+    <item>
+      <title>Bitcoin, Not Blockchain</title>
+      <link>http://localhost:1313/gradually-then-suddenly/bitcoin-not-blockchain/</link>
+      <pubDate>Fri, 06 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/gradually-then-suddenly/bitcoin-not-blockchain/</guid>
+      <description>Contents ... Gradually, Then Suddenly: Intro Bitcoin Can’t Be Copied Bitcoin Is Not Too Volatile Bitcoin Does Not Waste Energy Bitcoin is Not Too Slow Bitcoin Fixes This Bitcoin, Not Blockchain Bitcoin is Not Backed by Nothing Bitcoin is Not a Pyramid Scheme Bitcoin Cannot be Banned Bitcoin is Not for Criminals Bitcoin Obsoletes All Other Money Bitcoin is a Rally Cry Bitcoin is Common Sense Bitcoin is Antifragile Bitcoin is One for All Bitcoin is the Great Definancialization This article by Parker Lewis was first published in Unchained blog.</description>
+    </item>
+    <item>
+      <title>A complete history of Bitcoin’s consensus forks</title>
+      <link>http://localhost:1313/bitcoin-forks/</link>
+      <pubDate>Thu, 28 Dec 2017 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/bitcoin-forks/</guid>
+      <description>Abstract # In this piece, we list 19 Bitcoin consensus rule changes (or 18 as an accidental one “failed”), which represents what we believe to be almost every significant such event in Bitcoin’s history. At least three of these incidents resulted in an identifiable chainsplit, lasting approximately 51, 24, and six blocks, in 2010, 2013 and 2015, respectively.&#xA;This report was originaly published in BitMEX Research blog. Later it has been updated.</description>
+    </item>
+    <item>
+      <title>Analyzing the 2013 Bitcoin fork</title>
+      <link>http://localhost:1313/analyzing-2013-fork/</link>
+      <pubDate>Tue, 28 Jul 2015 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/analyzing-2013-fork/</guid>
+      <description>This article by Arvind Narayanan was first published on Freedom to Tinker computer science blog.&#xA;Contribute.&#xA;On March 11, 2013, Bitcoin experienced a technical crisis. Versions 0.7 and 0.8 of the software diverged from each other in behavior due to a bug, causing the block chain to “fork” into two. Considering how catastrophic a hard fork can be, the crisis was resolved quickly with remarkably little damage owing to the exemplary competence of the developers in charge.</description>
+    </item>
+  </channel>
+</rss>

@@ -5,20 +5,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&display=swap" rel="stylesheet">  <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="
-  This article by Greg Walker was published on learnmeabitcoin.com website.
+<meta name="description" content="This article by Greg Walker was published on learnmeabitcoin.com website.
 Contribute.
-
-
-
 You can measure the size of a bitcoin transaction in 3 ways:
-
-Bytes (b) – Transaction size on disk.
-Weight Units (wu) – For fitting transactions in to a block.
-Virtual Bytes (vB) – For comparing fee rates between transactions.
-
-Bytes is the most straightforward unit. It&rsquo;s used for measuring any amount of data on a computer.
-Weight Units and Virtual Bytes are measurements unique to bitcoin. They both measure the size of a transaction in terms of bytes too, but they give a discount to some parts of the transaction data and are used when calculating how many transactions can fit inside a block.">
+Bytes (b) – Transaction size on disk. Weight Units (wu) – For fitting transactions in to a block. Virtual Bytes (vB) – For comparing fee rates between transactions. Bytes is the most straightforward unit. It&rsquo;s used for measuring any amount of data on a computer.
+Weight Units and Virtual Bytes are measurements unique to bitcoin.">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark">
 <meta name="lightning" content="21ideas@getalby.com"><meta property="og:title" content="Transaction Size" />
@@ -2904,42 +2895,42 @@ https://github.com/alex-shpak/hugo-book
 </div>
 <p>Every transaction has a <em>weight</em> measurement. This measurement was introduced in the <a href="/en/segwit">segregated witness</a> upgrade. A transaction&rsquo;s weight is calculated by multiplying the size (in bytes) of different parts of the <a href="https://learnmeabitcoin.com/technical/transaction/">transaction</a> by either 4 or 1:</p>
 <table>
-  <thead>
-      <tr>
-          <th style="text-align: left">Field</th>
-          <th style="text-align: left">Multiplier</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td style="text-align: left">version</td>
-          <td style="text-align: left">x4</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">marker</td>
-          <td style="text-align: left">x1</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">flag</td>
-          <td style="text-align: left">x1</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">input</td>
-          <td style="text-align: left">x4</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">output</td>
-          <td style="text-align: left">x4</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">witness</td>
-          <td style="text-align: left">x1</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">locktime</td>
-          <td style="text-align: left">x4</td>
-      </tr>
-  </tbody>
+<thead>
+<tr>
+<th>Field</th>
+<th>Multiplier</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>version</td>
+<td>x4</td>
+</tr>
+<tr>
+<td>marker</td>
+<td>x1</td>
+</tr>
+<tr>
+<td>flag</td>
+<td>x1</td>
+</tr>
+<tr>
+<td>input</td>
+<td>x4</td>
+</tr>
+<tr>
+<td>output</td>
+<td>x4</td>
+</tr>
+<tr>
+<td>witness</td>
+<td>x1</td>
+</tr>
+<tr>
+<td>locktime</td>
+<td>x4</td>
+</tr>
+</tbody>
 </table>
 <p>This therefore gives a <em>discount</em> to the <a href="https://learnmeabitcoin.com/technical/transaction/witness/">witness</a> data.</p>
 <h3 id="example-1">
@@ -2982,42 +2973,42 @@ https://github.com/alex-shpak/hugo-book
 <p>The <em>virtual size</em> of a transaction is the same as its <em>weight</em> divided by 4.</p>
 <p>Or to put it another way, instead of multiplying some parts of a transaction by 4 to create a discount for the witness data, you discount the witness data directly by multiplying it by 0.25 instead:</p>
 <table>
-  <thead>
-      <tr>
-          <th style="text-align: left">Field</th>
-          <th style="text-align: left">Multiplier</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td style="text-align: left">version</td>
-          <td style="text-align: left">x1</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">marker</td>
-          <td style="text-align: left">x0.25</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">flag</td>
-          <td style="text-align: left">x0.25</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">input</td>
-          <td style="text-align: left">x1</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">output</td>
-          <td style="text-align: left">x1</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">witness</td>
-          <td style="text-align: left">x0.25</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">locktime</td>
-          <td style="text-align: left">x1</td>
-      </tr>
-  </tbody>
+<thead>
+<tr>
+<th>Field</th>
+<th>Multiplier</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>version</td>
+<td>x1</td>
+</tr>
+<tr>
+<td>marker</td>
+<td>x0.25</td>
+</tr>
+<tr>
+<td>flag</td>
+<td>x0.25</td>
+</tr>
+<tr>
+<td>input</td>
+<td>x1</td>
+</tr>
+<tr>
+<td>output</td>
+<td>x1</td>
+</tr>
+<tr>
+<td>witness</td>
+<td>x0.25</td>
+</tr>
+<tr>
+<td>locktime</td>
+<td>x1</td>
+</tr>
+</tbody>
 </table>
 <p>So &ldquo;weight&rdquo; and &ldquo;virtual size&rdquo; provide the same measurement, just with different units. But using virtual bytes makes it easier to compare the fee rate of new segwit transactions with the fee rate of legacy transactions (which had previously used <em>sats-per-byte</em>).</p>
 <blockquote class="book-hint info">

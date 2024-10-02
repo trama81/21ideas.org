@@ -1,27 +1,20 @@
 <!DOCTYPE html>
-<html lang="ru-RU" dir="ltr">
+<html lang="en" dir="ltr">
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&display=swap" rel="stylesheet">  <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="
-  Автор выражает благодарность Estudio Bitcoin, и лично Albercoin и Arkad, за их работу по установке RoninDojo на x86.
-
-
-  С теорией CoinJoin в Whirlpool, а также практическим иcпользованием Dojo, можно ознакомиться здесь. Установка &ldquo;ванильного&rdquo; Dojo описана в официальной документации Samourai и в руководстве от 𝕂𝕐ℂ𝟛.
-
-
-  Во время ареста разработчиков Samourai Wallet 24 апреля 2024 года спецслужбами были так же отключены серверы координатора Whirlpool и обозреватель блокчейна OXT. В связи с этим, начиная с версии RoninDojo v2.1.4, из кода удалены инструменты Whirlpool, WST и калькулятор Больцмана.">
+<meta name="description" content="The author would like to thank Estudio Bitcoin, and personally Albercoin and Arkad, for their work on installing RoninDojo on x86. Installation of &ldquo;vanilla&rdquo; Dojo is described in official documentation by Samourai and in guide by 𝕂𝕐ℂ𝟛. During the arrest of the Samourai Wallet developers on April 24, 2024, the Whirlpool coordinator&rsquo;s servers and the OXT blockchain explorer were also shut down by intelligence agencies. Therefore, starting with RoninDojo v2.">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark">
-<meta name="lightning" content="21ideas@getalby.com"><meta property="og:title" content="Установка RoninDojo на x86" />
+<meta name="lightning" content="21ideas@getalby.com"><meta property="og:title" content="RoninDojo x86 Installation Guide" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://localhost:1313/practice-privacy/ronindojo/" />
 <meta property="og:image" content="http://localhost:1313/img/ronin-11.jpg"/>
 
-<title>Установка RoninDojo на x86 | 21ideas</title>
+<title>RoninDojo x86 Installation Guide | 21ideas</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -29,10 +22,10 @@
 <link rel="apple-touch-icon" media="(prefers-color-scheme: dark)" sizes="180x180" href="/apple-touch-icon-dark.png">
 <link rel="icon" type="image/png" media="(prefers-color-scheme: dark)" sizes="32x32" href="/favicon-32x32-dark.png">
 <link rel="icon" type="image/png" media="(prefers-color-scheme: dark)" sizes="16x16" href="/favicon-16x16-dark.png">
-  <link rel="alternate" hreflang="en" href="http://localhost:1313/en/practice-privacy/ronindojo/" title="RoninDojo x86 Installation Guide">
+  <link rel="alternate" hreflang="ru-RU" href="http://localhost:1313/ru/practice-privacy/ronindojo/" title="Установка RoninDojo на x86">
 <link rel="stylesheet" href="/book.min.44d288673620af09aba4fb7b29ef4c1d1f9c0258f725bd228507764ec1740f0a.css" integrity="sha256-RNKIZzYgrwmrpPt7Ke9MHR&#43;cAlj3Jb0ihQd2TsF0Dwo=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/ru.search.min.760cb93fca4cc9af4d5d957f0e91325f35c604c9b72da7d0d0517ae0f7424f53.js" integrity="sha256-dgy5P8pMya9NXZV/DpEyXzXGBMm3LafQ0FF64PdCT1M=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.322caf709709c011df0f8373a87ef3ce291ba22a62fdd5b8cf00bf824b20d5f8.js" integrity="sha256-MiyvcJcJwBHfD4NzqH7zzikboipi/dW4zwC/gksg1fg=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -60,7 +53,7 @@ https://github.com/alex-shpak/hugo-book
 
 
 <div class="book-search">
-  <input type="text" id="book-search-input" placeholder="Поиск" aria-label="Поиск" maxlength="64" data-hotkeys="s/" />
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
   <div class="book-search-spinner hidden"></div>
   <ul id="book-search-results"></ul>
 </div>
@@ -85,15 +78,15 @@ https://github.com/alex-shpak/hugo-book
     <label for="languages" class="flex justify-between">
       <a role="button" class="flex align-center">
         <img src="/svg/translate.svg" class="book-icon" alt="Languages" />
-        Русский
+        English
       </a>
     </label>
 
     <ul>
       
       <li>
-        <a href="http://localhost:1313/en/practice-privacy/ronindojo/">
-          English
+        <a href="http://localhost:1313/ru/practice-privacy/ronindojo/">
+          Русский
         </a>
       </li>
       
@@ -127,7 +120,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-4b959577bbd662d890894b4ef656e45e" class="toggle"  />
     <label for="section-4b959577bbd662d890894b4ef656e45e" class="flex justify-between">
-      <a href="/start/" class="">Старт</a>
+      <a role="button" class="">Start</a>
     </label>
   
 
@@ -141,7 +134,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/start/start/" class="">Что такое Биткоин?</a>
+    <a href="/start/start/" class="">Bitcoin Basics</a>
   
 
         </li>
@@ -154,7 +147,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/start/guide/" class="">Используем биткоин</a>
+    <a href="/start/guide/" class="">Using Bitcoin</a>
   
 
         </li>
@@ -167,33 +160,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/course/" class="">Биткоин от А до Я</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/bitcoin-myths/" class="">Разрушаем мифы о Биткоине</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/shitcoin-casino/" class="">Не играйте в щиткоин-казино</a>
+    <a href="/shitcoin-gambling-games/" class="">Don’t Play Shitcoin Gambling Games</a>
   
 
         </li>
@@ -213,7 +180,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-c8e2b39e67e72b49a36ee1ec8355ecba" class="toggle"  />
     <label for="section-c8e2b39e67e72b49a36ee1ec8355ecba" class="flex justify-between">
-      <a href="/theory/" class="">Теория</a>
+      <a href="/theory/" class="">Theory</a>
     </label>
   
 
@@ -229,7 +196,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-981a6953479a2e41da30ae73c119d6e2" class="toggle"  />
     <label for="section-981a6953479a2e41da30ae73c119d6e2" class="flex justify-between">
-      <a href="/economics/" class="">Экономика</a>
+      <a href="/economics/" class="">Economics</a>
     </label>
   
 
@@ -245,7 +212,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-43f26905d14df4de3737d0d5dfd90ca0" class="toggle"  />
     <label for="section-43f26905d14df4de3737d0d5dfd90ca0" class="flex justify-between">
-      <a href="/pzv/" class="">Постепенно, затем внезапно</a>
+      <a href="/gradually-then-suddenly/" class="">Gradually, Then Suddenly</a>
     </label>
   
 
@@ -259,7 +226,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/postepenno-zatem-vnezapno/" class="">Введение</a>
+    <a href="/gradually-then-suddenly/intro/" class="">Intro</a>
   
 
         </li>
@@ -272,7 +239,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-nelzya-skopirovat/" class="">Биткоин нельзя скопировать</a>
+    <a href="/gradually-then-suddenly/bitcoin-cant-be-copied/" class="">Bitcoin Can’t Be Copied</a>
   
 
         </li>
@@ -285,7 +252,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-ne-slishkom-volatilen/" class="">Биткоин не слишком волатилен</a>
+    <a href="/gradually-then-suddenly/bitcoin-is-not-too-volatile/" class="">Bitcoin Is Not Too Volatile</a>
   
 
         </li>
@@ -298,7 +265,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-ne-tratit-energiyu-zrya/" class="">Биткоин не тратит энергию зря</a>
+    <a href="/gradually-then-suddenly/bitcoin-does-not-waste-energy/" class="">Bitcoin Does Not Waste Energy</a>
   
 
         </li>
@@ -311,7 +278,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-ne-slishkom-medlennyj/" class="">Биткоин не слишком медленный</a>
+    <a href="/gradually-then-suddenly/bitcoin-is-not-too-slow/" class="">Bitcoin is Not Too Slow</a>
   
 
         </li>
@@ -324,7 +291,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-eto-ispravit/" class="">Биткоин это исправит</a>
+    <a href="/gradually-then-suddenly/bitcoin-fixes-this/" class="">Bitcoin Fixes This</a>
   
 
         </li>
@@ -337,7 +304,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-ne-blokchejn/" class="">Биткоин, не блокчейн</a>
+    <a href="/gradually-then-suddenly/bitcoin-not-blockchain/" class="">Bitcoin, Not Blockchain</a>
   
 
         </li>
@@ -350,7 +317,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-nichem-ne-podkreplen/" class="">Биткоин ничем не подкреплен?</a>
+    <a href="/gradually-then-suddenly/bitcoin-is-not-backed-by-nothing/" class="">Bitcoin is Not Backed by Nothing</a>
   
 
         </li>
@@ -363,7 +330,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-ne-finansovaya-piramida/" class="">Биткоин — не финансовая пирамида</a>
+    <a href="/gradually-then-suddenly/bitcoin-is-not-a-pyramid-scheme/" class="">Bitcoin is Not a Pyramid Scheme</a>
   
 
         </li>
@@ -376,7 +343,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-ne-mozhet-byt-zabanen/" class="">Биткоин не может быть забанен</a>
+    <a href="/gradually-then-suddenly/bitcoin-cannot-be-banned/" class="">Bitcoin Cannot be Banned</a>
   
 
         </li>
@@ -389,7 +356,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-ne-dlya-prestupnikov/" class="">Биткоин не для преступников</a>
+    <a href="/gradually-then-suddenly/bitcoin-is-not-for-criminals/" class="">Bitcoin is Not for Criminals</a>
   
 
         </li>
@@ -402,7 +369,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-obescenivaet-ostalnye-dengi/" class="">Биткоин обесценивает остальные деньги</a>
+    <a href="/gradually-then-suddenly/bitcoin-obsoletes-all-other-money/" class="">Bitcoin Obsoletes All Other Money</a>
   
 
         </li>
@@ -415,7 +382,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-zov-k-edineniyu/" class="">Биткоин — зов к единению</a>
+    <a href="/gradually-then-suddenly/bitcoin-is-a-rally-cry/" class="">Bitcoin is a Rally Cry</a>
   
 
         </li>
@@ -428,7 +395,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-eto-zdravyj-smysl/" class="">Биткоин — это здравый смысл</a>
+    <a href="/gradually-then-suddenly/bitcoin-is-common-sense/" class="">Bitcoin is Common Sense</a>
   
 
         </li>
@@ -441,7 +408,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-antihrupok/" class="">Биткоин антихрупок</a>
+    <a href="/gradually-then-suddenly/bitcoin-is-antifragile/" class="">Bitcoin is Antifragile</a>
   
 
         </li>
@@ -454,7 +421,20 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-velikaya-definancializaciya/" class="">Биткоин — великая дефинанcиализация</a>
+    <a href="/gradually-then-suddenly/bitcoin-is-one-for-all/" class="">Bitcoin is One for All</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/gradually-then-suddenly/bitcoin-is-the-great-definancialization/" class="">Bitcoin is the Great Definancialization</a>
   
 
         </li>
@@ -474,7 +454,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-070af377b46d38e45de9a60dd3c8e7d0" class="toggle"  />
     <label for="section-070af377b46d38e45de9a60dd3c8e7d0" class="flex justify-between">
-      <a href="/sb/" class="">Становление Биткоина</a>
+      <a href="/discovering-bitcoin/" class="">Discovering Bitcoin</a>
     </label>
   
 
@@ -488,7 +468,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sb/stanovlenie-intro/" class="">Введение</a>
+    <a href="/discovering-bitcoin/intro/" class="">Introduction</a>
   
 
         </li>
@@ -501,7 +481,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sb/stanovlenie-1/" class="">О времени</a>
+    <a href="/discovering-bitcoin/about-time/" class="">About Time</a>
   
 
         </li>
@@ -514,7 +494,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sb/stanovlenie-2/" class="">О людях</a>
+    <a href="/discovering-bitcoin/about-people/" class="">About People</a>
   
 
         </li>
@@ -527,7 +507,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sb/stanovlenie-3/" class="">Знакомьтесь: деньги</a>
+    <a href="/discovering-bitcoin/introducing-money/" class="">Introducing Money</a>
   
 
         </li>
@@ -540,7 +520,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sb/stanovlenie-4/" class="">Поворот не туда</a>
+    <a href="/discovering-bitcoin/a-wrong-turn-new-plan-needed/" class="">A Wrong Turn (New Plan Needed)!</a>
   
 
         </li>
@@ -553,7 +533,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sb/stanovlenie-5/" class="">Цифровая редкость</a>
+    <a href="/discovering-bitcoin/digital-scarcity/" class="">Digital Scarcity</a>
   
 
         </li>
@@ -566,7 +546,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sb/stanovlenie-6/" class="">Цифровые контракты</a>
+    <a href="/discovering-bitcoin/digital-contracts/" class="">Digital Contracts</a>
   
 
         </li>
@@ -579,7 +559,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sb/stanovlenie-7/" class="">Недостающие части головоломки</a>
+    <a href="/discovering-bitcoin/the-missing-pieces/" class="">The Missing Pieces</a>
   
 
         </li>
@@ -597,7 +577,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitkoin-ne-vredit-okruzhayushej-srede/" class="">Биткоин и окружающая среда</a>
+    <a href="/bitcoin-is-not-harmful-for-the-environment/" class="">Bitcoin Is Not Harmful For The Environment</a>
   
 
         </li>
@@ -610,7 +590,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sem-setevyh-effektov-bitkoina/" class="">Семь сетевых эффектов Биткоина</a>
+    <a href="/seven-network-effects-of-bitcoin/" class="">The Seven Network Effects of Bitcoin</a>
   
 
         </li>
@@ -623,7 +603,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/hozyaeva-i-raby-deneg/" class="">Хозяева и рабы денег</a>
+    <a href="/masters-and-slaves-of-money/" class="">Masters and Slaves of Money</a>
   
 
         </li>
@@ -636,7 +616,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/strukturnaya-perestrojka/" class="">Структурная перестройка</a>
+    <a href="/structural-adjustment/" class="">Structural Adjustment</a>
   
 
         </li>
@@ -649,7 +629,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/v-zashchitu-deflyacii/" class="">В защиту дефляции</a>
+    <a href="/in-defense-of-deflation/" class="">In Defense Of Deflation</a>
   
 
         </li>
@@ -662,7 +642,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sravnenie-monetarnyh-standartov/" class="">Сравнение монетарных стандартов</a>
+    <a href="/comparison-of-monetary-standards/" class="">Comparison of Monetary Standards</a>
   
 
         </li>
@@ -675,7 +655,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sravnenie-monetarnyh-standartov/" class="">Сравнение монетарных стандартов</a>
+    <a href="/petrodollar-negative-effects/" class="">Petrodollar Negative Effects</a>
   
 
         </li>
@@ -688,7 +668,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/negativnye-effekty-neftedollara/" class="">Негативные внешние эффекты нефтедоллара</a>
+    <a href="/shelling-out/" class="">Shelling Out: The Origins of Money</a>
   
 
         </li>
@@ -701,7 +681,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/raskoshelivaemsya/" class="">Раскошеливаемся (Shelling Out): Происхождение денег</a>
+    <a href="/bitcoin-rhythms-of-history/" class="">Bitcoin and the Rhythms of History</a>
   
 
         </li>
@@ -714,7 +694,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-i-ritmy-istorii/" class="">Биткоин и ритмы истории</a>
+    <a href="/bitcoin-and-the-hopf-cycle-of-the-internet/" class="">Bitcoin &amp; the HOPF Cycle of the Internet</a>
   
 
         </li>
@@ -727,7 +707,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-i-internet-cikly-hopfa/" class="">Биткоин и интернет-циклы Хопфа</a>
+    <a href="/money-blockchains-and-social-scalability/" class="">Money, blockchains, and social scalability</a>
   
 
         </li>
@@ -740,7 +720,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/dengi-blokchejny-i-socialnaya-masshtabiruemost/" class="">Деньги, блокчейны и социальная масштабируемость</a>
+    <a href="/what-is-money/" class="">What Is Money</a>
   
 
         </li>
@@ -753,7 +733,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/chto-takoe-dengi/" class="">Что такое деньги</a>
+    <a href="/only-the-strong-survive/" class="">Only The Strong Survive</a>
   
 
         </li>
@@ -766,7 +746,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/vyzhivaet-silnejshij/" class="">Выживает сильнейший</a>
+    <a href="/dollar-cost-averaging/" class="">Dollar-Cost Averaging</a>
   
 
         </li>
@@ -779,33 +759,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/strategiya-dca/" class="">Стратегия DCA</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/jevons-paradox/" class="">Парадокс Джевонса: Обратная истина</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/kak-rabotajut-dengi/" class="">Как работают деньги</a>
+    <a href="/jevons-paradox/" class="">Jevons Paradox: Contrary Truth</a>
   
 
         </li>
@@ -825,7 +779,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-4d5bb6cd046af3ae6f08884281ee0445" class="toggle"  />
     <label for="section-4d5bb6cd046af3ae6f08884281ee0445" class="flex justify-between">
-      <a href="/security/" class="">Безопасность</a>
+      <a href="/security/" class="">Security</a>
     </label>
   
 
@@ -839,7 +793,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/kak-hranit-kljuchi/" class="">Биткоин-кошельки. Зачем и как хранить свои приватные ключи</a>
+    <a href="/how-to-hold-private-keys/" class="">Bitcoin Wallets: How, Why and When to Hold Your Own Private Keys</a>
   
 
         </li>
@@ -852,7 +806,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/seed/" class="">Что такое сид-фраза?</a>
+    <a href="/seed/" class="">What is a bitcoin seed phrase and how does it work?</a>
   
 
         </li>
@@ -865,7 +819,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/seed-security/" class="">Как обезопасить свои сид-фразы?</a>
+    <a href="/seed-security/" class="">Ultimate guide to storing your bitcoin seed phrase backups</a>
   
 
         </li>
@@ -878,7 +832,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/passphrase/" class="">Насколько надежна ваша парольная фраза?</a>
+    <a href="/passphrase/" class="">Is your passphrase strong enough?</a>
   
 
         </li>
@@ -891,7 +845,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/multisig/" class="">Все о мультисиг</a>
+    <a href="/what-is-multisig/" class="">What is multisig?</a>
   
 
         </li>
@@ -904,7 +858,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/hwws/" class="">Сравнение аппаратных кошельков</a>
+    <a href="/hwws/" class="">The best Bitcoin hardware wallets</a>
   
 
         </li>
@@ -917,7 +871,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/multisig-1/" class="">Мультисиг. Часть I</a>
+    <a href="/multisig-1/" class="">Multisig Part I: Why Multisig?</a>
   
 
         </li>
@@ -930,7 +884,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/multisig-2/" class="">Мультисиг. Часть II: Отдельные ключи – основа мультиподписи</a>
+    <a href="/multisig-2/" class="">Multisig Part II: Single Keys are the Foundation of Multisignature</a>
   
 
         </li>
@@ -950,7 +904,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-e5dc95f8c3734f1c9cf3045c3ba217e8" class="toggle"  />
     <label for="section-e5dc95f8c3734f1c9cf3045c3ba217e8" class="flex justify-between">
-      <a href="/privacy/" class="">Приватность</a>
+      <a href="/privacy/" class="">Privacy</a>
     </label>
   
 
@@ -964,7 +918,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/privacy/luchshie-praktiki/" class="">Как сохранить приватность?</a>
+    <a href="/privacy/best-practices/" class="">Bitcoin Privacy: Best Practices</a>
   
 
         </li>
@@ -977,7 +931,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/privacy/no-kyc/" class="">Никаких KYC, берегите персональные данные</a>
+    <a href="/privacy/no-kyc/" class="">no-KYC only. Avoid the creep</a>
   
 
         </li>
@@ -990,7 +944,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/privatnost-v-seti-bitcoin/" class="">Приватность в сети Биткоин</a>
+    <a href="/wiki-bitcoin-privacy/" class="">Bitcoin Privacy</a>
   
 
         </li>
@@ -1003,7 +957,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-stanovitsya-kriticheski-vazhnym/" class="">Биткоин становится критически важным</a>
+    <a href="/bitcoin-becomes-critical/" class="">Bitcoin Becomes Critical</a>
   
 
         </li>
@@ -1016,7 +970,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bip47-ili-gadkij-utenok/" class="">BIP47, или гадкий утенок</a>
+    <a href="/bip47-the-ugly-duckling/" class="">BIP47, the ugly duckling</a>
   
 
         </li>
@@ -1031,7 +985,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-7626e3de66018c98c264d84fe366e13a" class="toggle"  />
     <label for="section-7626e3de66018c98c264d84fe366e13a" class="flex justify-between">
-      <a href="/privacy/oxt/" class="">Понимание приватности в сети Биткоин с помощью OXT</a>
+      <a href="/privacy/oxt/" class="">Understanding Bitcoin Privacy with OXT</a>
     </label>
   
 
@@ -1045,7 +999,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/privacy/oxt-1/" class="">Часть 1: Анализ цепочки и приватность транзакций</a>
+    <a href="/privacy/oxt-1/" class="">Part 1: Chain Analysis And Transaction Privacy</a>
   
 
         </li>
@@ -1058,7 +1012,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/privacy/oxt-2/" class="">Часть 2: Ключевые концепции анализа цепочки</a>
+    <a href="/privacy/oxt-2/" class="">Part 2: Chain Analysis Core Concepts</a>
   
 
         </li>
@@ -1071,7 +1025,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/privacy/oxt-3/" class="">Часть 3: Защита от анализа цепочки</a>
+    <a href="/privacy/oxt-3/" class="">Part 3: Defences Against Chain Analysis</a>
   
 
         </li>
@@ -1084,7 +1038,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/privacy/oxt-4/" class="">Часть 4: Применение концепций анализа цепочки для улучшения приватности пользователей</a>
+    <a href="/privacy/oxt-4/" class="">Part 4: Applying Chain Analysis Concepts To Improve User Privacy</a>
   
 
         </li>
@@ -1102,7 +1056,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/privacy/coinjoin/" class="">Понимание и использование CoinJoin</a>
+    <a href="/privacy/coinjoin/" class="">CoinJoin Overview</a>
   
 
         </li>
@@ -1115,7 +1069,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-fungibility/" class="">Взаимозаменяемость Биткоина</a>
+    <a href="/bitcoin-fungibility/" class="">Bitcoin Fungibility</a>
   
 
         </li>
@@ -1148,7 +1102,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-591754e4c6a4e23cb58f7ff9d9022ef1" class="toggle"  />
     <label for="section-591754e4c6a4e23cb58f7ff9d9022ef1" class="flex justify-between">
-      <a href="/protocol/" class="">Протокол</a>
+      <a href="/protocol/" class="">Protocol</a>
     </label>
   
 
@@ -1162,7 +1116,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/kto-kontroliruet-bitkoin-kor/" class="">Кто контролирует Bitcoin Core?</a>
+    <a href="/who-controls-bitcoin-core/" class="">Who Controls Bitcoin Core?</a>
   
 
         </li>
@@ -1175,7 +1129,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/vechnaja-borba/" class="">Вечная борьба Биткоина</a>
+    <a href="/bitcoins-eternal-struggle/" class="">Bitcoin&#39;s Eternal Struggle</a>
   
 
         </li>
@@ -1188,7 +1142,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/ob-udobstve-vzaimodejstvija-s-bitcoinom/" class="">Об удобстве взаимодействия с Биткоином</a>
+    <a href="/on-bitcoins-ux/" class="">On Bitcoin’s UX</a>
   
 
         </li>
@@ -1201,7 +1155,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-zoloto-2-0/" class="">Биткоин: цифровое золото или пиринговая наличность?</a>
+    <a href="/bitcoin-digital-gold-or-ecash/" class="">Bitcoin: Digital Gold or Peer-to-Peer Cash?</a>
   
 
         </li>
@@ -1214,7 +1168,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/upravlenie-bitcoin/" class="">Управление Биткоином</a>
+    <a href="/bitcoin-governance/" class="">Bitcoin Governance</a>
   
 
         </li>
@@ -1227,7 +1181,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/doverennye-tretyi-storony/" class="">Доверенные третьи стороны — это бреши в системе безопасности</a>
+    <a href="/trusted-third-parties/" class="">Trusted Third Parties are Security Holes</a>
   
 
         </li>
@@ -1240,7 +1194,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/21-million-ne-podlezhit-obsuzhdeniyu/" class="">21 миллион не подлежит обсуждению</a>
+    <a href="/21-million-is-non-negotiable/" class="">21 Million is Non-Negotiable</a>
   
 
         </li>
@@ -1253,7 +1207,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/proof-of-work/" class="">Proof of Work: доказательство проделанной работы</a>
+    <a href="/proof-of-work/" class="">Proof of Work, a pictorial essay</a>
   
 
         </li>
@@ -1266,7 +1220,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/proof-of-stake-eto-skam/" class="">Proof of Stake – это скам</a>
+    <a href="/proof-of-stake-is-a-scam/" class="">Proof of stake is a scam</a>
   
 
         </li>
@@ -1279,7 +1233,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/byl-li-satoshi-zhadnym-majnerom/" class="">Был ли Сатоши жадным майнером?</a>
+    <a href="/was-satoshi-a-greedy-miner/" class="">Was Satoshi a Greedy Miner?</a>
   
 
         </li>
@@ -1292,7 +1246,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/segwit/" class="">Что такое SegWit</a>
+    <a href="/segwit/" class="">What Is SegWit</a>
   
 
         </li>
@@ -1305,7 +1259,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/taproot/" class="">Что такое Taproot</a>
+    <a href="/taproot/" class="">What Is Taproot</a>
   
 
         </li>
@@ -1318,7 +1272,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bomby-slozhnosti-ethereum/" class="">Бомбы сложности Ethereum</a>
+    <a href="/coercion-of-ethereums-difficulty-bomb/" class="">The Coercion Of Ethereum&#39;s Difficulty Bomb</a>
   
 
         </li>
@@ -1331,7 +1285,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/rgb/" class="">Разбирая протокол RGB</a>
+    <a href="/rgb/" class="">Understanding the RGB protocol</a>
   
 
         </li>
@@ -1344,7 +1298,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/halving/" class="">Что такое Биткоин-халвинг?</a>
+    <a href="/difficulty/" class="">Bitcoin Difficulty Adjustment</a>
   
 
         </li>
@@ -1357,7 +1311,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/difficulty/" class="">О корректировке сложности майнинга</a>
+    <a href="/bitcoin-address-types/" class="">Bitcoin address types</a>
   
 
         </li>
@@ -1370,7 +1324,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sravnenie-tipov-bitcoin-adresov/" class="">Типы биткоин-адресов</a>
+    <a href="/myths-about-halving/" class="">Myths About the Bitcoin Halving</a>
   
 
         </li>
@@ -1383,20 +1337,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/myths-about-halving/" class="">Мифы о Биткоин-халвинге</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/mining-walkthrough/" class="">SHA256 и майнинг в сети Биткоин</a>
+    <a href="/mining-walkthrough/" class="">SHA256 and Bitcoin Mining Walkthrough</a>
   
 
         </li>
@@ -1411,7 +1352,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-c6baffdfa73d6dd5df13795b95ab68ac" class="toggle"  />
     <label for="section-c6baffdfa73d6dd5df13795b95ab68ac" class="flex justify-between">
-      <a href="/protocol/utxo/" class="">Что такое UTXO и как ими управлять?</a>
+      <a href="/protocol/utxo/" class="">What Is UTXO And How To Manage Them</a>
     </label>
   
 
@@ -1425,7 +1366,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/protocol/utxo-1/" class="">Что такое UTXO?</a>
+    <a href="/protocol/utxo-1/" class="">What is a Bitcoin UTXO</a>
   
 
         </li>
@@ -1438,7 +1379,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/protocol/utxo-2/" class="">Как избежать высоких комиссий при большом количестве UTXO</a>
+    <a href="/protocol/utxo-2/" class="">Too Many UTXOs: How To Avoid High Fees</a>
   
 
         </li>
@@ -1451,7 +1392,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/protocol/utxo-3/" class="">Приватность UTXO</a>
+    <a href="/protocol/utxo-3/" class="">UTXOs Privacy</a>
   
 
         </li>
@@ -1469,7 +1410,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/transaction-size/" class="">Размер транзакции</a>
+    <a href="/transaction-size/" class="">Transaction Size</a>
   
 
         </li>
@@ -1489,7 +1430,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-2cc3faa5b078e8edfc892bc463882294" class="toggle"  />
     <label for="section-2cc3faa5b078e8edfc892bc463882294" class="flex justify-between">
-      <a href="/history/" class="">История</a>
+      <a href="/history/" class="">History</a>
     </label>
   
 
@@ -1505,7 +1446,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-11903f72dc1c8e68f0d748ad1bb6164d" class="toggle"  />
     <label for="section-11903f72dc1c8e68f0d748ad1bb6164d" class="flex justify-between">
-      <a href="/gf/" class="">Генезис-файлы</a>
+      <a href="/gf/" class="">The Genesis Files</a>
     </label>
   
 
@@ -1519,7 +1460,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/gf/genesis-intro/" class="">Пролог</a>
+    <a href="/gf/genesis-intro/" class="">Intro</a>
   
 
         </li>
@@ -1532,7 +1473,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/gf/genesis-1/" class="">Часть I: eCash Дэвида Чаума и зарождение мечты шифропанков</a>
+    <a href="/gf/genesis-1/" class="">Part I: How David Chaum’s eCash Spawned a Cypherpunk Dream</a>
   
 
         </li>
@@ -1545,7 +1486,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/gf/genesis-2/" class="">Часть II: Hashcash или как Адам Бэк разработал сердце Биткоина</a>
+    <a href="/gf/genesis-2/" class="">Part II: Hashcash or How Adam Back Designed Bitcoin’s Motor Block</a>
   
 
         </li>
@@ -1558,7 +1499,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/gf/genesis-3/" class="">Часть III: Если у Биткоина был прототип, то это были b-money Вэя Дая</a>
+    <a href="/gf/genesis-3/" class="">Part III: If Bitcoin Had a First Draft, Wei Dai’s B-Money Was It</a>
   
 
         </li>
@@ -1571,7 +1512,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/gf/genesis-4/" class="">Часть IV: Создавая Bit Gold, Сабо был в двух шагах от изобретения Биткоина</a>
+    <a href="/gf/genesis-4/" class="">Part IV: With Bit Gold, Szabo Was Inches Away From Inventing Bitcoin</a>
   
 
         </li>
@@ -1584,7 +1525,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/gf/genesis-5/" class="">Часть V: Как поиски цифровой наличности привели Хэла Финни к созданию RPOW (и не только)</a>
+    <a href="/gf/genesis-5/" class="">Part V: How Hal Finney’s Quest For Digital Cash Led To RPOW (And More)</a>
   
 
         </li>
@@ -1602,7 +1543,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/hal-finney/" class="">Хэл Финни — жизнь и смерть легенды движения шифропанков</a>
+    <a href="/hal-finney/" class="">Hal Finney — The Life And Death Of A Cypherpunk Legend</a>
   
 
         </li>
@@ -1615,7 +1556,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-and-me/" class="">Биткоин и я</a>
+    <a href="/bitcoin-and-me/" class="">Bitcoin and Me</a>
   
 
         </li>
@@ -1628,7 +1569,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-reformaciya/" class="">Биткоин-Реформация</a>
+    <a href="/bitcoin-reformation/" class="">The Bitcoin Reformation</a>
   
 
         </li>
@@ -1641,7 +1582,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-forks/" class="">Полная история консенсус-форков Биткоина</a>
+    <a href="/bitcoin-forks/" class="">A complete history of Bitcoin’s consensus forks</a>
   
 
         </li>
@@ -1654,7 +1595,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/analyzing-2013-fork/" class="">Анализ форка Биткоина 2013 года</a>
+    <a href="/analyzing-2013-fork/" class="">Analyzing the 2013 Bitcoin fork</a>
   
 
         </li>
@@ -1674,7 +1615,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-ac2daa2484c1be670f7cc1e0d8d82356" class="toggle"  />
     <label for="section-ac2daa2484c1be670f7cc1e0d8d82356" class="flex justify-between">
-      <a href="/philosophy/" class="">Философия</a>
+      <a href="/philosophy/" class="">Philosophy</a>
     </label>
   
 
@@ -1690,7 +1631,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-b11b531f912b5e92a8260d0a526b85b6" class="toggle"  />
     <label for="section-b11b531f912b5e92a8260d0a526b85b6" class="flex justify-between">
-      <a href="/chemu-ya-nauchilsya-u-bitcoina/" class="">Чему я научился у Биткоина?</a>
+      <a href="/what-i-learned-from-bitcoin/" class="">What I&#39;ve Learned From Bitcoin</a>
     </label>
   
 
@@ -1704,7 +1645,33 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/chemu-ya-nauchilsya-u-bitcoina/filosofskie-uroki-bitcoina/" class="">Часть1. Философские уроки Биткоина</a>
+    <a href="/what-i-learned-from-bitcoin-1/" class="">Part I. Philosophical Teachings of Bitcoin</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/what-i-learned-from-bitcoin-2/" class="">Part II. Economic Teachings of Bitcoin</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/what-i-learned-from-bitcoin-3/" class="">Part III. Technological Teachings of Bitcoin</a>
   
 
         </li>
@@ -1722,7 +1689,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/ne-shitcoin/" class="">Биткоин, не щиткоин</a>
+    <a href="/not-shitcoin/" class="">Why Bitcoin, Not Shitcoin</a>
   
 
         </li>
@@ -1735,7 +1702,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/neotemlemye-prava-sobstvennosti/" class="">Неотъемлемые права собственности</a>
+    <a href="/inalienable-property-rights/" class="">Inalienable Property Rights</a>
   
 
         </li>
@@ -1748,7 +1715,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/manifest-kriptoanarhista/" class="">Манифест криптоанархиста</a>
+    <a href="/crypto-anarchist-manifesto/" class="">The Crypto Anarchist Manifesto</a>
   
 
         </li>
@@ -1761,7 +1728,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/manifest-shifropanka/" class="">Манифест шифропанка</a>
+    <a href="/cypherpunks-manifesto/" class="">A Cypherpunk&#39;s Manifesto</a>
   
 
         </li>
@@ -1774,7 +1741,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/tyulpannaya-lihoradka/" class="">Биткоин — современная голландская тюльпанная лихорадка?</a>
+    <a href="/dutch-tulip-bubble/" class="">Is Bitcoin Like the Dutch Tulip Bubble?</a>
   
 
         </li>
@@ -1787,7 +1754,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/vse-moshenniki/" class="">Все — мошенники</a>
+    <a href="/everyones-a-scammer/" class="">Everyone&#39;s a Scammer</a>
   
 
         </li>
@@ -1800,7 +1767,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/svoboda-cennosti/" class="">Свобода ценности</a>
+    <a href="/freedom-of-value/" class="">The Freedom of Value</a>
   
 
         </li>
@@ -1813,7 +1780,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-meme/" class="">Биткоин — единственный реальный мем</a>
+    <a href="/bitcoin-meme/" class="">Bitcoin Is The Only Real Meme</a>
   
 
         </li>
@@ -1826,7 +1793,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/nol-i-bitcoin/" class="">Ноль и Биткоин</a>
+    <a href="/number-zero-and-bitcoin/" class="">The Number Zero and Bitcoin</a>
   
 
         </li>
@@ -1839,7 +1806,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/crypto-bro/" class="">Дорогие крипто- и фиат-бро</a>
+    <a href="/crypto-bro/" class="">Dear Crypto &amp; Fiat Bros</a>
   
 
         </li>
@@ -1852,7 +1819,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/boremsya-s-poddelnymi-bitcoin/" class="">Боремся с поддельными биткоинами</a>
+    <a href="/fighting-fake-bitcoin/" class="">Fighting Fake Bitcoin</a>
   
 
         </li>
@@ -1865,7 +1832,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bit%D1%81oin-eto-micelij/" class="">Биткоин — это мицелий</a>
+    <a href="/bitcoin-is-the-mycelium/" class="">Bitcoin is The Mycelium of Money</a>
   
 
         </li>
@@ -1878,7 +1845,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pochemu-bitcoin-zhivoj-organizm/" class="">Доказательство жизни. Почему Биткоин — живой организм</a>
+    <a href="/proof-of-life/" class="">Proof of Life. Why Bitcoin is a Living Organism</a>
   
 
         </li>
@@ -1891,7 +1858,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/samaya-mirnaya-revolyuciya/" class="">Самая мирная революция</a>
+    <a href="/most-peaceful-revolution/" class="">A Most Peaceful Revolution</a>
   
 
         </li>
@@ -1904,7 +1871,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/o-bitcoin-vselennoj/" class="">О Биткоин-вселенной</a>
+    <a href="/bitcoin-universe/" class="">Bitcoin Universe</a>
   
 
         </li>
@@ -1917,7 +1884,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-dissidenty/" class="">Биткоин-диссиденты</a>
+    <a href="/bitcoin-dissidents/" class="">Bitcoin Dissidents</a>
   
 
         </li>
@@ -1930,7 +1897,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-svoboda/" class="">Биткоин = свобода</a>
+    <a href="/bitcoin-equals-freedom/" class="">Bitcoin Equals Freedom</a>
   
 
         </li>
@@ -1950,7 +1917,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-0ffd899989a7340537ceb8e2b6a04097" class="toggle"  />
     <label for="section-0ffd899989a7340537ceb8e2b6a04097" class="flex justify-between">
-      <a href="/future/" class="">Будущее</a>
+      <a href="/future/" class="">Future</a>
     </label>
   
 
@@ -1966,7 +1933,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-206fb3aae5266e1ff42aa0abc8ae8411" class="toggle"  />
     <label for="section-206fb3aae5266e1ff42aa0abc8ae8411" class="flex justify-between">
-      <a href="/ba/" class="">Биткоин-астрономия</a>
+      <a href="/ba/" class="">Bitcoin Astronomy</a>
     </label>
   
 
@@ -1980,7 +1947,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/ba/1/" class="">Постгипербиткоинизация</a>
+    <a href="/ba/1/" class="">Part I</a>
   
 
         </li>
@@ -1993,7 +1960,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/ba/2/" class="">Миллион крошечных миров</a>
+    <a href="/ba/2/" class="">Part II</a>
   
 
         </li>
@@ -2006,7 +1973,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/ba/3/" class="">Первый контакт</a>
+    <a href="/ba/3/" class="">Part III</a>
   
 
         </li>
@@ -2024,7 +1991,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/ej-bitcoin-pritormozi/" class="">Эй, Биткоин, притормози</a>
+    <a href="/hey-bitcoin-slow-down/" class="">Hey Bitcoin, Slow Down!</a>
   
 
         </li>
@@ -2037,7 +2004,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/apokalipsis/" class="">Сможет ли Биткоин пережить апокалипсис?</a>
+    <a href="/apocalypse/" class="">Can Bitcoin Survive An Apocalypse?</a>
   
 
         </li>
@@ -2050,7 +2017,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-i-teplovaya-energiya-okeanov/" class="">Биткоин и тепловая энергия океанов</a>
+    <a href="/bitcoin-and-oceans/" class="">Bitcoin and Ocean Thermal Energy</a>
   
 
         </li>
@@ -2070,7 +2037,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-94dfdc9d0099b419c9e2d6a83381dbe2" class="toggle"  />
     <label for="section-94dfdc9d0099b419c9e2d6a83381dbe2" class="flex justify-between">
-      <a href="/lightning/" class="">Лайтнинг</a>
+      <a href="/lightning/" class="">Lightning</a>
     </label>
   
 
@@ -2084,7 +2051,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/chto-takoe-laitning/" class="">Что такое Лайтнинг?</a>
+    <a href="/what-is-lightning-network/" class="">What is Lightning Network?</a>
   
 
         </li>
@@ -2097,7 +2064,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/lajtning-koshelki/" class="">Лайтнинг-кошельки</a>
+    <a href="/lightning-wallets/" class="">Lightning Wallets</a>
   
 
         </li>
@@ -2110,7 +2077,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/lajtning-adresa/" class="">Лайтнинг-адреса</a>
+    <a href="/how-lightning-address-works/" class="">How Lightning Address Works</a>
   
 
         </li>
@@ -2123,7 +2090,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/privatnost-v-lajtning/" class="">Приватность в сети Lightning</a>
+    <a href="/lightning-network-privacy/" class="">Lightning Network Privacy</a>
   
 
         </li>
@@ -2136,7 +2103,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/centralizovanna-li-set-lightning/" class="">Централизованна ли сеть Lightning?</a>
+    <a href="/is-lightning-centralized/" class="">Is Lightning centralized?</a>
   
 
         </li>
@@ -2149,7 +2116,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/mekhanizm-raboty-lightning/" class="">Механизм работы Lightning Network</a>
+    <a href="/lightning-network-explained/" class="">Lightning Network Explained</a>
   
 
         </li>
@@ -2162,7 +2129,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/problema-vhodyashchej-likvidnosti/" class="">Решение проблемы входящей ликвидности</a>
+    <a href="/inbound-liquidity-problem/" class="">Solutions to inbound liquidity problem</a>
   
 
         </li>
@@ -2187,7 +2154,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-334a33758c01abfe631e1e37dc0d1f40" class="toggle" checked />
     <label for="section-334a33758c01abfe631e1e37dc0d1f40" class="flex justify-between">
-      <a href="/practice/" class="">Практика</a>
+      <a href="/practice/" class="">Practice</a>
     </label>
   
 
@@ -2203,7 +2170,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-a94c5b45bfdc8ef0dd89b00612026092" class="toggle"  />
     <label for="section-a94c5b45bfdc8ef0dd89b00612026092" class="flex justify-between">
-      <a href="/practice/buy/" class="">Покупка</a>
+      <a href="/practice/buy/" class="">Buy</a>
     </label>
   
 
@@ -2217,7 +2184,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/newbie-buy/" class="">Покупка и хранение биткоина для новичков</a>
+    <a href="/newbie-buy/" class="">Buy and Hodl Bitcoin for Beginners</a>
   
 
         </li>
@@ -2230,7 +2197,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/hodl-hodl/" class="">Покупка биткоина без KYC на Hodl Hodl</a>
+    <a href="/hodl-hodl/" class="">Buy noKYC Bitcoin with HodlHodl</a>
   
 
         </li>
@@ -2243,7 +2210,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/robosats/" class="">RoboSats: Приватный p2p обмен</a>
+    <a href="/robosats/" class="">RoboSats: Private P2P Exchange</a>
   
 
         </li>
@@ -2263,7 +2230,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-7e14ce7fc5fdbe001466044f77bdd564" class="toggle"  />
     <label for="section-7e14ce7fc5fdbe001466044f77bdd564" class="flex justify-between">
-      <a href="/practice/hodl/" class="">Хранение</a>
+      <a href="/practice/hodl/" class="">Hodl</a>
     </label>
   
 
@@ -2277,7 +2244,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/electrum/" class="">Кошелек Электрум</a>
+    <a href="/electrum/" class="">Electrum Bitcoin Wallet</a>
   
 
         </li>
@@ -2290,7 +2257,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/blue/" class="">Кошелек Blue</a>
+    <a href="/blue/" class="">Installing Blue Wallet</a>
   
 
         </li>
@@ -2303,7 +2270,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/seedsigner/" class="">SeedSigner: оффлайн-крепость для ваших биткоинов</a>
+    <a href="/seedsigner/" class="">SeedSigner: DIY Bitcoin Signing Device</a>
   
 
         </li>
@@ -2316,20 +2283,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/holodnyj-koshelek-iz-starogo-smartfona/" class="">Холодный кошелек из старого смартфона</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/coldcard/" class="">Что такое Coldcard?</a>
+    <a href="/coldcard/" class="">What is Coldcard?</a>
   
 
         </li>
@@ -2349,7 +2303,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-88cf9017cf07549621f025a2843cb148" class="toggle"  />
     <label for="section-88cf9017cf07549621f025a2843cb148" class="flex justify-between">
-      <a href="/practice/interact/" class="">Взаимодействие</a>
+      <a href="/practice/interact/" class="">Interact</a>
     </label>
   
 
@@ -2363,7 +2317,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/practice/bitcoin-node/" class="">Каждому следует запустить собственную Биткоин-ноду!</a>
+    <a href="/practice/bitcoin-node/" class="">Why You Should Run Your Own Bitcoin Node</a>
   
 
         </li>
@@ -2376,7 +2330,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/orangepilling-in-5-min/" class="">Оранжпиллинг за 5 минут</a>
+    <a href="/orangepilling-in-5-min/" class="">Orangepilling in 5 min</a>
   
 
         </li>
@@ -2389,7 +2343,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/5-tips-for-teaching-bitcoin/" class="">5 советов по обучению Биткоину</a>
+    <a href="/5-tips-for-teaching-bitcoin/" class="">5 tips for teaching Bitcoin</a>
   
 
         </li>
@@ -2409,7 +2363,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-32dccf00abb46a5281b7aae069126928" class="toggle" checked />
     <label for="section-32dccf00abb46a5281b7aae069126928" class="flex justify-between">
-      <a href="/practice-privacy/" class="">Практики приватности</a>
+      <a href="/practice-privacy/" class="">Privacy</a>
     </label>
   
 
@@ -2425,7 +2379,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-ae30dbe7c31a834e8bfe23314d9a5ff6" class="toggle"  />
     <label for="section-ae30dbe7c31a834e8bfe23314d9a5ff6" class="flex justify-between">
-      <a href="/practice-privacy/dojo/" class="">Установка Биткоин-узла Dojo на x86</a>
+      <a href="/practice-privacy/dojo/" class="">Dojo x86 Bitcoin Node Guide</a>
     </label>
   
 
@@ -2439,7 +2393,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/practice-privacy/dojo-0/" class="">Введение</a>
+    <a href="/practice-privacy/dojo-0/" class="">Introduction</a>
   
 
         </li>
@@ -2452,7 +2406,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/practice-privacy/dojo-1/" class="">Установка Bitcoin Core и Tor</a>
+    <a href="/practice-privacy/dojo-1/" class="">Installing Bitcoin Core &amp; Tor</a>
   
 
         </li>
@@ -2465,7 +2419,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/practice-privacy/dojo-2/" class="">Установка индексатора Fulcrum</a>
+    <a href="/practice-privacy/dojo-2/" class="">Installing Fulcrum Indexer</a>
   
 
         </li>
@@ -2478,7 +2432,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/practice-privacy/dojo-3/" class="">Установка блокчейн-обозревателя Mempool</a>
+    <a href="/practice-privacy/dojo-3/" class="">Installing Mempool Explorer</a>
   
 
         </li>
@@ -2491,7 +2445,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/practice-privacy/dojo-4/" class="">Установка Samourai Dojo</a>
+    <a href="/practice-privacy/dojo-4/" class="">Installing Samourai Dojo</a>
   
 
         </li>
@@ -2504,7 +2458,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/practice-privacy/dojo-5/" class="">Конфигурация межсетевого экрана</a>
+    <a href="/practice-privacy/dojo-5/" class="">Firewall Configuration</a>
   
 
         </li>
@@ -2517,7 +2471,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/practice-privacy/dojo-6/" class="">Установка обновлений пакетов</a>
+    <a href="/practice-privacy/dojo-6/" class="">Installing Package Updates</a>
   
 
         </li>
@@ -2535,7 +2489,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/practice-privacy/ronindojo/" class="active">Установка RoninDojo на x86</a>
+    <a href="/practice-privacy/ronindojo/" class="active">RoninDojo x86 Installation Guide</a>
   
 
         </li>
@@ -2548,7 +2502,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/grapheneos/" class="">GrapheneOS: Избавляемся от слежки Google на смартфоне</a>
+    <a href="/grapheneos/" class="">GrapheneOS: De-Google your phone</a>
   
 
         </li>
@@ -2568,7 +2522,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-9425a98499a6d50bed8efd403e1db980" class="toggle"  />
     <label for="section-9425a98499a6d50bed8efd403e1db980" class="flex justify-between">
-      <a href="/practice/lightning/" class="">Лайтнинг на практике</a>
+      <a href="/practice/lightning/" class="">Lightning</a>
     </label>
   
 
@@ -2582,7 +2536,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/phoenix/" class="">Кошелек Phoenix</a>
+    <a href="/phoenix/" class="">Phoenix: The Non-Custodial Lightning Wallet</a>
   
 
         </li>
@@ -2595,7 +2549,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/lnbits/" class="">LNbits – швейцарский нож среди лайтнинг-приложений</a>
+    <a href="/lnbits/" class="">LNbits: A Swiss knife among Lightning apps</a>
   
 
         </li>
@@ -2608,7 +2562,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/alby-i-nostr/" class="">Alby и Nostr</a>
+    <a href="/alby-and-nostr/" class="">Alby and Nostr</a>
   
 
         </li>
@@ -2621,7 +2575,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/zapplanner/" class="">Подписки с помощью Лайтнинг</a>
+    <a href="/zapplanner/" class="">Recurring Lightning Payments</a>
   
 
         </li>
@@ -2634,7 +2588,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/lntips/" class="">Телеграм-бот @LightningTipBot</a>
+    <a href="/lntips/" class="">Telegram bot @LightningTipBot</a>
   
 
         </li>
@@ -2647,7 +2601,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/ochishchaem-bitcoin-cherez-lajtning/" class="">Очищаем биткоины через сеть Лайтнинг</a>
+    <a href="/lightning-liquidity-management-guide/" class="">Lightning Liquidity Management Guide</a>
   
 
         </li>
@@ -2660,20 +2614,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/likvidnost-v-lajtning/" class="">Руководство по управлению ликвидностью в сети Lightning</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/mutiny/" class="">Кошелек Mutiny</a>
+    <a href="/mutiny/" class="">Starting with Mutiny Wallet</a>
   
 
         </li>
@@ -2698,84 +2639,12 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-d286fdc9558f9b3466aa6f3d4805be77" class="toggle"  />
     <label for="section-d286fdc9558f9b3466aa6f3d4805be77" class="flex justify-between">
-      <a href="/rabbithole/" class="">Кроличья нора</a>
+      <a href="/rabbithole/" class="">Rabbithole</a>
     </label>
   
 
           
   <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/books/" class="">Книги</a>
-  
-
-          
-  <ul>
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/videos/" class="">Видео</a>
-  
-
-          
-  <ul>
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/audiobooks/" class="">Аудиокниги</a>
-  
-
-          
-  <ul>
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/pods/" class="">Подкасты</a>
-  
-
-          
-  <ul>
-    
-  </ul>
-
-        </li>
-      
     
   </ul>
 
@@ -2806,37 +2675,9 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/posts/" class="">Блог</a>
-  
-
-        
-    
-  </li>
-  
-  <li>
-    
-        
-  
-  
-
-  
-    <a href="/calendar/" class="">Биткоин-календарь</a>
-  
-
-        
-    
-  </li>
-  
-  <li>
-    
-        
-  
-  
-
-  
     <input type="checkbox" id="section-9329cf488076ba9f91ca728aef24f607" class="toggle"  />
     <label for="section-9329cf488076ba9f91ca728aef24f607" class="flex justify-between">
-      <a href="/contribute/" class="">Принять участие</a>
+      <a href="/contribute/" class="">Contribute</a>
     </label>
   
 
@@ -2851,33 +2692,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/syntax/" class="">Оформление статей</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/github/" class="">Как добавить статью?</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/obsidian/" class="">Публикация статей через Obsidian</a>
+    <a href="/github/" class="">Adding an Article</a>
   
 
         </li>
@@ -2896,7 +2711,21 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/feedback/" class="">Обратная связь</a>
+    <span>Blog</span>
+  
+
+        
+    
+  </li>
+  
+  <li>
+    
+        
+  
+  
+
+  
+    <a href="/feedback/" class="">Feedback</a>
   
 
         
@@ -2974,7 +2803,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Установка RoninDojo на x86</strong>
+  <strong>RoninDojo x86 Installation Guide</strong>
 
   <label for="toc-control">
     
@@ -2992,41 +2821,41 @@ https://github.com/alex-shpak/hugo-book
   <ul>
     <li>
       <ul>
-        <li><a href="#отличия-dojo-и-ronindojo">Отличия Dojo и RoninDojo</a></li>
-        <li><a href="#системные-требования">Системные требования</a></li>
-        <li><a href="#установка-операционной-системы">Установка операционной системы</a></li>
-        <li><a href="#определение-конфигурации">Определение конфигурации</a></li>
-        <li><a href="#предварительный-этап">Предварительный этап</a></li>
-        <li><a href="#установка-и-настройка-службы-tor">Установка и настройка службы Tor</a></li>
-        <li><a href="#установка-samourai-dojo">Установка Samourai Dojo</a></li>
+        <li><a href="#dojo-and-ronindojo-differences">Dojo and RoninDojo differences</a></li>
+        <li><a href="#system-requirements">System Requirements</a></li>
+        <li><a href="#os-installation">OS installation</a></li>
+        <li><a href="#defining-the-configuration">Defining the configuration</a></li>
+        <li><a href="#pre-installation">Pre-installation</a></li>
+        <li><a href="#installing-and-configuring-the-tor-service">Installing and configuring the Tor service</a></li>
+        <li><a href="#samourai-dojo-installation">Samourai Dojo installation</a></li>
         <li><a href="#roninos">RoninOS</a>
           <ul>
-            <li><a href="#настройка-plymouth">Настройка plymouth</a></li>
-            <li><a href="#настройка-межсетевого-экрана">Настройка межсетевого экрана</a></li>
-            <li><a href="#настройка-дисков">Настройка дисков</a></li>
+            <li><a href="#customizing-plymouth">Customizing plymouth</a></li>
+            <li><a href="#configuring-the-firewall">Configuring the firewall</a></li>
+            <li><a href="#disk-configuration">Disk configuration</a></li>
           </ul>
         </li>
-        <li><a href="#ronin-ui-и-ronin-cli">Ronin UI и Ronin CLI</a></li>
-        <li><a href="#патчи-для-ronin-cli">Патчи для Ronin CLI</a></li>
-        <li><a href="#инструменты-ronindojo">Инструменты RoninDojo</a>
+        <li><a href="#ronin-ui-and-ronin-cli">Ronin UI and Ronin CLI</a></li>
+        <li><a href="#ronin-cli-patches">Ronin CLI patches</a></li>
+        <li><a href="#ronindojo-tools">RoninDojo tools</a>
           <ul>
-            <li><a href="#резервное-копирование-блокчейна">Резервное копирование блокчейна</a></li>
-            <li><a href="#установка-wst-и-калькулятора-больцмана">Установка WST и калькулятора Больцмана</a></li>
+            <li><a href="#blockchain-data-backup">Blockchain data backup</a></li>
+            <li><a href="#installing-wst-and-boltzmann-calculator">Installing WST and Boltzmann Calculator</a></li>
             <li><a href="#whirlpool">Whirlpool</a></li>
-            <li><a href="#обозреватели-блокчейна">Обозреватели блокчейна</a></li>
+            <li><a href="#blockchain-explorers">Blockchain explorers</a></li>
             <li><a href="#dojo-maintenance-tool-dmt">Dojo Maintenance Tool (DMT)</a></li>
-            <li><a href="#индексаторы-блокчейна">Индексаторы блокчейна</a></li>
-            <li><a href="#прочие-инструменты">Прочие инструменты</a></li>
+            <li><a href="#blockchain-indexers">Blockchain Indexers</a></li>
+            <li><a href="#further-tools">Further tools</a></li>
           </ul>
         </li>
-        <li><a href="#обновление-ronindojo">Обновление RoninDojo</a>
+        <li><a href="#ronindojo-update">RoninDojo update</a>
           <ul>
-            <li><a href="#обновление-ronin-ui">Обновление Ronin UI</a></li>
-            <li><a href="#обновление-ronin-cli">Обновление Ronin CLI</a></li>
-            <li><a href="#обновление-samourai-dojo">Обновление Samourai Dojo</a></li>
+            <li><a href="#ronin-ui-update">Ronin UI update</a></li>
+            <li><a href="#ronin-cli-update">Ronin CLI update</a></li>
+            <li><a href="#samourai-dojo-update">Samourai Dojo update</a></li>
           </ul>
         </li>
-        <li><a href="#поддержите-автора">Поддержите автора</a></li>
+        <li><a href="#support-the-author">Support the author</a></li>
       </ul>
     </li>
   </ul>
@@ -3051,122 +2880,120 @@ https://github.com/alex-shpak/hugo-book
 
 <h1>
     
-    Установка RoninDojo на x86
+    RoninDojo x86 Installation Guide
     
 </h1>
 <div class="pageDate">
-    2 февраля 2024 г.
+    February 2, 2024
 </div>
 
   <article class="markdown"><blockquote class="book-hint btc">
-  Автор выражает благодарность <a href="https://twitter.com/estudiobitcoin">Estudio Bitcoin</a>, и лично <a href="https://twitter.com/Albercoin">Albercoin</a> и <a href="https://twitter.com/Multicripto">Arkad</a>, за их <a href="https://estudiobitcoin.com/how-to-install-ronindojo-pc-intel-amd-x86_64">работу</a> по установке RoninDojo на x86.
+  The author would like to thank <a href="https://twitter.com/estudiobitcoin">Estudio Bitcoin</a>, and personally <a href="https://twitter.com/Albercoin">Albercoin</a> and <a href="https://twitter.com/Multicripto">Arkad</a>, for their <a href="https://estudiobitcoin.com/how-to-install-ronindojo-pc-intel-amd-x86_64">work</a> on installing RoninDojo on x86.
 </blockquote>
 <blockquote class="book-hint info">
-  С теорией CoinJoin в Whirlpool, а также практическим иcпользованием Dojo, можно ознакомиться <a href="/privacy/coinjoin">здесь</a>. Установка &ldquo;ванильного&rdquo; Dojo описана в <a href="https://docs.samourai.io/en/dojo">официальной документации</a> <a href="https://twitter.com/SamouraiWallet">Samourai</a> и в <a href="/practice-privacy/dojo">руководстве</a> от <a href="https://twitter.com/KYCfree">𝕂𝕐ℂ𝟛</a>.
+  Installation of &ldquo;vanilla&rdquo; Dojo is described in <a href="https://docs.samourai.io/en/dojo">official documentation</a> by <a href="https://twitter.com/SamouraiWallet">Samourai</a> and in <a href="/en/practice-privacy/dojo">guide</a> by <a href="https://twitter.com/KYCfree">𝕂𝕐ℂ𝟛</a>.
 </blockquote>
 <blockquote class="book-hint danger">
-  <p>Во время ареста разработчиков Samourai Wallet 24 апреля 2024 года спецслужбами были так же отключены серверы координатора Whirlpool и обозреватель блокчейна <a href="/privacy/oxt">OXT</a>. В связи с этим, начиная с версии RoninDojo v2.1.4, из кода удалены инструменты Whirlpool, WST и калькулятор Больцмана.</p>
+  <p>During the arrest of the Samourai Wallet developers on April 24, 2024, the Whirlpool coordinator&rsquo;s servers and the <a href="/en/privacy/oxt">OXT</a> blockchain explorer were also shut down by intelligence agencies. Therefore, starting with RoninDojo v2.1.4, the Whirlpool tools, WST and Boltzmann calculator have been removed from the code.</p>
 <p><a href="https://freesamourai.com/">#FREESAMOURAI</a></p>
-<p>В результате <a href="https://blog.lopp.net/griefing-bitcoin-testnet">атаки на тестнет</a>, версия Testnet3 оказалась неработоспособна, а новая Testnet4 пока не реализована в Samourai Dojo.</p>
-
+<p>As a result of the <a href="https://blog.lopp.net/griefing-bitcoin-testnet">attack on testnet</a>, the Testnet3 version becomes inoperable, and the new Testnet4 has not yet been implemented in Samourai Dojo.</p>
 </blockquote>
-
-<h2 id="отличия-dojo-и-ronindojo">
-  Отличия Dojo и RoninDojo
-  <a class="anchor" href="#%d0%be%d1%82%d0%bb%d0%b8%d1%87%d0%b8%d1%8f-dojo-%d0%b8-ronindojo">#</a>
+<h2 id="dojo-and-ronindojo-differences">
+  Dojo and RoninDojo differences
+  <a class="anchor" href="#dojo-and-ronindojo-differences">#</a>
 </h2>
-<p>В состав классического Dojo-сервера входят:</p>
+<p>Classic Dojo server includes:</p>
 <ul>
 <li>Bitcoin Core.</li>
-<li>Обозреватель блокчейна <a href="https://github.com/janoside/btc-rpc-explorer">BTC RPC Explorer</a>.</li>
-<li>Индексатор блокчейна Fulcrum (совместим с ElectrumX) или Addrindexrs.</li>
-<li>Панель управления Dojo Maintenance Tool (DMT).</li>
+<li><a href="https://github.com/janoside/btc-rpc-explorer">BTC RPC Explorer</a>.</li>
+<li>Fulcrum Indexer (ElectrumX compatible) or Addrindexrs.</li>
+<li>Dojo Maintenance Tool (DMT).</li>
 <li>Whirlpool CLI.</li>
-<li>Поддержка Testnet (в RoninDojo отсутствует).</li>
+<li>Testnet support (not available in RoninDojo).</li>
 </ul>
-<p>В RoninDojo добавлены:</p>
+<p>RoninDojo adds:</p>
 <ul>
-<li>Индексатор блокчейна Electrum Rust Server (electrs). Таким образом, пользователь может выбирать из трех вариантов.</li>
-<li>Опционально устанавливаемый обозреватель блокчейна <a href="https://github.com/mempool/mempool">Mempool</a>.</li>
-<li>Веб-интерфейс Ronin UI.</li>
-<li>Whirlpool GUI непосредственно в веб-интерфейсе.</li>
-<li>Консольная панель управления Ronin CLI.</li>
-<li><a href="/privacy/coinjoin/#whirlpool-stats-tool-wst">Whirlpool Stats Tool (WST)</a>.</li>
-<li><a href="/privacy/coinjoin/#%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D0%BA%D0%B0%D0%BB%D1%8C%D0%BA%D1%83%D0%BB%D1%8F%D1%82%D0%BE%D1%80%D0%B0-%D0%B1%D0%BE%D0%BB%D1%8C%D1%86%D0%BC%D0%B0%D0%BD%D0%B0">Boltzmann Calculator</a>.</li>
-<li>Резервное копирование блокчейна на отдельный диск после IBD.</li>
+<li>Electrum Rust Server (electrs). Thus, the user can choose from three options.</li>
+<li>Optional <a href="https://github.com/mempool/mempool">Mempool</a> blockchain explorer.</li>
+<li>Ronin UI web interface.</li>
+<li>Whirlpool GUI directly in the web interface.</li>
+<li>Ronin CLI (command line interface).</li>
+<li>Whirlpool Stats Tool (WST).</li>
+<li>Boltzmann Calculator.</li>
+<li>Backing up the blockchain data to a separate disk after IBD.</li>
 </ul>
-<p>В данном руководстве будет описана ручная установка всех компонентов в операционной системе на базе Debian. Я использовал Ubuntu 22.04. Данный способ позволит:</p>
+<p>This tutorial will describe how to manually install all components in a Debian based operating system. I used Ubuntu 22.04. This method will allow you to:</p>
 <ul>
-<li>Использовать любое оборудование, соответствующее минимальным требованиям. Два SSD-диска являются рекомендуемой конфигурацией, но совсем не обязательной.</li>
-<li>Выбирать базовую операционную систему.</li>
-<li>Настроить необходимые компоненты до установки системы:
+<li>Use any hardware that meets the minimum requirements. Two SSDs are recommended, but not required.</li>
+<li>Choose a basic operating system.</li>
+<li>Configure the necessary components before installing the system:
 <ul>
-<li>Выбрать индексатор (Electrs, Fulcrum или Addrindexrs).</li>
-<li>Установить обозреватель Mempool.</li>
-<li>Включить Auth47 для аутентификации в DMT с помощью PayNym.</li>
-<li>Сконфигурировать мосты для Tor.</li>
-<li>Включить поддержку Testnet.</li>
+<li>Select a blockchain indexer (Electrs, Fulcrum or Addrindexrs).</li>
+<li>Install Mempool explorer.</li>
+<li>Enable Auth47 for authentication to DMT using PayNym.</li>
+<li>Configure Tor bridges.</li>
+<li>Enable Testnet support.</li>
 </ul>
 </li>
 </ul>
 <blockquote class="book-hint btc">
-  Если вы только изучаете возможности кошелька Samourai, то я рекомендую попробовать все возможности именно в Testnet. Для этого вам достаточно <a href="https://www.virtualbox.org">виртуальной машины</a> и 100 ГБ выделенного пространства.
+  If you are only learning the features of Samourai Wallet, I recommend you to try all the functions in Testnet. All you need is a <a href="https://www.virtualbox.org">virtual machine</a> and 100 GB of free disk space.
 </blockquote>
-<h2 id="системные-требования">
-  Системные требования
-  <a class="anchor" href="#%d1%81%d0%b8%d1%81%d1%82%d0%b5%d0%bc%d0%bd%d1%8b%d0%b5-%d1%82%d1%80%d0%b5%d0%b1%d0%be%d0%b2%d0%b0%d0%bd%d0%b8%d1%8f">#</a>
+<h2 id="system-requirements">
+  System Requirements
+  <a class="anchor" href="#system-requirements">#</a>
 </h2>
 <ul>
-<li>64-разрядный компьютер с процессором Intel/AMD. Рекомендуется Intel Core i5 6500 или аналогичный.</li>
-<li>Минимум 8 ГБ оперативной памяти.</li>
-<li>SSD-накопитель объемом 1 ТБ, настоятельно рекомендуется 2 ТБ. Так же хорошей практикой будет использование небольшого по объему SSD от 100 ГБ для функционирования операционной системы, в то время, как данные блокчейна будут находиться на отдельном большом диске.</li>
-<li>Рекомендуется подключаемый HDD/SSD-накопитель объемом 1 ТБ для создания резервной копии данных блокчейна из Bitcoin Core.</li>
+<li>64-bit computer with Intel/AMD processor. Intel Core i5 6500 or similar is recommended.</li>
+<li>Minimum 8GB of RAM.</li>
+<li>1TB SSD, 2TB is highly recommended. It is also a good practice to use a small SSD of 100 GB or more to run the operating system while the blockchain data is stored on a separate large disk.</li>
+<li>An external 1TB HDD/SSD drive is recommended for backing up blockchain data from Bitcoin Core.</li>
 </ul>
-<h2 id="установка-операционной-системы">
-  Установка операционной системы
-  <a class="anchor" href="#%d1%83%d1%81%d1%82%d0%b0%d0%bd%d0%be%d0%b2%d0%ba%d0%b0-%d0%be%d0%bf%d0%b5%d1%80%d0%b0%d1%86%d0%b8%d0%be%d0%bd%d0%bd%d0%be%d0%b9-%d1%81%d0%b8%d1%81%d1%82%d0%b5%d0%bc%d1%8b">#</a>
+<h2 id="os-installation">
+  OS installation
+  <a class="anchor" href="#os-installation">#</a>
 </h2>
-<p>Вам необходимо установить базовую операционную систему. Я использовал серверную версию Ubuntu 22.04. <a href="https://ubuntu.com/download/server">Скачать</a> ее можно на официально сайте Ubuntu. Подробную инструкцию по установке можно найти <a href="https://losst.pro/ustanovka-ubuntu-server-20-04">здесь</a>.</p>
-<p>В процессе установки необходимо выключить опцию &ldquo;Set up this disk as an LVM group&rdquo;.</p>
+<p>You need to install the base operating system. I used Ubuntu 22.04 Server. It can be <a href="https://ubuntu.com/download/server">downloaded</a> from Ubuntu website.</p>
+<p>During the installation process, the &ldquo;Set up this disk as an LVM group&rdquo; option must be turned off.</p>
 <blockquote class="book-hint info">
-  Если вы используете два SSD, то выберите диск меньшего размера.
+  If you are using two SSDs, choose the smaller drive.
 </blockquote>
 <div class="imageWrapper">
     <img src="/img/ronin-02.png">
 </div>
-<p>Не забудьте включить опцию &ldquo;Install OpenSSH server&rdquo;.</p>
+<p>Don&rsquo;t forget to enable the &ldquo;Install OpenSSH server&rdquo; option.</p>
 <div class="imageWrapper">
     <img src="/img/ronin-01.png">
 </div>
-<p>После успешной установки зайдите на ваш сервер из локальной сети с помощью <a href="https://losst.pro/kak-podklyuchitsya-po-ssh">SSH-клиента</a>, используя имя пользователя, заданное при установке, внутренний IP-адрес вашей машины для RoninDojo и порт 22. Узнать адрес в вашей сети можно с помощью команды на сервере:</p>
+<p>After successful installation, log into your server via local network using an SSH client with the username you set during installation, your RoninDojo machine&rsquo;s internal IP address, and port 22. You can figure out the address in local network by using the command on the server:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hostname -I
-</span></span></code></pre></div><p>Мой внутренний IP-адрес 10.0.2.15, соответственно адрес подсети в моем случае 10.0.2.0/24, по аналогии определите свой и запишите.</p>
-<h2 id="определение-конфигурации">
-  Определение конфигурации
-  <a class="anchor" href="#%d0%be%d0%bf%d1%80%d0%b5%d0%b4%d0%b5%d0%bb%d0%b5%d0%bd%d0%b8%d0%b5-%d0%ba%d0%be%d0%bd%d1%84%d0%b8%d0%b3%d1%83%d1%80%d0%b0%d1%86%d0%b8%d0%b8">#</a>
+</span></span></code></pre></div><p>My internal IP address is 10.0.2.15, respectively the subnet address in my case is 10.0.2.0/24, by analogy define yours and write it down.</p>
+<h2 id="defining-the-configuration">
+  Defining the configuration
+  <a class="anchor" href="#defining-the-configuration">#</a>
 </h2>
-<p>Получаем имя вашего сетевого интерфейса. Запишите его, например &ldquo;<em>eno1</em>&rdquo;.</p>
+<p>Find the name of your network interface. Write it down, for example &ldquo;<em>eno1</em>&rdquo;.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ip -o -4 route show to default | awk <span style="color:#e6db74">&#39;{print $5}&#39;</span>
-</span></span></code></pre></div><p>Введите следующую команду и запишите название раздела диска (из столбца &ldquo;NAME&rdquo;), в котором находится корень &ldquo;/&rdquo; файловой системы (столбец &ldquo;MOUNTPOINTS&rdquo;). Добавьте &ldquo;<em>/dev/</em>&rdquo; перед именем раздела - у меня это &ldquo;<em>/dev/sda2</em>&rdquo;.</p>
+</span></span></code></pre></div><p>Enter the following command and write down the name of partition (from the &ldquo;NAME&rdquo; column), where the root &ldquo;/&rdquo; of the file system is located (&ldquo;MOUNTPOINTS&rdquo; column). Add &ldquo;<em>/dev/</em>&rdquo; before the partition name. Mine is &ldquo;<em>/dev/sda2</em>&rdquo;.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>lsblk
 </span></span></code></pre></div><div class="imageWrapper">
     <img src="/img/ronin-03.png">
 </div>
 <blockquote class="book-hint info">
-  <p>Если вы используете два SSD, то определите из вывода предыдущей команды имя диска, который будет использоваться под данные блокчейна. Его объем будет 1 или 2 ТБ. В примере ниже системный раздел - это /dev/sdb2, а большой диск - это /dev/sda.</p>
+  <p>If you are using two SSDs, determine from the output of the previous command the name of the disk that will be used for blockchain data. Its capacity will be either 1 or 2 TB. In the example below, the system partition is /dev/sdb2 and the large disk is /dev/sda.</p>
 <div class="imageWrapper">
     <img src="/img/ronin-04.png">
 </div>
-<p>Форматируем большой диск. Замените значение /dev/sda на свое. Не забудьте про &ldquo;1&rdquo; в конце третьей команды.</p>
+<p>Format the large disk. Replace the value of /dev/sda with your own. Don&rsquo;t forget the &ldquo;1&rdquo; at the end of the third command.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo wipefs -a --force /dev/sda
 </span></span><span style="display:flex;"><span>sudo sgdisk -Zo -n <span style="color:#ae81ff">1</span> -t 1:8300 /dev/sda
 </span></span><span style="display:flex;"><span>sudo mkfs.ext4 -q -F -L <span style="color:#e6db74">&#34;main&#34;</span> /dev/sda1
 </span></span><span style="display:flex;"><span>lsblk
-</span></span></code></pre></div><p>Теперь у меня появился большой раздел /dev/sda1, единственный на этом диске. Запишите название своего раздела для данных блокчейна.</p>
+</span></span></code></pre></div><p>Now I have a large partition /dev/sda1, the only one on this disk. Write down the name of your partition to host the blockchain data.</p>
 <div class="imageWrapper">
     <img src="/img/ronin-05.png">
 </div>
-<p>Монтируем раздел в системе. Замените /dev/sda1 на ваше значение.</p>
+<p>Mount the partition. Replace /dev/sda1 with your value.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo tee <span style="color:#e6db74">&#34;/etc/systemd/system/mnt-usb.mount&#34;</span> <span style="color:#e6db74">&lt;&lt;EOF
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">[Unit]
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">Description=Mount primary storage /dev/sda1
@@ -3185,27 +3012,27 @@ https://github.com/alex-shpak/hugo-book
 </span></span><span style="display:flex;"><span>sudo systemctl enable mnt-usb.mount
 </span></span></code></pre></div>
 </blockquote>
-<p>Подключите внешний HDD/SSD, который вы планируете использовать для бэкапа данных блокчейна. Этот шаг можно пропустить. Подключите диск и снова выполните команду:</p>
+<p>Plug in the external HDD/SSD that you plan to use for backup of the blockchain data. You can skip this step. Connect the drive and run the following command again:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>lsblk
 </span></span></code></pre></div><div class="imageWrapper">
     <img src="/img/ronin-07.png">
 </div>
-<p>Вы увидите только что подключенный диск в таблице. Запишите название диска для резервной копии, добавив &ldquo;<em>/dev/</em>&rdquo; в начале и &ldquo;<em>1</em>&rdquo; в конце, в моем случае  - <em>/dev/sdb1</em>.</p>
-<h2 id="предварительный-этап">
-  Предварительный этап
-  <a class="anchor" href="#%d0%bf%d1%80%d0%b5%d0%b4%d0%b2%d0%b0%d1%80%d0%b8%d1%82%d0%b5%d0%bb%d1%8c%d0%bd%d1%8b%d0%b9-%d1%8d%d1%82%d0%b0%d0%bf">#</a>
+<p>You will see the newly connected disk in the table. Write down the name of the disk for backups by adding &ldquo;<em>/dev/</em>&rdquo; at the beginning and &ldquo;<em>1</em>&rdquo; at the end, in my case it is <em>/dev/sdb1</em>.</p>
+<h2 id="pre-installation">
+  Pre-installation
+  <a class="anchor" href="#pre-installation">#</a>
 </h2>
-<p>Добавим пользователя ronindojo в нашу систему, зададим пароль и выполним вход от нового пользователя.</p>
+<p>Let&rsquo;s add user <em>ronindojo</em> to our system, set a password and log in as the new user.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo useradd -s /bin/bash -d /home/ronindojo -m -G sudo ronindojo
 </span></span><span style="display:flex;"><span>sudo passwd ronindojo
 </span></span><span style="display:flex;"><span>sudo su
 </span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;ronindojo    ALL=(ALL) ALL&#34;</span> &gt;&gt; /etc/sudoers
 </span></span><span style="display:flex;"><span>su - ronindojo
-</span></span></code></pre></div><p>Устанавливаем необходимые программы.</p>
+</span></span></code></pre></div><p>Install the required programs.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo apt update <span style="color:#f92672">&amp;&amp;</span> sudo apt upgrade
 </span></span><span style="display:flex;"><span>sudo apt install bash-completion nano tor obfs4proxy torsocks net-tools apt-transport-https gnupg-agent unzip git openjdk-11-jdk fail2ban net-tools htop unzip ufw rsync jq python3-pip gcc dialog bpytop less plymouth-label --no-install-recommends
 </span></span><span style="display:flex;"><span>pip3 install pipenv
-</span></span></code></pre></div><p>Устанавливаем Docker.</p>
+</span></span></code></pre></div><p>Docker installation.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 </span></span><span style="display:flex;"><span>sudo add-apt-repository <span style="color:#e6db74">&#34;deb [arch=amd64] https://download.docker.com/linux/ubuntu </span><span style="color:#66d9ef">$(</span>lsb_release -cs<span style="color:#66d9ef">)</span><span style="color:#e6db74"> stable&#34;</span>
 </span></span><span style="display:flex;"><span>sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin --no-install-recommends
@@ -3228,13 +3055,13 @@ https://github.com/alex-shpak/hugo-book
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">EOF</span>
 </span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo systemctl start docker
 </span></span><span style="display:flex;"><span>sudo usermod -a -G docker ronindojo
-</span></span></code></pre></div><p>Устанавливаем NodeJS.</p>
+</span></span></code></pre></div><p>NodeJS installation.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash
 </span></span><span style="display:flex;"><span>sudo apt install nodejs
 </span></span><span style="display:flex;"><span>exit
-</span></span></code></pre></div><h2 id="установка-и-настройка-службы-tor">
-  Установка и настройка службы Tor
-  <a class="anchor" href="#%d1%83%d1%81%d1%82%d0%b0%d0%bd%d0%be%d0%b2%d0%ba%d0%b0-%d0%b8-%d0%bd%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b9%d0%ba%d0%b0-%d1%81%d0%bb%d1%83%d0%b6%d0%b1%d1%8b-tor">#</a>
+</span></span></code></pre></div><h2 id="installing-and-configuring-the-tor-service">
+  Installing and configuring the Tor service
+  <a class="anchor" href="#installing-and-configuring-the-tor-service">#</a>
 </h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo useradd -c <span style="color:#e6db74">&#34;tor&#34;</span> tor
 </span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo tee <span style="color:#e6db74">&#34;/usr/lib/systemd/system/tor.service&#34;</span> <span style="color:#e6db74">&lt;&lt;EOF
@@ -3271,12 +3098,8 @@ https://github.com/alex-shpak/hugo-book
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">[Install]
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">WantedBy=multi-user.target
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">EOF</span>
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo systemctl stop tor@default.service
-</span></span><span style="display:flex;"><span>sudo rm -rf /usr/lib/systemd/system/tor@*
-</span></span><span style="display:flex;"><span>sudo mkdir /mnt/usb/tor/
-</span></span><span style="display:flex;"><span>sudo chown -R tor:tor /mnt/usb/tor/
 </span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo nano /etc/tor/torrc
-</span></span></code></pre></div><p>Вставляем следующие строки в конец файла. Если вы испытываете проблемы с подключением к Tor, то установите <em>UseBridges 1</em> и добавьте <a href="https://bridges.torproject.org">мосты</a> после <em>Bridge</em>:</p>
+</span></span></code></pre></div><p>Paste the following lines at the end of the file. If you are having trouble connecting to Tor, set <em>UseBridges 1</em> and add <a href="https://bridges.torproject.org">bridges</a> after <em>Bridge</em>:</p>
 <pre tabindex="0"><code>ClientTransportPlugin obfs4 exec /usr/bin/obfs4proxy
 UseBridges 1
 Bridge obfs4 ... iat-mode=0
@@ -3291,44 +3114,44 @@ HiddenServicePort 80 127.0.0.1:8470
 </code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo systemctl daemon-reload
 </span></span><span style="display:flex;"><span>sudo systemctl restart tor
 </span></span><span style="display:flex;"><span>sudo journalctl -f -u tor
-</span></span></code></pre></div><p>Дождитесь сообщений в логе Tor &ldquo;Bootstrapped 100% (done)&rdquo;, после чего его можно закрыть с помощью Ctrl+C.</p>
-<h2 id="установка-samourai-dojo">
-  Установка Samourai Dojo
-  <a class="anchor" href="#%d1%83%d1%81%d1%82%d0%b0%d0%bd%d0%be%d0%b2%d0%ba%d0%b0-samourai-dojo">#</a>
+</span></span></code></pre></div><p>Wait for the &ldquo;Bootstrapped 100% (done)&rdquo; message to appear in the Tor log, and close it with Ctrl+C.</p>
+<h2 id="samourai-dojo-installation">
+  Samourai Dojo installation
+  <a class="anchor" href="#samourai-dojo-installation">#</a>
 </h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cd
 </span></span><span style="display:flex;"><span>torsocks wget http://2l2o5umijiwxjioxwpsvwxe6pr75tj7r5rggnl5ze256guwvtee3kpqd.onion/Ronin/dojo/archive/master.tar.gz -O dojo-master.tar.gz
 </span></span><span style="display:flex;"><span>tar -xvf dojo-master.tar.gz
 </span></span><span style="display:flex;"><span>rm dojo-master.tar.gz
 </span></span><span style="display:flex;"><span>cd ~/dojo/docker/my-dojo/
-</span></span></code></pre></div><p>Генерируем случайный пароль.</p>
+</span></span></code></pre></div><p>Generate random password.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>tr -dc <span style="color:#e6db74">&#39;a-zA-Z0-9&#39;</span> &lt;/dev/urandom | head -c<span style="color:#e6db74">&#39;32&#39;</span>
 </span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nano conf/docker-bitcoind.conf.tpl
-</span></span></code></pre></div><p>Вставьте пароль после <em>BITCOIND_RPC_PASSWORD=</em></p>
-<p>Сохранить файл и выйти из редактора можно последовательным нажатием клавиш Ctrl+X, y, Enter.</p>
+</span></span></code></pre></div><p>Insert generated password after <em>BITCOIND_RPC_PASSWORD=</em></p>
+<p>You can save the file and exit the editor by pressing Ctrl+X, y, Enter.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nano conf/docker-indexer.conf.tpl
-</span></span></code></pre></div><p>Здесь можно заменить electrs (по умолчанию) на fulcrum или addrindexrs после <em>INDEXER_TYPE=</em>. Fulcrum гораздо дольше синхронизируется, чем Electrs, и рекомендован для &ldquo;тяжелых&rdquo; кошельков с большим количеством транзакций. Addrindexrs поддерживает только Samourai Wallet, в то время как два других можно использовать для подключения таких кошельков, как Electrum и Sparrow Wallet.</p>
+</span></span></code></pre></div><p>Here you can replace <em>electrs</em> (default) with <em>fulcrum</em> or <em>addrindexrs</em> in <em>INDEXER_TYPE=</em>. Fulcrum takes much longer to synchronize than Electrs and is recommended for &ldquo;heavy&rdquo; wallets with a large number of transactions. Addrindexrs only supports Samourai Wallet, while the other two can be used to connect wallets such as Electrum and Sparrow Wallet.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>tr -dc <span style="color:#e6db74">&#39;a-zA-Z0-9&#39;</span> &lt;/dev/urandom | head -c<span style="color:#e6db74">&#39;32&#39;</span>
 </span></span><span style="display:flex;"><span>tr -dc <span style="color:#e6db74">&#39;a-zA-Z0-9&#39;</span> &lt;/dev/urandom | head -c<span style="color:#e6db74">&#39;32&#39;</span>
 </span></span><span style="display:flex;"><span>nano conf/docker-mempool.conf.tpl
-</span></span></code></pre></div><p>Установка обозревателя Mempool включается опцией <em>MEMPOOL_INSTALL=on</em>. Пароли необходимо вставить после <em>MEMPOOL_MYSQL_PASS=</em> и <em>MEMPOOL_MYSQL_ROOT_PASSWORD=</em>.</p>
+</span></span></code></pre></div><p>Mempool browser installation can be enabled by the <em>MEMPOOL_INSTALL=on</em> option. Passwords must be inserted after <em>MEMPOOL_MYSQL_PASS=</em> and <em>MEMPOOL_MYSQL_ROOT_PASSWORD=</em>.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>tr -dc <span style="color:#e6db74">&#39;a-zA-Z0-9&#39;</span> &lt;/dev/urandom | head -c<span style="color:#e6db74">&#39;32&#39;</span>
 </span></span><span style="display:flex;"><span>tr -dc <span style="color:#e6db74">&#39;a-zA-Z0-9&#39;</span> &lt;/dev/urandom | head -c<span style="color:#e6db74">&#39;32&#39;</span>
 </span></span><span style="display:flex;"><span>nano conf/docker-mysql.conf.tpl
-</span></span></code></pre></div><p>Добавьте сгенерированные пароли после <em>MYSQL_ROOT_PASSWORD=</em> и <em>MYSQL_PASSWORD=</em>.</p>
+</span></span></code></pre></div><p>Add the generated passwords after <em>MYSQL_ROOT_PASSWORD=</em> and <em>MYSQL_PASSWORD=</em>.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>tr -dc <span style="color:#e6db74">&#39;a-zA-Z0-9&#39;</span> &lt;/dev/urandom | head -c<span style="color:#e6db74">&#39;32&#39;</span>
 </span></span><span style="display:flex;"><span>tr -dc <span style="color:#e6db74">&#39;a-zA-Z0-9&#39;</span> &lt;/dev/urandom | head -c<span style="color:#e6db74">&#39;32&#39;</span>
 </span></span><span style="display:flex;"><span>tr -dc <span style="color:#e6db74">&#39;a-zA-Z0-9&#39;</span> &lt;/dev/urandom | head -c<span style="color:#e6db74">&#39;32&#39;</span>
 </span></span><span style="display:flex;"><span>nano conf/docker-node.conf.tpl
-</span></span></code></pre></div><p>Вставьте пароли следом за <em>NODE_API_KEY=</em>, <em>NODE_ADMIN_KEY=</em> и <em>NODE_JWT_SECRET=</em>. Опционально добавьте ваш платежный код BIP47 (PM8T&hellip;) после <em>NODE_PAYMENT_CODE=</em>. Включив эту возможность, вы сможете аутентифицироваться в Dojo Maintenance Tool при помощи опции &ldquo;Authenticate using PayNym&rdquo; из меню Tools в кошельке Samourai, просто отсканировав QR-код на экране логина.</p>
+</span></span></code></pre></div><p>Insert passwords after <em>NODE_API_KEY=</em>, <em>NODE_ADMIN_KEY=</em> and <em>NODE_JWT_SECRET=</em>. Optionally add your BIP47 payment code (PM8T&hellip;) after <em>NODE_PAYMENT_CODE=</em>. By enabling this feature, you will be able to authenticate to the Dojo Maintenance Tool using the &ldquo;Authenticate using PayNym&rdquo; option from the Tools menu in Samourai Wallet by simply scanning the QR code on the login screen.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nano conf/docker-tor.conf.tpl
-</span></span></code></pre></div><p>Если у вас есть проблемы с подключением к Tor, установите <em>TOR_USE_BRIDGES=on</em> и пропишите <a href="https://bridges.torproject.org">мосты</a> следующим образом (не забывайте про кавычки): <em>TOR_BRIDGE_1=&ldquo;obfs4 &hellip; iat-mode=0&rdquo;</em>.</p>
+</span></span></code></pre></div><p>If you have trouble connecting to Tor, set <em>TOR_USE_BRIDGES=on</em> and add <a href="https://bridges.torproject.org">bridges</a> as follows (don&rsquo;t forget the double quotes): <em>TOR_BRIDGE_1=&ldquo;obfs4 &hellip; iat-mode=0&rdquo;</em>.</p>
 <blockquote class="book-hint info">
-  <p><strong>Только для Testnet</strong></p>
+  <p><strong>For Testnet only</strong></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nano conf/docker-common.conf.tpl
-</span></span></code></pre></div><p>Укажите <em>COMMON_BTC_NETWORK=testnet</em>.</p>
+</span></span></code></pre></div><p>Set <em>COMMON_BTC_NETWORK=testnet</em>.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nano nginx/testnet.conf
-</span></span></code></pre></div><p>Добавьте следующие строки в раздел # Site Configuration:</p>
+</span></span></code></pre></div><p>Add the following lines to the section <em># Site Configuration</em>:</p>
 <pre tabindex="0"><code>    # Proxy WebSocket connections first
     location /v2/inv {
         proxy_pass http://websocket;
@@ -3351,26 +3174,26 @@ HiddenServicePort 80 127.0.0.1:8470
 </code></pre>
 </blockquote>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>./dojo.sh install
-</span></span></code></pre></div><p>Дождитесь окончания установки Dojo. Она занимает от 10 до 30 минут, в зависимости от производительности вашего компьютера и сетевого подключения.</p>
+</span></span></code></pre></div><p>Wait for the Dojo installation to complete. It takes 10 to 30 minutes, depending on the performance of your computer and network connection.</p>
 <div class="imageWrapper">
     <img src="/img/ronin-06.png">
 </div>
-<p>При возникновении ошибок, обычно связанных с сетевым соединением, вы можете остановить скрипт установки с помощью нескольких нажатий сочетания Ctrl+C и повторить последнюю команду. Если установка все же не удается, то вам придется настроить VPN на вашем маршрутизаторе. К сожалению данная процедура выходит за рамки данного руководства.</p>
+<p>If errors occur, usually related to network connectivity, you can stop the installation script with a few presses of the Ctrl+C and repeat the last command. If the installation still fails, you will have to configure a VPN on your router. Unfortunately, this procedure is beyond the scope of this guide.</p>
 <h2 id="roninos">
   RoninOS
   <a class="anchor" href="#roninos">#</a>
 </h2>
-<p>RoninOS - это по сути скрипт, изменяющий базовую операционную систему для правильного функционирования RoninDojo. Так как он написан для определенной ОС и конкретной конфигурации оборудования, я произвел все необходимые изменения вручную.</p>
+<p>RoninOS is essentially a script that modifies the base operating system for RoninDojo to function properly. Since it is written for a specific OS and a specific hardware configuration, I made all the necessary changes manually.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cd
 </span></span><span style="display:flex;"><span>torsocks wget http://2l2o5umijiwxjioxwpsvwxe6pr75tj7r5rggnl5ze256guwvtee3kpqd.onion/Ronin/RoninOS/archive/master.tar.gz -O roninos-master.tar.gz
 </span></span><span style="display:flex;"><span>tar -xvf roninos-master.tar.gz
 </span></span><span style="display:flex;"><span>mv roninos RoninOS
 </span></span><span style="display:flex;"><span>rm roninos-master.tar.gz
-</span></span></code></pre></div><h3 id="настройка-plymouth">
-  Настройка plymouth
-  <a class="anchor" href="#%d0%bd%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b9%d0%ba%d0%b0-plymouth">#</a>
+</span></span></code></pre></div><h3 id="customizing-plymouth">
+  Customizing plymouth
+  <a class="anchor" href="#customizing-plymouth">#</a>
 </h3>
-<p>После этого при загрузке системы будет отображаться логотип RoninDojo, мелочь, а приятно.</p>
+<p>After that, the RoninDojo logo will be displayed when the system boots, nothing special but a nice touch.</p>
 <div class="imageWrapper">
     <img src="/img/ronin-09.png">
 </div>
@@ -3378,38 +3201,38 @@ HiddenServicePort 80 127.0.0.1:8470
 </span></span><span style="display:flex;"><span>sudo cp ~/RoninOS/overlays/RoninOS/etc/plymouth/plymouthd.conf /etc/plymouth/
 </span></span><span style="display:flex;"><span>sudo cp -r ~/RoninOS/overlays/RoninOS/usr/share/plymouth/themes/ronindojo/ /usr/share/plymouth/themes/
 </span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo nano /etc/default/grub
-</span></span></code></pre></div><p>Преобразуйте строку <em>GRUB_CMDLINE_LINUX_DEFAULT</em> следующим образом:</p>
+</span></span></code></pre></div><p>Change the <em>GRUB_CMDLINE_LINUX_DEFAULT</em> line as follows:</p>
 <pre tabindex="0"><code>GRUB_CMDLINE_LINUX_DEFAULT=&#34;quiet splash&#34;
 </code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo update-alternatives --install /usr/share/plymouth/themes/default.plymouth default.plymouth /usr/share/plymouth/themes/ronindojo <span style="color:#ae81ff">120</span>
 </span></span><span style="display:flex;"><span>sudo update-grub
 </span></span><span style="display:flex;"><span>sudo update-initramfs -u
-</span></span></code></pre></div><h3 id="настройка-межсетевого-экрана">
-  Настройка межсетевого экрана
-  <a class="anchor" href="#%d0%bd%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b9%d0%ba%d0%b0-%d0%bc%d0%b5%d0%b6%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%be%d0%b3%d0%be-%d1%8d%d0%ba%d1%80%d0%b0%d0%bd%d0%b0">#</a>
+</span></span></code></pre></div><h3 id="configuring-the-firewall">
+  Configuring the firewall
+  <a class="anchor" href="#configuring-the-firewall">#</a>
 </h3>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo ufw default deny incoming
 </span></span><span style="display:flex;"><span>sudo ufw default allow outgoing
-</span></span></code></pre></div><p>В следующих командах используйте ваш адрес подсети, который мы определили в конце <a href="/practice-privacy/ronindojo/#%d1%83%d1%81%d1%82%d0%b0%d0%bd%d0%be%d0%b2%d0%ba%d0%b0-%d0%be%d0%bf%d0%b5%d1%80%d0%b0%d1%86%d0%b8%d0%be%d0%bd%d0%bd%d0%be%d0%b9-%d1%81%d0%b8%d1%81%d1%82%d0%b5%d0%bc%d1%8b">установки операционной системы</a>.</p>
+</span></span></code></pre></div><p>In the following commands, use your subnet address that we defined at the end of the <a href="/en/practice-privacy/ronindojo/#os-installation">OS installation</a>.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo ufw allow from 10.0.2.0/24 to any port <span style="color:#e6db74">&#34;80&#34;</span>
 </span></span><span style="display:flex;"><span>sudo ufw allow from 10.0.2.0/24 to any port <span style="color:#e6db74">&#34;22&#34;</span>
 </span></span><span style="display:flex;"><span>sudo ufw allow from 10.0.2.0/24 to any port <span style="color:#e6db74">&#34;50002&#34;</span>
 </span></span><span style="display:flex;"><span>sudo ufw enable
-</span></span></code></pre></div><h3 id="настройка-дисков">
-  Настройка дисков
-  <a class="anchor" href="#%d0%bd%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b9%d0%ba%d0%b0-%d0%b4%d0%b8%d1%81%d0%ba%d0%be%d0%b2">#</a>
+</span></span></code></pre></div><h3 id="disk-configuration">
+  Disk configuration
+  <a class="anchor" href="#disk-configuration">#</a>
 </h3>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mkdir -p ~/.config/RoninDojo/data/
 </span></span><span style="display:flex;"><span>touch ~/.config/RoninDojo/data/system-install
-</span></span></code></pre></div><p>В следующей команде используйте свое имя основного раздела системы или имя раздела для данных блокчейна, если вы используете конфигурацию с двумя SSD, который вы записали при <a href="/practice-privacy/ronindojo/#%d0%be%d0%bf%d1%80%d0%b5%d0%b4%d0%b5%d0%bb%d0%b5%d0%bd%d0%b8%d0%b5-%d0%ba%d0%be%d0%bd%d1%84%d0%b8%d0%b3%d1%83%d1%80%d0%b0%d1%86%d0%b8%d0%b8">определении конфигурации</a>. Напоминаю, что у меня один диск и основной раздел <em>/dev/sda2</em>.</p>
+</span></span></code></pre></div><p>In the following command, use your system primary partition name or the name of the blockchain data partition if you are using a two SSDs configuration, which you wrote down when <a href="/en/practice-privacy/ronindojo/#defining-the-configuration">defining the configuration</a>. As a reminder, I have one disk and a primary partition <em>/dev/sda2</em>.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;blockdata_storage_partition=/dev/sda2&#34;</span> &gt; ~/.config/RoninDojo/data/blockdata_storage_partition
-</span></span></code></pre></div><p>В следующей команде используйте свое имя раздела для резервной копии блокчейна, если вы собираетесь использовать эту функцию. У меня - <em>/dev/sdb1</em>.</p>
+</span></span></code></pre></div><p>In the following command, use your partition name for the blockchain backup if you are going to use this feature. Mine is <em>/dev/sdb1</em>.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;backup_storage_partition=/dev/sdb1&#34;</span> &gt; ~/.config/RoninDojo/data/backup_storage_partition
-</span></span></code></pre></div><h2 id="ronin-ui-и-ronin-cli">
-  Ronin UI и Ronin CLI
-  <a class="anchor" href="#ronin-ui-%d0%b8-ronin-cli">#</a>
+</span></span></code></pre></div><h2 id="ronin-ui-and-ronin-cli">
+  Ronin UI and Ronin CLI
+  <a class="anchor" href="#ronin-ui-and-ronin-cli">#</a>
 </h2>
-<p>Ronin UI - это великолепный веб-интерфейс для мониторинга и администрирования вашего узла со встроенным интерфейсом Whirlpool GUI. Используя его, вам не нужно делать сопряжение с помощью приложения Whirlpool GUI на другом компьютере.</p>
-<p>Ronin CLI - консольный интерфейс, доступный по SSH или непосредственно на сервере, с расширенными функциями управления вашей нодой, параметрами безопасности, а так же дополнительными утилитами.</p>
+<p>Ronin UI is a great web interface for monitoring and administering your node with a built-in Whirlpool GUI. Using it, you do not need to pair with a Whirlpool GUI application on another computer.</p>
+<p>Ronin CLI is a console interface accessible via SSH or directly on the server, with advanced features for managing your node, security settings, and additional utilities.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cd
 </span></span><span style="display:flex;"><span>mkdir ~/Ronin-UI
 </span></span><span style="display:flex;"><span>sudo mkdir -p /usr/share/nginx/logs/
@@ -3421,119 +3244,115 @@ HiddenServicePort 80 127.0.0.1:8470
 </span></span><span style="display:flex;"><span>sudo ln -sf /home/ronindojo/RoninDojo/ronin /usr/local/bin/ronin
 </span></span><span style="display:flex;"><span>cp ~/RoninDojo/user.conf.example ~/.config/RoninDojo/user.conf
 </span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nano ~/.bashrc
-</span></span></code></pre></div><p>Добавляем в конец файла две строки:</p>
+</span></span></code></pre></div><p>Add two lines to the end of the file:</p>
 <pre tabindex="0"><code>/home/ronindojo/RoninDojo/Scripts/.logo
 ronin
 </code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>source ~/.bashrc
-</span></span></code></pre></div><p>Поздравляю, вы оказались в интерфейсе Ronin CLI.</p>
+</span></span></code></pre></div><p>Congratulations, you&rsquo;re now in the Ronin CLI.</p>
 <div class="imageWrapper">
     <img src="/img/ronin-08.png">
 </div>
-<p>Перейдите в меню:</p>
+<p>Go to the menu:</p>
 <pre tabindex="0"><code>Ronin UI &gt; Re-install
-</code></pre><p>По окончании установки нажмите любую клавишу и выйдите из Ronin UI:</p>
+</code></pre><p>When the installation is complete, press any key and exit Ronin UI:</p>
 <pre tabindex="0"><code>Go Back &gt; Exit RoninDojo
-</code></pre><p>Попасть снова в Ronin CLI можно с помощью команды:</p>
+</code></pre><p>To enter the Ronin CLI again, you can use the command:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ronin
-</span></span></code></pre></div><p>Кроме того, вы будете автоматически перенаправлены в Ronin CLI при логине под пользователем <em>ronindojo</em>.</p>
-<p>Ronin UI теперь доступен из вашей локальной сети, в которой находится машина с RoninDojo, через веб-браузер по адресу <a href="http://ronindojo.local">http://ronindojo.local</a> или по IP-адресу сервера, в моем случае http://10.0.2.15.</p>
-<p>Пароль для входа - это ваш пароль пользователя <em>ronindojo</em>.</p>
+</span></span></code></pre></div><p>Additionally, you will be automatically redirected to the Ronin CLI when logging in as <em>ronindojo</em> user.</p>
+<p>Ronin UI is now accessible from your local network where the RoninDojo machine is located, via a web browser at <a href="http://ronindojo.local">http://ronindojo.local</a> or by IP address of the server, in my case http://10.0.2.15.</p>
+<p>The login password is your <em>ronindojo</em> user password.</p>
 <div class="imageWrapper">
     <img src="/img/ronin-10.jpg">
 </div>
-<h2 id="патчи-для-ronin-cli">
-  Патчи для Ronin CLI
-  <a class="anchor" href="#%d0%bf%d0%b0%d1%82%d1%87%d0%b8-%d0%b4%d0%bb%d1%8f-ronin-cli">#</a>
+<h2 id="ronin-cli-patches">
+  Ronin CLI patches
+  <a class="anchor" href="#ronin-cli-patches">#</a>
 </h2>
-<p>Установка завершена, но требуется немного исправить скрипты Ronin CLI для корректной работы.</p>
-<p>В следующей команде используйте имя вашего сетевого интерфейса, которое мы <a href="/practice-privacy/ronindojo/#%d0%be%d0%bf%d1%80%d0%b5%d0%b4%d0%b5%d0%bb%d0%b5%d0%bd%d0%b8%d0%b5-%d0%ba%d0%be%d0%bd%d1%84%d0%b8%d0%b3%d1%83%d1%80%d0%b0%d1%86%d0%b8%d0%b8">определили</a> ранее. У меня - <em>enp0s3</em>.</p>
+<p>The installation is complete, but requires some fixing of the Ronin CLI scripts to work correctly.</p>
+<p>In the following command, use the name of your network interface that we <a href="/en/practice-privacy/ronindojo/#defining-the-configuration">defined</a> earlier. Mine is <em>enp0s3</em>.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sed -i <span style="color:#e6db74">&#39;s/eth0/enp0s3/g&#39;</span> ~/RoninDojo/Scripts/Menu/menu-system-monitoring.sh
 </span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sed -i <span style="color:#e6db74">&#39;s/findmnt \&#34;\${install_dir}\&#34;/findmnt -n -o SOURCE --target \&#34;\${install_dir}\&#34;/g&#39;</span> ~/RoninDojo/Scripts/functions.sh
 </span></span><span style="display:flex;"><span>sed -i <span style="color:#e6db74">&#39;s/findmnt \&#34;\${install_dir}\&#34;/findmnt -n -o SOURCE --target \&#34;\${install_dir}\&#34;/g&#39;</span> ~/RoninDojo/Scripts/Install/install-dojo.sh
 </span></span></code></pre></div><blockquote class="book-hint info">
-  <p><strong>Только для Testnet</strong></p>
+  <p><strong>For Testnet only</strong></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sed -i <span style="color:#e6db74">&#39;s/_data/_data\/testnet3/g&#39;</span> ~/RoninDojo/Scripts/Install/install-send-block-data.sh
 </span></span><span style="display:flex;"><span>sed -i <span style="color:#e6db74">&#39;s/_data/_data\/testnet3/g&#39;</span> ~/RoninDojo/Scripts/Install/install-receive-block-data.sh
 </span></span><span style="display:flex;"><span>sed -i <span style="color:#e6db74">&#39;s/ludwig.py --rpc/ludwig.py --testnet --rpc/g&#39;</span> ~/RoninDojo/Scripts/Menu/menu-boltzmann.sh
 </span></span></code></pre></div>
 </blockquote>
-<h2 id="инструменты-ronindojo">
-  Инструменты RoninDojo
-  <a class="anchor" href="#%d0%b8%d0%bd%d1%81%d1%82%d1%80%d1%83%d0%bc%d0%b5%d0%bd%d1%82%d1%8b-ronindojo">#</a>
+<h2 id="ronindojo-tools">
+  RoninDojo tools
+  <a class="anchor" href="#ronindojo-tools">#</a>
 </h2>
-<h3 id="резервное-копирование-блокчейна">
-  Резервное копирование блокчейна
-  <a class="anchor" href="#%d1%80%d0%b5%d0%b7%d0%b5%d1%80%d0%b2%d0%bd%d0%be%d0%b5-%d0%ba%d0%be%d0%bf%d0%b8%d1%80%d0%be%d0%b2%d0%b0%d0%bd%d0%b8%d0%b5-%d0%b1%d0%bb%d0%be%d0%ba%d1%87%d0%b5%d0%b9%d0%bd%d0%b0">#</a>
+<h3 id="blockchain-data-backup">
+  Blockchain data backup
+  <a class="anchor" href="#blockchain-data-backup">#</a>
 </h3>
 <blockquote class="book-hint btc">
-  Я рекомендую протестировать эту процедуру до полного скачивания блокчейна, так как неправильная настройка дисков может привести к потере данных, и все придется начинать с нуля. Произведите тест, когда в веб-интерфейсе появятся доли процентов синхронизации Bitcoin Core.
+  I recommend testing this before fully downloading the blockchain, as misconfiguring the disks can lead to data loss and you will have to start from scratch. Perform the test when the first Bitcoin Core synchronization percentages appear in the web interface.
 </blockquote>
-<p>Подключите внешний диск для резервной копии. В Ronin CLI перейдите в меню:</p>
+<p>Plug in an external disk for backup. In the Ronin CLI, go to the menu:</p>
 <pre tabindex="0"><code>System &gt; Disk Storage &gt; Format &amp; Mount New Backup Drive
-</code></pre><p>После форматирования диска, перейдите из основного меню:</p>
+</code></pre><p>After formatting the disk, move from the main menu:</p>
 <pre tabindex="0"><code>Dojo &gt; Next Page &gt; Send Block Data to Backup
-</code></pre><p>После копирования, восстановите бэкап из меню:</p>
+</code></pre><p>After copying, restore the backup from the menu:</p>
 <pre tabindex="0"><code>Dojo &gt; Next Page &gt; Receive Block Data from Backup
-</code></pre><h3 id="установка-wst-и-калькулятора-больцмана">
-  Установка WST и калькулятора Больцмана
-  <a class="anchor" href="#%d1%83%d1%81%d1%82%d0%b0%d0%bd%d0%be%d0%b2%d0%ba%d0%b0-wst-%d0%b8-%d0%ba%d0%b0%d0%bb%d1%8c%d0%ba%d1%83%d0%bb%d1%8f%d1%82%d0%be%d1%80%d0%b0-%d0%b1%d0%be%d0%bb%d1%8c%d1%86%d0%bc%d0%b0%d0%bd%d0%b0">#</a>
+</code></pre><h3 id="installing-wst-and-boltzmann-calculator">
+  Installing WST and Boltzmann Calculator
+  <a class="anchor" href="#installing-wst-and-boltzmann-calculator">#</a>
 </h3>
-<blockquote class="book-hint info">
-  <p>Руководство по использованию <a href="/privacy/coinjoin/#whirlpool-stats-tool-wst">Whirlpool Stats Tool (WST)</a>.</p>
-<p>Руководство по <a href="/privacy/coinjoin/#%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D0%BA%D0%B0%D0%BB%D1%8C%D0%BA%D1%83%D0%BB%D1%8F%D1%82%D0%BE%D1%80%D0%B0-%D0%B1%D0%BE%D0%BB%D1%8C%D1%86%D0%BC%D0%B0%D0%BD%D0%B0">калькулятору Больцмана</a>.</p>
-</blockquote>
-<p>Для установки и использования этих утилит просто выберите соответствующий пункт из меню:</p>
+<p>To install and use these utilities, simply select the corresponding item from the menu:</p>
 <pre tabindex="0"><code>Samourai Toolkit
 </code></pre><div class="imageWrapper">
     <img src="/img/ronin-12.png">
 </div>
 <blockquote class="book-hint info">
-  Утилита WST недоступна для Testnet.
+  The WST utility is not available for Testnet.
 </blockquote>
 <h3 id="whirlpool">
   Whirlpool
   <a class="anchor" href="#whirlpool">#</a>
 </h3>
-<p>Дождитесь полной синхронизации Bitcoin Core, Dojo и Indexer.</p>
+<p>Wait for full synchronization of Bitcoin Core, Dojo and Indexer.</p>
 <div class="imageWrapper">
     <img src="/img/ronin-13.jpg">
 </div>
-<p>Перейдите в меню &ldquo;Pairing&rdquo; и выполните сопряжение Samourai Wallet с Samourai Dojo. Подключиться к Dojo можно только при новой установке кошелька.</p>
+<p>Go to the &ldquo;Pairing&rdquo; menu and pair Samourai Wallet with Samourai Dojo. You can only connect to Dojo when the wallet is freshly installed.</p>
 <div class="imageWrapper">
     <img src="/img/ronin-14.jpg">
 </div>
-<p>Нажмите &ldquo;Pair now&rdquo; в разделе &ldquo;Samourai Dojo&rdquo;, отсканируйте QR-код сопряжения Dojo в вашем Samourai Wallet.</p>
-<p>Перейдите в меню настроек кошелька:</p>
-<pre tabindex="0"><code>Транзакции &gt; Связать с Whirlpool GUI
-</code></pre><p>Перенесите полученный код сопряжения с Whirlpool GUI на компьютер.</p>
-<p>В разделе Whirlpool CLI нажмите &ldquo;Initialize&rdquo; и используйте ваш код сопряжения.</p>
-<p>После успешного сопряжения, вам нужно нажать кнопку &ldquo;Log in&rdquo; и ввести <a href="/passphrase">парольную фразу</a>, которую вы использовали при создании кошелька.</p>
+<p>Click &ldquo;Pair now&rdquo; under &ldquo;Samourai Dojo&rdquo;, scan the Dojo pairing QR code in your Samourai Wallet.</p>
+<p>Go to the wallet Settings menu and:</p>
+<pre tabindex="0"><code>Transactions &gt; Pair to Whirlpool GUI
+</code></pre><p>Transfer the resulting Whirlpool GUI pairing code to your computer.</p>
+<p>Under Whirlpool CLI, click &ldquo;Initialize&rdquo; and use your pairing code.</p>
+<p>After successful pairing, you need to click the &ldquo;Log in&rdquo; button and enter the <a href="/en/passphrase">passphrase</a> you used when creating the wallet.</p>
 <div class="imageWrapper">
     <img src="/img/ronin-15.jpg">
 </div>
-<p>Наконец, вы попадаете в интерфейс Whirlpool и можете ремикшировать UTXO 24/7, пока работает ваш узел.</p>
+<p>Finally, you can enter the Whirlpool interface and remix UTXO 24/7 while your node is running.</p>
 <div class="imageWrapper">
     <img src="/img/ronin-16.jpg">
 </div>
-<h3 id="обозреватели-блокчейна">
-  Обозреватели блокчейна
-  <a class="anchor" href="#%d0%be%d0%b1%d0%be%d0%b7%d1%80%d0%b5%d0%b2%d0%b0%d1%82%d0%b5%d0%bb%d0%b8-%d0%b1%d0%bb%d0%be%d0%ba%d1%87%d0%b5%d0%b9%d0%bd%d0%b0">#</a>
+<h3 id="blockchain-explorers">
+  Blockchain explorers
+  <a class="anchor" href="#blockchain-explorers">#</a>
 </h3>
-<p>Для доступа к BTC RPC Explorer перейдите в &ldquo;Dashboard&rdquo; и нажмите &ldquo;Manage&rdquo; в разделе &ldquo;Dojo&rdquo;.</p>
+<p>To access the BTC RPC Explorer, go to &ldquo;Dashboard&rdquo; and click &ldquo;Manage&rdquo; under &ldquo;Dojo&rdquo;.</p>
 <div class="imageWrapper">
     <img src="/img/ronin-17.jpg">
 </div>
-<p>Здесь находятся ссылки для доступа к обозревателю и Dojo Maintenance Tool (DMT) через Tor-браузер.</p>
-<p>Ссылка для доступа к обозревателю Mempool также доступна из меню &ldquo;Manage&rdquo; в соответствующем разделе панели управления. Там же вы можете установить или удалить Mempool.</p>
+<p>Here eou can find links to access the explorer and the Dojo Maintenance Tool (DMT) through a Tor browser.</p>
+<p>A link to access the Mempool explorer is also available from the &ldquo;Manage&rdquo; menu in the corresponding section of the Dashboard. There you can also install or uninstall Mempool.</p>
 <h3 id="dojo-maintenance-tool-dmt">
   Dojo Maintenance Tool (DMT)
   <a class="anchor" href="#dojo-maintenance-tool-dmt">#</a>
 </h3>
-<p>DMT представляет собой упрощенную панель для мониторинга ноды с базовыми функциями отслеживания ваших XPUB, адресов и транзакций - аналогичными меню &ldquo;Maintenance&rdquo; в Ronin UI. В условиях плохого качества связи с Tor, может оказаться полезным инструментом. Если вы добавили ваш PayNym в файле docker-node.conf.tpl при установке Samourai Dojo, то вам будет доступен QR-код. Просто выберите в кошельке Samourai &ldquo;Authenticate using PayNym&rdquo; из меню &ldquo;Tools&rdquo; и отсканируйте его для доступа в DMT.</p>
+<p>DMT is a simplified node monitoring dashboard with basic features for tracking your XPUBs, addresses and transactions – similar to the &ldquo;Maintenance&rdquo; menu in Ronin UI. In the face of poor Tor connection quality, it can be a useful tool. If you added your PayNym in the <code>docker-node.conf.tpl</code> file when installing Samourai Dojo, a QR code will be available to you. Simply select &ldquo;Authenticate using PayNym&rdquo; from the &ldquo;Tools&rdquo; menu in Samourai Wallet and scan it to access DMT.</p>
 <blockquote class="book-hint info">
-  <p>Если вы не включили функцию аутентификации с использованием PayNym (Auth47) при установке, то просто добавьте паш платежный код BIP47 после <em>NODE_PAYMENT_CODE=</em> в файл:</p>
+  <p>If you didn&rsquo;t enable PayNym authentication (Auth47) during installation, add the BIP47 payment code after <em>NODE_PAYMENT_CODE=</em> to the file:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nano ~/dojo/docker/my-dojo/conf/docker-node.conf
-</span></span></code></pre></div><p>После этого перезапустите Dojo из меню &ldquo;Manage&rdquo; в соответствующем разделе Ronin UI с помощью кнопки &ldquo;Restart&rdquo;.</p>
+</span></span></code></pre></div><p>After that, restart Dojo from the &ldquo;Manage&rdquo; menu in the corresponding section of the Ronin UI using the &ldquo;Restart&rdquo; button.</p>
 </blockquote>
 <div class="imageWrapper">
     <img src="/img/ronin-18.jpg">
@@ -3541,60 +3360,60 @@ ronin
 <div class="imageWrapper">
     <img src="/img/ronin-19.jpg">
 </div>
-<h3 id="индексаторы-блокчейна">
-  Индексаторы блокчейна
-  <a class="anchor" href="#%d0%b8%d0%bd%d0%b4%d0%b5%d0%ba%d1%81%d0%b0%d1%82%d0%be%d1%80%d1%8b-%d0%b1%d0%bb%d0%be%d0%ba%d1%87%d0%b5%d0%b9%d0%bd%d0%b0">#</a>
+<h3 id="blockchain-indexers">
+  Blockchain Indexers
+  <a class="anchor" href="#blockchain-indexers">#</a>
 </h3>
-<p>Как уже упоминалось выше, вы можете выбирать между Electrs, Fulcrum или Addrindexrs. Вы можете установить другой индексатор из &ldquo;Dashboard&rdquo; через меню &ldquo;Manage&rdquo; в разделе &ldquo;Indexer&rdquo;.</p>
+<p>As mentioned above, you can choose between Electrs, Fulcrum or Addrindexrs. You can install another indexer from the &ldquo;Dashboard&rdquo; via the &ldquo;Manage&rdquo; menu under &ldquo;Indexer&rdquo;.</p>
 <div class="imageWrapper">
     <img src="/img/ronin-20.jpg">
 </div>
 <blockquote class="book-hint info">
-  Обратите внимание, что при выборе другого индексатора, данные предыдущего не сохраняются. Если вы решите переключиться обратно, синхронизация индексатора начнется с нуля.
+  Note that if you select a different indexer, the data of the previous one is not saved. If you decide to switch back, the indexer synchronization will start from scratch.
 </blockquote>
-<p>Ссылка для подключения кошельков Sparrow или Electrum к вашему индексатору через Tor находится в меню &ldquo;Pair&rdquo; в разделе &ldquo;Electrum server&rdquo;.</p>
-<h3 id="прочие-инструменты">
-  Прочие инструменты
-  <a class="anchor" href="#%d0%bf%d1%80%d0%be%d1%87%d0%b8%d0%b5-%d0%b8%d0%bd%d1%81%d1%82%d1%80%d1%83%d0%bc%d0%b5%d0%bd%d1%82%d1%8b">#</a>
+<p>The link to connect Sparrow or Electrum wallets to your indexer via Tor is in the &ldquo;Pair&rdquo; menu under &ldquo;Electrum server&rdquo;.</p>
+<h3 id="further-tools">
+  Further tools
+  <a class="anchor" href="#further-tools">#</a>
 </h3>
-<p><strong>Push TX</strong> в Ronin UI позволит вам транслировать подписанную транзакцию в блокчейн с помощью вашей ноды.</p>
-<p><strong>Credentials</strong> в Ronin CLI выведет на экран ссылки на все сервисы вашего узла, доступные через Tor.</p>
-<p><strong>Настройки безопасности</strong> находятся в меню Ronin CLI:</p>
+<p><strong>Push TX</strong> in Ronin UI will allow you to broadcast a signed transaction to the blockchain using your node.</p>
+<p><strong>Credentials</strong> in the Ronin CLI will display links to all the services on your node that are accessible via Tor.</p>
+<p><strong>Security settings</strong> can be found in the Ronin CLI menu:</p>
 <pre tabindex="0"><code>System &gt; Next Page
 </code></pre><div class="imageWrapper">
     <img src="/img/ronin-21.png">
 </div>
-<p>Здесь вы можете управлять настройками межсетевого экрана, SSH, изменить пароль пользователя ronindojo, а также root.</p>
-<h2 id="обновление-ronindojo">
-  Обновление RoninDojo
-  <a class="anchor" href="#%d0%be%d0%b1%d0%bd%d0%be%d0%b2%d0%bb%d0%b5%d0%bd%d0%b8%d0%b5-ronindojo">#</a>
+<p>Here you can manage firewall settings, SSH settings, change the password of the <em>ronindojo</em> user as well as <em>root</em>.</p>
+<h2 id="ronindojo-update">
+  RoninDojo update
+  <a class="anchor" href="#ronindojo-update">#</a>
 </h2>
-<h3 id="обновление-ronin-ui">
-  Обновление Ronin UI
-  <a class="anchor" href="#%d0%be%d0%b1%d0%bd%d0%be%d0%b2%d0%bb%d0%b5%d0%bd%d0%b8%d0%b5-ronin-ui">#</a>
+<h3 id="ronin-ui-update">
+  Ronin UI update
+  <a class="anchor" href="#ronin-ui-update">#</a>
 </h3>
-<p>Ronin UI обновляется в один клик. При наличии обновления вы увидите в веб-интерфейсе уведомление о новой версии.</p>
-<p>Второй вариант через консоль:</p>
+<p>Ronin UI is updated in one click. If update is available, you will see a notification about the new version in the web interface.</p>
+<p>The second option is via console:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cd
 </span></span><span style="display:flex;"><span>rm -rf Ronin-UI/
 </span></span><span style="display:flex;"><span>ronin
-</span></span></code></pre></div><p>Далее перейдите в меню:</p>
+</span></span></code></pre></div><p>Next, navigate to the menu:</p>
 <pre tabindex="0"><code>Ronin UI &gt; Re-install
-</code></pre><h3 id="обновление-ronin-cli">
-  Обновление Ronin CLI
-  <a class="anchor" href="#%d0%be%d0%b1%d0%bd%d0%be%d0%b2%d0%bb%d0%b5%d0%bd%d0%b8%d0%b5-ronin-cli">#</a>
+</code></pre><h3 id="ronin-cli-update">
+  Ronin CLI update
+  <a class="anchor" href="#ronin-cli-update">#</a>
 </h3>
-<p>Стандартный скрипт обновления RoninDojo может сломать систему, поэтому апгрейд производим вручную.</p>
+<p>The standard RoninDojo update script can break the system, so update it manually.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cd
 </span></span><span style="display:flex;"><span>rm -rf ~/RoninDojo/
 </span></span><span style="display:flex;"><span>torsocks wget http://2l2o5umijiwxjioxwpsvwxe6pr75tj7r5rggnl5ze256guwvtee3kpqd.onion/Ronin/ronindojo/archive/master.tar.gz -O ronindojo-master.tar.gz
 </span></span><span style="display:flex;"><span>tar -xvf ronindojo-master.tar.gz
 </span></span><span style="display:flex;"><span>mv ronindojo RoninDojo
 </span></span><span style="display:flex;"><span>rm ronindojo-master.tar.gz
-</span></span></code></pre></div><p>Применяем патчи из <a href="/practice-privacy/ronindojo/#%d0%bf%d0%b0%d1%82%d1%87%d0%b8-%d0%b4%d0%bb%d1%8f-ronin-cli">этого раздела</a>.</p>
-<h3 id="обновление-samourai-dojo">
-  Обновление Samourai Dojo
-  <a class="anchor" href="#%d0%be%d0%b1%d0%bd%d0%be%d0%b2%d0%bb%d0%b5%d0%bd%d0%b8%d0%b5-samourai-dojo">#</a>
+</span></span></code></pre></div><p>Apply patches from <a href="/en/practice-privacy/ronindojo/#ronin-cli-patches">this section</a>.</p>
+<h3 id="samourai-dojo-update">
+  Samourai Dojo update
+  <a class="anchor" href="#samourai-dojo-update">#</a>
 </h3>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cd
 </span></span><span style="display:flex;"><span>mkdir temp
@@ -3607,14 +3426,14 @@ ronin
 </span></span><span style="display:flex;"><span>rm -rf temp/
 </span></span><span style="display:flex;"><span>cd ~/dojo/docker/my-dojo/
 </span></span></code></pre></div><blockquote class="book-hint info">
-  Делаем необходимые изменения для Testnet из <a href="/practice-privacy/ronindojo/#%d1%83%d1%81%d1%82%d0%b0%d0%bd%d0%be%d0%b2%d0%ba%d0%b0-samourai-dojo">этого раздела</a>.
+  Making the necessary changes for Testnet from <a href="/en/practice-privacy/ronindojo/#samourai-dojo-installation">this section</a>.
 </blockquote>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>./dojo.sh upgrade
-</span></span></code></pre></div><h2 id="поддержите-автора">
-  Поддержите автора
-  <a class="anchor" href="#%d0%bf%d0%be%d0%b4%d0%b4%d0%b5%d1%80%d0%b6%d0%b8%d1%82%d0%b5-%d0%b0%d0%b2%d1%82%d0%be%d1%80%d0%b0">#</a>
+</span></span></code></pre></div><h2 id="support-the-author">
+  Support the author
+  <a class="anchor" href="#support-the-author">#</a>
 </h2>
-<p>Поддержать автора можно, отправив немного сат в сети Лайтнинг:</p>
+<p>You can support the author by sending some sats via the Lightning Network:</p>
 <div class="imageWrapper">
     <img src="/img/btclinux-ln-qr.jpg">
 <p><code>lnurl1dp68gurn8ghj7ampd3kx2ar0veekzar0wd5xjtnrdakj7tnhv4kxctttdehhwm30d3h82unvwqhk7mnv093kcmm4v3unxwg6jxyqf</code></p>
@@ -3669,41 +3488,41 @@ ronin
   <ul>
     <li>
       <ul>
-        <li><a href="#отличия-dojo-и-ronindojo">Отличия Dojo и RoninDojo</a></li>
-        <li><a href="#системные-требования">Системные требования</a></li>
-        <li><a href="#установка-операционной-системы">Установка операционной системы</a></li>
-        <li><a href="#определение-конфигурации">Определение конфигурации</a></li>
-        <li><a href="#предварительный-этап">Предварительный этап</a></li>
-        <li><a href="#установка-и-настройка-службы-tor">Установка и настройка службы Tor</a></li>
-        <li><a href="#установка-samourai-dojo">Установка Samourai Dojo</a></li>
+        <li><a href="#dojo-and-ronindojo-differences">Dojo and RoninDojo differences</a></li>
+        <li><a href="#system-requirements">System Requirements</a></li>
+        <li><a href="#os-installation">OS installation</a></li>
+        <li><a href="#defining-the-configuration">Defining the configuration</a></li>
+        <li><a href="#pre-installation">Pre-installation</a></li>
+        <li><a href="#installing-and-configuring-the-tor-service">Installing and configuring the Tor service</a></li>
+        <li><a href="#samourai-dojo-installation">Samourai Dojo installation</a></li>
         <li><a href="#roninos">RoninOS</a>
           <ul>
-            <li><a href="#настройка-plymouth">Настройка plymouth</a></li>
-            <li><a href="#настройка-межсетевого-экрана">Настройка межсетевого экрана</a></li>
-            <li><a href="#настройка-дисков">Настройка дисков</a></li>
+            <li><a href="#customizing-plymouth">Customizing plymouth</a></li>
+            <li><a href="#configuring-the-firewall">Configuring the firewall</a></li>
+            <li><a href="#disk-configuration">Disk configuration</a></li>
           </ul>
         </li>
-        <li><a href="#ronin-ui-и-ronin-cli">Ronin UI и Ronin CLI</a></li>
-        <li><a href="#патчи-для-ronin-cli">Патчи для Ronin CLI</a></li>
-        <li><a href="#инструменты-ronindojo">Инструменты RoninDojo</a>
+        <li><a href="#ronin-ui-and-ronin-cli">Ronin UI and Ronin CLI</a></li>
+        <li><a href="#ronin-cli-patches">Ronin CLI patches</a></li>
+        <li><a href="#ronindojo-tools">RoninDojo tools</a>
           <ul>
-            <li><a href="#резервное-копирование-блокчейна">Резервное копирование блокчейна</a></li>
-            <li><a href="#установка-wst-и-калькулятора-больцмана">Установка WST и калькулятора Больцмана</a></li>
+            <li><a href="#blockchain-data-backup">Blockchain data backup</a></li>
+            <li><a href="#installing-wst-and-boltzmann-calculator">Installing WST and Boltzmann Calculator</a></li>
             <li><a href="#whirlpool">Whirlpool</a></li>
-            <li><a href="#обозреватели-блокчейна">Обозреватели блокчейна</a></li>
+            <li><a href="#blockchain-explorers">Blockchain explorers</a></li>
             <li><a href="#dojo-maintenance-tool-dmt">Dojo Maintenance Tool (DMT)</a></li>
-            <li><a href="#индексаторы-блокчейна">Индексаторы блокчейна</a></li>
-            <li><a href="#прочие-инструменты">Прочие инструменты</a></li>
+            <li><a href="#blockchain-indexers">Blockchain Indexers</a></li>
+            <li><a href="#further-tools">Further tools</a></li>
           </ul>
         </li>
-        <li><a href="#обновление-ronindojo">Обновление RoninDojo</a>
+        <li><a href="#ronindojo-update">RoninDojo update</a>
           <ul>
-            <li><a href="#обновление-ronin-ui">Обновление Ronin UI</a></li>
-            <li><a href="#обновление-ronin-cli">Обновление Ronin CLI</a></li>
-            <li><a href="#обновление-samourai-dojo">Обновление Samourai Dojo</a></li>
+            <li><a href="#ronin-ui-update">Ronin UI update</a></li>
+            <li><a href="#ronin-cli-update">Ronin CLI update</a></li>
+            <li><a href="#samourai-dojo-update">Samourai Dojo update</a></li>
           </ul>
         </li>
-        <li><a href="#поддержите-автора">Поддержите автора</a></li>
+        <li><a href="#support-the-author">Support the author</a></li>
       </ul>
     </li>
   </ul>

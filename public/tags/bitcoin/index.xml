@@ -4,142 +4,534 @@
     <title>Bitcoin on 21ideas</title>
     <link>http://localhost:1313/tags/bitcoin/</link>
     <description>Recent content in Bitcoin on 21ideas</description>
-    <generator>Hugo</generator>
-    <language>ru-RU</language>
-    <lastBuildDate>Thu, 29 Aug 2024 17:10:45 +0300</lastBuildDate>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 20 Mar 2024 09:34:04 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/bitcoin/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Phoenix: The Non-Custodial Lightning Wallet</title>
+      <link>http://localhost:1313/phoenix/</link>
+      <pubDate>Thu, 02 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/phoenix/</guid>
+      <description>How to use the Lightning Network without trusting anyone? Take Back Control of Your Sats in the Lightning Network.&#xA;The guide written by Tony⚡️.&#xA;Contribute.&#xA;Intro # I would like to share a guide on Phoenix — the non-custodial Lightning wallet. This guide will be useful for those who already are familiar with the Lightning Network and have some experience using it. Let&amp;rsquo;s say you&amp;rsquo;ve already been using a custodial wallet like Wallet Of Satoshi and you want to gain more control over your funds, hold your sats in Lightning Network, and minimize the level of trust to a third party.</description>
+    </item>
+    <item>
+      <title>Bitcoin Basics</title>
+      <link>http://localhost:1313/start/start/</link>
+      <pubDate>Tue, 06 Dec 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/start/start/</guid>
+      <description>So you&amp;rsquo;ve heard about Bitcoin, but you&amp;rsquo;re not sure what it is? Before you rush into buying your first coins, it&amp;rsquo;s worth taking the time to learn the ins and outs the Bitcoin phenomenon. Otherwise, you run the risk of losing money – whether you sell bitcoins, fearing a drop in its price or due to bad custody decisions. This guide will help you understand what Bitcoin is, why it was developed and familiarize yourself with the basics of how it works.</description>
+    </item>
+    <item>
+      <title>Buy and Hodl Bitcoin for Beginners</title>
+      <link>http://localhost:1313/newbie-buy/</link>
+      <pubDate>Tue, 06 Dec 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/newbie-buy/</guid>
+      <description> The guide is not yet available in English. Want to cover this topic or support the project? Visit the Contribute page. </description>
+    </item>
+    <item>
+      <title>Electrum Bitcoin Wallet</title>
+      <link>http://localhost:1313/electrum/</link>
+      <pubDate>Tue, 18 Oct 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/electrum/</guid>
+      <description>This guide by Arman The Parman was published in his blog.&#xA;Contribute.&#xA;Why Electrum? # This is a detailed guide on how to use the Electrum Bitcoin Wallet, with solutions to all its traps and quirks -something I’ve developed after several years of use, and teaching students about Bitcoin security/privacy. Electrum is not the best Bitcoin wallet for the person who wants to keep everything as simple as possible, and preferring to remain at the beginner level.</description>
+    </item>
+    <item>
+      <title>What is Lightning Network?</title>
+      <link>http://localhost:1313/what-is-lightning-network/</link>
+      <pubDate>Mon, 12 Sep 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/what-is-lightning-network/</guid>
+      <description>Why should you care about Lightning Network, how does it work and how to use it? We&amp;rsquo;ll answer these and many other questions in this guide.&#xA;The article written by Tony⚡️.&#xA;Contribute.&#xA;Lightning Network is a decentralized system for instant micro payments. Bitcoin, the world&amp;rsquo;s most widely used and valued cryptocurrency, allows anyone to transfer value without the need for a trusted third party. Bitcoin supports an advanced scripting system that allows users to program instructions for managing their funds.</description>
+    </item>
     <item>
       <title>Введение</title>
       <link>http://localhost:1313/21-sposob/vvedenie/</link>
       <pubDate>Sun, 02 Jan 2022 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/21-sposob/vvedenie/</guid>
-      <description>&lt;div class=&#34;book-expand&#34;&gt;&#xA;  &lt;label&gt;&#xA;    &lt;div class=&#34;book-expand-head flex justify-between&#34;&gt;&#xA;      &lt;span&gt;Оглавление&lt;/span&gt;&#xA;      &lt;span&gt;...&lt;/span&gt;&#xA;    &lt;/div&gt;&#xA;    &lt;input type=&#34;checkbox&#34; class=&#34;hidden&#34; /&gt;&#xA;    &lt;div class=&#34;book-expand-content markdown-inner&#34;&gt;&#xA;      &lt;p&gt;&lt;a href=&#34;http://localhost:1313/21-sposob&#34;&gt;Главная страница&lt;/a&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/21-sposob/vvedenie&#34;&gt;Введение&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/21-sposob/glava-0&#34;&gt;Глава 0&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/21-sposob/glava-01&#34;&gt;Глава 0.1&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;21 способ взглянуть на Биткоин:&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/21-sposob/glava-1-bitcoin-eto-ideya&#34;&gt;Глава 1: Биткоин – это идея&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/21-sposob/glava-2-bitcoin-eto-vremya&#34;&gt;Глава 2: Биткоин – это время&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/21-sposob/glava-3-bitcoin-volshebnye-internet-dengi&#34;&gt;Глава 3: Биткоин – волшебные интернет–деньги&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Глава 4: Биткоин – разумные деньги&lt;/p&gt;&#xA;&lt;p&gt;Глава 5: Биткоин – лучшие деньги, которые у нас когда–либо были&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/21-sposob/glava-6-bitcoin-eto-cifrovaya-redkost&#34;&gt;Глава 6: Биткоин – это цифровая редкость&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Глава 7: Биткоин – это абсолютная редкость&lt;/p&gt;&#xA;&lt;p&gt;Глава 8: Биткоин – это машина истины&lt;/p&gt;</description>
+      <description>Оглавление ... Главная страница&#xA;Введение&#xA;Глава 0&#xA;Глава 0.1&#xA;21 способ взглянуть на Биткоин:&#xA;Глава 1: Биткоин – это идея&#xA;Глава 2: Биткоин – это время&#xA;Глава 3: Биткоин – волшебные интернет–деньги&#xA;Глава 4: Биткоин – разумные деньги&#xA;Глава 5: Биткоин – лучшие деньги, которые у нас когда–либо были&#xA;Глава 6: Биткоин – это цифровая редкость&#xA;Глава 7: Биткоин – это абсолютная редкость&#xA;Глава 8: Биткоин – это машина истины</description>
     </item>
     <item>
       <title>Предисловие от Майкла Сэйлора</title>
       <link>http://localhost:1313/bychij-kejs-dlya-bitcoin/predislovie/</link>
       <pubDate>Sat, 08 May 2021 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/bychij-kejs-dlya-bitcoin/predislovie/</guid>
-      <description>&lt;div class=&#34;book-expand&#34;&gt;&#xA;  &lt;label&gt;&#xA;    &lt;div class=&#34;book-expand-head flex justify-between&#34;&gt;&#xA;      &lt;span&gt;Оглавление&lt;/span&gt;&#xA;      &lt;span&gt;...&lt;/span&gt;&#xA;    &lt;/div&gt;&#xA;    &lt;input type=&#34;checkbox&#34; class=&#34;hidden&#34; /&gt;&#xA;    &lt;div class=&#34;book-expand-content markdown-inner&#34;&gt;&#xA;      &lt;p&gt;&lt;a href=&#34;http://localhost:1313/bychij-kejs-dlya-bitcoin&#34;&gt;Главная страница&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/bychij-kejs-dlya-bitcoin/predislovie&#34;&gt;Предисловие от Майкла Сэйлора&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/bychij-kejs-dlya-bitcoin/prolog&#34;&gt;Пролог&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/bychij-kejs-dlya-bitcoin/glava-1&#34;&gt;Глава 1: Генезис и происхождение денег&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/bychij-kejs-dlya-bitcoin/glava-2&#34;&gt;Глава 2: Атрибуты хорошего средства сбережения&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/bychij-kejs-dlya-bitcoin/glava-3&#34;&gt;Глава 3: Эволюция денег&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/bychij-kejs-dlya-bitcoin/glava-4&#34;&gt;Глава 4: Форма монетизации&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/bychij-kejs-dlya-bitcoin/glava-5&#34;&gt;Глава 5: Новая денежная база&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/bychij-kejs-dlya-bitcoin/epilog&#34;&gt;Эпилог&lt;/a&gt;&lt;/p&gt;&#xA;&#xA;    &lt;/div&gt;&#xA;  &lt;/label&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;p&gt;Пандемия 2020 года перевернула мировую экономику, сократив период цифровой трансформации с десятилетия до считанных месяцев. Популярность сугубо цифровых предложений резко возросла, при этом популярность многих традиционных услуг сошла на нет. В результате ход жизни миллионов предприятий и миллиардов людей претерпел кардинальные изменения.&lt;/p&gt;</description>
+      <description>Оглавление ... Главная страница&#xA;Предисловие от Майкла Сэйлора&#xA;Пролог&#xA;Глава 1: Генезис и происхождение денег&#xA;Глава 2: Атрибуты хорошего средства сбережения&#xA;Глава 3: Эволюция денег&#xA;Глава 4: Форма монетизации&#xA;Глава 5: Новая денежная база&#xA;Эпилог&#xA;Пандемия 2020 года перевернула мировую экономику, сократив период цифровой трансформации с десятилетия до считанных месяцев. Популярность сугубо цифровых предложений резко возросла, при этом популярность многих традиционных услуг сошла на нет. В результате ход жизни миллионов предприятий и миллиардов людей претерпел кардинальные изменения.</description>
     </item>
     <item>
-      <title>Часть1. Философские уроки Биткоина</title>
-      <link>http://localhost:1313/chemu-ya-nauchilsya-u-bitcoina/filosofskie-uroki-bitcoina/</link>
+      <title>Bitcoin Wallets: How, Why and When to Hold Your Own Private Keys</title>
+      <link>http://localhost:1313/how-to-hold-private-keys/</link>
+      <pubDate>Wed, 13 May 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/how-to-hold-private-keys/</guid>
+      <description>Not Your Keys, Not Your Bitcoin.&#xA;This article by Brandon Quittem was published on swanbitcoin.com website.&#xA;Contribute.&#xA;Alright so you’ve acquired some Bitcoin, now what’s the best way to store it? Here we’ll take you through the process of finding the right Bitcoin wallet for you.&#xA;Although it seems like a straight­for­ward question, there is a surprising amount of nuance to consider. How much Bitcoin do you have? How often do you plan to spend it?</description>
+    </item>
+    <item>
+      <title>Intro</title>
+      <link>http://localhost:1313/gf/genesis-intro/</link>
+      <pubDate>Mon, 06 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/gf/genesis-intro/</guid>
+      <description>Contents ... Intro: The Day Cryptography Changed Forever Part I: How David Chaum’s eCash Spawned a Cypherpunk Dream Part II: Hashcash or How Adam Back Designed Bitcoin’s Motor Block Part III: If Bitcoin Had a First Draft, Wei Dai’s B-Money Was It Part IV: With Bit Gold, Szabo Was Inches Away From Inventing Bitcoin Part V: How Hal Finney’s Quest For Digital Cash Led To RPOW (And More) This article by Steven Ellis was published in his Medium blog.</description>
+    </item>
+    <item>
+      <title>Part I</title>
+      <link>http://localhost:1313/ba/1/</link>
+      <pubDate>Fri, 13 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ba/1/</guid>
+      <description>Contents ... Part I&#xA;Part II&#xA;Part III&#xA;This essay by Dhruv Bansal was published in Unchained blog.&#xA;Contribute.&#xA;The desire to travel far away and start a new currency will become a powerful driver of human expansion into space.&#xA;Earth will run on bitcoin, but colonies on Mars, the outer planets, and distant stars will not. Though faraway colonies will value and trade bitcoin, they will choose to launch, defend and use their own local blockchains.</description>
+    </item>
+    <item>
+      <title>Intro</title>
+      <link>http://localhost:1313/gradually-then-suddenly/intro/</link>
+      <pubDate>Fri, 26 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/gradually-then-suddenly/intro/</guid>
+      <description>Contents ... Gradually, Then Suddenly: Intro Bitcoin Can’t Be Copied Bitcoin Is Not Too Volatile Bitcoin Does Not Waste Energy Bitcoin is Not Too Slow Bitcoin Fixes This Bitcoin, Not Blockchain Bitcoin is Not Backed by Nothing Bitcoin is Not a Pyramid Scheme Bitcoin Cannot be Banned Bitcoin is Not for Criminals Bitcoin Obsoletes All Other Money Bitcoin is a Rally Cry Bitcoin is Common Sense Bitcoin is Antifragile Bitcoin is One for All Bitcoin is the Great Definancialization This article by Parker Lewis was first published in Unchained blog.</description>
+    </item>
+    <item>
+      <title>Part I. Philosophical Teachings of Bitcoin</title>
+      <link>http://localhost:1313/what-i-learned-from-bitcoin-1/</link>
       <pubDate>Fri, 21 Dec 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/chemu-ya-nauchilsya-u-bitcoina/filosofskie-uroki-bitcoina/</guid>
-      <description>&lt;div class=&#34;book-expand&#34;&gt;&#xA;  &lt;label&gt;&#xA;    &lt;div class=&#34;book-expand-head flex justify-between&#34;&gt;&#xA;      &lt;span&gt;Оглавление&lt;/span&gt;&#xA;      &lt;span&gt;...&lt;/span&gt;&#xA;    &lt;/div&gt;&#xA;    &lt;input type=&#34;checkbox&#34; class=&#34;hidden&#34; /&gt;&#xA;    &lt;div class=&#34;book-expand-content markdown-inner&#34;&gt;&#xA;      &lt;ol&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://localhost:1313/chemu-ya-nauchilsya-u-bitcoina/filosofskie-uroki-bitcoina&#34;&gt;Часть1. Философские уроки Биткоина&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&#xA;    &lt;/div&gt;&#xA;  &lt;/label&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;blockquote class=&#34;book-hint btc&#34;&gt;&#xA;  Перевод &lt;a href=&#34;https://dergigi.com/2018/12/21/philosophical-teachings-of-bitcoin/&#34;&gt;статьи&lt;/a&gt; Dergigi подготовлен пабликом &lt;a href=&#34;https://t.me/gametheoryhub&#34;&gt;∞/21M&lt;/a&gt;. Редактура &lt;a href=&#34;https://snort.social/p/npub10awzknjg5r5lajnr53438ndcyjylgqsrnrtq5grs495v42qc6awsj45ys7&#34;&gt;Тони⚡️&lt;/a&gt;. &lt;a href=&#34;http://localhost:1313/contribute/&#34;&gt;Поддержать проект&lt;/a&gt;.&#xA;&lt;/blockquote&gt;&#xA;&#xA;&lt;p&gt;На некоторые вопросы есть простые ответы. &amp;ldquo;Чему вы научились у Биткоина?&amp;rdquo; к ним не относится. Попытавшись ответить на этот вопрос в коротком твите и потерпев неудачу, я понял, что узнал слишком многое, чтобы ответить кратко, если это вообще возможно. Я также осознал, что набор ответов на этот вопрос у каждого будет разный - это отражение очень личного пути по чудесному миру криптографии. Отсюда и заголовок этой серии  &amp;ldquo;Чему я научился у Биткоина&amp;rdquo;. Таким образом я хочу подчеркнуть присущую мне личную предвзятость при ответе на подобный вопрос.&#xA;Я попытался сгруппировать уроки Биткоина по темам, в результате чего получилось три части:&lt;/p&gt;</description>
+      <guid>http://localhost:1313/what-i-learned-from-bitcoin-1/</guid>
+      <description>Contents ... Part I. Philosophical Teachings of Bitcoin Part II. Economic Teachings of Bitcoin Part III. Technological Teachings of Bitcoin This article by Gigi was published on dergigi.com website.&#xA;Contribute.&#xA;Some questions have easy answers. “What have you learned from Bitcoin?” isn’t one of them. After trying to answer this question in a short tweet, and failing miserably, I realized that the amount of things I’ve learned is far too numerous to answer quickly, if at all.</description>
+    </item>
+    <item>
+      <title>Lightning Wallets</title>
+      <link>http://localhost:1313/lightning-wallets/</link>
+      <pubDate>Tue, 16 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/lightning-wallets/</guid>
+      <description>With repeated bumps of the popularity of monkey JPEGs on the Bitcoin blockchain and in anticipation of the upcoming bull market, onchain fees are a thing to consider in the upcoming future.&#xA;Fees in the network can reach hundreds of sats per virtual byte, and this is far from the limit. Source.&#xA;Lightning Network provides a solution to the painful problem of high fees, but you need to act thoughtfully, without rushing.</description>
+    </item>
+    <item>
+      <title>LNbits: A Swiss knife among Lightning apps</title>
+      <link>http://localhost:1313/lnbits/</link>
+      <pubDate>Mon, 02 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/lnbits/</guid>
+      <description>LNbits is the Swiss knife among lightning apps – invoices, tips, paywalls, onchain wallet monitoring, event ticketing and more.&#xA;The guide written by Tony⚡️.&#xA;Contribute.&#xA;LNbits # Today, we&amp;rsquo;re going to take a look at a wallet app accessible right from the browser that boasts so many features that it&amp;rsquo;s the envy of any software. This is LNbits.&#xA;It is worth starting with the fact that this service is still in the phase of active development, and some functionality is yet to be implemented.</description>
+    </item>
+    <item>
+      <title>Using Bitcoin</title>
+      <link>http://localhost:1313/start/guide/</link>
+      <pubDate>Tue, 06 Dec 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/start/guide/</guid>
+      <description> The guide is not yet available in English. Want to cover this topic or support the pproject? Visit the Contribute page. </description>
+    </item>
+    <item>
+      <title>How Lightning Address Works</title>
+      <link>http://localhost:1313/how-lightning-address-works/</link>
+      <pubDate>Sat, 03 Sep 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/how-lightning-address-works/</guid>
+      <description>More experienced users know, that nowadays you can send satoshis directly to Lightning Address in user@domain format. But how exactly does this work?&#xA;In this short article I would like to explain it to those who do not know it. At the same time, I will describe the basics of Lightning invoices and LNURL-pay protocol.&#xA;This article by @heisenberg was published on stacker.news website.&#xA;Contribute.&#xA;Lightning invoices basics # Lightning Invoices are nowadays the standard for sending and receiving funds on the Lightning Network.</description>
     </item>
     <item>
       <title>Глава 0</title>
       <link>http://localhost:1313/21-sposob/glava-0/</link>
       <pubDate>Sat, 15 Jan 2022 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/21-sposob/glava-0/</guid>
-      <description>&lt;div class=&#34;book-expand&#34;&gt;&#xA;  &lt;label&gt;&#xA;    &lt;div class=&#34;book-expand-head flex justify-between&#34;&gt;&#xA;      &lt;span&gt;Оглавление&lt;/span&gt;&#xA;      &lt;span&gt;...&lt;/span&gt;&#xA;    &lt;/div&gt;&#xA;    &lt;input type=&#34;checkbox&#34; class=&#34;hidden&#34; /&gt;&#xA;    &lt;div class=&#34;book-expand-content markdown-inner&#34;&gt;&#xA;      &lt;p&gt;&lt;a href=&#34;http://localhost:1313/21-sposob&#34;&gt;Главная страница&lt;/a&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/21-sposob/vvedenie&#34;&gt;Введение&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/21-sposob/glava-0&#34;&gt;Глава 0&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/21-sposob/glava-01&#34;&gt;Глава 0.1&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;21 способ взглянуть на Биткоин:&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/21-sposob/glava-1-bitcoin-eto-ideya&#34;&gt;Глава 1: Биткоин – это идея&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/21-sposob/glava-2-bitcoin-eto-vremya&#34;&gt;Глава 2: Биткоин – это время&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/21-sposob/glava-3-bitcoin-volshebnye-internet-dengi&#34;&gt;Глава 3: Биткоин – волшебные интернет–деньги&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Глава 4: Биткоин – разумные деньги&lt;/p&gt;&#xA;&lt;p&gt;Глава 5: Биткоин – лучшие деньги, которые у нас когда–либо были&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/21-sposob/glava-6-bitcoin-eto-cifrovaya-redkost&#34;&gt;Глава 6: Биткоин – это цифровая редкость&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Глава 7: Биткоин – это абсолютная редкость&lt;/p&gt;&#xA;&lt;p&gt;Глава 8: Биткоин – это машина истины&lt;/p&gt;</description>
+      <description>Оглавление ... Главная страница&#xA;Введение&#xA;Глава 0&#xA;Глава 0.1&#xA;21 способ взглянуть на Биткоин:&#xA;Глава 1: Биткоин – это идея&#xA;Глава 2: Биткоин – это время&#xA;Глава 3: Биткоин – волшебные интернет–деньги&#xA;Глава 4: Биткоин – разумные деньги&#xA;Глава 5: Биткоин – лучшие деньги, которые у нас когда–либо были&#xA;Глава 6: Биткоин – это цифровая редкость&#xA;Глава 7: Биткоин – это абсолютная редкость&#xA;Глава 8: Биткоин – это машина истины</description>
+    </item>
+    <item>
+      <title>Why You Should Run Your Own Bitcoin Node</title>
+      <link>http://localhost:1313/practice/bitcoin-node/</link>
+      <pubDate>Tue, 03 Aug 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/practice/bitcoin-node/</guid>
+      <description>Here’s why it&amp;rsquo;s necessary to participate in the Bitcoin Core network of nodes, for six simple reasons.&#xA;This article by Arman The Parman was published in Bitcoin Magazine.&#xA;Contribute.&#xA;Let me explain quickly that a Bitcoin node is any computer which runs a piece of software (Bitcoin Core) that has some important jobs:&#xA;Your Bitcoin node needs to keep a copy of the entire Bitcoin blockchain. It has to connect with other nodes, forming a network of communication, which propagates transactions (transactions are kept in a “mempool”, i.</description>
     </item>
     <item>
       <title>Пролог</title>
       <link>http://localhost:1313/bychij-kejs-dlya-bitcoin/prolog/</link>
       <pubDate>Sat, 08 May 2021 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/bychij-kejs-dlya-bitcoin/prolog/</guid>
-      <description>&lt;div class=&#34;book-expand&#34;&gt;&#xA;  &lt;label&gt;&#xA;    &lt;div class=&#34;book-expand-head flex justify-between&#34;&gt;&#xA;      &lt;span&gt;Оглавление&lt;/span&gt;&#xA;      &lt;span&gt;...&lt;/span&gt;&#xA;    &lt;/div&gt;&#xA;    &lt;input type=&#34;checkbox&#34; class=&#34;hidden&#34; /&gt;&#xA;    &lt;div class=&#34;book-expand-content markdown-inner&#34;&gt;&#xA;      &lt;p&gt;&lt;a href=&#34;http://localhost:1313/bychij-kejs-dlya-bitcoin&#34;&gt;Главная страница&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/bychij-kejs-dlya-bitcoin/predislovie&#34;&gt;Предисловие от Майкла Сэйлора&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/bychij-kejs-dlya-bitcoin/prolog&#34;&gt;Пролог&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/bychij-kejs-dlya-bitcoin/glava-1&#34;&gt;Глава 1: Генезис и происхождение денег&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/bychij-kejs-dlya-bitcoin/glava-2&#34;&gt;Глава 2: Атрибуты хорошего средства сбережения&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/bychij-kejs-dlya-bitcoin/glava-3&#34;&gt;Глава 3: Эволюция денег&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/bychij-kejs-dlya-bitcoin/glava-4&#34;&gt;Глава 4: Форма монетизации&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/bychij-kejs-dlya-bitcoin/glava-5&#34;&gt;Глава 5: Новая денежная база&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/bychij-kejs-dlya-bitcoin/epilog&#34;&gt;Эпилог&lt;/a&gt;&lt;/p&gt;&#xA;&#xA;    &lt;/div&gt;&#xA;  &lt;/label&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;h2 id=&#34;прометей&#34;&gt;&#xA;  Прометей&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%d0%bf%d1%80%d0%be%d0%bc%d0%b5%d1%82%d0%b5%d0%b9&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;Таинственное происхождение Биткоинa кажется настолько невероятным, что сложно поверить в его правдивость. Возможно мы никогда не узнаем всех подробностей, но мы знаем что события разворачивались примерно следующим образом: 3 января 2009 года некто в неизвестном месте нажал клавишу на компьютере и запустил одну из самых важных программ в истории человечества. Компьютер начал поиск определенной закономерности, известной как хеш, цифровая иголка в стоге сена, который должен был зафиксировать первый блок в реестре финансовых транзакций, известный сегодня как блокчейн. В течение нескольких минут или часов – никто точно не знает – был найден первый хеш, который увенчал генезис-блок и породил первую в мире по-настоящему децентрализованную цифровую валюту. Примечательно, что личность таинственного создателя Биткоина остается неизвестной по сей день. Мы знаем только его псевдоним: Сатоши Накамото.&lt;/p&gt;</description>
+      <description>Оглавление ... Главная страница&#xA;Предисловие от Майкла Сэйлора&#xA;Пролог&#xA;Глава 1: Генезис и происхождение денег&#xA;Глава 2: Атрибуты хорошего средства сбережения&#xA;Глава 3: Эволюция денег&#xA;Глава 4: Форма монетизации&#xA;Глава 5: Новая денежная база&#xA;Эпилог&#xA;Прометей # Таинственное происхождение Биткоинa кажется настолько невероятным, что сложно поверить в его правдивость. Возможно мы никогда не узнаем всех подробностей, но мы знаем что события разворачивались примерно следующим образом: 3 января 2009 года некто в неизвестном месте нажал клавишу на компьютере и запустил одну из самых важных программ в истории человечества.</description>
+    </item>
+    <item>
+      <title>Installing Blue Wallet</title>
+      <link>http://localhost:1313/blue/</link>
+      <pubDate>Wed, 17 Mar 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blue/</guid>
+      <description>This guide by @econoalchemist was published in Bitcoin Magazine.&#xA;Contribute.&#xA;If you have an iPhone and have bitcoin, then I highly recommend using Blue Wallet to secure your BTC. This article will walk you through the basic steps for installing, securing and using Blue Wallet on iPhone. But, before getting started, it is a good idea to have a pen and paper ready. Remember to start with small amounts of bitcoin until these concepts make more sense and you are comfortable putting your funds in a mobile wallet.</description>
+    </item>
+    <item>
+      <title>Part II</title>
+      <link>http://localhost:1313/ba/2/</link>
+      <pubDate>Wed, 09 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ba/2/</guid>
+      <description>Contents ... Part I&#xA;Part II&#xA;Part III&#xA;This essay by Dhruv Bansal was published in Unchained blog.&#xA;Contribute.&#xA;This is Part II in a series of speculations about the hyperbitcoinized future. In Part I, we defined the First Law of Bitcoin Astronomy and described how it incentivizes searching for energy to power our growing civilization.&#xA;In this part, we continue to follow the energy and speculate about how money and society coevolve as humanity expands through space.</description>
+    </item>
+    <item>
+      <title>Buy noKYC Bitcoin with HodlHodl</title>
+      <link>http://localhost:1313/hodl-hodl/</link>
+      <pubDate>Tue, 04 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/hodl-hodl/</guid>
+      <description>This guide by Bitcoin Q+A was published on bitcoiner.guide website.&#xA;Contribute.&#xA;What is Hodl Hodl? # Like Bisq, HodlHodl is a decentralised bitcoin exchange. However, Hodl Hodl is accessed via a web browser rather than a dedicated app. At the application layer, it requires no KYC information although certain sellers do require this. I would advise you to go with a seller that doesn’t ask for your selfie, after all, that’s why we’re here!</description>
+    </item>
+    <item>
+      <title>Bitcoin Can’t Be Copied</title>
+      <link>http://localhost:1313/gradually-then-suddenly/bitcoin-cant-be-copied/</link>
+      <pubDate>Fri, 02 Aug 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/gradually-then-suddenly/bitcoin-cant-be-copied/</guid>
+      <description>Contents ... Gradually, Then Suddenly: Intro Bitcoin Can’t Be Copied Bitcoin Is Not Too Volatile Bitcoin Does Not Waste Energy Bitcoin is Not Too Slow Bitcoin Fixes This Bitcoin, Not Blockchain Bitcoin is Not Backed by Nothing Bitcoin is Not a Pyramid Scheme Bitcoin Cannot be Banned Bitcoin is Not for Criminals Bitcoin Obsoletes All Other Money Bitcoin is a Rally Cry Bitcoin is Common Sense Bitcoin is Antifragile Bitcoin is One for All Bitcoin is the Great Definancialization This article by Parker Lewis was first published in Unchained blog.</description>
+    </item>
+    <item>
+      <title>Part II. Economic Teachings of Bitcoin</title>
+      <link>http://localhost:1313/what-i-learned-from-bitcoin-2/</link>
+      <pubDate>Fri, 11 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/what-i-learned-from-bitcoin-2/</guid>
+      <description>Contents ... Part I. Philosophical Teachings of Bitcoin Part II. Economic Teachings of Bitcoin Part III. Technological Teachings of Bitcoin This article by Gigi was published on dergigi.com website.&#xA;Contribute.&#xA;Money doesn’t grow on trees. To believe that it does is foolish, and our parents make sure that we know about that by repeating this saying like a mantra. We are encouraged to use money wisely, to not spend it frivolously, and to save it in good times to help us through the bad.</description>
+    </item>
+    <item>
+      <title>Part I: How David Chaum’s eCash Spawned a Cypherpunk Dream</title>
+      <link>http://localhost:1313/gf/genesis-1/</link>
+      <pubDate>Tue, 24 Apr 2018 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/gf/genesis-1/</guid>
+      <description>Contents ... Intro: The Day Cryptography Changed Forever Part I: How David Chaum’s eCash Spawned a Cypherpunk Dream Part II: Hashcash or How Adam Back Designed Bitcoin’s Motor Block Part III: If Bitcoin Had a First Draft, Wei Dai’s B-Money Was It Part IV: With Bit Gold, Szabo Was Inches Away From Inventing Bitcoin Part V: How Hal Finney’s Quest For Digital Cash Led To RPOW (And More) Bitcoin and other cryptocurrencies can trace their roots to this earlier, privacy-focussed payment system for the internet.</description>
+    </item>
+    <item>
+      <title>RoboSats: Private P2P Exchange</title>
+      <link>http://localhost:1313/robosats/</link>
+      <pubDate>Mon, 22 May 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/robosats/</guid>
+      <description>This guide by Bitcoin Q+A was published on bitcoiner.guide website.&#xA;Contribute.&#xA;noKYC # The de-facto way to obtain Bitcoin today, especially as a newcomer, is to do so through a regulated Bitcoin exchange. You hop onto a website, provide an egregious amount of your personal information, often including your name, address, banking details, drivers license and sometimes even a scan of your entire face or a recording of your voice!</description>
+    </item>
+    <item>
+      <title>Orangepilling in 5 min</title>
+      <link>http://localhost:1313/orangepilling-in-5-min/</link>
+      <pubDate>Tue, 03 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/orangepilling-in-5-min/</guid>
+      <description>This thread was published by Hector Alvero in Twitter.&#xA;Contribute.&#xA;What do you do when you meet someone casually at a party or social event and they ask you the tiny question with the huge answer:&#xA;What is Bitcoin?&#xA;We know the best way to orange pill someone is by asking questions to plant seeds that nurture curiosity. That works great with people we know or see often, but what about strangers you’ve just met and may never see again?</description>
+    </item>
+    <item>
+      <title>SeedSigner: DIY Bitcoin Signing Device</title>
+      <link>http://localhost:1313/seedsigner/</link>
+      <pubDate>Fri, 27 May 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/seedsigner/</guid>
+      <description>This comprehensive how-to guide walks you through unboxing, setting up and signing bitcoin transactions with the air-gapped SeedSigner device.&#xA;This guide by @econoalchemist was published in Bitcoin Magazine.&#xA;Contribute.&#xA;This guide demonstrates how to self-custody bitcoin using the SeedSigner. SeedSigner is a project that brings together free and open-source code, inexpensive and general-purpose hardware, and a do-it-yourself (DIY) approach to taking personal responsibility of your bitcoin.&#xA;Source&#xA;Unboxing # This section demonstrates what is included in the full SeedSigner kit.</description>
     </item>
     <item>
       <title>Глава 0.1</title>
       <link>http://localhost:1313/21-sposob/glava-01/</link>
       <pubDate>Tue, 01 Feb 2022 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/21-sposob/glava-01/</guid>
-      <description>&lt;div class=&#34;book-expand&#34;&gt;&#xA;  &lt;label&gt;&#xA;    &lt;div class=&#34;book-expand-head flex justify-between&#34;&gt;&#xA;      &lt;span&gt;Оглавление&lt;/span&gt;&#xA;      &lt;span&gt;...&lt;/span&gt;&#xA;    &lt;/div&gt;&#xA;    &lt;input type=&#34;checkbox&#34; class=&#34;hidden&#34; /&gt;&#xA;    &lt;div class=&#34;book-expand-content markdown-inner&#34;&gt;&#xA;      &lt;p&gt;&lt;a href=&#34;http://localhost:1313/21-sposob&#34;&gt;Главная страница&lt;/a&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/21-sposob/vvedenie&#34;&gt;Введение&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/21-sposob/glava-0&#34;&gt;Глава 0&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/21-sposob/glava-01&#34;&gt;Глава 0.1&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;21 способ взглянуть на Биткоин:&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/21-sposob/glava-1-bitcoin-eto-ideya&#34;&gt;Глава 1: Биткоин – это идея&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/21-sposob/glava-2-bitcoin-eto-vremya&#34;&gt;Глава 2: Биткоин – это время&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/21-sposob/glava-3-bitcoin-volshebnye-internet-dengi&#34;&gt;Глава 3: Биткоин – волшебные интернет–деньги&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Глава 4: Биткоин – разумные деньги&lt;/p&gt;&#xA;&lt;p&gt;Глава 5: Биткоин – лучшие деньги, которые у нас когда–либо были&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/21-sposob/glava-6-bitcoin-eto-cifrovaya-redkost&#34;&gt;Глава 6: Биткоин – это цифровая редкость&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Глава 7: Биткоин – это абсолютная редкость&lt;/p&gt;&#xA;&lt;p&gt;Глава 8: Биткоин – это машина истины&lt;/p&gt;</description>
+      <description>Оглавление ... Главная страница&#xA;Введение&#xA;Глава 0&#xA;Глава 0.1&#xA;21 способ взглянуть на Биткоин:&#xA;Глава 1: Биткоин – это идея&#xA;Глава 2: Биткоин – это время&#xA;Глава 3: Биткоин – волшебные интернет–деньги&#xA;Глава 4: Биткоин – разумные деньги&#xA;Глава 5: Биткоин – лучшие деньги, которые у нас когда–либо были&#xA;Глава 6: Биткоин – это цифровая редкость&#xA;Глава 7: Биткоин – это абсолютная редкость&#xA;Глава 8: Биткоин – это машина истины</description>
     </item>
     <item>
       <title>Глава 1: Генезис и происхождение денег</title>
       <link>http://localhost:1313/bychij-kejs-dlya-bitcoin/glava-1/</link>
       <pubDate>Sat, 08 May 2021 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/bychij-kejs-dlya-bitcoin/glava-1/</guid>
-      <description>&lt;div class=&#34;book-expand&#34;&gt;&#xA;  &lt;label&gt;&#xA;    &lt;div class=&#34;book-expand-head flex justify-between&#34;&gt;&#xA;      &lt;span&gt;Оглавление&lt;/span&gt;&#xA;      &lt;span&gt;...&lt;/span&gt;&#xA;    &lt;/div&gt;&#xA;    &lt;input type=&#34;checkbox&#34; class=&#34;hidden&#34; /&gt;&#xA;    &lt;div class=&#34;book-expand-content markdown-inner&#34;&gt;&#xA;      &lt;p&gt;&lt;a href=&#34;http://localhost:1313/bychij-kejs-dlya-bitcoin&#34;&gt;Главная страница&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/bychij-kejs-dlya-bitcoin/predislovie&#34;&gt;Предисловие от Майкла Сэйлора&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/bychij-kejs-dlya-bitcoin/prolog&#34;&gt;Пролог&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/bychij-kejs-dlya-bitcoin/glava-1&#34;&gt;Глава 1: Генезис и происхождение денег&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/bychij-kejs-dlya-bitcoin/glava-2&#34;&gt;Глава 2: Атрибуты хорошего средства сбережения&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/bychij-kejs-dlya-bitcoin/glava-3&#34;&gt;Глава 3: Эволюция денег&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/bychij-kejs-dlya-bitcoin/glava-4&#34;&gt;Глава 4: Форма монетизации&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/bychij-kejs-dlya-bitcoin/glava-5&#34;&gt;Глава 5: Новая денежная база&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/bychij-kejs-dlya-bitcoin/epilog&#34;&gt;Эпилог&lt;/a&gt;&lt;/p&gt;&#xA;&#xA;    &lt;/div&gt;&#xA;  &lt;/label&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;p&gt;Учитывая, что рыночная капитализация биткоина превысила триллион долларов, &amp;ldquo;бычий&amp;rdquo; аргумент для инвесторов может показаться настолько очевидным, что пояснения будут излишними. С другой стороны, может показаться неразумным инвестировать в цифровой актив, который не подкреплен никаким товаром или государством и чей ценовой рост побудил некоторых сравнить его с &lt;a href=&#34;http://localhost:1313/tyulpannaya-lihoradka&#34;&gt;тюльпаноманией&lt;/a&gt; или пузырем доткомов. Ни то, ни другое нельзя назвать истиной; &amp;ldquo;бычий&amp;rdquo; аргумент в пользу биткоина убедителен, но далеко не очевиден. Инвестиции в биткоин сопряжены со значительными рисками, но, как я попытаюсь доказать далее, перед нами все еще открываются огромные возможности.&lt;/p&gt;</description>
+      <description>Оглавление ... Главная страница&#xA;Предисловие от Майкла Сэйлора&#xA;Пролог&#xA;Глава 1: Генезис и происхождение денег&#xA;Глава 2: Атрибуты хорошего средства сбережения&#xA;Глава 3: Эволюция денег&#xA;Глава 4: Форма монетизации&#xA;Глава 5: Новая денежная база&#xA;Эпилог&#xA;Учитывая, что рыночная капитализация биткоина превысила триллион долларов, &amp;ldquo;бычий&amp;rdquo; аргумент для инвесторов может показаться настолько очевидным, что пояснения будут излишними. С другой стороны, может показаться неразумным инвестировать в цифровой актив, который не подкреплен никаким товаром или государством и чей ценовой рост побудил некоторых сравнить его с тюльпаноманией или пузырем доткомов.</description>
+    </item>
+    <item>
+      <title>Part III</title>
+      <link>http://localhost:1313/ba/3/</link>
+      <pubDate>Mon, 08 Mar 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ba/3/</guid>
+      <description>Contents ... Part I&#xA;Part II&#xA;Part III&#xA;This essay by Dhruv Bansal was published in Unchained blog.&#xA;Contribute.&#xA;This is Part III in a series of speculations about the hyperbitcoinized future. In Part I, we defined the First Law of Bitcoin Astronomy and described how it leads to new blockchains as humanity expands through the solar system. In Part II, we described a Second Law which leads to nested blockchains the size of solar systems and beyond, hashing vast energies on cosmic timescales.</description>
+    </item>
+    <item>
+      <title>Bitcoin Is Not Too Volatile</title>
+      <link>http://localhost:1313/gradually-then-suddenly/bitcoin-is-not-too-volatile/</link>
+      <pubDate>Fri, 09 Aug 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/gradually-then-suddenly/bitcoin-is-not-too-volatile/</guid>
+      <description>Contents ... Gradually, Then Suddenly: Intro Bitcoin Can’t Be Copied Bitcoin Is Not Too Volatile Bitcoin Does Not Waste Energy Bitcoin is Not Too Slow Bitcoin Fixes This Bitcoin, Not Blockchain Bitcoin is Not Backed by Nothing Bitcoin is Not a Pyramid Scheme Bitcoin Cannot be Banned Bitcoin is Not for Criminals Bitcoin Obsoletes All Other Money Bitcoin is a Rally Cry Bitcoin is Common Sense Bitcoin is Antifragile Bitcoin is One for All Bitcoin is the Great Definancialization This article by Parker Lewis was first published in Unchained blog.</description>
+    </item>
+    <item>
+      <title>Part III. Technological Teachings of Bitcoin</title>
+      <link>http://localhost:1313/what-i-learned-from-bitcoin-3/</link>
+      <pubDate>Tue, 02 Apr 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/what-i-learned-from-bitcoin-3/</guid>
+      <description>Contents ... Part I. Philosophical Teachings of Bitcoin Part II. Economic Teachings of Bitcoin Part III. Technological Teachings of Bitcoin This article by Gigi was published on dergigi.com website.&#xA;Contribute.&#xA;What is Bitcoin? The many answers to this question are as interesting as they are varied. Bitcoin is both a social and a monetary phenomenon, but it is also a technological one. The intersection of many disciplines is what makes Bitcoin endlessly fascinating.</description>
+    </item>
+    <item>
+      <title>Part II: Hashcash or How Adam Back Designed Bitcoin’s Motor Block</title>
+      <link>http://localhost:1313/gf/genesis-2/</link>
+      <pubDate>Mon, 04 Jun 2018 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/gf/genesis-2/</guid>
+      <description>Contents ... Intro: The Day Cryptography Changed Forever Part I: How David Chaum’s eCash Spawned a Cypherpunk Dream Part II: Hashcash or How Adam Back Designed Bitcoin’s Motor Block Part III: If Bitcoin Had a First Draft, Wei Dai’s B-Money Was It Part IV: With Bit Gold, Szabo Was Inches Away From Inventing Bitcoin Part V: How Hal Finney’s Quest For Digital Cash Led To RPOW (And More) A look at how the technology underlying Hashcash — proof of work — would shape research into digital money for more than a decade to come.</description>
+    </item>
+    <item>
+      <title>5 tips for teaching Bitcoin</title>
+      <link>http://localhost:1313/5-tips-for-teaching-bitcoin/</link>
+      <pubDate>Fri, 23 Sep 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/5-tips-for-teaching-bitcoin/</guid>
+      <description>This article by John Tinkelenberg was published in Casa blog.&#xA;Contribute.&#xA;It’s easy to adopt bitcoin as an individual, but sharing your knowledge with others — or orange-pilling as we say in the industry — can be hard. Bitcoin is often a tricky subject to discuss with friends and relatives in addition to being a completely different asset to own and manage.&#xA;Now that bitcoin is mainstream, most of us are exploring bitcoin for the first time.</description>
     </item>
     <item>
       <title>Глава 1. Биткоин — это идея</title>
       <link>http://localhost:1313/21-sposob/glava-1-bitcoin-eto-ideya/</link>
       <pubDate>Mon, 14 Jun 2021 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/21-sposob/glava-1-bitcoin-eto-ideya/</guid>
-      <description>&lt;div class=&#34;book-expand&#34;&gt;&#xA;  &lt;label&gt;&#xA;    &lt;div class=&#34;book-expand-head flex justify-between&#34;&gt;&#xA;      &lt;span&gt;Оглавление&lt;/span&gt;&#xA;      &lt;span&gt;...&lt;/span&gt;&#xA;    &lt;/div&gt;&#xA;    &lt;input type=&#34;checkbox&#34; class=&#34;hidden&#34; /&gt;&#xA;    &lt;div class=&#34;book-expand-content markdown-inner&#34;&gt;&#xA;      &lt;p&gt;&lt;a href=&#34;http://localhost:1313/21-sposob&#34;&gt;Главная страница&lt;/a&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/21-sposob/vvedenie&#34;&gt;Введение&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/21-sposob/glava-0&#34;&gt;Глава 0&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/21-sposob/glava-01&#34;&gt;Глава 0.1&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;21 способ взглянуть на Биткоин:&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/21-sposob/glava-1-bitcoin-eto-ideya&#34;&gt;Глава 1: Биткоин – это идея&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/21-sposob/glava-2-bitcoin-eto-vremya&#34;&gt;Глава 2: Биткоин – это время&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/21-sposob/glava-3-bitcoin-volshebnye-internet-dengi&#34;&gt;Глава 3: Биткоин – волшебные интернет–деньги&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Глава 4: Биткоин – разумные деньги&lt;/p&gt;&#xA;&lt;p&gt;Глава 5: Биткоин – лучшие деньги, которые у нас когда–либо были&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/21-sposob/glava-6-bitcoin-eto-cifrovaya-redkost&#34;&gt;Глава 6: Биткоин – это цифровая редкость&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Глава 7: Биткоин – это абсолютная редкость&lt;/p&gt;&#xA;&lt;p&gt;Глава 8: Биткоин – это машина истины&lt;/p&gt;</description>
+      <description>Оглавление ... Главная страница&#xA;Введение&#xA;Глава 0&#xA;Глава 0.1&#xA;21 способ взглянуть на Биткоин:&#xA;Глава 1: Биткоин – это идея&#xA;Глава 2: Биткоин – это время&#xA;Глава 3: Биткоин – волшебные интернет–деньги&#xA;Глава 4: Биткоин – разумные деньги&#xA;Глава 5: Биткоин – лучшие деньги, которые у нас когда–либо были&#xA;Глава 6: Биткоин – это цифровая редкость&#xA;Глава 7: Биткоин – это абсолютная редкость&#xA;Глава 8: Биткоин – это машина истины</description>
     </item>
     <item>
       <title>Глава 2: Атрибуты хорошего средства сбережения</title>
       <link>http://localhost:1313/bychij-kejs-dlya-bitcoin/glava-2/</link>
       <pubDate>Sat, 08 May 2021 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/bychij-kejs-dlya-bitcoin/glava-2/</guid>
-      <description>&lt;div class=&#34;book-expand&#34;&gt;&#xA;  &lt;label&gt;&#xA;    &lt;div class=&#34;book-expand-head flex justify-between&#34;&gt;&#xA;      &lt;span&gt;Оглавление&lt;/span&gt;&#xA;      &lt;span&gt;...&lt;/span&gt;&#xA;    &lt;/div&gt;&#xA;    &lt;input type=&#34;checkbox&#34; class=&#34;hidden&#34; /&gt;&#xA;    &lt;div class=&#34;book-expand-content markdown-inner&#34;&gt;&#xA;      &lt;p&gt;&lt;a href=&#34;http://localhost:1313/bychij-kejs-dlya-bitcoin&#34;&gt;Главная страница&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/bychij-kejs-dlya-bitcoin/predislovie&#34;&gt;Предисловие от Майкла Сэйлора&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/bychij-kejs-dlya-bitcoin/prolog&#34;&gt;Пролог&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/bychij-kejs-dlya-bitcoin/glava-1&#34;&gt;Глава 1: Генезис и происхождение денег&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/bychij-kejs-dlya-bitcoin/glava-2&#34;&gt;Глава 2: Атрибуты хорошего средства сбережения&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/bychij-kejs-dlya-bitcoin/glava-3&#34;&gt;Глава 3: Эволюция денег&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/bychij-kejs-dlya-bitcoin/glava-4&#34;&gt;Глава 4: Форма монетизации&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/bychij-kejs-dlya-bitcoin/glava-5&#34;&gt;Глава 5: Новая денежная база&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/bychij-kejs-dlya-bitcoin/epilog&#34;&gt;Эпилог&lt;/a&gt;&lt;/p&gt;&#xA;&#xA;    &lt;/div&gt;&#xA;  &lt;/label&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;p&gt;Когда различные средства сбережения  конкурируют друг с другом, специфические атрибуты определяют победителя, спрос на которого будет со временем увеличиваться. Исторически сложилось так, что многие товары использовались в качестве средства сбережения, и время показало, что идеальное средство сбережения обладает следующими качествами:&lt;/p&gt;</description>
+      <description>Оглавление ... Главная страница&#xA;Предисловие от Майкла Сэйлора&#xA;Пролог&#xA;Глава 1: Генезис и происхождение денег&#xA;Глава 2: Атрибуты хорошего средства сбережения&#xA;Глава 3: Эволюция денег&#xA;Глава 4: Форма монетизации&#xA;Глава 5: Новая денежная база&#xA;Эпилог&#xA;Когда различные средства сбережения конкурируют друг с другом, специфические атрибуты определяют победителя, спрос на которого будет со временем увеличиваться. Исторически сложилось так, что многие товары использовались в качестве средства сбережения, и время показало, что идеальное средство сбережения обладает следующими качествами:</description>
+    </item>
+    <item>
+      <title>What is Coldcard?</title>
+      <link>http://localhost:1313/coldcard/</link>
+      <pubDate>Fri, 03 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/coldcard/</guid>
+      <description>This guide by Bitcoin Q+A was published on bitcoiner.guide website.&#xA;Contribute.&#xA;What is Coldcard? # Coldcard is a hardware wallet designed by the Coinkite team. A hardware wallets is a device with one main purpose, to keep your bitcoin private keys safe and secure. Anyone with access to your private keys has access to all of the bitcoin in that wallet. Coldcard does not come with its own app or any additional software.</description>
+    </item>
+    <item>
+      <title>Bitcoin Does Not Waste Energy</title>
+      <link>http://localhost:1313/gradually-then-suddenly/bitcoin-does-not-waste-energy/</link>
+      <pubDate>Fri, 16 Aug 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/gradually-then-suddenly/bitcoin-does-not-waste-energy/</guid>
+      <description>Contents ... Gradually, Then Suddenly: Intro Bitcoin Can’t Be Copied Bitcoin Is Not Too Volatile Bitcoin Does Not Waste Energy Bitcoin is Not Too Slow Bitcoin Fixes This Bitcoin, Not Blockchain Bitcoin is Not Backed by Nothing Bitcoin is Not a Pyramid Scheme Bitcoin Cannot be Banned Bitcoin is Not for Criminals Bitcoin Obsoletes All Other Money Bitcoin is a Rally Cry Bitcoin is Common Sense Bitcoin is Antifragile Bitcoin is One for All Bitcoin is the Great Definancialization This article by Parker Lewis was first published in Unchained blog.</description>
+    </item>
+    <item>
+      <title>Part III: If Bitcoin Had a First Draft, Wei Dai’s B-Money Was It</title>
+      <link>http://localhost:1313/gf/genesis-3/</link>
+      <pubDate>Thu, 14 Jun 2018 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/gf/genesis-3/</guid>
+      <description>Contents ... Intro: The Day Cryptography Changed Forever Part I: How David Chaum’s eCash Spawned a Cypherpunk Dream Part II: Hashcash or How Adam Back Designed Bitcoin’s Motor Block Part III: If Bitcoin Had a First Draft, Wei Dai’s B-Money Was It Part IV: With Bit Gold, Szabo Was Inches Away From Inventing Bitcoin Part V: How Hal Finney’s Quest For Digital Cash Led To RPOW (And More) This article by Aaron van Wirdum was published in Bitcoin Magazine.</description>
     </item>
     <item>
       <title>Бычий кейс для Биткоина</title>
       <link>http://localhost:1313/bychij-kejs-dlya-bitcoin/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/bychij-kejs-dlya-bitcoin/</guid>
-      <description>&lt;p&gt;Эта книга будет очень полезна новичкам для понимания значимости Биткоина и основных механизмов его работы. Поддержать перевод можно, посетив страничку фандрейза: &lt;a href=&#34;https://tallycoin.app/@21ideas/----kpjz4HBk/&#34;&gt;https://tallycoin.app/@21ideas/&amp;mdash;-kpjz4HBk/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&#xA;&lt;div class=&#34;book-expand&#34;&gt;&#xA;  &lt;label&gt;&#xA;    &lt;div class=&#34;book-expand-head flex justify-between&#34;&gt;&#xA;      &lt;span&gt;Оглавление&lt;/span&gt;&#xA;      &lt;span&gt;...&lt;/span&gt;&#xA;    &lt;/div&gt;&#xA;    &lt;input type=&#34;checkbox&#34; class=&#34;hidden&#34; /&gt;&#xA;    &lt;div class=&#34;book-expand-content markdown-inner&#34;&gt;&#xA;      &lt;p&gt;&lt;a href=&#34;http://localhost:1313/bychij-kejs-dlya-bitcoin&#34;&gt;Главная страница&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/bychij-kejs-dlya-bitcoin/predislovie&#34;&gt;Предисловие от Майкла Сэйлора&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/bychij-kejs-dlya-bitcoin/prolog&#34;&gt;Пролог&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/bychij-kejs-dlya-bitcoin/glava-1&#34;&gt;Глава 1: Генезис и происхождение денег&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/bychij-kejs-dlya-bitcoin/glava-2&#34;&gt;Глава 2: Атрибуты хорошего средства сбережения&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/bychij-kejs-dlya-bitcoin/glava-3&#34;&gt;Глава 3: Эволюция денег&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/bychij-kejs-dlya-bitcoin/glava-4&#34;&gt;Глава 4: Форма монетизации&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/bychij-kejs-dlya-bitcoin/glava-5&#34;&gt;Глава 5: Новая денежная база&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/bychij-kejs-dlya-bitcoin/epilog&#34;&gt;Эпилог&lt;/a&gt;&lt;/p&gt;&#xA;&#xA;    &lt;/div&gt;&#xA;  &lt;/label&gt;&#xA;&lt;/div&gt;</description>
+      <description>Эта книга будет очень полезна новичкам для понимания значимости Биткоина и основных механизмов его работы. Поддержать перевод можно, посетив страничку фандрейза: https://tallycoin.app/@21ideas/&amp;mdash;-kpjz4HBk/&#xA;Оглавление ... Главная страница&#xA;Предисловие от Майкла Сэйлора&#xA;Пролог&#xA;Глава 1: Генезис и происхождение денег&#xA;Глава 2: Атрибуты хорошего средства сбережения&#xA;Глава 3: Эволюция денег&#xA;Глава 4: Форма монетизации&#xA;Глава 5: Новая денежная база&#xA;Эпилог</description>
     </item>
     <item>
       <title>Глава 3: Эволюция денег</title>
       <link>http://localhost:1313/bychij-kejs-dlya-bitcoin/glava-3/</link>
       <pubDate>Sat, 08 May 2021 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/bychij-kejs-dlya-bitcoin/glava-3/</guid>
-      <description>&lt;div class=&#34;book-expand&#34;&gt;&#xA;  &lt;label&gt;&#xA;    &lt;div class=&#34;book-expand-head flex justify-between&#34;&gt;&#xA;      &lt;span&gt;Оглавление&lt;/span&gt;&#xA;      &lt;span&gt;...&lt;/span&gt;&#xA;    &lt;/div&gt;&#xA;    &lt;input type=&#34;checkbox&#34; class=&#34;hidden&#34; /&gt;&#xA;    &lt;div class=&#34;book-expand-content markdown-inner&#34;&gt;&#xA;      &lt;p&gt;&lt;a href=&#34;http://localhost:1313/bychij-kejs-dlya-bitcoin&#34;&gt;Главная страница&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/bychij-kejs-dlya-bitcoin/predislovie&#34;&gt;Предисловие от Майкла Сэйлора&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/bychij-kejs-dlya-bitcoin/prolog&#34;&gt;Пролог&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/bychij-kejs-dlya-bitcoin/glava-1&#34;&gt;Глава 1: Генезис и происхождение денег&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/bychij-kejs-dlya-bitcoin/glava-2&#34;&gt;Глава 2: Атрибуты хорошего средства сбережения&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/bychij-kejs-dlya-bitcoin/glava-3&#34;&gt;Глава 3: Эволюция денег&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/bychij-kejs-dlya-bitcoin/glava-4&#34;&gt;Глава 4: Форма монетизации&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/bychij-kejs-dlya-bitcoin/glava-5&#34;&gt;Глава 5: Новая денежная база&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/bychij-kejs-dlya-bitcoin/epilog&#34;&gt;Эпилог&lt;/a&gt;&lt;/p&gt;&#xA;&#xA;    &lt;/div&gt;&#xA;  &lt;/label&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;p&gt;Современная денежная экономика одержима ролью денег как средства обмена. В двадцатом веке государства монополизировали выпуск денег и постоянно препятствовали их использованию в качестве средства сбережения, создавая ложное представление о том, что деньги в первую очередь определяются как средство обмена. Многие считают биткоин не подходящим на роль денег из-за его высокой волатильности. Однако они бегут впереди паровоза: деньги всегда развивались поэтапно, при этом роль денег как средства сбережения предшествовала их роли как  средства обмена. Один из основателей теории предельной полезности, Уильям Стэнли Джевонс объяснил, что:&lt;/p&gt;</description>
+      <description>Оглавление ... Главная страница&#xA;Предисловие от Майкла Сэйлора&#xA;Пролог&#xA;Глава 1: Генезис и происхождение денег&#xA;Глава 2: Атрибуты хорошего средства сбережения&#xA;Глава 3: Эволюция денег&#xA;Глава 4: Форма монетизации&#xA;Глава 5: Новая денежная база&#xA;Эпилог&#xA;Современная денежная экономика одержима ролью денег как средства обмена. В двадцатом веке государства монополизировали выпуск денег и постоянно препятствовали их использованию в качестве средства сбережения, создавая ложное представление о том, что деньги в первую очередь определяются как средство обмена.</description>
     </item>
     <item>
       <title>Глава 2. Биткоин — это время</title>
       <link>http://localhost:1313/21-sposob/glava-2-bitcoin-eto-vremya/</link>
       <pubDate>Thu, 14 Jan 2021 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/21-sposob/glava-2-bitcoin-eto-vremya/</guid>
-      <description>&lt;div class=&#34;book-expand&#34;&gt;&#xA;  &lt;label&gt;&#xA;    &lt;div class=&#34;book-expand-head flex justify-between&#34;&gt;&#xA;      &lt;span&gt;Оглавление&lt;/span&gt;&#xA;      &lt;span&gt;...&lt;/span&gt;&#xA;    &lt;/div&gt;&#xA;    &lt;input type=&#34;checkbox&#34; class=&#34;hidden&#34; /&gt;&#xA;    &lt;div class=&#34;book-expand-content markdown-inner&#34;&gt;&#xA;      &lt;p&gt;&lt;a href=&#34;http://localhost:1313/21-sposob&#34;&gt;Главная страница&lt;/a&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/21-sposob/vvedenie&#34;&gt;Введение&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/21-sposob/glava-0&#34;&gt;Глава 0&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/21-sposob/glava-01&#34;&gt;Глава 0.1&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;21 способ взглянуть на Биткоин:&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/21-sposob/glava-1-bitcoin-eto-ideya&#34;&gt;Глава 1: Биткоин – это идея&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/21-sposob/glava-2-bitcoin-eto-vremya&#34;&gt;Глава 2: Биткоин – это время&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/21-sposob/glava-3-bitcoin-volshebnye-internet-dengi&#34;&gt;Глава 3: Биткоин – волшебные интернет–деньги&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Глава 4: Биткоин – разумные деньги&lt;/p&gt;&#xA;&lt;p&gt;Глава 5: Биткоин – лучшие деньги, которые у нас когда–либо были&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/21-sposob/glava-6-bitcoin-eto-cifrovaya-redkost&#34;&gt;Глава 6: Биткоин – это цифровая редкость&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Глава 7: Биткоин – это абсолютная редкость&lt;/p&gt;&#xA;&lt;p&gt;Глава 8: Биткоин – это машина истины&lt;/p&gt;</description>
+      <description>Оглавление ... Главная страница&#xA;Введение&#xA;Глава 0&#xA;Глава 0.1&#xA;21 способ взглянуть на Биткоин:&#xA;Глава 1: Биткоин – это идея&#xA;Глава 2: Биткоин – это время&#xA;Глава 3: Биткоин – волшебные интернет–деньги&#xA;Глава 4: Биткоин – разумные деньги&#xA;Глава 5: Биткоин – лучшие деньги, которые у нас когда–либо были&#xA;Глава 6: Биткоин – это цифровая редкость&#xA;Глава 7: Биткоин – это абсолютная редкость&#xA;Глава 8: Биткоин – это машина истины</description>
+    </item>
+    <item>
+      <title>Bitcoin is Not Too Slow</title>
+      <link>http://localhost:1313/gradually-then-suddenly/bitcoin-is-not-too-slow/</link>
+      <pubDate>Fri, 23 Aug 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/gradually-then-suddenly/bitcoin-is-not-too-slow/</guid>
+      <description>Contents ... Gradually, Then Suddenly: Intro Bitcoin Can’t Be Copied Bitcoin Is Not Too Volatile Bitcoin Does Not Waste Energy Bitcoin is Not Too Slow Bitcoin Fixes This Bitcoin, Not Blockchain Bitcoin is Not Backed by Nothing Bitcoin is Not a Pyramid Scheme Bitcoin Cannot be Banned Bitcoin is Not for Criminals Bitcoin Obsoletes All Other Money Bitcoin is a Rally Cry Bitcoin is Common Sense Bitcoin is Antifragile Bitcoin is One for All Bitcoin is the Great Definancialization This article by Parker Lewis was first published in Unchained blog.</description>
+    </item>
+    <item>
+      <title>Part IV: With Bit Gold, Szabo Was Inches Away From Inventing Bitcoin</title>
+      <link>http://localhost:1313/gf/genesis-4/</link>
+      <pubDate>Thu, 12 Jul 2018 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/gf/genesis-4/</guid>
+      <description>Contents ... Intro: The Day Cryptography Changed Forever Part I: How David Chaum’s eCash Spawned a Cypherpunk Dream Part II: Hashcash or How Adam Back Designed Bitcoin’s Motor Block Part III: If Bitcoin Had a First Draft, Wei Dai’s B-Money Was It Part IV: With Bit Gold, Szabo Was Inches Away From Inventing Bitcoin Part V: How Hal Finney’s Quest For Digital Cash Led To RPOW (And More) This article by Aaron van Wirdum was published in Bitcoin Magazine.</description>
     </item>
     <item>
       <title>Глава 3. Биткоин — волшебные интернет-деньги</title>
       <link>http://localhost:1313/21-sposob/glava-3-bitcoin-volshebnye-internet-dengi/</link>
       <pubDate>Tue, 02 Nov 2021 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/21-sposob/glava-3-bitcoin-volshebnye-internet-dengi/</guid>
-      <description>&lt;div class=&#34;book-expand&#34;&gt;&#xA;  &lt;label&gt;&#xA;    &lt;div class=&#34;book-expand-head flex justify-between&#34;&gt;&#xA;      &lt;span&gt;Оглавление&lt;/span&gt;&#xA;      &lt;span&gt;...&lt;/span&gt;&#xA;    &lt;/div&gt;&#xA;    &lt;input type=&#34;checkbox&#34; class=&#34;hidden&#34; /&gt;&#xA;    &lt;div class=&#34;book-expand-content markdown-inner&#34;&gt;&#xA;      &lt;p&gt;&lt;a href=&#34;http://localhost:1313/21-sposob&#34;&gt;Главная страница&lt;/a&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/21-sposob/vvedenie&#34;&gt;Введение&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/21-sposob/glava-0&#34;&gt;Глава 0&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/21-sposob/glava-01&#34;&gt;Глава 0.1&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;21 способ взглянуть на Биткоин:&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/21-sposob/glava-1-bitcoin-eto-ideya&#34;&gt;Глава 1: Биткоин – это идея&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/21-sposob/glava-2-bitcoin-eto-vremya&#34;&gt;Глава 2: Биткоин – это время&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/21-sposob/glava-3-bitcoin-volshebnye-internet-dengi&#34;&gt;Глава 3: Биткоин – волшебные интернет–деньги&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Глава 4: Биткоин – разумные деньги&lt;/p&gt;&#xA;&lt;p&gt;Глава 5: Биткоин – лучшие деньги, которые у нас когда–либо были&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/21-sposob/glava-6-bitcoin-eto-cifrovaya-redkost&#34;&gt;Глава 6: Биткоин – это цифровая редкость&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Глава 7: Биткоин – это абсолютная редкость&lt;/p&gt;&#xA;&lt;p&gt;Глава 8: Биткоин – это машина истины&lt;/p&gt;</description>
+      <description>Оглавление ... Главная страница&#xA;Введение&#xA;Глава 0&#xA;Глава 0.1&#xA;21 способ взглянуть на Биткоин:&#xA;Глава 1: Биткоин – это идея&#xA;Глава 2: Биткоин – это время&#xA;Глава 3: Биткоин – волшебные интернет–деньги&#xA;Глава 4: Биткоин – разумные деньги&#xA;Глава 5: Биткоин – лучшие деньги, которые у нас когда–либо были&#xA;Глава 6: Биткоин – это цифровая редкость&#xA;Глава 7: Биткоин – это абсолютная редкость&#xA;Глава 8: Биткоин – это машина истины</description>
     </item>
     <item>
       <title>Глава 4: Форма монетизации</title>
       <link>http://localhost:1313/bychij-kejs-dlya-bitcoin/glava-4/</link>
       <pubDate>Sat, 08 May 2021 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/bychij-kejs-dlya-bitcoin/glava-4/</guid>
-      <description>&lt;div class=&#34;book-expand&#34;&gt;&#xA;  &lt;label&gt;&#xA;    &lt;div class=&#34;book-expand-head flex justify-between&#34;&gt;&#xA;      &lt;span&gt;Оглавление&lt;/span&gt;&#xA;      &lt;span&gt;...&lt;/span&gt;&#xA;    &lt;/div&gt;&#xA;    &lt;input type=&#34;checkbox&#34; class=&#34;hidden&#34; /&gt;&#xA;    &lt;div class=&#34;book-expand-content markdown-inner&#34;&gt;&#xA;      &lt;p&gt;&lt;a href=&#34;http://localhost:1313/bychij-kejs-dlya-bitcoin&#34;&gt;Главная страница&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/bychij-kejs-dlya-bitcoin/predislovie&#34;&gt;Предисловие от Майкла Сэйлора&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/bychij-kejs-dlya-bitcoin/prolog&#34;&gt;Пролог&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/bychij-kejs-dlya-bitcoin/glava-1&#34;&gt;Глава 1: Генезис и происхождение денег&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/bychij-kejs-dlya-bitcoin/glava-2&#34;&gt;Глава 2: Атрибуты хорошего средства сбережения&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/bychij-kejs-dlya-bitcoin/glava-3&#34;&gt;Глава 3: Эволюция денег&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/bychij-kejs-dlya-bitcoin/glava-4&#34;&gt;Глава 4: Форма монетизации&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/bychij-kejs-dlya-bitcoin/glava-5&#34;&gt;Глава 5: Новая денежная база&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/bychij-kejs-dlya-bitcoin/epilog&#34;&gt;Эпилог&lt;/a&gt;&lt;/p&gt;&#xA;&#xA;    &lt;/div&gt;&#xA;  &lt;/label&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;h2 id=&#34;циклы-шумихи&#34;&gt;&#xA;  Циклы шумихи&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%d1%86%d0%b8%d0%ba%d0%bb%d1%8b-%d1%88%d1%83%d0%bc%d0%b8%d1%85%d0%b8&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;Хотя не существует &lt;em&gt;априорных&lt;/em&gt; правил касаемо пути монетизации денежного товара, за относительно короткую историю монетизации биткоина обнаружился любопытный паттерн. Цена биткоина, по-видимому, следует фрактальной модели возрастающей величины, где каждая итерация фрактала соответствует классической форме &amp;ldquo;циклa шумихи&amp;rdquo; Гартнера (Gartner hype cycle), как показано на графике ниже.&lt;/p&gt;</description>
+      <description>Оглавление ... Главная страница&#xA;Предисловие от Майкла Сэйлора&#xA;Пролог&#xA;Глава 1: Генезис и происхождение денег&#xA;Глава 2: Атрибуты хорошего средства сбережения&#xA;Глава 3: Эволюция денег&#xA;Глава 4: Форма монетизации&#xA;Глава 5: Новая денежная база&#xA;Эпилог&#xA;Циклы шумихи # Хотя не существует априорных правил касаемо пути монетизации денежного товара, за относительно короткую историю монетизации биткоина обнаружился любопытный паттерн. Цена биткоина, по-видимому, следует фрактальной модели возрастающей величины, где каждая итерация фрактала соответствует классической форме &amp;ldquo;циклa шумихи&amp;rdquo; Гартнера (Gartner hype cycle), как показано на графике ниже.</description>
+    </item>
+    <item>
+      <title>Bitcoin Fixes This</title>
+      <link>http://localhost:1313/gradually-then-suddenly/bitcoin-fixes-this/</link>
+      <pubDate>Fri, 30 Aug 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/gradually-then-suddenly/bitcoin-fixes-this/</guid>
+      <description>Contents ... Gradually, Then Suddenly: Intro Bitcoin Can’t Be Copied Bitcoin Is Not Too Volatile Bitcoin Does Not Waste Energy Bitcoin is Not Too Slow Bitcoin Fixes This Bitcoin, Not Blockchain Bitcoin is Not Backed by Nothing Bitcoin is Not a Pyramid Scheme Bitcoin Cannot be Banned Bitcoin is Not for Criminals Bitcoin Obsoletes All Other Money Bitcoin is a Rally Cry Bitcoin is Common Sense Bitcoin is Antifragile Bitcoin is One for All Bitcoin is the Great Definancialization This article by Parker Lewis was first published in Unchained blog.</description>
+    </item>
+    <item>
+      <title>Part V: How Hal Finney’s Quest For Digital Cash Led To RPOW (And More)</title>
+      <link>http://localhost:1313/gf/genesis-5/</link>
+      <pubDate>Tue, 28 Aug 2018 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/gf/genesis-5/</guid>
+      <description>Contents ... Intro: The Day Cryptography Changed Forever Part I: How David Chaum’s eCash Spawned a Cypherpunk Dream Part II: Hashcash or How Adam Back Designed Bitcoin’s Motor Block Part III: If Bitcoin Had a First Draft, Wei Dai’s B-Money Was It Part IV: With Bit Gold, Szabo Was Inches Away From Inventing Bitcoin Part V: How Hal Finney’s Quest For Digital Cash Led To RPOW (And More) Pioneering cryptographer Hal Finney saw the need for an untraceable form of digital cash, and his work ultimately fostered the creation of Bitcoin.</description>
     </item>
     <item>
       <title>Глава 5: Новая денежная база</title>
       <link>http://localhost:1313/bychij-kejs-dlya-bitcoin/glava-5/</link>
       <pubDate>Sat, 08 May 2021 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/bychij-kejs-dlya-bitcoin/glava-5/</guid>
-      <description>&lt;div class=&#34;book-expand&#34;&gt;&#xA;  &lt;label&gt;&#xA;    &lt;div class=&#34;book-expand-head flex justify-between&#34;&gt;&#xA;      &lt;span&gt;Оглавление&lt;/span&gt;&#xA;      &lt;span&gt;...&lt;/span&gt;&#xA;    &lt;/div&gt;&#xA;    &lt;input type=&#34;checkbox&#34; class=&#34;hidden&#34; /&gt;&#xA;    &lt;div class=&#34;book-expand-content markdown-inner&#34;&gt;&#xA;      &lt;p&gt;&lt;a href=&#34;http://localhost:1313/bychij-kejs-dlya-bitcoin&#34;&gt;Главная страница&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/bychij-kejs-dlya-bitcoin/predislovie&#34;&gt;Предисловие от Майкла Сэйлора&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/bychij-kejs-dlya-bitcoin/prolog&#34;&gt;Пролог&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/bychij-kejs-dlya-bitcoin/glava-1&#34;&gt;Глава 1: Генезис и происхождение денег&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/bychij-kejs-dlya-bitcoin/glava-2&#34;&gt;Глава 2: Атрибуты хорошего средства сбережения&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/bychij-kejs-dlya-bitcoin/glava-3&#34;&gt;Глава 3: Эволюция денег&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/bychij-kejs-dlya-bitcoin/glava-4&#34;&gt;Глава 4: Форма монетизации&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/bychij-kejs-dlya-bitcoin/glava-5&#34;&gt;Глава 5: Новая денежная база&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/bychij-kejs-dlya-bitcoin/epilog&#34;&gt;Эпилог&lt;/a&gt;&lt;/p&gt;&#xA;&#xA;    &lt;/div&gt;&#xA;  &lt;/label&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;h2 id=&#34;распространенные-заблуждения&#34;&gt;&#xA;  Распространенные заблуждения&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%d1%80%d0%b0%d1%81%d0%bf%d1%80%d0%be%d1%81%d1%82%d1%80%d0%b0%d0%bd%d0%b5%d0%bd%d0%bd%d1%8b%d0%b5-%d0%b7%d0%b0%d0%b1%d0%bb%d1%83%d0%b6%d0%b4%d0%b5%d0%bd%d0%b8%d1%8f&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;Бóльшая часть этой книги посвящена денежной природе биткоина. Обосновав превосходство биткоина над другими денежными инструментами, мы можем сосредоточиться на наиболее распространенных заблуждениях относительно этого революционного денежного товара.&lt;/p&gt;</description>
+      <description>Оглавление ... Главная страница&#xA;Предисловие от Майкла Сэйлора&#xA;Пролог&#xA;Глава 1: Генезис и происхождение денег&#xA;Глава 2: Атрибуты хорошего средства сбережения&#xA;Глава 3: Эволюция денег&#xA;Глава 4: Форма монетизации&#xA;Глава 5: Новая денежная база&#xA;Эпилог&#xA;Распространенные заблуждения # Бóльшая часть этой книги посвящена денежной природе биткоина. Обосновав превосходство биткоина над другими денежными инструментами, мы можем сосредоточиться на наиболее распространенных заблуждениях относительно этого революционного денежного товара.&#xA;Биткоин – это пузырь? # Биткоин обладает денежной наценкой, что порождает распространенное мнение о том, что он является пузырем.</description>
     </item>
     <item>
-      <title>Кошелек Mutiny</title>
+      <title>Bitcoin, Not Blockchain</title>
+      <link>http://localhost:1313/gradually-then-suddenly/bitcoin-not-blockchain/</link>
+      <pubDate>Fri, 06 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/gradually-then-suddenly/bitcoin-not-blockchain/</guid>
+      <description>Contents ... Gradually, Then Suddenly: Intro Bitcoin Can’t Be Copied Bitcoin Is Not Too Volatile Bitcoin Does Not Waste Energy Bitcoin is Not Too Slow Bitcoin Fixes This Bitcoin, Not Blockchain Bitcoin is Not Backed by Nothing Bitcoin is Not a Pyramid Scheme Bitcoin Cannot be Banned Bitcoin is Not for Criminals Bitcoin Obsoletes All Other Money Bitcoin is a Rally Cry Bitcoin is Common Sense Bitcoin is Antifragile Bitcoin is One for All Bitcoin is the Great Definancialization This article by Parker Lewis was first published in Unchained blog.</description>
+    </item>
+    <item>
+      <title>Starting with Mutiny Wallet</title>
       <link>http://localhost:1313/mutiny/</link>
-      <pubDate>Sat, 16 Mar 2024 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 02 Mar 2023 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/mutiny/</guid>
-      <description>&lt;p&gt;Недавно я послушал эпизод &lt;a href=&#34;https://fountain.fm/episode/JLUwVlKLRjkUpbffvQEC&#34;&gt;SLP551&lt;/a&gt;, в котором  &lt;a href=&#34;https://stacker.news/stephanlivera&#34;&gt;@stephanlivera&lt;/a&gt; и &lt;a href=&#34;https://stacker.news/benthecarman&#34;&gt;@benthecarman&lt;/a&gt; рассказывали о кошельке Mutiny. Бен наглядно описал несложный процесс начала работы с Mutiny — простая отправка ссылки подключает вас непосредственно к &lt;a href=&#34;http://localhost:1313/what-is-lightning-network&#34;&gt;сети Лайтнинг&lt;/a&gt;. Мне уже давно было интересно узнать о Mutiny, так что самое время проверить его в деле. Давайте окунемся глубже и посмотрим, что же это такое.&lt;/p&gt;&#xA;&lt;blockquote class=&#34;book-hint btc&#34;&gt;&#xA;  &lt;p&gt;Перевод &lt;a href=&#34;https://stacker.news/items/467711/r/Tony&#34;&gt;руководства&lt;/a&gt; от &lt;a href=&#34;https://stacker.news/runningbitcoin&#34;&gt;@runningbitcoin&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/contribute/&#34;&gt;Поддержать проект&lt;/a&gt;.&lt;/p&gt;&#xA;&#xA;&lt;/blockquote&gt;&#xA;&#xA;&lt;h2 id=&#34;возможности-кошелька-mutiny&#34;&gt;&#xA;  Возможности кошелька Mutiny&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%d0%b2%d0%be%d0%b7%d0%bc%d0%be%d0%b6%d0%bd%d0%be%d1%81%d1%82%d0%b8-%d0%ba%d0%be%d1%88%d0%b5%d0%bb%d1%8c%d0%ba%d0%b0-mutiny&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Mutiny — это мобильный Lightning-кошелек с открытым исходным кодом&lt;/li&gt;&#xA;&lt;li&gt;Некастодиальный &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;&#xA;&lt;li&gt;Возможность запуска собственного сервера &lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt; &lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt; &lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;&#xA;&lt;li&gt;Веб-приложение, работающее в браузере&lt;/li&gt;&#xA;&lt;li&gt;Приложения в &lt;a href=&#34;https://blog.mutinywallet.com/mutiny-wallet-android-and-ios/&#34;&gt;App Store и Google Play&lt;/a&gt; &lt;sup id=&#34;fnref:5&#34;&gt;&lt;a href=&#34;#fn:5&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;5&lt;/a&gt;&lt;/sup&gt;, а также доступна установка из файла &lt;a href=&#34;https://github.com/MutinyWallet/mutiny-web/releases&#34;&gt;.apk&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Встроенный поставщик услуг Lightning (LSP) &lt;a href=&#34;https://voltage.cloud&#34;&gt;Voltage&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Интеграция Nostr&lt;/li&gt;&#xA;&lt;li&gt;Авторизация кошелька в Nostr-клиентах (Nostr Wallet Auth)&lt;/li&gt;&#xA;&lt;li&gt;Подарки (простой способ привлечения новых пользователей)&lt;/li&gt;&#xA;&lt;li&gt;Федерации&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;blockquote class=&#34;book-hint btc&#34;&gt;&#xA;  Помимо Mutiny представлено множество кошельков, которые подойдут как новичку, так и опытному пользователю. Советуем ознакомиться с нашим сравнительным гидом по Лайтнинг-кошелькам &lt;a href=&#34;http://localhost:1313/lightning-wallets&#34;&gt;здесь&lt;/a&gt;.&#xA;&lt;/blockquote&gt;&#xA;&#xA;&lt;h2 id=&#34;начало-работы-с-кошельком-mutiny&#34;&gt;&#xA;  Начало работы с кошельком Mutiny&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%d0%bd%d0%b0%d1%87%d0%b0%d0%bb%d0%be-%d1%80%d0%b0%d0%b1%d0%be%d1%82%d1%8b-%d1%81-%d0%ba%d0%be%d1%88%d0%b5%d0%bb%d1%8c%d0%ba%d0%be%d0%bc-mutiny&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;Для начала посетите сайт &lt;a href=&#34;https://www.mutinywallet.com/&#34;&gt;mutinywallet.com&lt;/a&gt;. Здесь у нас есть возможность использовать Mutiny непосредственно &lt;a href=&#34;https://app.mutinywallet.com/&#34;&gt;в браузере&lt;/a&gt; или загрузить приложение из &lt;a href=&#34;https://apps.apple.com/us/app/mutiny-wallet/id6471030760&#34;&gt;App Store&lt;/a&gt; или &lt;a href=&#34;https://play.google.com/store/apps/details?id=com.mutinywallet.mutinywallet&#34;&gt;Google Play&lt;/a&gt;.&lt;/p&gt;</description>
+      <description>Recently, I listened to an episode of SLP551 featuring a discussion between @stephanlivera and @benthecarman about Mutiny Wallet. Ben illustrated the straightforward process of getting started with Mutiny — merely sending a link connects you directly to the Lightning Network. I&amp;rsquo;ve been curious about Mutiny for a while now, so it&amp;rsquo;s about time I checked it out for myself. Let’s dive in and see what it’s all about.&#xA;This article by @runningbitcoin was published on stacker.</description>
     </item>
     <item>
       <title>Эпилог</title>
       <link>http://localhost:1313/bychij-kejs-dlya-bitcoin/epilog/</link>
       <pubDate>Sat, 08 May 2021 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/bychij-kejs-dlya-bitcoin/epilog/</guid>
-      <description>&lt;div class=&#34;book-expand&#34;&gt;&#xA;  &lt;label&gt;&#xA;    &lt;div class=&#34;book-expand-head flex justify-between&#34;&gt;&#xA;      &lt;span&gt;Оглавление&lt;/span&gt;&#xA;      &lt;span&gt;...&lt;/span&gt;&#xA;    &lt;/div&gt;&#xA;    &lt;input type=&#34;checkbox&#34; class=&#34;hidden&#34; /&gt;&#xA;    &lt;div class=&#34;book-expand-content markdown-inner&#34;&gt;&#xA;      &lt;p&gt;&lt;a href=&#34;http://localhost:1313/bychij-kejs-dlya-bitcoin&#34;&gt;Главная страница&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/bychij-kejs-dlya-bitcoin/predislovie&#34;&gt;Предисловие от Майкла Сэйлора&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/bychij-kejs-dlya-bitcoin/prolog&#34;&gt;Пролог&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/bychij-kejs-dlya-bitcoin/glava-1&#34;&gt;Глава 1: Генезис и происхождение денег&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/bychij-kejs-dlya-bitcoin/glava-2&#34;&gt;Глава 2: Атрибуты хорошего средства сбережения&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/bychij-kejs-dlya-bitcoin/glava-3&#34;&gt;Глава 3: Эволюция денег&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/bychij-kejs-dlya-bitcoin/glava-4&#34;&gt;Глава 4: Форма монетизации&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/bychij-kejs-dlya-bitcoin/glava-5&#34;&gt;Глава 5: Новая денежная база&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/bychij-kejs-dlya-bitcoin/epilog&#34;&gt;Эпилог&lt;/a&gt;&lt;/p&gt;&#xA;&#xA;    &lt;/div&gt;&#xA;  &lt;/label&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;h2 id=&#34;великий-спор&#34;&gt;&#xA;  Великий спор&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%d0%b2%d0%b5%d0%bb%d0%b8%d0%ba%d0%b8%d0%b9-%d1%81%d0%bf%d0%be%d1%80&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;Что такое Биткоин? Этот, казалось бы, простой вопрос и дебаты, возникшие в связи с попытками на него ответить, в течение нескольких лет волновали сообщество разработчиков и инвесторов. Кульминацией стал раскол в сообществе и раскол сети Биткоин 1 августа 2017 года. Спустя годы после того как Сатоши Накамото cоздал Биткоин, возникли две основные идеологические группировки, у каждой из которых было свое видение будущего. Первая группировка рассматривала Биткоин прежде всего как платежную систему, похожую на Visa или PayPal, но без централизованной точки контроля. Они подчеркивали транзакционное использование биткоина и считали, что деньги определяются в первую очередь их ролью как средствa обмена. Вторая группировка подчеркнула важность того, чтобы биткоин не подвергался цензуре, и предупредила об опасностях передачи контроля над протоколом Биткоина какой-либо конкретной группе интересов. Они видели биткоин в качестве цифровой версии золота, подчеркивая его использование в качестве несуверенного средства сбережения.&lt;/p&gt;</description>
+      <description>Оглавление ... Главная страница&#xA;Предисловие от Майкла Сэйлора&#xA;Пролог&#xA;Глава 1: Генезис и происхождение денег&#xA;Глава 2: Атрибуты хорошего средства сбережения&#xA;Глава 3: Эволюция денег&#xA;Глава 4: Форма монетизации&#xA;Глава 5: Новая денежная база&#xA;Эпилог&#xA;Великий спор # Что такое Биткоин? Этот, казалось бы, простой вопрос и дебаты, возникшие в связи с попытками на него ответить, в течение нескольких лет волновали сообщество разработчиков и инвесторов. Кульминацией стал раскол в сообществе и раскол сети Биткоин 1 августа 2017 года.</description>
+    </item>
+    <item>
+      <title>Bitcoin is Not Backed by Nothing</title>
+      <link>http://localhost:1313/gradually-then-suddenly/bitcoin-is-not-backed-by-nothing/</link>
+      <pubDate>Fri, 27 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/gradually-then-suddenly/bitcoin-is-not-backed-by-nothing/</guid>
+      <description>Contents ... Gradually, Then Suddenly: Intro Bitcoin Can’t Be Copied Bitcoin Is Not Too Volatile Bitcoin Does Not Waste Energy Bitcoin is Not Too Slow Bitcoin Fixes This Bitcoin, Not Blockchain Bitcoin is Not Backed by Nothing Bitcoin is Not a Pyramid Scheme Bitcoin Cannot be Banned Bitcoin is Not for Criminals Bitcoin Obsoletes All Other Money Bitcoin is a Rally Cry Bitcoin is Common Sense Bitcoin is Antifragile Bitcoin is One for All Bitcoin is the Great Definancialization This article by Parker Lewis was first published in Unchained blog.</description>
     </item>
     <item>
       <title>Глава 6. Биткоин – это цифровая редкость</title>
       <link>http://localhost:1313/21-sposob/glava-6-bitcoin-eto-cifrovaya-redkost/</link>
       <pubDate>Sun, 02 Oct 2022 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/21-sposob/glava-6-bitcoin-eto-cifrovaya-redkost/</guid>
-      <description>&lt;div class=&#34;book-expand&#34;&gt;&#xA;  &lt;label&gt;&#xA;    &lt;div class=&#34;book-expand-head flex justify-between&#34;&gt;&#xA;      &lt;span&gt;Оглавление&lt;/span&gt;&#xA;      &lt;span&gt;...&lt;/span&gt;&#xA;    &lt;/div&gt;&#xA;    &lt;input type=&#34;checkbox&#34; class=&#34;hidden&#34; /&gt;&#xA;    &lt;div class=&#34;book-expand-content markdown-inner&#34;&gt;&#xA;      &lt;p&gt;&lt;a href=&#34;http://localhost:1313/21-sposob&#34;&gt;Главная страница&lt;/a&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/21-sposob/vvedenie&#34;&gt;Введение&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/21-sposob/glava-0&#34;&gt;Глава 0&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/21-sposob/glava-01&#34;&gt;Глава 0.1&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;21 способ взглянуть на Биткоин:&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/21-sposob/glava-1-bitcoin-eto-ideya&#34;&gt;Глава 1: Биткоин – это идея&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/21-sposob/glava-2-bitcoin-eto-vremya&#34;&gt;Глава 2: Биткоин – это время&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/21-sposob/glava-3-bitcoin-volshebnye-internet-dengi&#34;&gt;Глава 3: Биткоин – волшебные интернет–деньги&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Глава 4: Биткоин – разумные деньги&lt;/p&gt;&#xA;&lt;p&gt;Глава 5: Биткоин – лучшие деньги, которые у нас когда–либо были&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/21-sposob/glava-6-bitcoin-eto-cifrovaya-redkost&#34;&gt;Глава 6: Биткоин – это цифровая редкость&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Глава 7: Биткоин – это абсолютная редкость&lt;/p&gt;&#xA;&lt;p&gt;Глава 8: Биткоин – это машина истины&lt;/p&gt;</description>
+      <description>Оглавление ... Главная страница&#xA;Введение&#xA;Глава 0&#xA;Глава 0.1&#xA;21 способ взглянуть на Биткоин:&#xA;Глава 1: Биткоин – это идея&#xA;Глава 2: Биткоин – это время&#xA;Глава 3: Биткоин – волшебные интернет–деньги&#xA;Глава 4: Биткоин – разумные деньги&#xA;Глава 5: Биткоин – лучшие деньги, которые у нас когда–либо были&#xA;Глава 6: Биткоин – это цифровая редкость&#xA;Глава 7: Биткоин – это абсолютная редкость&#xA;Глава 8: Биткоин – это машина истины</description>
     </item>
     <item>
-      <title>Доказательство жизни. Почему Биткоин — живой организм</title>
-      <link>http://localhost:1313/pochemu-bitcoin-zhivoj-organizm/</link>
+      <title>Bitcoin is Not a Pyramid Scheme</title>
+      <link>http://localhost:1313/gradually-then-suddenly/bitcoin-is-not-a-pyramid-scheme/</link>
+      <pubDate>Fri, 18 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/gradually-then-suddenly/bitcoin-is-not-a-pyramid-scheme/</guid>
+      <description>Contents ... Gradually, Then Suddenly: Intro Bitcoin Can’t Be Copied Bitcoin Is Not Too Volatile Bitcoin Does Not Waste Energy Bitcoin is Not Too Slow Bitcoin Fixes This Bitcoin, Not Blockchain Bitcoin is Not Backed by Nothing Bitcoin is Not a Pyramid Scheme Bitcoin Cannot be Banned Bitcoin is Not for Criminals Bitcoin Obsoletes All Other Money Bitcoin is a Rally Cry Bitcoin is Common Sense Bitcoin is Antifragile Bitcoin is One for All Bitcoin is the Great Definancialization This article by Parker Lewis was first published in Unchained blog.</description>
+    </item>
+    <item>
+      <title>Bitcoin Cannot be Banned</title>
+      <link>http://localhost:1313/gradually-then-suddenly/bitcoin-cannot-be-banned/</link>
+      <pubDate>Fri, 08 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/gradually-then-suddenly/bitcoin-cannot-be-banned/</guid>
+      <description>Contents ... Gradually, Then Suddenly: Intro Bitcoin Can’t Be Copied Bitcoin Is Not Too Volatile Bitcoin Does Not Waste Energy Bitcoin is Not Too Slow Bitcoin Fixes This Bitcoin, Not Blockchain Bitcoin is Not Backed by Nothing Bitcoin is Not a Pyramid Scheme Bitcoin Cannot be Banned Bitcoin is Not for Criminals Bitcoin Obsoletes All Other Money Bitcoin is a Rally Cry Bitcoin is Common Sense Bitcoin is Antifragile Bitcoin is One for All Bitcoin is the Great Definancialization This article by Parker Lewis was first published in Unchained blog.</description>
+    </item>
+    <item>
+      <title>Bitcoin is Not for Criminals</title>
+      <link>http://localhost:1313/gradually-then-suddenly/bitcoin-is-not-for-criminals/</link>
+      <pubDate>Fri, 29 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/gradually-then-suddenly/bitcoin-is-not-for-criminals/</guid>
+      <description>Contents ... Gradually, Then Suddenly: Intro Bitcoin Can’t Be Copied Bitcoin Is Not Too Volatile Bitcoin Does Not Waste Energy Bitcoin is Not Too Slow Bitcoin Fixes This Bitcoin, Not Blockchain Bitcoin is Not Backed by Nothing Bitcoin is Not a Pyramid Scheme Bitcoin Cannot be Banned Bitcoin is Not for Criminals Bitcoin Obsoletes All Other Money Bitcoin is a Rally Cry Bitcoin is Common Sense Bitcoin is Antifragile Bitcoin is One for All Bitcoin is the Great Definancialization This article by Parker Lewis was first published in Unchained blog.</description>
+    </item>
+    <item>
+      <title>Bitcoin Obsoletes All Other Money</title>
+      <link>http://localhost:1313/gradually-then-suddenly/bitcoin-obsoletes-all-other-money/</link>
+      <pubDate>Fri, 24 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/gradually-then-suddenly/bitcoin-obsoletes-all-other-money/</guid>
+      <description>Contents ... Gradually, Then Suddenly: Intro Bitcoin Can’t Be Copied Bitcoin Is Not Too Volatile Bitcoin Does Not Waste Energy Bitcoin is Not Too Slow Bitcoin Fixes This Bitcoin, Not Blockchain Bitcoin is Not Backed by Nothing Bitcoin is Not a Pyramid Scheme Bitcoin Cannot be Banned Bitcoin is Not for Criminals Bitcoin Obsoletes All Other Money Bitcoin is a Rally Cry Bitcoin is Common Sense Bitcoin is Antifragile Bitcoin is One for All Bitcoin is the Great Definancialization This article by Parker Lewis was first published in Unchained blog.</description>
+    </item>
+    <item>
+      <title>Bitcoin is a Rally Cry</title>
+      <link>http://localhost:1313/gradually-then-suddenly/bitcoin-is-a-rally-cry/</link>
+      <pubDate>Thu, 26 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/gradually-then-suddenly/bitcoin-is-a-rally-cry/</guid>
+      <description>Contents ... Gradually, Then Suddenly: Intro Bitcoin Can’t Be Copied Bitcoin Is Not Too Volatile Bitcoin Does Not Waste Energy Bitcoin is Not Too Slow Bitcoin Fixes This Bitcoin, Not Blockchain Bitcoin is Not Backed by Nothing Bitcoin is Not a Pyramid Scheme Bitcoin Cannot be Banned Bitcoin is Not for Criminals Bitcoin Obsoletes All Other Money Bitcoin is a Rally Cry Bitcoin is Common Sense Bitcoin is Antifragile Bitcoin is One for All Bitcoin is the Great Definancialization This article by Parker Lewis was first published in Unchained blog.</description>
+    </item>
+    <item>
+      <title>Bitcoin is Common Sense</title>
+      <link>http://localhost:1313/gradually-then-suddenly/bitcoin-is-common-sense/</link>
+      <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/gradually-then-suddenly/bitcoin-is-common-sense/</guid>
+      <description>Contents ... Gradually, Then Suddenly: Intro Bitcoin Can’t Be Copied Bitcoin Is Not Too Volatile Bitcoin Does Not Waste Energy Bitcoin is Not Too Slow Bitcoin Fixes This Bitcoin, Not Blockchain Bitcoin is Not Backed by Nothing Bitcoin is Not a Pyramid Scheme Bitcoin Cannot be Banned Bitcoin is Not for Criminals Bitcoin Obsoletes All Other Money Bitcoin is a Rally Cry Bitcoin is Common Sense Bitcoin is Antifragile Bitcoin is One for All Bitcoin is the Great Definancialization This article by Parker Lewis was first published in Unchained blog.</description>
+    </item>
+    <item>
+      <title>Bitcoin is Antifragile</title>
+      <link>http://localhost:1313/gradually-then-suddenly/bitcoin-is-antifragile/</link>
+      <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/gradually-then-suddenly/bitcoin-is-antifragile/</guid>
+      <description>Contents ... Gradually, Then Suddenly: Intro Bitcoin Can’t Be Copied Bitcoin Is Not Too Volatile Bitcoin Does Not Waste Energy Bitcoin is Not Too Slow Bitcoin Fixes This Bitcoin, Not Blockchain Bitcoin is Not Backed by Nothing Bitcoin is Not a Pyramid Scheme Bitcoin Cannot be Banned Bitcoin is Not for Criminals Bitcoin Obsoletes All Other Money Bitcoin is a Rally Cry Bitcoin is Common Sense Bitcoin is Antifragile Bitcoin is One for All Bitcoin is the Great Definancialization This article by Parker Lewis was first published in Unchained blog.</description>
+    </item>
+    <item>
+      <title>Bitcoin is One for All</title>
+      <link>http://localhost:1313/gradually-then-suddenly/bitcoin-is-one-for-all/</link>
+      <pubDate>Thu, 27 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/gradually-then-suddenly/bitcoin-is-one-for-all/</guid>
+      <description>Contents ... Gradually, Then Suddenly: Intro Bitcoin Can’t Be Copied Bitcoin Is Not Too Volatile Bitcoin Does Not Waste Energy Bitcoin is Not Too Slow Bitcoin Fixes This Bitcoin, Not Blockchain Bitcoin is Not Backed by Nothing Bitcoin is Not a Pyramid Scheme Bitcoin Cannot be Banned Bitcoin is Not for Criminals Bitcoin Obsoletes All Other Money Bitcoin is a Rally Cry Bitcoin is Common Sense Bitcoin is Antifragile Bitcoin is One for All Bitcoin is the Great Definancialization This article by Parker Lewis was first published in Unchained blog.</description>
+    </item>
+    <item>
+      <title>Bitcoin is the Great Definancialization</title>
+      <link>http://localhost:1313/gradually-then-suddenly/bitcoin-is-the-great-definancialization/</link>
+      <pubDate>Wed, 23 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/gradually-then-suddenly/bitcoin-is-the-great-definancialization/</guid>
+      <description>Contents ... Gradually, Then Suddenly: Intro Bitcoin Can’t Be Copied Bitcoin Is Not Too Volatile Bitcoin Does Not Waste Energy Bitcoin is Not Too Slow Bitcoin Fixes This Bitcoin, Not Blockchain Bitcoin is Not Backed by Nothing Bitcoin is Not a Pyramid Scheme Bitcoin Cannot be Banned Bitcoin is Not for Criminals Bitcoin Obsoletes All Other Money Bitcoin is a Rally Cry Bitcoin is Common Sense Bitcoin is Antifragile Bitcoin is One for All Bitcoin is the Great Definancialization This article by Parker Lewis was first published in Unchained blog.</description>
+    </item>
+    <item>
+      <title>Why Bitcoin, Not Shitcoin</title>
+      <link>http://localhost:1313/not-shitcoin/</link>
+      <pubDate>Fri, 11 Jun 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/not-shitcoin/</guid>
+      <description>Why bitcoin is not only the best investment of our time, and the only good “crypto,” but the only moral, economic and philosophically sound place to store your wealth.&#xA;This article by Aleksandar Svetski was published in Bitcoin Magazine.&#xA;Contribute.&#xA;Hint: Beyond Bitcoin, it’s ALL shitcoin.&#xA;I often get asked about “which crypto” is a good one to invest in. Of course, my answer is always bitcoin. Period.&#xA;In this article I’d like to lay out the rationale from three angles:</description>
+    </item>
+    <item>
+      <title>Bitcoin Is Not Harmful For The Environment</title>
+      <link>http://localhost:1313/bitcoin-is-not-harmful-for-the-environment/</link>
+      <pubDate>Mon, 12 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/bitcoin-is-not-harmful-for-the-environment/</guid>
+      <description>This article by Peter St. Onge was first published on Mises Institute website.&#xA;Contribute.&#xA;One popular critique of bitcoin is energy cost per transaction. This doesn’t begin to capture bitcoin’s massive energy savings compared to fiat currency.&#xA;Bitcoin’s cost per transaction is well known, and often critiqued; one article in Wired magazine called bitcoin “[a] big middle finger to earth’s climate.” This is because bitcoin’s security, redundancy, and architecture are more energy intensive than traditional payments relying on a single point of failure.</description>
+    </item>
+    <item>
+      <title>Who Controls Bitcoin Core?</title>
+      <link>http://localhost:1313/who-controls-bitcoin-core/</link>
+      <pubDate>Sat, 15 Dec 2018 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/who-controls-bitcoin-core/</guid>
+      <description>Understanding how the focal point of Bitcoin development operates.&#xA;This article by Jameson Lopp was published in his blog.&#xA;Contribute.&#xA;if you&amp;rsquo;d prefer to consume this essay in audio format, you can listen to it here (narrated by Guy Swann of the Bitcoin Audible Podcast.) The question of who controls the ability to merge code changes into Bitcoin Core’s GitHub repository tends to come up on a recurring basis. This has been cited as a “central point of control” of the Bitcoin protocol by various parties over the years, but I argue that the question itself is a red herring that stems from an authoritarian perspective — this model does not apply to Bitcoin.</description>
+    </item>
+    <item>
+      <title>Inalienable Property Rights</title>
+      <link>http://localhost:1313/inalienable-property-rights/</link>
+      <pubDate>Sun, 03 Apr 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/inalienable-property-rights/</guid>
+      <description>This essay by Gigi was published on dergigi.com website.&#xA;Contribute.&#xA;Video bitcoinized by RD ₿TC, based on an edit by Ampleforth.&#xA;Original source: An interview with F.A. Hayek (1984)&#xA;Law. Language. Money. The three paradigms of spontaneous and emergent order in society. Moral questions are at the root of it all:&#xA;Who should be allowed to speak? Who should be allowed to publish? Who should be allowed to have property?</description>
+    </item>
+    <item>
+      <title>Bitcoin&#39;s Eternal Struggle</title>
+      <link>http://localhost:1313/bitcoins-eternal-struggle/</link>
+      <pubDate>Thu, 19 Dec 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/bitcoins-eternal-struggle/</guid>
+      <description>How Bitcoin Thrives on the Edge between Order and Chaos&#xA;This article by Gigi was published on dergigi.com website.&#xA;Contribute.&#xA;if you&amp;rsquo;d prefer to consume this essay in audio format, you can listen to it here (narrated by Guy Swann of the Bitcoin Audible Podcast.) Bitcoin works. No matter what other opinions you hold about this strange phenomenon, it undoubtedly works, marches on, or, as I (and others) have previously argued, is alive.</description>
+    </item>
+    <item>
+      <title>The Seven Network Effects of Bitcoin</title>
+      <link>http://localhost:1313/seven-network-effects-of-bitcoin/</link>
+      <pubDate>Mon, 29 Jun 2015 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/seven-network-effects-of-bitcoin/</guid>
+      <description>This article by Trace Mayer was first published on WeUseCoins website.&#xA;Contribute.&#xA;The 7 network effects of Bitcoin are as follows:&#xA;Speculation - As a novel, cryptographically-backed asset class with the potential for appreciation and high volatility, Bitcoin is perfect for speculators with a high tolerance for risk. HODL!!!&#xA;Merchant Adoption - Merchants will increasingly accept Bitcoin because they can increase their profit margins by avoiding credit card fees and chargebacks.</description>
+    </item>
+    <item>
+      <title>A complete history of Bitcoin’s consensus forks</title>
+      <link>http://localhost:1313/bitcoin-forks/</link>
+      <pubDate>Thu, 28 Dec 2017 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/bitcoin-forks/</guid>
+      <description>Abstract # In this piece, we list 19 Bitcoin consensus rule changes (or 18 as an accidental one “failed”), which represents what we believe to be almost every significant such event in Bitcoin’s history. At least three of these incidents resulted in an identifiable chainsplit, lasting approximately 51, 24, and six blocks, in 2010, 2013 and 2015, respectively.&#xA;This report was originaly published in BitMEX Research blog. Later it has been updated.</description>
+    </item>
+    <item>
+      <title>Analyzing the 2013 Bitcoin fork</title>
+      <link>http://localhost:1313/analyzing-2013-fork/</link>
+      <pubDate>Tue, 28 Jul 2015 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/analyzing-2013-fork/</guid>
+      <description>This article by Arvind Narayanan was first published on Freedom to Tinker computer science blog.&#xA;Contribute.&#xA;On March 11, 2013, Bitcoin experienced a technical crisis. Versions 0.7 and 0.8 of the software diverged from each other in behavior due to a bug, causing the block chain to “fork” into two. Considering how catastrophic a hard fork can be, the crisis was resolved quickly with remarkably little damage owing to the exemplary competence of the developers in charge.</description>
+    </item>
+    <item>
+      <title>Was Satoshi a Greedy Miner?</title>
+      <link>http://localhost:1313/was-satoshi-a-greedy-miner/</link>
+      <pubDate>Fri, 16 Sep 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/was-satoshi-a-greedy-miner/</guid>
+      <description>Technical analysis of mining behavior exhibited by an entity that is plausibly Satoshi Nakamoto.&#xA;This article by Jameson Lopp was published in his blog.&#xA;Contribute.&#xA;If you spend enough time in the crypto ecosystem then you&amp;rsquo;ll no doubt come across arguments that some projects have unfair token distributions because they were &amp;ldquo;premined&amp;rdquo; / &amp;ldquo;instamined&amp;rdquo; / &amp;ldquo;fast mined&amp;rdquo; by the project founders, effectively enriching themselves from the initial launch of the project.</description>
+    </item>
+    <item>
+      <title>Bitcoin is The Mycelium of Money</title>
+      <link>http://localhost:1313/bitcoin-is-the-mycelium/</link>
+      <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/bitcoin-is-the-mycelium/</guid>
+      <description>This series by Brandon Quittem was published in his blog.&#xA;Contribute.&#xA;Foreward # I need to give credit to Dan Held for publishing his 4-part series comparing bitcoin’s origin to planting a tree. While I loved his series, I believe a more robust analogy is comparing bitcoin to fungi. If you’re new to this topic, strap in — it is my honor to initiate you into the fascinating world of fungi.</description>
+    </item>
+    <item>
+      <title>Proof of Life. Why Bitcoin is a Living Organism</title>
+      <link>http://localhost:1313/proof-of-life/</link>
       <pubDate>Wed, 07 Aug 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/pochemu-bitcoin-zhivoj-organizm/</guid>
-      <description>&lt;blockquote class=&#34;book-hint btc&#34;&gt;&#xA;  Перевод работы Gigi &lt;a href=&#34;https://dergigi.com/2019/08/07/proof-of-life/&#34;&gt;&amp;ldquo;Proof of Life. Why Bitcoin is a Living Organism&amp;rdquo;&lt;/a&gt; подготовлен дружественным проектом &lt;a href=&#34;https://t.me/gametheoryhub&#34;&gt;∞/21M&lt;/a&gt;&#xA;&lt;/blockquote&gt;&#xA;&#xA;&lt;p&gt;Определение жизни всегда было проблемой как для ученых, так и для философов. Хотя выдвинуто много определений, остается неясным, что именно отличает живое от неживого. Являются ли вирусы живыми? Молекулы ДНК? Компьютерные вирусы? Биологически продуцируемые минералы?&lt;/p&gt;&#xA;&lt;p&gt;Ральф Меркл, изобретатель криптографического хеширования и дерева Меркла, выдвинул аргумент, что Биткоин является первым примером новой формы жизни. В настоящей серии статей я намерен серьезно отнестись к этому утверждению, изучить его подробно и посмотреть, что можно извлечь из рассмотрения Биткоина в качестве живого организма.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/proof-of-life/</guid>
+      <description>This article by Gigi was published on dergigi.com website.&#xA;Contribute.&#xA;The definition of life has been a challenge for scientists and philosophers alike. While many definitions have been put forward, what precisely differentiates the living from the non-living remains elusive. Are viruses alive? DNA molecules? Computer viruses? Biologically produced minerals?&#xA;Ralph Merkle, inventor of cryptographic hashing and namesake of the Merkle tree, made the argument that Bitcoin is the first example of a new form of life.</description>
     </item>
   </channel>
 </rss>

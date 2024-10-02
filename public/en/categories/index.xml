@@ -4,7 +4,7 @@
     <title>Categories on 21ideas</title>
     <link>http://localhost:1313/en/categories/</link>
     <description>Recent content in Categories on 21ideas</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Mon, 17 Jul 2023 11:20:45 +0300</lastBuildDate>
     <atom:link href="http://localhost:1313/en/categories/index.xml" rel="self" type="application/rss+xml" />

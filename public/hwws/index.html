@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html lang="ru-RU" dir="ltr">
+<html lang="en" dir="ltr">
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&display=swap" rel="stylesheet">  <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Этот обзор познакомит вас с различными аппаратными кошельками и поможет в дальнейшем выборе устройства для холодного хранения монет.">
+<meta name="description" content="An overview of the most popular devices, including Trezor, Ledger, Coldcard, and more.">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark">
-<meta name="lightning" content="21ideas@getalby.com"><meta property="og:title" content="Сравнение аппаратных кошельков" />
-<meta property="og:description" content="Этот обзор познакомит вас с различными аппаратными кошельками и поможет в дальнейшем выборе устройства для холодного хранения монет." />
+<meta name="lightning" content="21ideas@getalby.com"><meta property="og:title" content="The best Bitcoin hardware wallets" />
+<meta property="og:description" content="An overview of the most popular devices, including Trezor, Ledger, Coldcard, and more." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://localhost:1313/hwws/" />
 <meta property="og:image" content="http://localhost:1313/img/hwws/hwws.png"/>
 
-<title>Сравнение аппаратных кошельков | 21ideas</title>
+<title>The best Bitcoin hardware wallets | 21ideas</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -22,10 +22,10 @@
 <link rel="apple-touch-icon" media="(prefers-color-scheme: dark)" sizes="180x180" href="/apple-touch-icon-dark.png">
 <link rel="icon" type="image/png" media="(prefers-color-scheme: dark)" sizes="32x32" href="/favicon-32x32-dark.png">
 <link rel="icon" type="image/png" media="(prefers-color-scheme: dark)" sizes="16x16" href="/favicon-16x16-dark.png">
-  <link rel="alternate" hreflang="en" href="http://localhost:1313/en/hwws/" title="The best Bitcoin hardware wallets">
+  <link rel="alternate" hreflang="ru-RU" href="http://localhost:1313/ru/hwws/" title="Сравнение аппаратных кошельков">
 <link rel="stylesheet" href="/book.min.44d288673620af09aba4fb7b29ef4c1d1f9c0258f725bd228507764ec1740f0a.css" integrity="sha256-RNKIZzYgrwmrpPt7Ke9MHR&#43;cAlj3Jb0ihQd2TsF0Dwo=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/ru.search.min.760cb93fca4cc9af4d5d957f0e91325f35c604c9b72da7d0d0517ae0f7424f53.js" integrity="sha256-dgy5P8pMya9NXZV/DpEyXzXGBMm3LafQ0FF64PdCT1M=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.322caf709709c011df0f8373a87ef3ce291ba22a62fdd5b8cf00bf824b20d5f8.js" integrity="sha256-MiyvcJcJwBHfD4NzqH7zzikboipi/dW4zwC/gksg1fg=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -53,7 +53,7 @@ https://github.com/alex-shpak/hugo-book
 
 
 <div class="book-search">
-  <input type="text" id="book-search-input" placeholder="Поиск" aria-label="Поиск" maxlength="64" data-hotkeys="s/" />
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
   <div class="book-search-spinner hidden"></div>
   <ul id="book-search-results"></ul>
 </div>
@@ -78,15 +78,15 @@ https://github.com/alex-shpak/hugo-book
     <label for="languages" class="flex justify-between">
       <a role="button" class="flex align-center">
         <img src="/svg/translate.svg" class="book-icon" alt="Languages" />
-        Русский
+        English
       </a>
     </label>
 
     <ul>
       
       <li>
-        <a href="http://localhost:1313/en/hwws/">
-          English
+        <a href="http://localhost:1313/ru/hwws/">
+          Русский
         </a>
       </li>
       
@@ -120,7 +120,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-4b959577bbd662d890894b4ef656e45e" class="toggle"  />
     <label for="section-4b959577bbd662d890894b4ef656e45e" class="flex justify-between">
-      <a href="/start/" class="">Старт</a>
+      <a role="button" class="">Start</a>
     </label>
   
 
@@ -134,7 +134,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/start/start/" class="">Что такое Биткоин?</a>
+    <a href="/start/start/" class="">Bitcoin Basics</a>
   
 
         </li>
@@ -147,7 +147,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/start/guide/" class="">Используем биткоин</a>
+    <a href="/start/guide/" class="">Using Bitcoin</a>
   
 
         </li>
@@ -160,33 +160,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/course/" class="">Биткоин от А до Я</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/bitcoin-myths/" class="">Разрушаем мифы о Биткоине</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/shitcoin-casino/" class="">Не играйте в щиткоин-казино</a>
+    <a href="/shitcoin-gambling-games/" class="">Don’t Play Shitcoin Gambling Games</a>
   
 
         </li>
@@ -206,7 +180,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-c8e2b39e67e72b49a36ee1ec8355ecba" class="toggle" checked />
     <label for="section-c8e2b39e67e72b49a36ee1ec8355ecba" class="flex justify-between">
-      <a href="/theory/" class="">Теория</a>
+      <a href="/theory/" class="">Theory</a>
     </label>
   
 
@@ -222,7 +196,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-981a6953479a2e41da30ae73c119d6e2" class="toggle"  />
     <label for="section-981a6953479a2e41da30ae73c119d6e2" class="flex justify-between">
-      <a href="/economics/" class="">Экономика</a>
+      <a href="/economics/" class="">Economics</a>
     </label>
   
 
@@ -238,7 +212,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-43f26905d14df4de3737d0d5dfd90ca0" class="toggle"  />
     <label for="section-43f26905d14df4de3737d0d5dfd90ca0" class="flex justify-between">
-      <a href="/pzv/" class="">Постепенно, затем внезапно</a>
+      <a href="/gradually-then-suddenly/" class="">Gradually, Then Suddenly</a>
     </label>
   
 
@@ -252,7 +226,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/postepenno-zatem-vnezapno/" class="">Введение</a>
+    <a href="/gradually-then-suddenly/intro/" class="">Intro</a>
   
 
         </li>
@@ -265,7 +239,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-nelzya-skopirovat/" class="">Биткоин нельзя скопировать</a>
+    <a href="/gradually-then-suddenly/bitcoin-cant-be-copied/" class="">Bitcoin Can’t Be Copied</a>
   
 
         </li>
@@ -278,7 +252,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-ne-slishkom-volatilen/" class="">Биткоин не слишком волатилен</a>
+    <a href="/gradually-then-suddenly/bitcoin-is-not-too-volatile/" class="">Bitcoin Is Not Too Volatile</a>
   
 
         </li>
@@ -291,7 +265,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-ne-tratit-energiyu-zrya/" class="">Биткоин не тратит энергию зря</a>
+    <a href="/gradually-then-suddenly/bitcoin-does-not-waste-energy/" class="">Bitcoin Does Not Waste Energy</a>
   
 
         </li>
@@ -304,7 +278,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-ne-slishkom-medlennyj/" class="">Биткоин не слишком медленный</a>
+    <a href="/gradually-then-suddenly/bitcoin-is-not-too-slow/" class="">Bitcoin is Not Too Slow</a>
   
 
         </li>
@@ -317,7 +291,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-eto-ispravit/" class="">Биткоин это исправит</a>
+    <a href="/gradually-then-suddenly/bitcoin-fixes-this/" class="">Bitcoin Fixes This</a>
   
 
         </li>
@@ -330,7 +304,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-ne-blokchejn/" class="">Биткоин, не блокчейн</a>
+    <a href="/gradually-then-suddenly/bitcoin-not-blockchain/" class="">Bitcoin, Not Blockchain</a>
   
 
         </li>
@@ -343,7 +317,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-nichem-ne-podkreplen/" class="">Биткоин ничем не подкреплен?</a>
+    <a href="/gradually-then-suddenly/bitcoin-is-not-backed-by-nothing/" class="">Bitcoin is Not Backed by Nothing</a>
   
 
         </li>
@@ -356,7 +330,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-ne-finansovaya-piramida/" class="">Биткоин — не финансовая пирамида</a>
+    <a href="/gradually-then-suddenly/bitcoin-is-not-a-pyramid-scheme/" class="">Bitcoin is Not a Pyramid Scheme</a>
   
 
         </li>
@@ -369,7 +343,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-ne-mozhet-byt-zabanen/" class="">Биткоин не может быть забанен</a>
+    <a href="/gradually-then-suddenly/bitcoin-cannot-be-banned/" class="">Bitcoin Cannot be Banned</a>
   
 
         </li>
@@ -382,7 +356,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-ne-dlya-prestupnikov/" class="">Биткоин не для преступников</a>
+    <a href="/gradually-then-suddenly/bitcoin-is-not-for-criminals/" class="">Bitcoin is Not for Criminals</a>
   
 
         </li>
@@ -395,7 +369,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-obescenivaet-ostalnye-dengi/" class="">Биткоин обесценивает остальные деньги</a>
+    <a href="/gradually-then-suddenly/bitcoin-obsoletes-all-other-money/" class="">Bitcoin Obsoletes All Other Money</a>
   
 
         </li>
@@ -408,7 +382,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-zov-k-edineniyu/" class="">Биткоин — зов к единению</a>
+    <a href="/gradually-then-suddenly/bitcoin-is-a-rally-cry/" class="">Bitcoin is a Rally Cry</a>
   
 
         </li>
@@ -421,7 +395,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-eto-zdravyj-smysl/" class="">Биткоин — это здравый смысл</a>
+    <a href="/gradually-then-suddenly/bitcoin-is-common-sense/" class="">Bitcoin is Common Sense</a>
   
 
         </li>
@@ -434,7 +408,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-antihrupok/" class="">Биткоин антихрупок</a>
+    <a href="/gradually-then-suddenly/bitcoin-is-antifragile/" class="">Bitcoin is Antifragile</a>
   
 
         </li>
@@ -447,7 +421,20 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-velikaya-definancializaciya/" class="">Биткоин — великая дефинанcиализация</a>
+    <a href="/gradually-then-suddenly/bitcoin-is-one-for-all/" class="">Bitcoin is One for All</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/gradually-then-suddenly/bitcoin-is-the-great-definancialization/" class="">Bitcoin is the Great Definancialization</a>
   
 
         </li>
@@ -467,7 +454,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-070af377b46d38e45de9a60dd3c8e7d0" class="toggle"  />
     <label for="section-070af377b46d38e45de9a60dd3c8e7d0" class="flex justify-between">
-      <a href="/sb/" class="">Становление Биткоина</a>
+      <a href="/discovering-bitcoin/" class="">Discovering Bitcoin</a>
     </label>
   
 
@@ -481,7 +468,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sb/stanovlenie-intro/" class="">Введение</a>
+    <a href="/discovering-bitcoin/intro/" class="">Introduction</a>
   
 
         </li>
@@ -494,7 +481,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sb/stanovlenie-1/" class="">О времени</a>
+    <a href="/discovering-bitcoin/about-time/" class="">About Time</a>
   
 
         </li>
@@ -507,7 +494,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sb/stanovlenie-2/" class="">О людях</a>
+    <a href="/discovering-bitcoin/about-people/" class="">About People</a>
   
 
         </li>
@@ -520,7 +507,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sb/stanovlenie-3/" class="">Знакомьтесь: деньги</a>
+    <a href="/discovering-bitcoin/introducing-money/" class="">Introducing Money</a>
   
 
         </li>
@@ -533,7 +520,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sb/stanovlenie-4/" class="">Поворот не туда</a>
+    <a href="/discovering-bitcoin/a-wrong-turn-new-plan-needed/" class="">A Wrong Turn (New Plan Needed)!</a>
   
 
         </li>
@@ -546,7 +533,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sb/stanovlenie-5/" class="">Цифровая редкость</a>
+    <a href="/discovering-bitcoin/digital-scarcity/" class="">Digital Scarcity</a>
   
 
         </li>
@@ -559,7 +546,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sb/stanovlenie-6/" class="">Цифровые контракты</a>
+    <a href="/discovering-bitcoin/digital-contracts/" class="">Digital Contracts</a>
   
 
         </li>
@@ -572,7 +559,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sb/stanovlenie-7/" class="">Недостающие части головоломки</a>
+    <a href="/discovering-bitcoin/the-missing-pieces/" class="">The Missing Pieces</a>
   
 
         </li>
@@ -590,7 +577,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitkoin-ne-vredit-okruzhayushej-srede/" class="">Биткоин и окружающая среда</a>
+    <a href="/bitcoin-is-not-harmful-for-the-environment/" class="">Bitcoin Is Not Harmful For The Environment</a>
   
 
         </li>
@@ -603,7 +590,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sem-setevyh-effektov-bitkoina/" class="">Семь сетевых эффектов Биткоина</a>
+    <a href="/seven-network-effects-of-bitcoin/" class="">The Seven Network Effects of Bitcoin</a>
   
 
         </li>
@@ -616,7 +603,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/hozyaeva-i-raby-deneg/" class="">Хозяева и рабы денег</a>
+    <a href="/masters-and-slaves-of-money/" class="">Masters and Slaves of Money</a>
   
 
         </li>
@@ -629,7 +616,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/strukturnaya-perestrojka/" class="">Структурная перестройка</a>
+    <a href="/structural-adjustment/" class="">Structural Adjustment</a>
   
 
         </li>
@@ -642,7 +629,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/v-zashchitu-deflyacii/" class="">В защиту дефляции</a>
+    <a href="/in-defense-of-deflation/" class="">In Defense Of Deflation</a>
   
 
         </li>
@@ -655,7 +642,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sravnenie-monetarnyh-standartov/" class="">Сравнение монетарных стандартов</a>
+    <a href="/comparison-of-monetary-standards/" class="">Comparison of Monetary Standards</a>
   
 
         </li>
@@ -668,7 +655,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sravnenie-monetarnyh-standartov/" class="">Сравнение монетарных стандартов</a>
+    <a href="/petrodollar-negative-effects/" class="">Petrodollar Negative Effects</a>
   
 
         </li>
@@ -681,7 +668,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/negativnye-effekty-neftedollara/" class="">Негативные внешние эффекты нефтедоллара</a>
+    <a href="/shelling-out/" class="">Shelling Out: The Origins of Money</a>
   
 
         </li>
@@ -694,7 +681,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/raskoshelivaemsya/" class="">Раскошеливаемся (Shelling Out): Происхождение денег</a>
+    <a href="/bitcoin-rhythms-of-history/" class="">Bitcoin and the Rhythms of History</a>
   
 
         </li>
@@ -707,7 +694,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-i-ritmy-istorii/" class="">Биткоин и ритмы истории</a>
+    <a href="/bitcoin-and-the-hopf-cycle-of-the-internet/" class="">Bitcoin &amp; the HOPF Cycle of the Internet</a>
   
 
         </li>
@@ -720,7 +707,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-i-internet-cikly-hopfa/" class="">Биткоин и интернет-циклы Хопфа</a>
+    <a href="/money-blockchains-and-social-scalability/" class="">Money, blockchains, and social scalability</a>
   
 
         </li>
@@ -733,7 +720,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/dengi-blokchejny-i-socialnaya-masshtabiruemost/" class="">Деньги, блокчейны и социальная масштабируемость</a>
+    <a href="/what-is-money/" class="">What Is Money</a>
   
 
         </li>
@@ -746,7 +733,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/chto-takoe-dengi/" class="">Что такое деньги</a>
+    <a href="/only-the-strong-survive/" class="">Only The Strong Survive</a>
   
 
         </li>
@@ -759,7 +746,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/vyzhivaet-silnejshij/" class="">Выживает сильнейший</a>
+    <a href="/dollar-cost-averaging/" class="">Dollar-Cost Averaging</a>
   
 
         </li>
@@ -772,33 +759,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/strategiya-dca/" class="">Стратегия DCA</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/jevons-paradox/" class="">Парадокс Джевонса: Обратная истина</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/kak-rabotajut-dengi/" class="">Как работают деньги</a>
+    <a href="/jevons-paradox/" class="">Jevons Paradox: Contrary Truth</a>
   
 
         </li>
@@ -818,7 +779,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-4d5bb6cd046af3ae6f08884281ee0445" class="toggle" checked />
     <label for="section-4d5bb6cd046af3ae6f08884281ee0445" class="flex justify-between">
-      <a href="/security/" class="">Безопасность</a>
+      <a href="/security/" class="">Security</a>
     </label>
   
 
@@ -832,7 +793,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/kak-hranit-kljuchi/" class="">Биткоин-кошельки. Зачем и как хранить свои приватные ключи</a>
+    <a href="/how-to-hold-private-keys/" class="">Bitcoin Wallets: How, Why and When to Hold Your Own Private Keys</a>
   
 
         </li>
@@ -845,7 +806,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/seed/" class="">Что такое сид-фраза?</a>
+    <a href="/seed/" class="">What is a bitcoin seed phrase and how does it work?</a>
   
 
         </li>
@@ -858,7 +819,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/seed-security/" class="">Как обезопасить свои сид-фразы?</a>
+    <a href="/seed-security/" class="">Ultimate guide to storing your bitcoin seed phrase backups</a>
   
 
         </li>
@@ -871,7 +832,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/passphrase/" class="">Насколько надежна ваша парольная фраза?</a>
+    <a href="/passphrase/" class="">Is your passphrase strong enough?</a>
   
 
         </li>
@@ -884,7 +845,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/multisig/" class="">Все о мультисиг</a>
+    <a href="/what-is-multisig/" class="">What is multisig?</a>
   
 
         </li>
@@ -897,7 +858,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/hwws/" class="active">Сравнение аппаратных кошельков</a>
+    <a href="/hwws/" class="active">The best Bitcoin hardware wallets</a>
   
 
         </li>
@@ -910,7 +871,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/multisig-1/" class="">Мультисиг. Часть I</a>
+    <a href="/multisig-1/" class="">Multisig Part I: Why Multisig?</a>
   
 
         </li>
@@ -923,7 +884,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/multisig-2/" class="">Мультисиг. Часть II: Отдельные ключи – основа мультиподписи</a>
+    <a href="/multisig-2/" class="">Multisig Part II: Single Keys are the Foundation of Multisignature</a>
   
 
         </li>
@@ -943,7 +904,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-e5dc95f8c3734f1c9cf3045c3ba217e8" class="toggle"  />
     <label for="section-e5dc95f8c3734f1c9cf3045c3ba217e8" class="flex justify-between">
-      <a href="/privacy/" class="">Приватность</a>
+      <a href="/privacy/" class="">Privacy</a>
     </label>
   
 
@@ -957,7 +918,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/privacy/luchshie-praktiki/" class="">Как сохранить приватность?</a>
+    <a href="/privacy/best-practices/" class="">Bitcoin Privacy: Best Practices</a>
   
 
         </li>
@@ -970,7 +931,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/privacy/no-kyc/" class="">Никаких KYC, берегите персональные данные</a>
+    <a href="/privacy/no-kyc/" class="">no-KYC only. Avoid the creep</a>
   
 
         </li>
@@ -983,7 +944,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/privatnost-v-seti-bitcoin/" class="">Приватность в сети Биткоин</a>
+    <a href="/wiki-bitcoin-privacy/" class="">Bitcoin Privacy</a>
   
 
         </li>
@@ -996,7 +957,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-stanovitsya-kriticheski-vazhnym/" class="">Биткоин становится критически важным</a>
+    <a href="/bitcoin-becomes-critical/" class="">Bitcoin Becomes Critical</a>
   
 
         </li>
@@ -1009,7 +970,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bip47-ili-gadkij-utenok/" class="">BIP47, или гадкий утенок</a>
+    <a href="/bip47-the-ugly-duckling/" class="">BIP47, the ugly duckling</a>
   
 
         </li>
@@ -1024,7 +985,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-7626e3de66018c98c264d84fe366e13a" class="toggle"  />
     <label for="section-7626e3de66018c98c264d84fe366e13a" class="flex justify-between">
-      <a href="/privacy/oxt/" class="">Понимание приватности в сети Биткоин с помощью OXT</a>
+      <a href="/privacy/oxt/" class="">Understanding Bitcoin Privacy with OXT</a>
     </label>
   
 
@@ -1038,7 +999,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/privacy/oxt-1/" class="">Часть 1: Анализ цепочки и приватность транзакций</a>
+    <a href="/privacy/oxt-1/" class="">Part 1: Chain Analysis And Transaction Privacy</a>
   
 
         </li>
@@ -1051,7 +1012,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/privacy/oxt-2/" class="">Часть 2: Ключевые концепции анализа цепочки</a>
+    <a href="/privacy/oxt-2/" class="">Part 2: Chain Analysis Core Concepts</a>
   
 
         </li>
@@ -1064,7 +1025,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/privacy/oxt-3/" class="">Часть 3: Защита от анализа цепочки</a>
+    <a href="/privacy/oxt-3/" class="">Part 3: Defences Against Chain Analysis</a>
   
 
         </li>
@@ -1077,7 +1038,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/privacy/oxt-4/" class="">Часть 4: Применение концепций анализа цепочки для улучшения приватности пользователей</a>
+    <a href="/privacy/oxt-4/" class="">Part 4: Applying Chain Analysis Concepts To Improve User Privacy</a>
   
 
         </li>
@@ -1095,7 +1056,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/privacy/coinjoin/" class="">Понимание и использование CoinJoin</a>
+    <a href="/privacy/coinjoin/" class="">CoinJoin Overview</a>
   
 
         </li>
@@ -1108,7 +1069,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-fungibility/" class="">Взаимозаменяемость Биткоина</a>
+    <a href="/bitcoin-fungibility/" class="">Bitcoin Fungibility</a>
   
 
         </li>
@@ -1141,7 +1102,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-591754e4c6a4e23cb58f7ff9d9022ef1" class="toggle"  />
     <label for="section-591754e4c6a4e23cb58f7ff9d9022ef1" class="flex justify-between">
-      <a href="/protocol/" class="">Протокол</a>
+      <a href="/protocol/" class="">Protocol</a>
     </label>
   
 
@@ -1155,7 +1116,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/kto-kontroliruet-bitkoin-kor/" class="">Кто контролирует Bitcoin Core?</a>
+    <a href="/who-controls-bitcoin-core/" class="">Who Controls Bitcoin Core?</a>
   
 
         </li>
@@ -1168,7 +1129,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/vechnaja-borba/" class="">Вечная борьба Биткоина</a>
+    <a href="/bitcoins-eternal-struggle/" class="">Bitcoin&#39;s Eternal Struggle</a>
   
 
         </li>
@@ -1181,7 +1142,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/ob-udobstve-vzaimodejstvija-s-bitcoinom/" class="">Об удобстве взаимодействия с Биткоином</a>
+    <a href="/on-bitcoins-ux/" class="">On Bitcoin’s UX</a>
   
 
         </li>
@@ -1194,7 +1155,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-zoloto-2-0/" class="">Биткоин: цифровое золото или пиринговая наличность?</a>
+    <a href="/bitcoin-digital-gold-or-ecash/" class="">Bitcoin: Digital Gold or Peer-to-Peer Cash?</a>
   
 
         </li>
@@ -1207,7 +1168,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/upravlenie-bitcoin/" class="">Управление Биткоином</a>
+    <a href="/bitcoin-governance/" class="">Bitcoin Governance</a>
   
 
         </li>
@@ -1220,7 +1181,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/doverennye-tretyi-storony/" class="">Доверенные третьи стороны — это бреши в системе безопасности</a>
+    <a href="/trusted-third-parties/" class="">Trusted Third Parties are Security Holes</a>
   
 
         </li>
@@ -1233,7 +1194,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/21-million-ne-podlezhit-obsuzhdeniyu/" class="">21 миллион не подлежит обсуждению</a>
+    <a href="/21-million-is-non-negotiable/" class="">21 Million is Non-Negotiable</a>
   
 
         </li>
@@ -1246,7 +1207,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/proof-of-work/" class="">Proof of Work: доказательство проделанной работы</a>
+    <a href="/proof-of-work/" class="">Proof of Work, a pictorial essay</a>
   
 
         </li>
@@ -1259,7 +1220,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/proof-of-stake-eto-skam/" class="">Proof of Stake – это скам</a>
+    <a href="/proof-of-stake-is-a-scam/" class="">Proof of stake is a scam</a>
   
 
         </li>
@@ -1272,7 +1233,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/byl-li-satoshi-zhadnym-majnerom/" class="">Был ли Сатоши жадным майнером?</a>
+    <a href="/was-satoshi-a-greedy-miner/" class="">Was Satoshi a Greedy Miner?</a>
   
 
         </li>
@@ -1285,7 +1246,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/segwit/" class="">Что такое SegWit</a>
+    <a href="/segwit/" class="">What Is SegWit</a>
   
 
         </li>
@@ -1298,7 +1259,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/taproot/" class="">Что такое Taproot</a>
+    <a href="/taproot/" class="">What Is Taproot</a>
   
 
         </li>
@@ -1311,7 +1272,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bomby-slozhnosti-ethereum/" class="">Бомбы сложности Ethereum</a>
+    <a href="/coercion-of-ethereums-difficulty-bomb/" class="">The Coercion Of Ethereum&#39;s Difficulty Bomb</a>
   
 
         </li>
@@ -1324,7 +1285,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/rgb/" class="">Разбирая протокол RGB</a>
+    <a href="/rgb/" class="">Understanding the RGB protocol</a>
   
 
         </li>
@@ -1337,7 +1298,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/halving/" class="">Что такое Биткоин-халвинг?</a>
+    <a href="/difficulty/" class="">Bitcoin Difficulty Adjustment</a>
   
 
         </li>
@@ -1350,7 +1311,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/difficulty/" class="">О корректировке сложности майнинга</a>
+    <a href="/bitcoin-address-types/" class="">Bitcoin address types</a>
   
 
         </li>
@@ -1363,7 +1324,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sravnenie-tipov-bitcoin-adresov/" class="">Типы биткоин-адресов</a>
+    <a href="/myths-about-halving/" class="">Myths About the Bitcoin Halving</a>
   
 
         </li>
@@ -1376,20 +1337,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/myths-about-halving/" class="">Мифы о Биткоин-халвинге</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/mining-walkthrough/" class="">SHA256 и майнинг в сети Биткоин</a>
+    <a href="/mining-walkthrough/" class="">SHA256 and Bitcoin Mining Walkthrough</a>
   
 
         </li>
@@ -1404,7 +1352,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-c6baffdfa73d6dd5df13795b95ab68ac" class="toggle"  />
     <label for="section-c6baffdfa73d6dd5df13795b95ab68ac" class="flex justify-between">
-      <a href="/protocol/utxo/" class="">Что такое UTXO и как ими управлять?</a>
+      <a href="/protocol/utxo/" class="">What Is UTXO And How To Manage Them</a>
     </label>
   
 
@@ -1418,7 +1366,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/protocol/utxo-1/" class="">Что такое UTXO?</a>
+    <a href="/protocol/utxo-1/" class="">What is a Bitcoin UTXO</a>
   
 
         </li>
@@ -1431,7 +1379,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/protocol/utxo-2/" class="">Как избежать высоких комиссий при большом количестве UTXO</a>
+    <a href="/protocol/utxo-2/" class="">Too Many UTXOs: How To Avoid High Fees</a>
   
 
         </li>
@@ -1444,7 +1392,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/protocol/utxo-3/" class="">Приватность UTXO</a>
+    <a href="/protocol/utxo-3/" class="">UTXOs Privacy</a>
   
 
         </li>
@@ -1462,7 +1410,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/transaction-size/" class="">Размер транзакции</a>
+    <a href="/transaction-size/" class="">Transaction Size</a>
   
 
         </li>
@@ -1482,7 +1430,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-2cc3faa5b078e8edfc892bc463882294" class="toggle"  />
     <label for="section-2cc3faa5b078e8edfc892bc463882294" class="flex justify-between">
-      <a href="/history/" class="">История</a>
+      <a href="/history/" class="">History</a>
     </label>
   
 
@@ -1498,7 +1446,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-11903f72dc1c8e68f0d748ad1bb6164d" class="toggle"  />
     <label for="section-11903f72dc1c8e68f0d748ad1bb6164d" class="flex justify-between">
-      <a href="/gf/" class="">Генезис-файлы</a>
+      <a href="/gf/" class="">The Genesis Files</a>
     </label>
   
 
@@ -1512,7 +1460,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/gf/genesis-intro/" class="">Пролог</a>
+    <a href="/gf/genesis-intro/" class="">Intro</a>
   
 
         </li>
@@ -1525,7 +1473,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/gf/genesis-1/" class="">Часть I: eCash Дэвида Чаума и зарождение мечты шифропанков</a>
+    <a href="/gf/genesis-1/" class="">Part I: How David Chaum’s eCash Spawned a Cypherpunk Dream</a>
   
 
         </li>
@@ -1538,7 +1486,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/gf/genesis-2/" class="">Часть II: Hashcash или как Адам Бэк разработал сердце Биткоина</a>
+    <a href="/gf/genesis-2/" class="">Part II: Hashcash or How Adam Back Designed Bitcoin’s Motor Block</a>
   
 
         </li>
@@ -1551,7 +1499,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/gf/genesis-3/" class="">Часть III: Если у Биткоина был прототип, то это были b-money Вэя Дая</a>
+    <a href="/gf/genesis-3/" class="">Part III: If Bitcoin Had a First Draft, Wei Dai’s B-Money Was It</a>
   
 
         </li>
@@ -1564,7 +1512,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/gf/genesis-4/" class="">Часть IV: Создавая Bit Gold, Сабо был в двух шагах от изобретения Биткоина</a>
+    <a href="/gf/genesis-4/" class="">Part IV: With Bit Gold, Szabo Was Inches Away From Inventing Bitcoin</a>
   
 
         </li>
@@ -1577,7 +1525,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/gf/genesis-5/" class="">Часть V: Как поиски цифровой наличности привели Хэла Финни к созданию RPOW (и не только)</a>
+    <a href="/gf/genesis-5/" class="">Part V: How Hal Finney’s Quest For Digital Cash Led To RPOW (And More)</a>
   
 
         </li>
@@ -1595,7 +1543,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/hal-finney/" class="">Хэл Финни — жизнь и смерть легенды движения шифропанков</a>
+    <a href="/hal-finney/" class="">Hal Finney — The Life And Death Of A Cypherpunk Legend</a>
   
 
         </li>
@@ -1608,7 +1556,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-and-me/" class="">Биткоин и я</a>
+    <a href="/bitcoin-and-me/" class="">Bitcoin and Me</a>
   
 
         </li>
@@ -1621,7 +1569,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-reformaciya/" class="">Биткоин-Реформация</a>
+    <a href="/bitcoin-reformation/" class="">The Bitcoin Reformation</a>
   
 
         </li>
@@ -1634,7 +1582,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-forks/" class="">Полная история консенсус-форков Биткоина</a>
+    <a href="/bitcoin-forks/" class="">A complete history of Bitcoin’s consensus forks</a>
   
 
         </li>
@@ -1647,7 +1595,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/analyzing-2013-fork/" class="">Анализ форка Биткоина 2013 года</a>
+    <a href="/analyzing-2013-fork/" class="">Analyzing the 2013 Bitcoin fork</a>
   
 
         </li>
@@ -1667,7 +1615,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-ac2daa2484c1be670f7cc1e0d8d82356" class="toggle"  />
     <label for="section-ac2daa2484c1be670f7cc1e0d8d82356" class="flex justify-between">
-      <a href="/philosophy/" class="">Философия</a>
+      <a href="/philosophy/" class="">Philosophy</a>
     </label>
   
 
@@ -1683,7 +1631,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-b11b531f912b5e92a8260d0a526b85b6" class="toggle"  />
     <label for="section-b11b531f912b5e92a8260d0a526b85b6" class="flex justify-between">
-      <a href="/chemu-ya-nauchilsya-u-bitcoina/" class="">Чему я научился у Биткоина?</a>
+      <a href="/what-i-learned-from-bitcoin/" class="">What I&#39;ve Learned From Bitcoin</a>
     </label>
   
 
@@ -1697,7 +1645,33 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/chemu-ya-nauchilsya-u-bitcoina/filosofskie-uroki-bitcoina/" class="">Часть1. Философские уроки Биткоина</a>
+    <a href="/what-i-learned-from-bitcoin-1/" class="">Part I. Philosophical Teachings of Bitcoin</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/what-i-learned-from-bitcoin-2/" class="">Part II. Economic Teachings of Bitcoin</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/what-i-learned-from-bitcoin-3/" class="">Part III. Technological Teachings of Bitcoin</a>
   
 
         </li>
@@ -1715,7 +1689,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/ne-shitcoin/" class="">Биткоин, не щиткоин</a>
+    <a href="/not-shitcoin/" class="">Why Bitcoin, Not Shitcoin</a>
   
 
         </li>
@@ -1728,7 +1702,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/neotemlemye-prava-sobstvennosti/" class="">Неотъемлемые права собственности</a>
+    <a href="/inalienable-property-rights/" class="">Inalienable Property Rights</a>
   
 
         </li>
@@ -1741,7 +1715,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/manifest-kriptoanarhista/" class="">Манифест криптоанархиста</a>
+    <a href="/crypto-anarchist-manifesto/" class="">The Crypto Anarchist Manifesto</a>
   
 
         </li>
@@ -1754,7 +1728,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/manifest-shifropanka/" class="">Манифест шифропанка</a>
+    <a href="/cypherpunks-manifesto/" class="">A Cypherpunk&#39;s Manifesto</a>
   
 
         </li>
@@ -1767,7 +1741,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/tyulpannaya-lihoradka/" class="">Биткоин — современная голландская тюльпанная лихорадка?</a>
+    <a href="/dutch-tulip-bubble/" class="">Is Bitcoin Like the Dutch Tulip Bubble?</a>
   
 
         </li>
@@ -1780,7 +1754,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/vse-moshenniki/" class="">Все — мошенники</a>
+    <a href="/everyones-a-scammer/" class="">Everyone&#39;s a Scammer</a>
   
 
         </li>
@@ -1793,7 +1767,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/svoboda-cennosti/" class="">Свобода ценности</a>
+    <a href="/freedom-of-value/" class="">The Freedom of Value</a>
   
 
         </li>
@@ -1806,7 +1780,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-meme/" class="">Биткоин — единственный реальный мем</a>
+    <a href="/bitcoin-meme/" class="">Bitcoin Is The Only Real Meme</a>
   
 
         </li>
@@ -1819,7 +1793,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/nol-i-bitcoin/" class="">Ноль и Биткоин</a>
+    <a href="/number-zero-and-bitcoin/" class="">The Number Zero and Bitcoin</a>
   
 
         </li>
@@ -1832,7 +1806,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/crypto-bro/" class="">Дорогие крипто- и фиат-бро</a>
+    <a href="/crypto-bro/" class="">Dear Crypto &amp; Fiat Bros</a>
   
 
         </li>
@@ -1845,7 +1819,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/boremsya-s-poddelnymi-bitcoin/" class="">Боремся с поддельными биткоинами</a>
+    <a href="/fighting-fake-bitcoin/" class="">Fighting Fake Bitcoin</a>
   
 
         </li>
@@ -1858,7 +1832,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bit%D1%81oin-eto-micelij/" class="">Биткоин — это мицелий</a>
+    <a href="/bitcoin-is-the-mycelium/" class="">Bitcoin is The Mycelium of Money</a>
   
 
         </li>
@@ -1871,7 +1845,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pochemu-bitcoin-zhivoj-organizm/" class="">Доказательство жизни. Почему Биткоин — живой организм</a>
+    <a href="/proof-of-life/" class="">Proof of Life. Why Bitcoin is a Living Organism</a>
   
 
         </li>
@@ -1884,7 +1858,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/samaya-mirnaya-revolyuciya/" class="">Самая мирная революция</a>
+    <a href="/most-peaceful-revolution/" class="">A Most Peaceful Revolution</a>
   
 
         </li>
@@ -1897,7 +1871,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/o-bitcoin-vselennoj/" class="">О Биткоин-вселенной</a>
+    <a href="/bitcoin-universe/" class="">Bitcoin Universe</a>
   
 
         </li>
@@ -1910,7 +1884,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-dissidenty/" class="">Биткоин-диссиденты</a>
+    <a href="/bitcoin-dissidents/" class="">Bitcoin Dissidents</a>
   
 
         </li>
@@ -1923,7 +1897,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-svoboda/" class="">Биткоин = свобода</a>
+    <a href="/bitcoin-equals-freedom/" class="">Bitcoin Equals Freedom</a>
   
 
         </li>
@@ -1943,7 +1917,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-0ffd899989a7340537ceb8e2b6a04097" class="toggle"  />
     <label for="section-0ffd899989a7340537ceb8e2b6a04097" class="flex justify-between">
-      <a href="/future/" class="">Будущее</a>
+      <a href="/future/" class="">Future</a>
     </label>
   
 
@@ -1959,7 +1933,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-206fb3aae5266e1ff42aa0abc8ae8411" class="toggle"  />
     <label for="section-206fb3aae5266e1ff42aa0abc8ae8411" class="flex justify-between">
-      <a href="/ba/" class="">Биткоин-астрономия</a>
+      <a href="/ba/" class="">Bitcoin Astronomy</a>
     </label>
   
 
@@ -1973,7 +1947,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/ba/1/" class="">Постгипербиткоинизация</a>
+    <a href="/ba/1/" class="">Part I</a>
   
 
         </li>
@@ -1986,7 +1960,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/ba/2/" class="">Миллион крошечных миров</a>
+    <a href="/ba/2/" class="">Part II</a>
   
 
         </li>
@@ -1999,7 +1973,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/ba/3/" class="">Первый контакт</a>
+    <a href="/ba/3/" class="">Part III</a>
   
 
         </li>
@@ -2017,7 +1991,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/ej-bitcoin-pritormozi/" class="">Эй, Биткоин, притормози</a>
+    <a href="/hey-bitcoin-slow-down/" class="">Hey Bitcoin, Slow Down!</a>
   
 
         </li>
@@ -2030,7 +2004,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/apokalipsis/" class="">Сможет ли Биткоин пережить апокалипсис?</a>
+    <a href="/apocalypse/" class="">Can Bitcoin Survive An Apocalypse?</a>
   
 
         </li>
@@ -2043,7 +2017,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-i-teplovaya-energiya-okeanov/" class="">Биткоин и тепловая энергия океанов</a>
+    <a href="/bitcoin-and-oceans/" class="">Bitcoin and Ocean Thermal Energy</a>
   
 
         </li>
@@ -2063,7 +2037,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-94dfdc9d0099b419c9e2d6a83381dbe2" class="toggle"  />
     <label for="section-94dfdc9d0099b419c9e2d6a83381dbe2" class="flex justify-between">
-      <a href="/lightning/" class="">Лайтнинг</a>
+      <a href="/lightning/" class="">Lightning</a>
     </label>
   
 
@@ -2077,7 +2051,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/chto-takoe-laitning/" class="">Что такое Лайтнинг?</a>
+    <a href="/what-is-lightning-network/" class="">What is Lightning Network?</a>
   
 
         </li>
@@ -2090,7 +2064,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/lajtning-koshelki/" class="">Лайтнинг-кошельки</a>
+    <a href="/lightning-wallets/" class="">Lightning Wallets</a>
   
 
         </li>
@@ -2103,7 +2077,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/lajtning-adresa/" class="">Лайтнинг-адреса</a>
+    <a href="/how-lightning-address-works/" class="">How Lightning Address Works</a>
   
 
         </li>
@@ -2116,7 +2090,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/privatnost-v-lajtning/" class="">Приватность в сети Lightning</a>
+    <a href="/lightning-network-privacy/" class="">Lightning Network Privacy</a>
   
 
         </li>
@@ -2129,7 +2103,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/centralizovanna-li-set-lightning/" class="">Централизованна ли сеть Lightning?</a>
+    <a href="/is-lightning-centralized/" class="">Is Lightning centralized?</a>
   
 
         </li>
@@ -2142,7 +2116,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/mekhanizm-raboty-lightning/" class="">Механизм работы Lightning Network</a>
+    <a href="/lightning-network-explained/" class="">Lightning Network Explained</a>
   
 
         </li>
@@ -2155,7 +2129,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/problema-vhodyashchej-likvidnosti/" class="">Решение проблемы входящей ликвидности</a>
+    <a href="/inbound-liquidity-problem/" class="">Solutions to inbound liquidity problem</a>
   
 
         </li>
@@ -2180,7 +2154,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-334a33758c01abfe631e1e37dc0d1f40" class="toggle"  />
     <label for="section-334a33758c01abfe631e1e37dc0d1f40" class="flex justify-between">
-      <a href="/practice/" class="">Практика</a>
+      <a href="/practice/" class="">Practice</a>
     </label>
   
 
@@ -2196,7 +2170,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-a94c5b45bfdc8ef0dd89b00612026092" class="toggle"  />
     <label for="section-a94c5b45bfdc8ef0dd89b00612026092" class="flex justify-between">
-      <a href="/practice/buy/" class="">Покупка</a>
+      <a href="/practice/buy/" class="">Buy</a>
     </label>
   
 
@@ -2210,7 +2184,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/newbie-buy/" class="">Покупка и хранение биткоина для новичков</a>
+    <a href="/newbie-buy/" class="">Buy and Hodl Bitcoin for Beginners</a>
   
 
         </li>
@@ -2223,7 +2197,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/hodl-hodl/" class="">Покупка биткоина без KYC на Hodl Hodl</a>
+    <a href="/hodl-hodl/" class="">Buy noKYC Bitcoin with HodlHodl</a>
   
 
         </li>
@@ -2236,7 +2210,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/robosats/" class="">RoboSats: Приватный p2p обмен</a>
+    <a href="/robosats/" class="">RoboSats: Private P2P Exchange</a>
   
 
         </li>
@@ -2256,7 +2230,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-7e14ce7fc5fdbe001466044f77bdd564" class="toggle"  />
     <label for="section-7e14ce7fc5fdbe001466044f77bdd564" class="flex justify-between">
-      <a href="/practice/hodl/" class="">Хранение</a>
+      <a href="/practice/hodl/" class="">Hodl</a>
     </label>
   
 
@@ -2270,7 +2244,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/electrum/" class="">Кошелек Электрум</a>
+    <a href="/electrum/" class="">Electrum Bitcoin Wallet</a>
   
 
         </li>
@@ -2283,7 +2257,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/blue/" class="">Кошелек Blue</a>
+    <a href="/blue/" class="">Installing Blue Wallet</a>
   
 
         </li>
@@ -2296,7 +2270,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/seedsigner/" class="">SeedSigner: оффлайн-крепость для ваших биткоинов</a>
+    <a href="/seedsigner/" class="">SeedSigner: DIY Bitcoin Signing Device</a>
   
 
         </li>
@@ -2309,20 +2283,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/holodnyj-koshelek-iz-starogo-smartfona/" class="">Холодный кошелек из старого смартфона</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/coldcard/" class="">Что такое Coldcard?</a>
+    <a href="/coldcard/" class="">What is Coldcard?</a>
   
 
         </li>
@@ -2342,7 +2303,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-88cf9017cf07549621f025a2843cb148" class="toggle"  />
     <label for="section-88cf9017cf07549621f025a2843cb148" class="flex justify-between">
-      <a href="/practice/interact/" class="">Взаимодействие</a>
+      <a href="/practice/interact/" class="">Interact</a>
     </label>
   
 
@@ -2356,7 +2317,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/practice/bitcoin-node/" class="">Каждому следует запустить собственную Биткоин-ноду!</a>
+    <a href="/practice/bitcoin-node/" class="">Why You Should Run Your Own Bitcoin Node</a>
   
 
         </li>
@@ -2369,7 +2330,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/orangepilling-in-5-min/" class="">Оранжпиллинг за 5 минут</a>
+    <a href="/orangepilling-in-5-min/" class="">Orangepilling in 5 min</a>
   
 
         </li>
@@ -2382,7 +2343,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/5-tips-for-teaching-bitcoin/" class="">5 советов по обучению Биткоину</a>
+    <a href="/5-tips-for-teaching-bitcoin/" class="">5 tips for teaching Bitcoin</a>
   
 
         </li>
@@ -2402,7 +2363,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-32dccf00abb46a5281b7aae069126928" class="toggle"  />
     <label for="section-32dccf00abb46a5281b7aae069126928" class="flex justify-between">
-      <a href="/practice-privacy/" class="">Практики приватности</a>
+      <a href="/practice-privacy/" class="">Privacy</a>
     </label>
   
 
@@ -2418,7 +2379,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-ae30dbe7c31a834e8bfe23314d9a5ff6" class="toggle"  />
     <label for="section-ae30dbe7c31a834e8bfe23314d9a5ff6" class="flex justify-between">
-      <a href="/practice-privacy/dojo/" class="">Установка Биткоин-узла Dojo на x86</a>
+      <a href="/practice-privacy/dojo/" class="">Dojo x86 Bitcoin Node Guide</a>
     </label>
   
 
@@ -2432,7 +2393,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/practice-privacy/dojo-0/" class="">Введение</a>
+    <a href="/practice-privacy/dojo-0/" class="">Introduction</a>
   
 
         </li>
@@ -2445,7 +2406,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/practice-privacy/dojo-1/" class="">Установка Bitcoin Core и Tor</a>
+    <a href="/practice-privacy/dojo-1/" class="">Installing Bitcoin Core &amp; Tor</a>
   
 
         </li>
@@ -2458,7 +2419,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/practice-privacy/dojo-2/" class="">Установка индексатора Fulcrum</a>
+    <a href="/practice-privacy/dojo-2/" class="">Installing Fulcrum Indexer</a>
   
 
         </li>
@@ -2471,7 +2432,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/practice-privacy/dojo-3/" class="">Установка блокчейн-обозревателя Mempool</a>
+    <a href="/practice-privacy/dojo-3/" class="">Installing Mempool Explorer</a>
   
 
         </li>
@@ -2484,7 +2445,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/practice-privacy/dojo-4/" class="">Установка Samourai Dojo</a>
+    <a href="/practice-privacy/dojo-4/" class="">Installing Samourai Dojo</a>
   
 
         </li>
@@ -2497,7 +2458,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/practice-privacy/dojo-5/" class="">Конфигурация межсетевого экрана</a>
+    <a href="/practice-privacy/dojo-5/" class="">Firewall Configuration</a>
   
 
         </li>
@@ -2510,7 +2471,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/practice-privacy/dojo-6/" class="">Установка обновлений пакетов</a>
+    <a href="/practice-privacy/dojo-6/" class="">Installing Package Updates</a>
   
 
         </li>
@@ -2528,7 +2489,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/practice-privacy/ronindojo/" class="">Установка RoninDojo на x86</a>
+    <a href="/practice-privacy/ronindojo/" class="">RoninDojo x86 Installation Guide</a>
   
 
         </li>
@@ -2541,7 +2502,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/grapheneos/" class="">GrapheneOS: Избавляемся от слежки Google на смартфоне</a>
+    <a href="/grapheneos/" class="">GrapheneOS: De-Google your phone</a>
   
 
         </li>
@@ -2561,7 +2522,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-9425a98499a6d50bed8efd403e1db980" class="toggle"  />
     <label for="section-9425a98499a6d50bed8efd403e1db980" class="flex justify-between">
-      <a href="/practice/lightning/" class="">Лайтнинг на практике</a>
+      <a href="/practice/lightning/" class="">Lightning</a>
     </label>
   
 
@@ -2575,7 +2536,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/phoenix/" class="">Кошелек Phoenix</a>
+    <a href="/phoenix/" class="">Phoenix: The Non-Custodial Lightning Wallet</a>
   
 
         </li>
@@ -2588,7 +2549,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/lnbits/" class="">LNbits – швейцарский нож среди лайтнинг-приложений</a>
+    <a href="/lnbits/" class="">LNbits: A Swiss knife among Lightning apps</a>
   
 
         </li>
@@ -2601,7 +2562,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/alby-i-nostr/" class="">Alby и Nostr</a>
+    <a href="/alby-and-nostr/" class="">Alby and Nostr</a>
   
 
         </li>
@@ -2614,7 +2575,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/zapplanner/" class="">Подписки с помощью Лайтнинг</a>
+    <a href="/zapplanner/" class="">Recurring Lightning Payments</a>
   
 
         </li>
@@ -2627,7 +2588,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/lntips/" class="">Телеграм-бот @LightningTipBot</a>
+    <a href="/lntips/" class="">Telegram bot @LightningTipBot</a>
   
 
         </li>
@@ -2640,7 +2601,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/ochishchaem-bitcoin-cherez-lajtning/" class="">Очищаем биткоины через сеть Лайтнинг</a>
+    <a href="/lightning-liquidity-management-guide/" class="">Lightning Liquidity Management Guide</a>
   
 
         </li>
@@ -2653,20 +2614,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/likvidnost-v-lajtning/" class="">Руководство по управлению ликвидностью в сети Lightning</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/mutiny/" class="">Кошелек Mutiny</a>
+    <a href="/mutiny/" class="">Starting with Mutiny Wallet</a>
   
 
         </li>
@@ -2691,84 +2639,12 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-d286fdc9558f9b3466aa6f3d4805be77" class="toggle"  />
     <label for="section-d286fdc9558f9b3466aa6f3d4805be77" class="flex justify-between">
-      <a href="/rabbithole/" class="">Кроличья нора</a>
+      <a href="/rabbithole/" class="">Rabbithole</a>
     </label>
   
 
           
   <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/books/" class="">Книги</a>
-  
-
-          
-  <ul>
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/videos/" class="">Видео</a>
-  
-
-          
-  <ul>
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/audiobooks/" class="">Аудиокниги</a>
-  
-
-          
-  <ul>
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/pods/" class="">Подкасты</a>
-  
-
-          
-  <ul>
-    
-  </ul>
-
-        </li>
-      
     
   </ul>
 
@@ -2799,37 +2675,9 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/posts/" class="">Блог</a>
-  
-
-        
-    
-  </li>
-  
-  <li>
-    
-        
-  
-  
-
-  
-    <a href="/calendar/" class="">Биткоин-календарь</a>
-  
-
-        
-    
-  </li>
-  
-  <li>
-    
-        
-  
-  
-
-  
     <input type="checkbox" id="section-9329cf488076ba9f91ca728aef24f607" class="toggle"  />
     <label for="section-9329cf488076ba9f91ca728aef24f607" class="flex justify-between">
-      <a href="/contribute/" class="">Принять участие</a>
+      <a href="/contribute/" class="">Contribute</a>
     </label>
   
 
@@ -2844,33 +2692,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/syntax/" class="">Оформление статей</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/github/" class="">Как добавить статью?</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/obsidian/" class="">Публикация статей через Obsidian</a>
+    <a href="/github/" class="">Adding an Article</a>
   
 
         </li>
@@ -2889,7 +2711,21 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/feedback/" class="">Обратная связь</a>
+    <span>Blog</span>
+  
+
+        
+    
+  </li>
+  
+  <li>
+    
+        
+  
+  
+
+  
+    <a href="/feedback/" class="">Feedback</a>
   
 
         
@@ -2967,7 +2803,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Сравнение аппаратных кошельков</strong>
+  <strong>The best Bitcoin hardware wallets</strong>
 
   <label for="toc-control">
     
@@ -2987,82 +2823,83 @@ https://github.com/alex-shpak/hugo-book
       <ul>
         <li><a href="#trezor-model-one">Trezor Model One</a>
           <ul>
-            <li><a href="#небольшой-и-незаметный">Небольшой и незаметный</a></li>
-            <li><a href="#биткоин-онли-прошивка">Биткоин-онли прошивка</a></li>
-            <li><a href="#обзор-возможностей-программного-обеспечения">Обзор возможностей программного обеспечения</a></li>
+            <li><a href="#small-and-inconspicuous">Small and inconspicuous</a></li>
+            <li><a href="#budget-friendly">Budget-friendly</a></li>
+            <li><a href="#bitcoin-only-firmware-available">Bitcoin-only firmware available</a></li>
+            <li><a href="#software-features-overview">Software features overview</a></li>
           </ul>
         </li>
         <li><a href="#trezor-model-t">Trezor Model T</a>
           <ul>
-            <li><a href="#удобная-навигация-дополняющая-безопасность">Удобная навигация, дополняющая безопасность</a></li>
-            <li><a href="#возможности-восстановления-сида">Возможности восстановления сида</a></li>
-            <li><a href="#шифрование-microsd-pin-кодом">Шифрование microSD PIN-кодом</a></li>
-            <li><a href="#обзор-возможностей-программного-обеспечения-1">Обзор возможностей программного обеспечения</a></li>
+            <li><a href="#easy-navigation-that-complements-security">Easy navigation that complements security</a></li>
+            <li><a href="#seed-recovery-options">Seed recovery options</a></li>
+            <li><a href="#microsd-pin-encryption">microSD PIN encryption</a></li>
+            <li><a href="#software-features-overview-1">Software features overview</a></li>
           </ul>
         </li>
         <li><a href="#ledger-nano-s-plus">Ledger Nano S Plus</a>
           <ul>
-            <li><a href="#компартментализованная-ос">Компартментализованная ОС</a></li>
-            <li><a href="#защитный-элемент">Защитный элемент </a></li>
-            <li><a href="#повышенная-сложность-брут-форса">Повышенная сложность брут-форса</a></li>
-            <li><a href="#обзор-возможностей-программы">Обзор возможностей программы</a></li>
+            <li><a href="#compartmentalized-os">Compartmentalized OS</a></li>
+            <li><a href="#secure-element-on-board">Secure element on board</a></li>
+            <li><a href="#low-threshold-for-brute-force">Low threshold for brute force</a></li>
+            <li><a href="#software-features-overview-2">Software features overview</a></li>
           </ul>
         </li>
         <li><a href="#ledger-nano-x">Ledger Nano X</a>
           <ul>
-            <li><a href="#встроенный-аккумулятор">Встроенный аккумулятор</a></li>
-            <li><a href="#сопряжение-по-bluetooth">Сопряжение по Bluetooth</a></li>
-            <li><a href="#обзор-возможностей-программного-обеспечения-2">Обзор возможностей программного обеспечения</a></li>
+            <li><a href="#internal-battery">Internal battery</a></li>
+            <li><a href="#bluetooth-pairing">Bluetooth pairing</a></li>
+            <li><a href="#software-features-overview-3">Software features overview</a></li>
           </ul>
         </li>
         <li><a href="#coldcard-mk4">Coldcard Mk4</a>
           <ul>
-            <li><a href="#nfc-v">NFC-V</a></li>
-            <li><a href="#усиленная-безопасность-для-прожженных-биткоинеров">Усиленная безопасность для прожженных биткоинеров</a></li>
-            <li><a href="#воздушный-зазор">Воздушный зазор</a></li>
-            <li><a href="#обзор-возможностей-программного-обеспечения-3">Обзор возможностей программного обеспечения</a></li>
+            <li><a href="#nfc-v-near-field-communication-capabilities">NFC-V (near-field communication) capabilities</a></li>
+            <li><a href="#hardened-security-for-the-hardened-bitcoiner">Hardened security for the hardened bitcoiner</a></li>
+            <li><a href="#air-gapped-coldpower">Air-gapped coldpower</a></li>
+            <li><a href="#software-features-overview-4">Software features overview</a></li>
           </ul>
         </li>
         <li><a href="#jade">Jade</a>
           <ul>
-            <li><a href="#возможность-подключения-по-bluetooth">Возможность подключения по Bluetooth</a></li>
-            <li><a href="#камера-для-работы-с-воздушным-зазором">Камера для работы с воздушным зазором</a></li>
-            <li><a href="#pin-код-для-стирания-кошелька">PIN-код для стирания кошелька</a></li>
-            <li><a href="#поддержка-liquid-network">Поддержка Liquid Network</a></li>
-            <li><a href="#обзор-возможностей-программного-обеспечения-4">Обзор возможностей программного обеспечения</a></li>
+            <li><a href="#bluetooth-connectivity">Bluetooth connectivity</a></li>
+            <li><a href="#camera-for-air-gapped-use">Camera for air-gapped use</a></li>
+            <li><a href="#wallet-erase-pin">Wallet-erase PIN</a></li>
+            <li><a href="#liquid-network-support">Liquid Network support</a></li>
+            <li><a href="#software-features-overview-5">Software features overview</a></li>
           </ul>
         </li>
         <li><a href="#bitbox-02">BitBox 02</a>
           <ul>
-            <li><a href="#маскировка-для-улучшения-операционной-безопасности">Маскировка для улучшения операционной безопасности</a></li>
-            <li><a href="#забудьте-о-кабелях">Забудьте о кабелях</a></li>
-            <li><a href="#обзор-возможностей-программного-обеспечения-5">Обзор возможностей программного обеспечения</a></li>
+            <li><a href="#low-key-for-improved-opsec">Low-key for improved opsec</a></li>
+            <li><a href="#no-cables-required">No cables required</a></li>
+            <li><a href="#software-features-overview-6">Software features overview</a></li>
           </ul>
         </li>
-        <li><a href="#keystone-3-pro">Keystone 3 Pro</a>
+        <li><a href="#keystone-pro">Keystone Pro</a>
           <ul>
-            <li><a href="#датчик-отпечатков-пальцев">Датчик отпечатков пальцев</a></li>
-            <li><a href="#пути-деривации-и-форматы-адресов">Пути деривации и форматы адресов</a></li>
-            <li><a href="#самоуничтожение-при-попытке-взлома">Самоуничтожение при попытке взлома</a></li>
-            <li><a href="#обзор-программных-возможностей">Обзор программных возможностей</a></li>
+            <li><a href="#fingerprint-sensor">Fingerprint sensor</a></li>
+            <li><a href="#removable-battery-packs">Removable battery packs</a></li>
+            <li><a href="#self-destruct-on-intrusion">Self-destruct on intrusion</a></li>
+            <li><a href="#software-features-overview-7">Software features overview</a></li>
           </ul>
         </li>
-        <li><a href="#passport-вторая-партия">Passport (вторая партия)</a>
+        <li><a href="#passport-batch-2">Passport (Batch 2)</a>
           <ul>
-            <li><a href="#стандартный-аккумуляторный-блок">Стандартный аккумуляторный блок</a></li>
-            <li><a href="#светодиодные-индикаторы-безопасности-для-проверки-прошивки">Светодиодные индикаторы безопасности для проверки прошивки</a></li>
-            <li><a href="#обзор-возможностей-программного-обеспечения-6">Обзор возможностей программного обеспечения</a></li>
+            <li><a href="#standard-oem-battery-pack">Standard OEM battery pack</a></li>
+            <li><a href="#security-leds-for-firmware-validation">Security LEDs for firmware validation</a></li>
+            <li><a href="#software-features-overview-8">Software features overview</a></li>
           </ul>
         </li>
         <li><a href="#seedsigner">SeedSigner</a>
           <ul>
-            <li><a href="#недорогие-и-широкодоступные-компоненты">Недорогие и широкодоступные компоненты </a></li>
-            <li><a href="#сильное-сообщество-сборщиков">Сильное сообщество сборщиков</a></li>
-            <li><a href="#прокачиваемость">Прокачиваемость</a></li>
-            <li><a href="#обзор-возможностей-программного-обеспечения-7">Обзор возможностей программного обеспечения</a></li>
+            <li><a href="#low-cost-widely-available-parts">Low-cost, widely-available parts</a></li>
+            <li><a href="#a-resilient-community-of-builders">A resilient community of builders</a></li>
+            <li><a href="#customizability">Customizability</a></li>
+            <li><a href="#software-features-overview-9">Software features overview</a></li>
           </ul>
         </li>
-        <li><a href="#кошелек-который-подходит-именно-вам">Кошелек, который подходит именно вам</a></li>
+        <li><a href="#the-wallet-thats-right-for-you">The wallet that’s right for you</a></li>
       </ul>
     </li>
   </ul>
@@ -3087,28 +2924,29 @@ https://github.com/alex-shpak/hugo-book
 
 <h1>
     
-    Сравнение аппаратных кошельков
+    The best Bitcoin hardware wallets
     
 </h1>
 <div class="pageDate">
-    1 марта 2023 г.
+    March 1, 2023
 </div>
 
-  <article class="markdown"><p>Этот обзор познакомит вас с различными аппаратными кошельками и поможет в дальнейшем выборе устройства для холодного хранения монет.</p>
+  <article class="markdown"><p>An overview of the most popular devices, including Trezor, Ledger, Coldcard, and more.</p>
 <blockquote class="book-hint btc">
-  Перевод <a href="https://unchained.com/blog/best-bitcoin-hardware-wallets/">статьи</a> Unchained подготовлен <a href="https://njump.me/npub10awzknjg5r5lajnr53438ndcyjylgqsrnrtq5grs495v42qc6awsj45ys7">Тони⚡️</a>
+  <p>This article by Anil was published in <a href="https://unchained.com/blog/best-bitcoin-hardware-wallets">Unchained blog</a>.</p>
+<p><a href="/contribute/">Contribute</a>.</p>
+
 </blockquote>
 
-<p>Как уже не раз показывала история, нет ничего важнее, чем взять на себя ответственность за хранение своих биткоинов и избавиться от рисков контрагента.</p>
+<p>As the events of 2022 have illustrated, nothing is more important than taking self-custody of your bitcoin and removing counterparty risk.</p>
 <blockquote>
-<p>&ldquo;Ваши ключи - ваши биткоины. Не ваши ключи - не ваши биткоины&rdquo;.</p>
-<p>- Андреас Антонопулос </p>
+<p><em>“Your keys, your bitcoin. Not your keys, not your bitcoin.”</em></p>
+<p>— Andreas Antonopoulos</p>
 </blockquote>
-<p>Когда вы доверяете свои биткоины третьей стороне (например, бирже), ваши сбережения оказываются в ее власти. Это может повлечь за собой множество рисков и неудобств - от незапланированных сбоев и планового обслуживания до закрытия аккаунта. Наиболее болезненным исходом, безусловно, является полная потеря средств в случае банкротства или взлома.</p>
-<p>К счастью, самый сбалансированный по шкале “простота использования / безопасность” подход к обеспечению безопасности своих монет обойдется вам менее чем в 100 долларов. Настройка и дальнейшее использование этого оборудования также не потребует много времени и усилий. Этот обзор познакомит вас с различными аппаратными кошельками и поможет в дальнейшем выборе устройства для холодного хранения монет.</p>
-<p>Все кошельки, представленные в этом списке, совместимы со многими программными инструментами сторонних производителей. Эти приложения имеют самые разные наборы функций, например, поддержку подключения к собственному узлу, управление монетами, повышение комиссии (RBF) или поддержку Tor. Данная статья посвящена особенностям самих устройств.</p>
+<p>When you entrust your bitcoin to a third party (e.g., an exchange), you are at their mercy when it comes to accessing your wealth. This can entail many risks and inconveniences, from unplanned outages and scheduled maintenance to account closures. The most painful possible outcome by far is a complete loss of your bitcoin in the event of a bankruptcy or hack.</p>
+<p>Fortunately, such an outcome can be avoided for less than $100 and with a few simple steps. This high-level overview will equip you with the information needed to pick the best hardware wallet (or wallets) for you.</p>
 <blockquote class="book-hint info">
-  Описанные в этой статье кошельки (и многое другое) вы можете приобрести у наших партнеров Sunscrypt со скидкой в 5% по специальному промо-коду <code>21i</code>. Таким образом вы сможете не только сэкономить немного сат, но и поддержать проект 21ideas. Ссылка на магазин: <a href="https://sunscrypt.ru">https://sunscrypt.ru</a>.
+  <strong>Note:</strong> The wallets in this list are all compatible with many third-party wallet software tools. These applications have widely varying feature sets, such as support for connecting to your own node, coin control, replace-by-fee (RBF), or Tor. This article focuses on the specific features of the devices themselves.
 </blockquote>
 
 <h2 id="trezor-model-one">
@@ -3119,106 +2957,110 @@ https://github.com/alex-shpak/hugo-book
     <img src="/img/hwws/trezor-one.png">
 </div>
 <table>
-  <thead>
-      <tr>
-          <th style="text-align: left"><strong>Производитель</strong></th>
-          <th style="text-align: left"><strong>Год выпуска</strong></th>
-          <th style="text-align: left"><strong>Цена</strong></th>
-          <th style="text-align: left"><strong>Подходит для</strong></th>
-          <th style="text-align: left"><strong>Нативное приложение</strong></th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td style="text-align: left">SatoshiLabs</td>
-          <td style="text-align: left">2014</td>
-          <td style="text-align: left"><a href="https://sunscrypt.ru/catalog/trezor/trezor-one/">₽11,400</a></td>
-          <td style="text-align: left">Начинающих</td>
-          <td style="text-align: left"><a href="https://trezor.io/trezor-suite">Trezor Suite</a></td>
-      </tr>
-  </tbody>
+<thead>
+<tr>
+<th><strong>Manufacturer</strong></th>
+<th><strong>Released</strong></th>
+<th><strong>MSRP</strong></th>
+<th><strong>Suitable for</strong></th>
+<th><strong>Native app</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SatoshiLabs</td>
+<td>2014</td>
+<td>U.S. $69</td>
+<td>Beginners</td>
+<td><a href="https://trezor.io/trezor-suite">Trezor Suite</a></td>
+</tr>
+</tbody>
 </table>
 <hr>
 <table>
-  <thead>
-      <tr>
-          <th style="text-align: left"><strong>Разъем</strong></th>
-          <th style="text-align: left"><strong>microSD</strong></th>
-          <th style="text-align: left"><strong>Камера</strong></th>
-          <th style="text-align: left"><strong>SE</strong></th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td style="text-align: left">microUSB</td>
-          <td style="text-align: left">-</td>
-          <td style="text-align: left">-</td>
-          <td style="text-align: left">-</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><strong>Аккумулятор</strong></td>
-          <td style="text-align: left"><strong>Bluetooth</strong></td>
-          <td style="text-align: left"><strong>NFC</strong></td>
-          <td style="text-align: left"><strong>Открытый код</strong></td>
-      </tr>
-      <tr>
-          <td style="text-align: left">-</td>
-          <td style="text-align: left">-</td>
-          <td style="text-align: left">-</td>
-          <td style="text-align: left">✅*</td>
-      </tr>
-  </tbody>
+<thead>
+<tr>
+<th><strong>Connector</strong></th>
+<th><strong>microSD</strong></th>
+<th><strong>Camera</strong></th>
+<th><strong>Secure element</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>microUSB</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>Battery</strong></td>
+<td><strong>Bluetooth</strong></td>
+<td><strong>NFC</strong></td>
+<td><strong>Open source</strong></td>
+</tr>
+<tr>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>✅*</td>
+</tr>
+</tbody>
 </table>
-<p><em>Trezor Model One</em> был первым потребительским аппаратным кошельком, рассчитанным на широкие массы. За девять лет производства устройство выдержало испытание временем и завоевало любовь многих биткоинеров.</p>
-<p>В целом, это легкий, недорогой и совместимый с широким спектром программных интерфейсов кошелек. Это простое и понятное устройство для новичков, которые, возможно, еще не освоили более сложные функции, такие как подписание с воздушным зазором (air-gapped signing).</p>
-<h3 id="небольшой-и-незаметный">
-  Небольшой и незаметный
-  <a class="anchor" href="#%d0%bd%d0%b5%d0%b1%d0%be%d0%bb%d1%8c%d1%88%d0%be%d0%b9-%d0%b8-%d0%bd%d0%b5%d0%b7%d0%b0%d0%bc%d0%b5%d1%82%d0%bd%d1%8b%d0%b9">#</a>
+<p>The Trezor <em>Model One</em> was the first consumer hardware wallet designed for the masses. Approaching nine years of production, the device has stood the test of time and earned its place among bitcoiners.</p>
+<p>Overall, it’s lightweight, low-cost, and compatible with a wide range of wallet software interfaces. It’s a simple and straightforward entry point for beginners who may not yet be comfortable with more advanced features such as air-gapped signing.</p>
+<h3 id="small-and-inconspicuous">
+  Small and inconspicuous
+  <a class="anchor" href="#small-and-inconspicuous">#</a>
 </h3>
-<p>По размерам <em>Model One</em> сопоставима со стандартным USB-накопителем и легко помещается на ладони. При весе всего 12 г трудно найти более легкий вариант. </p>
-<p>Если вам не нужны все самые современные функции и вы можете обойтись без некоторых удобств (например, сенсорного экрана), то это устройство вполне подойдет. Являясь одним из самых недорогих устройств на рынке, оно идеально подходит для рядовых пользователей с базовыми потребностями.</p>
-<h3 id="биткоин-онли-прошивка">
-  Биткоин-онли прошивка
-  <a class="anchor" href="#%d0%b1%d0%b8%d1%82%d0%ba%d0%be%d0%b8%d0%bd-%d0%be%d0%bd%d0%bb%d0%b8-%d0%bf%d1%80%d0%be%d1%88%d0%b8%d0%b2%d0%ba%d0%b0">#</a>
+<p>Comparable to the size of a standard USB stick, the <em>Model One</em> easily fits in the palm of your hand. At just 12 grams, you’ll be hard-pressed to find a lighter option. Although <a href="https://unchained.com/blog/7-tips-traveling-bitcoin/">traveling with a hardware wallet</a> on your person comes with risks, if you absolutely must, this may be a more portable and inconspicuous choice.</p>
+<h3 id="budget-friendly">
+  Budget-friendly
+  <a class="anchor" href="#budget-friendly">#</a>
 </h3>
-<p>Хотя <em>Model One</em> поддерживает множество токенов (а <em>Model T</em> - еще больше), SatoshiLabs предлагает <a href="https://trezor.io/learn/a/bitcoin-only-firmware-on-trezor">прошивку</a> с поддержкой исключительно биткоина, в которой удалены все неосновные приложения, включая поддержку альткоинов, <a href="https://ru.wikipedia.org/wiki/%D0%A3%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D0%B4%D0%B2%D1%83%D1%85%D1%84%D0%B0%D0%BA%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F_%D0%B0%D1%83%D1%82%D0%B5%D0%BD%D1%82%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%86%D0%B8%D1%8F">U2F</a> и Trezor Password Manager.</p>
-<h3 id="обзор-возможностей-программного-обеспечения">
-  Обзор возможностей программного обеспечения
-  <a class="anchor" href="#%d0%be%d0%b1%d0%b7%d0%be%d1%80-%d0%b2%d0%be%d0%b7%d0%bc%d0%be%d0%b6%d0%bd%d0%be%d1%81%d1%82%d0%b5%d0%b9-%d0%bf%d1%80%d0%be%d0%b3%d1%80%d0%b0%d0%bc%d0%bc%d0%bd%d0%be%d0%b3%d0%be-%d0%be%d0%b1%d0%b5%d1%81%d0%bf%d0%b5%d1%87%d0%b5%d0%bd%d0%b8%d1%8f">#</a>
+<p>If you do not require every advanced feature and can manage without certain design comforts (i.e., a touch screen), this device fits the bill. As one of the lowest-cost devices on the market, it’s ideal for the casual user with basic needs.</p>
+<h3 id="bitcoin-only-firmware-available">
+  Bitcoin-only firmware available
+  <a class="anchor" href="#bitcoin-only-firmware-available">#</a>
+</h3>
+<p>While <em>Model One</em> supports multiple tokens (and <em>Model T</em> supports even more), SatoshiLabs offers <a href="https://trezor.io/learn/a/bitcoin-only-firmware-on-trezor">bitcoin-only firmware</a>, which strips out all non-essential applications, including altcoin support, U2F, and Trezor Password Manager.</p>
+<h3 id="software-features-overview">
+  Software features overview
+  <a class="anchor" href="#software-features-overview">#</a>
 </h3>
 <table>
-  <thead>
-      <tr>
-          <th style="text-align: left"><strong>Только биткоин</strong></th>
-          <th style="text-align: left"><strong>PIN</strong></th>
-          <th style="text-align: left"><strong>Двойной PIN</strong></th>
-          <th style="text-align: left"><strong>Самоуничтожение</strong></th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td style="text-align: left">✅†</td>
-          <td style="text-align: left">✅</td>
-          <td style="text-align: left">-</td>
-          <td style="text-align: left">✅</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><strong>U2F</strong></td>
-          <td style="text-align: left"><strong>Воздушный зазор</strong></td>
-          <td style="text-align: left"><strong>DIY-энтропия</strong></td>
-          <td style="text-align: left"><strong>Сторонние кошельки</strong></td>
-      </tr>
-      <tr>
-          <td style="text-align: left">✅</td>
-          <td style="text-align: left">-</td>
-          <td style="text-align: left">-</td>
-          <td style="text-align: left">-</td>
-      </tr>
-  </tbody>
+<thead>
+<tr>
+<th><strong>BTC-only</strong></th>
+<th><strong>PIN</strong></th>
+<th><strong>Decoy PIN</strong></th>
+<th><strong>Wipe PIN</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>✅†</td>
+<td>✅</td>
+<td>-</td>
+<td>✅</td>
+</tr>
+<tr>
+<td><strong>U2F</strong></td>
+<td><strong>Air-gap</strong></td>
+<td><strong>DIY entropy</strong></td>
+<td><strong>Third-party wallets</strong></td>
+</tr>
+<tr>
+<td>✅</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
 </table>
 <blockquote class="book-hint info">
-  <p>* Аппаратное и микропрограммное обеспечение устройств Trezor имеет открытый исходный код</p>
-<p>† Прошивка, предназначенная только для биткоина, не установлена по умолчанию</p>
+  <p>* The <a href="https://github.com/trezor/trezor-hardware">hardware</a> and <a href="https://github.com/trezor/trezor-firmware">firmware</a> for Trezor devices are open source.</p>
+<p>† Bitcoin-only firmware not installed by default.</p>
 
 </blockquote>
 
@@ -3230,116 +3072,111 @@ https://github.com/alex-shpak/hugo-book
     <img src="/img/hwws/trezor-t.png">
 </div>
 <table>
-  <thead>
-      <tr>
-          <th style="text-align: left"><strong>Производитель</strong></th>
-          <th style="text-align: left"><strong>Год выпуска</strong></th>
-          <th style="text-align: left"><strong>Цена</strong></th>
-          <th style="text-align: left"><strong>Подходит для</strong></th>
-          <th style="text-align: left"><strong>Нативное приложение</strong></th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td style="text-align: left">SatoshiLabs</td>
-          <td style="text-align: left">2018</td>
-          <td style="text-align: left"><a href="https://sunscrypt.ru/catalog/trezor/trezor-model-t/">₽28,500</a></td>
-          <td style="text-align: left">Начинающих</td>
-          <td style="text-align: left"><a href="https://trezor.io/trezor-suite">Trezor Suite</a></td>
-      </tr>
-  </tbody>
+<thead>
+<tr>
+<th><strong>Manufacturer</strong></th>
+<th><strong>Released</strong></th>
+<th><strong>MSRP</strong></th>
+<th><strong>Suitable for</strong></th>
+<th><strong>Native app</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SatoshiLabs</td>
+<td>2018</td>
+<td>U.S. $219</td>
+<td>Beginners</td>
+<td><a href="https://trezor.io/trezor-suite">Trezor Suite</a></td>
+</tr>
+</tbody>
 </table>
 <hr>
 <table>
-  <thead>
-      <tr>
-          <th style="text-align: left"><strong>Разъем</strong></th>
-          <th style="text-align: left"><strong>microSD</strong></th>
-          <th style="text-align: left"><strong>Камера</strong></th>
-          <th style="text-align: left"><strong>SE</strong></th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td style="text-align: left">USB-C</td>
-          <td style="text-align: left">✅</td>
-          <td style="text-align: left">-</td>
-          <td style="text-align: left">-</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><strong>Аккумулятор</strong></td>
-          <td style="text-align: left"><strong>Bluetooth</strong></td>
-          <td style="text-align: left"><strong>NFC</strong></td>
-          <td style="text-align: left"><strong>Открытый код</strong></td>
-      </tr>
-      <tr>
-          <td style="text-align: left">-</td>
-          <td style="text-align: left">-</td>
-          <td style="text-align: left">-</td>
-          <td style="text-align: left">✅*</td>
-      </tr>
-  </tbody>
+<thead>
+<tr>
+<th><strong>Connector</strong></th>
+<th><strong>microSD</strong></th>
+<th><strong>Camera</strong></th>
+<th><strong>Secure element</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>USB-C</td>
+<td>✅</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>Battery</strong></td>
+<td><strong>Bluetooth</strong></td>
+<td><strong>NFC</strong></td>
+<td><strong>Open source</strong></td>
+</tr>
+<tr>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>✅*</td>
+</tr>
+</tbody>
 </table>
-<p><em>Model T</em> обзавелась рядом улучшений по сравнению с <em>Model One</em>: на смену кнопкам пришел сенсорный экран, а порт microUSB был заменен на более распространенный USB-C. В <em>Trezor Model T</em> также добавлен слот microSD, но он не может использоваться для подписания с воздушным зазором через <a href="https://river.com/learn/what-are-partially-signed-bitcoin-transactions-psbts/">PSBT</a> (частично подписанные биткоин-транзакции).</p>
-<h3 id="удобная-навигация-дополняющая-безопасность">
-  Удобная навигация, дополняющая безопасность
-  <a class="anchor" href="#%d1%83%d0%b4%d0%be%d0%b1%d0%bd%d0%b0%d1%8f-%d0%bd%d0%b0%d0%b2%d0%b8%d0%b3%d0%b0%d1%86%d0%b8%d1%8f-%d0%b4%d0%be%d0%bf%d0%be%d0%bb%d0%bd%d1%8f%d1%8e%d1%89%d0%b0%d1%8f-%d0%b1%d0%b5%d0%b7%d0%be%d0%bf%d0%b0%d1%81%d0%bd%d0%be%d1%81%d1%82%d1%8c">#</a>
+<p>Boasting several quality-of-life improvements over the Model One, the Model T replaces clickable buttons with a touch screen and ditches the microUSB port in favor of the now more widely-used USB-C. The Trezor Model T also adds a microSD slot, but it cannot be used for air-gapped signing via PSBTs.</p>
+<h3 id="easy-navigation-that-complements-security">
+  Easy navigation that complements security
+  <a class="anchor" href="#easy-navigation-that-complements-security">#</a>
 </h3>
-<p>Взаимодействие с <em>Model T</em> осуществляется с помощью 1.54-дюймового сенсорного ЖК-дисплея. Преимуществом является то, что при восстановлении или доступе к кошельку все конфиденциальные данные можно вводить непосредственно на устройстве: PIN-код, парольную фразу и сид для восстановления. Вводить приватные данные стало заметно проще.</p>
-<h3 id="возможности-восстановления-сида">
-  Возможности восстановления сида
-  <a class="anchor" href="#%d0%b2%d0%be%d0%b7%d0%bc%d0%be%d0%b6%d0%bd%d0%be%d1%81%d1%82%d0%b8-%d0%b2%d0%be%d1%81%d1%81%d1%82%d0%b0%d0%bd%d0%be%d0%b2%d0%bb%d0%b5%d0%bd%d0%b8%d1%8f-%d1%81%d0%b8%d0%b4%d0%b0">#</a>
+<p>You’ll interact with the Model T via its 1.54” LCD touchscreen. The benefit is that, when restoring or accessing a wallet, all sensitive data can be entered directly on the device: PIN, passphrase, and recovery seed. And entering that sensitive data is noticeably easier.</p>
+<h3 id="seed-recovery-options">
+  Seed recovery options
+  <a class="anchor" href="#seed-recovery-options">#</a>
 </h3>
-<p>Будучи одним из немногих устройств на рынке, поддерживающих резервное копирование по схеме Шамира (подробнее об этом подходе - ниже), <em>Model T</em> позволяет генерировать сид-фразу, которая затем может быть разбита на несколько уникальных частей (так называемых &ldquo;шардов&rdquo;), причем пользователь сам определяет, сколько из них потребуется для восстановления кошелька.</p>
-<h3 id="шифрование-microsd-pin-кодом">
-  Шифрование microSD PIN-кодом
-  <a class="anchor" href="#%d1%88%d0%b8%d1%84%d1%80%d0%be%d0%b2%d0%b0%d0%bd%d0%b8%d0%b5-microsd-pin-%d0%ba%d0%be%d0%b4%d0%be%d0%bc">#</a>
+<p>As one of the few devices on the market that currently supports <a href="https://trezor.io/learn/a/what-is-shamir-backup">Shamir backups</a>, the <em>Model T</em> enables users to generate a seed phrase which can then be split into several unique pieces (called “shares”), with the user specifying how many are required to recover the wallet.</p>
+<h3 id="microsd-pin-encryption">
+  microSD PIN encryption
+  <a class="anchor" href="#microsd-pin-encryption">#</a>
 </h3>
-<p>Хотя слот для карт microSD в <em>Model T</em> не может использоваться для подписания PSBT, он может быть использован для повышения уровня безопасности. Эта функция позволяет зашифровать PIN-код устройства, при этом для расшифровки данных и использования устройства требуется вставить карту microSD.</p>
-<h3 id="обзор-возможностей-программного-обеспечения-1">
-  Обзор возможностей программного обеспечения
-  <a class="anchor" href="#%d0%be%d0%b1%d0%b7%d0%be%d1%80-%d0%b2%d0%be%d0%b7%d0%bc%d0%be%d0%b6%d0%bd%d0%be%d1%81%d1%82%d0%b5%d0%b9-%d0%bf%d1%80%d0%be%d0%b3%d1%80%d0%b0%d0%bc%d0%bc%d0%bd%d0%be%d0%b3%d0%be-%d0%be%d0%b1%d0%b5%d1%81%d0%bf%d0%b5%d1%87%d0%b5%d0%bd%d0%b8%d1%8f-1">#</a>
+<p>While the microSD card slot on the Model T can’t be used for signing PSBTs, it <em>can</em> be used to enhance your security. This feature allows you to <a href="https://trezor.io/learn/a/encrypt-pin-with-microsd-card">encrypt your device PIN</a>, requiring the microSD card to be inserted to decrypt your data and use the device.</p>
+<h3 id="software-features-overview-1">
+  Software features overview
+  <a class="anchor" href="#software-features-overview-1">#</a>
 </h3>
 <table>
-  <thead>
-      <tr>
-          <th style="text-align: left"><strong>Только биткоин</strong></th>
-          <th style="text-align: left"><strong>PIN</strong></th>
-          <th style="text-align: left"><strong>Двойной PIN</strong></th>
-          <th style="text-align: left"><strong>Самоуничтожение</strong></th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td style="text-align: left">✅†</td>
-          <td style="text-align: left">✅</td>
-          <td style="text-align: left">-</td>
-          <td style="text-align: left">✅</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><strong>U2F</strong></td>
-          <td style="text-align: left"><strong>Воздушный зазор</strong></td>
-          <td style="text-align: left"><strong>DIY-энтропия</strong></td>
-          <td style="text-align: left"><strong>Сторонние кошельки</strong></td>
-      </tr>
-      <tr>
-          <td style="text-align: left">✅ ‡</td>
-          <td style="text-align: left">-</td>
-          <td style="text-align: left">-</td>
-          <td style="text-align: left">-</td>
-      </tr>
-  </tbody>
+<thead>
+<tr>
+<th><strong>BTC-only</strong></th>
+<th><strong>PIN</strong></th>
+<th><strong>Decoy PIN</strong></th>
+<th><strong>Wipe PIN</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>✅†</td>
+<td>✅</td>
+<td>-</td>
+<td>✅</td>
+</tr>
+<tr>
+<td><strong>U2F</strong></td>
+<td><strong>Air-gap</strong></td>
+<td><strong>DIY entropy</strong></td>
+<td><strong>Third-party wallets</strong></td>
+</tr>
+<tr>
+<td>✅ ‡</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
 </table>
 <blockquote class="book-hint info">
-  <p>* Исходный код аппаратного и программного обеспечения устройств Trezor  открыт.</p>
-<p>† Прошивка, предназначенная только для биткоина, не устанавливается по умолчанию</p>
-<p>‡ В отличие от Model One, Model T поддерживает FIDO2 для беспарольной аутентификации.</p>
+  <p>* The <a href="https://github.com/trezor/trezor-hardware">hardware</a> and <a href="https://github.com/trezor/trezor-firmware">firmware</a> for Trezor devices are open source.</p>
+<p>† Bitcoin-only firmware not installed by default.</p>
+<p>‡ Unlike Model One, Model T <a href="https://trezor.io/learn/a/what-is-fido2">supports FIDO2 for passwordless authentication</a>.</p>
 
-</blockquote>
-
-<hr>
-<blockquote class="book-hint danger">
-  Прежде, чем перейти к описанию устройств <em>Ledger</em>, хочу обратить ваше внимание на то, что в 2023 году Ledger анонсировали спроное нововведение, где ваш сид хранится не только на вашем холодном кошельке (для удобства новичков). В связи с этим рекомендовать эти устройства к использованию - не лучшая затея. Аппаратные кошельки <em>Ledger</em> все еще лучше обезопасят ваши монеты, чем обыкновенный программный кошелек и могут использоваться для небольших сумм или в схемах мультисиг (подробнее о них в <a href="/bezopasnost-seed-fraz/#%d0%bc%d1%83%d0%bb%d1%8c%d1%82%d0%b8%d1%81%d0%b8%d0%b3">этой статье</a>). Тем не менее, обеспечивать безопасность большого количества биткоинов одним устройством <em>Ledger</em> не рекомендуется. Подробнее о том, почему перед покупкой Ledger стоит подумать дважды, можно узнать в <a href="https://youtu.be/ACP9wfxHqUQ?si=Aby_wcaM52e9oHMf">этом видео</a> от Sunscrypt.
 </blockquote>
 
 <h2 id="ledger-nano-s-plus">
@@ -3350,113 +3187,110 @@ https://github.com/alex-shpak/hugo-book
     <img src="/img/hwws/nano-s-plus.png">
 </div>
 <table>
-  <thead>
-      <tr>
-          <th style="text-align: left"><strong>Производитель</strong></th>
-          <th style="text-align: left"><strong>Год выпуска</strong></th>
-          <th style="text-align: left"><strong>Цена</strong></th>
-          <th style="text-align: left"><strong>Подходит для</strong></th>
-          <th style="text-align: left"><strong>Нативное приложение</strong></th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td style="text-align: left">Ledger</td>
-          <td style="text-align: left">2022</td>
-          <td style="text-align: left"><a href="https://sunscrypt.ru/catalog/ledger-nano-s-plus/">₽11,400</a></td>
-          <td style="text-align: left">Начинающих</td>
-          <td style="text-align: left"><a href="https://www.ledger.com/ledger-live">Ledger Live</a></td>
-      </tr>
-  </tbody>
+<thead>
+<tr>
+<th><strong>Manufacturer</strong></th>
+<th><strong>Released</strong></th>
+<th><strong>MSRP</strong></th>
+<th><strong>Suitable for</strong></th>
+<th><strong>Native app</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ledger</td>
+<td>2022</td>
+<td>U.S. $79</td>
+<td>Beginners</td>
+<td><a href="https://www.ledger.com/ledger-live">Ledger Live</a></td>
+</tr>
+</tbody>
 </table>
 <hr>
 <table>
-  <thead>
-      <tr>
-          <th style="text-align: left"><strong>Разъем</strong></th>
-          <th style="text-align: left"><strong>microSD</strong></th>
-          <th style="text-align: left"><strong>Камера</strong></th>
-          <th style="text-align: left"><strong>SE</strong></th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td style="text-align: left">USB-C</td>
-          <td style="text-align: left">-</td>
-          <td style="text-align: left">-</td>
-          <td style="text-align: left">✅</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><strong>Аккумулятор</strong></td>
-          <td style="text-align: left"><strong>Bluetooth</strong></td>
-          <td style="text-align: left"><strong>NFC</strong></td>
-          <td style="text-align: left"><strong>Открытый код</strong></td>
-      </tr>
-      <tr>
-          <td style="text-align: left">-</td>
-          <td style="text-align: left">-</td>
-          <td style="text-align: left">-</td>
-          <td style="text-align: left">-</td>
-      </tr>
-  </tbody>
+<thead>
+<tr>
+<th><strong>Connector</strong></th>
+<th><strong>microSD</strong></th>
+<th><strong>Camera</strong></th>
+<th><strong>Secure element</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>USB-C</td>
+<td>-</td>
+<td>-</td>
+<td>✅</td>
+</tr>
+<tr>
+<td><strong>Battery</strong></td>
+<td><strong>Bluetooth</strong></td>
+<td><strong>NFC</strong></td>
+<td><strong>Open source</strong></td>
+</tr>
+<tr>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
 </table>
-<blockquote class="book-hint info">
-  <em>Nano S Plus</em> - это начальная модель Ledger, сопоставимая с моделью <em>Trezor Model One</em>. Это модернизация оригинальной модели Nano S (выпущенной в 2016 г., сейчас снятой с производства), отличающаяся бóльшим экраном, увеличенным объемом памяти (1.5 МБ против 320 КБ) и разъемом USB-C вместо microUSB.
-</blockquote>
-
-<h3 id="компартментализованная-ос">
-  Компартментализованная ОС
-  <a class="anchor" href="#%d0%ba%d0%be%d0%bc%d0%bf%d0%b0%d1%80%d1%82%d0%bc%d0%b5%d0%bd%d1%82%d0%b0%d0%bb%d0%b8%d0%b7%d0%be%d0%b2%d0%b0%d0%bd%d0%bd%d0%b0%d1%8f-%d0%be%d1%81">#</a>
+<p>The <em>Nano S Plus</em> is Ledger’s entry model comparable to Trezor’s <em>Model One</em>. It’s a revamp of the original <em>Nano S</em> (released in 2016, since discontinued), boasting a larger screen, increased internal storage (1.5MB vs. 320KB), and USB-C in place of microUSB.</p>
+<h3 id="compartmentalized-os">
+  Compartmentalized OS
+  <a class="anchor" href="#compartmentalized-os">#</a>
 </h3>
-<p>Большинство аппаратных кошельков работают на базе единой прошивки; <em>Ledger</em> использует другой подход, выбрав собственную операционную систему <a href="https://www.ledger.com/academy/security/our-custom-operating-system-bolos">BOLOS</a>. Это объясняется тем, что кошелек с поддержкой множества щиткоинов должен разделять риски, позволяя пользователям устанавливать изолированные приложения, которые не cмогут взаимодействовать друг с другом. </p>
-<p>Это важный момент для биткоинеров, которые, как правило, не радуются тому факту, что кошелек не позволяет отделить биткоины от тысяч доступных токенов.</p>
-<h3 id="защитный-элемент">
-  Защитный элемент 
-  <a class="anchor" href="#%d0%b7%d0%b0%d1%89%d0%b8%d1%82%d0%bd%d1%8b%d0%b9-%d1%8d%d0%bb%d0%b5%d0%bc%d0%b5%d0%bd%d1%82">#</a>
+<p>Most hardware wallets operate using a single firmware application. Ledger takes a different approach, opting for a custom operating system called <a href="https://www.ledger.com/academy/security/our-custom-operating-system-bolos"><em>BOLOS</em></a>. The rationale is that a multi-token wallet must compartmentalize risk by allowing users to install isolated apps that cannot interact with one another. </p>
+<p>This is an important consideration for bitcoiners who may not accept the attack surface created by offering thousands of tokens without the option to disable such functionality.</p>
+<h3 id="secure-element-on-board">
+  Secure element on board
+  <a class="anchor" href="#secure-element-on-board">#</a>
 </h3>
-<p>Одним из важнейших различий между <em>Trezor</em> и <em>Ledger</em> является тот факт, что <em>Ledger</em> использует безопасный элемент (SE) и, более того, его   исходный код закрыт. Устройство с защитным элементом требует несколько большего доверия, хотя SE обеспечивают защиту от стресс-атак, сайдчейн-атак и других менее распространенных атак.</p>
-<h3 id="повышенная-сложность-брут-форса">
-  Повышенная сложность брут-форса
-  <a class="anchor" href="#%d0%bf%d0%be%d0%b2%d1%8b%d1%88%d0%b5%d0%bd%d0%bd%d0%b0%d1%8f-%d1%81%d0%bb%d0%be%d0%b6%d0%bd%d0%be%d1%81%d1%82%d1%8c-%d0%b1%d1%80%d1%83%d1%82-%d1%84%d0%be%d1%80%d1%81%d0%b0">#</a>
+<p>One of the critical distinctions between Trezor and Ledger is the trade-off around secure elements and the closed-source nature of the one used in Ledger’s devices. A device with a secure element requires slightly more trust, but secure elements offer protection against fault attacks, side-channel attacks, and other less common attacks.</p>
+<h3 id="low-threshold-for-brute-force">
+  Low threshold for brute force
+  <a class="anchor" href="#low-threshold-for-brute-force">#</a>
 </h3>
-<p>Большинство аппаратных кошельков после нескольких последовательных попыток ввода неправильного PIN-кода автоматически запускают ту или иную процедуру защиты (сброс до заводских настроек или превращение устройства в &ldquo;кирпич&rdquo;). Устройства Ledger возвращаются к заводским настройкам всего после трех неудачных попыток ввода PIN-кода (по сравнению с 16 попытками для устройств Trezor). Это означает, что нужно быть осторожным и не совершать необдуманных попыток, если вы забыли PIN-код. С одной стороны, злоумышленнику будет очень сложно подобрать пин, с другой же, он быстро получит на руки стертое устройство.</p>
-<h3 id="обзор-возможностей-программы">
-  Обзор возможностей программы
-  <a class="anchor" href="#%d0%be%d0%b1%d0%b7%d0%be%d1%80-%d0%b2%d0%be%d0%b7%d0%bc%d0%be%d0%b6%d0%bd%d0%be%d1%81%d1%82%d0%b5%d0%b9-%d0%bf%d1%80%d0%be%d0%b3%d1%80%d0%b0%d0%bc%d0%bc%d1%8b">#</a>
+<p>Most hardware wallets will automatically trigger some form of security procedure (reset or self-destruct) after several sequential incorrect PIN attempts. Ledger devices will return to a factory reset state after just three failed PIN entries (compared to 16 for Trezor devices). On the one hand, you must be careful not to carelessly make attempts if you forget your PIN. Conversely, an attacker would have a wiped device on their hands in short order.</p>
+<h3 id="software-features-overview-2">
+  Software features overview
+  <a class="anchor" href="#software-features-overview-2">#</a>
 </h3>
 <table>
-  <thead>
-      <tr>
-          <th style="text-align: left"><strong>Только биткоин</strong></th>
-          <th style="text-align: left"><strong>PIN</strong></th>
-          <th style="text-align: left"><strong>Двойной PIN</strong></th>
-          <th style="text-align: left"><strong>Самоуничтожение</strong></th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td style="text-align: left">-</td>
-          <td style="text-align: left">✅</td>
-          <td style="text-align: left">✅*</td>
-          <td style="text-align: left">✅†</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><strong>U2F</strong></td>
-          <td style="text-align: left"><strong>Воздушный зазор</strong></td>
-          <td style="text-align: left"><strong>DIY-энтропия</strong></td>
-          <td style="text-align: left"><strong>Сторонние кошельки</strong></td>
-      </tr>
-      <tr>
-          <td style="text-align: left">✅</td>
-          <td style="text-align: left">-</td>
-          <td style="text-align: left">-</td>
-          <td style="text-align: left">✅</td>
-      </tr>
-  </tbody>
+<thead>
+<tr>
+<th><strong>BTC-only</strong></th>
+<th><strong>PIN</strong></th>
+<th><strong>Decoy PIN</strong></th>
+<th><strong>Wipe PIN</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-</td>
+<td>✅</td>
+<td>✅*</td>
+<td>✅†</td>
+</tr>
+<tr>
+<td><strong>U2F</strong></td>
+<td><strong>Air-gap</strong></td>
+<td><strong>DIY entropy</strong></td>
+<td><strong>Third-party wallets</strong></td>
+</tr>
+<tr>
+<td>✅</td>
+<td>-</td>
+<td>-</td>
+<td>✅</td>
+</tr>
+</tbody>
 </table>
 <blockquote class="book-hint info">
-  <p>* Ledger позволяет дополнительно обезопасить кошелек, защищенный парольной фразой, PIN-кодом</p>
-<p>† При трехкратном вводе неверного PIN-кода устройство стирается до заводских настроек</p>
+  <p>* Ledger lets you can attach a PIN code to a passphrase-protected wallet.</p>
+<p>† You can enter an incorrect PIN three times to wipe the device.</p>
 
 </blockquote>
 
@@ -3468,105 +3302,105 @@ https://github.com/alex-shpak/hugo-book
     <img src="/img/hwws/nano-x.png">
 </div>
 <table>
-  <thead>
-      <tr>
-          <th style="text-align: left"><strong>Производитель</strong></th>
-          <th style="text-align: left"><strong>Год выпуска</strong></th>
-          <th style="text-align: left"><strong>Цена</strong></th>
-          <th style="text-align: left"><strong>Подходит для</strong></th>
-          <th style="text-align: left"><strong>Нативное приложение</strong></th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td style="text-align: left">Ledger</td>
-          <td style="text-align: left">2019</td>
-          <td style="text-align: left"><a href="https://sunscrypt.ru/catalog/ledger-nano-x/">₽18,050</a></td>
-          <td style="text-align: left">начинающих</td>
-          <td style="text-align: left"><a href="https://www.ledger.com/ledger-live">Ledger Live</a></td>
-      </tr>
-  </tbody>
+<thead>
+<tr>
+<th><strong>Manufacturer</strong></th>
+<th><strong>Released</strong></th>
+<th><strong>MSRP</strong></th>
+<th><strong>Suitable for</strong></th>
+<th><strong>Native app</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ledger</td>
+<td>2019</td>
+<td>U.S. $149</td>
+<td>Beginners</td>
+<td><a href="https://www.ledger.com/ledger-live">Ledger Live</a></td>
+</tr>
+</tbody>
 </table>
 <hr>
 <table>
-  <thead>
-      <tr>
-          <th style="text-align: left"><strong>Разъем</strong></th>
-          <th style="text-align: left"><strong>microSD</strong></th>
-          <th style="text-align: left"><strong>Камера</strong></th>
-          <th style="text-align: left"><strong>SE</strong></th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td style="text-align: left">USB-C</td>
-          <td style="text-align: left">-</td>
-          <td style="text-align: left">-</td>
-          <td style="text-align: left">✅</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><strong>Аккумулятор</strong></td>
-          <td style="text-align: left"><strong>Bluetooth</strong></td>
-          <td style="text-align: left"><strong>NFC</strong></td>
-          <td style="text-align: left"><strong>Открытый код</strong></td>
-      </tr>
-      <tr>
-          <td style="text-align: left">✅</td>
-          <td style="text-align: left">✅</td>
-          <td style="text-align: left">-</td>
-          <td style="text-align: left">-</td>
-      </tr>
-  </tbody>
+<thead>
+<tr>
+<th><strong>Connector</strong></th>
+<th><strong>microSD</strong></th>
+<th><strong>Camera</strong></th>
+<th><strong>Secure element</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>USB-C</td>
+<td>-</td>
+<td>-</td>
+<td>✅</td>
+</tr>
+<tr>
+<td><strong>Battery</strong></td>
+<td><strong>Bluetooth</strong></td>
+<td><strong>NFC</strong></td>
+<td><strong>Open source</strong></td>
+</tr>
+<tr>
+<td>✅</td>
+<td>✅</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
 </table>
-<p>Между Nano X и более доступной моделью Nano S Plus нет существенной разницы. Несмотря на наличие встроенного аккумулятора, использование воздушного зазора невозможно. Из других отличий можно отметить наличие Bluetooth для подписания транзакций с помощью мобильного приложения и чуть больший объем памяти (2 МБ против 1,5 МБ).</p>
-<h3 id="встроенный-аккумулятор">
-  Встроенный аккумулятор
-  <a class="anchor" href="#%d0%b2%d1%81%d1%82%d1%80%d0%be%d0%b5%d0%bd%d0%bd%d1%8b%d0%b9-%d0%b0%d0%ba%d0%ba%d1%83%d0%bc%d1%83%d0%bb%d1%8f%d1%82%d0%be%d1%80">#</a>
+<p>There isn’t a vast difference between the Nano X and the more affordable Nano S Plus. While it comes with an internal battery, air-gapped usage is not possible. The other differing traits include Bluetooth for signing transactions using a mobile phone app and slightly more storage (2MB vs. 1.5MB).</p>
+<h3 id="internal-battery">
+  Internal battery
+  <a class="anchor" href="#internal-battery">#</a>
 </h3>
-<p>Время автономной работы Nano X составляет 3-4 часа на одной подзарядке, при этом предусмотрена возможность подписи по Bluetooth. К сожалению батарею нельзя заменить (из-за конструкции устройства), а ожидаемый срок службы составляет 5 лет.</p>
-<h3 id="сопряжение-по-bluetooth">
-  Сопряжение по Bluetooth
-  <a class="anchor" href="#%d1%81%d0%be%d0%bf%d1%80%d1%8f%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5-%d0%bf%d0%be-bluetooth">#</a>
+<p>With a battery life of 3-4 hours per charge, the <em>Nano X</em> offers the option of Bluetooth signing. One downside of this feature is that the battery cannot be replaced (due to the device’s design) and has an expected life of 5 years.</p>
+<h3 id="bluetooth-pairing">
+  Bluetooth pairing
+  <a class="anchor" href="#bluetooth-pairing">#</a>
 </h3>
-<p>Сопряжение этого устройства с фирменным приложением Ledger Live на смартфоне позволяет забыть о кабелях. Возможность подключения по Bluetooth вызвает у многих биткоинеров опасения из-за потенциала атаки во время сопряжения, и компания Ledger признает наличие такой опасности.</p>
-<p>Эта функция может быть полностью отключена в настройках устройства, и вместо нее можно соединяться с устройством через USB-C. Тем не менее, факт наличия модуля беспроводной связи точно не прибавит спокойствия хозяину устройства.</p>
-<h3 id="обзор-возможностей-программного-обеспечения-2">
-  Обзор возможностей программного обеспечения
-  <a class="anchor" href="#%d0%be%d0%b1%d0%b7%d0%be%d1%80-%d0%b2%d0%be%d0%b7%d0%bc%d0%be%d0%b6%d0%bd%d0%be%d1%81%d1%82%d0%b5%d0%b9-%d0%bf%d1%80%d0%be%d0%b3%d1%80%d0%b0%d0%bc%d0%bc%d0%bd%d0%be%d0%b3%d0%be-%d0%be%d0%b1%d0%b5%d1%81%d0%bf%d0%b5%d1%87%d0%b5%d0%bd%d0%b8%d1%8f-2">#</a>
+<p>Pairing this device with Ledger’s native app (Ledger Live) on your smartphone eliminates the need for a cable. Bluetooth connectivity may understandably make some bitcoiners nervous due to the potential for leaking sensitive information. However, Ledger does <a href="https://www.ledger.com/ledger-nano-x-bluetooth-security-model-of-a-wireless-hardware-wallet">acknowledge such concerns</a>.</p>
+<p>This feature can also be disabled entirely via the device’s settings, and a traditional USB-C connection can be used in its place.</p>
+<h3 id="software-features-overview-3">
+  Software features overview
+  <a class="anchor" href="#software-features-overview-3">#</a>
 </h3>
 <table>
-  <thead>
-      <tr>
-          <th style="text-align: left"><strong>Только биткоин</strong></th>
-          <th style="text-align: left"><strong>PIN</strong></th>
-          <th style="text-align: left"><strong>Двойной PIN</strong></th>
-          <th style="text-align: left"><strong>Самоуничтожение</strong></th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td style="text-align: left">-</td>
-          <td style="text-align: left">✅</td>
-          <td style="text-align: left">✅*</td>
-          <td style="text-align: left">✅†</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><strong>U2F</strong></td>
-          <td style="text-align: left"><strong>Воздушный зазор</strong></td>
-          <td style="text-align: left"><strong>DIY-энтропия</strong></td>
-          <td style="text-align: left"><strong>Сторонние кошельки</strong></td>
-      </tr>
-      <tr>
-          <td style="text-align: left">✅</td>
-          <td style="text-align: left">-</td>
-          <td style="text-align: left">-</td>
-          <td style="text-align: left">✅</td>
-      </tr>
-  </tbody>
+<thead>
+<tr>
+<th><strong>BTC-only</strong></th>
+<th><strong>PIN</strong></th>
+<th><strong>Decoy PIN</strong></th>
+<th><strong>Wipe PIN</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-</td>
+<td>✅</td>
+<td>✅*</td>
+<td>✅†</td>
+</tr>
+<tr>
+<td><strong>U2F</strong></td>
+<td><strong>Air-gap</strong></td>
+<td><strong>DIY entropy</strong></td>
+<td><strong>Third-party wallets</strong></td>
+</tr>
+<tr>
+<td>✅</td>
+<td>-</td>
+<td>-</td>
+<td>✅</td>
+</tr>
+</tbody>
 </table>
 <blockquote class="book-hint info">
-  <p>* Ledger позволяет дополнительно обезопасить кошелек, защищенный парольной фразой, PIN-кодом</p>
-<p>† При трехкратном вводе неправильного PIN-кода устройство стирается.</p>
+  <p>* Ledger lets you can attach a PIN code to a passphrase-protected wallet.</p>
+<p>† You can enter an incorrect PIN three times to wipe the device.</p>
 
 </blockquote>
 
@@ -3578,133 +3412,128 @@ https://github.com/alex-shpak/hugo-book
     <img src="/img/hwws/mk4.png">
 </div>
 <table>
-  <thead>
-      <tr>
-          <th style="text-align: left"><strong>Производитель</strong></th>
-          <th style="text-align: left"><strong>Год выпуска</strong></th>
-          <th style="text-align: left"><strong>Цена</strong></th>
-          <th style="text-align: left"><strong>Подходит для</strong></th>
-          <th style="text-align: left"><strong>Нативное приложение</strong></th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td style="text-align: left">Coinkite</td>
-          <td style="text-align: left">2022</td>
-          <td style="text-align: left"><a href="https://sunscrypt.ru/catalog/coinkite/coldcard-mk4/">₽26,600</a></td>
-          <td style="text-align: left">Опытных</td>
-          <td style="text-align: left">N/A</td>
-      </tr>
-  </tbody>
+<thead>
+<tr>
+<th><strong>Manufacturer</strong></th>
+<th><strong>Released</strong></th>
+<th><strong>MSRP</strong></th>
+<th><strong>Suitable for</strong></th>
+<th><strong>Native app</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Coinkite</td>
+<td>2022</td>
+<td>U.S. $149</td>
+<td>Intermediate</td>
+<td>N/A</td>
+</tr>
+</tbody>
 </table>
 <hr>
 <table>
-  <thead>
-      <tr>
-          <th style="text-align: left"><strong>Разъем</strong></th>
-          <th style="text-align: left"><strong>microSD</strong></th>
-          <th style="text-align: left"><strong>Камера</strong></th>
-          <th style="text-align: left"><strong>SE</strong></th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td style="text-align: left">USB-C</td>
-          <td style="text-align: left">✅</td>
-          <td style="text-align: left">-</td>
-          <td style="text-align: left">✅</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><strong>Аккумулятор</strong></td>
-          <td style="text-align: left"><strong>Bluetooth</strong></td>
-          <td style="text-align: left"><strong>NFC</strong></td>
-          <td style="text-align: left"><strong>Открытый код</strong></td>
-      </tr>
-      <tr>
-          <td style="text-align: left">-</td>
-          <td style="text-align: left">-</td>
-          <td style="text-align: left">✅</td>
-          <td style="text-align: left">✅*</td>
-      </tr>
-  </tbody>
+<thead>
+<tr>
+<th><strong>Connector</strong></th>
+<th><strong>microSD</strong></th>
+<th><strong>Camera</strong></th>
+<th><strong>Secure element</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>USB-C</td>
+<td>✅</td>
+<td>-</td>
+<td>✅</td>
+</tr>
+<tr>
+<td><strong>Battery</strong></td>
+<td><strong>Bluetooth</strong></td>
+<td><strong>NFC</strong></td>
+<td><strong>Open source</strong></td>
+</tr>
+<tr>
+<td>-</td>
+<td>-</td>
+<td>✅</td>
+<td>✅*</td>
+</tr>
+</tbody>
 </table>
-<p>Четвертая версия <em>Coldcard</em> получила ряд новых функций и изменений по сравнению с уже снятой с производства моделью <em>Mk3</em>. Благодаря аутентичной клавиатуре и простому дизайну устройство кажется обывателю не более чем стареньким карманным калькулятором.</p>
-<p>Добавление второго защитного элемента (от другого производителя) предлагает альтернативный подход к хранению приватных ключей. Один из защитных элементов хранит зашифрованную версию приватного ключа, но для ее расшифровки требуется второй защитный элемент и  микроконтроллер (MCU).</p>
-<h3 id="nfc-v">
-  NFC-V
-  <a class="anchor" href="#nfc-v">#</a>
+<p>The fourth version of the <em>Coldcard</em> comes with a handful of new features and changes to the now-discontinued <em>Mk3</em>. With its numeric keypad and plain design, the device appears to the average person to be nothing more than an old-school pocket calculator.</p>
+<p>The addition of a <a href="https://blog.coinkite.com/understanding-mk4-security-model/">second secure element</a> (from a different manufacturer) offers an alternative approach to private key storage. One of the secure elements stores an encrypted version of your private key but requires both the second secure element and microcontroller unit (MCU) for decryption.</p>
+<h3 id="nfc-v-near-field-communication-capabilities">
+  NFC-V (near-field communication) capabilities
+  <a class="anchor" href="#nfc-v-near-field-communication-capabilities">#</a>
 </h3>
-<p><em>Coldcard Mk4</em> обладает встроенной микросхемой NFC, позволяющей использовать PSBT, обмениваться адресами и выполнять такие действия, как &ldquo;прикоснуться, чтобы подписать&rdquo;, при использовании поддерживающего NFC устойства (например, смартфона). По умолчанию эта функция отключена, а также ее можно сделать неработоспособной, физически нарушив соединение на плате устройства.</p>
-<h3 id="усиленная-безопасность-для-прожженных-биткоинеров">
-  Усиленная безопасность для прожженных биткоинеров
-  <a class="anchor" href="#%d1%83%d1%81%d0%b8%d0%bb%d0%b5%d0%bd%d0%bd%d0%b0%d1%8f-%d0%b1%d0%b5%d0%b7%d0%be%d0%bf%d0%b0%d1%81%d0%bd%d0%be%d1%81%d1%82%d1%8c-%d0%b4%d0%bb%d1%8f-%d0%bf%d1%80%d0%be%d0%b6%d0%b6%d0%b5%d0%bd%d0%bd%d1%8b%d1%85-%d0%b1%d0%b8%d1%82%d0%ba%d0%be%d0%b8%d0%bd%d0%b5%d1%80%d0%be%d0%b2">#</a>
+<p>The <em>Coldcard</em> <em>Mk4</em> has an embedded NFC chip for PSBTs, address sharing, and actions like “tap-to-sign” when used with a compatible NFC reader (i.e., smartphone). This functionality is disabled by default and can be made permanently non-functional by damaging the device’s board.</p>
+<h3 id="hardened-security-for-the-hardened-bitcoiner">
+  Hardened security for the hardened bitcoiner
+  <a class="anchor" href="#hardened-security-for-the-hardened-bitcoiner">#</a>
 </h3>
-<p>Чем выше в списке ваших требований находится пункт &ldquo;безопасность&rdquo;, тем выше, в вашем списке аппаратных кошельков окажется <em>Coldcard Mk4</em>. Множество уникальных функций и элементов дизайна способствуют тому, что устройство пользуется популярностью среди опытных биткоинеров:</p>
+<p>The higher “security” is on your list of requirements, the higher up the <em>Coldcard Mk4</em> is likely to be. Several unique features and design elements contribute to the device’s standing among seasoned bitcoiners:</p>
 <ul>
 <li>
-<p><strong>Антифишинг:</strong> Ваш PIN-код разделен на две части. После ввода первой половины PIN-кода на экран выводятся два слова, уникальные для данного устройства. Это сигнализирует о том, что злоумышленник не подменил устройство и можно смело вводить оставшуюся часть PIN-кода. </p>
+<p><strong>Anti-phishing words:</strong> Your PIN is split into two parts. After entering the first half of the PIN, two words unique to the device are displayed. This signals that an attacker has not swapped out the device, and that it is safe to enter the rest of the PIN.</p>
 </li>
 <li>
-<p><strong>Светодиодные индикаторы безопасности:</strong> Два светодиода расположены рядом с дисплеем устройства. Они подтверждают (зеленый) или предупреждают (красный), что 1) содержимое защищенного элемента не изменилось с момента последнего использования устройства, 2) программное обеспечение устройства не скомпроментировано, или 3) в устройство не было внесено никаких физических изменений с момента его выпуска.</p>
+<p><strong>LED security lights:</strong> Two LEDs are located next to the device’s display. These will confirm (green) or alert (red) you that 1) the contents of the secure element haven’t changed since the device’s last use, 2) the firmware is authentic, or 3) the device’s circuitry has not been tampered with since leaving the manufacturer.</p>
 </li>
 <li>
-<p><strong>Упаковка с защитой от вскрытия:</strong> <em>Coldcard Mk4</em> поставляется в прозрачном герметичном пластиковом пакете. После снятия пломбы на пакете будет отображаться слово &ldquo;void&rdquo;, указывающее на то, что пакет ранее вскрывался. Уникальный номер, напечатанный на упаковке будет совпадать с номером, отображаемым на экране при первом включении устройства. </p>
+<p><strong>Tamper-evident bag:</strong> The <em>Coldcard Mk4</em>, arrives in a clear sealed plastic bag. Once unsealed, the bag will permanently show the word ‘void’ to indicate that the bag has been opened. This is in addition to a unique number, printed on the bag itself, that will match the number displayed on screen when the device is powered up for the first time.</p>
 </li>
 <li>
-<p><strong>PIN-код самоуничтожения:</strong> Возможность создать PIN-код, превращающий устройство в &ldquo;кирпич&rdquo; (&ldquo;brick me&rdquo;). При вводе этого  PIN-кода устройство &ldquo;уничтожит оба защитных элемента и сделает ваш кошелек бесполезным&rdquo;. Не стоит пытаться тестировать эту функцию. Если вы хотите дополнительно убедиться в том, что содержимое устройства уничтожено, то можете просверлить защитные элементы.</p>
+<p><strong>Self-destruct PIN:</strong> You have the option of creating a self-destruct (“brick me”) PIN that, when entered, will automatically “destroy the dual secure element and render your Coldcard worthless.” It should be noted that one should not attempt to test this feature. If you want to further ensure that the contents of the device have been destroyed, you can drill into the secure elements by following the inscription showing their location.</p>
 </li>
 </ul>
 <div class="imageWrapper">
     <img src="/img/hwws/mk4-destroy.png">
-<p><em>Следуйте надписям на устройстве, указывающим местоположение защитных элементов.</em></p>
 </div>
-<blockquote class="book-hint info">
-  Подробнее об особенностях Coldcard и его функциях можно узнать из нашего пошагового гида <a href="https://21ideas.org/coldcard/">здесь</a>
-</blockquote>
-
-<h3 id="воздушный-зазор">
-  Воздушный зазор
-  <a class="anchor" href="#%d0%b2%d0%be%d0%b7%d0%b4%d1%83%d1%88%d0%bd%d1%8b%d0%b9-%d0%b7%d0%b0%d0%b7%d0%be%d1%80">#</a>
+<h3 id="air-gapped-coldpower">
+  Air-gapped coldpower
+  <a class="anchor" href="#air-gapped-coldpower">#</a>
 </h3>
-<p>В <em>Coldcard Mk4</em> предусмотрены различные варианты питания устройства. Вы можете использовать стандартную 9-вольтовую батарею + USB-адаптер, внешний аккумулятор или адаптер переменного тока, подключаемый непосредственно к розетке.</p>
-<h3 id="обзор-возможностей-программного-обеспечения-3">
-  Обзор возможностей программного обеспечения
-  <a class="anchor" href="#%d0%be%d0%b1%d0%b7%d0%be%d1%80-%d0%b2%d0%be%d0%b7%d0%bc%d0%be%d0%b6%d0%bd%d0%be%d1%81%d1%82%d0%b5%d0%b9-%d0%bf%d1%80%d0%be%d0%b3%d1%80%d0%b0%d0%bc%d0%bc%d0%bd%d0%be%d0%b3%d0%be-%d0%be%d0%b1%d0%b5%d1%81%d0%bf%d0%b5%d1%87%d0%b5%d0%bd%d0%b8%d1%8f-3">#</a>
+<p>The <em>Coldcard Mk4</em> has a variety of options when it comes to supplying power to the device in an air-gapped manner. You can opt for a standard 9V battery + USB adapter, a power bank, or an AC adapter plugged directly into a power outlet.</p>
+<h3 id="software-features-overview-4">
+  Software features overview
+  <a class="anchor" href="#software-features-overview-4">#</a>
 </h3>
 <table>
-  <thead>
-      <tr>
-          <th style="text-align: left"><strong>Только биткоин</strong></th>
-          <th style="text-align: left"><strong>PIN</strong></th>
-          <th style="text-align: left"><strong>Двойной PIN</strong></th>
-          <th style="text-align: left"><strong>Самоуничтожение</strong></th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td style="text-align: left">✅</td>
-          <td style="text-align: left">✅</td>
-          <td style="text-align: left">✅†</td>
-          <td style="text-align: left">✅‡</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><strong>U2F</strong></td>
-          <td style="text-align: left"><strong>Воздушный зазор</strong></td>
-          <td style="text-align: left"><strong>DIY-энтропия</strong></td>
-          <td style="text-align: left"><strong>Сторонние кошельки</strong></td>
-      </tr>
-      <tr>
-          <td style="text-align: left">-</td>
-          <td style="text-align: left">✅</td>
-          <td style="text-align: left">✅</td>
-          <td style="text-align: left">✅</td>
-      </tr>
-  </tbody>
+<thead>
+<tr>
+<th><strong>BTC-only</strong></th>
+<th><strong>PIN</strong></th>
+<th><strong>Decoy PIN</strong></th>
+<th><strong>Wipe PIN</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>✅</td>
+<td>✅</td>
+<td>✅†</td>
+<td>✅‡</td>
+</tr>
+<tr>
+<td><strong>U2F</strong></td>
+<td><strong>Air-gap</strong></td>
+<td><strong>DIY entropy</strong></td>
+<td><strong>Third-party wallets</strong></td>
+</tr>
+<tr>
+<td>-</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+</tbody>
 </table>
 <blockquote class="book-hint info">
-  <p>* Код как <a href="https://github.com/Coldcard/firmware/tree/master/hardware">аппаратного</a>, так и <a href="https://github.com/coldcard/firmware">программного</a> обеспечение <em>Coldcard</em> открыт для просмотра, а его <a href="https://coldcard.com/docs/faq/#what-kind-of-secure-element-is-used">архитектура</a> позволяет не доверять защищенному элементу</p>
-<p>† Кошелек Coldcard управляется теми же ключами, что и ваш основной кошелек</p>
-<p>‡ Аварийный PIN-код &ldquo;brick-me&rdquo; не сбрасывает устройство, а уничтожает его</p>
+  <p>* Both the <a href="https://github.com/Coldcard/firmware/tree/master/hardware">hardware</a> and <a href="https://github.com/coldcard/firmware">firmware</a> for Coldcard is fully source-viewable, and its architecture <a href="https://coldcard.com/docs/faq">allows the secure element not to be trusted</a>.</p>
+<p>† The Coldcard’s duress wallet is controlled by the same keys as your main wallet.</p>
+<p>‡ The Coldcard’s “brick-me” PIN does not reset the device—it destroys it.</p>
 
 </blockquote>
 
@@ -3716,125 +3545,112 @@ https://github.com/alex-shpak/hugo-book
     <img src="/img/hwws/jade.png">
 </div>
 <table>
-  <thead>
-      <tr>
-          <th style="text-align: left"><strong>Производитель</strong></th>
-          <th style="text-align: left"><strong>Год выпуска</strong></th>
-          <th style="text-align: left"><strong>Цена</strong></th>
-          <th style="text-align: left"><strong>Подходит для</strong></th>
-          <th style="text-align: left"><strong>Нативное приложение</strong></th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td style="text-align: left">Blockstream</td>
-          <td style="text-align: left">2021</td>
-          <td style="text-align: left"><a href="https://sunscrypt.ru/catalog/jade/">₽10,450</a></td>
-          <td style="text-align: left">Начинающим</td>
-          <td style="text-align: left"><a href="https://blockstream.com/green/">Blockstream Green</a></td>
-      </tr>
-  </tbody>
+<thead>
+<tr>
+<th><strong>Manufacturer</strong></th>
+<th><strong>Released</strong></th>
+<th><strong>MSRP</strong></th>
+<th><strong>Suitable for</strong></th>
+<th><strong>Native app</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Blockstream</td>
+<td>2021</td>
+<td>US $65</td>
+<td>Beginners</td>
+<td><a href="https://blockstream.com/green/">Blockstream Green</a></td>
+</tr>
+</tbody>
 </table>
 <hr>
 <table>
-  <thead>
-      <tr>
-          <th style="text-align: left"><strong>Разъем</strong></th>
-          <th style="text-align: left"><strong>microSD</strong></th>
-          <th style="text-align: left"><strong>Камера</strong></th>
-          <th style="text-align: left"><strong>SE</strong></th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td style="text-align: left">USB-C</td>
-          <td style="text-align: left">-</td>
-          <td style="text-align: left">✅</td>
-          <td style="text-align: left">-</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><strong>Аккумулятор</strong></td>
-          <td style="text-align: left"><strong>Bluetooth</strong></td>
-          <td style="text-align: left"><strong>NFC</strong></td>
-          <td style="text-align: left"><strong>Открытый код</strong></td>
-      </tr>
-      <tr>
-          <td style="text-align: left">✅</td>
-          <td style="text-align: left">✅</td>
-          <td style="text-align: left">-</td>
-          <td style="text-align: left">✅</td>
-      </tr>
-  </tbody>
+<thead>
+<tr>
+<th><strong>Connector</strong></th>
+<th><strong>microSD</strong></th>
+<th><strong>Camera</strong></th>
+<th><strong>Secure element</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>USB-C</td>
+<td>-</td>
+<td>✅</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>Battery</strong></td>
+<td><strong>Bluetooth</strong></td>
+<td><strong>NFC</strong></td>
+<td><strong>Open source</strong></td>
+</tr>
+<tr>
+<td>✅</td>
+<td>✅</td>
+<td>-</td>
+<td>✅</td>
+</tr>
+</tbody>
 </table>
-<p>Долгожданный аппаратный кошелек от компании <em>Blockstream</em> появился в 2021 году, и он стоит каждой копейки, которую за него просят. Несмотря на отсутствие слота для microSD, PSBT остаются доступными благодаря  встроенной камере. В сочетании с аккумулятором емкостью 240 мАч это позволяет использовать кошелек на ходу.</p>
-<p>Вместо защищенного элемента <em>Jade</em> использует <a href="https://help.blockstream.com/hc/en-us/articles/9639949755673">уникальную модель безопасности</a>, которая позволяет ему полностью открыть свой исходный код и при этом оставаться защищенным от физических атак, а также достигать аналогичной (если не лучшей) безопасности.</p>
-<p>Код модели &ldquo;слепого оракула&rdquo;, которую использует <em>Jade</em>, открыт, а сам оракул является действительно &ldquo;слепым&rdquo;. Он ничего не знает о данных вашего кошелька и даже не знает фактический PIN-код пользователя. Пользователи могут обратиться к &ldquo;слепому оракулу&rdquo; Blockstream или <a href="https://help.blockstream.com/hc/en-us/articles/12800132096793">запустить своего собственныого оракула</a>.</p>
-<blockquote class="book-hint info">
-  С подробным обзором кошелька <em>Jade</em> можно ознакомиться в <a href="https://www.youtube.com/watch?v=6hufMoOH7yU">этом видео</a>.
-</blockquote>
-
-<h3 id="возможность-подключения-по-bluetooth">
-  Возможность подключения по Bluetooth
-  <a class="anchor" href="#%d0%b2%d0%be%d0%b7%d0%bc%d0%be%d0%b6%d0%bd%d0%be%d1%81%d1%82%d1%8c-%d0%bf%d0%be%d0%b4%d0%ba%d0%bb%d1%8e%d1%87%d0%b5%d0%bd%d0%b8%d1%8f-%d0%bf%d0%be-bluetooth">#</a>
+<p>The long-awaited hardware wallet from Blockstream arrived in 2021 and packs a punch for its price point. While it lacks a microSD card slot, PSBTs can still be executed using the camera. Taken in conjunction with its built-in 240 mAh battery, true air-gapped usage is possible.</p>
+<p>A noticeable missing component from this device is a secure element (an intentional design and security consideration). Instead, an <a href="https://help.blockstream.com/hc/en-us/articles/13745404122265-Does-Blockstream-Jade-have-a-secure-element-">alternative security model</a> is used, allowing all hardware and firmware components to be <a href="https://github.com/Blockstream/Jade">fully open-source</a>.</p>
+<h3 id="bluetooth-connectivity">
+  Bluetooth connectivity
+  <a class="anchor" href="#bluetooth-connectivity">#</a>
 </h3>
-<p>Наличие встроенного аккумулятора и Bluetooth позволяет использовать беспроводное соединение с совместимым программным обеспечением кошелька, например, с приложением <em>Blockstream Green</em> для iOS. По умолчанию эта функция отключена, активировать ее можно в настройках устройства.</p>
-<h3 id="камера-для-работы-с-воздушным-зазором">
-  Камера для работы с воздушным зазором
-  <a class="anchor" href="#%d0%ba%d0%b0%d0%bc%d0%b5%d1%80%d0%b0-%d0%b4%d0%bb%d1%8f-%d1%80%d0%b0%d0%b1%d0%be%d1%82%d1%8b-%d1%81-%d0%b2%d0%be%d0%b7%d0%b4%d1%83%d1%88%d0%bd%d1%8b%d0%bc-%d0%b7%d0%b0%d0%b7%d0%be%d1%80%d0%be%d0%bc">#</a>
+<p>The inclusion of an internal battery and Bluetooth enables wireless use with compatible wallet software, for example the <a href="https://apps.apple.com/us/app/green-bitcoin-wallet/id1402243590">Blockstream Green app for iOS</a>. This feature is disabled by default and must be activated via the device’s settings.</p>
+<h3 id="camera-for-air-gapped-use">
+  Camera for air-gapped use
+  <a class="anchor" href="#camera-for-air-gapped-use">#</a>
 </h3>
-<p>Если вы не хотите подключать Jade непосредственно к компьютеру или использовать Bluetooth, вы можете воспользоваться камерой для сканирования адресов по QR-коду и представить подписанные данные транзакции в виде QR-кода на экране устройства.</p>
-<blockquote class="book-hint info">
-  Подробнее об этом способе подписания транзакций можно узнать из нашего <a href="https://21ideas.org/seedsigner/">гида по SeedSigner</a>, который также использует этот метод.
-</blockquote>
-
-<h3 id="pin-код-для-стирания-кошелька">
-  PIN-код для стирания кошелька
-  <a class="anchor" href="#pin-%d0%ba%d0%be%d0%b4-%d0%b4%d0%bb%d1%8f-%d1%81%d1%82%d0%b8%d1%80%d0%b0%d0%bd%d0%b8%d1%8f-%d0%ba%d0%be%d1%88%d0%b5%d0%bb%d1%8c%d0%ba%d0%b0">#</a>
+<p>If you don’t wish to plug the <em>Jade</em> directly into a computer to execute actions or use Bluetooth, you can simply make use of the device’s camera to scan addresses via QR code, and present signed transaction data as a QR code on the device’s screen.</p>
+<h3 id="wallet-erase-pin">
+  Wallet-erase PIN
+  <a class="anchor" href="#wallet-erase-pin">#</a>
 </h3>
-<p>В то время как многие аппаратные кошельки оснащены функцией сброса к заводским настройкам или порчи устройства, &ldquo;подставной пин&rdquo; <em>Jade</em> предлагает еще более безобидную опцию - удаление сохраненного кошелька (фразы восстановления) и вывод на экран сообщения &ldquo;Внутренняя ошибка&rdquo;.</p>
-<h3 id="поддержка-liquid-network">
-  Поддержка Liquid Network
-  <a class="anchor" href="#%d0%bf%d0%be%d0%b4%d0%b4%d0%b5%d1%80%d0%b6%d0%ba%d0%b0-liquid-network">#</a>
+<p>While many hardware wallets come with a factory reset, decoy wallet, or self-destruct PIN, the <em>Jade</em> has an even more innocuous option—erasing the stored wallet (recovery phrase) and displaying an ‘Internal Error’ message.</p>
+<h3 id="liquid-network-support">
+  Liquid Network support
+  <a class="anchor" href="#liquid-network-support">#</a>
 </h3>
-<p>При использовании <em>Jade</em> в паре с кошельком <em>Blockstream Green</em> вы можете отправлять и получать активы, выпущенные в сети Liquid. Ранее <em>Ledger Nano S</em> также поддерживал некоторые активы Liquid Network, но эта модель была снята с производства, и <em>Jade</em> стал единственным коммерчески доступным вариантом.</p>
-<h3 id="обзор-возможностей-программного-обеспечения-4">
-  Обзор возможностей программного обеспечения
-  <a class="anchor" href="#%d0%be%d0%b1%d0%b7%d0%be%d1%80-%d0%b2%d0%be%d0%b7%d0%bc%d0%be%d0%b6%d0%bd%d0%be%d1%81%d1%82%d0%b5%d0%b9-%d0%bf%d1%80%d0%be%d0%b3%d1%80%d0%b0%d0%bc%d0%bc%d0%bd%d0%be%d0%b3%d0%be-%d0%be%d0%b1%d0%b5%d1%81%d0%bf%d0%b5%d1%87%d0%b5%d0%bd%d0%b8%d1%8f-4">#</a>
+<p>The <em>Jade</em> can be used to send and receive assets issued on the <a href="https://blockstream.com/liquid/">Liquid Network</a> when used with the Blockstream <em>Green</em> wallet. Previously, the <em>Ledger Nano S</em> also supported some Liquid Network assets, but this model has since been retired, making the <em>Jade</em> the only commercially-available option.</p>
+<h3 id="software-features-overview-5">
+  Software features overview
+  <a class="anchor" href="#software-features-overview-5">#</a>
 </h3>
 <table>
-  <thead>
-      <tr>
-          <th style="text-align: left"><strong>Только биткоин</strong></th>
-          <th style="text-align: left"><strong>PIN</strong></th>
-          <th style="text-align: left"><strong>Двойной PIN</strong></th>
-          <th style="text-align: left"><strong>Самоуничтожение</strong></th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td style="text-align: left">✅</td>
-          <td style="text-align: left">✅</td>
-          <td style="text-align: left">-</td>
-          <td style="text-align: left">✅*</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><strong>U2F</strong></td>
-          <td style="text-align: left"><strong>Воздушный зазор</strong></td>
-          <td style="text-align: left"><strong>DIY-энтропия</strong></td>
-          <td style="text-align: left"><strong>Сторонние кошельки</strong></td>
-      </tr>
-      <tr>
-          <td style="text-align: left">✅</td>
-          <td style="text-align: left">✅</td>
-          <td style="text-align: left">✅</td>
-          <td style="text-align: left">✅</td>
-      </tr>
-  </tbody>
+<thead>
+<tr>
+<th><strong>BTC-only</strong></th>
+<th><strong>PIN</strong></th>
+<th><strong>Decoy PIN</strong></th>
+<th><strong>Wipe PIN</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>✅</td>
+<td>✅</td>
+<td>-</td>
+<td>✅</td>
+</tr>
+<tr>
+<td><strong>U2F</strong></td>
+<td><strong>Air-gap</strong></td>
+<td><strong>DIY entropy</strong></td>
+<td><strong>Third-party wallets</strong></td>
+</tr>
+<tr>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+</tbody>
 </table>
-<blockquote class="book-hint info">
-  * При вводе аварийного пина устройство стирает бэкап фразы восстановления и выводит на экран сообщение &ldquo;Внутренняя ошибка&rdquo;
-</blockquote>
-
 <h2 id="bitbox-02">
   BitBox 02
   <a class="anchor" href="#bitbox-02">#</a>
@@ -3843,344 +3659,334 @@ https://github.com/alex-shpak/hugo-book
     <img src="/img/hwws/bitbox.png">
 </div>
 <table>
-  <thead>
-      <tr>
-          <th style="text-align: left"><strong>Производитель</strong></th>
-          <th style="text-align: left"><strong>Год выпуска</strong></th>
-          <th style="text-align: left"><strong>Цена</strong></th>
-          <th style="text-align: left"><strong>Подходит для</strong></th>
-          <th style="text-align: left"><strong>Нативное приложение</strong></th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td style="text-align: left">Shift Crypto</td>
-          <td style="text-align: left">2019</td>
-          <td style="text-align: left"><a href="https://sunscrypt.ru/catalog/brand-bitbox-bitbox02/">₽14,250</a></td>
-          <td style="text-align: left">Начинающих</td>
-          <td style="text-align: left"><a href="https://shiftcrypto.ch/download/">BitBoxApp</a></td>
-      </tr>
-  </tbody>
+<thead>
+<tr>
+<th><strong>Manufacturer</strong></th>
+<th><strong>Released</strong></th>
+<th><strong>MSRP</strong></th>
+<th><strong>Suitable for</strong></th>
+<th><strong>Native app</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Shift Crypto</td>
+<td>2019</td>
+<td>US $149</td>
+<td>Beginners</td>
+<td><a href="https://shiftcrypto.ch/download/">BitBoxApp</a></td>
+</tr>
+</tbody>
 </table>
 <hr>
 <table>
-  <thead>
-      <tr>
-          <th style="text-align: left"><strong>Разъем</strong></th>
-          <th style="text-align: left"><strong>microSD</strong></th>
-          <th style="text-align: left"><strong>Камера</strong></th>
-          <th style="text-align: left"><strong>SE</strong></th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td style="text-align: left">USB-C</td>
-          <td style="text-align: left">✅</td>
-          <td style="text-align: left">-</td>
-          <td style="text-align: left">✅</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><strong>Аккумулятор</strong></td>
-          <td style="text-align: left"><strong>Bluetooth</strong></td>
-          <td style="text-align: left"><strong>NFC</strong></td>
-          <td style="text-align: left"><strong>Открытый код</strong></td>
-      </tr>
-      <tr>
-          <td style="text-align: left">-</td>
-          <td style="text-align: left">-</td>
-          <td style="text-align: left">-</td>
-          <td style="text-align: left">✅*</td>
-      </tr>
-  </tbody>
+<thead>
+<tr>
+<th><strong>Connector</strong></th>
+<th><strong>microSD</strong></th>
+<th><strong>Camera</strong></th>
+<th><strong>Secure element</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>USB-C</td>
+<td>✅</td>
+<td>-</td>
+<td>✅</td>
+</tr>
+<tr>
+<td><strong>Battery</strong></td>
+<td><strong>Bluetooth</strong></td>
+<td><strong>NFC</strong></td>
+<td><strong>Open source</strong></td>
+</tr>
+<tr>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>✅*</td>
+</tr>
+</tbody>
 </table>
-<p>Производящийся в Швейцарии <em>BitBox 02</em> - это компактный вариант для холодного хранения ваших монет. Его дизайн основан на оригинальной модели <em>BitBox 01</em>, которая была снята с производства в ноябре 2019 года. Однако на этот раз Shift Crypto выпустила версию, поддерживающую биткоин-онли прошивку, чтобы уменьшить количество векторов атак по сравнению с мультивалютным устройством.</p>
+<p>Manufactured in Switzerland, the BitBox 02 is a compact and discreet choice for cold storage. The design is based on the original BitBox 01, which was discontinued in November 2019. However, this time Shift Crypto released a bitcoin-only edition which can only support bitcoin firmware in an effort to reduce attack vectors compared to a multi-token compatible device.</p>
 <blockquote>
-<p><em>BitBox02 Bitcoin-only</em> предлагает прошивку, поддерживающую только Биткоин. В отличие от других аппаратных кошельков, версия Bitcoin-only не может быть перенастроена на поддержку других монет.</p>
-<p>- Shift Crypto</p>
+<p><em>“The BitBox02 Bitcoin-only will only ever have Bitcoin firmware. Nothing else. Unlike other hardware wallets, the Bitcoin-only edition cannot be reset to support other coins. The Bitcoin-only firmware is locked down at factory setup.”</em></p>
+<p>— Shift Crypto</p>
 </blockquote>
-<p>Подтверждение или отклонение действий на устройстве осуществляется прикосновением к датчикам, расположенным по его бокам. Встроенный экран также позволяет вводить PIN-код на устройстве. Основным недостатком <em>BitBox</em> является невозможность использования воздушного зазора и подписания PSBT-транзакций.</p>
-<h3 id="маскировка-для-улучшения-операционной-безопасности">
-  Маскировка для улучшения операционной безопасности
-  <a class="anchor" href="#%d0%bc%d0%b0%d1%81%d0%ba%d0%b8%d1%80%d0%be%d0%b2%d0%ba%d0%b0-%d0%b4%d0%bb%d1%8f-%d1%83%d0%bb%d1%83%d1%87%d1%88%d0%b5%d0%bd%d0%b8%d1%8f-%d0%be%d0%bf%d0%b5%d1%80%d0%b0%d1%86%d0%b8%d0%be%d0%bd%d0%bd%d0%be%d0%b9-%d0%b1%d0%b5%d0%b7%d0%be%d0%bf%d0%b0%d1%81%d0%bd%d0%be%d1%81%d1%82%d0%b8">#</a>
+<p>Actions are confirmed or rejected on the device by touching sensors located along its sides. The built-in screen also allows for on-device PIN entry. The main trade-off of the BitBox is that it is not possible to use the device in an air-gapped manner.</p>
+<h3 id="low-key-for-improved-opsec">
+  Low-key for improved opsec
+  <a class="anchor" href="#low-key-for-improved-opsec">#</a>
 </h3>
-<p>BitBox02, не имеющий явной маркировки (кроме небольшого логотипа Shift Crypto), на первый взгляд кажется обычным черным USB-накопителем. Это делает его идеальным вариантом для тех, кому необходимо использовать аппаратный кошелек, не привлекая к себе внимания.</p>
-<h3 id="забудьте-о-кабелях">
-  Забудьте о кабелях
-  <a class="anchor" href="#%d0%b7%d0%b0%d0%b1%d1%83%d0%b4%d1%8c%d1%82%d0%b5-%d0%be-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8f%d1%85">#</a>
+<p>With no obvious markings (other than a small Shift Crypto logo), the <em>BitBox02</em> appears to be a generic black USB stick to the untrained eye. This makes it an ideal option for those needing to use a hardware wallet in public settings.</p>
+<h3 id="no-cables-required">
+  No cables required
+  <a class="anchor" href="#no-cables-required">#</a>
 </h3>
-<p>Устройство подключается непосредственно к компьютеру или смартфону через порт USB-C, что позволяет обойтись без кабелей. Эта опция будет особенно привлекательна для пользователей, которым устройство может понадобиться для большого количества небольших транзакций и для которых удобство важнее приватности.</p>
-<h3 id="обзор-возможностей-программного-обеспечения-5">
-  Обзор возможностей программного обеспечения
-  <a class="anchor" href="#%d0%be%d0%b1%d0%b7%d0%be%d1%80-%d0%b2%d0%be%d0%b7%d0%bc%d0%be%d0%b6%d0%bd%d0%be%d1%81%d1%82%d0%b5%d0%b9-%d0%bf%d1%80%d0%be%d0%b3%d1%80%d0%b0%d0%bc%d0%bc%d0%bd%d0%be%d0%b3%d0%be-%d0%be%d0%b1%d0%b5%d1%81%d0%bf%d0%b5%d1%87%d0%b5%d0%bd%d0%b8%d1%8f-5">#</a>
+<p>The device plugs directly into a computer or smartphone via its USB-C port (or USB port with included adapter) rendering cables unnecessary. This option will be particularly attractive to users who may require a device for a high volume of low value transactions, prioritizing convenience over privacy.</p>
+<h3 id="software-features-overview-6">
+  Software features overview
+  <a class="anchor" href="#software-features-overview-6">#</a>
 </h3>
 <table>
-  <thead>
-      <tr>
-          <th style="text-align: left"><strong>Только биткоин</strong></th>
-          <th style="text-align: left"><strong>PIN</strong></th>
-          <th style="text-align: left"><strong>Двойной PIN</strong></th>
-          <th style="text-align: left"><strong>Самоуничтожение</strong></th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td style="text-align: left">✅**</td>
-          <td style="text-align: left">✅</td>
-          <td style="text-align: left">-</td>
-          <td style="text-align: left">-</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><strong>U2F</strong></td>
-          <td style="text-align: left"><strong>Воздушный зазор</strong></td>
-          <td style="text-align: left"><strong>DIY-энтропия</strong></td>
-          <td style="text-align: left"><strong>Сторонние кошельки</strong></td>
-      </tr>
-      <tr>
-          <td style="text-align: left">✅</td>
-          <td style="text-align: left">-</td>
-          <td style="text-align: left">-</td>
-          <td style="text-align: left">✅</td>
-      </tr>
-  </tbody>
+<thead>
+<tr>
+<th><strong>BTC-only</strong></th>
+<th><strong>PIN</strong></th>
+<th><strong>Decoy PIN</strong></th>
+<th><strong>Wipe PIN</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-</td>
+<td>✅</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>U2F</strong></td>
+<td><strong>Air-gap</strong></td>
+<td><strong>DIY entropy</strong></td>
+<td><strong>Third-party wallets</strong></td>
+</tr>
+<tr>
+<td>✅</td>
+<td>-</td>
+<td>-</td>
+<td>✅</td>
+</tr>
+</tbody>
 </table>
 <blockquote class="book-hint info">
-  * Прошивка BitBox 02 имеет открытый исходный код, и ее архитектура позволяет не доверять защищенному элементу<br>
-** Версия с прошивкой, отображающей только биткоин, доступна по <a href="https://sunscrypt.ru/catalog/brand-bitbox-bitbox02-btc-only/">этой ссылке</a>.
+  * The BitBox 02 <a href="https://github.com/digitalbitbox/bitbox02-firmware/blob/master/BUILD.md">firmware is open source</a>, and its architecture <a href="https://shiftcrypto.ch/blog/best-of-both-worlds-using-a-secure-chip-with-open-source-firmware/">allows the secure element not to be trusted</a>.
 </blockquote>
 
-<h2 id="keystone-3-pro">
-  Keystone 3 Pro
-  <a class="anchor" href="#keystone-3-pro">#</a>
+<h2 id="keystone-pro">
+  Keystone Pro
+  <a class="anchor" href="#keystone-pro">#</a>
 </h2>
 <div class="imageWrapper">
     <img src="/img/hwws/keystone.png">
 </div>
 <table>
-  <thead>
-      <tr>
-          <th style="text-align: left"><strong>Производитель</strong></th>
-          <th style="text-align: left"><strong>Год выпуска</strong></th>
-          <th style="text-align: left"><strong>Цена</strong></th>
-          <th style="text-align: left"><strong>Подходит для</strong></th>
-          <th style="text-align: left"><strong>Нативное приложение</strong></th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td style="text-align: left">Yanssie HK</td>
-          <td style="text-align: left">2023</td>
-          <td style="text-align: left"><a href="https://sunscrypt.ru/catalog/keystone/keystone-3-pro/">₽14,250</a></td>
-          <td style="text-align: left">Опытных</td>
-          <td style="text-align: left">N/A</td>
-      </tr>
-  </tbody>
+<thead>
+<tr>
+<th><strong>Manufacturer</strong></th>
+<th><strong>Released</strong></th>
+<th><strong>MSRP</strong></th>
+<th><strong>Suitable for</strong></th>
+<th><strong>Native app</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Yanssie HK</td>
+<td>2021</td>
+<td>US $169</td>
+<td>Beginners</td>
+<td><a href="https://keyst.one/companion-app">Keystone</a></td>
+</tr>
+</tbody>
 </table>
 <hr>
 <table>
-  <thead>
-      <tr>
-          <th style="text-align: left"><strong>Разъем</strong></th>
-          <th style="text-align: left"><strong>microSD</strong></th>
-          <th style="text-align: left"><strong>Камера</strong></th>
-          <th style="text-align: left"><strong>SE</strong></th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td style="text-align: left">microUSB</td>
-          <td style="text-align: left">✅</td>
-          <td style="text-align: left">✅</td>
-          <td style="text-align: left">✅†</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><strong>Аккумулятор</strong></td>
-          <td style="text-align: left"><strong>Bluetooth</strong></td>
-          <td style="text-align: left"><strong>NFC</strong></td>
-          <td style="text-align: left"><strong>Открытый код</strong></td>
-      </tr>
-      <tr>
-          <td style="text-align: left">✅</td>
-          <td style="text-align: left">-</td>
-          <td style="text-align: left">-</td>
-          <td style="text-align: left">-*</td>
-      </tr>
-  </tbody>
+<thead>
+<tr>
+<th><strong>Connector</strong></th>
+<th><strong>microSD</strong></th>
+<th><strong>Camera</strong></th>
+<th><strong>Secure element</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>microUSB</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td><strong>Battery</strong></td>
+<td><strong>Bluetooth</strong></td>
+<td><strong>NFC</strong></td>
+<td><strong>Open source</strong></td>
+</tr>
+<tr>
+<td>✅</td>
+<td>-</td>
+<td>-</td>
+<td>-*</td>
+</tr>
+</tbody>
 </table>
-<p>Keystone 3 Pro пришел на смену модели Keystone Pro. У кошелька большой (4-дюймовый) сенсорный дисплей, этим он похож на смартфон, и емкая батарея на 1000 mAh, которой хватает на две недели. Так как устройство появилось недавно, разработчики часто выпускают обновления прошивки, где добавляют новые токены и функции (<a href="https://keyst.one/roadmap">roadmap будущих функций</a>).</p>
-<p>Кошелек может похвастаться поддержкой схемы Шамира и парольной фразы, возможностью создавать и одновременно использовать три разных кошелька (три сид фразы) и быстро переключаться между ними. В следующих обновлениях будет добавлена DIY-энтропия. Биткоин-онли прошивки не будет, в будущем производитель планирует выпустить отдельный кошелек для работы исключительно с Биткоином.</p>
-<h3 id="датчик-отпечатков-пальцев">
-  Датчик отпечатков пальцев
-  <a class="anchor" href="#%d0%b4%d0%b0%d1%82%d1%87%d0%b8%d0%ba-%d0%be%d1%82%d0%bf%d0%b5%d1%87%d0%b0%d1%82%d0%ba%d0%be%d0%b2-%d0%bf%d0%b0%d0%bb%d1%8c%d1%86%d0%b5%d0%b2">#</a>
+<p>Fomerly known as the Cobo Vault, this device has a large touchscreen making it feel similar to navigating a smartphone. While it has support for a long list of tokens, bitcoin-only firmware is available (this becomes irreversible once installed).</p>
+<p>The <em>Keystone Pro</em>’s hardware design is open source, as is the secure element’s firmware. However, the device’s firmware is not considered to be open source (though independent code audits are offered).</p>
+<h3 id="fingerprint-sensor">
+  Fingerprint sensor
+  <a class="anchor" href="#fingerprint-sensor">#</a>
 </h3>
-<p>Расположенный на задней панели устройства датчик может быть активирован для разблокировки и подписания транзакций. Авторизация такого рода обычно уязвима перед &ldquo;атаками гаечным ключом&rdquo; и лишает возможности правдоподобного отрицания. Однако кошелек разработан так, что при включении устройства и при входе в настройки безопасности мы не можем использовать отпечаток, а должны вводить пин или пароль.</p>
+<p>Located on the back of the device, this feature can be enabled to unlock and signing transactions. However, the inclusion of a fingerprint sensor may also introduce risks associated with <a href="https://unchained.com/blog/21-ways-lose-bitcoin/#wrench">$5 wrench attacks</a> and plausible deniability.</p>
 <div class="imageWrapper">
-    <img src="/img/hwws/wrench.jpg">
+    <img src="/img/hwws/wrench-en.png">
 </div>
-<h3 id="пути-деривации-и-форматы-адресов">
-  Пути деривации и форматы адресов
-  <a class="anchor" href="#%d0%bf%d1%83%d1%82%d0%b8-%d0%b4%d0%b5%d1%80%d0%b8%d0%b2%d0%b0%d1%86%d0%b8%d0%b8-%d0%b8-%d1%84%d0%be%d1%80%d0%bc%d0%b0%d1%82%d1%8b-%d0%b0%d0%b4%d1%80%d0%b5%d1%81%d0%be%d0%b2">#</a>
+<h3 id="removable-battery-packs">
+  Removable battery packs
+  <a class="anchor" href="#removable-battery-packs">#</a>
 </h3>
-<p>Keystone 3 Pro поддерживает разные форматы адресов как для Биткоина, так и для других монет.</p>
-<ul>
-<li>
-<p>В Биткоине – это Native SegWit, Nested SegWit, Legacy адреса. В дополнение к этому можно выбрать интересующий индекс монеты, например адрес биткоина номер 1 000 005.</p>
-</li>
-<li>
-<p>В Ethereum – это общепринятый формат BIP44, Ledger Live (для пользователей Леджер), Ledger Legacy (адреса устаревших приложений Chrome).</p>
-</li>
-</ul>
-<p>Таким образом производитель решает проблему совместимости и предоставляет полный контроль над ключами пользователя.</p>
-<h3 id="самоуничтожение-при-попытке-взлома">
-  Самоуничтожение при попытке взлома
-  <a class="anchor" href="#%d1%81%d0%b0%d0%bc%d0%be%d1%83%d0%bd%d0%b8%d1%87%d1%82%d0%be%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5-%d0%bf%d1%80%d0%b8-%d0%bf%d0%be%d0%bf%d1%8b%d1%82%d0%ba%d0%b5-%d0%b2%d0%b7%d0%bb%d0%be%d0%bc%d0%b0">#</a>
+<p>The <em>Keystone Pro</em> gives the option of using a AAA-powered battery pack or a rechargeable lithium-ion battery pack (both of which are inbcluded included) for air-gapped usage. Similar to the <em>Coldcard Mk4</em>, the use of external battery sources eliminates the threat of compromised charging cables unsuspectingly transmitting data.</p>
+<h3 id="self-destruct-on-intrusion">
+  Self-destruct on intrusion
+  <a class="anchor" href="#self-destruct-on-intrusion">#</a>
 </h3>
-<p>В Keystone 3 Pro есть функция защиты от несанкционированного доступа (anti-tamper) со сложной схемой &ldquo;дом безопасности&rdquo;. Любая попытка вскрытия корпуса кошелька приводит к удалению данных. Это дополнительная мера безопасности к имеющейся защите двух безопасных чипов.</p>
-<h3 id="обзор-программных-возможностей">
-  Обзор программных возможностей
-  <a class="anchor" href="#%d0%be%d0%b1%d0%b7%d0%be%d1%80-%d0%bf%d1%80%d0%be%d0%b3%d1%80%d0%b0%d0%bc%d0%bc%d0%bd%d1%8b%d1%85-%d0%b2%d0%be%d0%b7%d0%bc%d0%be%d0%b6%d0%bd%d0%be%d1%81%d1%82%d0%b5%d0%b9">#</a>
+<p>If access to the circuit board is attempted by removing the screen, the device will initiate a self-destruct process: wiping sensitive data and bricking itself. It should be noted that this action is triggered by a button battery with a 2-year lifespan, meaning the device must be replaced after 2 years if you wish to preserve this feature</p>
+<h3 id="software-features-overview-7">
+  Software features overview
+  <a class="anchor" href="#software-features-overview-7">#</a>
 </h3>
 <table>
-  <thead>
-      <tr>
-          <th style="text-align: left"><strong>Только биткоин</strong></th>
-          <th style="text-align: left"><strong>PIN</strong></th>
-          <th style="text-align: left"><strong>Двойной PIN</strong></th>
-          <th style="text-align: left"><strong>Самоуничтожение</strong></th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td style="text-align: left">-</td>
-          <td style="text-align: left">✅</td>
-          <td style="text-align: left">-</td>
-          <td style="text-align: left">-‡</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><strong>U2F</strong></td>
-          <td style="text-align: left"><strong>Воздушный зазор</strong></td>
-          <td style="text-align: left"><strong>DIY-энтропия</strong></td>
-          <td style="text-align: left"><strong>Сторонние кошельки</strong></td>
-      </tr>
-      <tr>
-          <td style="text-align: left">-</td>
-          <td style="text-align: left">✅</td>
-          <td style="text-align: left">-</td>
-          <td style="text-align: left">✅ <a href="https://keyst.one/supported-wallets-and-assets">полный список</a></td>
-      </tr>
-  </tbody>
+<thead>
+<tr>
+<th><strong>BTC-only</strong></th>
+<th><strong>PIN</strong></th>
+<th><strong>Decoy PIN</strong></th>
+<th><strong>Wipe PIN</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>✅†</td>
+<td>✅</td>
+<td>-</td>
+<td>-‡</td>
+</tr>
+<tr>
+<td><strong>U2F</strong></td>
+<td><strong>Air-gap</strong></td>
+<td><strong>DIY entropy</strong></td>
+<td><strong>Third-party wallets</strong></td>
+</tr>
+<tr>
+<td>-</td>
+<td>✅</td>
+<td>-</td>
+<td>✅</td>
+</tr>
+</tbody>
 </table>
 <blockquote class="book-hint info">
-  <p>* Некоторые, <a href="https://blog.keyst.one/the-role-of-open-source-tech-in-keystones-development-4dd77faea752">но не все компоненты</a> устройства имеют открытый исходный код</p>
-<p>† В кошельке три SE чипа. Два отвечают за хранение ключей, а третий защищает биометрические данные.</p>
-<p>‡ Двойной PIN-код, стирающий приватные данные отсутствует, но есть <a href="https://blog.keyst.one/self-destruct-mechanisms-unique-defense-against-side-channel-attacks-4cfea3d4eff1">механизм самоуничтожения</a>, и устройство стирается <a href="https://support.keyst.one/basic-features/password/forgot-or-reset-a-pin-or-password">после 5 неверных попыток ввода пароля</a></p>
+  <p>* Some <a href="https://blog.keyst.one/on-open-source-and-transparency-ba37fa1c1e8c">but not all</a> components of the device are open-source.</p>
+<p>† Bitcoin-only firmware <a href="https://blog.keyst.one/the-relevance-benefits-of-keystones-btc-only-firmware-8965ebb42e48">is not installed by default</a>.</p>
+<p>‡ The device has no wipe PIN, but it does <a href="https://blog.keyst.one/self-destruct-mechanisms-unique-defense-against-side-channel-attacks-4cfea3d4eff1">have a self-destruct mechanism</a>, and the device is wiped <a href="https://support.keyst.one/basic-features/password/forgot-or-reset-a-pin-or-password">after 5 incorrect password attempts</a>.</p>
 
 </blockquote>
 
-<h2 id="passport-вторая-партия">
-  Passport (вторая партия)
-  <a class="anchor" href="#passport-%d0%b2%d1%82%d0%be%d1%80%d0%b0%d1%8f-%d0%bf%d0%b0%d1%80%d1%82%d0%b8%d1%8f">#</a>
+<h2 id="passport-batch-2">
+  Passport (Batch 2)
+  <a class="anchor" href="#passport-batch-2">#</a>
 </h2>
 <div class="imageWrapper">
     <img src="/img/hwws/passport.png">
 </div>
 <table>
-  <thead>
-      <tr>
-          <th style="text-align: left"><strong>Производитель</strong></th>
-          <th style="text-align: left"><strong>Год выпуска</strong></th>
-          <th style="text-align: left"><strong>Цена</strong></th>
-          <th style="text-align: left"><strong>Подходит для</strong></th>
-          <th style="text-align: left"><strong>Нативное приложение</strong></th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td style="text-align: left">Foundation Devices</td>
-          <td style="text-align: left">2022</td>
-          <td style="text-align: left"><a href="https://sunscrypt.ru/catalog/foundation/passport-batch/">₽28,500</a></td>
-          <td style="text-align: left">Начинающих</td>
-          <td style="text-align: left"><a href="https://foundationdevices.com/envoy/">Envoy</a></td>
-      </tr>
-  </tbody>
+<thead>
+<tr>
+<th><strong>Manufacturer</strong></th>
+<th><strong>Released</strong></th>
+<th><strong>MSRP</strong></th>
+<th><strong>Suitable for</strong></th>
+<th><strong>Native app</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Foundation Devices</td>
+<td>2022</td>
+<td>US $259</td>
+<td>Beginners</td>
+<td><a href="https://foundationdevices.com/envoy/">Envoy</a></td>
+</tr>
+</tbody>
 </table>
 <hr>
 <table>
-  <thead>
-      <tr>
-          <th style="text-align: left"><strong>Разъем</strong></th>
-          <th style="text-align: left"><strong>microSD</strong></th>
-          <th style="text-align: left"><strong>Камера</strong></th>
-          <th style="text-align: left"><strong>SE</strong></th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td style="text-align: left">USB-C</td>
-          <td style="text-align: left">✅</td>
-          <td style="text-align: left">✅</td>
-          <td style="text-align: left">✅</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><strong>Аккумулятор</strong></td>
-          <td style="text-align: left"><strong>Bluetooth</strong></td>
-          <td style="text-align: left"><strong>NFC</strong></td>
-          <td style="text-align: left"><strong>Открытый код</strong></td>
-      </tr>
-      <tr>
-          <td style="text-align: left">✅</td>
-          <td style="text-align: left">-</td>
-          <td style="text-align: left">-</td>
-          <td style="text-align: left">✅*</td>
-      </tr>
-  </tbody>
+<thead>
+<tr>
+<th><strong>Connector</strong></th>
+<th><strong>microSD</strong></th>
+<th><strong>Camera</strong></th>
+<th><strong>Secure element</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>USB-C</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td><strong>Battery</strong></td>
+<td><strong>Bluetooth</strong></td>
+<td><strong>NFC</strong></td>
+<td><strong>Open source</strong></td>
+</tr>
+<tr>
+<td>✅</td>
+<td>-</td>
+<td>-</td>
+<td>✅*</td>
+</tr>
+</tbody>
 </table>
-<p>Первое, что бросается в глаза при виде второй итерации аппаратных кошельков <em>Passport</em> от компании <em>Foundation</em> - это цена. Намеренно лишенный инструментов беспроводной связи, кошелек получает данные с помощью карты microSD и камеры. Несмотря на наличие порта USB-C, устройство способно только подзаряжаться через этот порт и не позволяет передавать какие-либо данные (контакты удалены). </p>
-<h3 id="стандартный-аккумуляторный-блок">
-  Стандартный аккумуляторный блок
-  <a class="anchor" href="#%d1%81%d1%82%d0%b0%d0%bd%d0%b4%d0%b0%d1%80%d1%82%d0%bd%d1%8b%d0%b9-%d0%b0%d0%ba%d0%ba%d1%83%d0%bc%d1%83%d0%bb%d1%8f%d1%82%d0%be%d1%80%d0%bd%d1%8b%d0%b9-%d0%b1%d0%bb%d0%be%d0%ba">#</a>
+<p>The second iteration from Foundation, <em>Passport</em> is priced at the higher end of the spectrum when compared to other air-gapped options. Built without wireless communication capabilities of any kind, the device ingests data via microSD card and camera. While it does have USB-C port, the device has been configured (pins removed) to transmit power only and prevent any data from being transmitted.</p>
+<h3 id="standard-oem-battery-pack">
+  Standard OEM battery pack
+  <a class="anchor" href="#standard-oem-battery-pack">#</a>
 </h3>
-<p>В отличие от первой версии Passport, в этом устройстве батарейный блок AA заменен на стандартный перезаряжаемый литий-ионный аккумулятор. Это было сделано для того, чтобы обеспечить большее время автономной работы и более точный индикатор уровня заряда. Аккумулятор может быть приобретен у сторонних производителей.</p>
-<h3 id="светодиодные-индикаторы-безопасности-для-проверки-прошивки">
-  Светодиодные индикаторы безопасности для проверки прошивки
-  <a class="anchor" href="#%d1%81%d0%b2%d0%b5%d1%82%d0%be%d0%b4%d0%b8%d0%be%d0%b4%d0%bd%d1%8b%d0%b5-%d0%b8%d0%bd%d0%b4%d0%b8%d0%ba%d0%b0%d1%82%d0%be%d1%80%d1%8b-%d0%b1%d0%b5%d0%b7%d0%be%d0%bf%d0%b0%d1%81%d0%bd%d0%be%d1%81%d1%82%d0%b8-%d0%b4%d0%bb%d1%8f-%d0%bf%d1%80%d0%be%d0%b2%d0%b5%d1%80%d0%ba%d0%b8-%d0%bf%d1%80%d0%be%d1%88%d0%b8%d0%b2%d0%ba%d0%b8">#</a>
+<p>Unlike the first version of <em>Passport</em>, this device replaces the AA-battery pack with a standard rechargeable lithium-ion battery. The rationale was to offer greater battery life and more accurate power level indicator. However, this design choice does not introduce any additional dependency on Foundation Devices for parts, as the chosen battery can be sourced from a variety of vendors.</p>
+<h3 id="security-leds-for-firmware-validation">
+  Security LEDs for firmware validation
+  <a class="anchor" href="#security-leds-for-firmware-validation">#</a>
 </h3>
-<p>Подобно <em>Coldcard Mk4</em>, <em>Passport</em> отображает синий светодиод для подтверждения того, что защитный элемент не подвергался вмешательству с момента последнего использования, а также для подтверждения подлинности любых обновлений программного обеспечения. При обнаружении несанкционированного вмешательства или неаутентичной прошивки загорается красный светодиод.</p>
-<h3 id="обзор-возможностей-программного-обеспечения-6">
-  Обзор возможностей программного обеспечения
-  <a class="anchor" href="#%d0%be%d0%b1%d0%b7%d0%be%d1%80-%d0%b2%d0%be%d0%b7%d0%bc%d0%be%d0%b6%d0%bd%d0%be%d1%81%d1%82%d0%b5%d0%b9-%d0%bf%d1%80%d0%be%d0%b3%d1%80%d0%b0%d0%bc%d0%bc%d0%bd%d0%be%d0%b3%d0%be-%d0%be%d0%b1%d0%b5%d1%81%d0%bf%d0%b5%d1%87%d0%b5%d0%bd%d0%b8%d1%8f-6">#</a>
+<p>A similar feature to the <em>Coldcard Mk4</em>, <em>Passport</em> will display a blue LED to confirm that the secure element has not been tampered with since its last use, and to confirm that any firmware updates are genuine. If tampering or inauthentic firmware is detected, a red LED will turn on.</p>
+<h3 id="software-features-overview-8">
+  Software features overview
+  <a class="anchor" href="#software-features-overview-8">#</a>
 </h3>
 <table>
-  <thead>
-      <tr>
-          <th style="text-align: left"><strong>Только биткоин</strong></th>
-          <th style="text-align: left"><strong>PIN</strong></th>
-          <th style="text-align: left"><strong>Двойной PIN</strong></th>
-          <th style="text-align: left"><strong>Самоуничтожение</strong></th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td style="text-align: left">✅</td>
-          <td style="text-align: left">✅</td>
-          <td style="text-align: left">-</td>
-          <td style="text-align: left">-</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><strong>U2F</strong></td>
-          <td style="text-align: left"><strong>Воздушный зазор</strong></td>
-          <td style="text-align: left"><strong>DIY-энтропия</strong></td>
-          <td style="text-align: left"><strong>Сторонние кошельки</strong></td>
-      </tr>
-      <tr>
-          <td style="text-align: left">-</td>
-          <td style="text-align: left">✅</td>
-          <td style="text-align: left">-</td>
-          <td style="text-align: left">✅</td>
-      </tr>
-  </tbody>
+<thead>
+<tr>
+<th><strong>BTC-only</strong></th>
+<th><strong>PIN</strong></th>
+<th><strong>Decoy PIN</strong></th>
+<th><strong>Wipe PIN</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>✅</td>
+<td>✅</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>U2F</strong></td>
+<td><strong>Air-gap</strong></td>
+<td><strong>DIY entropy</strong></td>
+<td><strong>Third-party wallets</strong></td>
+</tr>
+<tr>
+<td>-</td>
+<td>✅</td>
+<td>-</td>
+<td>✅</td>
+</tr>
+</tbody>
 </table>
 <blockquote class="book-hint info">
-  * Исходный код прошивки и аппаратной части <em>Passport</em> <a href="https://github.com/Foundation-Devices">открыт</a>, но в устройстве используется защитный элемент, чей код закрыт
+  * Passport’s <a href="https://github.com/Foundation-Devices">firmware and hardware is open source</a>, but the device uses a secure element chip that is not.
 </blockquote>
 
 <h2 id="seedsigner">
@@ -4191,122 +3997,125 @@ https://github.com/alex-shpak/hugo-book
     <img src="/img/hwws/seedsigner.png">
 </div>
 <table>
-  <thead>
-      <tr>
-          <th style="text-align: left"><strong>Производитель</strong></th>
-          <th style="text-align: left"><strong>Год выпуска</strong></th>
-          <th style="text-align: left"><strong>Цена</strong></th>
-          <th style="text-align: left"><strong>Подходит для</strong></th>
-          <th style="text-align: left"><strong>Нативное приложение</strong></th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td style="text-align: left">N/A</td>
-          <td style="text-align: left">2020</td>
-          <td style="text-align: left">Варьируется</td>
-          <td style="text-align: left">Продвинутых</td>
-          <td style="text-align: left">N/A</td>
-      </tr>
-  </tbody>
+<thead>
+<tr>
+<th><strong>Manufacturer</strong></th>
+<th><strong>Released</strong></th>
+<th><strong>MSRP</strong></th>
+<th><strong>Suitable for</strong></th>
+<th><strong>Native app</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>N/A</td>
+<td>2020</td>
+<td>Varies</td>
+<td>Advanced</td>
+<td>N/A</td>
+</tr>
+</tbody>
 </table>
 <hr>
 <table>
-  <thead>
-      <tr>
-          <th style="text-align: left"><strong>Разъем</strong></th>
-          <th style="text-align: left"><strong>microSD</strong></th>
-          <th style="text-align: left"><strong>Камера</strong></th>
-          <th style="text-align: left"><strong>SE</strong></th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td style="text-align: left">microUSB</td>
-          <td style="text-align: left">✅</td>
-          <td style="text-align: left">✅</td>
-          <td style="text-align: left">-</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><strong>Аккумулятор</strong></td>
-          <td style="text-align: left"><strong>Bluetooth</strong></td>
-          <td style="text-align: left"><strong>NFC</strong></td>
-          <td style="text-align: left"><strong>Открытый код</strong></td>
-      </tr>
-      <tr>
-          <td style="text-align: left">-</td>
-          <td style="text-align: left">-</td>
-          <td style="text-align: left">-</td>
-          <td style="text-align: left">✅</td>
-      </tr>
-  </tbody>
+<thead>
+<tr>
+<th><strong>Connector</strong></th>
+<th><strong>microSD</strong></th>
+<th><strong>Camera</strong></th>
+<th><strong>Secure element</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>microUSB</td>
+<td>✅</td>
+<td>✅</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>Battery</strong></td>
+<td><strong>Bluetooth</strong></td>
+<td><strong>NFC</strong></td>
+<td><strong>Open source</strong></td>
+</tr>
+<tr>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>✅</td>
+</tr>
+</tbody>
 </table>
-<p>SeedSigner - это шаблон для самостоятельной сборки аппаратного кошелька без излишеств, способного выполнять ряд критически важных операций. Основными соображениями при проектировании <em>SeedSigner</em> было стремление создать недорогое устройство, не хранящее состояния, которое можно собрать из аппаратных средств общего назначения. Устройство ориентировано на долгосрочных держателей и пользователей мультисиг-схем хранения.</p>
-<blockquote class="book-hint info">
-  Подробную информацию о необходимых деталях, том как собрать свой собственный SeedSigner и о функциях этого уникального устройства можно получить в нашем гиде <a href="https://21ideas.org/seedsigner/">здесь</a>.
-</blockquote>
-
-<p>В отличие от описанных выше аппаратных кошельков, <em>SeedSginer</em> не генерирует приватный ключ на устройстве. Вместо этого необходимо задать ему энтропию (бросить кости, подбросить монету или сделать снимок камерой), ввести эти данные, и устройство рассчитает для вас контрольную сумму (и предоставит сид-фразу).</p>
-<h3 id="недорогие-и-широкодоступные-компоненты">
-  Недорогие и широкодоступные компоненты 
-  <a class="anchor" href="#%d0%bd%d0%b5%d0%b4%d0%be%d1%80%d0%be%d0%b3%d0%b8%d0%b5-%d0%b8-%d1%88%d0%b8%d1%80%d0%be%d0%ba%d0%be%d0%b4%d0%be%d1%81%d1%82%d1%83%d0%bf%d0%bd%d1%8b%d0%b5-%d0%ba%d0%be%d0%bc%d0%bf%d0%be%d0%bd%d0%b5%d0%bd%d1%82%d1%8b">#</a>
+<p>SeedSigner is a do-it-yourself template for a no frills, air-gapped hardware wallet that can perform a number of limited, but critical, operations. The key design considerations of this device were to create a stateless, low-cost option using general-purpose hardware aimed at long-term holders and multisignature custody schemes. One trade-offs to be aware of is power-up speed (up to 1 minute).</p>
+<p>Three basic components make up the device:</p>
+<ul>
+<li>Raspberry Pi Zero (v1.3 recommended)</li>
+<li>Waveshare 1.3 LCD Hat (240 x 240 pixels)</li>
+<li>Aokin / AuviPal/ (other) RPI Camera</li>
+</ul>
+<p>These parts can be sourced from a variety of vendors. You’ll also need an enclosure to protect the parts and a MicroSD card for importing and exporting data. If you prefer a more convenient option, the SeedSigner can be purchased as a <a href="https://btc-hardware-solutions.square.site/product/orange_pill_kit/6?cp=true&amp;sa=true&amp;sbp=false&amp;q=false">pre-assembled kit</a>. Air-gapped operations are achieved through use of the <em>power only</em> MicroUSB port on the Rasp Pi Zero, the MicroSD card for exporting PSBTs and the camera for scanning QR codes. </p>
+<p>Unlike other hardware wallet options, the SeedSginer does not generate your private key for you on the device. Instead, you must provide the entropy (either through dice rolls, coin flips, or taking a photo with the camera), input this data, and the device will calculate the final seed word (checksum).</p>
+<h3 id="low-cost-widely-available-parts">
+  Low-cost, widely-available parts
+  <a class="anchor" href="#low-cost-widely-available-parts">#</a>
 </h3>
-<p>Несмотря на то, что пользователи могут заказать индивидуальные корпуса и более дорогие комплектующие, по базовым аппаратным требованиям это устройство является наиболее доступным вариантом по сравнению с аналогами в готовом виде. Расчитывая стоимость необходимых элементов летом 2023 года я <a href="/seedsigner/#%d1%86%d0%b5%d0%bd%d0%b0">уложился в 5,500 рублей</a>.</p>
-<h3 id="сильное-сообщество-сборщиков">
-  Сильное сообщество сборщиков
-  <a class="anchor" href="#%d1%81%d0%b8%d0%bb%d1%8c%d0%bd%d0%be%d0%b5-%d1%81%d0%be%d0%be%d0%b1%d1%89%d0%b5%d1%81%d1%82%d0%b2%d0%be-%d1%81%d0%b1%d0%be%d1%80%d1%89%d0%b8%d0%ba%d0%be%d0%b2">#</a>
+<p>While users can opt for custom cases and more expensive parts, the basic hardware requirements place it as the most affordable option against its pre-assembled peers. At present, it’s possible to acquire the essentials for just under $50.</p>
+<h3 id="a-resilient-community-of-builders">
+  A resilient community of builders
+  <a class="anchor" href="#a-resilient-community-of-builders">#</a>
 </h3>
-<p>Устройство, созданное из широкодоступных деталей, исключает вероятность отказа какой-либо отдельной компании. Все в этом устройстве обладает <a href="https://github.com/SeedSigner/seedsigner">открытым исходным кодом</a>, а необходимость в доверии сведена к минимуму. По этим и другим причинам устройство привлекает все больше разработчиков, дизайнеров и технарей, предлагающих всевозможные решения и внедряющих дополнительные функции.</p>
-<h3 id="прокачиваемость">
-  Прокачиваемость
-  <a class="anchor" href="#%d0%bf%d1%80%d0%be%d0%ba%d0%b0%d1%87%d0%b8%d0%b2%d0%b0%d0%b5%d0%bc%d0%be%d1%81%d1%82%d1%8c">#</a>
+<p>A device built with off-the-shelf parts eliminates any single company as a single point of failure. Everything about the device is open source and trust-minimzed. For these reasons among others, the device has attracted a growing crew of developers, designers, and tinkerers building all kinds of solutions and additional functionality.</p>
+<h3 id="customizability">
+  Customizability
+  <a class="anchor" href="#customizability">#</a>
 </h3>
-<p>Для тех, кто хочет, чтобы их <em>SeedSigner</em> выделялся на фоне остальных, возможности безграничны: 3D-печать собственного корпуса, покупка кастомных кнопок и джойстика, использование нестандартных компонентов и цветов и т.д. </p>
-<h3 id="обзор-возможностей-программного-обеспечения-7">
-  Обзор возможностей программного обеспечения
-  <a class="anchor" href="#%d0%be%d0%b1%d0%b7%d0%be%d1%80-%d0%b2%d0%be%d0%b7%d0%bc%d0%be%d0%b6%d0%bd%d0%be%d1%81%d1%82%d0%b5%d0%b9-%d0%bf%d1%80%d0%be%d0%b3%d1%80%d0%b0%d0%bc%d0%bc%d0%bd%d0%be%d0%b3%d0%be-%d0%be%d0%b1%d0%b5%d1%81%d0%bf%d0%b5%d1%87%d0%b5%d0%bd%d0%b8%d1%8f-7">#</a>
+<p>For those inclined to add some personality to their Seed Sginer, options are endless: 3D print your own enclosure, purchase custom buttons and joystick, use higher-grade components, etc.</p>
+<h3 id="software-features-overview-9">
+  Software features overview
+  <a class="anchor" href="#software-features-overview-9">#</a>
 </h3>
 <table>
-  <thead>
-      <tr>
-          <th style="text-align: left"><strong>Только биткоин</strong></th>
-          <th style="text-align: left"><strong>PIN</strong></th>
-          <th style="text-align: left"><strong>Двойной PIN</strong></th>
-          <th style="text-align: left"><strong>Самоуничтожение</strong></th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td style="text-align: left">✅</td>
-          <td style="text-align: left">-</td>
-          <td style="text-align: left">-</td>
-          <td style="text-align: left">-</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><strong>U2F</strong></td>
-          <td style="text-align: left"><strong>Воздушный зазор</strong></td>
-          <td style="text-align: left"><strong>DIY-энтропия</strong></td>
-          <td style="text-align: left"><strong>Сторонние кошельки</strong></td>
-      </tr>
-      <tr>
-          <td style="text-align: left">-</td>
-          <td style="text-align: left">✅</td>
-          <td style="text-align: left">✅</td>
-          <td style="text-align: left">✅</td>
-      </tr>
-  </tbody>
+<thead>
+<tr>
+<th><strong>BTC-only</strong></th>
+<th><strong>PIN</strong></th>
+<th><strong>Decoy PIN</strong></th>
+<th><strong>Wipe PIN</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>✅</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>U2F</strong></td>
+<td><strong>Air-gap</strong></td>
+<td><strong>DIY entropy</strong></td>
+<td><strong>Third-party wallets</strong></td>
+</tr>
+<tr>
+<td>-</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+</tbody>
 </table>
-<h2 id="кошелек-который-подходит-именно-вам">
-  Кошелек, который подходит именно вам
-  <a class="anchor" href="#%d0%ba%d0%be%d1%88%d0%b5%d0%bb%d0%b5%d0%ba-%d0%ba%d0%be%d1%82%d0%be%d1%80%d1%8b%d0%b9-%d0%bf%d0%be%d0%b4%d1%85%d0%be%d0%b4%d0%b8%d1%82-%d0%b8%d0%bc%d0%b5%d0%bd%d0%bd%d0%be-%d0%b2%d0%b0%d0%bc">#</a>
+<h2 id="the-wallet-thats-right-for-you">
+  The wallet that’s right for you
+  <a class="anchor" href="#the-wallet-thats-right-for-you">#</a>
 </h2>
-<p>При таком большом количестве вариантов, представленных на рынке, можно легко растеряться. Однако, как и все вопросы, связанные с обеспечением сохранности своего богатства, выбор аппаратного кошелька требует индивидуального подхода.</p>
-<p>Учет нескольких факторов, характерных только для вас (например, хранимая сумма, предполагаемая частота использования, предпочтения в отношении приватности и т.д.), поможет сузить круг претендентов. Еще один ключевой вопрос - будет ли устройство использоваться как отдельный кошелек (одна подпись) или как часть схемы мультисиг.</p>
+<p>With so many choices now available on the market, it can be easy to get overwhelmed. However, like all matters relating to securing one’s wealth, the choice of hardware wallet requires a uniquely personal solution.</p>
+<p>Considering several factors unique to you (e.g., the amount of wealth being secured, anticipated frequency of use, privacy preferences, etc.) can help narrow down the list. Another key question is whether the device will be used as a standalone wallet (singlesig) or part of a multisig custody scheme.</p>
 <blockquote>
-<p>&ldquo;Пока вы контролируете свой биткоин, когда вы записали и обезопасили заветные слова, свобода контролируя над собственными деньгами остается за вами&rdquo;.</p>
-<p>-Марти Бент</p>
+<p><em>“As long as you’re controlling your own bitcoin and have those words written down, secured, you have the freedom to control your money.”</em></p>
+<p>— Marty Bent</p>
 </blockquote>
-<p>У каждого свои потребности, технические возможности и пожелания. Всегда можно найти компромисс. Самое главное - сделать первый шаг. Начните изучать варианты самостоятельного хранения, и не останавливайтесь до тех пор, пока не почувствуете уверенность в сохранности своих приватных ключей. Доступный и надежный аппаратный кошелек может существенно облегчить этот процесс.</p>
+<p>Everyone will have different needs, technical abilities, and desired features. There will always be trade-offs. But, the most important foundational step is to take one: Learn about your self-custody options until you feel confident in securing your private keys and taking possession of your bitcoin. An affordable and reputable hardware wallet can make this process significantly easier.</p>
 </article>
   <hr>
 
@@ -4360,82 +4169,83 @@ https://github.com/alex-shpak/hugo-book
       <ul>
         <li><a href="#trezor-model-one">Trezor Model One</a>
           <ul>
-            <li><a href="#небольшой-и-незаметный">Небольшой и незаметный</a></li>
-            <li><a href="#биткоин-онли-прошивка">Биткоин-онли прошивка</a></li>
-            <li><a href="#обзор-возможностей-программного-обеспечения">Обзор возможностей программного обеспечения</a></li>
+            <li><a href="#small-and-inconspicuous">Small and inconspicuous</a></li>
+            <li><a href="#budget-friendly">Budget-friendly</a></li>
+            <li><a href="#bitcoin-only-firmware-available">Bitcoin-only firmware available</a></li>
+            <li><a href="#software-features-overview">Software features overview</a></li>
           </ul>
         </li>
         <li><a href="#trezor-model-t">Trezor Model T</a>
           <ul>
-            <li><a href="#удобная-навигация-дополняющая-безопасность">Удобная навигация, дополняющая безопасность</a></li>
-            <li><a href="#возможности-восстановления-сида">Возможности восстановления сида</a></li>
-            <li><a href="#шифрование-microsd-pin-кодом">Шифрование microSD PIN-кодом</a></li>
-            <li><a href="#обзор-возможностей-программного-обеспечения-1">Обзор возможностей программного обеспечения</a></li>
+            <li><a href="#easy-navigation-that-complements-security">Easy navigation that complements security</a></li>
+            <li><a href="#seed-recovery-options">Seed recovery options</a></li>
+            <li><a href="#microsd-pin-encryption">microSD PIN encryption</a></li>
+            <li><a href="#software-features-overview-1">Software features overview</a></li>
           </ul>
         </li>
         <li><a href="#ledger-nano-s-plus">Ledger Nano S Plus</a>
           <ul>
-            <li><a href="#компартментализованная-ос">Компартментализованная ОС</a></li>
-            <li><a href="#защитный-элемент">Защитный элемент </a></li>
-            <li><a href="#повышенная-сложность-брут-форса">Повышенная сложность брут-форса</a></li>
-            <li><a href="#обзор-возможностей-программы">Обзор возможностей программы</a></li>
+            <li><a href="#compartmentalized-os">Compartmentalized OS</a></li>
+            <li><a href="#secure-element-on-board">Secure element on board</a></li>
+            <li><a href="#low-threshold-for-brute-force">Low threshold for brute force</a></li>
+            <li><a href="#software-features-overview-2">Software features overview</a></li>
           </ul>
         </li>
         <li><a href="#ledger-nano-x">Ledger Nano X</a>
           <ul>
-            <li><a href="#встроенный-аккумулятор">Встроенный аккумулятор</a></li>
-            <li><a href="#сопряжение-по-bluetooth">Сопряжение по Bluetooth</a></li>
-            <li><a href="#обзор-возможностей-программного-обеспечения-2">Обзор возможностей программного обеспечения</a></li>
+            <li><a href="#internal-battery">Internal battery</a></li>
+            <li><a href="#bluetooth-pairing">Bluetooth pairing</a></li>
+            <li><a href="#software-features-overview-3">Software features overview</a></li>
           </ul>
         </li>
         <li><a href="#coldcard-mk4">Coldcard Mk4</a>
           <ul>
-            <li><a href="#nfc-v">NFC-V</a></li>
-            <li><a href="#усиленная-безопасность-для-прожженных-биткоинеров">Усиленная безопасность для прожженных биткоинеров</a></li>
-            <li><a href="#воздушный-зазор">Воздушный зазор</a></li>
-            <li><a href="#обзор-возможностей-программного-обеспечения-3">Обзор возможностей программного обеспечения</a></li>
+            <li><a href="#nfc-v-near-field-communication-capabilities">NFC-V (near-field communication) capabilities</a></li>
+            <li><a href="#hardened-security-for-the-hardened-bitcoiner">Hardened security for the hardened bitcoiner</a></li>
+            <li><a href="#air-gapped-coldpower">Air-gapped coldpower</a></li>
+            <li><a href="#software-features-overview-4">Software features overview</a></li>
           </ul>
         </li>
         <li><a href="#jade">Jade</a>
           <ul>
-            <li><a href="#возможность-подключения-по-bluetooth">Возможность подключения по Bluetooth</a></li>
-            <li><a href="#камера-для-работы-с-воздушным-зазором">Камера для работы с воздушным зазором</a></li>
-            <li><a href="#pin-код-для-стирания-кошелька">PIN-код для стирания кошелька</a></li>
-            <li><a href="#поддержка-liquid-network">Поддержка Liquid Network</a></li>
-            <li><a href="#обзор-возможностей-программного-обеспечения-4">Обзор возможностей программного обеспечения</a></li>
+            <li><a href="#bluetooth-connectivity">Bluetooth connectivity</a></li>
+            <li><a href="#camera-for-air-gapped-use">Camera for air-gapped use</a></li>
+            <li><a href="#wallet-erase-pin">Wallet-erase PIN</a></li>
+            <li><a href="#liquid-network-support">Liquid Network support</a></li>
+            <li><a href="#software-features-overview-5">Software features overview</a></li>
           </ul>
         </li>
         <li><a href="#bitbox-02">BitBox 02</a>
           <ul>
-            <li><a href="#маскировка-для-улучшения-операционной-безопасности">Маскировка для улучшения операционной безопасности</a></li>
-            <li><a href="#забудьте-о-кабелях">Забудьте о кабелях</a></li>
-            <li><a href="#обзор-возможностей-программного-обеспечения-5">Обзор возможностей программного обеспечения</a></li>
+            <li><a href="#low-key-for-improved-opsec">Low-key for improved opsec</a></li>
+            <li><a href="#no-cables-required">No cables required</a></li>
+            <li><a href="#software-features-overview-6">Software features overview</a></li>
           </ul>
         </li>
-        <li><a href="#keystone-3-pro">Keystone 3 Pro</a>
+        <li><a href="#keystone-pro">Keystone Pro</a>
           <ul>
-            <li><a href="#датчик-отпечатков-пальцев">Датчик отпечатков пальцев</a></li>
-            <li><a href="#пути-деривации-и-форматы-адресов">Пути деривации и форматы адресов</a></li>
-            <li><a href="#самоуничтожение-при-попытке-взлома">Самоуничтожение при попытке взлома</a></li>
-            <li><a href="#обзор-программных-возможностей">Обзор программных возможностей</a></li>
+            <li><a href="#fingerprint-sensor">Fingerprint sensor</a></li>
+            <li><a href="#removable-battery-packs">Removable battery packs</a></li>
+            <li><a href="#self-destruct-on-intrusion">Self-destruct on intrusion</a></li>
+            <li><a href="#software-features-overview-7">Software features overview</a></li>
           </ul>
         </li>
-        <li><a href="#passport-вторая-партия">Passport (вторая партия)</a>
+        <li><a href="#passport-batch-2">Passport (Batch 2)</a>
           <ul>
-            <li><a href="#стандартный-аккумуляторный-блок">Стандартный аккумуляторный блок</a></li>
-            <li><a href="#светодиодные-индикаторы-безопасности-для-проверки-прошивки">Светодиодные индикаторы безопасности для проверки прошивки</a></li>
-            <li><a href="#обзор-возможностей-программного-обеспечения-6">Обзор возможностей программного обеспечения</a></li>
+            <li><a href="#standard-oem-battery-pack">Standard OEM battery pack</a></li>
+            <li><a href="#security-leds-for-firmware-validation">Security LEDs for firmware validation</a></li>
+            <li><a href="#software-features-overview-8">Software features overview</a></li>
           </ul>
         </li>
         <li><a href="#seedsigner">SeedSigner</a>
           <ul>
-            <li><a href="#недорогие-и-широкодоступные-компоненты">Недорогие и широкодоступные компоненты </a></li>
-            <li><a href="#сильное-сообщество-сборщиков">Сильное сообщество сборщиков</a></li>
-            <li><a href="#прокачиваемость">Прокачиваемость</a></li>
-            <li><a href="#обзор-возможностей-программного-обеспечения-7">Обзор возможностей программного обеспечения</a></li>
+            <li><a href="#low-cost-widely-available-parts">Low-cost, widely-available parts</a></li>
+            <li><a href="#a-resilient-community-of-builders">A resilient community of builders</a></li>
+            <li><a href="#customizability">Customizability</a></li>
+            <li><a href="#software-features-overview-9">Software features overview</a></li>
           </ul>
         </li>
-        <li><a href="#кошелек-который-подходит-именно-вам">Кошелек, который подходит именно вам</a></li>
+        <li><a href="#the-wallet-thats-right-for-you">The wallet that’s right for you</a></li>
       </ul>
     </li>
   </ul>

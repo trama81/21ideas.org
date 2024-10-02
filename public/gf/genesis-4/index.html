@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html lang="ru-RU" dir="ltr">
+<html lang="en" dir="ltr">
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&display=swap" rel="stylesheet">  <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Цифровая валюта, деньги для интернета, всегда была главной целью шифропанков. Но мало кто погружался в эту тему так глубоко, как Ник Сабо.">
+<meta name="description" content="Digital currency, a cash for the internet, was always a central goal for the Cypherpunks. But few dived into the subject matter like Nick Szabo did.">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark">
-<meta name="lightning" content="21ideas@getalby.com"><meta property="og:title" content="Часть IV: Создавая Bit Gold, Сабо был в двух шагах от изобретения Биткоина" />
-<meta property="og:description" content="Цифровая валюта, деньги для интернета, всегда была главной целью шифропанков. Но мало кто погружался в эту тему так глубоко, как Ник Сабо." />
+<meta name="lightning" content="21ideas@getalby.com"><meta property="og:title" content="Part IV: With Bit Gold, Szabo Was Inches Away From Inventing Bitcoin" />
+<meta property="og:description" content="Digital currency, a cash for the internet, was always a central goal for the Cypherpunks. But few dived into the subject matter like Nick Szabo did." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://localhost:1313/gf/genesis-4/" />
 <meta property="og:image" content="http://localhost:1313/img/gf-243.png"/>
 
-<title>Часть IV: Создавая Bit Gold, Сабо был в двух шагах от изобретения Биткоина | 21ideas</title>
+<title>Part IV: With Bit Gold, Szabo Was Inches Away From Inventing Bitcoin | 21ideas</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -22,10 +22,10 @@
 <link rel="apple-touch-icon" media="(prefers-color-scheme: dark)" sizes="180x180" href="/apple-touch-icon-dark.png">
 <link rel="icon" type="image/png" media="(prefers-color-scheme: dark)" sizes="32x32" href="/favicon-32x32-dark.png">
 <link rel="icon" type="image/png" media="(prefers-color-scheme: dark)" sizes="16x16" href="/favicon-16x16-dark.png">
-  <link rel="alternate" hreflang="en" href="http://localhost:1313/en/gf/genesis-4/" title="Part IV: With Bit Gold, Szabo Was Inches Away From Inventing Bitcoin">
+  <link rel="alternate" hreflang="ru-RU" href="http://localhost:1313/ru/gf/genesis-4/" title="Часть IV: Создавая Bit Gold, Сабо был в двух шагах от изобретения Биткоина">
 <link rel="stylesheet" href="/book.min.44d288673620af09aba4fb7b29ef4c1d1f9c0258f725bd228507764ec1740f0a.css" integrity="sha256-RNKIZzYgrwmrpPt7Ke9MHR&#43;cAlj3Jb0ihQd2TsF0Dwo=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/ru.search.min.760cb93fca4cc9af4d5d957f0e91325f35c604c9b72da7d0d0517ae0f7424f53.js" integrity="sha256-dgy5P8pMya9NXZV/DpEyXzXGBMm3LafQ0FF64PdCT1M=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.322caf709709c011df0f8373a87ef3ce291ba22a62fdd5b8cf00bf824b20d5f8.js" integrity="sha256-MiyvcJcJwBHfD4NzqH7zzikboipi/dW4zwC/gksg1fg=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -53,7 +53,7 @@ https://github.com/alex-shpak/hugo-book
 
 
 <div class="book-search">
-  <input type="text" id="book-search-input" placeholder="Поиск" aria-label="Поиск" maxlength="64" data-hotkeys="s/" />
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
   <div class="book-search-spinner hidden"></div>
   <ul id="book-search-results"></ul>
 </div>
@@ -78,15 +78,15 @@ https://github.com/alex-shpak/hugo-book
     <label for="languages" class="flex justify-between">
       <a role="button" class="flex align-center">
         <img src="/svg/translate.svg" class="book-icon" alt="Languages" />
-        Русский
+        English
       </a>
     </label>
 
     <ul>
       
       <li>
-        <a href="http://localhost:1313/en/gf/genesis-4/">
-          English
+        <a href="http://localhost:1313/ru/gf/genesis-4/">
+          Русский
         </a>
       </li>
       
@@ -120,7 +120,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-4b959577bbd662d890894b4ef656e45e" class="toggle"  />
     <label for="section-4b959577bbd662d890894b4ef656e45e" class="flex justify-between">
-      <a href="/start/" class="">Старт</a>
+      <a role="button" class="">Start</a>
     </label>
   
 
@@ -134,7 +134,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/start/start/" class="">Что такое Биткоин?</a>
+    <a href="/start/start/" class="">Bitcoin Basics</a>
   
 
         </li>
@@ -147,7 +147,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/start/guide/" class="">Используем биткоин</a>
+    <a href="/start/guide/" class="">Using Bitcoin</a>
   
 
         </li>
@@ -160,33 +160,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/course/" class="">Биткоин от А до Я</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/bitcoin-myths/" class="">Разрушаем мифы о Биткоине</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/shitcoin-casino/" class="">Не играйте в щиткоин-казино</a>
+    <a href="/shitcoin-gambling-games/" class="">Don’t Play Shitcoin Gambling Games</a>
   
 
         </li>
@@ -206,7 +180,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-c8e2b39e67e72b49a36ee1ec8355ecba" class="toggle" checked />
     <label for="section-c8e2b39e67e72b49a36ee1ec8355ecba" class="flex justify-between">
-      <a href="/theory/" class="">Теория</a>
+      <a href="/theory/" class="">Theory</a>
     </label>
   
 
@@ -222,7 +196,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-981a6953479a2e41da30ae73c119d6e2" class="toggle"  />
     <label for="section-981a6953479a2e41da30ae73c119d6e2" class="flex justify-between">
-      <a href="/economics/" class="">Экономика</a>
+      <a href="/economics/" class="">Economics</a>
     </label>
   
 
@@ -238,7 +212,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-43f26905d14df4de3737d0d5dfd90ca0" class="toggle"  />
     <label for="section-43f26905d14df4de3737d0d5dfd90ca0" class="flex justify-between">
-      <a href="/pzv/" class="">Постепенно, затем внезапно</a>
+      <a href="/gradually-then-suddenly/" class="">Gradually, Then Suddenly</a>
     </label>
   
 
@@ -252,7 +226,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/postepenno-zatem-vnezapno/" class="">Введение</a>
+    <a href="/gradually-then-suddenly/intro/" class="">Intro</a>
   
 
         </li>
@@ -265,7 +239,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-nelzya-skopirovat/" class="">Биткоин нельзя скопировать</a>
+    <a href="/gradually-then-suddenly/bitcoin-cant-be-copied/" class="">Bitcoin Can’t Be Copied</a>
   
 
         </li>
@@ -278,7 +252,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-ne-slishkom-volatilen/" class="">Биткоин не слишком волатилен</a>
+    <a href="/gradually-then-suddenly/bitcoin-is-not-too-volatile/" class="">Bitcoin Is Not Too Volatile</a>
   
 
         </li>
@@ -291,7 +265,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-ne-tratit-energiyu-zrya/" class="">Биткоин не тратит энергию зря</a>
+    <a href="/gradually-then-suddenly/bitcoin-does-not-waste-energy/" class="">Bitcoin Does Not Waste Energy</a>
   
 
         </li>
@@ -304,7 +278,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-ne-slishkom-medlennyj/" class="">Биткоин не слишком медленный</a>
+    <a href="/gradually-then-suddenly/bitcoin-is-not-too-slow/" class="">Bitcoin is Not Too Slow</a>
   
 
         </li>
@@ -317,7 +291,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-eto-ispravit/" class="">Биткоин это исправит</a>
+    <a href="/gradually-then-suddenly/bitcoin-fixes-this/" class="">Bitcoin Fixes This</a>
   
 
         </li>
@@ -330,7 +304,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-ne-blokchejn/" class="">Биткоин, не блокчейн</a>
+    <a href="/gradually-then-suddenly/bitcoin-not-blockchain/" class="">Bitcoin, Not Blockchain</a>
   
 
         </li>
@@ -343,7 +317,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-nichem-ne-podkreplen/" class="">Биткоин ничем не подкреплен?</a>
+    <a href="/gradually-then-suddenly/bitcoin-is-not-backed-by-nothing/" class="">Bitcoin is Not Backed by Nothing</a>
   
 
         </li>
@@ -356,7 +330,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-ne-finansovaya-piramida/" class="">Биткоин — не финансовая пирамида</a>
+    <a href="/gradually-then-suddenly/bitcoin-is-not-a-pyramid-scheme/" class="">Bitcoin is Not a Pyramid Scheme</a>
   
 
         </li>
@@ -369,7 +343,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-ne-mozhet-byt-zabanen/" class="">Биткоин не может быть забанен</a>
+    <a href="/gradually-then-suddenly/bitcoin-cannot-be-banned/" class="">Bitcoin Cannot be Banned</a>
   
 
         </li>
@@ -382,7 +356,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-ne-dlya-prestupnikov/" class="">Биткоин не для преступников</a>
+    <a href="/gradually-then-suddenly/bitcoin-is-not-for-criminals/" class="">Bitcoin is Not for Criminals</a>
   
 
         </li>
@@ -395,7 +369,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-obescenivaet-ostalnye-dengi/" class="">Биткоин обесценивает остальные деньги</a>
+    <a href="/gradually-then-suddenly/bitcoin-obsoletes-all-other-money/" class="">Bitcoin Obsoletes All Other Money</a>
   
 
         </li>
@@ -408,7 +382,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-zov-k-edineniyu/" class="">Биткоин — зов к единению</a>
+    <a href="/gradually-then-suddenly/bitcoin-is-a-rally-cry/" class="">Bitcoin is a Rally Cry</a>
   
 
         </li>
@@ -421,7 +395,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-eto-zdravyj-smysl/" class="">Биткоин — это здравый смысл</a>
+    <a href="/gradually-then-suddenly/bitcoin-is-common-sense/" class="">Bitcoin is Common Sense</a>
   
 
         </li>
@@ -434,7 +408,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-antihrupok/" class="">Биткоин антихрупок</a>
+    <a href="/gradually-then-suddenly/bitcoin-is-antifragile/" class="">Bitcoin is Antifragile</a>
   
 
         </li>
@@ -447,7 +421,20 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-velikaya-definancializaciya/" class="">Биткоин — великая дефинанcиализация</a>
+    <a href="/gradually-then-suddenly/bitcoin-is-one-for-all/" class="">Bitcoin is One for All</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/gradually-then-suddenly/bitcoin-is-the-great-definancialization/" class="">Bitcoin is the Great Definancialization</a>
   
 
         </li>
@@ -467,7 +454,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-070af377b46d38e45de9a60dd3c8e7d0" class="toggle"  />
     <label for="section-070af377b46d38e45de9a60dd3c8e7d0" class="flex justify-between">
-      <a href="/sb/" class="">Становление Биткоина</a>
+      <a href="/discovering-bitcoin/" class="">Discovering Bitcoin</a>
     </label>
   
 
@@ -481,7 +468,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sb/stanovlenie-intro/" class="">Введение</a>
+    <a href="/discovering-bitcoin/intro/" class="">Introduction</a>
   
 
         </li>
@@ -494,7 +481,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sb/stanovlenie-1/" class="">О времени</a>
+    <a href="/discovering-bitcoin/about-time/" class="">About Time</a>
   
 
         </li>
@@ -507,7 +494,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sb/stanovlenie-2/" class="">О людях</a>
+    <a href="/discovering-bitcoin/about-people/" class="">About People</a>
   
 
         </li>
@@ -520,7 +507,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sb/stanovlenie-3/" class="">Знакомьтесь: деньги</a>
+    <a href="/discovering-bitcoin/introducing-money/" class="">Introducing Money</a>
   
 
         </li>
@@ -533,7 +520,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sb/stanovlenie-4/" class="">Поворот не туда</a>
+    <a href="/discovering-bitcoin/a-wrong-turn-new-plan-needed/" class="">A Wrong Turn (New Plan Needed)!</a>
   
 
         </li>
@@ -546,7 +533,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sb/stanovlenie-5/" class="">Цифровая редкость</a>
+    <a href="/discovering-bitcoin/digital-scarcity/" class="">Digital Scarcity</a>
   
 
         </li>
@@ -559,7 +546,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sb/stanovlenie-6/" class="">Цифровые контракты</a>
+    <a href="/discovering-bitcoin/digital-contracts/" class="">Digital Contracts</a>
   
 
         </li>
@@ -572,7 +559,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sb/stanovlenie-7/" class="">Недостающие части головоломки</a>
+    <a href="/discovering-bitcoin/the-missing-pieces/" class="">The Missing Pieces</a>
   
 
         </li>
@@ -590,7 +577,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitkoin-ne-vredit-okruzhayushej-srede/" class="">Биткоин и окружающая среда</a>
+    <a href="/bitcoin-is-not-harmful-for-the-environment/" class="">Bitcoin Is Not Harmful For The Environment</a>
   
 
         </li>
@@ -603,7 +590,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sem-setevyh-effektov-bitkoina/" class="">Семь сетевых эффектов Биткоина</a>
+    <a href="/seven-network-effects-of-bitcoin/" class="">The Seven Network Effects of Bitcoin</a>
   
 
         </li>
@@ -616,7 +603,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/hozyaeva-i-raby-deneg/" class="">Хозяева и рабы денег</a>
+    <a href="/masters-and-slaves-of-money/" class="">Masters and Slaves of Money</a>
   
 
         </li>
@@ -629,7 +616,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/strukturnaya-perestrojka/" class="">Структурная перестройка</a>
+    <a href="/structural-adjustment/" class="">Structural Adjustment</a>
   
 
         </li>
@@ -642,7 +629,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/v-zashchitu-deflyacii/" class="">В защиту дефляции</a>
+    <a href="/in-defense-of-deflation/" class="">In Defense Of Deflation</a>
   
 
         </li>
@@ -655,7 +642,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sravnenie-monetarnyh-standartov/" class="">Сравнение монетарных стандартов</a>
+    <a href="/comparison-of-monetary-standards/" class="">Comparison of Monetary Standards</a>
   
 
         </li>
@@ -668,7 +655,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sravnenie-monetarnyh-standartov/" class="">Сравнение монетарных стандартов</a>
+    <a href="/petrodollar-negative-effects/" class="">Petrodollar Negative Effects</a>
   
 
         </li>
@@ -681,7 +668,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/negativnye-effekty-neftedollara/" class="">Негативные внешние эффекты нефтедоллара</a>
+    <a href="/shelling-out/" class="">Shelling Out: The Origins of Money</a>
   
 
         </li>
@@ -694,7 +681,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/raskoshelivaemsya/" class="">Раскошеливаемся (Shelling Out): Происхождение денег</a>
+    <a href="/bitcoin-rhythms-of-history/" class="">Bitcoin and the Rhythms of History</a>
   
 
         </li>
@@ -707,7 +694,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-i-ritmy-istorii/" class="">Биткоин и ритмы истории</a>
+    <a href="/bitcoin-and-the-hopf-cycle-of-the-internet/" class="">Bitcoin &amp; the HOPF Cycle of the Internet</a>
   
 
         </li>
@@ -720,7 +707,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-i-internet-cikly-hopfa/" class="">Биткоин и интернет-циклы Хопфа</a>
+    <a href="/money-blockchains-and-social-scalability/" class="">Money, blockchains, and social scalability</a>
   
 
         </li>
@@ -733,7 +720,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/dengi-blokchejny-i-socialnaya-masshtabiruemost/" class="">Деньги, блокчейны и социальная масштабируемость</a>
+    <a href="/what-is-money/" class="">What Is Money</a>
   
 
         </li>
@@ -746,7 +733,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/chto-takoe-dengi/" class="">Что такое деньги</a>
+    <a href="/only-the-strong-survive/" class="">Only The Strong Survive</a>
   
 
         </li>
@@ -759,7 +746,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/vyzhivaet-silnejshij/" class="">Выживает сильнейший</a>
+    <a href="/dollar-cost-averaging/" class="">Dollar-Cost Averaging</a>
   
 
         </li>
@@ -772,33 +759,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/strategiya-dca/" class="">Стратегия DCA</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/jevons-paradox/" class="">Парадокс Джевонса: Обратная истина</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/kak-rabotajut-dengi/" class="">Как работают деньги</a>
+    <a href="/jevons-paradox/" class="">Jevons Paradox: Contrary Truth</a>
   
 
         </li>
@@ -818,7 +779,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-4d5bb6cd046af3ae6f08884281ee0445" class="toggle"  />
     <label for="section-4d5bb6cd046af3ae6f08884281ee0445" class="flex justify-between">
-      <a href="/security/" class="">Безопасность</a>
+      <a href="/security/" class="">Security</a>
     </label>
   
 
@@ -832,7 +793,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/kak-hranit-kljuchi/" class="">Биткоин-кошельки. Зачем и как хранить свои приватные ключи</a>
+    <a href="/how-to-hold-private-keys/" class="">Bitcoin Wallets: How, Why and When to Hold Your Own Private Keys</a>
   
 
         </li>
@@ -845,7 +806,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/seed/" class="">Что такое сид-фраза?</a>
+    <a href="/seed/" class="">What is a bitcoin seed phrase and how does it work?</a>
   
 
         </li>
@@ -858,7 +819,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/seed-security/" class="">Как обезопасить свои сид-фразы?</a>
+    <a href="/seed-security/" class="">Ultimate guide to storing your bitcoin seed phrase backups</a>
   
 
         </li>
@@ -871,7 +832,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/passphrase/" class="">Насколько надежна ваша парольная фраза?</a>
+    <a href="/passphrase/" class="">Is your passphrase strong enough?</a>
   
 
         </li>
@@ -884,7 +845,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/multisig/" class="">Все о мультисиг</a>
+    <a href="/what-is-multisig/" class="">What is multisig?</a>
   
 
         </li>
@@ -897,7 +858,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/hwws/" class="">Сравнение аппаратных кошельков</a>
+    <a href="/hwws/" class="">The best Bitcoin hardware wallets</a>
   
 
         </li>
@@ -910,7 +871,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/multisig-1/" class="">Мультисиг. Часть I</a>
+    <a href="/multisig-1/" class="">Multisig Part I: Why Multisig?</a>
   
 
         </li>
@@ -923,7 +884,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/multisig-2/" class="">Мультисиг. Часть II: Отдельные ключи – основа мультиподписи</a>
+    <a href="/multisig-2/" class="">Multisig Part II: Single Keys are the Foundation of Multisignature</a>
   
 
         </li>
@@ -943,7 +904,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-e5dc95f8c3734f1c9cf3045c3ba217e8" class="toggle"  />
     <label for="section-e5dc95f8c3734f1c9cf3045c3ba217e8" class="flex justify-between">
-      <a href="/privacy/" class="">Приватность</a>
+      <a href="/privacy/" class="">Privacy</a>
     </label>
   
 
@@ -957,7 +918,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/privacy/luchshie-praktiki/" class="">Как сохранить приватность?</a>
+    <a href="/privacy/best-practices/" class="">Bitcoin Privacy: Best Practices</a>
   
 
         </li>
@@ -970,7 +931,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/privacy/no-kyc/" class="">Никаких KYC, берегите персональные данные</a>
+    <a href="/privacy/no-kyc/" class="">no-KYC only. Avoid the creep</a>
   
 
         </li>
@@ -983,7 +944,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/privatnost-v-seti-bitcoin/" class="">Приватность в сети Биткоин</a>
+    <a href="/wiki-bitcoin-privacy/" class="">Bitcoin Privacy</a>
   
 
         </li>
@@ -996,7 +957,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-stanovitsya-kriticheski-vazhnym/" class="">Биткоин становится критически важным</a>
+    <a href="/bitcoin-becomes-critical/" class="">Bitcoin Becomes Critical</a>
   
 
         </li>
@@ -1009,7 +970,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bip47-ili-gadkij-utenok/" class="">BIP47, или гадкий утенок</a>
+    <a href="/bip47-the-ugly-duckling/" class="">BIP47, the ugly duckling</a>
   
 
         </li>
@@ -1024,7 +985,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-7626e3de66018c98c264d84fe366e13a" class="toggle"  />
     <label for="section-7626e3de66018c98c264d84fe366e13a" class="flex justify-between">
-      <a href="/privacy/oxt/" class="">Понимание приватности в сети Биткоин с помощью OXT</a>
+      <a href="/privacy/oxt/" class="">Understanding Bitcoin Privacy with OXT</a>
     </label>
   
 
@@ -1038,7 +999,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/privacy/oxt-1/" class="">Часть 1: Анализ цепочки и приватность транзакций</a>
+    <a href="/privacy/oxt-1/" class="">Part 1: Chain Analysis And Transaction Privacy</a>
   
 
         </li>
@@ -1051,7 +1012,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/privacy/oxt-2/" class="">Часть 2: Ключевые концепции анализа цепочки</a>
+    <a href="/privacy/oxt-2/" class="">Part 2: Chain Analysis Core Concepts</a>
   
 
         </li>
@@ -1064,7 +1025,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/privacy/oxt-3/" class="">Часть 3: Защита от анализа цепочки</a>
+    <a href="/privacy/oxt-3/" class="">Part 3: Defences Against Chain Analysis</a>
   
 
         </li>
@@ -1077,7 +1038,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/privacy/oxt-4/" class="">Часть 4: Применение концепций анализа цепочки для улучшения приватности пользователей</a>
+    <a href="/privacy/oxt-4/" class="">Part 4: Applying Chain Analysis Concepts To Improve User Privacy</a>
   
 
         </li>
@@ -1095,7 +1056,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/privacy/coinjoin/" class="">Понимание и использование CoinJoin</a>
+    <a href="/privacy/coinjoin/" class="">CoinJoin Overview</a>
   
 
         </li>
@@ -1108,7 +1069,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-fungibility/" class="">Взаимозаменяемость Биткоина</a>
+    <a href="/bitcoin-fungibility/" class="">Bitcoin Fungibility</a>
   
 
         </li>
@@ -1141,7 +1102,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-591754e4c6a4e23cb58f7ff9d9022ef1" class="toggle"  />
     <label for="section-591754e4c6a4e23cb58f7ff9d9022ef1" class="flex justify-between">
-      <a href="/protocol/" class="">Протокол</a>
+      <a href="/protocol/" class="">Protocol</a>
     </label>
   
 
@@ -1155,7 +1116,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/kto-kontroliruet-bitkoin-kor/" class="">Кто контролирует Bitcoin Core?</a>
+    <a href="/who-controls-bitcoin-core/" class="">Who Controls Bitcoin Core?</a>
   
 
         </li>
@@ -1168,7 +1129,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/vechnaja-borba/" class="">Вечная борьба Биткоина</a>
+    <a href="/bitcoins-eternal-struggle/" class="">Bitcoin&#39;s Eternal Struggle</a>
   
 
         </li>
@@ -1181,7 +1142,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/ob-udobstve-vzaimodejstvija-s-bitcoinom/" class="">Об удобстве взаимодействия с Биткоином</a>
+    <a href="/on-bitcoins-ux/" class="">On Bitcoin’s UX</a>
   
 
         </li>
@@ -1194,7 +1155,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-zoloto-2-0/" class="">Биткоин: цифровое золото или пиринговая наличность?</a>
+    <a href="/bitcoin-digital-gold-or-ecash/" class="">Bitcoin: Digital Gold or Peer-to-Peer Cash?</a>
   
 
         </li>
@@ -1207,7 +1168,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/upravlenie-bitcoin/" class="">Управление Биткоином</a>
+    <a href="/bitcoin-governance/" class="">Bitcoin Governance</a>
   
 
         </li>
@@ -1220,7 +1181,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/doverennye-tretyi-storony/" class="">Доверенные третьи стороны — это бреши в системе безопасности</a>
+    <a href="/trusted-third-parties/" class="">Trusted Third Parties are Security Holes</a>
   
 
         </li>
@@ -1233,7 +1194,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/21-million-ne-podlezhit-obsuzhdeniyu/" class="">21 миллион не подлежит обсуждению</a>
+    <a href="/21-million-is-non-negotiable/" class="">21 Million is Non-Negotiable</a>
   
 
         </li>
@@ -1246,7 +1207,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/proof-of-work/" class="">Proof of Work: доказательство проделанной работы</a>
+    <a href="/proof-of-work/" class="">Proof of Work, a pictorial essay</a>
   
 
         </li>
@@ -1259,7 +1220,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/proof-of-stake-eto-skam/" class="">Proof of Stake – это скам</a>
+    <a href="/proof-of-stake-is-a-scam/" class="">Proof of stake is a scam</a>
   
 
         </li>
@@ -1272,7 +1233,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/byl-li-satoshi-zhadnym-majnerom/" class="">Был ли Сатоши жадным майнером?</a>
+    <a href="/was-satoshi-a-greedy-miner/" class="">Was Satoshi a Greedy Miner?</a>
   
 
         </li>
@@ -1285,7 +1246,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/segwit/" class="">Что такое SegWit</a>
+    <a href="/segwit/" class="">What Is SegWit</a>
   
 
         </li>
@@ -1298,7 +1259,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/taproot/" class="">Что такое Taproot</a>
+    <a href="/taproot/" class="">What Is Taproot</a>
   
 
         </li>
@@ -1311,7 +1272,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bomby-slozhnosti-ethereum/" class="">Бомбы сложности Ethereum</a>
+    <a href="/coercion-of-ethereums-difficulty-bomb/" class="">The Coercion Of Ethereum&#39;s Difficulty Bomb</a>
   
 
         </li>
@@ -1324,7 +1285,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/rgb/" class="">Разбирая протокол RGB</a>
+    <a href="/rgb/" class="">Understanding the RGB protocol</a>
   
 
         </li>
@@ -1337,7 +1298,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/halving/" class="">Что такое Биткоин-халвинг?</a>
+    <a href="/difficulty/" class="">Bitcoin Difficulty Adjustment</a>
   
 
         </li>
@@ -1350,7 +1311,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/difficulty/" class="">О корректировке сложности майнинга</a>
+    <a href="/bitcoin-address-types/" class="">Bitcoin address types</a>
   
 
         </li>
@@ -1363,7 +1324,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sravnenie-tipov-bitcoin-adresov/" class="">Типы биткоин-адресов</a>
+    <a href="/myths-about-halving/" class="">Myths About the Bitcoin Halving</a>
   
 
         </li>
@@ -1376,20 +1337,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/myths-about-halving/" class="">Мифы о Биткоин-халвинге</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/mining-walkthrough/" class="">SHA256 и майнинг в сети Биткоин</a>
+    <a href="/mining-walkthrough/" class="">SHA256 and Bitcoin Mining Walkthrough</a>
   
 
         </li>
@@ -1404,7 +1352,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-c6baffdfa73d6dd5df13795b95ab68ac" class="toggle"  />
     <label for="section-c6baffdfa73d6dd5df13795b95ab68ac" class="flex justify-between">
-      <a href="/protocol/utxo/" class="">Что такое UTXO и как ими управлять?</a>
+      <a href="/protocol/utxo/" class="">What Is UTXO And How To Manage Them</a>
     </label>
   
 
@@ -1418,7 +1366,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/protocol/utxo-1/" class="">Что такое UTXO?</a>
+    <a href="/protocol/utxo-1/" class="">What is a Bitcoin UTXO</a>
   
 
         </li>
@@ -1431,7 +1379,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/protocol/utxo-2/" class="">Как избежать высоких комиссий при большом количестве UTXO</a>
+    <a href="/protocol/utxo-2/" class="">Too Many UTXOs: How To Avoid High Fees</a>
   
 
         </li>
@@ -1444,7 +1392,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/protocol/utxo-3/" class="">Приватность UTXO</a>
+    <a href="/protocol/utxo-3/" class="">UTXOs Privacy</a>
   
 
         </li>
@@ -1462,7 +1410,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/transaction-size/" class="">Размер транзакции</a>
+    <a href="/transaction-size/" class="">Transaction Size</a>
   
 
         </li>
@@ -1482,7 +1430,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-2cc3faa5b078e8edfc892bc463882294" class="toggle" checked />
     <label for="section-2cc3faa5b078e8edfc892bc463882294" class="flex justify-between">
-      <a href="/history/" class="">История</a>
+      <a href="/history/" class="">History</a>
     </label>
   
 
@@ -1498,7 +1446,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-11903f72dc1c8e68f0d748ad1bb6164d" class="toggle" checked />
     <label for="section-11903f72dc1c8e68f0d748ad1bb6164d" class="flex justify-between">
-      <a href="/gf/" class="">Генезис-файлы</a>
+      <a href="/gf/" class="">The Genesis Files</a>
     </label>
   
 
@@ -1512,7 +1460,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/gf/genesis-intro/" class="">Пролог</a>
+    <a href="/gf/genesis-intro/" class="">Intro</a>
   
 
         </li>
@@ -1525,7 +1473,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/gf/genesis-1/" class="">Часть I: eCash Дэвида Чаума и зарождение мечты шифропанков</a>
+    <a href="/gf/genesis-1/" class="">Part I: How David Chaum’s eCash Spawned a Cypherpunk Dream</a>
   
 
         </li>
@@ -1538,7 +1486,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/gf/genesis-2/" class="">Часть II: Hashcash или как Адам Бэк разработал сердце Биткоина</a>
+    <a href="/gf/genesis-2/" class="">Part II: Hashcash or How Adam Back Designed Bitcoin’s Motor Block</a>
   
 
         </li>
@@ -1551,7 +1499,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/gf/genesis-3/" class="">Часть III: Если у Биткоина был прототип, то это были b-money Вэя Дая</a>
+    <a href="/gf/genesis-3/" class="">Part III: If Bitcoin Had a First Draft, Wei Dai’s B-Money Was It</a>
   
 
         </li>
@@ -1564,7 +1512,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/gf/genesis-4/" class="active">Часть IV: Создавая Bit Gold, Сабо был в двух шагах от изобретения Биткоина</a>
+    <a href="/gf/genesis-4/" class="active">Part IV: With Bit Gold, Szabo Was Inches Away From Inventing Bitcoin</a>
   
 
         </li>
@@ -1577,7 +1525,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/gf/genesis-5/" class="">Часть V: Как поиски цифровой наличности привели Хэла Финни к созданию RPOW (и не только)</a>
+    <a href="/gf/genesis-5/" class="">Part V: How Hal Finney’s Quest For Digital Cash Led To RPOW (And More)</a>
   
 
         </li>
@@ -1595,7 +1543,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/hal-finney/" class="">Хэл Финни — жизнь и смерть легенды движения шифропанков</a>
+    <a href="/hal-finney/" class="">Hal Finney — The Life And Death Of A Cypherpunk Legend</a>
   
 
         </li>
@@ -1608,7 +1556,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-and-me/" class="">Биткоин и я</a>
+    <a href="/bitcoin-and-me/" class="">Bitcoin and Me</a>
   
 
         </li>
@@ -1621,7 +1569,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-reformaciya/" class="">Биткоин-Реформация</a>
+    <a href="/bitcoin-reformation/" class="">The Bitcoin Reformation</a>
   
 
         </li>
@@ -1634,7 +1582,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-forks/" class="">Полная история консенсус-форков Биткоина</a>
+    <a href="/bitcoin-forks/" class="">A complete history of Bitcoin’s consensus forks</a>
   
 
         </li>
@@ -1647,7 +1595,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/analyzing-2013-fork/" class="">Анализ форка Биткоина 2013 года</a>
+    <a href="/analyzing-2013-fork/" class="">Analyzing the 2013 Bitcoin fork</a>
   
 
         </li>
@@ -1667,7 +1615,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-ac2daa2484c1be670f7cc1e0d8d82356" class="toggle"  />
     <label for="section-ac2daa2484c1be670f7cc1e0d8d82356" class="flex justify-between">
-      <a href="/philosophy/" class="">Философия</a>
+      <a href="/philosophy/" class="">Philosophy</a>
     </label>
   
 
@@ -1683,7 +1631,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-b11b531f912b5e92a8260d0a526b85b6" class="toggle"  />
     <label for="section-b11b531f912b5e92a8260d0a526b85b6" class="flex justify-between">
-      <a href="/chemu-ya-nauchilsya-u-bitcoina/" class="">Чему я научился у Биткоина?</a>
+      <a href="/what-i-learned-from-bitcoin/" class="">What I&#39;ve Learned From Bitcoin</a>
     </label>
   
 
@@ -1697,7 +1645,33 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/chemu-ya-nauchilsya-u-bitcoina/filosofskie-uroki-bitcoina/" class="">Часть1. Философские уроки Биткоина</a>
+    <a href="/what-i-learned-from-bitcoin-1/" class="">Part I. Philosophical Teachings of Bitcoin</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/what-i-learned-from-bitcoin-2/" class="">Part II. Economic Teachings of Bitcoin</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/what-i-learned-from-bitcoin-3/" class="">Part III. Technological Teachings of Bitcoin</a>
   
 
         </li>
@@ -1715,7 +1689,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/ne-shitcoin/" class="">Биткоин, не щиткоин</a>
+    <a href="/not-shitcoin/" class="">Why Bitcoin, Not Shitcoin</a>
   
 
         </li>
@@ -1728,7 +1702,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/neotemlemye-prava-sobstvennosti/" class="">Неотъемлемые права собственности</a>
+    <a href="/inalienable-property-rights/" class="">Inalienable Property Rights</a>
   
 
         </li>
@@ -1741,7 +1715,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/manifest-kriptoanarhista/" class="">Манифест криптоанархиста</a>
+    <a href="/crypto-anarchist-manifesto/" class="">The Crypto Anarchist Manifesto</a>
   
 
         </li>
@@ -1754,7 +1728,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/manifest-shifropanka/" class="">Манифест шифропанка</a>
+    <a href="/cypherpunks-manifesto/" class="">A Cypherpunk&#39;s Manifesto</a>
   
 
         </li>
@@ -1767,7 +1741,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/tyulpannaya-lihoradka/" class="">Биткоин — современная голландская тюльпанная лихорадка?</a>
+    <a href="/dutch-tulip-bubble/" class="">Is Bitcoin Like the Dutch Tulip Bubble?</a>
   
 
         </li>
@@ -1780,7 +1754,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/vse-moshenniki/" class="">Все — мошенники</a>
+    <a href="/everyones-a-scammer/" class="">Everyone&#39;s a Scammer</a>
   
 
         </li>
@@ -1793,7 +1767,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/svoboda-cennosti/" class="">Свобода ценности</a>
+    <a href="/freedom-of-value/" class="">The Freedom of Value</a>
   
 
         </li>
@@ -1806,7 +1780,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-meme/" class="">Биткоин — единственный реальный мем</a>
+    <a href="/bitcoin-meme/" class="">Bitcoin Is The Only Real Meme</a>
   
 
         </li>
@@ -1819,7 +1793,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/nol-i-bitcoin/" class="">Ноль и Биткоин</a>
+    <a href="/number-zero-and-bitcoin/" class="">The Number Zero and Bitcoin</a>
   
 
         </li>
@@ -1832,7 +1806,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/crypto-bro/" class="">Дорогие крипто- и фиат-бро</a>
+    <a href="/crypto-bro/" class="">Dear Crypto &amp; Fiat Bros</a>
   
 
         </li>
@@ -1845,7 +1819,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/boremsya-s-poddelnymi-bitcoin/" class="">Боремся с поддельными биткоинами</a>
+    <a href="/fighting-fake-bitcoin/" class="">Fighting Fake Bitcoin</a>
   
 
         </li>
@@ -1858,7 +1832,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bit%D1%81oin-eto-micelij/" class="">Биткоин — это мицелий</a>
+    <a href="/bitcoin-is-the-mycelium/" class="">Bitcoin is The Mycelium of Money</a>
   
 
         </li>
@@ -1871,7 +1845,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pochemu-bitcoin-zhivoj-organizm/" class="">Доказательство жизни. Почему Биткоин — живой организм</a>
+    <a href="/proof-of-life/" class="">Proof of Life. Why Bitcoin is a Living Organism</a>
   
 
         </li>
@@ -1884,7 +1858,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/samaya-mirnaya-revolyuciya/" class="">Самая мирная революция</a>
+    <a href="/most-peaceful-revolution/" class="">A Most Peaceful Revolution</a>
   
 
         </li>
@@ -1897,7 +1871,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/o-bitcoin-vselennoj/" class="">О Биткоин-вселенной</a>
+    <a href="/bitcoin-universe/" class="">Bitcoin Universe</a>
   
 
         </li>
@@ -1910,7 +1884,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-dissidenty/" class="">Биткоин-диссиденты</a>
+    <a href="/bitcoin-dissidents/" class="">Bitcoin Dissidents</a>
   
 
         </li>
@@ -1923,7 +1897,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-svoboda/" class="">Биткоин = свобода</a>
+    <a href="/bitcoin-equals-freedom/" class="">Bitcoin Equals Freedom</a>
   
 
         </li>
@@ -1943,7 +1917,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-0ffd899989a7340537ceb8e2b6a04097" class="toggle"  />
     <label for="section-0ffd899989a7340537ceb8e2b6a04097" class="flex justify-between">
-      <a href="/future/" class="">Будущее</a>
+      <a href="/future/" class="">Future</a>
     </label>
   
 
@@ -1959,7 +1933,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-206fb3aae5266e1ff42aa0abc8ae8411" class="toggle"  />
     <label for="section-206fb3aae5266e1ff42aa0abc8ae8411" class="flex justify-between">
-      <a href="/ba/" class="">Биткоин-астрономия</a>
+      <a href="/ba/" class="">Bitcoin Astronomy</a>
     </label>
   
 
@@ -1973,7 +1947,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/ba/1/" class="">Постгипербиткоинизация</a>
+    <a href="/ba/1/" class="">Part I</a>
   
 
         </li>
@@ -1986,7 +1960,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/ba/2/" class="">Миллион крошечных миров</a>
+    <a href="/ba/2/" class="">Part II</a>
   
 
         </li>
@@ -1999,7 +1973,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/ba/3/" class="">Первый контакт</a>
+    <a href="/ba/3/" class="">Part III</a>
   
 
         </li>
@@ -2017,7 +1991,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/ej-bitcoin-pritormozi/" class="">Эй, Биткоин, притормози</a>
+    <a href="/hey-bitcoin-slow-down/" class="">Hey Bitcoin, Slow Down!</a>
   
 
         </li>
@@ -2030,7 +2004,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/apokalipsis/" class="">Сможет ли Биткоин пережить апокалипсис?</a>
+    <a href="/apocalypse/" class="">Can Bitcoin Survive An Apocalypse?</a>
   
 
         </li>
@@ -2043,7 +2017,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-i-teplovaya-energiya-okeanov/" class="">Биткоин и тепловая энергия океанов</a>
+    <a href="/bitcoin-and-oceans/" class="">Bitcoin and Ocean Thermal Energy</a>
   
 
         </li>
@@ -2063,7 +2037,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-94dfdc9d0099b419c9e2d6a83381dbe2" class="toggle"  />
     <label for="section-94dfdc9d0099b419c9e2d6a83381dbe2" class="flex justify-between">
-      <a href="/lightning/" class="">Лайтнинг</a>
+      <a href="/lightning/" class="">Lightning</a>
     </label>
   
 
@@ -2077,7 +2051,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/chto-takoe-laitning/" class="">Что такое Лайтнинг?</a>
+    <a href="/what-is-lightning-network/" class="">What is Lightning Network?</a>
   
 
         </li>
@@ -2090,7 +2064,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/lajtning-koshelki/" class="">Лайтнинг-кошельки</a>
+    <a href="/lightning-wallets/" class="">Lightning Wallets</a>
   
 
         </li>
@@ -2103,7 +2077,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/lajtning-adresa/" class="">Лайтнинг-адреса</a>
+    <a href="/how-lightning-address-works/" class="">How Lightning Address Works</a>
   
 
         </li>
@@ -2116,7 +2090,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/privatnost-v-lajtning/" class="">Приватность в сети Lightning</a>
+    <a href="/lightning-network-privacy/" class="">Lightning Network Privacy</a>
   
 
         </li>
@@ -2129,7 +2103,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/centralizovanna-li-set-lightning/" class="">Централизованна ли сеть Lightning?</a>
+    <a href="/is-lightning-centralized/" class="">Is Lightning centralized?</a>
   
 
         </li>
@@ -2142,7 +2116,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/mekhanizm-raboty-lightning/" class="">Механизм работы Lightning Network</a>
+    <a href="/lightning-network-explained/" class="">Lightning Network Explained</a>
   
 
         </li>
@@ -2155,7 +2129,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/problema-vhodyashchej-likvidnosti/" class="">Решение проблемы входящей ликвидности</a>
+    <a href="/inbound-liquidity-problem/" class="">Solutions to inbound liquidity problem</a>
   
 
         </li>
@@ -2180,7 +2154,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-334a33758c01abfe631e1e37dc0d1f40" class="toggle"  />
     <label for="section-334a33758c01abfe631e1e37dc0d1f40" class="flex justify-between">
-      <a href="/practice/" class="">Практика</a>
+      <a href="/practice/" class="">Practice</a>
     </label>
   
 
@@ -2196,7 +2170,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-a94c5b45bfdc8ef0dd89b00612026092" class="toggle"  />
     <label for="section-a94c5b45bfdc8ef0dd89b00612026092" class="flex justify-between">
-      <a href="/practice/buy/" class="">Покупка</a>
+      <a href="/practice/buy/" class="">Buy</a>
     </label>
   
 
@@ -2210,7 +2184,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/newbie-buy/" class="">Покупка и хранение биткоина для новичков</a>
+    <a href="/newbie-buy/" class="">Buy and Hodl Bitcoin for Beginners</a>
   
 
         </li>
@@ -2223,7 +2197,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/hodl-hodl/" class="">Покупка биткоина без KYC на Hodl Hodl</a>
+    <a href="/hodl-hodl/" class="">Buy noKYC Bitcoin with HodlHodl</a>
   
 
         </li>
@@ -2236,7 +2210,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/robosats/" class="">RoboSats: Приватный p2p обмен</a>
+    <a href="/robosats/" class="">RoboSats: Private P2P Exchange</a>
   
 
         </li>
@@ -2256,7 +2230,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-7e14ce7fc5fdbe001466044f77bdd564" class="toggle"  />
     <label for="section-7e14ce7fc5fdbe001466044f77bdd564" class="flex justify-between">
-      <a href="/practice/hodl/" class="">Хранение</a>
+      <a href="/practice/hodl/" class="">Hodl</a>
     </label>
   
 
@@ -2270,7 +2244,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/electrum/" class="">Кошелек Электрум</a>
+    <a href="/electrum/" class="">Electrum Bitcoin Wallet</a>
   
 
         </li>
@@ -2283,7 +2257,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/blue/" class="">Кошелек Blue</a>
+    <a href="/blue/" class="">Installing Blue Wallet</a>
   
 
         </li>
@@ -2296,7 +2270,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/seedsigner/" class="">SeedSigner: оффлайн-крепость для ваших биткоинов</a>
+    <a href="/seedsigner/" class="">SeedSigner: DIY Bitcoin Signing Device</a>
   
 
         </li>
@@ -2309,20 +2283,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/holodnyj-koshelek-iz-starogo-smartfona/" class="">Холодный кошелек из старого смартфона</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/coldcard/" class="">Что такое Coldcard?</a>
+    <a href="/coldcard/" class="">What is Coldcard?</a>
   
 
         </li>
@@ -2342,7 +2303,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-88cf9017cf07549621f025a2843cb148" class="toggle"  />
     <label for="section-88cf9017cf07549621f025a2843cb148" class="flex justify-between">
-      <a href="/practice/interact/" class="">Взаимодействие</a>
+      <a href="/practice/interact/" class="">Interact</a>
     </label>
   
 
@@ -2356,7 +2317,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/practice/bitcoin-node/" class="">Каждому следует запустить собственную Биткоин-ноду!</a>
+    <a href="/practice/bitcoin-node/" class="">Why You Should Run Your Own Bitcoin Node</a>
   
 
         </li>
@@ -2369,7 +2330,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/orangepilling-in-5-min/" class="">Оранжпиллинг за 5 минут</a>
+    <a href="/orangepilling-in-5-min/" class="">Orangepilling in 5 min</a>
   
 
         </li>
@@ -2382,7 +2343,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/5-tips-for-teaching-bitcoin/" class="">5 советов по обучению Биткоину</a>
+    <a href="/5-tips-for-teaching-bitcoin/" class="">5 tips for teaching Bitcoin</a>
   
 
         </li>
@@ -2402,7 +2363,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-32dccf00abb46a5281b7aae069126928" class="toggle"  />
     <label for="section-32dccf00abb46a5281b7aae069126928" class="flex justify-between">
-      <a href="/practice-privacy/" class="">Практики приватности</a>
+      <a href="/practice-privacy/" class="">Privacy</a>
     </label>
   
 
@@ -2418,7 +2379,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-ae30dbe7c31a834e8bfe23314d9a5ff6" class="toggle"  />
     <label for="section-ae30dbe7c31a834e8bfe23314d9a5ff6" class="flex justify-between">
-      <a href="/practice-privacy/dojo/" class="">Установка Биткоин-узла Dojo на x86</a>
+      <a href="/practice-privacy/dojo/" class="">Dojo x86 Bitcoin Node Guide</a>
     </label>
   
 
@@ -2432,7 +2393,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/practice-privacy/dojo-0/" class="">Введение</a>
+    <a href="/practice-privacy/dojo-0/" class="">Introduction</a>
   
 
         </li>
@@ -2445,7 +2406,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/practice-privacy/dojo-1/" class="">Установка Bitcoin Core и Tor</a>
+    <a href="/practice-privacy/dojo-1/" class="">Installing Bitcoin Core &amp; Tor</a>
   
 
         </li>
@@ -2458,7 +2419,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/practice-privacy/dojo-2/" class="">Установка индексатора Fulcrum</a>
+    <a href="/practice-privacy/dojo-2/" class="">Installing Fulcrum Indexer</a>
   
 
         </li>
@@ -2471,7 +2432,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/practice-privacy/dojo-3/" class="">Установка блокчейн-обозревателя Mempool</a>
+    <a href="/practice-privacy/dojo-3/" class="">Installing Mempool Explorer</a>
   
 
         </li>
@@ -2484,7 +2445,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/practice-privacy/dojo-4/" class="">Установка Samourai Dojo</a>
+    <a href="/practice-privacy/dojo-4/" class="">Installing Samourai Dojo</a>
   
 
         </li>
@@ -2497,7 +2458,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/practice-privacy/dojo-5/" class="">Конфигурация межсетевого экрана</a>
+    <a href="/practice-privacy/dojo-5/" class="">Firewall Configuration</a>
   
 
         </li>
@@ -2510,7 +2471,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/practice-privacy/dojo-6/" class="">Установка обновлений пакетов</a>
+    <a href="/practice-privacy/dojo-6/" class="">Installing Package Updates</a>
   
 
         </li>
@@ -2528,7 +2489,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/practice-privacy/ronindojo/" class="">Установка RoninDojo на x86</a>
+    <a href="/practice-privacy/ronindojo/" class="">RoninDojo x86 Installation Guide</a>
   
 
         </li>
@@ -2541,7 +2502,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/grapheneos/" class="">GrapheneOS: Избавляемся от слежки Google на смартфоне</a>
+    <a href="/grapheneos/" class="">GrapheneOS: De-Google your phone</a>
   
 
         </li>
@@ -2561,7 +2522,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-9425a98499a6d50bed8efd403e1db980" class="toggle"  />
     <label for="section-9425a98499a6d50bed8efd403e1db980" class="flex justify-between">
-      <a href="/practice/lightning/" class="">Лайтнинг на практике</a>
+      <a href="/practice/lightning/" class="">Lightning</a>
     </label>
   
 
@@ -2575,7 +2536,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/phoenix/" class="">Кошелек Phoenix</a>
+    <a href="/phoenix/" class="">Phoenix: The Non-Custodial Lightning Wallet</a>
   
 
         </li>
@@ -2588,7 +2549,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/lnbits/" class="">LNbits – швейцарский нож среди лайтнинг-приложений</a>
+    <a href="/lnbits/" class="">LNbits: A Swiss knife among Lightning apps</a>
   
 
         </li>
@@ -2601,7 +2562,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/alby-i-nostr/" class="">Alby и Nostr</a>
+    <a href="/alby-and-nostr/" class="">Alby and Nostr</a>
   
 
         </li>
@@ -2614,7 +2575,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/zapplanner/" class="">Подписки с помощью Лайтнинг</a>
+    <a href="/zapplanner/" class="">Recurring Lightning Payments</a>
   
 
         </li>
@@ -2627,7 +2588,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/lntips/" class="">Телеграм-бот @LightningTipBot</a>
+    <a href="/lntips/" class="">Telegram bot @LightningTipBot</a>
   
 
         </li>
@@ -2640,7 +2601,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/ochishchaem-bitcoin-cherez-lajtning/" class="">Очищаем биткоины через сеть Лайтнинг</a>
+    <a href="/lightning-liquidity-management-guide/" class="">Lightning Liquidity Management Guide</a>
   
 
         </li>
@@ -2653,20 +2614,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/likvidnost-v-lajtning/" class="">Руководство по управлению ликвидностью в сети Lightning</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/mutiny/" class="">Кошелек Mutiny</a>
+    <a href="/mutiny/" class="">Starting with Mutiny Wallet</a>
   
 
         </li>
@@ -2691,84 +2639,12 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-d286fdc9558f9b3466aa6f3d4805be77" class="toggle"  />
     <label for="section-d286fdc9558f9b3466aa6f3d4805be77" class="flex justify-between">
-      <a href="/rabbithole/" class="">Кроличья нора</a>
+      <a href="/rabbithole/" class="">Rabbithole</a>
     </label>
   
 
           
   <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/books/" class="">Книги</a>
-  
-
-          
-  <ul>
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/videos/" class="">Видео</a>
-  
-
-          
-  <ul>
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/audiobooks/" class="">Аудиокниги</a>
-  
-
-          
-  <ul>
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/pods/" class="">Подкасты</a>
-  
-
-          
-  <ul>
-    
-  </ul>
-
-        </li>
-      
     
   </ul>
 
@@ -2799,37 +2675,9 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/posts/" class="">Блог</a>
-  
-
-        
-    
-  </li>
-  
-  <li>
-    
-        
-  
-  
-
-  
-    <a href="/calendar/" class="">Биткоин-календарь</a>
-  
-
-        
-    
-  </li>
-  
-  <li>
-    
-        
-  
-  
-
-  
     <input type="checkbox" id="section-9329cf488076ba9f91ca728aef24f607" class="toggle"  />
     <label for="section-9329cf488076ba9f91ca728aef24f607" class="flex justify-between">
-      <a href="/contribute/" class="">Принять участие</a>
+      <a href="/contribute/" class="">Contribute</a>
     </label>
   
 
@@ -2844,33 +2692,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/syntax/" class="">Оформление статей</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/github/" class="">Как добавить статью?</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/obsidian/" class="">Публикация статей через Obsidian</a>
+    <a href="/github/" class="">Adding an Article</a>
   
 
         </li>
@@ -2889,7 +2711,21 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/feedback/" class="">Обратная связь</a>
+    <span>Blog</span>
+  
+
+        
+    
+  </li>
+  
+  <li>
+    
+        
+  
+  
+
+  
+    <a href="/feedback/" class="">Feedback</a>
   
 
         
@@ -2967,7 +2803,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Часть IV: Создавая Bit Gold, Сабо был в двух шагах от изобретения Биткоина</strong>
+  <strong>Part IV: With Bit Gold, Szabo Was Inches Away From Inventing Bitcoin</strong>
 
   <label for="toc-control">
     
@@ -2983,10 +2819,10 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#электронная-наличность">Электронная наличность</a></li>
+    <li><a href="#electronic-cash">Electronic Cash</a></li>
     <li><a href="#bit-gold">Bit Gold</a></li>
-    <li><a href="#инфляция">Инфляция</a></li>
-    <li><a href="#биткоин">Биткоин</a></li>
+    <li><a href="#inflation">Inflation</a></li>
+    <li><a href="#bitcoin">Bitcoin</a></li>
   </ul>
 </nav>
 
@@ -3009,161 +2845,145 @@ https://github.com/alex-shpak/hugo-book
 
 <h1>
     
-    Генезис-файлы. Часть IV: Создавая Bit Gold, Сабо был в двух шагах от изобретения Биткоина
+    The Genesis Files. Part IV: With Bit Gold, Szabo Was Inches Away From Inventing Bitcoin
     
 </h1>
 <div class="pageDate">
-    12 июля 2018 г.
+    July 12, 2018
 </div>
 
   <article class="markdown">
 <div class="book-expand">
   <label>
     <div class="book-expand-head flex justify-between">
-      <span>Оглавление</span>
+      <span>Contents</span>
       <span>...</span>
     </div>
     <input type="checkbox" class="hidden" />
     <div class="book-expand-content markdown-inner">
       <ol>
-<li>
-<p><a href="/gf/genesis-intro">Пролог: День, когда криптография изменилась навсегда</a></p>
-</li>
-<li>
-<p><a href="/gf/genesis-1">Часть I: eCash Дэвида Чаума и зарождение мечты шифропанков</a></p>
-</li>
-<li>
-<p><a href="/gf/genesis-2">Часть II: Hashcash или как Адам Бэк разработал сердце Биткоина</a></p>
-</li>
-<li>
-<p><a href="/gf/genesis-3">Часть III: Если у Биткоина был прототип, то это были b-money Вэя Дая</a></p>
-</li>
-<li>
-<p><a href="/gf/genesis-4">Часть IV: Создавая Bit Gold, Сабо был в двух шагах от изобретения Биткоина</a></p>
-</li>
-<li>
-<p><a href="/gf/genesis-5">Часть V: Как поиски цифровой наличности привели Хэла Финни к созданию RPOW (и не только)</a></p>
-</li>
+<li><a href="/en/gf/genesis-intro">Intro: The Day Cryptography Changed Forever</a></li>
+<li><a href="/en/gf/genesis-1">Part I: How David Chaum’s eCash Spawned a Cypherpunk Dream</a></li>
+<li><a href="/en/gf/genesis-2">Part II: Hashcash or How Adam Back Designed Bitcoin’s Motor Block</a></li>
+<li><a href="/en/gf/genesis-3">Part III: If Bitcoin Had a First Draft, Wei Dai’s B-Money Was It</a></li>
+<li><a href="/en/gf/genesis-4">Part IV: With Bit Gold, Szabo Was Inches Away From Inventing Bitcoin</a></li>
+<li><a href="/en/gf/genesis-5">Part V: How Hal Finney’s Quest For Digital Cash Led To RPOW (And More)</a></li>
 </ol>
 
     </div>
   </label>
 </div>
 
-<p>Это – четвертая публикация в серии материалов, посвященных становлению движения шифропанков. Эти статьи призваны познакомить сообщество с технологиями, предшествующими киберкоммерции, которую мы сегодня наблюдаем. Понимание истории, осознание мотивов и методов достижения целей первопроходцами в области криптографии и информатики, поможет не только пролить свет на возможные варианты дальнейшего развития событий, но и выстроить более эффективные стратегии по защите собственных средств, приватной информации и личностного суверенитета.</p>
 <blockquote class="book-hint btc">
-  Перевод подготовлен <a href="https://snort.social/p/npub10awzknjg5r5lajnr53438ndcyjylgqsrnrtq5grs495v42qc6awsj45ys7">Тони⚡️</a>. <a href="/contribute/">Поддержать проект</a>.
+  <p>This article by Aaron van Wirdum was published in <a href="https://bitcoinmagazine.com/culture/genesis-files-bit-gold-szabo-was-inches-away-inventing-bitcoin">Bitcoin Magazine</a>.</p>
+<p><a href="/contribute/">Contribute</a>.</p>
+
 </blockquote>
 
-<p>Цифровая валюта, деньги для интернета, всегда была главной целью шифропанков. Но мало кто погружался в эту тему так глубоко, как Ник Сабо.</p>
+<p>Digital currency, a cash for the internet, was always a central goal for the Cypherpunks. But few dived into the subject matter like Nick Szabo did.</p>
 <div class="imageWrapper">
     <img src="/img/gf-244.png">
 </div>
-<p>Поскольку родители Ника Сабо бежали из Венгрии от послевоенного советского режима, чтобы поселиться в США, в 1990-х годах программист стал называть своим домом район калифорнийского залива. Здесь он стал одним из первых участников личных встреч шифропанков, организованных Тимоти Мэем, Эриком Хьюзом и другими членами-основателями коллектива криптографов, программистов и борцов за приватность, сосредоточенного вокруг одноименного списка рассылки 90-х годов. Как и другие участники группы шифропанков, Сабо был обеспокоен снижением гарантий приватности в наступающей цифровой эпохе и предпринимал все посильные действия, чтобы остановить этот процесс. Например, в списке рассылки шифропанков Сабо возглавил противодействие &ldquo;<a href="https://ru.wikipedia.org/wiki/%D0%9C%D0%B8%D0%BA%D1%80%D0%BE%D1%81%D1%85%D0%B5%D0%BC%D0%B0_Clipper">микросхеме Clipper</a>&rdquo; – предлагаемому чипу, который встраивался бы в телефоны, позволяя АНБ прослушивать звонки. Сабо обладал особым умением объяснять риски таких нарушений приватности так, чтобы это находило отклик у нетехнических пользователей. Иногда он выступал с докладами на эту тему или даже раздавал листовки. В конечном итоге чип был отвергнут производителями и потребителями. Но, как и у более либертариански ориентированных шифропанков, интерес Сабо к приватности онлайн был частью более всеобъемлющей картины – он не был заинтересован только в приватности. Вдохновленный идеей Тимоти Мэя, изложенной в &ldquo;<a href="/manifest-kriptoanarhista">Манифесте криптоанархиста</a>&rdquo;, Сабо увидел потенциал для создания &ldquo;Ущелья Галта&rdquo; в киберпространстве: домена, где люди могли бы свободно торговать, как описано в либертарианском романе Айн Рэнд &ldquo;Атлант расправил плечи&rdquo;. Псевдофизическое силовое поле, о котором идет речь в романе, по мнению Мэя и Сабо, можно заменить недавно изобретенной магией криптографии с открытым ключом.</p>
+<p>As his Hungarian parents had fled post-war Soviet regime to settle in the United States, Nick Szabo came to call the Californian Bay area of the 1990s his home. Here, he was among the first to frequent the in-person “Cypherpunk” meetings organized by Timothy May, Eric Hughes and other founding members of the collective of cryptographers, programmers and privacy activists centered around the ’90s mailing list of the same name.</p>
+<p>Like the other Cypherpunks, Szabo was concerned with the receding guarantees of privacy in an upcoming digital age and took action to stem the tide where he could. For example, on the Cypherpunks mailing list, Szabo led opposition to the “<a href="https://en.wikipedia.org/wiki/Clipper_chip">Clipper chip</a>,” a proposed chip that would have been embedded in phones, allowing the NSA to listen into calls. Szabo had a particular knack for explaining the risks of such privacy infringements in a way that resonated with non-technical people, sometimes giving talks on the topic or even handing out flyers. (The chip would eventually be rejected by manufacturers and consumers.)</p>
+<p>But like the more libertarian-oriented Cypherpunks, Szabo’s interest in digital privacy was part of a bigger picture — it was not just about privacy alone. Inspired by Timothy May’s vision as laid out in <a href="https://activism.net/cypherpunk/crypto-anarchy.html">The Crypto Anarchist Manifesto</a>, Szabo saw the potential to create a “Galt’s Gulch” in cyberspace: a domain where individuals could trade freely, as described libertarian author Ayn Rand’s novel <em>Atlas Shrugged</em>. The pseudo-physics force field of the story, May and Szabo believed, could be substituted with the recently invented magic of public key cryptography.</p>
 <blockquote>
-<p>“Если мы оглянемся и внимательно посмотрим на то, чего пытаются достичь многие шифропанки, то главной идеалистической темой будет гандистское киберпространство, где насилие может быть только выдуманным, будь то Mortal Kombat [sic] или &ldquo;огненные войны.&rdquo;</p>
-<p>— Сабо в списке рассылки Cypherpunks.</p>
+<p>“If we step back and look at what many cypherpunks are trying to achieve, a major idealistic theme is a Ghandian cyberspace where violence can only be make-believe, whether in Mortal Komat [sic] or ‘flame wars,’” Szabo <a href="https://cypherpunks.venona.com/date/1995/09/msg01303.html">wrote</a> on the Cypherpunks mailing list.</p>
 </blockquote>
-<p>Однако Сабо также понял, что свободному предпринимательству нужно нечто большее, чем просто шифрование в качестве защитного слоя. Вдохновленный другим либертарианским автором – экономистом Фридрихом Хайеком – он пришел к выводу, что основа человеческого общества в значительной степени базируется на таких элементах, как собственность и контракты, которые обычно обеспечиваются государством. Сабо знал, что для создания безгосударственной, ненасильственной киберальтернативы эти строительные блоки должны быть перенесены в онлайн-сферу. Так к середине 1990-х годов Сабо предложил то, что, возможно, принесло ему наибольшую известность – смарт-контракты. Эти (тогда еще гипотетические) компьютерные протоколы могли в цифровой форме облегчать, проверять и обеспечивать переговоры или исполнение контракта, в идеале без участия третьей стороны. Как знаково <a href="/doverennye-tretyi-storony">заявлял</a> Сабо: <em>&ldquo;Доверенные третьи стороны – это бреши в системе безопасности&rdquo;</em>. Эти бреши в безопасности могут стать мишенью для хакеров или преступников, а также для национальных государств во времена политической нестабильности или угнетения. Но смарт-контракты были лишь частью головоломки. Второй инструмент, необходимый Сабо для реализации его &ldquo;Ущелья Галта&rdquo;, был, возможно, еще более важным. Деньги.</p>
-<h1 id="электронная-наличность">
-  Электронная наличность
-  <a class="anchor" href="#%d1%8d%d0%bb%d0%b5%d0%ba%d1%82%d1%80%d0%be%d0%bd%d0%bd%d0%b0%d1%8f-%d0%bd%d0%b0%d0%bb%d0%b8%d1%87%d0%bd%d0%be%d1%81%d1%82%d1%8c">#</a>
+<p>Yet, Szabo also realized that free enterprise needs more than just encryption as a security layer. Inspired by another libertarian author — economist Friedrich Hayek — he found that the basis of human society is, to a large extent, based on building blocks, like property and contracts, which are typically enforced by the state. To create a stateless, non-violent cyber alternative, Szabo knew that these building blocks had to be transferred to the online domain.</p>
+<p>This is how Szabo, by the mid 1990s, came to propose what he is perhaps best known for today: <em>smart contracts</em>. These (then-hypothetical) computer protocols could digitally facilitate, verify and enforce the negotiation or performance of a contract, ideally without the need of any third party. As Szabo had famously <a href="http://www.fon.hum.uva.nl/rob/Courses/InformationInSpeech/CDROM/Literature/LOTwinterschool2006/szabo.best.vwh.net/ttps.html">argued</a>: “Trusted third parties are security holes.” These security holes would be targets for hackers or criminals — as well as nation states during times of political instability or oppression.</p>
+<p>But smart contracts were only part of the puzzle. The second tool Szabo needed in order to realize his “Galt’s Gulch” was possibly even more important. Money.</p>
+<h1 id="electronic-cash">
+  Electronic Cash
+  <a class="anchor" href="#electronic-cash">#</a>
 </h1>
-<p>Цифровая валюта, деньги для интернета, всегда была главной целью шифропанков. Но лишь немногие погружались в эту тему так глубоко, как это делал Сабо. В своем эссе &ldquo;<a href="/raskoshelivaemsya">Раскошеливаемся (Shelling Out): Происхождение денег</a>&rdquo; Сабо описал, как – согласно <a href="https://books.google.nl/books?id=ekonDAAAQBAJ&amp;pg=PA244&amp;lpg=PA244&amp;dq=Richard&#43;Dawkins&#43;money&#43;as&#43;a&#43;formal&#43;token&#43;of&#43;reciprocal&#43;altruism&amp;source=bl&amp;ots=kBbSS-l5AC&amp;sig=fr85YmvwkvFqWcOYLBkL10O7sI4&amp;hl=en&amp;sa=X&amp;redir_esc=y#v=onepage&amp;q=Richard20Dawkins20money20as20a20formal20token20of20reciprocal20altruism&amp;f=false">первой гипотезе</a> эволюционного биолога Ричарда Докинза – использование денег было заложено в самой ДНК человека. Проанализировав общества до появления цивилизаций, Сабо обнаружил, что люди в разных культурах склонны собирать редкие, легко переносимые предметы, часто делая из них украшения. Именно эти предметы служили деньгами, которые, в свою очередь, позволяли людям сотрудничать – теоретическая игра &ldquo;<a href="/raskoshelivaemsya">взаимный альтруизм</a>&rdquo; через торговлю, в масштабе и во времени. Сабо также проявлял большой интерес к свободной банковской системе – денежной системе, за которую выступал Хайек, где частные банки выпускают собственную валюту, не привязанную к какому-либо конкретному государству. При такой системе свободный рынок полностью зависит от того, какие деньги использовать. Несмотря на то, что сегодня (и тем более в предшествующие Биткоину времена) эта идея является новаторской, свободные банки были реальностью в Соединенных Штатах 1800-х годов, а также в некоторых других странах.</p>
-<p>Сабо также продолжил реализовывать свой интерес на практике и продавал свой опыт в качестве консультанта по интернет-коммерции в середине 1990-х годов, задолго до того, как большинство увидело потенциал онлайн-торговли. В частности, он некоторое время работал в <a href="/gf/genesis-1">компании Дэвида Чаума DigiCash</a>, чья штаб-квартира располагалась в Амстердаме. Компания Чаума представила первую в мире цифровую наличность в форме eCash: средство, позволяющее осуществлять платежи в интернете с такой же приватностью, как и при использовании наличных в реальной жизни. Но именно в DigiCash Сабо узнал о рисках решения Чаума. DigiCash была централизованной компанией, и Сабо обнаружил, что для него и многих других было слишком просто при желании вмешаться в счета пользователей. Доверенные стороны – это бреши в системе безопасности, и этот риск, пожалуй, нигде не является таким острым, как в случае с деньгами.</p>
+<p>Digital currency, a cash for the internet, was always a <a href="https://cypherpunks.venona.com/date/1993/08/msg00426.html">central goal</a> for the Cypherpunks. But few dived into the subject matter like Szabo did.</p>
+<p>In his essay “Shelling Out: The Origins of Money,” Szabo <a href="https://nakamotoinstitute.org/shelling-out/">described</a> how — as <a href="https://books.google.nl/books?id=ekonDAAAQBAJ&amp;pg=PA244&amp;lpg=PA244&amp;dq=Richard&#43;Dawkins&#43;money&#43;as&#43;a&#43;formal&#43;token&#43;of&#43;reciprocal&#43;altruism&amp;source=bl&amp;ots=kBbSS-l5AC&amp;sig=fr85YmvwkvFqWcOYLBkL10O7sI4&amp;hl=en&amp;sa=X&amp;redir_esc=y#v=onepage&amp;q=Richard20Dawkins20money20as20a20formal20token20of20reciprocal20altruism&amp;f=false">first hypothesized</a> by evolutionary biologist Richard Dawkins — using money has been embedded in the very DNA of humans. Having analyzed pre-civilized societies, Szabo found that people across cultures tended to collect scarce, easy-to-carry objects, often to make jewellery out of them. It was these objects that served as money, which in turn allowed humans to cooperate: game theoretical “reciprocal altruism” through trade, at scale and across time.</p>
+<p>Szabo also took a keen interest in <a href="https://en.wikipedia.org/wiki/Free_banking">free banking</a>, a monetary arrangement advocated by Hayek, where private banks issue their own currency not bound to any particular state. Under such a system, it’s completely up to the free market to choose which money to use. While a novel idea today (and even more so in the years before Bitcoin), free banking was a reality in the United States of the 1800s, as well as in several other countries.</p>
+<p>Szabo also went on to put his interest into practice and sold his expertise as an_internet commerce consultant_ by the mid 1990s, long before most saw the potential of online commerce. Most notably, he spent some time working at David Chaum’s DigiCash startup, headquartered in Amsterdam. Chaum’s company introduced the first digital cash the world had ever seen in the form of <a href="https://bitcoinmagazine.com/articles/genesis-files-how-david-chaums-ecash-spawned-cypherpunk-dream">eCash</a>: a means to make payments online as private as cash in real life was.</p>
+<p>But it was also at DigiCash where Szabo learned about the risks of Chaum’s solution. DigiCash was a centralized company, and Szabo found it was far too easy for him and others to mess with people’s balances if they’d wanted to. Trusted parties are security holes, after all, and this risk is perhaps nowhere bigger than with money.</p>
 <blockquote>
-<p>&ldquo;Проблема, в двух словах, заключается в том, что в настоящее время ценность наших денег зависит от доверия к третьей стороне. Как показали многочисленные инфляционные и гиперинфляционные эпизоды в 20 веке, это не идеальное положение вещей.”</p>
-<p>— <a href="http://unenumerated.blogspot.com/2005/12/bit-gold.html">Ник Сабо, 2005 год</a>.</p>
+<p>“The problem, in a nutshell, is that our money currently depends on trust in a third party for its value,” Szabo <a href="https://unenumerated.blogspot.com/2005/12/bit-gold.html">argued</a> in 2005. “As many inflationary and hyperinflationary episodes during the 20th century demonstrated, this is not an ideal state of affairs.”</p>
 </blockquote>
-<p>Фактически, он считал эту проблему доверия таким препятствием, что от нее может пострадать даже самое обыкновенное решение свободной банковской системы: <em>&quot;[Частный] выпуск банкнот, хотя и имел различные преимущества и недостатки, аналогичным образом зависел от доверенной третьей стороны&rdquo;</em>. Сабо знал, что хочет создать новую форму денег, которая не зависит от доверия к третьей стороне. Основываясь на анализе доисторических денег, Сабо прошел долгий путь, чтобы понять, какими должны быть его идеальные деньги. Во-первых, они должны быть <em>&ldquo;защищены от случайной потери и кражи&rdquo;</em>. Во-вторых они должны обладать <em>&ldquo;неподделываемой дороговизной и поэтому считаться ценными&rdquo;</em>. И в-третьих: <em>&ldquo;Эта ценность [должна быть] точно определена простыми наблюдениями или измерениями&rdquo;</em>. По сравнению с драгоценными металлами, такими как золото, Сабо хотел создать нечто одновременно цифровое и редкое, где редкость не зависела бы от доверия третьей стороне. Он хотел создать цифровое золото.</p>
+<p>In fact, he considered this trust problem such an obstacle that even a typical free banking solution could suffer from it: “[P]rivate bank note issue, while it had various advantages as well as disadvantages, similarly depended on a trusted third party.”</p>
+<p>Szabo knew he wanted to create a new form of money that did not depend on trust in any third party.</p>
+<p>Based on his analysis of prehistoric money, Szabo had come a long way in figuring out what his ideal money would look like. First, it had to be “secure from accidental loss and theft.” Second, its value must be “unforgeably costly, and therefore considered valuable.” And third: “This value [had to be] accurately approximated by simple observations or measurements.”</p>
+<p>Best compared to precious metals like gold, Szabo wanted to create something that was both digital and scarce, where this scarcity did not depend on any third party trust. He wanted to create a digital gold.</p>
 <blockquote>
-<p>Драгоценные металлы и предметы коллекционирования обладают неподделываемой редкостью из-за дороговизны их создания. В свое время это позволило создать деньги, стоимость которых в значительной степени не зависела от доверия третьей стороне. Однако у драгоценных металлов есть недостатки. [&hellip;] Таким образом, было бы очень хорошо, если бы существовал протокол, с помощью которого можно было бы создавать неизменно дорогие биты онлайн с минимальной зависимостью от доверенных третьих сторон, а затем безопасно хранить, передавать и оценивать их с таким же минимальным доверием. Bit gold.</p>
+<p>Precious metals and collectibles have an unforgeable scarcity due to the costliness of their creation. This once provided money the value of which was largely independent of any trusted third party. Precious metals have problems, however. […] Thus, it would be very nice if there were a protocol whereby unforgeably costly bits could be created online with minimal dependence on trusted third parties, and then securely stored, transferred, and assayed with similar minimal trust. Bit gold.</p>
 </blockquote>
 <h1 id="bit-gold">
   Bit Gold
   <a class="anchor" href="#bit-gold">#</a>
 </h1>
-<p>Сабо впервые предложил схему Bit Gold в 1998 году, но <a href="http://unenumerated.blogspot.com/2005/12/bit-gold.html">полностью описал</a> ее публично только в 2005 году. Предложенная им схема цифровых денег состояла из комбинации решений, некоторые из которых были вдохновлены (или напоминали) предыдущие концепции электронных денег. Первым основным свойством Bit Gold был <a href="/izobretaem-bitkoin/glava-3">Proof of Work</a> – криптографический трюк, использованный доктором Адамом Бэком в его &ldquo;антиспамовой валюте&rdquo; <a href="/gf/genesis-2">Hashcash</a>. Proof of Work представлял собой неподделываемую дороговизну, которую искал Сабо, поскольку для создания доказательств требовались ресурсы реального мира – вычислительные мощности. Система Proof of Work в Bit Gold начиналась со &ldquo;строки-кандидата&rdquo;: по сути, случайного числа. Любой мог взять эту строку и математически объединить – &ldquo;хэшировать&rdquo; – ее с другим, только что сгенерированным случайным числом. По природе хэширования, результатом будет новая, кажущаяся случайной строка чисел – хэш. Единственный способ узнать, как выглядит этот хэш, – это создать его; в противном случае его невозможно вычислить или предсказать. Хитрость, также используемая в Hashcash, заключается в том, что не все хэши считаются действительными в рамках протокола Bit Gold. Вместо этого действительный хэш должен, например, начинаться с заранее определенного количества нулей. Из-за непредсказуемой природы хэширования единственный способ найти подходящий (валидный) хэш – это метод проб и ошибок (перебор). Таким образом, валидный хэш доказывает, что его создатель затратил вычислительную мощность. Этот валидный хэш, в свою очередь, будет следующей строкой-кандидатом Bit Gold. Таким образом, система Bit Gold вырастет в цепочку хэшей Proof of Work, и всегда будет доступна следующая строка-кандидат для дальнейшей работы. Тот, кто найдет достоверный хэш, будет в буквальном смысле владеть этим хэшем, подобно тому, как человек, нашедший немного золотой руды, владеет ею. Чтобы установить это право собственности в цифровом виде, Bit Gold использовал <a href="https://nakamotoinstitute.org/secure-property-titles/#selection-125.47-125.66">цифровой реестр собственности</a> – составляющая, вдохновленная Хайеком и предложенная Сабо. В этом реестре хэши должны были быть связаны с публичными ключами их создателей. Именно через этот цифровой реестр собственности хэш мог быть передан новому владельцу: первоначальный владелец буквально подписывал транзакцию криптографической подписью. Реестр собственности должен был вестись &ldquo;клубом собственности&rdquo; Bit Gold. Этот клуб собственности состоит из &ldquo;членов клуба&rdquo; (серверов), которые будут отслеживать, какие публичные ключи владеют какими хэшами. Это решение несколько напоминало <a href="/gf/genesis-3">предложенное Вэем Даем решение для b-money</a> с использованием репликативной базы данных; и Сабо, и Дай были активны не только в списке рассылки шифропанков, но и в закрытом списке электронной почты, обсуждавшем эти темы.</p>
-<p>Но вместо системы Proof of Stake Дая для поддержания системы в актуальном состоянии Сабо предложил &ldquo;византийскую систему кворума&rdquo;. Подобно системам, критичным к безопасности, таким как бортовые компьютеры самолетов, если лишь один (или меньшинство) из этих компьютеров выйдет из строя, система в целом будет продолжать работать нормально. Только в случае одновременного отказа большинства компьютеров система окажется в затруднительном положении. Важно, что ни одна из проверок не требует судов, судей или полиции, поддерживаемых государственной монополией на насилие. Все это было бы добровольным.</p>
-<p>Хотя эта система сама по себе не была на 100% пуленепробиваемой – например, она могла подвергнуться атаке Сивиллы (&ldquo;проблема марионетки&rdquo;), – Сабо верил, что она сможет работать сама по себе. Даже в том случае, если большинство членов клуба попытаются обмануть, честное меньшинство может отделиться в конкурирующий реестр собственности. Пользователи могли бы выбрать, какой реестр собственности использовать, и он, по мнению Сабо, скорее всего, окажется честным.</p>
+<p>Szabo first came up with Bit Gold in 1998, though he only <a href="https://unenumerated.blogspot.com/2005/12/bit-gold.html">fully described</a> it in public in <a href="http://web.archive.org/web/20060329122942/http://unenumerated.blogspot.com/2005/12/bit-gold.html">2005</a>. His proposed digital money scheme consisted of a combination of solutions, some of which were inspired by (or resembled) previous electronic cash concepts.</p>
+<p>The first central property of Bit Gold was <em>proof of work</em>, the cryptographic trick utilized by Dr. Adam Back in his “anti-spam currency” <a href="https://bitcoinmagazine.com/articles/genesis-files-hashcash-or-how-adam-back-designed-bitcoins-motor-block">Hashcash</a>. Proof of work represented the unforgeable costliness Szabo was looking for, as it required real-world resources — computing power — to produce these proofs.</p>
+<p>Bit Gold’s proof-of-work system started with a “candidate string”: basically a random number. Anyone could take this string and mathematically combine — “hash” — it with another, newly generated random number. By the nature of hashing, the result would be a new, seemingly random string of numbers: the hash. The only way to find out what this hash looks like is to actually create it — it cannot otherwise be computed or predicted.</p>
+<p>The trick, also utilized in Hashcash, is that not all hashes are considered valid within the Bit Gold protocol. Instead, a valid hash must, for example, start with a predetermined number of zeros. Because of the unpredictable nature of hashing, the only way to find such a valid hash is trial and error. A valid hash, therefore, proves that its creator expended computing power.</p>
+<p>This valid hash would, in turn, be the next Bit Gold candidate string. The Bit Gold system would, therefore, grow into a chain of proof-of-work hashes, and there’d always be a next candidate string to work with.</p>
+<p>Whoever would find a valid hash would quite literally own that hash, similar to how the person that finds a bit of gold ore owns it. To establish this ownership digitally, Bit Gold used a <a href="https://nakamotoinstitute.org/secure-property-titles/#selection-125.47-125.66">digital ownership registry</a>: another Hayek-inspired building block proposed by Szabo. In this registry, the hashes were to be linked to the public keys of their respective creators.</p>
+<p>It was also through this digital ownership registry that a hash could be transferred to a new owner: The original owner would literally sign off on a transaction with a cryptographic signature.</p>
+<p>The ownership registry was to be maintained by a Bit Gold “property club.” This property club consists of “club members” (servers) that would keep track of which public keys own which hashes. This solution somewhat resembled Wei Dai’s proposed replicated database solution for b-money; both Szabo and Dai were not only active on the Cypherpunks’ mailing list, but also on a closed email list discussing these topics.</p>
+<p>But instead of Dai’s proof-of-stake system to keep the system up to date, Szabo proposed a “Byzantine Quorum System.” Similar to security-critical systems like airplane board computers, if only one (or a minority) of these computers should fall out of line, the system as a whole would continue to operate fine. Only if a majority of computers were to fail at the same time would the system be in trouble. Importantly, none of these checks required courts or judges or police, backed by the state monopoly on violence: It would all be voluntary.</p>
+<p>While this system was not in itself 100 percent watertight — it could for example be <a href="https://en.wikipedia.org/wiki/Sybil_attack">Sybil attacked</a> (the “sock puppet problem”) — Szabo believed it could work itself out. Even in the scenario where a majority of club members would attempt to cheat, the honest minority could branch off into a competing ownership registry. Users could then choose which ownership registry to use, which Szabo thought would probably be the honest one.</p>
 <blockquote>
-<p>&ldquo;Если правила нарушаются победившими избирателями, честные проигравшие могут выйти из группы и реформировать новую группу, унаследовав старые титулы. Пользователи титулов (полагающиеся стороны), которые хотят сохранить заслуженные титулы, могут безопасно проверить для себя, какая из отколовшихся групп следовала правилам, и перейти в правильную группу&rdquo;.</p>
+<p>“If the rules are violated by the winning voters, the correct losers can exit the group and reform a new group, inheriting the old titles,” he explained. “Users of the titles (relying parties) who wish to maintain correct titles can securely verify for themselves which splinter group has correctly followed the rules and switch to the correct group.”</p>
 </blockquote>
-<blockquote>
-<p>(В качестве современного примера это можно сравнить с Ethereum Classic, который поддерживает версию оригинального реестра Ethereum, не откатившую последствия взлома смарт-контракта The DAO).</p>
-</blockquote>
-<h1 id="инфляция">
-  Инфляция
-  <a class="anchor" href="#%d0%b8%d0%bd%d1%84%d0%bb%d1%8f%d1%86%d0%b8%d1%8f">#</a>
+<p>(As a modern-day example, this can perhaps be compared with Ethereum Classic, which <a href="https://bitcoinmagazine.com/articles/rejecting-today-s-hard-fork-the-ethereum-classic-project-continues-on-the-original-chain-here-s-why-1469038808">maintains</a> a version of the original Ethereum ledger that did not undo The DAO smart contract.)</p>
+<h1 id="inflation">
+  Inflation
+  <a class="anchor" href="#inflation">#</a>
 </h1>
-<p>Следующей проблемой, которую пришлось решать Сабо, была инфляция. По мере совершенствования компьютеров со временем генерировать достоверные хэши становилось все проще. Это означает, что сами хэши не смогут выполнять функцию денег: с каждым годом они будут становиться все менее редкими до тех пор, пока изобилие не разбавит всю ценность. Сабо нашел решение. Как только будет найден правильный хэш, он должен быть отмечен временной меткой, в идеале – на разных серверах временных меток, чтобы минимизировать доверие к какому-то одному. Эта временная метка давала представление о том, насколько сложно было создать хэш: более старый хэш сложнее создать, чем более новый. Затем рынки определяют, сколько стоит любой конкретный хэш по отношению друг к другу, предположительно корректируя его стоимость с учетом даты его генерации. Валидный &ldquo;хэш 2018 года&rdquo; должен стоить гораздо меньше, чем валидный &ldquo;хэш 2008 года&rdquo;. Но Сабо <a href="http://unenumerated.blogspot.com/2008/04/bit-gold-markets.html">знал</a>, что это решение, конечно, создавало новую проблему: &ldquo;Биты (решения головоломки) от одного периода (от нескольких секунд до недель, скажем, недели) до следующего не являются взаимозаменяемыми&rdquo;. Взаимозаменяемость – идея о том, что любая денежная единица равна любой другой единице – имеет решающее значение для денег. Владелец магазина хочет принять платеж, не задумываясь о дате создания получаемых денег. Сабо придумал решение и для этой проблемы. Он <a href="http://unenumerated.blogspot.com/2008/04/bit-gold-markets.html">представил</a> своего рода &ldquo;второй слой&rdquo; поверх базового слоя Bit Gold. Этот слой будет состоять из подобия банков – надежно проверяемого банка, поскольку реестр Bit Gold является публичным. Эти банки собирали бы различные хэши за разные периоды времени и, исходя из ценности этих хэшей, объединяли бы их в пакеты с общей стандартной стоимостью. Пакет &ldquo;2018&rdquo; будет включать больше хэшей, чем пакет &ldquo;2008&rdquo;, но оба пакета будут стоить одинаково. Затем эти пакеты должны были быть разрезаны на определенное количество единиц. Наконец, эти единицы могли быть выпущены &ldquo;банками&rdquo; в качестве частной и анонимной eCash Чаума.</p>
+<p>The next problem that Szabo had to solve was inflation. As computers improve over time, it would become easier and easier to generate valid hashes. This means that the hashes themselves can’t function as money very well: they would become increasingly less scarce every year, to the point where abundance would dilute all value.</p>
+<p>Szabo figured out a solution. Once a valid hash was found, it had to be timestamped, ideally with different timestamp servers to minimize trust in any particular one. This timestamp would give an idea of how hard it was to produce the hash: an older hash would have been harder to produce than a newer hash. Markets would then determine how much any particular hash is worth relative to one another, presumably adjusting its value for the date it was found. A valid “2018 hash” should be worth much less than a valid “2008 hash.”</p>
+<p>But this solution, of course, introduced a new problem, Szabo <a href="https://unenumerated.blogspot.com/2008/04/bit-gold-markets.html">knew</a>: “the bits (the puzzle solutions) from one period (anywhere from seconds to weeks, let&rsquo;s say a week) to the next are not fungible.” Fungibility — the idea that any currency unit is equal to any other unit — is critical for money. A shopkeeper wants to accept a payment without having to worry about the date the money was created.</p>
+<p>Szabo came up with a solution to this problem as well. He <a href="https://unenumerated.blogspot.com/2008/04/bit-gold-markets.html">envisioned</a> a sort of “second layer” solution on top of the Bit Gold base layer. This layer would consist of a type of bank, though a securely auditable bank, since the Bit Gold registry was public. These banks would collect different hashes from different time periods and, based on the value of these hashes, bundle them into packets of a combined standard value. A “2018 pack” would include more hashes than a “2008 pack,” but both packs would be worth the same.</p>
+<p>These packs, then, were to be cut up in a specific number of units. Finally, these units could be issued by the “banks” as a private and anonymous Chaumian eCash.</p>
 <blockquote>
-<p>&ldquo;[С]оздающие банки выпускают цифровые банкноты, погашаемые битами, рыночная стоимость которых равна номинальной стоимости банкноты (т.е. они создают пакеты стандартизированной ценности)&rdquo;</p>
-<p>— <a href="https://unenumerated.blogspot.com/2011/05/bitcoin-what-took-ye-so-long.html">Ник Сабо</a>.</p>
+<p>“[C]ompeting banks issue digital banknotes redeemable in solution bits whose market values add up to the face value of the bank note (i.e. they create bundles of standard value),” Szabo <a href="https://unenumerated.blogspot.com/2011/05/bitcoin-what-took-ye-so-long.html">explained</a>.</p>
 </blockquote>
-<p>Таким образом, Bit Gold был разработан как базовый слой, подобный золотому стандарту, для свободной банковской системы цифровой эпохи.</p>
-<h1 id="биткоин">
-  Биткоин
-  <a class="anchor" href="#%d0%b1%d0%b8%d1%82%d0%ba%d0%be%d0%b8%d0%bd">#</a>
+<p>Thus, Bit Gold was designed as a gold standard-like base layer for a free banking system of the digital age.</p>
+<h1 id="bitcoin">
+  Bitcoin
+  <a class="anchor" href="#bitcoin">#</a>
 </h1>
-<p>В 2000-х годах Сабо получил юридическую степень, чтобы еще лучше понять закон и договорную реальность, которую он хотел заменить или воспроизвести в интернете. Он также начал собирать и публиковать свои идеи в блоге &ldquo;<a href="https://unenumerated.blogspot.com/">Unenumerated</a>&rdquo;, который охватывает самые разные темы – от информатики до права и политики, а также истории и биологии. <em>&ldquo;Список тем для этого блога [&hellip;] настолько обширен и разнообразен, что все их невозможно перечислить&rdquo;</em>, – объяснил Сабо название блога (неисчисляемый).</p>
-<p>К 2008 году – через 10 лет после того, как Сабо впервые предложил эту идею в частном порядке – он снова заговорил о Bit Gold в своем блоге, только на этот раз он хотел запустить первую реализацию своего предложения.</p>
+<p>In the 2000s, Szabo went on to earn a law degree to understand the law and contract reality he wished to replace or replicate online even better. He also started to collect and publish his ideas on a well-respected blog, “<a href="https://unenumerated.blogspot.com/">Unenumerated</a>,” which covers topics ranging from computer science to law and politics, but also history and biology. “The list of topics for this blog […] is so vast and varied that it cannot be enumerated,” Szabo <a href="https://unenumerated.blogspot.com/2005/10/unenumerated.html">explained</a> the title.</p>
+<p>By 2008 — 10 years after first proposing it in private — Szabo brought up Bit Gold on his blog once again, only this time he wanted to realize a first implementation of his proposal.</p>
 <blockquote>
-<p>&ldquo;Bit Gold только выиграл бы от демонстрации, экспериментального рынка (например, с доверенной третьей стороной вместо сложной системы безопасности, которая была бы необходима для реальной системы). Кто-нибудь хочет помочь мне разработать такую систему?&rdquo;</p>
-<p>– спросил Сабо в разделе комментариев своего блога.</p>
+<p>“Bit Gold would greatly benefit from a demonstration, an experimental market (with e.g. a trusted third party substituted for the complex security that would be needed for a real system). Anybody want to help me code one up?” he <a href="https://unenumerated.blogspot.com/2008/04/bit-gold-markets.html?showComment=1207799580000#c3741843833998921269">asked</a> in the comment section his blog.</p>
 </blockquote>
-<p>Если кто-то и ответил, то не публично. Bit Gold в предложенной Сабо форме так и не был реализован. Однако Bit Gold послужил источником вдохновения для Сатоши Накамото, который в том же году опубликовал &ldquo;белую книгу&rdquo; Биткоина.</p>
-<p><em><a href="/epubs/bitcoin_ru.pdf">Белая книга Биткоина на русском</a></em></p>
+<p>If someone responded, it wasn’t in public. Bit Gold, in Szabo’s proposed form, was never implemented.</p>
+<p>However, Bit Gold did serve as a key inspiration for Satoshi Nakamoto, who published the Bitcoin white paper later that same year.</p>
 <blockquote>
-<p>&ldquo;Биткоин – это реализация предложения Вэя Дая о b-money [&hellip;] в списке рассылки шифропанков [&hellip;] в 1998 году и предложения Ника Сабо о Bitgold&rdquo;,</p>
-<p>– написал псевдонимный изобретатель биткоина на форуме Bitcointalk в 2010 году.</p>
+<p>“Bitcoin is an implementation of Wei Dai&rsquo;s b-money proposal [&hellip;] on Cypherpunks [&hellip;] in 1998 and Nick Szabo&rsquo;s Bitgold proposal,” Bitcoin’s pseudonymous inventor <a href="https://bitcointalk.org/index.php?topic=342.msg4508#msg4508">wrote</a> on the Bitcointalk forum in 2010.</p>
 </blockquote>
-<p>Действительно, несложно представить Bit Gold как прародителя Биткоина. Помимо общей базы данных записей о владельцах, основанной на криптографии с открытым ключом, цепочка хэшей Proof of Work удивительно похожа на блокчейн Биткоина. И, конечно, названия Bit Gold и Bitcoin тоже не слишком далеки друг от друга.</p>
-<p>Однако, в отличие от таких систем, как Hashcash и b-money, Bit Gold не была упомянута в &ldquo;белой книге&rdquo; Биткоина. Некоторые даже посчитали это отсутствие настолько заметным, что восприняли его как один из нескольких намеков на то, что Сабо должен стоять за псевдонимом Сатоши Накамото: Кто еще мог бы попытаться так скрыть происхождение Биткоина? Тем не менее, несмотря на сходство с Bit Gold по ряду параметров, Биткоин все же содержит некоторые усовершенствования по сравнению с проектом Сабо. Bit Gold все еще в некоторой степени полагается на доверенные стороны – в определенной мере необходимо доверять тому, что серверы и службы временных меток не вступят в сговор. Биткоин же стал первой системой, которая полностью решила эту проблему. Она решает ее очень элегантно, благодаря тому, что требуемая система Proof of Work служит одновременно системой наград и механизмом консенсуса: Цепочка хэшей с наибольшим количеством Proof of Work считается достоверной версией истории.</p>
+<p>Indeed, it’s not difficult to see Bit Gold as an early draft of Bitcoin. Apart from the shared database of ownership records based on public key cryptography, the chain of proof-of-work hashes has an eerie resemblance to Bitcoin’s <a href="https://bitcoinmagazine.com/guides/what-is-blockchain">blockchain</a>. And, of course, the names Bit Gold and Bitcoin are not too far apart either.</p>
+<p>Yet, unlike systems like Hashcash and b-money, Bit Gold was conspicuously absent from the Bitcoin white paper. Some have even considered this absence so notable they took it as one of several hints that Szabo must be the man behind the Satoshi Nakamoto monicker: Who else would try to hide Bitcoin’s origins like this?</p>
+<p>Still, while similar to Bit Gold in several ways, Bitcoin did include some improvements over Szabo’s design. In particular, where Bit Gold still relies on trusted parties to an extent — servers and the timestamp services must be trusted to some degree not to collude — Bitcoin was the first system to solve this problem entirely. It solves it very elegantly, by having the required proof-of-work system serve as both an award system and a consensus mechanism in one: The hash chain with the most proof of work is considered the valid version of history.</p>
 <blockquote>
-<p>&ldquo;Накамото устранил существенный недостаток в безопасности, которым обладал мой проект, а именно, потребовал, чтобы Proof of Work был составляющей византийской устойчивой одноранговой системы, чтобы уменьшить угрозу того, что ненадежная сторона будет контролировать большинство узлов и таким образом подвергнет опасности ряд важных функций безопасности&rdquo;.</p>
-<p>— Ник Сабо, <a href="https://unenumerated.blogspot.com/2011/05/bitcoin-what-took-ye-so-long.html">2011 год</a>.</p>
+<p>“Nakamoto improved a significant security shortcoming that my design had,” Szabo <a href="https://unenumerated.blogspot.com/2011/05/bitcoin-what-took-ye-so-long.html">acknowledged in 2011</a>, “namely by requiring a proof-of-work to be a node in the Byzantine-resilient peer-to-peer system to lessen the threat of an untrustworthy party controlling the majority of nodes and thus corrupting a number of important security features.”</p>
 </blockquote>
-<p>Кроме того, у Биткоина совсем другая денежная модель, отличающаяся от предложенной Сабо, с фиксированным графиком инфляции, не подверженным влиянию увеличения хэш-мощности. По мере увеличения вычислительной мощности сети Биткоин находить новые монеты становится все труднее.</p>
+<p>Further, Bitcoin has a very different monetary model than Szabo proposed, with a fixed inflation schedule that remains unaffected by hash power increases altogether. As computing power on the Bitcoin network increases, it just means that it’s harder to find new coins.</p>
 <blockquote>
-<p>&ldquo;Вместо того чтобы мой автоматизированный рынок учитывал тот факт, что сложность головоломок часто может радикально меняться в зависимости от усовершенствования оборудования и криптографических прорывов (т.е. открытия алгоритмов, которые могут быстрее решать Proof of Work), а также непредсказуемости спроса, Накамото разработал согласованный византийский алгоритм, регулирующий сложность головоломок.<br>
-Я не могу определить, является ли этот аспект Биткоина особенностью или скорее ошибкой, но он действительно упрощает протокол&rdquo;.</p>
-<p>— Ник Сабо</p>
+<p>“Instead of my automated market to account for the fact that the difficulty of puzzles can often radically change based on hardware improvements and cryptographic breakthroughs (i.e. discovering algorithms that can solve proofs-of-work faster), and the unpredictability of demand, Nakamoto designed a Byzantine-agreed algorithm adjusting the difficulty of puzzles,” Szabo explained.</p>
+<p>“I can&rsquo;t decide whether this aspect of Bitcoin is more feature or more bug,” he added, “but it does make it simpler.”</p>
 </blockquote>
-<hr>
-<p>Оригинал статьи на английском:</p>
-<div class="imageWrapper">
-    <img src="/img/gf-244.png">
-<p><em><a href="https://bitcoinmagazine.com/culture/genesis-files-bit-gold-szabo-was-inches-away-inventing-bitcoin">The Genesis Files: With Bit Gold, Szabo Was Inches Away From Inventing Bitcoin</a></em></p>
-</div>
 
 <div class="book-expand">
   <label>
     <div class="book-expand-head flex justify-between">
-      <span>Оглавление</span>
+      <span>Contents</span>
       <span>...</span>
     </div>
     <input type="checkbox" class="hidden" />
     <div class="book-expand-content markdown-inner">
       <ol>
-<li>
-<p><a href="/gf/genesis-intro">Пролог: День, когда криптография изменилась навсегда</a></p>
-</li>
-<li>
-<p><a href="/gf/genesis-1">Часть I: eCash Дэвида Чаума и зарождение мечты шифропанков</a></p>
-</li>
-<li>
-<p><a href="/gf/genesis-2">Часть II: Hashcash или как Адам Бэк разработал сердце Биткоина</a></p>
-</li>
-<li>
-<p><a href="/gf/genesis-3">Часть III: Если у Биткоина был прототип, то это были b-money Вэя Дая</a></p>
-</li>
-<li>
-<p><a href="/gf/genesis-4">Часть IV: Создавая Bit Gold, Сабо был в двух шагах от изобретения Биткоина</a></p>
-</li>
-<li>
-<p><a href="/gf/genesis-5">Часть V: Как поиски цифровой наличности привели Хэла Финни к созданию RPOW (и не только)</a></p>
-</li>
+<li><a href="/en/gf/genesis-intro">Intro: The Day Cryptography Changed Forever</a></li>
+<li><a href="/en/gf/genesis-1">Part I: How David Chaum’s eCash Spawned a Cypherpunk Dream</a></li>
+<li><a href="/en/gf/genesis-2">Part II: Hashcash or How Adam Back Designed Bitcoin’s Motor Block</a></li>
+<li><a href="/en/gf/genesis-3">Part III: If Bitcoin Had a First Draft, Wei Dai’s B-Money Was It</a></li>
+<li><a href="/en/gf/genesis-4">Part IV: With Bit Gold, Szabo Was Inches Away From Inventing Bitcoin</a></li>
+<li><a href="/en/gf/genesis-5">Part V: How Hal Finney’s Quest For Digital Cash Led To RPOW (And More)</a></li>
 </ol>
 
     </div>
@@ -3219,10 +3039,10 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#электронная-наличность">Электронная наличность</a></li>
+    <li><a href="#electronic-cash">Electronic Cash</a></li>
     <li><a href="#bit-gold">Bit Gold</a></li>
-    <li><a href="#инфляция">Инфляция</a></li>
-    <li><a href="#биткоин">Биткоин</a></li>
+    <li><a href="#inflation">Inflation</a></li>
+    <li><a href="#bitcoin">Bitcoin</a></li>
   </ul>
 </nav>
 

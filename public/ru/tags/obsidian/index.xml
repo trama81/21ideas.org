@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Obsidian on 21ideas</title>
+    <link>http://localhost:1313/ru/tags/obsidian/</link>
+    <description>Recent content in Obsidian on 21ideas</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru-RU</language>
+    <lastBuildDate>Mon, 30 Oct 2023 23:23:13 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/ru/tags/obsidian/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Публикация статей через Obsidian</title>
+      <link>http://localhost:1313/ru/obsidian/</link>
+      <pubDate>Thu, 07 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ru/obsidian/</guid>
+      <description>Публикация статей через Obsidian # Наиболее простой и наглядный способ публикации статей на ресурсе 21 идея с помощью программы Obsidian с открытым исходным кодом&#xA;Гид подготовил almoo. Поддержать проект. В этом материале разберем простой способ публикации статей на сайт 21ideas с использованием программы Obsidian. Для данного способа потребуется:&#xA;Obsidian Hugo Плагин &amp;ldquo;Obsidian Git&amp;rdquo; Плагин &amp;ldquo;Hugo preview obsidian&amp;rdquo; Чтобы не перегружать статью информацией, которая уже публиковалась в смежных гидах, я буду просто ссылаться на неё.</description>
+    </item>
+  </channel>
+</rss>

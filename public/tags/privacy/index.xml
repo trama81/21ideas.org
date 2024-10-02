@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Privacy on 21ideas</title>
+    <link>http://localhost:1313/tags/privacy/</link>
+    <description>Recent content in Privacy on 21ideas</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 15 Mar 2024 19:57:20 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/privacy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Buy and Hodl Bitcoin for Beginners</title>
+      <link>http://localhost:1313/newbie-buy/</link>
+      <pubDate>Tue, 06 Dec 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/newbie-buy/</guid>
+      <description> The guide is not yet available in English. Want to cover this topic or support the project? Visit the Contribute page. </description>
+    </item>
+    <item>
+      <title>Buy noKYC Bitcoin with HodlHodl</title>
+      <link>http://localhost:1313/hodl-hodl/</link>
+      <pubDate>Tue, 04 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/hodl-hodl/</guid>
+      <description>This guide by Bitcoin Q+A was published on bitcoiner.guide website.&#xA;Contribute.&#xA;What is Hodl Hodl? # Like Bisq, HodlHodl is a decentralised bitcoin exchange. However, Hodl Hodl is accessed via a web browser rather than a dedicated app. At the application layer, it requires no KYC information although certain sellers do require this. I would advise you to go with a seller that doesn’t ask for your selfie, after all, that’s why we’re here!</description>
+    </item>
+    <item>
+      <title>RoboSats: Private P2P Exchange</title>
+      <link>http://localhost:1313/robosats/</link>
+      <pubDate>Mon, 22 May 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/robosats/</guid>
+      <description>This guide by Bitcoin Q+A was published on bitcoiner.guide website.&#xA;Contribute.&#xA;noKYC # The de-facto way to obtain Bitcoin today, especially as a newcomer, is to do so through a regulated Bitcoin exchange. You hop onto a website, provide an egregious amount of your personal information, often including your name, address, banking details, drivers license and sometimes even a scan of your entire face or a recording of your voice!</description>
+    </item>
+  </channel>
+</rss>

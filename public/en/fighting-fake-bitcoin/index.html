@@ -5,15 +5,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&display=swap" rel="stylesheet">  <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="
-  This article by Jameson Lopp was published in Casa blog.
+<meta name="description" content="This article by Jameson Lopp was published in Casa blog.
 Contribute.
-
-
-
 Bitcoin provides strong assurances around the predictability and scarcity of its money supply. I wrote a detailed technical explanation of how it works here.
-I don&rsquo;t think it&rsquo;s controversial to state that this scarcity is one of bitcoin&rsquo;s key properties and fundamental value drivers. If this property is violated, we have a big problem. So&hellip;do we have a problem?
-Bitcoin will not be a great store of value if most people are buying fake bitcoin.">
+I don&rsquo;t think it&rsquo;s controversial to state that this scarcity is one of bitcoin&rsquo;s key properties and fundamental value drivers. If this property is violated, we have a big problem. So&hellip;do we have a problem?">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark">
 <meta name="lightning" content="21ideas@getalby.com"><meta property="og:title" content="Fighting Fake Bitcoin" />
@@ -2904,70 +2899,70 @@ https://github.com/alex-shpak/hugo-book
 <p>This IOU has none of the properties of bitcoin. It is merely a financial instrument that gives the IOU owner exposure to the BTC exchange rate. It&rsquo;s not even possible for the IOU owner to independently verify that there is a corresponding amount of real BTC set aside for them. Sure, it&rsquo;s possible for the exchange to provide Proof of Reserve attestations, but those still rely upon trusting third-party auditors.</p>
 <p>Do you see the problem? Since you can&rsquo;t verify a company&rsquo;s balance sheet, you can&rsquo;t be sure that your IOU is redeemable for the asset it represents. For the average user, this isn&rsquo;t a problem&hellip;until it is. History is rife with catastrophic revelations that exchanges were operating with fractional reserves. Here are some of the highlights:</p>
 <table>
-  <thead>
-      <tr>
-          <th style="text-align: left">Entity</th>
-          <th style="text-align: left">BTC Lost</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td style="text-align: left">Bitcoinica</td>
-          <td style="text-align: left">61,000</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">Bitfloor</td>
-          <td style="text-align: left">24,000</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">MTGOX</td>
-          <td style="text-align: left">650,000</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">Cryptsy</td>
-          <td style="text-align: left">10,000</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">Bitstamp</td>
-          <td style="text-align: left">19,000</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">BTC-e</td>
-          <td style="text-align: left">66,000</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">Bitfinex</td>
-          <td style="text-align: left">120,000</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">QuadrigaCX</td>
-          <td style="text-align: left">10,000</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">Cred</td>
-          <td style="text-align: left">10,000</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">Fcoin</td>
-          <td style="text-align: left">10,000</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">Celsius</td>
-          <td style="text-align: left">105,000</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">BlockFi</td>
-          <td style="text-align: left">30,000?</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">Voyager</td>
-          <td style="text-align: left">10,000?</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">FTX</td>
-          <td style="text-align: left">70,000</td>
-      </tr>
-  </tbody>
+<thead>
+<tr>
+<th>Entity</th>
+<th>BTC Lost</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bitcoinica</td>
+<td>61,000</td>
+</tr>
+<tr>
+<td>Bitfloor</td>
+<td>24,000</td>
+</tr>
+<tr>
+<td>MTGOX</td>
+<td>650,000</td>
+</tr>
+<tr>
+<td>Cryptsy</td>
+<td>10,000</td>
+</tr>
+<tr>
+<td>Bitstamp</td>
+<td>19,000</td>
+</tr>
+<tr>
+<td>BTC-e</td>
+<td>66,000</td>
+</tr>
+<tr>
+<td>Bitfinex</td>
+<td>120,000</td>
+</tr>
+<tr>
+<td>QuadrigaCX</td>
+<td>10,000</td>
+</tr>
+<tr>
+<td>Cred</td>
+<td>10,000</td>
+</tr>
+<tr>
+<td>Fcoin</td>
+<td>10,000</td>
+</tr>
+<tr>
+<td>Celsius</td>
+<td>105,000</td>
+</tr>
+<tr>
+<td>BlockFi</td>
+<td>30,000?</td>
+</tr>
+<tr>
+<td>Voyager</td>
+<td>10,000?</td>
+</tr>
+<tr>
+<td>FTX</td>
+<td>70,000</td>
+</tr>
+</tbody>
 </table>
 <p>That&rsquo;s over 1 million BTC just from some of the large losses we know about! Out of the current total supply of 19 million BTC, that&rsquo;s 5%, which is nontrivial. And who knows how many other unknown unbacked IOUs are floating around out there&hellip;</p>
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">You talk about the importance of security but how about you finally disclose <a href="https://twitter.com/gate_io?ref_src=twsrc%5Etfw">@gate_io</a> was quietly hacked by NK for $230m on April 21 2018 &amp; how you actively kept this hidden from customers/public<br><br>No one in the space should trust anything you say after how that mess was handled <a href="https://t.co/0I3t2TnG3M">https://t.co/0I3t2TnG3M</a> <a href="https://t.co/RfESOX2leD">pic.twitter.com/RfESOX2leD</a></p>&mdash; ZachXBT (@zachxbt) <a href="https://twitter.com/zachxbt/status/1592337921922994177?ref_src=twsrc%5Etfw">November 15, 2022</a></blockquote>

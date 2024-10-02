@@ -1,20 +1,22 @@
 <!DOCTYPE html>
-<html lang="ru-RU" dir="ltr">
+<html lang="en" dir="ltr">
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&display=swap" rel="stylesheet">  <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="В этой статье мы расскажем о том, как и где хранить резервные копии сид-фраз в различных контекстах хранения биткоина.">
+<meta name="description" content="This article by Stephen Hall was published in Unchained blog.
+Contribute.
+In bitcoin, it’s always important to secure your seeds, but how exactly do you do that? In previous articles, we’ve discussed what seed phrases are and how they work, and some of the most common methods for recording them on various mediums. In this article, we cover how and where to store your seed phrase backups in different bitcoin custody contexts.">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark">
-<meta name="lightning" content="21ideas@getalby.com"><meta property="og:title" content="Как обезопасить свои сид-фразы?" />
-<meta property="og:description" content="В этой статье мы расскажем о том, как и где хранить резервные копии сид-фраз в различных контекстах хранения биткоина." />
+<meta name="lightning" content="21ideas@getalby.com"><meta property="og:title" content="Ultimate guide to storing your bitcoin seed phrase backups" />
+<meta property="og:description" content="" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://localhost:1313/seed-security/" />
 <meta property="og:image" content="http://localhost:1313/img/secure-seed/vault.png"/>
 
-<title>Как обезопасить свои сид-фразы? | 21ideas</title>
+<title>Ultimate guide to storing your bitcoin seed phrase backups | 21ideas</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -22,10 +24,10 @@
 <link rel="apple-touch-icon" media="(prefers-color-scheme: dark)" sizes="180x180" href="/apple-touch-icon-dark.png">
 <link rel="icon" type="image/png" media="(prefers-color-scheme: dark)" sizes="32x32" href="/favicon-32x32-dark.png">
 <link rel="icon" type="image/png" media="(prefers-color-scheme: dark)" sizes="16x16" href="/favicon-16x16-dark.png">
-  <link rel="alternate" hreflang="en" href="http://localhost:1313/en/seed-security/" title="Ultimate guide to storing your bitcoin seed phrase backups">
+  <link rel="alternate" hreflang="ru-RU" href="http://localhost:1313/ru/seed-security/" title="Как обезопасить свои сид-фразы?">
 <link rel="stylesheet" href="/book.min.44d288673620af09aba4fb7b29ef4c1d1f9c0258f725bd228507764ec1740f0a.css" integrity="sha256-RNKIZzYgrwmrpPt7Ke9MHR&#43;cAlj3Jb0ihQd2TsF0Dwo=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/ru.search.min.760cb93fca4cc9af4d5d957f0e91325f35c604c9b72da7d0d0517ae0f7424f53.js" integrity="sha256-dgy5P8pMya9NXZV/DpEyXzXGBMm3LafQ0FF64PdCT1M=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.322caf709709c011df0f8373a87ef3ce291ba22a62fdd5b8cf00bf824b20d5f8.js" integrity="sha256-MiyvcJcJwBHfD4NzqH7zzikboipi/dW4zwC/gksg1fg=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -53,7 +55,7 @@ https://github.com/alex-shpak/hugo-book
 
 
 <div class="book-search">
-  <input type="text" id="book-search-input" placeholder="Поиск" aria-label="Поиск" maxlength="64" data-hotkeys="s/" />
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
   <div class="book-search-spinner hidden"></div>
   <ul id="book-search-results"></ul>
 </div>
@@ -78,15 +80,15 @@ https://github.com/alex-shpak/hugo-book
     <label for="languages" class="flex justify-between">
       <a role="button" class="flex align-center">
         <img src="/svg/translate.svg" class="book-icon" alt="Languages" />
-        Русский
+        English
       </a>
     </label>
 
     <ul>
       
       <li>
-        <a href="http://localhost:1313/en/seed-security/">
-          English
+        <a href="http://localhost:1313/ru/seed-security/">
+          Русский
         </a>
       </li>
       
@@ -120,7 +122,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-4b959577bbd662d890894b4ef656e45e" class="toggle"  />
     <label for="section-4b959577bbd662d890894b4ef656e45e" class="flex justify-between">
-      <a href="/start/" class="">Старт</a>
+      <a role="button" class="">Start</a>
     </label>
   
 
@@ -134,7 +136,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/start/start/" class="">Что такое Биткоин?</a>
+    <a href="/start/start/" class="">Bitcoin Basics</a>
   
 
         </li>
@@ -147,7 +149,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/start/guide/" class="">Используем биткоин</a>
+    <a href="/start/guide/" class="">Using Bitcoin</a>
   
 
         </li>
@@ -160,33 +162,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/course/" class="">Биткоин от А до Я</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/bitcoin-myths/" class="">Разрушаем мифы о Биткоине</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/shitcoin-casino/" class="">Не играйте в щиткоин-казино</a>
+    <a href="/shitcoin-gambling-games/" class="">Don’t Play Shitcoin Gambling Games</a>
   
 
         </li>
@@ -206,7 +182,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-c8e2b39e67e72b49a36ee1ec8355ecba" class="toggle" checked />
     <label for="section-c8e2b39e67e72b49a36ee1ec8355ecba" class="flex justify-between">
-      <a href="/theory/" class="">Теория</a>
+      <a href="/theory/" class="">Theory</a>
     </label>
   
 
@@ -222,7 +198,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-981a6953479a2e41da30ae73c119d6e2" class="toggle"  />
     <label for="section-981a6953479a2e41da30ae73c119d6e2" class="flex justify-between">
-      <a href="/economics/" class="">Экономика</a>
+      <a href="/economics/" class="">Economics</a>
     </label>
   
 
@@ -238,7 +214,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-43f26905d14df4de3737d0d5dfd90ca0" class="toggle"  />
     <label for="section-43f26905d14df4de3737d0d5dfd90ca0" class="flex justify-between">
-      <a href="/pzv/" class="">Постепенно, затем внезапно</a>
+      <a href="/gradually-then-suddenly/" class="">Gradually, Then Suddenly</a>
     </label>
   
 
@@ -252,7 +228,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/postepenno-zatem-vnezapno/" class="">Введение</a>
+    <a href="/gradually-then-suddenly/intro/" class="">Intro</a>
   
 
         </li>
@@ -265,7 +241,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-nelzya-skopirovat/" class="">Биткоин нельзя скопировать</a>
+    <a href="/gradually-then-suddenly/bitcoin-cant-be-copied/" class="">Bitcoin Can’t Be Copied</a>
   
 
         </li>
@@ -278,7 +254,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-ne-slishkom-volatilen/" class="">Биткоин не слишком волатилен</a>
+    <a href="/gradually-then-suddenly/bitcoin-is-not-too-volatile/" class="">Bitcoin Is Not Too Volatile</a>
   
 
         </li>
@@ -291,7 +267,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-ne-tratit-energiyu-zrya/" class="">Биткоин не тратит энергию зря</a>
+    <a href="/gradually-then-suddenly/bitcoin-does-not-waste-energy/" class="">Bitcoin Does Not Waste Energy</a>
   
 
         </li>
@@ -304,7 +280,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-ne-slishkom-medlennyj/" class="">Биткоин не слишком медленный</a>
+    <a href="/gradually-then-suddenly/bitcoin-is-not-too-slow/" class="">Bitcoin is Not Too Slow</a>
   
 
         </li>
@@ -317,7 +293,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-eto-ispravit/" class="">Биткоин это исправит</a>
+    <a href="/gradually-then-suddenly/bitcoin-fixes-this/" class="">Bitcoin Fixes This</a>
   
 
         </li>
@@ -330,7 +306,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-ne-blokchejn/" class="">Биткоин, не блокчейн</a>
+    <a href="/gradually-then-suddenly/bitcoin-not-blockchain/" class="">Bitcoin, Not Blockchain</a>
   
 
         </li>
@@ -343,7 +319,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-nichem-ne-podkreplen/" class="">Биткоин ничем не подкреплен?</a>
+    <a href="/gradually-then-suddenly/bitcoin-is-not-backed-by-nothing/" class="">Bitcoin is Not Backed by Nothing</a>
   
 
         </li>
@@ -356,7 +332,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-ne-finansovaya-piramida/" class="">Биткоин — не финансовая пирамида</a>
+    <a href="/gradually-then-suddenly/bitcoin-is-not-a-pyramid-scheme/" class="">Bitcoin is Not a Pyramid Scheme</a>
   
 
         </li>
@@ -369,7 +345,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-ne-mozhet-byt-zabanen/" class="">Биткоин не может быть забанен</a>
+    <a href="/gradually-then-suddenly/bitcoin-cannot-be-banned/" class="">Bitcoin Cannot be Banned</a>
   
 
         </li>
@@ -382,7 +358,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-ne-dlya-prestupnikov/" class="">Биткоин не для преступников</a>
+    <a href="/gradually-then-suddenly/bitcoin-is-not-for-criminals/" class="">Bitcoin is Not for Criminals</a>
   
 
         </li>
@@ -395,7 +371,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-obescenivaet-ostalnye-dengi/" class="">Биткоин обесценивает остальные деньги</a>
+    <a href="/gradually-then-suddenly/bitcoin-obsoletes-all-other-money/" class="">Bitcoin Obsoletes All Other Money</a>
   
 
         </li>
@@ -408,7 +384,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-zov-k-edineniyu/" class="">Биткоин — зов к единению</a>
+    <a href="/gradually-then-suddenly/bitcoin-is-a-rally-cry/" class="">Bitcoin is a Rally Cry</a>
   
 
         </li>
@@ -421,7 +397,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-eto-zdravyj-smysl/" class="">Биткоин — это здравый смысл</a>
+    <a href="/gradually-then-suddenly/bitcoin-is-common-sense/" class="">Bitcoin is Common Sense</a>
   
 
         </li>
@@ -434,7 +410,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-antihrupok/" class="">Биткоин антихрупок</a>
+    <a href="/gradually-then-suddenly/bitcoin-is-antifragile/" class="">Bitcoin is Antifragile</a>
   
 
         </li>
@@ -447,7 +423,20 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-velikaya-definancializaciya/" class="">Биткоин — великая дефинанcиализация</a>
+    <a href="/gradually-then-suddenly/bitcoin-is-one-for-all/" class="">Bitcoin is One for All</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/gradually-then-suddenly/bitcoin-is-the-great-definancialization/" class="">Bitcoin is the Great Definancialization</a>
   
 
         </li>
@@ -467,7 +456,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-070af377b46d38e45de9a60dd3c8e7d0" class="toggle"  />
     <label for="section-070af377b46d38e45de9a60dd3c8e7d0" class="flex justify-between">
-      <a href="/sb/" class="">Становление Биткоина</a>
+      <a href="/discovering-bitcoin/" class="">Discovering Bitcoin</a>
     </label>
   
 
@@ -481,7 +470,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sb/stanovlenie-intro/" class="">Введение</a>
+    <a href="/discovering-bitcoin/intro/" class="">Introduction</a>
   
 
         </li>
@@ -494,7 +483,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sb/stanovlenie-1/" class="">О времени</a>
+    <a href="/discovering-bitcoin/about-time/" class="">About Time</a>
   
 
         </li>
@@ -507,7 +496,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sb/stanovlenie-2/" class="">О людях</a>
+    <a href="/discovering-bitcoin/about-people/" class="">About People</a>
   
 
         </li>
@@ -520,7 +509,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sb/stanovlenie-3/" class="">Знакомьтесь: деньги</a>
+    <a href="/discovering-bitcoin/introducing-money/" class="">Introducing Money</a>
   
 
         </li>
@@ -533,7 +522,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sb/stanovlenie-4/" class="">Поворот не туда</a>
+    <a href="/discovering-bitcoin/a-wrong-turn-new-plan-needed/" class="">A Wrong Turn (New Plan Needed)!</a>
   
 
         </li>
@@ -546,7 +535,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sb/stanovlenie-5/" class="">Цифровая редкость</a>
+    <a href="/discovering-bitcoin/digital-scarcity/" class="">Digital Scarcity</a>
   
 
         </li>
@@ -559,7 +548,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sb/stanovlenie-6/" class="">Цифровые контракты</a>
+    <a href="/discovering-bitcoin/digital-contracts/" class="">Digital Contracts</a>
   
 
         </li>
@@ -572,7 +561,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sb/stanovlenie-7/" class="">Недостающие части головоломки</a>
+    <a href="/discovering-bitcoin/the-missing-pieces/" class="">The Missing Pieces</a>
   
 
         </li>
@@ -590,7 +579,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitkoin-ne-vredit-okruzhayushej-srede/" class="">Биткоин и окружающая среда</a>
+    <a href="/bitcoin-is-not-harmful-for-the-environment/" class="">Bitcoin Is Not Harmful For The Environment</a>
   
 
         </li>
@@ -603,7 +592,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sem-setevyh-effektov-bitkoina/" class="">Семь сетевых эффектов Биткоина</a>
+    <a href="/seven-network-effects-of-bitcoin/" class="">The Seven Network Effects of Bitcoin</a>
   
 
         </li>
@@ -616,7 +605,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/hozyaeva-i-raby-deneg/" class="">Хозяева и рабы денег</a>
+    <a href="/masters-and-slaves-of-money/" class="">Masters and Slaves of Money</a>
   
 
         </li>
@@ -629,7 +618,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/strukturnaya-perestrojka/" class="">Структурная перестройка</a>
+    <a href="/structural-adjustment/" class="">Structural Adjustment</a>
   
 
         </li>
@@ -642,7 +631,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/v-zashchitu-deflyacii/" class="">В защиту дефляции</a>
+    <a href="/in-defense-of-deflation/" class="">In Defense Of Deflation</a>
   
 
         </li>
@@ -655,7 +644,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sravnenie-monetarnyh-standartov/" class="">Сравнение монетарных стандартов</a>
+    <a href="/comparison-of-monetary-standards/" class="">Comparison of Monetary Standards</a>
   
 
         </li>
@@ -668,7 +657,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sravnenie-monetarnyh-standartov/" class="">Сравнение монетарных стандартов</a>
+    <a href="/petrodollar-negative-effects/" class="">Petrodollar Negative Effects</a>
   
 
         </li>
@@ -681,7 +670,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/negativnye-effekty-neftedollara/" class="">Негативные внешние эффекты нефтедоллара</a>
+    <a href="/shelling-out/" class="">Shelling Out: The Origins of Money</a>
   
 
         </li>
@@ -694,7 +683,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/raskoshelivaemsya/" class="">Раскошеливаемся (Shelling Out): Происхождение денег</a>
+    <a href="/bitcoin-rhythms-of-history/" class="">Bitcoin and the Rhythms of History</a>
   
 
         </li>
@@ -707,7 +696,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-i-ritmy-istorii/" class="">Биткоин и ритмы истории</a>
+    <a href="/bitcoin-and-the-hopf-cycle-of-the-internet/" class="">Bitcoin &amp; the HOPF Cycle of the Internet</a>
   
 
         </li>
@@ -720,7 +709,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-i-internet-cikly-hopfa/" class="">Биткоин и интернет-циклы Хопфа</a>
+    <a href="/money-blockchains-and-social-scalability/" class="">Money, blockchains, and social scalability</a>
   
 
         </li>
@@ -733,7 +722,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/dengi-blokchejny-i-socialnaya-masshtabiruemost/" class="">Деньги, блокчейны и социальная масштабируемость</a>
+    <a href="/what-is-money/" class="">What Is Money</a>
   
 
         </li>
@@ -746,7 +735,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/chto-takoe-dengi/" class="">Что такое деньги</a>
+    <a href="/only-the-strong-survive/" class="">Only The Strong Survive</a>
   
 
         </li>
@@ -759,7 +748,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/vyzhivaet-silnejshij/" class="">Выживает сильнейший</a>
+    <a href="/dollar-cost-averaging/" class="">Dollar-Cost Averaging</a>
   
 
         </li>
@@ -772,33 +761,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/strategiya-dca/" class="">Стратегия DCA</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/jevons-paradox/" class="">Парадокс Джевонса: Обратная истина</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/kak-rabotajut-dengi/" class="">Как работают деньги</a>
+    <a href="/jevons-paradox/" class="">Jevons Paradox: Contrary Truth</a>
   
 
         </li>
@@ -818,7 +781,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-4d5bb6cd046af3ae6f08884281ee0445" class="toggle" checked />
     <label for="section-4d5bb6cd046af3ae6f08884281ee0445" class="flex justify-between">
-      <a href="/security/" class="">Безопасность</a>
+      <a href="/security/" class="">Security</a>
     </label>
   
 
@@ -832,7 +795,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/kak-hranit-kljuchi/" class="">Биткоин-кошельки. Зачем и как хранить свои приватные ключи</a>
+    <a href="/how-to-hold-private-keys/" class="">Bitcoin Wallets: How, Why and When to Hold Your Own Private Keys</a>
   
 
         </li>
@@ -845,7 +808,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/seed/" class="">Что такое сид-фраза?</a>
+    <a href="/seed/" class="">What is a bitcoin seed phrase and how does it work?</a>
   
 
         </li>
@@ -858,7 +821,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/seed-security/" class="active">Как обезопасить свои сид-фразы?</a>
+    <a href="/seed-security/" class="active">Ultimate guide to storing your bitcoin seed phrase backups</a>
   
 
         </li>
@@ -871,7 +834,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/passphrase/" class="">Насколько надежна ваша парольная фраза?</a>
+    <a href="/passphrase/" class="">Is your passphrase strong enough?</a>
   
 
         </li>
@@ -884,7 +847,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/multisig/" class="">Все о мультисиг</a>
+    <a href="/what-is-multisig/" class="">What is multisig?</a>
   
 
         </li>
@@ -897,7 +860,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/hwws/" class="">Сравнение аппаратных кошельков</a>
+    <a href="/hwws/" class="">The best Bitcoin hardware wallets</a>
   
 
         </li>
@@ -910,7 +873,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/multisig-1/" class="">Мультисиг. Часть I</a>
+    <a href="/multisig-1/" class="">Multisig Part I: Why Multisig?</a>
   
 
         </li>
@@ -923,7 +886,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/multisig-2/" class="">Мультисиг. Часть II: Отдельные ключи – основа мультиподписи</a>
+    <a href="/multisig-2/" class="">Multisig Part II: Single Keys are the Foundation of Multisignature</a>
   
 
         </li>
@@ -943,7 +906,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-e5dc95f8c3734f1c9cf3045c3ba217e8" class="toggle"  />
     <label for="section-e5dc95f8c3734f1c9cf3045c3ba217e8" class="flex justify-between">
-      <a href="/privacy/" class="">Приватность</a>
+      <a href="/privacy/" class="">Privacy</a>
     </label>
   
 
@@ -957,7 +920,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/privacy/luchshie-praktiki/" class="">Как сохранить приватность?</a>
+    <a href="/privacy/best-practices/" class="">Bitcoin Privacy: Best Practices</a>
   
 
         </li>
@@ -970,7 +933,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/privacy/no-kyc/" class="">Никаких KYC, берегите персональные данные</a>
+    <a href="/privacy/no-kyc/" class="">no-KYC only. Avoid the creep</a>
   
 
         </li>
@@ -983,7 +946,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/privatnost-v-seti-bitcoin/" class="">Приватность в сети Биткоин</a>
+    <a href="/wiki-bitcoin-privacy/" class="">Bitcoin Privacy</a>
   
 
         </li>
@@ -996,7 +959,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-stanovitsya-kriticheski-vazhnym/" class="">Биткоин становится критически важным</a>
+    <a href="/bitcoin-becomes-critical/" class="">Bitcoin Becomes Critical</a>
   
 
         </li>
@@ -1009,7 +972,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bip47-ili-gadkij-utenok/" class="">BIP47, или гадкий утенок</a>
+    <a href="/bip47-the-ugly-duckling/" class="">BIP47, the ugly duckling</a>
   
 
         </li>
@@ -1024,7 +987,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-7626e3de66018c98c264d84fe366e13a" class="toggle"  />
     <label for="section-7626e3de66018c98c264d84fe366e13a" class="flex justify-between">
-      <a href="/privacy/oxt/" class="">Понимание приватности в сети Биткоин с помощью OXT</a>
+      <a href="/privacy/oxt/" class="">Understanding Bitcoin Privacy with OXT</a>
     </label>
   
 
@@ -1038,7 +1001,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/privacy/oxt-1/" class="">Часть 1: Анализ цепочки и приватность транзакций</a>
+    <a href="/privacy/oxt-1/" class="">Part 1: Chain Analysis And Transaction Privacy</a>
   
 
         </li>
@@ -1051,7 +1014,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/privacy/oxt-2/" class="">Часть 2: Ключевые концепции анализа цепочки</a>
+    <a href="/privacy/oxt-2/" class="">Part 2: Chain Analysis Core Concepts</a>
   
 
         </li>
@@ -1064,7 +1027,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/privacy/oxt-3/" class="">Часть 3: Защита от анализа цепочки</a>
+    <a href="/privacy/oxt-3/" class="">Part 3: Defences Against Chain Analysis</a>
   
 
         </li>
@@ -1077,7 +1040,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/privacy/oxt-4/" class="">Часть 4: Применение концепций анализа цепочки для улучшения приватности пользователей</a>
+    <a href="/privacy/oxt-4/" class="">Part 4: Applying Chain Analysis Concepts To Improve User Privacy</a>
   
 
         </li>
@@ -1095,7 +1058,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/privacy/coinjoin/" class="">Понимание и использование CoinJoin</a>
+    <a href="/privacy/coinjoin/" class="">CoinJoin Overview</a>
   
 
         </li>
@@ -1108,7 +1071,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-fungibility/" class="">Взаимозаменяемость Биткоина</a>
+    <a href="/bitcoin-fungibility/" class="">Bitcoin Fungibility</a>
   
 
         </li>
@@ -1141,7 +1104,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-591754e4c6a4e23cb58f7ff9d9022ef1" class="toggle"  />
     <label for="section-591754e4c6a4e23cb58f7ff9d9022ef1" class="flex justify-between">
-      <a href="/protocol/" class="">Протокол</a>
+      <a href="/protocol/" class="">Protocol</a>
     </label>
   
 
@@ -1155,7 +1118,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/kto-kontroliruet-bitkoin-kor/" class="">Кто контролирует Bitcoin Core?</a>
+    <a href="/who-controls-bitcoin-core/" class="">Who Controls Bitcoin Core?</a>
   
 
         </li>
@@ -1168,7 +1131,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/vechnaja-borba/" class="">Вечная борьба Биткоина</a>
+    <a href="/bitcoins-eternal-struggle/" class="">Bitcoin&#39;s Eternal Struggle</a>
   
 
         </li>
@@ -1181,7 +1144,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/ob-udobstve-vzaimodejstvija-s-bitcoinom/" class="">Об удобстве взаимодействия с Биткоином</a>
+    <a href="/on-bitcoins-ux/" class="">On Bitcoin’s UX</a>
   
 
         </li>
@@ -1194,7 +1157,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-zoloto-2-0/" class="">Биткоин: цифровое золото или пиринговая наличность?</a>
+    <a href="/bitcoin-digital-gold-or-ecash/" class="">Bitcoin: Digital Gold or Peer-to-Peer Cash?</a>
   
 
         </li>
@@ -1207,7 +1170,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/upravlenie-bitcoin/" class="">Управление Биткоином</a>
+    <a href="/bitcoin-governance/" class="">Bitcoin Governance</a>
   
 
         </li>
@@ -1220,7 +1183,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/doverennye-tretyi-storony/" class="">Доверенные третьи стороны — это бреши в системе безопасности</a>
+    <a href="/trusted-third-parties/" class="">Trusted Third Parties are Security Holes</a>
   
 
         </li>
@@ -1233,7 +1196,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/21-million-ne-podlezhit-obsuzhdeniyu/" class="">21 миллион не подлежит обсуждению</a>
+    <a href="/21-million-is-non-negotiable/" class="">21 Million is Non-Negotiable</a>
   
 
         </li>
@@ -1246,7 +1209,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/proof-of-work/" class="">Proof of Work: доказательство проделанной работы</a>
+    <a href="/proof-of-work/" class="">Proof of Work, a pictorial essay</a>
   
 
         </li>
@@ -1259,7 +1222,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/proof-of-stake-eto-skam/" class="">Proof of Stake – это скам</a>
+    <a href="/proof-of-stake-is-a-scam/" class="">Proof of stake is a scam</a>
   
 
         </li>
@@ -1272,7 +1235,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/byl-li-satoshi-zhadnym-majnerom/" class="">Был ли Сатоши жадным майнером?</a>
+    <a href="/was-satoshi-a-greedy-miner/" class="">Was Satoshi a Greedy Miner?</a>
   
 
         </li>
@@ -1285,7 +1248,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/segwit/" class="">Что такое SegWit</a>
+    <a href="/segwit/" class="">What Is SegWit</a>
   
 
         </li>
@@ -1298,7 +1261,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/taproot/" class="">Что такое Taproot</a>
+    <a href="/taproot/" class="">What Is Taproot</a>
   
 
         </li>
@@ -1311,7 +1274,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bomby-slozhnosti-ethereum/" class="">Бомбы сложности Ethereum</a>
+    <a href="/coercion-of-ethereums-difficulty-bomb/" class="">The Coercion Of Ethereum&#39;s Difficulty Bomb</a>
   
 
         </li>
@@ -1324,7 +1287,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/rgb/" class="">Разбирая протокол RGB</a>
+    <a href="/rgb/" class="">Understanding the RGB protocol</a>
   
 
         </li>
@@ -1337,7 +1300,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/halving/" class="">Что такое Биткоин-халвинг?</a>
+    <a href="/difficulty/" class="">Bitcoin Difficulty Adjustment</a>
   
 
         </li>
@@ -1350,7 +1313,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/difficulty/" class="">О корректировке сложности майнинга</a>
+    <a href="/bitcoin-address-types/" class="">Bitcoin address types</a>
   
 
         </li>
@@ -1363,7 +1326,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sravnenie-tipov-bitcoin-adresov/" class="">Типы биткоин-адресов</a>
+    <a href="/myths-about-halving/" class="">Myths About the Bitcoin Halving</a>
   
 
         </li>
@@ -1376,20 +1339,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/myths-about-halving/" class="">Мифы о Биткоин-халвинге</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/mining-walkthrough/" class="">SHA256 и майнинг в сети Биткоин</a>
+    <a href="/mining-walkthrough/" class="">SHA256 and Bitcoin Mining Walkthrough</a>
   
 
         </li>
@@ -1404,7 +1354,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-c6baffdfa73d6dd5df13795b95ab68ac" class="toggle"  />
     <label for="section-c6baffdfa73d6dd5df13795b95ab68ac" class="flex justify-between">
-      <a href="/protocol/utxo/" class="">Что такое UTXO и как ими управлять?</a>
+      <a href="/protocol/utxo/" class="">What Is UTXO And How To Manage Them</a>
     </label>
   
 
@@ -1418,7 +1368,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/protocol/utxo-1/" class="">Что такое UTXO?</a>
+    <a href="/protocol/utxo-1/" class="">What is a Bitcoin UTXO</a>
   
 
         </li>
@@ -1431,7 +1381,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/protocol/utxo-2/" class="">Как избежать высоких комиссий при большом количестве UTXO</a>
+    <a href="/protocol/utxo-2/" class="">Too Many UTXOs: How To Avoid High Fees</a>
   
 
         </li>
@@ -1444,7 +1394,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/protocol/utxo-3/" class="">Приватность UTXO</a>
+    <a href="/protocol/utxo-3/" class="">UTXOs Privacy</a>
   
 
         </li>
@@ -1462,7 +1412,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/transaction-size/" class="">Размер транзакции</a>
+    <a href="/transaction-size/" class="">Transaction Size</a>
   
 
         </li>
@@ -1482,7 +1432,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-2cc3faa5b078e8edfc892bc463882294" class="toggle"  />
     <label for="section-2cc3faa5b078e8edfc892bc463882294" class="flex justify-between">
-      <a href="/history/" class="">История</a>
+      <a href="/history/" class="">History</a>
     </label>
   
 
@@ -1498,7 +1448,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-11903f72dc1c8e68f0d748ad1bb6164d" class="toggle"  />
     <label for="section-11903f72dc1c8e68f0d748ad1bb6164d" class="flex justify-between">
-      <a href="/gf/" class="">Генезис-файлы</a>
+      <a href="/gf/" class="">The Genesis Files</a>
     </label>
   
 
@@ -1512,7 +1462,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/gf/genesis-intro/" class="">Пролог</a>
+    <a href="/gf/genesis-intro/" class="">Intro</a>
   
 
         </li>
@@ -1525,7 +1475,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/gf/genesis-1/" class="">Часть I: eCash Дэвида Чаума и зарождение мечты шифропанков</a>
+    <a href="/gf/genesis-1/" class="">Part I: How David Chaum’s eCash Spawned a Cypherpunk Dream</a>
   
 
         </li>
@@ -1538,7 +1488,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/gf/genesis-2/" class="">Часть II: Hashcash или как Адам Бэк разработал сердце Биткоина</a>
+    <a href="/gf/genesis-2/" class="">Part II: Hashcash or How Adam Back Designed Bitcoin’s Motor Block</a>
   
 
         </li>
@@ -1551,7 +1501,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/gf/genesis-3/" class="">Часть III: Если у Биткоина был прототип, то это были b-money Вэя Дая</a>
+    <a href="/gf/genesis-3/" class="">Part III: If Bitcoin Had a First Draft, Wei Dai’s B-Money Was It</a>
   
 
         </li>
@@ -1564,7 +1514,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/gf/genesis-4/" class="">Часть IV: Создавая Bit Gold, Сабо был в двух шагах от изобретения Биткоина</a>
+    <a href="/gf/genesis-4/" class="">Part IV: With Bit Gold, Szabo Was Inches Away From Inventing Bitcoin</a>
   
 
         </li>
@@ -1577,7 +1527,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/gf/genesis-5/" class="">Часть V: Как поиски цифровой наличности привели Хэла Финни к созданию RPOW (и не только)</a>
+    <a href="/gf/genesis-5/" class="">Part V: How Hal Finney’s Quest For Digital Cash Led To RPOW (And More)</a>
   
 
         </li>
@@ -1595,7 +1545,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/hal-finney/" class="">Хэл Финни — жизнь и смерть легенды движения шифропанков</a>
+    <a href="/hal-finney/" class="">Hal Finney — The Life And Death Of A Cypherpunk Legend</a>
   
 
         </li>
@@ -1608,7 +1558,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-and-me/" class="">Биткоин и я</a>
+    <a href="/bitcoin-and-me/" class="">Bitcoin and Me</a>
   
 
         </li>
@@ -1621,7 +1571,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-reformaciya/" class="">Биткоин-Реформация</a>
+    <a href="/bitcoin-reformation/" class="">The Bitcoin Reformation</a>
   
 
         </li>
@@ -1634,7 +1584,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-forks/" class="">Полная история консенсус-форков Биткоина</a>
+    <a href="/bitcoin-forks/" class="">A complete history of Bitcoin’s consensus forks</a>
   
 
         </li>
@@ -1647,7 +1597,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/analyzing-2013-fork/" class="">Анализ форка Биткоина 2013 года</a>
+    <a href="/analyzing-2013-fork/" class="">Analyzing the 2013 Bitcoin fork</a>
   
 
         </li>
@@ -1667,7 +1617,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-ac2daa2484c1be670f7cc1e0d8d82356" class="toggle"  />
     <label for="section-ac2daa2484c1be670f7cc1e0d8d82356" class="flex justify-between">
-      <a href="/philosophy/" class="">Философия</a>
+      <a href="/philosophy/" class="">Philosophy</a>
     </label>
   
 
@@ -1683,7 +1633,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-b11b531f912b5e92a8260d0a526b85b6" class="toggle"  />
     <label for="section-b11b531f912b5e92a8260d0a526b85b6" class="flex justify-between">
-      <a href="/chemu-ya-nauchilsya-u-bitcoina/" class="">Чему я научился у Биткоина?</a>
+      <a href="/what-i-learned-from-bitcoin/" class="">What I&#39;ve Learned From Bitcoin</a>
     </label>
   
 
@@ -1697,7 +1647,33 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/chemu-ya-nauchilsya-u-bitcoina/filosofskie-uroki-bitcoina/" class="">Часть1. Философские уроки Биткоина</a>
+    <a href="/what-i-learned-from-bitcoin-1/" class="">Part I. Philosophical Teachings of Bitcoin</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/what-i-learned-from-bitcoin-2/" class="">Part II. Economic Teachings of Bitcoin</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/what-i-learned-from-bitcoin-3/" class="">Part III. Technological Teachings of Bitcoin</a>
   
 
         </li>
@@ -1715,7 +1691,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/ne-shitcoin/" class="">Биткоин, не щиткоин</a>
+    <a href="/not-shitcoin/" class="">Why Bitcoin, Not Shitcoin</a>
   
 
         </li>
@@ -1728,7 +1704,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/neotemlemye-prava-sobstvennosti/" class="">Неотъемлемые права собственности</a>
+    <a href="/inalienable-property-rights/" class="">Inalienable Property Rights</a>
   
 
         </li>
@@ -1741,7 +1717,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/manifest-kriptoanarhista/" class="">Манифест криптоанархиста</a>
+    <a href="/crypto-anarchist-manifesto/" class="">The Crypto Anarchist Manifesto</a>
   
 
         </li>
@@ -1754,7 +1730,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/manifest-shifropanka/" class="">Манифест шифропанка</a>
+    <a href="/cypherpunks-manifesto/" class="">A Cypherpunk&#39;s Manifesto</a>
   
 
         </li>
@@ -1767,7 +1743,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/tyulpannaya-lihoradka/" class="">Биткоин — современная голландская тюльпанная лихорадка?</a>
+    <a href="/dutch-tulip-bubble/" class="">Is Bitcoin Like the Dutch Tulip Bubble?</a>
   
 
         </li>
@@ -1780,7 +1756,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/vse-moshenniki/" class="">Все — мошенники</a>
+    <a href="/everyones-a-scammer/" class="">Everyone&#39;s a Scammer</a>
   
 
         </li>
@@ -1793,7 +1769,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/svoboda-cennosti/" class="">Свобода ценности</a>
+    <a href="/freedom-of-value/" class="">The Freedom of Value</a>
   
 
         </li>
@@ -1806,7 +1782,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-meme/" class="">Биткоин — единственный реальный мем</a>
+    <a href="/bitcoin-meme/" class="">Bitcoin Is The Only Real Meme</a>
   
 
         </li>
@@ -1819,7 +1795,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/nol-i-bitcoin/" class="">Ноль и Биткоин</a>
+    <a href="/number-zero-and-bitcoin/" class="">The Number Zero and Bitcoin</a>
   
 
         </li>
@@ -1832,7 +1808,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/crypto-bro/" class="">Дорогие крипто- и фиат-бро</a>
+    <a href="/crypto-bro/" class="">Dear Crypto &amp; Fiat Bros</a>
   
 
         </li>
@@ -1845,7 +1821,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/boremsya-s-poddelnymi-bitcoin/" class="">Боремся с поддельными биткоинами</a>
+    <a href="/fighting-fake-bitcoin/" class="">Fighting Fake Bitcoin</a>
   
 
         </li>
@@ -1858,7 +1834,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bit%D1%81oin-eto-micelij/" class="">Биткоин — это мицелий</a>
+    <a href="/bitcoin-is-the-mycelium/" class="">Bitcoin is The Mycelium of Money</a>
   
 
         </li>
@@ -1871,7 +1847,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pochemu-bitcoin-zhivoj-organizm/" class="">Доказательство жизни. Почему Биткоин — живой организм</a>
+    <a href="/proof-of-life/" class="">Proof of Life. Why Bitcoin is a Living Organism</a>
   
 
         </li>
@@ -1884,7 +1860,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/samaya-mirnaya-revolyuciya/" class="">Самая мирная революция</a>
+    <a href="/most-peaceful-revolution/" class="">A Most Peaceful Revolution</a>
   
 
         </li>
@@ -1897,7 +1873,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/o-bitcoin-vselennoj/" class="">О Биткоин-вселенной</a>
+    <a href="/bitcoin-universe/" class="">Bitcoin Universe</a>
   
 
         </li>
@@ -1910,7 +1886,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-dissidenty/" class="">Биткоин-диссиденты</a>
+    <a href="/bitcoin-dissidents/" class="">Bitcoin Dissidents</a>
   
 
         </li>
@@ -1923,7 +1899,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-svoboda/" class="">Биткоин = свобода</a>
+    <a href="/bitcoin-equals-freedom/" class="">Bitcoin Equals Freedom</a>
   
 
         </li>
@@ -1943,7 +1919,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-0ffd899989a7340537ceb8e2b6a04097" class="toggle"  />
     <label for="section-0ffd899989a7340537ceb8e2b6a04097" class="flex justify-between">
-      <a href="/future/" class="">Будущее</a>
+      <a href="/future/" class="">Future</a>
     </label>
   
 
@@ -1959,7 +1935,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-206fb3aae5266e1ff42aa0abc8ae8411" class="toggle"  />
     <label for="section-206fb3aae5266e1ff42aa0abc8ae8411" class="flex justify-between">
-      <a href="/ba/" class="">Биткоин-астрономия</a>
+      <a href="/ba/" class="">Bitcoin Astronomy</a>
     </label>
   
 
@@ -1973,7 +1949,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/ba/1/" class="">Постгипербиткоинизация</a>
+    <a href="/ba/1/" class="">Part I</a>
   
 
         </li>
@@ -1986,7 +1962,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/ba/2/" class="">Миллион крошечных миров</a>
+    <a href="/ba/2/" class="">Part II</a>
   
 
         </li>
@@ -1999,7 +1975,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/ba/3/" class="">Первый контакт</a>
+    <a href="/ba/3/" class="">Part III</a>
   
 
         </li>
@@ -2017,7 +1993,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/ej-bitcoin-pritormozi/" class="">Эй, Биткоин, притормози</a>
+    <a href="/hey-bitcoin-slow-down/" class="">Hey Bitcoin, Slow Down!</a>
   
 
         </li>
@@ -2030,7 +2006,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/apokalipsis/" class="">Сможет ли Биткоин пережить апокалипсис?</a>
+    <a href="/apocalypse/" class="">Can Bitcoin Survive An Apocalypse?</a>
   
 
         </li>
@@ -2043,7 +2019,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-i-teplovaya-energiya-okeanov/" class="">Биткоин и тепловая энергия океанов</a>
+    <a href="/bitcoin-and-oceans/" class="">Bitcoin and Ocean Thermal Energy</a>
   
 
         </li>
@@ -2063,7 +2039,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-94dfdc9d0099b419c9e2d6a83381dbe2" class="toggle"  />
     <label for="section-94dfdc9d0099b419c9e2d6a83381dbe2" class="flex justify-between">
-      <a href="/lightning/" class="">Лайтнинг</a>
+      <a href="/lightning/" class="">Lightning</a>
     </label>
   
 
@@ -2077,7 +2053,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/chto-takoe-laitning/" class="">Что такое Лайтнинг?</a>
+    <a href="/what-is-lightning-network/" class="">What is Lightning Network?</a>
   
 
         </li>
@@ -2090,7 +2066,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/lajtning-koshelki/" class="">Лайтнинг-кошельки</a>
+    <a href="/lightning-wallets/" class="">Lightning Wallets</a>
   
 
         </li>
@@ -2103,7 +2079,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/lajtning-adresa/" class="">Лайтнинг-адреса</a>
+    <a href="/how-lightning-address-works/" class="">How Lightning Address Works</a>
   
 
         </li>
@@ -2116,7 +2092,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/privatnost-v-lajtning/" class="">Приватность в сети Lightning</a>
+    <a href="/lightning-network-privacy/" class="">Lightning Network Privacy</a>
   
 
         </li>
@@ -2129,7 +2105,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/centralizovanna-li-set-lightning/" class="">Централизованна ли сеть Lightning?</a>
+    <a href="/is-lightning-centralized/" class="">Is Lightning centralized?</a>
   
 
         </li>
@@ -2142,7 +2118,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/mekhanizm-raboty-lightning/" class="">Механизм работы Lightning Network</a>
+    <a href="/lightning-network-explained/" class="">Lightning Network Explained</a>
   
 
         </li>
@@ -2155,7 +2131,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/problema-vhodyashchej-likvidnosti/" class="">Решение проблемы входящей ликвидности</a>
+    <a href="/inbound-liquidity-problem/" class="">Solutions to inbound liquidity problem</a>
   
 
         </li>
@@ -2180,7 +2156,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-334a33758c01abfe631e1e37dc0d1f40" class="toggle"  />
     <label for="section-334a33758c01abfe631e1e37dc0d1f40" class="flex justify-between">
-      <a href="/practice/" class="">Практика</a>
+      <a href="/practice/" class="">Practice</a>
     </label>
   
 
@@ -2196,7 +2172,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-a94c5b45bfdc8ef0dd89b00612026092" class="toggle"  />
     <label for="section-a94c5b45bfdc8ef0dd89b00612026092" class="flex justify-between">
-      <a href="/practice/buy/" class="">Покупка</a>
+      <a href="/practice/buy/" class="">Buy</a>
     </label>
   
 
@@ -2210,7 +2186,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/newbie-buy/" class="">Покупка и хранение биткоина для новичков</a>
+    <a href="/newbie-buy/" class="">Buy and Hodl Bitcoin for Beginners</a>
   
 
         </li>
@@ -2223,7 +2199,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/hodl-hodl/" class="">Покупка биткоина без KYC на Hodl Hodl</a>
+    <a href="/hodl-hodl/" class="">Buy noKYC Bitcoin with HodlHodl</a>
   
 
         </li>
@@ -2236,7 +2212,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/robosats/" class="">RoboSats: Приватный p2p обмен</a>
+    <a href="/robosats/" class="">RoboSats: Private P2P Exchange</a>
   
 
         </li>
@@ -2256,7 +2232,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-7e14ce7fc5fdbe001466044f77bdd564" class="toggle"  />
     <label for="section-7e14ce7fc5fdbe001466044f77bdd564" class="flex justify-between">
-      <a href="/practice/hodl/" class="">Хранение</a>
+      <a href="/practice/hodl/" class="">Hodl</a>
     </label>
   
 
@@ -2270,7 +2246,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/electrum/" class="">Кошелек Электрум</a>
+    <a href="/electrum/" class="">Electrum Bitcoin Wallet</a>
   
 
         </li>
@@ -2283,7 +2259,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/blue/" class="">Кошелек Blue</a>
+    <a href="/blue/" class="">Installing Blue Wallet</a>
   
 
         </li>
@@ -2296,7 +2272,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/seedsigner/" class="">SeedSigner: оффлайн-крепость для ваших биткоинов</a>
+    <a href="/seedsigner/" class="">SeedSigner: DIY Bitcoin Signing Device</a>
   
 
         </li>
@@ -2309,20 +2285,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/holodnyj-koshelek-iz-starogo-smartfona/" class="">Холодный кошелек из старого смартфона</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/coldcard/" class="">Что такое Coldcard?</a>
+    <a href="/coldcard/" class="">What is Coldcard?</a>
   
 
         </li>
@@ -2342,7 +2305,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-88cf9017cf07549621f025a2843cb148" class="toggle"  />
     <label for="section-88cf9017cf07549621f025a2843cb148" class="flex justify-between">
-      <a href="/practice/interact/" class="">Взаимодействие</a>
+      <a href="/practice/interact/" class="">Interact</a>
     </label>
   
 
@@ -2356,7 +2319,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/practice/bitcoin-node/" class="">Каждому следует запустить собственную Биткоин-ноду!</a>
+    <a href="/practice/bitcoin-node/" class="">Why You Should Run Your Own Bitcoin Node</a>
   
 
         </li>
@@ -2369,7 +2332,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/orangepilling-in-5-min/" class="">Оранжпиллинг за 5 минут</a>
+    <a href="/orangepilling-in-5-min/" class="">Orangepilling in 5 min</a>
   
 
         </li>
@@ -2382,7 +2345,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/5-tips-for-teaching-bitcoin/" class="">5 советов по обучению Биткоину</a>
+    <a href="/5-tips-for-teaching-bitcoin/" class="">5 tips for teaching Bitcoin</a>
   
 
         </li>
@@ -2402,7 +2365,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-32dccf00abb46a5281b7aae069126928" class="toggle"  />
     <label for="section-32dccf00abb46a5281b7aae069126928" class="flex justify-between">
-      <a href="/practice-privacy/" class="">Практики приватности</a>
+      <a href="/practice-privacy/" class="">Privacy</a>
     </label>
   
 
@@ -2418,7 +2381,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-ae30dbe7c31a834e8bfe23314d9a5ff6" class="toggle"  />
     <label for="section-ae30dbe7c31a834e8bfe23314d9a5ff6" class="flex justify-between">
-      <a href="/practice-privacy/dojo/" class="">Установка Биткоин-узла Dojo на x86</a>
+      <a href="/practice-privacy/dojo/" class="">Dojo x86 Bitcoin Node Guide</a>
     </label>
   
 
@@ -2432,7 +2395,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/practice-privacy/dojo-0/" class="">Введение</a>
+    <a href="/practice-privacy/dojo-0/" class="">Introduction</a>
   
 
         </li>
@@ -2445,7 +2408,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/practice-privacy/dojo-1/" class="">Установка Bitcoin Core и Tor</a>
+    <a href="/practice-privacy/dojo-1/" class="">Installing Bitcoin Core &amp; Tor</a>
   
 
         </li>
@@ -2458,7 +2421,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/practice-privacy/dojo-2/" class="">Установка индексатора Fulcrum</a>
+    <a href="/practice-privacy/dojo-2/" class="">Installing Fulcrum Indexer</a>
   
 
         </li>
@@ -2471,7 +2434,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/practice-privacy/dojo-3/" class="">Установка блокчейн-обозревателя Mempool</a>
+    <a href="/practice-privacy/dojo-3/" class="">Installing Mempool Explorer</a>
   
 
         </li>
@@ -2484,7 +2447,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/practice-privacy/dojo-4/" class="">Установка Samourai Dojo</a>
+    <a href="/practice-privacy/dojo-4/" class="">Installing Samourai Dojo</a>
   
 
         </li>
@@ -2497,7 +2460,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/practice-privacy/dojo-5/" class="">Конфигурация межсетевого экрана</a>
+    <a href="/practice-privacy/dojo-5/" class="">Firewall Configuration</a>
   
 
         </li>
@@ -2510,7 +2473,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/practice-privacy/dojo-6/" class="">Установка обновлений пакетов</a>
+    <a href="/practice-privacy/dojo-6/" class="">Installing Package Updates</a>
   
 
         </li>
@@ -2528,7 +2491,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/practice-privacy/ronindojo/" class="">Установка RoninDojo на x86</a>
+    <a href="/practice-privacy/ronindojo/" class="">RoninDojo x86 Installation Guide</a>
   
 
         </li>
@@ -2541,7 +2504,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/grapheneos/" class="">GrapheneOS: Избавляемся от слежки Google на смартфоне</a>
+    <a href="/grapheneos/" class="">GrapheneOS: De-Google your phone</a>
   
 
         </li>
@@ -2561,7 +2524,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-9425a98499a6d50bed8efd403e1db980" class="toggle"  />
     <label for="section-9425a98499a6d50bed8efd403e1db980" class="flex justify-between">
-      <a href="/practice/lightning/" class="">Лайтнинг на практике</a>
+      <a href="/practice/lightning/" class="">Lightning</a>
     </label>
   
 
@@ -2575,7 +2538,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/phoenix/" class="">Кошелек Phoenix</a>
+    <a href="/phoenix/" class="">Phoenix: The Non-Custodial Lightning Wallet</a>
   
 
         </li>
@@ -2588,7 +2551,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/lnbits/" class="">LNbits – швейцарский нож среди лайтнинг-приложений</a>
+    <a href="/lnbits/" class="">LNbits: A Swiss knife among Lightning apps</a>
   
 
         </li>
@@ -2601,7 +2564,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/alby-i-nostr/" class="">Alby и Nostr</a>
+    <a href="/alby-and-nostr/" class="">Alby and Nostr</a>
   
 
         </li>
@@ -2614,7 +2577,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/zapplanner/" class="">Подписки с помощью Лайтнинг</a>
+    <a href="/zapplanner/" class="">Recurring Lightning Payments</a>
   
 
         </li>
@@ -2627,7 +2590,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/lntips/" class="">Телеграм-бот @LightningTipBot</a>
+    <a href="/lntips/" class="">Telegram bot @LightningTipBot</a>
   
 
         </li>
@@ -2640,7 +2603,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/ochishchaem-bitcoin-cherez-lajtning/" class="">Очищаем биткоины через сеть Лайтнинг</a>
+    <a href="/lightning-liquidity-management-guide/" class="">Lightning Liquidity Management Guide</a>
   
 
         </li>
@@ -2653,20 +2616,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/likvidnost-v-lajtning/" class="">Руководство по управлению ликвидностью в сети Lightning</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/mutiny/" class="">Кошелек Mutiny</a>
+    <a href="/mutiny/" class="">Starting with Mutiny Wallet</a>
   
 
         </li>
@@ -2691,84 +2641,12 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-d286fdc9558f9b3466aa6f3d4805be77" class="toggle"  />
     <label for="section-d286fdc9558f9b3466aa6f3d4805be77" class="flex justify-between">
-      <a href="/rabbithole/" class="">Кроличья нора</a>
+      <a href="/rabbithole/" class="">Rabbithole</a>
     </label>
   
 
           
   <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/books/" class="">Книги</a>
-  
-
-          
-  <ul>
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/videos/" class="">Видео</a>
-  
-
-          
-  <ul>
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/audiobooks/" class="">Аудиокниги</a>
-  
-
-          
-  <ul>
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/pods/" class="">Подкасты</a>
-  
-
-          
-  <ul>
-    
-  </ul>
-
-        </li>
-      
     
   </ul>
 
@@ -2799,37 +2677,9 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/posts/" class="">Блог</a>
-  
-
-        
-    
-  </li>
-  
-  <li>
-    
-        
-  
-  
-
-  
-    <a href="/calendar/" class="">Биткоин-календарь</a>
-  
-
-        
-    
-  </li>
-  
-  <li>
-    
-        
-  
-  
-
-  
     <input type="checkbox" id="section-9329cf488076ba9f91ca728aef24f607" class="toggle"  />
     <label for="section-9329cf488076ba9f91ca728aef24f607" class="flex justify-between">
-      <a href="/contribute/" class="">Принять участие</a>
+      <a href="/contribute/" class="">Contribute</a>
     </label>
   
 
@@ -2844,33 +2694,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/syntax/" class="">Оформление статей</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/github/" class="">Как добавить статью?</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/obsidian/" class="">Публикация статей через Obsidian</a>
+    <a href="/github/" class="">Adding an Article</a>
   
 
         </li>
@@ -2889,7 +2713,21 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/feedback/" class="">Обратная связь</a>
+    <span>Blog</span>
+  
+
+        
+    
+  </li>
+  
+  <li>
+    
+        
+  
+  
+
+  
+    <a href="/feedback/" class="">Feedback</a>
   
 
         
@@ -2967,7 +2805,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Как обезопасить свои сид-фразы?</strong>
+  <strong>Ultimate guide to storing your bitcoin seed phrase backups</strong>
 
   <label for="toc-control">
     
@@ -2983,51 +2821,52 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#одна-подпись-пассфраза-мультисиг-или-ssss">Одна подпись, пассфраза, мультисиг или SSSS</a>
+    <li><a href="#singlesig-vs-passphrase-vs-multisig-vs-ssss">Singlesig vs. passphrase vs. multisig vs. SSSS</a>
       <ul>
-        <li><a href="#одна-подпись">Одна подпись</a></li>
-        <li><a href="#одна-подпись--парольная-фраза">Одна подпись + парольная фраза</a></li>
-        <li><a href="#мультисиг">Мультисиг</a></li>
-        <li><a href="#схема-разделения-секрета-шамира">Схема разделения секрета Шамира</a></li>
+        <li><a href="#singlesig">Singlesig</a></li>
+        <li><a href="#singlesig--passphrase">Singlesig + passphrase</a></li>
+        <li><a href="#multisig">Multisig</a></li>
+        <li><a href="#shamirs-secret-sharing-scheme">Shamir’s Secret Sharing Scheme</a></li>
       </ul>
     </li>
-    <li><a href="#где-хранить-сид-фразу">Где хранить сид-фразу?</a>
+    <li><a href="#bitcoin-seed-phrase-storage-locations-which-to-choose">Bitcoin seed phrase storage locations: which to choose?</a>
       <ul>
-        <li><a href="#места-где-не-стоит-хранить-сид-фразы">Места, где не стоит хранить сид-фразы</a></li>
-        <li><a href="#лучшие-места-для-хранения-резервных-копий-сид-фраз">Лучшие места для хранения резервных копий сид-фраз</a>
+        <li><a href="#places-_not_-to-store-your-seed-phrase-backups">Places <em>not</em> to store your seed phrase backups</a></li>
+        <li><a href="#the-best-places-to-store-your-seed-phrase-backups">The best places to store your seed phrase backups</a>
           <ul>
-            <li><a href="#домашний-сейф">Домашний сейф</a></li>
-            <li><a href="#второе-место-на-вашей-территории">Второе место на вашей территории</a></li>
-            <li><a href="#банковская-ячейка">Банковская ячейка</a></li>
-            <li><a href="#доверенный-член-семьи">Доверенный член семьи</a></li>
+            <li><a href="#home-safe">Home safe</a></li>
+            <li><a href="#a-second-location-on-your-property">A second location on your property</a></li>
+            <li><a href="#safe-deposit-box">Safe-deposit box</a></li>
+            <li><a href="#a-trusted-family-member">A trusted family member</a></li>
           </ul>
         </li>
-        <li><a href="#каждый-подход-уникален">Каждый подход уникален</a></li>
       </ul>
     </li>
-    <li><a href="#соображения-по-поводу-одноподписной-схемы">Соображения по поводу одноподписной схемы</a>
+    <li><a href="#every-approach-is-unique">Every approach is unique</a></li>
+    <li><a href="#special-singlesig-considerations">Special singlesig considerations</a>
       <ul>
-        <li><a href="#используйте-металлические-резервные-копии">Используйте металлические резервные копии</a></li>
-        <li><a href="#доступ-должен-быть-только-у-вас">Доступ должен быть только у вас</a></li>
-        <li><a href="#будьте-осторожны-и-не-болтайте">Будьте осторожны и не болтайте</a></li>
-        <li><a href="#рассмотрите-другую-модель-хранения">Рассмотрите другую модель хранения</a></li>
+        <li><a href="#use-metal-backups">Use metal backups</a></li>
+        <li><a href="#only-you-should-have-access">Only you should have access</a></li>
+        <li><a href="#be-careful-not-to-say-too-much">Be careful not to say too much</a></li>
+        <li><a href="#consider-another-custody-model">Consider another custody model</a></li>
       </ul>
     </li>
-    <li><a href="#соображения-по-поводу-сида--пассфразы">Соображения по поводу сида + пассфразы</a>
+    <li><a href="#special-singlesigpassphrase-considerations">Special singlesig+passphrase considerations</a>
       <ul>
-        <li><a href="#не-доверяйте-третьим-лицам-не-доверяйте-своей-памяти">Не доверяйте третьим лицам, не доверяйте своей памяти</a></li>
-        <li><a href="#два-безопасных-места-на-вашей-территории---это-хорошо">Два безопасных места на вашей территории - это хорошо</a></li>
+        <li><a href="#dont-trust-third-parties-dont-trust-your-mind">Don’t trust third parties; don’t trust your mind</a></li>
+        <li><a href="#two-secure-locations-on-your-property-is-fine">Two secure locations on your property is fine</a></li>
       </ul>
     </li>
-    <li><a href="#соображения-по-поводу-мультисиг">Соображения по поводу мультисиг</a>
+    <li><a href="#special-multisig-considerations">Special multisig considerations</a>
       <ul>
-        <li><a href="#увеличивайте-гибкость-но-не-забывайте-о-безопасности">Увеличивайте гибкость, но не забывайте о безопасности</a></li>
-        <li><a href="#обеспечьте-долговечность-своих-сид-фраз">Обеспечьте долговечность своих сид-фраз</a></li>
+        <li><a href="#more-flexibility-but-security-is-still-important">More flexibility, but security is still important</a></li>
+        <li><a href="#make-your-seed-phrases-more-durable">Make your seed phrases more durable</a></li>
       </ul>
     </li>
-    <li><a href="#соображения-по-поводу-ssss">Соображения по поводу SSSS</a>
+    <li><a href="#consider-collaborative-custody">Consider collaborative custody</a></li>
+    <li><a href="#special-ssss-considerations">Special SSSS considerations</a>
       <ul>
-        <li><a href="#избегайте-избыточной-сложности">Избегайте избыточной сложности</a></li>
+        <li><a href="#avoid-unnecessary-complexity">Avoid unnecessary complexity</a></li>
       </ul>
     </li>
   </ul>
@@ -3052,235 +2891,219 @@ https://github.com/alex-shpak/hugo-book
 
 <h1>
     
-    Как обезопасить свои сид-фразы?
+    Ultimate guide to storing your bitcoin seed phrase backups
     
 </h1>
 <div class="pageDate">
-    19 января 2022 г.
+    January 19, 2022
 </div>
 
-  <article class="markdown"><p>Пожалуй, важнейшим аспектом взаимодействия с Биткоином является защита собственных сид-фраз. Но какой подход выбрать? В этой статье мы расскажем о том, как и где хранить резервные копии сид-фраз в различных контекстах хранения биткоина.</p>
-<blockquote class="book-hint btc">
-  Перевод <a href="https://unchained.com/blog/how-to-store-bitcoin-seed-phrase-backups/">статьи</a> Стивена Холла подготовлен <a href="https://njump.me/npub10awzknjg5r5lajnr53438ndcyjylgqsrnrtq5grs495v42qc6awsj45ys7">Тони⚡️</a>
+  <article class="markdown"><blockquote class="book-hint btc">
+  <p>This article by Stephen Hall was published in <a href="https://unchained.com/blog/how-to-store-bitcoin-seed-phrase-backups/">Unchained blog</a>.</p>
+<p><a href="/contribute/">Contribute</a>.</p>
+
 </blockquote>
 
-<h1 id="одна-подпись-пассфраза-мультисиг-или-ssss">
-  Одна подпись, пассфраза, мультисиг или SSSS
-  <a class="anchor" href="#%d0%be%d0%b4%d0%bd%d0%b0-%d0%bf%d0%be%d0%b4%d0%bf%d0%b8%d1%81%d1%8c-%d0%bf%d0%b0%d1%81%d1%81%d1%84%d1%80%d0%b0%d0%b7%d0%b0-%d0%bc%d1%83%d0%bb%d1%8c%d1%82%d0%b8%d1%81%d0%b8%d0%b3-%d0%b8%d0%bb%d0%b8-ssss">#</a>
+<p>In bitcoin, it’s always important to secure your seeds, but how exactly do you do that? In previous articles, we’ve discussed <a href="/en/seed">what seed phrases are and how they work</a>, and some of the <a href="https://unchained.com/blog/seed-phrase-backup-methods-recording-paper-metal/">most common methods for recording them on various mediums</a>. In this article, we cover how and where to store your seed phrase backups in different bitcoin custody contexts.</p>
+<h1 id="singlesig-vs-passphrase-vs-multisig-vs-ssss">
+  Singlesig vs. passphrase vs. multisig vs. SSSS
+  <a class="anchor" href="#singlesig-vs-passphrase-vs-multisig-vs-ssss">#</a>
 </h1>
-<p>При обеспечении безопасности физических резервных копий сид-фраз, первостепенная задача - выбор подходящей модели хранения. Каждый вариант хранения предполагает уникальный подход, учитывая необходимость балансировать между безопасностью и конфиденциальностью. Эти ключевые аспекты неизбежно окажут влияние на вашу стратегию хранения бэкапов.</p>
-<p>К примеру в одноподписной модели (single signature или singlesig) для совершения биткоин-транзакций достаточно одного приватного ключа без применения пассфразы. Эта модель включает в себя 12 или 24 слова, которые предоставляют полный доступ к вашим активам. В большинстве случаев, слова должны оставаться доступными только вам. В отличие от этого, мультисиг-схема (множественные подписи) требует использования нескольких ключей для выполнения транзакций, что увеличивает безопасность: потеря или кража одного ключа не подвергает риску ваши биткоины. Это обеспечивает больше гибкости в выборе способов и мест хранения ваших сид-фраз.</p>
-<p>Если вы не уверены, к какой модели самостоятельного хранения биткоина следует прибегнуть, советуем рассмотреть следующие четыре основных варианта:</p>
+<p>When storing your physical seed phrase backups, the first thing you need to determine is which custody model(s) you’re using. These require different considerations because each has security and privacy trade-offs that will affect your storage approach.</p>
+<p>For example, singlesig (without a passphrase) involves 12 or 24 words that provide total access to your bitcoin, so in most cases, those words shouldn’t be accessible to anyone but you. Multisig, on the other hand, requires access to multiple keys to be able to spend funds, meaning a key could be lost or stolen without putting your bitcoin at risk — allowing you much more flexibility in how and where you store your seed phrases.</p>
+<p>If you aren’t sure which bitcoin self-custody model you should use, there are four primary options to consider:</p>
 <ul>
-<li>
-<p>Одна подпись</p>
-</li>
-<li>
-<p>Одна подпись + парольная фраза</p>
-</li>
-<li>
-<p>Мультиподпись</p>
-</li>
-<li>
-<p>Схема разделения секрета Шамира</p>
-</li>
+<li>Singlesig</li>
+<li>Singlesig + passphrase</li>
+<li>Multisig</li>
+<li>Shamir’s Secret Sharing Scheme</li>
 </ul>
-<h2 id="одна-подпись">
-  Одна подпись
-  <a class="anchor" href="#%d0%be%d0%b4%d0%bd%d0%b0-%d0%bf%d0%be%d0%b4%d0%bf%d0%b8%d1%81%d1%8c">#</a>
+<h2 id="singlesig">
+  Singlesig
+  <a class="anchor" href="#singlesig">#</a>
 </h2>
-<p>Одноподписная схема является наиболее распространенным методом самостоятельного хранения биткоинов, с которым вы, вероятно, уже знакомы. При этом подходе у вас есть единственная сид-фраза, созданная вашим аппаратным или программным кошельком, а также одна физическая резервная копия этой сид-фразы. В такой ситуации обеспечение надежной защиты вашей сид-фразы критически важно. Если ваша сид-фраза окажется в чужих руках, это поставит под угрозу ваши биткоины, поскольку злоумышленник может легко импортировать ваш кошелек и приватные ключи, используя вашу сид-фразу, и перевести ваши средства.</p>
-<h2 id="одна-подпись--парольная-фраза">
-  Одна подпись + парольная фраза
-  <a class="anchor" href="#%d0%be%d0%b4%d0%bd%d0%b0-%d0%bf%d0%be%d0%b4%d0%bf%d0%b8%d1%81%d1%8c--%d0%bf%d0%b0%d1%80%d0%be%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d1%84%d1%80%d0%b0%d0%b7%d0%b0">#</a>
+<p>Singlesig is the most common bitcoin self-custody method — it’s the one with which you’re most likely already familiar. With singlesig, you have one seed generated by one hardware or software wallet and one seed phrase backup; in this case, properly securing your seed phrase is everything! If your seed phrase is compromised, your bitcoin is compromised, because anyone can simply import your wallet and private keys using those words and move your funds.</p>
+<h2 id="singlesig--passphrase">
+  Singlesig + passphrase
+  <a class="anchor" href="#singlesig--passphrase">#</a>
 </h2>
-<p>Использование одноподписной схемы с парольной фразой повышает безопасность ваших монет по сравнению с ранее описанным методом. Этот подход занимает промежуточное положение между хранением только сид-фразы из 12 или 24 слов и более сложными схемами, такими как мультисиг. В модели одноподписной схемы с парольной фразой вы добавляете к вашему сиду 13-е или 25-е слово, что приводит к созданию совершенно нового, отдельного и уникального кошелька. Использование парольной фразы помогает минимизировать риски, связанные с хранением только сид-фразы, однако оно не устраняет проблему потенциальной единой точки отказа: если вы потеряете вашу парольную фразу, вы также потеряете доступ к вашим биткоинам.</p>
-<blockquote class="book-hint info">
-  Важно не путать использование <strong>подписи с парольной фразой</strong> и <strong>подписи с PIN-кодом кошелька</strong> - это два совершенно различных понятия. Хотя PIN-код кошелька служит для ограничения доступа к вашим ключам, его “разрешается” забыть или потерять. При этом у вас все еще останется доступ к вашим монетам, если у вас есть резервная копия сид-фразы, поскольку PIN-код защищает доступ только к конкретному аппаратному кошельку или приложению. В отличие от этого, парольная фраза является критически важной для создания или восстановления доступа к самому кошельку и вашим средствам.
-</blockquote>
-
-<p>Стоит отметить, что парольные фразы также можно комбинировать со схемой мультисиг и схемой разделения секрета Шамира, но этот подход обычно добавляет излишнюю сложность.</p>
-<h2 id="мультисиг">
-  Мультисиг
-  <a class="anchor" href="#%d0%bc%d1%83%d0%bb%d1%8c%d1%82%d0%b8%d1%81%d0%b8%d0%b3">#</a>
+<p>Singlesig with a passphrase is a step up from singlesig; it’s a middle ground between only using a 12- or 24-word seed phrase and using more redundant models like multisig. In singlesig + passphrase, you add a 13th or 25th word to your seed phrase, which generates a wholly separate and unique wallet. With a passphrase, you avoid the risky practice of using just a seed phrase, but it still allows for single points of failure — if your passphrase is lost, so is your bitcoin.</p>
+<p>One important note: It’s easy to conflate <strong>singlesig + passphrase</strong> with <strong>singlesig + wallet PIN</strong> — these are very different things! While a wallet PIN restricts access to your keys, it can be lost or forgotten as long as you still have your 12- or 24-word seed phrase backup, because all a PIN does is protect against access to that specific wallet. A passphrase, however, is required for constructing your wallet itself!</p>
+<p>It’s worth noting that you can also combine passphrases with multisig and Shamir’s Secret Sharing Scheme, but in those cases, a passphrase commonly adds unnecessary complexity.</p>
+<h2 id="multisig">
+  Multisig
+  <a class="anchor" href="#multisig">#</a>
 </h2>
-<p>Мультисиг - это метод хранения биткоинов, при котором вы создаете кошелек, используя несколько ключей по схеме m-из-n. Например, можно создать кошелек 2-из-3, где для подписания транзакции требуется любые два из трех созданных ключей. Особенность этой модели заключается в исключении единых точек отказа. Это означает, что даже в случае взлома одного из критически важных элементов, таких как резервные копии сид-фразы и аппаратные кошельки, ваши средства останутся в безопасности. Кроме того, для выполнения операций с вашими ключами злоумышленникам потребуется доступ не только к этим ключам, но и к информации о конфигурации вашего кошелька, что значительно повышает уровень безопасности.</p>
-<h2 id="схема-разделения-секрета-шамира">
-  Схема разделения секрета Шамира
-  <a class="anchor" href="#%d1%81%d1%85%d0%b5%d0%bc%d0%b0-%d1%80%d0%b0%d0%b7%d0%b4%d0%b5%d0%bb%d0%b5%d0%bd%d0%b8%d1%8f-%d1%81%d0%b5%d0%ba%d1%80%d0%b5%d1%82%d0%b0-%d1%88%d0%b0%d0%bc%d0%b8%d1%80%d0%b0">#</a>
+<p>Multisig is a bitcoin custody model where you construct a wallet using multiple keys in an m-of-n scheme. You can create a 2-of-3 wallet, for example, based on <strong>three</strong> keys where <strong>two</strong> are required to sign a transaction. The beauty of this model is that it eliminates single points of failure. Not only could critical items (seed phrase backups and hardware wallets) be compromised without loss of funds, an attacker would also need access to your wallet configuration info to be able to do anything with those keys.</p>
+<p>Collaborative custody, the multisig model we use here at Unchained, allows you the benefits of multisig while also getting access to a whole suite of financial services, real human support, access to signing transactions remotely if needed, and much more. A model like this one lets you preserve your sovereignty while also getting the benefits of a trusted partner.</p>
+<h2 id="shamirs-secret-sharing-scheme">
+  Shamir’s Secret Sharing Scheme
+  <a class="anchor" href="#shamirs-secret-sharing-scheme">#</a>
 </h2>
-<p>Другой метод защиты ваших биткоинов — это схема разделения секрета Шамира (SSSS). Один из самых популярных стандартов для ее использования в Биткоине - это <a href="https://github.com/satoshilabs/slips/blob/master/slip-0039.md">SLIP-0039</a> от SatoshiLabs. Этот стандарт позволяет разделить вашу сид-фразу на набор мнемонических фраз. Эти фразы могут быть собраны по схеме, схожей с мультисигом. Например, вы можете создать схему 2-из-3, 3-из-5 или любую другую, которая требует собрать воедино определенное количество шардов (частей) для восстановления исходной сид-фразы. Так же, как и в случае с мультисигом, использование SSSS для хранения сид-фраз (которые, к слову, используют отличный от <a href="https://en.bitcoin.it/wiki/BIP_0039">BIP39</a> словарь) обеспечивает бóльшую гибкость. Потеря или кража одной или даже нескольких шардов  в таком случае не ставит под угрозу ваши активы.</p>
-<h1 id="где-хранить-сид-фразу">
-  Где хранить сид-фразу?
-  <a class="anchor" href="#%d0%b3%d0%b4%d0%b5-%d1%85%d1%80%d0%b0%d0%bd%d0%b8%d1%82%d1%8c-%d1%81%d0%b8%d0%b4-%d1%84%d1%80%d0%b0%d0%b7%d1%83">#</a>
+<p>Another method for protecting your bitcoin is Shamir’s Secret Sharing Scheme (SSSS). The most popular standard for using SSSS in bitcoin is SatoshiLabs’ <a href="https://github.com/satoshilabs/slips/blob/master/slip-0039.md">SLIP-0039</a>, which allows you to split a singlesig seed phrase into a collection of other mnemonic phrases. These can be combined in a scheme very similar to multisig — you can set up a 2-of-3, 3-of-5, or any other scheme that requires a certain number of the parts to be recompiled to construct the original seed phrase. Like multisig, storing your SSSS seed words (which use a different dictionary of words from <a href="https://unchained.com/blog/what-is-a-bitcoin-seed-phrase/">BIP39</a>, by the way) will allow you much more flexibility since any one (or in some cases, multiple) of them being lost or stolen won’t compromise your funds.</p>
+<h1 id="bitcoin-seed-phrase-storage-locations-which-to-choose">
+  Bitcoin seed phrase storage locations: which to choose?
+  <a class="anchor" href="#bitcoin-seed-phrase-storage-locations-which-to-choose">#</a>
 </h1>
-<p>Подобно тому, как существует бесконечное множество способов записать сид-фразы, так же имеется и бесконечное количество мест для их хранения. Среди этих мест есть как подходящие варианты, так и те, которые могут оказаться не самыми лучшими.</p>
-<h2 id="места-где-не-стоит-хранить-сид-фразы">
-  Места, где не стоит хранить сид-фразы
-  <a class="anchor" href="#%d0%bc%d0%b5%d1%81%d1%82%d0%b0-%d0%b3%d0%b4%d0%b5-%d0%bd%d0%b5-%d1%81%d1%82%d0%be%d0%b8%d1%82-%d1%85%d1%80%d0%b0%d0%bd%d0%b8%d1%82%d1%8c-%d1%81%d0%b8%d0%b4-%d1%84%d1%80%d0%b0%d0%b7%d1%8b">#</a>
+<p>Just like there are <a href="https://unchained.com/blog/seed-phrase-backup-methods-recording-paper-metal/">infinite ways to record your seed phrases physically</a>, there are infinite places you could store your seed phrases. Some are great, some…not so much.</p>
+<h2 id="places-_not_-to-store-your-seed-phrase-backups">
+  Places <em>not</em> to store your seed phrase backups
+  <a class="anchor" href="#places-_not_-to-store-your-seed-phrase-backups">#</a>
 </h2>
-<p>Места, не подходящие для хранения сид-фразы:</p>
+<p>Many places are poor candidates for storing your seed phrase backups:</p>
 <ul>
-<li>
-<p>В общедоступном месте</p>
-</li>
-<li>
-<p>В ящике / шкафу / на полке</p>
-</li>
-<li>
-<p>В картотеке</p>
-</li>
-<li>
-<p>В сумке</p>
-</li>
-<li>
-<p>На рабочем месте</p>
-</li>
+<li>Out in the open</li>
+<li>A drawer/cupboard/shelf</li>
+<li>In a filing cabinet</li>
+<li>In your bag</li>
+<li>At your workplace</li>
 </ul>
 <div class="imageWrapper">
     <img src="/img/secure-seed/not-safe.png">
-<p><em>Плохие места для хранения сид-фразы</em></p>
 </div>
-<p>Ни одно место, которые легко доступно потенциальным злоумышленникам или даже просто любопытным гостям, категорически не подходит для хранения сид-фразы, не защищенной паролем.</p>
-<p>Даже использование более сложных схем, где вы можете позволить себе ошибиться, неудобства, связанные с компрометацией или кражей сид-фразы или аппаратного кошелька, не означает, что бэкапы можно хранить небрежно. Особенно это актуально, когда вы можете спрятать их в надежном месте, уделив этому процессу немного больше внимания.</p>
-<h2 id="лучшие-места-для-хранения-резервных-копий-сид-фраз">
-  Лучшие места для хранения резервных копий сид-фраз
-  <a class="anchor" href="#%d0%bb%d1%83%d1%87%d1%88%d0%b8%d0%b5-%d0%bc%d0%b5%d1%81%d1%82%d0%b0-%d0%b4%d0%bb%d1%8f-%d1%85%d1%80%d0%b0%d0%bd%d0%b5%d0%bd%d0%b8%d1%8f-%d1%80%d0%b5%d0%b7%d0%b5%d1%80%d0%b2%d0%bd%d1%8b%d1%85-%d0%ba%d0%be%d0%bf%d0%b8%d0%b9-%d1%81%d0%b8%d0%b4-%d1%84%d1%80%d0%b0%d0%b7">#</a>
+<p>All of these locations are especially poor choices for singlesig. Generally, anywhere with easy access for potential attackers — or even the fatally curious — is a bad idea.</p>
+<p>Even in other redundant models where you can afford to make a mistake, the inconvenience of a compromised or stolen seed phrase or hardware wallet just isn’t worth it — especially when you can store them properly in a safe place with marginally more effort.</p>
+<h2 id="the-best-places-to-store-your-seed-phrase-backups">
+  The best places to store your seed phrase backups
+  <a class="anchor" href="#the-best-places-to-store-your-seed-phrase-backups">#</a>
 </h2>
-<h3 id="домашний-сейф">
-  Домашний сейф
-  <a class="anchor" href="#%d0%b4%d0%be%d0%bc%d0%b0%d1%88%d0%bd%d0%b8%d0%b9-%d1%81%d0%b5%d0%b9%d1%84">#</a>
+<h3 id="home-safe">
+  Home safe
+  <a class="anchor" href="#home-safe">#</a>
 </h3>
-<p><strong>Подходит для:</strong> одна подпись, одна подпись + парольная фраза, мультисиг, SSSS</p>
-<p>Один из самых популярных способов хранения сид-фраз — использование обычного огнеупорного сейфа. Если у вас уже есть сейф для важных документов и ценностей, то логично хранить там и резервные копии сид-фраз. Хотя ламинированные бумажные копии в таком сейфе обычно являются достаточно надежным способом защиты, предпочтительнее использовать металлические копии сида, устойчивые к воздействию огня и воды.</p>
-<p>Домашний сейф является одним из наилучших мест для хранения сид-фраз, особенно если вы используете схему с одной подписью. Категорически не рекомендуется кому-либо доверять хранение своих сид-фраз, если сам сид является единственной точкой отказа. Это правило применимо как к обычным сид-фразам, так и к сид-фразам, укрепленным парольной фразой.</p>
-<h3 id="второе-место-на-вашей-территории">
-  Второе место на вашей территории
-  <a class="anchor" href="#%d0%b2%d1%82%d0%be%d1%80%d0%be%d0%b5-%d0%bc%d0%b5%d1%81%d1%82%d0%be-%d0%bd%d0%b0-%d0%b2%d0%b0%d1%88%d0%b5%d0%b9-%d1%82%d0%b5%d1%80%d1%80%d0%b8%d1%82%d0%be%d1%80%d0%b8%d0%b8">#</a>
+<p><strong>Suitable for</strong>: Singlesig, singlesig+passphrase, multisig, SSSS</p>
+<p>One of the most popular places to store seed phrases is a simple fireproof safe. If you have a safe place where you keep important documents and valuable items, it can make sense to hold a seed phrase backup there, too. While storing laminated paper backups in such a safe is likely to be fine, <a href="https://unchained.com/blog/seed-phrase-backup-methods-recording-paper-metal/">using a metal backup, which is also fire- and water-proof</a> would be even better.</p>
+<p>A home safe is one of the best places to store your seed phrase if you’re using singlesig, because you should never trust your seed phrases in the hands of someone else when that seed phrase itself is a single point of failure. The same goes for singlesig+passphrase.</p>
+<h3 id="a-second-location-on-your-property">
+  A second location on your property
+  <a class="anchor" href="#a-second-location-on-your-property">#</a>
 </h3>
-<p><strong>Подходит для:</strong> одна подпись, одна подпись + парольная фраза, мультисиг, SSSS</p>
-<p>Альтернативное место на вашей территории для хранения сид-фраз - это еще один хороший вариант как для схем с одной подписью, так и для мультисиг-схем. Важно, чтобы эти два места находились на вашем участке, но были отдалены и скрыты друг от друга, чтобы исключить одновременное уничтожение или компрометацию нескольких сид-фраз в случае, например, взлома или пожара. Если вы хотите хранить два ключевых элемента на одной территории, вы можете разместить один в сейфе в офисе, а другой - в сейфе под полом или в отдельном строении, например в сарае, при условии, что он надежно защищен от внешних угроз.</p>
-<p>Еще один вариант - хранение сид-фраз в сейфе на другом принадлежащем вам объекте недвижимости, например в загородном доме или на даче. Однако этот метод имеет свои недостатки, так как такие объекты часто остаются без присмотра на длительный период, что может снижать возможности контроля и гарантий некомпрометации сид-фраз.</p>
-<p>При использовании схемы с одной подписью и парольной фразой вы можете хранить стандартную сид-фразу в одном месте, а парольную фразу - в другом. А если у вас мультисиг-схема, можно разместить две из трех резервных копий сид-фраз на своей территории, обеспечивая их безопасность и следя за их некомпрометацией.</p>
+<p><strong>Suitable for</strong>: Singlesig, singlesig+passphrase, multisig, SSSS</p>
+<p>A secondary location on your property is another option for both singlesig+passphrase users and multisig. Note that these two areas should be on your property, but hidden and separate enough so that multiple seed phrases won’t be simultaneously destroyed or compromised in an unexpected event like a burglary or fire. If you need to keep two secrets on one single property, you could keep one in a safe in your office and another in a safe under the floorboards or stored in a separate building such as a barn or shed (provided it’s protected from the elements of course!).</p>
+<p>Another option is storing your seed phrases in a safe on a second property you own, like a mountain house, lake house, or beach house. Like every other suggestion here, that has trade-offs — those properties are commonly vacant for long periods of time, possibly affording you fewer opportunities for surveillance and/or ensuring your seed phrases haven’t been compromised.</p>
+<p>In the case of singlesig+passphrase, you could keep your 12- or 24-word seed phrase in one location and the passphrase in a second location. Or, if you use multisig, you could store two different seed phrase backups on your property where you can monitor and ensure they’ve not been tampered with or compromised.</p>
 <div class="imageWrapper">
     <img src="/img/secure-seed/safe.png">
-<p><em>Безопасные места для хранения сид-фразы</em></p>
 </div>
-<h3 id="банковская-ячейка">
-  Банковская ячейка
-  <a class="anchor" href="#%d0%b1%d0%b0%d0%bd%d0%ba%d0%be%d0%b2%d1%81%d0%ba%d0%b0%d1%8f-%d1%8f%d1%87%d0%b5%d0%b9%d0%ba%d0%b0">#</a>
+<h3 id="safe-deposit-box">
+  Safe-deposit box
+  <a class="anchor" href="#safe-deposit-box">#</a>
 </h3>
-<p><strong>Подходит для:</strong> мультисиг, SSSS</p>
-<p>Еще один вариант хранения - это использование металлического контейнера в учреждении с активной физической охраной, например, в банковской ячейке. Этот метод хорошо подходит для мультисиг- или SSSS-схем, так как в этих случаях одну из сид-фраз можно оставить в надежных руках, оставаясь уверенным в том, что ваши средства останутся в безопасности даже в случае взлома ячейки. Это позволяет надежно хранить часть доступа к вашим средствам, обеспечивая возможность резервного использования.</p>
-<p>Однако, не рекомендуется использовать банковскую ячейку для хранения сид-фраз в схемах с одной подписью, даже если они защищены парольной фразой. Это подвергает ваши средства ненужному риску. Использование ячейки также может привести к риску конфискации вашего сида. Например, если в ячейке находится только оригинальная сид-фраза, а парольная фраза хранится отдельно, вы рискуете потерять доступ к своим биткоинам, даже если конфискующая сторона не сможет получить к ним доступ.</p>
-<p>В качестве альтернативы можно рассмотреть использование ячейки в частном хранилище, а не в банке, что может предложить более сильную юридическую защиту в случае попыток конфискации со стороны государственных органов.</p>
-<p>При использовании банковской ячейки также следует избегать хранения двух сид-фраз или аппаратных кошельков у одного провайдера, чтобы минимизировать риски.</p>
-<h3 id="доверенный-член-семьи">
-  Доверенный член семьи
-  <a class="anchor" href="#%d0%b4%d0%be%d0%b2%d0%b5%d1%80%d0%b5%d0%bd%d0%bd%d1%8b%d0%b9-%d1%87%d0%bb%d0%b5%d0%bd-%d1%81%d0%b5%d0%bc%d1%8c%d0%b8">#</a>
+<p><strong>Suitable for</strong>: Multisig, SSSS</p>
+<p>Another option is a metal container at an institution with active physical security: a safe deposit box. This option works for multisig or SSSS, because in those cases, you can leave one seed phrase in the hands of a trusted custodian with confidence that your funds could never be compromised with just one unlawful (<a href="https://www.latimes.com/california/story/2021-06-09/fbi-beverly-hills-safe-deposit-boxes-forfeiture-cash-jewelry">or lawful!</a>) security breach. You can store your seed phrase securely while still retaining control of your funds.</p>
+<p>Notably, it’s not a good idea to use a safe deposit box for singlesig or singlesig + passphrase. With singlesig, you’re exposing your funds to unnecessary risk of theft. And even if you add a passphrase, a safe deposit box exposes you to the risk of confiscation. Even if you have your passphrase stored in a separate location, the confiscation of your seed phrase backup will leave you bitcoin-less, even if the confiscating party can’t access your funds.</p>
+<p>One thing you may consider is using a safe deposit box within a private vault rather than at a bank, which may allow you more legal protections in the confiscation scenario mentioned above.</p>
+<p>If you do use a safe deposit box, you should avoid holding two recovery seed phrases or hardware wallets with the same provider.</p>
+<h3 id="a-trusted-family-member">
+  A trusted family member
+  <a class="anchor" href="#a-trusted-family-member">#</a>
 </h3>
-<p><strong>Подходит для:</strong> мультисиг, SSSS</p>
-<p>Хранение у доверенного члена семьи - это еще один вариант, который эффективен в контексте мультисиг- или SSSS-схем. Например, если у вашего родственника есть надежный сейф, и вам нужно безопасное место для одной из трех резервных копий ключей в рамках мультисиг-схемы, это может быть отличным решением. Храня только один ключ у доверенного члена семьи, вы не подвергаете риску доступ к своим средствам. Однако такое решение не подходит для кошельков с одной подписью, так как в этом случае вы предоставляете доступ к сид-фразе, а значит, и к вашим активам.</p>
-<p>Если вы решите хранить секрет у доверенного члена семьи или в организации, не забудьте убедиться, что они осознают свою ответственность и обладают необходимыми средствами для защиты ваших сид-фраз или аппаратных кошельков.</p>
-<h2 id="каждый-подход-уникален">
-  Каждый подход уникален
-  <a class="anchor" href="#%d0%ba%d0%b0%d0%b6%d0%b4%d1%8b%d0%b9-%d0%bf%d0%be%d0%b4%d1%85%d0%be%d0%b4-%d1%83%d0%bd%d0%b8%d0%ba%d0%b0%d0%bb%d0%b5%d0%bd">#</a>
-</h2>
-<p>Подход к хранению сид-фраз зависит от конкретной ситуации, особенно если принять во внимание более продвинутые методы самостоятельного хранения, такие как мультисиг и SSSS, а также широкое разнообразие типов организаций, владеющих биткоином, - от пользователей, самостоятельно хранящих свои ключи до правительств.</p>
+<p><strong>Suitable for</strong>: Multisig, SSSS</p>
+<p>A trusted family member is another option that only works in a multisig or SSSS context. For example, if your favorite uncle has a gun safe, and you simply need a safe place for one of your three multisig key backups, this can be a great option. You aren’t putting access to your funds at risk when storing only one key with a trusted family member. This won’t work in a seed phrase-only singlesig context because someone else would hold your keys!</p>
+<p>If you decide to store secrets with a trusted family member or entity, always ensure they are aware of the responsibility involved in protecting your seed phrases or hardware wallets.</p>
+<h1 id="every-approach-is-unique">
+  Every approach is unique
+  <a class="anchor" href="#every-approach-is-unique">#</a>
+</h1>
+<p>The approach you take to seed phrase storage is highly situational, especially when you start taking into account more advanced self-custody methods such as multisig and SSSS and the wide variety of entity types that hold bitcoin — from personal holders to governments.</p>
 <div class="imageWrapper">
     <img src="/img/secure-seed/vault.png">
 </div>
-<p>Хорошей основой для принятия решения о том, как хранить сид-фразы, может стать рассмотрение следующих вопросов:</p>
+<p>A good framework for deciding how to store your seed phrases might be to consider the following for yourself or your organization:</p>
 <ul>
-<li>
-<p>Используете ли вы правильную модель хранения (следует ли использовать мультисиг, чтобы исключить единые точки отказа)?</p>
-</li>
-<li>
-<p>Какова текущая или ожидаемая стоимость ваших биткоинов?</p>
-</li>
-<li>
-<p>Каков уровень безопасности в вашей стране / государстве / городе?</p>
-</li>
-<li>
-<p>Какие непредвиденные стихийные бедствия могут подвергнуть ваши сид-фразы риску?</p>
-</li>
+<li>Are you using the correct custody model (should you use multisig to eliminate single points of failure)?</li>
+<li>What is the current or expected future value of your bitcoin?</li>
+<li>What is the safety status of your country/state/city/neighborhood?</li>
+<li>What unexpected natural disasters could reasonably put your seed phrases at risk?</li>
+<li>Don’t overcomplicate it. Unnecessary complexity is a security threat. You can be your own worst enemy.</li>
 </ul>
-<blockquote class="book-hint danger">
-  Не усложняйте. Излишняя сложность - это угроза безопасности. Подавляющее большинство биткоинов навсегда утеряно из-за ошибок пользователей, а не вследствие мошеннической деятельности.
-</blockquote>
+<h1 id="special-singlesig-considerations">
+  Special singlesig considerations
+  <a class="anchor" href="#special-singlesig-considerations">#</a>
+</h1>
+<h2 id="use-metal-backups">
+  Use metal backups
+  <a class="anchor" href="#use-metal-backups">#</a>
+</h2>
+<p>For most singlesig users, metal backups are essential. If you don’t <a href="https://unchained.com/blog/seed-phrase-backup-methods-recording-paper-metal/">make your seed phrase resistant to the elements</a>, the entire value of the bitcoin secured by keys generated by that seed phrase can be gone if just one statistically unlikely event happens. In bitcoin, there is no one to call. There is no bank or government to bail you out. If your software or hardware wallet and seed phrase backups are lost, stolen, or destroyed, your bitcoin is likely gone forever.</p>
+<h2 id="only-you-should-have-access">
+  Only you should have access
+  <a class="anchor" href="#only-you-should-have-access">#</a>
+</h2>
+<p>Not only should you create a metal backup; you should also store that metal backup in a safe place to which only you have access. The only exception to this rule might be the most trusted individual(s) in your life, e.g., a spouse. “Don’t trust, verify,” the saying goes, and few places is that mantra more important than here. Assume that anyone and everyone is interested in your bitcoin or might be in the future.</p>
+<h2 id="be-careful-not-to-say-too-much">
+  Be careful not to say too much
+  <a class="anchor" href="#be-careful-not-to-say-too-much">#</a>
+</h2>
+<p>Of all the bitcoin self-custody models, singlesig is where you need to be careful about verbal operational security. If you say too much and someone finds out where your seed phrase is stored, it quickly becomes easy for you to lose all your bitcoin. If a malicious actor wants your bitcoin and knows where to find it, it’s much easier for them to get to it. And remember: just because someone doesn’t care about your bitcoin now doesn’t mean they won’t care in the <em>future</em>!</p>
+<h2 id="consider-another-custody-model">
+  Consider another custody model
+  <a class="anchor" href="#consider-another-custody-model">#</a>
+</h2>
+<p>Finally, consider whether singlesig even makes sense for you. If a significant portion of your net worth is in bitcoin or you expect that it may be in the future, you should <a href="https://unchained.com/blog/how-to-create-a-do-it-yourself-unchained-capital-multisig-vault/">consider a collaborative custody multisig vault</a>. With multisig, you don’t have to worry as much about the individual security of a single seed phrase backup because none of the seeds part of a multisig quorum would jeopardize your funds even if fully compromised by themselves.</p>
+<h1 id="special-singlesigpassphrase-considerations">
+  Special singlesig+passphrase considerations
+  <a class="anchor" href="#special-singlesigpassphrase-considerations">#</a>
+</h1>
+<p>Special considerations for singlesig + passphrase are very similar to that of singlesig because ultimately, a passphrase simply protects your 12 or 24 words from being a single point of failure in the case that <em>you don’t actually lose access to your seed phrase</em>. If someone manages to steal or destroy all of your seed backups, a memorized passphrase is going to do you very little good. However, it <em>will</em> protect you if someone makes a copy of your seed phrase or you accidentally expose it digitally.</p>
+<h2 id="dont-trust-third-parties-dont-trust-your-mind">
+  Don’t trust third parties; don’t trust your mind
+  <a class="anchor" href="#dont-trust-third-parties-dont-trust-your-mind">#</a>
+</h2>
+<p>For these reasons, you shouldn’t trust your seed phrases in the hands of anyone else, and you shouldn’t store them anywhere but on your property. It’s also generally a bad idea to trust your brain with your passphrase. In the case of a medical issue or an accident, the last thing you want is also to lose your bitcoin. Don’t make your brain a single point of failure when you can preserve your bitcoin for yourself and your loved ones using multisig.</p>
+<h2 id="two-secure-locations-on-your-property-is-fine">
+  Two secure locations on your property is fine
+  <a class="anchor" href="#two-secure-locations-on-your-property-is-fine">#</a>
+</h2>
+<p>Suppose you’re choosing not to use multisig or SSSS for some reason. In that case, you can benefit from the second layer of protection of a passphrase by storing your seed phrase and your passphrase, both inscribed in a metal backup, in separate secure locations on your property. At least, in this case, you can afford to lose your physical passphrase backup (assuming you also have it memorized) without losing your bitcoin.</p>
+<h1 id="special-multisig-considerations">
+  Special multisig considerations
+  <a class="anchor" href="#special-multisig-considerations">#</a>
+</h1>
+<p>If you’ve only used singlesig or passphrases, you’ll find multisig to be the perfect route to a good night’s sleep once you understand how it works. If you create your own 2-of-3 multisig scheme, you can afford to have one key or seed phrase backup entirely compromised or stolen without losing control of your funds. With proper maintenance, this makes your bitcoin self-custody very robust. An attacker would have to understand how bitcoin multisig works, get access to two of your three keys, access your wallet configuration information, <em>and</em> sweep your funds before you realize what’s happening and sweep them yourself.</p>
+<h2 id="more-flexibility-but-security-is-still-important">
+  More flexibility, but security is still important
+  <a class="anchor" href="#more-flexibility-but-security-is-still-important">#</a>
+</h2>
+<p>Even with the flexibility that multisig affords, you should still take seed phrase storage security seriously and avoid co-locating any hardware wallets or seed phrases. Even if your hardware wallet and seed phrase backups are protecting the same seed, keeping them separated can afford you maximum opportunities to recover your funds before an attacker gets them.</p>
+<p>Other than this, your options are wide open: all of the above places we mentioned as good storage locations are acceptable for storing your seed phrases or hardware wallets. Remember, though: there are trade-offs with every option you choose!</p>
+<h2 id="make-your-seed-phrases-more-durable">
+  Make your seed phrases more durable
+  <a class="anchor" href="#make-your-seed-phrases-more-durable">#</a>
+</h2>
+<p>When protecting your seed phrase backups, we recommend laminating any paper backups to make them waterproof at a minimum. We also recommend using metal backups wherever possible to make your seed phrases both fire- and water-resistant. Choose a fireproof safe if you’re storing them in your home, whether using <a href="https://unchained.com/blog/seed-phrase-backup-methods-recording-paper-metal/">paper or metal backups</a>.</p>
+<h1 id="consider-collaborative-custody">
+  Consider collaborative custody
+  <a class="anchor" href="#consider-collaborative-custody">#</a>
+</h1>
+<p>There are many different approaches to bitcoin multisig. Still, here at Unchained we believe <a href="https://unchained.com/vaults/">partnering with a third party to hold the third key in a 2-of-3 quorum</a> offers the best set of trade-offs for most people. This approach allows you to remain fully sovereign while also maximizing the convenience of access to funds, and lets you take advantage of financial services to treat bitcoin like generational wealth.</p>
 
-<h1 id="соображения-по-поводу-одноподписной-схемы">
-  Соображения по поводу одноподписной схемы
-  <a class="anchor" href="#%d1%81%d0%be%d0%be%d0%b1%d1%80%d0%b0%d0%b6%d0%b5%d0%bd%d0%b8%d1%8f-%d0%bf%d0%be-%d0%bf%d0%be%d0%b2%d0%be%d0%b4%d1%83-%d0%be%d0%b4%d0%bd%d0%be%d0%bf%d0%be%d0%b4%d0%bf%d0%b8%d1%81%d0%bd%d0%be%d0%b9-%d1%81%d1%85%d0%b5%d0%bc%d1%8b">#</a>
-</h1>
-<h2 id="используйте-металлические-резервные-копии">
-  Используйте металлические резервные копии
-  <a class="anchor" href="#%d0%b8%d1%81%d0%bf%d0%be%d0%bb%d1%8c%d0%b7%d1%83%d0%b9%d1%82%d0%b5-%d0%bc%d0%b5%d1%82%d0%b0%d0%bb%d0%bb%d0%b8%d1%87%d0%b5%d1%81%d0%ba%d0%b8%d0%b5-%d1%80%d0%b5%d0%b7%d0%b5%d1%80%d0%b2%d0%bd%d1%8b%d0%b5-%d0%ba%d0%be%d0%bf%d0%b8%d0%b8">#</a>
-</h2>
-<p>Для пользователей, обратившихся к одноподписным схемам, металлические резервные копии сид-фраз чрезвычайно важны. Необходимо сделать вашу сид-фразу устойчивой к внешним воздействиям и даже к стихийным бедствиям, чтобы избежать потери ценности ваших биткоинов из-за непредвиденного события, даже если вероятность его наступления кажется низкой. У Биткоина нет службы поддержки, нет банка или государственной структуры, которые могли бы помочь в случае потери монет. Если ваш программный или аппаратный кошелек, а также резервные копии сид-фразы будут потеряны, украдены или уничтожены, восстановить доступ к вашим биткоинам, скорее всего, будет невозможно.</p>
-<blockquote class="book-hint info">
-  <p>Напоминаем, что металлические пластины и другие устойчивые к порче инструменты хранения сид-фраз можно <a href="https://sunscrypt.ru/hranenie-seed-phrazy/">купить</a> <strong>со скидкой в 5%</strong> у наших друзей <a href="https://sunscrypt.ru/">Sunscrypt</a>. Более того, скидка распространяется почти на все позиции, представленные в их онлайн-магазине.</p>
-<p><strong>Для получения скидки используйте промокод</strong> <code>21i</code></p>
+<div class="youtubeWrapper">
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+        <iframe src="https://www.youtube.com/embed/yGgO5RCH0a4" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video" loading="lazy"></iframe>
+    </div>
+</div>
 
-</blockquote>
-
-<h2 id="доступ-должен-быть-только-у-вас">
-  Доступ должен быть только у вас
-  <a class="anchor" href="#%d0%b4%d0%be%d1%81%d1%82%d1%83%d0%bf-%d0%b4%d0%be%d0%bb%d0%b6%d0%b5%d0%bd-%d0%b1%d1%8b%d1%82%d1%8c-%d1%82%d0%be%d0%bb%d1%8c%d0%ba%d0%be-%d1%83-%d0%b2%d0%b0%d1%81">#</a>
-</h2>
-<p>Вы должны не только создать металлическую резервную копию своей сид-фразы, но и обеспечить ее хранение в безопасном месте, доступ к которому есть только у вас. Единственное возможное исключение из этого правила - это чрезвычайно надежный человек в вашей жизни, например, ваш супруг или супруга. Следует придерживаться принципа &ldquo;Проверяй, не доверяй&rdquo;, особенно в контексте Биткоина. Исходите из предположения, что каждый, кто знает о ваших биткоинах, потенциально может проявить к ним интерес.</p>
-<h2 id="будьте-осторожны-и-не-болтайте">
-  Будьте осторожны и не болтайте
-  <a class="anchor" href="#%d0%b1%d1%83%d0%b4%d1%8c%d1%82%d0%b5-%d0%be%d1%81%d1%82%d0%be%d1%80%d0%be%d0%b6%d0%bd%d1%8b-%d0%b8-%d0%bd%d0%b5-%d0%b1%d0%be%d0%bb%d1%82%d0%b0%d0%b9%d1%82%d0%b5">#</a>
-</h2>
-<p>Среди всех моделей самостоятельного хранения биткоинов, одноподписная схема требует особой осторожности в отношении вербальной операционной безопасности. Если вы раскроете слишком много информации и кто-то узнает местоположение вашей сид-фразы, вы рискуете потерять все свои биткоины в мгновение ока.</p>
-<p>Также важно помнить, что даже если кто-то в настоящее время не проявляет интереса к вашим биткоинам, это не означает, что ситуация не изменится в будущем.</p>
-<h2 id="рассмотрите-другую-модель-хранения">
-  Рассмотрите другую модель хранения
-  <a class="anchor" href="#%d1%80%d0%b0%d1%81%d1%81%d0%bc%d0%be%d1%82%d1%80%d0%b8%d1%82%d0%b5-%d0%b4%d1%80%d1%83%d0%b3%d1%83%d1%8e-%d0%bc%d0%be%d0%b4%d0%b5%d0%bb%d1%8c-%d1%85%d1%80%d0%b0%d0%bd%d0%b5%d0%bd%d0%b8%d1%8f">#</a>
-</h2>
-<p>Наконец, важно тщательно подумать, подходит ли вам одноподписная схема. Если значительная часть вашего богатства хранится в биткоинах, или вы предвидите, что это может произойти в будущем, стоит рассмотреть использование мультисиг-хранилища. При мультисиг-схеме вам не придется так сильно беспокоиться о безопасности каждой отдельной сид-фразы, поскольку ни одна из них сама по себе не сможет подвергнуть риску ваши средства, даже если она будет скомпрометирована. Это обеспечивает дополнительный уровень безопасности, распределяя риск между несколькими ключами.</p>
-<h1 id="соображения-по-поводу-сида--пассфразы">
-  Соображения по поводу сида + пассфразы
-  <a class="anchor" href="#%d1%81%d0%be%d0%be%d0%b1%d1%80%d0%b0%d0%b6%d0%b5%d0%bd%d0%b8%d1%8f-%d0%bf%d0%be-%d0%bf%d0%be%d0%b2%d0%be%d0%b4%d1%83-%d1%81%d0%b8%d0%b4%d0%b0--%d0%bf%d0%b0%d1%81%d1%81%d1%84%d1%80%d0%b0%d0%b7%d1%8b">#</a>
+<p>For 2-of-3 multisig with a custody partner like Unchained holding the third key, you have four important items to protect: two hardware wallets and two recovery seed phrases.</p>
+<p>At Unchained, our official recommendation is that you store your four items (two hardware wallets and two seed phrases), geographically separated, in some combination of:</p>
+<ul>
+<li>A primary home safe</li>
+<li>A secondary home safe</li>
+<li>Safe deposit box – Bank A</li>
+<li>Safe deposit box – Bank B</li>
+<li>Safe or safe deposit box (held by trusted family members or trusted entities)</li>
+</ul>
+<p>You can <a href="https://unchained.com/blog/wp-content/uploads/2022/01/Unchained-Operational-Security-Guide.pdf">read more about our official seed phrase storage recommendations in our operational security guide</a>.</p>
+<h1 id="special-ssss-considerations">
+  Special SSSS considerations
+  <a class="anchor" href="#special-ssss-considerations">#</a>
 </h1>
-<p>Особые соображения по поводу сид-фразы, усиленной парольной фразой, схожи с теми, что относятся к одноподписной схеме, поскольку в конечном счете парольная фраза служит для защиты ваших 12 или 24 слов. Однако эта защита актуальна только до тех пор, пока вы не потеряете доступ к вашей сид-фразе. Если злоумышленникам удастся украсть или уничтожить все ваши резервные копии сид-фразы, парольная фраза окажется бесполезной. Тем не менее, она обеспечивает дополнительный уровень безопасности в случаях, когда кто-то делает копию вашей сид-фразы или если она случайно попадает в интернет.</p>
-<h2 id="не-доверяйте-третьим-лицам-не-доверяйте-своей-памяти">
-  Не доверяйте третьим лицам, не доверяйте своей памяти
-  <a class="anchor" href="#%d0%bd%d0%b5-%d0%b4%d0%be%d0%b2%d0%b5%d1%80%d1%8f%d0%b9%d1%82%d0%b5-%d1%82%d1%80%d0%b5%d1%82%d1%8c%d0%b8%d0%bc-%d0%bb%d0%b8%d1%86%d0%b0%d0%bc-%d0%bd%d0%b5-%d0%b4%d0%be%d0%b2%d0%b5%d1%80%d1%8f%d0%b9%d1%82%d0%b5-%d1%81%d0%b2%d0%be%d0%b5%d0%b9-%d0%bf%d0%b0%d0%bc%d1%8f%d1%82%d0%b8">#</a>
+<p>Shamir’s Secret Sharing Scheme has very similar considerations to multisig when it comes to seed phrase storage. You should never store your SSSS shards together in one place; depending on the m-of-n scheme you established when generating your shards, you could be defeating the purpose of using SSSS entirely if you’re not careful about storage locations.</p>
+<h2 id="avoid-unnecessary-complexity">
+  Avoid unnecessary complexity
+  <a class="anchor" href="#avoid-unnecessary-complexity">#</a>
 </h2>
-<p>Никогда не следует доверять хранение своих сид-фраз кому-либо или размещать их вне своей частной собственности. Также опираться исключительно на свою память - плохая идея. В случае болезни или несчастного случая, последнее, чего бы вы хотели, - это потерять доступ к своим биткоинам. Не делайте свою память единственной точкой отказа. Вместо этого, лучше использовать мультисиг-схему, которая позволит сохранить ваши биткоины как для вас, так и для ваших близких, предоставляя более надежный и распределенный способ защиты.</p>
-<h2 id="два-безопасных-места-на-вашей-территории---это-хорошо">
-  Два безопасных места на вашей территории - это хорошо
-  <a class="anchor" href="#%d0%b4%d0%b2%d0%b0-%d0%b1%d0%b5%d0%b7%d0%be%d0%bf%d0%b0%d1%81%d0%bd%d1%8b%d1%85-%d0%bc%d0%b5%d1%81%d1%82%d0%b0-%d0%bd%d0%b0-%d0%b2%d0%b0%d1%88%d0%b5%d0%b9-%d1%82%d0%b5%d1%80%d1%80%d0%b8%d1%82%d0%be%d1%80%d0%b8%d0%b8---%d1%8d%d1%82%d0%be-%d1%85%d0%be%d1%80%d0%be%d1%88%d0%be">#</a>
-</h2>
-<p>Предположим, что по каким-то причинам вы решили не использовать мультисиг или SSSS. В этом случае вы можете воспользоваться вторым уровнем защиты парольной фразы, храня свою сид-фразу и парольную фразу, выбитые на металлической резервной копии, в разных безопасных местах на вашей территории.</p>
-<h1 id="соображения-по-поводу-мультисиг">
-  Соображения по поводу мультисиг
-  <a class="anchor" href="#%d1%81%d0%be%d0%be%d0%b1%d1%80%d0%b0%d0%b6%d0%b5%d0%bd%d0%b8%d1%8f-%d0%bf%d0%be-%d0%bf%d0%be%d0%b2%d0%be%d0%b4%d1%83-%d0%bc%d1%83%d0%bb%d1%8c%d1%82%d0%b8%d1%81%d0%b8%d0%b3">#</a>
-</h1>
-<p>Если вы пользовались только одноподписной моделью или парольными фразами, то, поняв принцип их работы, вы поймете, что лучше всего спится со схемой мультисиг. Если вы создадите мультисиг-схему 2-из-3, копия одного из ключей или одной из сид-фраз может быть скомпрометирована или украдена, но при этом вы не потеряете контроль над своими средствами. При правильном обслуживании это делает вашу систему самостоятельного хранения биткоинов очень надежной. Злоумышленнику придется понять, как работает мультисиг, получить доступ к двум из трех ваших ключей, получить доступ к информации о конфигурации кошелька и вывести ваши средства, прежде чем вы поймете, что происходит, и выведете их самостоятельно.</p>
-<h2 id="увеличивайте-гибкость-но-не-забывайте-о-безопасности">
-  Увеличивайте гибкость, но не забывайте о безопасности
-  <a class="anchor" href="#%d1%83%d0%b2%d0%b5%d0%bb%d0%b8%d1%87%d0%b8%d0%b2%d0%b0%d0%b9%d1%82%d0%b5-%d0%b3%d0%b8%d0%b1%d0%ba%d0%be%d1%81%d1%82%d1%8c-%d0%bd%d0%be-%d0%bd%d0%b5-%d0%b7%d0%b0%d0%b1%d1%8b%d0%b2%d0%b0%d0%b9%d1%82%d0%b5-%d0%be-%d0%b1%d0%b5%d0%b7%d0%be%d0%bf%d0%b0%d1%81%d0%bd%d0%be%d1%81%d1%82%d0%b8">#</a>
-</h2>
-<p>Даже несмотря на гибкость, которую дает мультисиг, вы все равно должны серьезно относиться к безопасности хранения сид-фраз и избегать совместного размещения аппаратных кошельков и сид-фраз. Даже если ваш аппаратный кошелек и резервные копии защищают один и тот же сид, их разделение дает вам максимум возможностей для восстановления средств раньше, чем до них доберется злоумышленник.</p>
-<p>В остальном ваши возможности открыты: все вышеупомянутые места, которые мы советовали, подходят для хранения сид-фраз или аппаратных кошельков. Однако помните: у каждого варианта есть свои компромиссы!</p>
-<h2 id="обеспечьте-долговечность-своих-сид-фраз">
-  Обеспечьте долговечность своих сид-фраз
-  <a class="anchor" href="#%d0%be%d0%b1%d0%b5%d1%81%d0%bf%d0%b5%d1%87%d1%8c%d1%82%d0%b5-%d0%b4%d0%be%d0%bb%d0%b3%d0%be%d0%b2%d0%b5%d1%87%d0%bd%d0%be%d1%81%d1%82%d1%8c-%d1%81%d0%b2%d0%be%d0%b8%d1%85-%d1%81%d0%b8%d0%b4-%d1%84%d1%80%d0%b0%d0%b7">#</a>
-</h2>
-<p>Для обеспечения безопасности резервных копий сид-фраз рекомендуется ламинировать все бумажные копии, чтобы сделать их хотя бы водонепроницаемыми. Кроме того, для резервного копирования по возможности предпочтительнее использовать металлические пластины, так как они обеспечивают одновременную защиту от огня и воды. Вне зависимости от того, используете вы бумажные или металлические носители, всегда выбирайте огнестойкий сейф для их хранения дома. Эти меры повышают уровень защиты ваших сид-фраз от различных внешних угроз.</p>
-<h1 id="соображения-по-поводу-ssss">
-  Соображения по поводу SSSS
-  <a class="anchor" href="#%d1%81%d0%be%d0%be%d0%b1%d1%80%d0%b0%d0%b6%d0%b5%d0%bd%d0%b8%d1%8f-%d0%bf%d0%be-%d0%bf%d0%be%d0%b2%d0%be%d0%b4%d1%83-ssss">#</a>
-</h1>
-<p>Схема разделения секрета Шамира (SSSS) имеет ряд соображений по хранению, аналогичных тем, что применяются в мультисиг-схемах. Важно никогда не хранить все шарды SSSS в одном месте; в зависимости от выбранной вами схемы m-из-n при создании этих шардов, неправильный выбор места хранения может полностью нивелировать преимущества использования SSSS. Тщательный подход к выбору мест для каждого шарда является ключевым для поддержания целостности и безопасности всей схемы.</p>
-<h2 id="избегайте-избыточной-сложности">
-  Избегайте избыточной сложности
-  <a class="anchor" href="#%d0%b8%d0%b7%d0%b1%d0%b5%d0%b3%d0%b0%d0%b9%d1%82%d0%b5-%d0%b8%d0%b7%d0%b1%d1%8b%d1%82%d0%be%d1%87%d0%bd%d0%be%d0%b9-%d1%81%d0%bb%d0%be%d0%b6%d0%bd%d0%be%d1%81%d1%82%d0%b8">#</a>
-</h2>
-<p>Излишняя сложность - это угроза безопасности ваших биткоинов. Схема разделения секретов Шамира технически не сложнее схемы мультисиг, но она может доставить неприятности, если вы не знаете, как правильно использовать программные решения для создания и объединения шардов. Даже в тех сценариях, где она исторически имеет смысл, например в крупных организациях, распределяющих контроль над ключами между несколькими управляющими, мультисиг по-прежнему является лучшим подходом для большинства биткоин-ходлеров.</p>
+<p>In bitcoin security, unnecessary complexity is a security threat. Shamir’s Secret Sharing Scheme isn’t technically any more complex than multisig, but it can become an issue if you don’t know how to properly use the software solutions for generating and combining shards. Even in scenarios where it has made sense historically, such as large organizations distributing key control across multiple people, multisig is still a better approach for most bitcoin holders, especially with user-friendly applications like Unchained vaults.</p>
 </article>
   <hr>
 
@@ -3330,51 +3153,52 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#одна-подпись-пассфраза-мультисиг-или-ssss">Одна подпись, пассфраза, мультисиг или SSSS</a>
+    <li><a href="#singlesig-vs-passphrase-vs-multisig-vs-ssss">Singlesig vs. passphrase vs. multisig vs. SSSS</a>
       <ul>
-        <li><a href="#одна-подпись">Одна подпись</a></li>
-        <li><a href="#одна-подпись--парольная-фраза">Одна подпись + парольная фраза</a></li>
-        <li><a href="#мультисиг">Мультисиг</a></li>
-        <li><a href="#схема-разделения-секрета-шамира">Схема разделения секрета Шамира</a></li>
+        <li><a href="#singlesig">Singlesig</a></li>
+        <li><a href="#singlesig--passphrase">Singlesig + passphrase</a></li>
+        <li><a href="#multisig">Multisig</a></li>
+        <li><a href="#shamirs-secret-sharing-scheme">Shamir’s Secret Sharing Scheme</a></li>
       </ul>
     </li>
-    <li><a href="#где-хранить-сид-фразу">Где хранить сид-фразу?</a>
+    <li><a href="#bitcoin-seed-phrase-storage-locations-which-to-choose">Bitcoin seed phrase storage locations: which to choose?</a>
       <ul>
-        <li><a href="#места-где-не-стоит-хранить-сид-фразы">Места, где не стоит хранить сид-фразы</a></li>
-        <li><a href="#лучшие-места-для-хранения-резервных-копий-сид-фраз">Лучшие места для хранения резервных копий сид-фраз</a>
+        <li><a href="#places-_not_-to-store-your-seed-phrase-backups">Places <em>not</em> to store your seed phrase backups</a></li>
+        <li><a href="#the-best-places-to-store-your-seed-phrase-backups">The best places to store your seed phrase backups</a>
           <ul>
-            <li><a href="#домашний-сейф">Домашний сейф</a></li>
-            <li><a href="#второе-место-на-вашей-территории">Второе место на вашей территории</a></li>
-            <li><a href="#банковская-ячейка">Банковская ячейка</a></li>
-            <li><a href="#доверенный-член-семьи">Доверенный член семьи</a></li>
+            <li><a href="#home-safe">Home safe</a></li>
+            <li><a href="#a-second-location-on-your-property">A second location on your property</a></li>
+            <li><a href="#safe-deposit-box">Safe-deposit box</a></li>
+            <li><a href="#a-trusted-family-member">A trusted family member</a></li>
           </ul>
         </li>
-        <li><a href="#каждый-подход-уникален">Каждый подход уникален</a></li>
       </ul>
     </li>
-    <li><a href="#соображения-по-поводу-одноподписной-схемы">Соображения по поводу одноподписной схемы</a>
+    <li><a href="#every-approach-is-unique">Every approach is unique</a></li>
+    <li><a href="#special-singlesig-considerations">Special singlesig considerations</a>
       <ul>
-        <li><a href="#используйте-металлические-резервные-копии">Используйте металлические резервные копии</a></li>
-        <li><a href="#доступ-должен-быть-только-у-вас">Доступ должен быть только у вас</a></li>
-        <li><a href="#будьте-осторожны-и-не-болтайте">Будьте осторожны и не болтайте</a></li>
-        <li><a href="#рассмотрите-другую-модель-хранения">Рассмотрите другую модель хранения</a></li>
+        <li><a href="#use-metal-backups">Use metal backups</a></li>
+        <li><a href="#only-you-should-have-access">Only you should have access</a></li>
+        <li><a href="#be-careful-not-to-say-too-much">Be careful not to say too much</a></li>
+        <li><a href="#consider-another-custody-model">Consider another custody model</a></li>
       </ul>
     </li>
-    <li><a href="#соображения-по-поводу-сида--пассфразы">Соображения по поводу сида + пассфразы</a>
+    <li><a href="#special-singlesigpassphrase-considerations">Special singlesig+passphrase considerations</a>
       <ul>
-        <li><a href="#не-доверяйте-третьим-лицам-не-доверяйте-своей-памяти">Не доверяйте третьим лицам, не доверяйте своей памяти</a></li>
-        <li><a href="#два-безопасных-места-на-вашей-территории---это-хорошо">Два безопасных места на вашей территории - это хорошо</a></li>
+        <li><a href="#dont-trust-third-parties-dont-trust-your-mind">Don’t trust third parties; don’t trust your mind</a></li>
+        <li><a href="#two-secure-locations-on-your-property-is-fine">Two secure locations on your property is fine</a></li>
       </ul>
     </li>
-    <li><a href="#соображения-по-поводу-мультисиг">Соображения по поводу мультисиг</a>
+    <li><a href="#special-multisig-considerations">Special multisig considerations</a>
       <ul>
-        <li><a href="#увеличивайте-гибкость-но-не-забывайте-о-безопасности">Увеличивайте гибкость, но не забывайте о безопасности</a></li>
-        <li><a href="#обеспечьте-долговечность-своих-сид-фраз">Обеспечьте долговечность своих сид-фраз</a></li>
+        <li><a href="#more-flexibility-but-security-is-still-important">More flexibility, but security is still important</a></li>
+        <li><a href="#make-your-seed-phrases-more-durable">Make your seed phrases more durable</a></li>
       </ul>
     </li>
-    <li><a href="#соображения-по-поводу-ssss">Соображения по поводу SSSS</a>
+    <li><a href="#consider-collaborative-custody">Consider collaborative custody</a></li>
+    <li><a href="#special-ssss-considerations">Special SSSS considerations</a>
       <ul>
-        <li><a href="#избегайте-избыточной-сложности">Избегайте избыточной сложности</a></li>
+        <li><a href="#avoid-unnecessary-complexity">Avoid unnecessary complexity</a></li>
       </ul>
     </li>
   </ul>

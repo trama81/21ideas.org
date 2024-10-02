@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html lang="ru-RU" dir="ltr">
+<html lang="en" dir="ltr">
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&display=swap" rel="stylesheet">  <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Как Биткоин защищен с помощью энергии? И что такое нонс? На эти и другие вопросы вы найдете ответы в этой статье.">
+<meta name="description" content="How is Bitcoin defended by energy? And what is a nonce? These questions and more are answered within!">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark">
-<meta name="lightning" content="21ideas@getalby.com"><meta property="og:title" content="SHA256 и майнинг в сети Биткоин" />
-<meta property="og:description" content="Как Биткоин защищен с помощью энергии? И что такое нонс? На эти и другие вопросы вы найдете ответы в этой статье." />
+<meta name="lightning" content="21ideas@getalby.com"><meta property="og:title" content="SHA256 and Bitcoin Mining Walkthrough" />
+<meta property="og:description" content="How is Bitcoin defended by energy? And what is a nonce? These questions and more are answered within!" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://localhost:1313/mining-walkthrough/" />
 <meta property="og:image" content="http://localhost:1313/img/mining/01.webp"/>
 
-<title>SHA256 и майнинг в сети Биткоин | 21ideas</title>
+<title>SHA256 and Bitcoin Mining Walkthrough | 21ideas</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -22,10 +22,10 @@
 <link rel="apple-touch-icon" media="(prefers-color-scheme: dark)" sizes="180x180" href="/apple-touch-icon-dark.png">
 <link rel="icon" type="image/png" media="(prefers-color-scheme: dark)" sizes="32x32" href="/favicon-32x32-dark.png">
 <link rel="icon" type="image/png" media="(prefers-color-scheme: dark)" sizes="16x16" href="/favicon-16x16-dark.png">
-  <link rel="alternate" hreflang="en" href="http://localhost:1313/en/mining-walkthrough/" title="SHA256 and Bitcoin Mining Walkthrough">
+  <link rel="alternate" hreflang="ru-RU" href="http://localhost:1313/ru/mining-walkthrough/" title="SHA256 и майнинг в сети Биткоин">
 <link rel="stylesheet" href="/book.min.44d288673620af09aba4fb7b29ef4c1d1f9c0258f725bd228507764ec1740f0a.css" integrity="sha256-RNKIZzYgrwmrpPt7Ke9MHR&#43;cAlj3Jb0ihQd2TsF0Dwo=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/ru.search.min.760cb93fca4cc9af4d5d957f0e91325f35c604c9b72da7d0d0517ae0f7424f53.js" integrity="sha256-dgy5P8pMya9NXZV/DpEyXzXGBMm3LafQ0FF64PdCT1M=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.322caf709709c011df0f8373a87ef3ce291ba22a62fdd5b8cf00bf824b20d5f8.js" integrity="sha256-MiyvcJcJwBHfD4NzqH7zzikboipi/dW4zwC/gksg1fg=" crossorigin="anonymous"></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -53,7 +53,7 @@ https://github.com/alex-shpak/hugo-book
 
 
 <div class="book-search">
-  <input type="text" id="book-search-input" placeholder="Поиск" aria-label="Поиск" maxlength="64" data-hotkeys="s/" />
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
   <div class="book-search-spinner hidden"></div>
   <ul id="book-search-results"></ul>
 </div>
@@ -78,15 +78,15 @@ https://github.com/alex-shpak/hugo-book
     <label for="languages" class="flex justify-between">
       <a role="button" class="flex align-center">
         <img src="/svg/translate.svg" class="book-icon" alt="Languages" />
-        Русский
+        English
       </a>
     </label>
 
     <ul>
       
       <li>
-        <a href="http://localhost:1313/en/mining-walkthrough/">
-          English
+        <a href="http://localhost:1313/ru/mining-walkthrough/">
+          Русский
         </a>
       </li>
       
@@ -120,7 +120,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-4b959577bbd662d890894b4ef656e45e" class="toggle"  />
     <label for="section-4b959577bbd662d890894b4ef656e45e" class="flex justify-between">
-      <a href="/start/" class="">Старт</a>
+      <a role="button" class="">Start</a>
     </label>
   
 
@@ -134,7 +134,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/start/start/" class="">Что такое Биткоин?</a>
+    <a href="/start/start/" class="">Bitcoin Basics</a>
   
 
         </li>
@@ -147,7 +147,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/start/guide/" class="">Используем биткоин</a>
+    <a href="/start/guide/" class="">Using Bitcoin</a>
   
 
         </li>
@@ -160,33 +160,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/course/" class="">Биткоин от А до Я</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/bitcoin-myths/" class="">Разрушаем мифы о Биткоине</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/shitcoin-casino/" class="">Не играйте в щиткоин-казино</a>
+    <a href="/shitcoin-gambling-games/" class="">Don’t Play Shitcoin Gambling Games</a>
   
 
         </li>
@@ -206,7 +180,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-c8e2b39e67e72b49a36ee1ec8355ecba" class="toggle" checked />
     <label for="section-c8e2b39e67e72b49a36ee1ec8355ecba" class="flex justify-between">
-      <a href="/theory/" class="">Теория</a>
+      <a href="/theory/" class="">Theory</a>
     </label>
   
 
@@ -222,7 +196,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-981a6953479a2e41da30ae73c119d6e2" class="toggle"  />
     <label for="section-981a6953479a2e41da30ae73c119d6e2" class="flex justify-between">
-      <a href="/economics/" class="">Экономика</a>
+      <a href="/economics/" class="">Economics</a>
     </label>
   
 
@@ -238,7 +212,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-43f26905d14df4de3737d0d5dfd90ca0" class="toggle"  />
     <label for="section-43f26905d14df4de3737d0d5dfd90ca0" class="flex justify-between">
-      <a href="/pzv/" class="">Постепенно, затем внезапно</a>
+      <a href="/gradually-then-suddenly/" class="">Gradually, Then Suddenly</a>
     </label>
   
 
@@ -252,7 +226,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/postepenno-zatem-vnezapno/" class="">Введение</a>
+    <a href="/gradually-then-suddenly/intro/" class="">Intro</a>
   
 
         </li>
@@ -265,7 +239,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-nelzya-skopirovat/" class="">Биткоин нельзя скопировать</a>
+    <a href="/gradually-then-suddenly/bitcoin-cant-be-copied/" class="">Bitcoin Can’t Be Copied</a>
   
 
         </li>
@@ -278,7 +252,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-ne-slishkom-volatilen/" class="">Биткоин не слишком волатилен</a>
+    <a href="/gradually-then-suddenly/bitcoin-is-not-too-volatile/" class="">Bitcoin Is Not Too Volatile</a>
   
 
         </li>
@@ -291,7 +265,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-ne-tratit-energiyu-zrya/" class="">Биткоин не тратит энергию зря</a>
+    <a href="/gradually-then-suddenly/bitcoin-does-not-waste-energy/" class="">Bitcoin Does Not Waste Energy</a>
   
 
         </li>
@@ -304,7 +278,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-ne-slishkom-medlennyj/" class="">Биткоин не слишком медленный</a>
+    <a href="/gradually-then-suddenly/bitcoin-is-not-too-slow/" class="">Bitcoin is Not Too Slow</a>
   
 
         </li>
@@ -317,7 +291,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-eto-ispravit/" class="">Биткоин это исправит</a>
+    <a href="/gradually-then-suddenly/bitcoin-fixes-this/" class="">Bitcoin Fixes This</a>
   
 
         </li>
@@ -330,7 +304,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-ne-blokchejn/" class="">Биткоин, не блокчейн</a>
+    <a href="/gradually-then-suddenly/bitcoin-not-blockchain/" class="">Bitcoin, Not Blockchain</a>
   
 
         </li>
@@ -343,7 +317,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-nichem-ne-podkreplen/" class="">Биткоин ничем не подкреплен?</a>
+    <a href="/gradually-then-suddenly/bitcoin-is-not-backed-by-nothing/" class="">Bitcoin is Not Backed by Nothing</a>
   
 
         </li>
@@ -356,7 +330,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-ne-finansovaya-piramida/" class="">Биткоин — не финансовая пирамида</a>
+    <a href="/gradually-then-suddenly/bitcoin-is-not-a-pyramid-scheme/" class="">Bitcoin is Not a Pyramid Scheme</a>
   
 
         </li>
@@ -369,7 +343,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-ne-mozhet-byt-zabanen/" class="">Биткоин не может быть забанен</a>
+    <a href="/gradually-then-suddenly/bitcoin-cannot-be-banned/" class="">Bitcoin Cannot be Banned</a>
   
 
         </li>
@@ -382,7 +356,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-ne-dlya-prestupnikov/" class="">Биткоин не для преступников</a>
+    <a href="/gradually-then-suddenly/bitcoin-is-not-for-criminals/" class="">Bitcoin is Not for Criminals</a>
   
 
         </li>
@@ -395,7 +369,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-obescenivaet-ostalnye-dengi/" class="">Биткоин обесценивает остальные деньги</a>
+    <a href="/gradually-then-suddenly/bitcoin-obsoletes-all-other-money/" class="">Bitcoin Obsoletes All Other Money</a>
   
 
         </li>
@@ -408,7 +382,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-zov-k-edineniyu/" class="">Биткоин — зов к единению</a>
+    <a href="/gradually-then-suddenly/bitcoin-is-a-rally-cry/" class="">Bitcoin is a Rally Cry</a>
   
 
         </li>
@@ -421,7 +395,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-eto-zdravyj-smysl/" class="">Биткоин — это здравый смысл</a>
+    <a href="/gradually-then-suddenly/bitcoin-is-common-sense/" class="">Bitcoin is Common Sense</a>
   
 
         </li>
@@ -434,7 +408,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-antihrupok/" class="">Биткоин антихрупок</a>
+    <a href="/gradually-then-suddenly/bitcoin-is-antifragile/" class="">Bitcoin is Antifragile</a>
   
 
         </li>
@@ -447,7 +421,20 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pzv/bitkoin-velikaya-definancializaciya/" class="">Биткоин — великая дефинанcиализация</a>
+    <a href="/gradually-then-suddenly/bitcoin-is-one-for-all/" class="">Bitcoin is One for All</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/gradually-then-suddenly/bitcoin-is-the-great-definancialization/" class="">Bitcoin is the Great Definancialization</a>
   
 
         </li>
@@ -467,7 +454,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-070af377b46d38e45de9a60dd3c8e7d0" class="toggle"  />
     <label for="section-070af377b46d38e45de9a60dd3c8e7d0" class="flex justify-between">
-      <a href="/sb/" class="">Становление Биткоина</a>
+      <a href="/discovering-bitcoin/" class="">Discovering Bitcoin</a>
     </label>
   
 
@@ -481,7 +468,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sb/stanovlenie-intro/" class="">Введение</a>
+    <a href="/discovering-bitcoin/intro/" class="">Introduction</a>
   
 
         </li>
@@ -494,7 +481,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sb/stanovlenie-1/" class="">О времени</a>
+    <a href="/discovering-bitcoin/about-time/" class="">About Time</a>
   
 
         </li>
@@ -507,7 +494,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sb/stanovlenie-2/" class="">О людях</a>
+    <a href="/discovering-bitcoin/about-people/" class="">About People</a>
   
 
         </li>
@@ -520,7 +507,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sb/stanovlenie-3/" class="">Знакомьтесь: деньги</a>
+    <a href="/discovering-bitcoin/introducing-money/" class="">Introducing Money</a>
   
 
         </li>
@@ -533,7 +520,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sb/stanovlenie-4/" class="">Поворот не туда</a>
+    <a href="/discovering-bitcoin/a-wrong-turn-new-plan-needed/" class="">A Wrong Turn (New Plan Needed)!</a>
   
 
         </li>
@@ -546,7 +533,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sb/stanovlenie-5/" class="">Цифровая редкость</a>
+    <a href="/discovering-bitcoin/digital-scarcity/" class="">Digital Scarcity</a>
   
 
         </li>
@@ -559,7 +546,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sb/stanovlenie-6/" class="">Цифровые контракты</a>
+    <a href="/discovering-bitcoin/digital-contracts/" class="">Digital Contracts</a>
   
 
         </li>
@@ -572,7 +559,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sb/stanovlenie-7/" class="">Недостающие части головоломки</a>
+    <a href="/discovering-bitcoin/the-missing-pieces/" class="">The Missing Pieces</a>
   
 
         </li>
@@ -590,7 +577,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitkoin-ne-vredit-okruzhayushej-srede/" class="">Биткоин и окружающая среда</a>
+    <a href="/bitcoin-is-not-harmful-for-the-environment/" class="">Bitcoin Is Not Harmful For The Environment</a>
   
 
         </li>
@@ -603,7 +590,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sem-setevyh-effektov-bitkoina/" class="">Семь сетевых эффектов Биткоина</a>
+    <a href="/seven-network-effects-of-bitcoin/" class="">The Seven Network Effects of Bitcoin</a>
   
 
         </li>
@@ -616,7 +603,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/hozyaeva-i-raby-deneg/" class="">Хозяева и рабы денег</a>
+    <a href="/masters-and-slaves-of-money/" class="">Masters and Slaves of Money</a>
   
 
         </li>
@@ -629,7 +616,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/strukturnaya-perestrojka/" class="">Структурная перестройка</a>
+    <a href="/structural-adjustment/" class="">Structural Adjustment</a>
   
 
         </li>
@@ -642,7 +629,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/v-zashchitu-deflyacii/" class="">В защиту дефляции</a>
+    <a href="/in-defense-of-deflation/" class="">In Defense Of Deflation</a>
   
 
         </li>
@@ -655,7 +642,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sravnenie-monetarnyh-standartov/" class="">Сравнение монетарных стандартов</a>
+    <a href="/comparison-of-monetary-standards/" class="">Comparison of Monetary Standards</a>
   
 
         </li>
@@ -668,7 +655,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sravnenie-monetarnyh-standartov/" class="">Сравнение монетарных стандартов</a>
+    <a href="/petrodollar-negative-effects/" class="">Petrodollar Negative Effects</a>
   
 
         </li>
@@ -681,7 +668,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/negativnye-effekty-neftedollara/" class="">Негативные внешние эффекты нефтедоллара</a>
+    <a href="/shelling-out/" class="">Shelling Out: The Origins of Money</a>
   
 
         </li>
@@ -694,7 +681,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/raskoshelivaemsya/" class="">Раскошеливаемся (Shelling Out): Происхождение денег</a>
+    <a href="/bitcoin-rhythms-of-history/" class="">Bitcoin and the Rhythms of History</a>
   
 
         </li>
@@ -707,7 +694,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-i-ritmy-istorii/" class="">Биткоин и ритмы истории</a>
+    <a href="/bitcoin-and-the-hopf-cycle-of-the-internet/" class="">Bitcoin &amp; the HOPF Cycle of the Internet</a>
   
 
         </li>
@@ -720,7 +707,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-i-internet-cikly-hopfa/" class="">Биткоин и интернет-циклы Хопфа</a>
+    <a href="/money-blockchains-and-social-scalability/" class="">Money, blockchains, and social scalability</a>
   
 
         </li>
@@ -733,7 +720,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/dengi-blokchejny-i-socialnaya-masshtabiruemost/" class="">Деньги, блокчейны и социальная масштабируемость</a>
+    <a href="/what-is-money/" class="">What Is Money</a>
   
 
         </li>
@@ -746,7 +733,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/chto-takoe-dengi/" class="">Что такое деньги</a>
+    <a href="/only-the-strong-survive/" class="">Only The Strong Survive</a>
   
 
         </li>
@@ -759,7 +746,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/vyzhivaet-silnejshij/" class="">Выживает сильнейший</a>
+    <a href="/dollar-cost-averaging/" class="">Dollar-Cost Averaging</a>
   
 
         </li>
@@ -772,33 +759,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/strategiya-dca/" class="">Стратегия DCA</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/jevons-paradox/" class="">Парадокс Джевонса: Обратная истина</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/kak-rabotajut-dengi/" class="">Как работают деньги</a>
+    <a href="/jevons-paradox/" class="">Jevons Paradox: Contrary Truth</a>
   
 
         </li>
@@ -818,7 +779,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-4d5bb6cd046af3ae6f08884281ee0445" class="toggle"  />
     <label for="section-4d5bb6cd046af3ae6f08884281ee0445" class="flex justify-between">
-      <a href="/security/" class="">Безопасность</a>
+      <a href="/security/" class="">Security</a>
     </label>
   
 
@@ -832,7 +793,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/kak-hranit-kljuchi/" class="">Биткоин-кошельки. Зачем и как хранить свои приватные ключи</a>
+    <a href="/how-to-hold-private-keys/" class="">Bitcoin Wallets: How, Why and When to Hold Your Own Private Keys</a>
   
 
         </li>
@@ -845,7 +806,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/seed/" class="">Что такое сид-фраза?</a>
+    <a href="/seed/" class="">What is a bitcoin seed phrase and how does it work?</a>
   
 
         </li>
@@ -858,7 +819,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/seed-security/" class="">Как обезопасить свои сид-фразы?</a>
+    <a href="/seed-security/" class="">Ultimate guide to storing your bitcoin seed phrase backups</a>
   
 
         </li>
@@ -871,7 +832,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/passphrase/" class="">Насколько надежна ваша парольная фраза?</a>
+    <a href="/passphrase/" class="">Is your passphrase strong enough?</a>
   
 
         </li>
@@ -884,7 +845,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/multisig/" class="">Все о мультисиг</a>
+    <a href="/what-is-multisig/" class="">What is multisig?</a>
   
 
         </li>
@@ -897,7 +858,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/hwws/" class="">Сравнение аппаратных кошельков</a>
+    <a href="/hwws/" class="">The best Bitcoin hardware wallets</a>
   
 
         </li>
@@ -910,7 +871,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/multisig-1/" class="">Мультисиг. Часть I</a>
+    <a href="/multisig-1/" class="">Multisig Part I: Why Multisig?</a>
   
 
         </li>
@@ -923,7 +884,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/multisig-2/" class="">Мультисиг. Часть II: Отдельные ключи – основа мультиподписи</a>
+    <a href="/multisig-2/" class="">Multisig Part II: Single Keys are the Foundation of Multisignature</a>
   
 
         </li>
@@ -943,7 +904,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-e5dc95f8c3734f1c9cf3045c3ba217e8" class="toggle"  />
     <label for="section-e5dc95f8c3734f1c9cf3045c3ba217e8" class="flex justify-between">
-      <a href="/privacy/" class="">Приватность</a>
+      <a href="/privacy/" class="">Privacy</a>
     </label>
   
 
@@ -957,7 +918,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/privacy/luchshie-praktiki/" class="">Как сохранить приватность?</a>
+    <a href="/privacy/best-practices/" class="">Bitcoin Privacy: Best Practices</a>
   
 
         </li>
@@ -970,7 +931,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/privacy/no-kyc/" class="">Никаких KYC, берегите персональные данные</a>
+    <a href="/privacy/no-kyc/" class="">no-KYC only. Avoid the creep</a>
   
 
         </li>
@@ -983,7 +944,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/privatnost-v-seti-bitcoin/" class="">Приватность в сети Биткоин</a>
+    <a href="/wiki-bitcoin-privacy/" class="">Bitcoin Privacy</a>
   
 
         </li>
@@ -996,7 +957,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-stanovitsya-kriticheski-vazhnym/" class="">Биткоин становится критически важным</a>
+    <a href="/bitcoin-becomes-critical/" class="">Bitcoin Becomes Critical</a>
   
 
         </li>
@@ -1009,7 +970,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bip47-ili-gadkij-utenok/" class="">BIP47, или гадкий утенок</a>
+    <a href="/bip47-the-ugly-duckling/" class="">BIP47, the ugly duckling</a>
   
 
         </li>
@@ -1024,7 +985,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-7626e3de66018c98c264d84fe366e13a" class="toggle"  />
     <label for="section-7626e3de66018c98c264d84fe366e13a" class="flex justify-between">
-      <a href="/privacy/oxt/" class="">Понимание приватности в сети Биткоин с помощью OXT</a>
+      <a href="/privacy/oxt/" class="">Understanding Bitcoin Privacy with OXT</a>
     </label>
   
 
@@ -1038,7 +999,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/privacy/oxt-1/" class="">Часть 1: Анализ цепочки и приватность транзакций</a>
+    <a href="/privacy/oxt-1/" class="">Part 1: Chain Analysis And Transaction Privacy</a>
   
 
         </li>
@@ -1051,7 +1012,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/privacy/oxt-2/" class="">Часть 2: Ключевые концепции анализа цепочки</a>
+    <a href="/privacy/oxt-2/" class="">Part 2: Chain Analysis Core Concepts</a>
   
 
         </li>
@@ -1064,7 +1025,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/privacy/oxt-3/" class="">Часть 3: Защита от анализа цепочки</a>
+    <a href="/privacy/oxt-3/" class="">Part 3: Defences Against Chain Analysis</a>
   
 
         </li>
@@ -1077,7 +1038,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/privacy/oxt-4/" class="">Часть 4: Применение концепций анализа цепочки для улучшения приватности пользователей</a>
+    <a href="/privacy/oxt-4/" class="">Part 4: Applying Chain Analysis Concepts To Improve User Privacy</a>
   
 
         </li>
@@ -1095,7 +1056,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/privacy/coinjoin/" class="">Понимание и использование CoinJoin</a>
+    <a href="/privacy/coinjoin/" class="">CoinJoin Overview</a>
   
 
         </li>
@@ -1108,7 +1069,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-fungibility/" class="">Взаимозаменяемость Биткоина</a>
+    <a href="/bitcoin-fungibility/" class="">Bitcoin Fungibility</a>
   
 
         </li>
@@ -1141,7 +1102,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-591754e4c6a4e23cb58f7ff9d9022ef1" class="toggle" checked />
     <label for="section-591754e4c6a4e23cb58f7ff9d9022ef1" class="flex justify-between">
-      <a href="/protocol/" class="">Протокол</a>
+      <a href="/protocol/" class="">Protocol</a>
     </label>
   
 
@@ -1155,7 +1116,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/kto-kontroliruet-bitkoin-kor/" class="">Кто контролирует Bitcoin Core?</a>
+    <a href="/who-controls-bitcoin-core/" class="">Who Controls Bitcoin Core?</a>
   
 
         </li>
@@ -1168,7 +1129,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/vechnaja-borba/" class="">Вечная борьба Биткоина</a>
+    <a href="/bitcoins-eternal-struggle/" class="">Bitcoin&#39;s Eternal Struggle</a>
   
 
         </li>
@@ -1181,7 +1142,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/ob-udobstve-vzaimodejstvija-s-bitcoinom/" class="">Об удобстве взаимодействия с Биткоином</a>
+    <a href="/on-bitcoins-ux/" class="">On Bitcoin’s UX</a>
   
 
         </li>
@@ -1194,7 +1155,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-zoloto-2-0/" class="">Биткоин: цифровое золото или пиринговая наличность?</a>
+    <a href="/bitcoin-digital-gold-or-ecash/" class="">Bitcoin: Digital Gold or Peer-to-Peer Cash?</a>
   
 
         </li>
@@ -1207,7 +1168,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/upravlenie-bitcoin/" class="">Управление Биткоином</a>
+    <a href="/bitcoin-governance/" class="">Bitcoin Governance</a>
   
 
         </li>
@@ -1220,7 +1181,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/doverennye-tretyi-storony/" class="">Доверенные третьи стороны — это бреши в системе безопасности</a>
+    <a href="/trusted-third-parties/" class="">Trusted Third Parties are Security Holes</a>
   
 
         </li>
@@ -1233,7 +1194,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/21-million-ne-podlezhit-obsuzhdeniyu/" class="">21 миллион не подлежит обсуждению</a>
+    <a href="/21-million-is-non-negotiable/" class="">21 Million is Non-Negotiable</a>
   
 
         </li>
@@ -1246,7 +1207,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/proof-of-work/" class="">Proof of Work: доказательство проделанной работы</a>
+    <a href="/proof-of-work/" class="">Proof of Work, a pictorial essay</a>
   
 
         </li>
@@ -1259,7 +1220,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/proof-of-stake-eto-skam/" class="">Proof of Stake – это скам</a>
+    <a href="/proof-of-stake-is-a-scam/" class="">Proof of stake is a scam</a>
   
 
         </li>
@@ -1272,7 +1233,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/byl-li-satoshi-zhadnym-majnerom/" class="">Был ли Сатоши жадным майнером?</a>
+    <a href="/was-satoshi-a-greedy-miner/" class="">Was Satoshi a Greedy Miner?</a>
   
 
         </li>
@@ -1285,7 +1246,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/segwit/" class="">Что такое SegWit</a>
+    <a href="/segwit/" class="">What Is SegWit</a>
   
 
         </li>
@@ -1298,7 +1259,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/taproot/" class="">Что такое Taproot</a>
+    <a href="/taproot/" class="">What Is Taproot</a>
   
 
         </li>
@@ -1311,7 +1272,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bomby-slozhnosti-ethereum/" class="">Бомбы сложности Ethereum</a>
+    <a href="/coercion-of-ethereums-difficulty-bomb/" class="">The Coercion Of Ethereum&#39;s Difficulty Bomb</a>
   
 
         </li>
@@ -1324,7 +1285,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/rgb/" class="">Разбирая протокол RGB</a>
+    <a href="/rgb/" class="">Understanding the RGB protocol</a>
   
 
         </li>
@@ -1337,7 +1298,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/halving/" class="">Что такое Биткоин-халвинг?</a>
+    <a href="/difficulty/" class="">Bitcoin Difficulty Adjustment</a>
   
 
         </li>
@@ -1350,7 +1311,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/difficulty/" class="">О корректировке сложности майнинга</a>
+    <a href="/bitcoin-address-types/" class="">Bitcoin address types</a>
   
 
         </li>
@@ -1363,7 +1324,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/sravnenie-tipov-bitcoin-adresov/" class="">Типы биткоин-адресов</a>
+    <a href="/myths-about-halving/" class="">Myths About the Bitcoin Halving</a>
   
 
         </li>
@@ -1376,20 +1337,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/myths-about-halving/" class="">Мифы о Биткоин-халвинге</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/mining-walkthrough/" class="active">SHA256 и майнинг в сети Биткоин</a>
+    <a href="/mining-walkthrough/" class="active">SHA256 and Bitcoin Mining Walkthrough</a>
   
 
         </li>
@@ -1404,7 +1352,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-c6baffdfa73d6dd5df13795b95ab68ac" class="toggle"  />
     <label for="section-c6baffdfa73d6dd5df13795b95ab68ac" class="flex justify-between">
-      <a href="/protocol/utxo/" class="">Что такое UTXO и как ими управлять?</a>
+      <a href="/protocol/utxo/" class="">What Is UTXO And How To Manage Them</a>
     </label>
   
 
@@ -1418,7 +1366,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/protocol/utxo-1/" class="">Что такое UTXO?</a>
+    <a href="/protocol/utxo-1/" class="">What is a Bitcoin UTXO</a>
   
 
         </li>
@@ -1431,7 +1379,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/protocol/utxo-2/" class="">Как избежать высоких комиссий при большом количестве UTXO</a>
+    <a href="/protocol/utxo-2/" class="">Too Many UTXOs: How To Avoid High Fees</a>
   
 
         </li>
@@ -1444,7 +1392,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/protocol/utxo-3/" class="">Приватность UTXO</a>
+    <a href="/protocol/utxo-3/" class="">UTXOs Privacy</a>
   
 
         </li>
@@ -1462,7 +1410,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/transaction-size/" class="">Размер транзакции</a>
+    <a href="/transaction-size/" class="">Transaction Size</a>
   
 
         </li>
@@ -1482,7 +1430,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-2cc3faa5b078e8edfc892bc463882294" class="toggle"  />
     <label for="section-2cc3faa5b078e8edfc892bc463882294" class="flex justify-between">
-      <a href="/history/" class="">История</a>
+      <a href="/history/" class="">History</a>
     </label>
   
 
@@ -1498,7 +1446,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-11903f72dc1c8e68f0d748ad1bb6164d" class="toggle"  />
     <label for="section-11903f72dc1c8e68f0d748ad1bb6164d" class="flex justify-between">
-      <a href="/gf/" class="">Генезис-файлы</a>
+      <a href="/gf/" class="">The Genesis Files</a>
     </label>
   
 
@@ -1512,7 +1460,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/gf/genesis-intro/" class="">Пролог</a>
+    <a href="/gf/genesis-intro/" class="">Intro</a>
   
 
         </li>
@@ -1525,7 +1473,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/gf/genesis-1/" class="">Часть I: eCash Дэвида Чаума и зарождение мечты шифропанков</a>
+    <a href="/gf/genesis-1/" class="">Part I: How David Chaum’s eCash Spawned a Cypherpunk Dream</a>
   
 
         </li>
@@ -1538,7 +1486,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/gf/genesis-2/" class="">Часть II: Hashcash или как Адам Бэк разработал сердце Биткоина</a>
+    <a href="/gf/genesis-2/" class="">Part II: Hashcash or How Adam Back Designed Bitcoin’s Motor Block</a>
   
 
         </li>
@@ -1551,7 +1499,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/gf/genesis-3/" class="">Часть III: Если у Биткоина был прототип, то это были b-money Вэя Дая</a>
+    <a href="/gf/genesis-3/" class="">Part III: If Bitcoin Had a First Draft, Wei Dai’s B-Money Was It</a>
   
 
         </li>
@@ -1564,7 +1512,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/gf/genesis-4/" class="">Часть IV: Создавая Bit Gold, Сабо был в двух шагах от изобретения Биткоина</a>
+    <a href="/gf/genesis-4/" class="">Part IV: With Bit Gold, Szabo Was Inches Away From Inventing Bitcoin</a>
   
 
         </li>
@@ -1577,7 +1525,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/gf/genesis-5/" class="">Часть V: Как поиски цифровой наличности привели Хэла Финни к созданию RPOW (и не только)</a>
+    <a href="/gf/genesis-5/" class="">Part V: How Hal Finney’s Quest For Digital Cash Led To RPOW (And More)</a>
   
 
         </li>
@@ -1595,7 +1543,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/hal-finney/" class="">Хэл Финни — жизнь и смерть легенды движения шифропанков</a>
+    <a href="/hal-finney/" class="">Hal Finney — The Life And Death Of A Cypherpunk Legend</a>
   
 
         </li>
@@ -1608,7 +1556,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-and-me/" class="">Биткоин и я</a>
+    <a href="/bitcoin-and-me/" class="">Bitcoin and Me</a>
   
 
         </li>
@@ -1621,7 +1569,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-reformaciya/" class="">Биткоин-Реформация</a>
+    <a href="/bitcoin-reformation/" class="">The Bitcoin Reformation</a>
   
 
         </li>
@@ -1634,7 +1582,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-forks/" class="">Полная история консенсус-форков Биткоина</a>
+    <a href="/bitcoin-forks/" class="">A complete history of Bitcoin’s consensus forks</a>
   
 
         </li>
@@ -1647,7 +1595,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/analyzing-2013-fork/" class="">Анализ форка Биткоина 2013 года</a>
+    <a href="/analyzing-2013-fork/" class="">Analyzing the 2013 Bitcoin fork</a>
   
 
         </li>
@@ -1667,7 +1615,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-ac2daa2484c1be670f7cc1e0d8d82356" class="toggle"  />
     <label for="section-ac2daa2484c1be670f7cc1e0d8d82356" class="flex justify-between">
-      <a href="/philosophy/" class="">Философия</a>
+      <a href="/philosophy/" class="">Philosophy</a>
     </label>
   
 
@@ -1683,7 +1631,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-b11b531f912b5e92a8260d0a526b85b6" class="toggle"  />
     <label for="section-b11b531f912b5e92a8260d0a526b85b6" class="flex justify-between">
-      <a href="/chemu-ya-nauchilsya-u-bitcoina/" class="">Чему я научился у Биткоина?</a>
+      <a href="/what-i-learned-from-bitcoin/" class="">What I&#39;ve Learned From Bitcoin</a>
     </label>
   
 
@@ -1697,7 +1645,33 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/chemu-ya-nauchilsya-u-bitcoina/filosofskie-uroki-bitcoina/" class="">Часть1. Философские уроки Биткоина</a>
+    <a href="/what-i-learned-from-bitcoin-1/" class="">Part I. Philosophical Teachings of Bitcoin</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/what-i-learned-from-bitcoin-2/" class="">Part II. Economic Teachings of Bitcoin</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/what-i-learned-from-bitcoin-3/" class="">Part III. Technological Teachings of Bitcoin</a>
   
 
         </li>
@@ -1715,7 +1689,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/ne-shitcoin/" class="">Биткоин, не щиткоин</a>
+    <a href="/not-shitcoin/" class="">Why Bitcoin, Not Shitcoin</a>
   
 
         </li>
@@ -1728,7 +1702,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/neotemlemye-prava-sobstvennosti/" class="">Неотъемлемые права собственности</a>
+    <a href="/inalienable-property-rights/" class="">Inalienable Property Rights</a>
   
 
         </li>
@@ -1741,7 +1715,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/manifest-kriptoanarhista/" class="">Манифест криптоанархиста</a>
+    <a href="/crypto-anarchist-manifesto/" class="">The Crypto Anarchist Manifesto</a>
   
 
         </li>
@@ -1754,7 +1728,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/manifest-shifropanka/" class="">Манифест шифропанка</a>
+    <a href="/cypherpunks-manifesto/" class="">A Cypherpunk&#39;s Manifesto</a>
   
 
         </li>
@@ -1767,7 +1741,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/tyulpannaya-lihoradka/" class="">Биткоин — современная голландская тюльпанная лихорадка?</a>
+    <a href="/dutch-tulip-bubble/" class="">Is Bitcoin Like the Dutch Tulip Bubble?</a>
   
 
         </li>
@@ -1780,7 +1754,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/vse-moshenniki/" class="">Все — мошенники</a>
+    <a href="/everyones-a-scammer/" class="">Everyone&#39;s a Scammer</a>
   
 
         </li>
@@ -1793,7 +1767,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/svoboda-cennosti/" class="">Свобода ценности</a>
+    <a href="/freedom-of-value/" class="">The Freedom of Value</a>
   
 
         </li>
@@ -1806,7 +1780,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-meme/" class="">Биткоин — единственный реальный мем</a>
+    <a href="/bitcoin-meme/" class="">Bitcoin Is The Only Real Meme</a>
   
 
         </li>
@@ -1819,7 +1793,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/nol-i-bitcoin/" class="">Ноль и Биткоин</a>
+    <a href="/number-zero-and-bitcoin/" class="">The Number Zero and Bitcoin</a>
   
 
         </li>
@@ -1832,7 +1806,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/crypto-bro/" class="">Дорогие крипто- и фиат-бро</a>
+    <a href="/crypto-bro/" class="">Dear Crypto &amp; Fiat Bros</a>
   
 
         </li>
@@ -1845,7 +1819,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/boremsya-s-poddelnymi-bitcoin/" class="">Боремся с поддельными биткоинами</a>
+    <a href="/fighting-fake-bitcoin/" class="">Fighting Fake Bitcoin</a>
   
 
         </li>
@@ -1858,7 +1832,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bit%D1%81oin-eto-micelij/" class="">Биткоин — это мицелий</a>
+    <a href="/bitcoin-is-the-mycelium/" class="">Bitcoin is The Mycelium of Money</a>
   
 
         </li>
@@ -1871,7 +1845,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/pochemu-bitcoin-zhivoj-organizm/" class="">Доказательство жизни. Почему Биткоин — живой организм</a>
+    <a href="/proof-of-life/" class="">Proof of Life. Why Bitcoin is a Living Organism</a>
   
 
         </li>
@@ -1884,7 +1858,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/samaya-mirnaya-revolyuciya/" class="">Самая мирная революция</a>
+    <a href="/most-peaceful-revolution/" class="">A Most Peaceful Revolution</a>
   
 
         </li>
@@ -1897,7 +1871,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/o-bitcoin-vselennoj/" class="">О Биткоин-вселенной</a>
+    <a href="/bitcoin-universe/" class="">Bitcoin Universe</a>
   
 
         </li>
@@ -1910,7 +1884,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-dissidenty/" class="">Биткоин-диссиденты</a>
+    <a href="/bitcoin-dissidents/" class="">Bitcoin Dissidents</a>
   
 
         </li>
@@ -1923,7 +1897,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-svoboda/" class="">Биткоин = свобода</a>
+    <a href="/bitcoin-equals-freedom/" class="">Bitcoin Equals Freedom</a>
   
 
         </li>
@@ -1943,7 +1917,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-0ffd899989a7340537ceb8e2b6a04097" class="toggle"  />
     <label for="section-0ffd899989a7340537ceb8e2b6a04097" class="flex justify-between">
-      <a href="/future/" class="">Будущее</a>
+      <a href="/future/" class="">Future</a>
     </label>
   
 
@@ -1959,7 +1933,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-206fb3aae5266e1ff42aa0abc8ae8411" class="toggle"  />
     <label for="section-206fb3aae5266e1ff42aa0abc8ae8411" class="flex justify-between">
-      <a href="/ba/" class="">Биткоин-астрономия</a>
+      <a href="/ba/" class="">Bitcoin Astronomy</a>
     </label>
   
 
@@ -1973,7 +1947,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/ba/1/" class="">Постгипербиткоинизация</a>
+    <a href="/ba/1/" class="">Part I</a>
   
 
         </li>
@@ -1986,7 +1960,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/ba/2/" class="">Миллион крошечных миров</a>
+    <a href="/ba/2/" class="">Part II</a>
   
 
         </li>
@@ -1999,7 +1973,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/ba/3/" class="">Первый контакт</a>
+    <a href="/ba/3/" class="">Part III</a>
   
 
         </li>
@@ -2017,7 +1991,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/ej-bitcoin-pritormozi/" class="">Эй, Биткоин, притормози</a>
+    <a href="/hey-bitcoin-slow-down/" class="">Hey Bitcoin, Slow Down!</a>
   
 
         </li>
@@ -2030,7 +2004,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/apokalipsis/" class="">Сможет ли Биткоин пережить апокалипсис?</a>
+    <a href="/apocalypse/" class="">Can Bitcoin Survive An Apocalypse?</a>
   
 
         </li>
@@ -2043,7 +2017,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/bitcoin-i-teplovaya-energiya-okeanov/" class="">Биткоин и тепловая энергия океанов</a>
+    <a href="/bitcoin-and-oceans/" class="">Bitcoin and Ocean Thermal Energy</a>
   
 
         </li>
@@ -2063,7 +2037,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-94dfdc9d0099b419c9e2d6a83381dbe2" class="toggle"  />
     <label for="section-94dfdc9d0099b419c9e2d6a83381dbe2" class="flex justify-between">
-      <a href="/lightning/" class="">Лайтнинг</a>
+      <a href="/lightning/" class="">Lightning</a>
     </label>
   
 
@@ -2077,7 +2051,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/chto-takoe-laitning/" class="">Что такое Лайтнинг?</a>
+    <a href="/what-is-lightning-network/" class="">What is Lightning Network?</a>
   
 
         </li>
@@ -2090,7 +2064,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/lajtning-koshelki/" class="">Лайтнинг-кошельки</a>
+    <a href="/lightning-wallets/" class="">Lightning Wallets</a>
   
 
         </li>
@@ -2103,7 +2077,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/lajtning-adresa/" class="">Лайтнинг-адреса</a>
+    <a href="/how-lightning-address-works/" class="">How Lightning Address Works</a>
   
 
         </li>
@@ -2116,7 +2090,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/privatnost-v-lajtning/" class="">Приватность в сети Lightning</a>
+    <a href="/lightning-network-privacy/" class="">Lightning Network Privacy</a>
   
 
         </li>
@@ -2129,7 +2103,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/centralizovanna-li-set-lightning/" class="">Централизованна ли сеть Lightning?</a>
+    <a href="/is-lightning-centralized/" class="">Is Lightning centralized?</a>
   
 
         </li>
@@ -2142,7 +2116,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/mekhanizm-raboty-lightning/" class="">Механизм работы Lightning Network</a>
+    <a href="/lightning-network-explained/" class="">Lightning Network Explained</a>
   
 
         </li>
@@ -2155,7 +2129,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/problema-vhodyashchej-likvidnosti/" class="">Решение проблемы входящей ликвидности</a>
+    <a href="/inbound-liquidity-problem/" class="">Solutions to inbound liquidity problem</a>
   
 
         </li>
@@ -2180,7 +2154,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-334a33758c01abfe631e1e37dc0d1f40" class="toggle"  />
     <label for="section-334a33758c01abfe631e1e37dc0d1f40" class="flex justify-between">
-      <a href="/practice/" class="">Практика</a>
+      <a href="/practice/" class="">Practice</a>
     </label>
   
 
@@ -2196,7 +2170,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-a94c5b45bfdc8ef0dd89b00612026092" class="toggle"  />
     <label for="section-a94c5b45bfdc8ef0dd89b00612026092" class="flex justify-between">
-      <a href="/practice/buy/" class="">Покупка</a>
+      <a href="/practice/buy/" class="">Buy</a>
     </label>
   
 
@@ -2210,7 +2184,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/newbie-buy/" class="">Покупка и хранение биткоина для новичков</a>
+    <a href="/newbie-buy/" class="">Buy and Hodl Bitcoin for Beginners</a>
   
 
         </li>
@@ -2223,7 +2197,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/hodl-hodl/" class="">Покупка биткоина без KYC на Hodl Hodl</a>
+    <a href="/hodl-hodl/" class="">Buy noKYC Bitcoin with HodlHodl</a>
   
 
         </li>
@@ -2236,7 +2210,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/robosats/" class="">RoboSats: Приватный p2p обмен</a>
+    <a href="/robosats/" class="">RoboSats: Private P2P Exchange</a>
   
 
         </li>
@@ -2256,7 +2230,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-7e14ce7fc5fdbe001466044f77bdd564" class="toggle"  />
     <label for="section-7e14ce7fc5fdbe001466044f77bdd564" class="flex justify-between">
-      <a href="/practice/hodl/" class="">Хранение</a>
+      <a href="/practice/hodl/" class="">Hodl</a>
     </label>
   
 
@@ -2270,7 +2244,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/electrum/" class="">Кошелек Электрум</a>
+    <a href="/electrum/" class="">Electrum Bitcoin Wallet</a>
   
 
         </li>
@@ -2283,7 +2257,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/blue/" class="">Кошелек Blue</a>
+    <a href="/blue/" class="">Installing Blue Wallet</a>
   
 
         </li>
@@ -2296,7 +2270,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/seedsigner/" class="">SeedSigner: оффлайн-крепость для ваших биткоинов</a>
+    <a href="/seedsigner/" class="">SeedSigner: DIY Bitcoin Signing Device</a>
   
 
         </li>
@@ -2309,20 +2283,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/holodnyj-koshelek-iz-starogo-smartfona/" class="">Холодный кошелек из старого смартфона</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/coldcard/" class="">Что такое Coldcard?</a>
+    <a href="/coldcard/" class="">What is Coldcard?</a>
   
 
         </li>
@@ -2342,7 +2303,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-88cf9017cf07549621f025a2843cb148" class="toggle"  />
     <label for="section-88cf9017cf07549621f025a2843cb148" class="flex justify-between">
-      <a href="/practice/interact/" class="">Взаимодействие</a>
+      <a href="/practice/interact/" class="">Interact</a>
     </label>
   
 
@@ -2356,7 +2317,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/practice/bitcoin-node/" class="">Каждому следует запустить собственную Биткоин-ноду!</a>
+    <a href="/practice/bitcoin-node/" class="">Why You Should Run Your Own Bitcoin Node</a>
   
 
         </li>
@@ -2369,7 +2330,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/orangepilling-in-5-min/" class="">Оранжпиллинг за 5 минут</a>
+    <a href="/orangepilling-in-5-min/" class="">Orangepilling in 5 min</a>
   
 
         </li>
@@ -2382,7 +2343,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/5-tips-for-teaching-bitcoin/" class="">5 советов по обучению Биткоину</a>
+    <a href="/5-tips-for-teaching-bitcoin/" class="">5 tips for teaching Bitcoin</a>
   
 
         </li>
@@ -2402,7 +2363,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-32dccf00abb46a5281b7aae069126928" class="toggle"  />
     <label for="section-32dccf00abb46a5281b7aae069126928" class="flex justify-between">
-      <a href="/practice-privacy/" class="">Практики приватности</a>
+      <a href="/practice-privacy/" class="">Privacy</a>
     </label>
   
 
@@ -2418,7 +2379,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-ae30dbe7c31a834e8bfe23314d9a5ff6" class="toggle"  />
     <label for="section-ae30dbe7c31a834e8bfe23314d9a5ff6" class="flex justify-between">
-      <a href="/practice-privacy/dojo/" class="">Установка Биткоин-узла Dojo на x86</a>
+      <a href="/practice-privacy/dojo/" class="">Dojo x86 Bitcoin Node Guide</a>
     </label>
   
 
@@ -2432,7 +2393,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/practice-privacy/dojo-0/" class="">Введение</a>
+    <a href="/practice-privacy/dojo-0/" class="">Introduction</a>
   
 
         </li>
@@ -2445,7 +2406,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/practice-privacy/dojo-1/" class="">Установка Bitcoin Core и Tor</a>
+    <a href="/practice-privacy/dojo-1/" class="">Installing Bitcoin Core &amp; Tor</a>
   
 
         </li>
@@ -2458,7 +2419,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/practice-privacy/dojo-2/" class="">Установка индексатора Fulcrum</a>
+    <a href="/practice-privacy/dojo-2/" class="">Installing Fulcrum Indexer</a>
   
 
         </li>
@@ -2471,7 +2432,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/practice-privacy/dojo-3/" class="">Установка блокчейн-обозревателя Mempool</a>
+    <a href="/practice-privacy/dojo-3/" class="">Installing Mempool Explorer</a>
   
 
         </li>
@@ -2484,7 +2445,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/practice-privacy/dojo-4/" class="">Установка Samourai Dojo</a>
+    <a href="/practice-privacy/dojo-4/" class="">Installing Samourai Dojo</a>
   
 
         </li>
@@ -2497,7 +2458,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/practice-privacy/dojo-5/" class="">Конфигурация межсетевого экрана</a>
+    <a href="/practice-privacy/dojo-5/" class="">Firewall Configuration</a>
   
 
         </li>
@@ -2510,7 +2471,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/practice-privacy/dojo-6/" class="">Установка обновлений пакетов</a>
+    <a href="/practice-privacy/dojo-6/" class="">Installing Package Updates</a>
   
 
         </li>
@@ -2528,7 +2489,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/practice-privacy/ronindojo/" class="">Установка RoninDojo на x86</a>
+    <a href="/practice-privacy/ronindojo/" class="">RoninDojo x86 Installation Guide</a>
   
 
         </li>
@@ -2541,7 +2502,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/grapheneos/" class="">GrapheneOS: Избавляемся от слежки Google на смартфоне</a>
+    <a href="/grapheneos/" class="">GrapheneOS: De-Google your phone</a>
   
 
         </li>
@@ -2561,7 +2522,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-9425a98499a6d50bed8efd403e1db980" class="toggle"  />
     <label for="section-9425a98499a6d50bed8efd403e1db980" class="flex justify-between">
-      <a href="/practice/lightning/" class="">Лайтнинг на практике</a>
+      <a href="/practice/lightning/" class="">Lightning</a>
     </label>
   
 
@@ -2575,7 +2536,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/phoenix/" class="">Кошелек Phoenix</a>
+    <a href="/phoenix/" class="">Phoenix: The Non-Custodial Lightning Wallet</a>
   
 
         </li>
@@ -2588,7 +2549,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/lnbits/" class="">LNbits – швейцарский нож среди лайтнинг-приложений</a>
+    <a href="/lnbits/" class="">LNbits: A Swiss knife among Lightning apps</a>
   
 
         </li>
@@ -2601,7 +2562,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/alby-i-nostr/" class="">Alby и Nostr</a>
+    <a href="/alby-and-nostr/" class="">Alby and Nostr</a>
   
 
         </li>
@@ -2614,7 +2575,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/zapplanner/" class="">Подписки с помощью Лайтнинг</a>
+    <a href="/zapplanner/" class="">Recurring Lightning Payments</a>
   
 
         </li>
@@ -2627,7 +2588,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/lntips/" class="">Телеграм-бот @LightningTipBot</a>
+    <a href="/lntips/" class="">Telegram bot @LightningTipBot</a>
   
 
         </li>
@@ -2640,7 +2601,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/ochishchaem-bitcoin-cherez-lajtning/" class="">Очищаем биткоины через сеть Лайтнинг</a>
+    <a href="/lightning-liquidity-management-guide/" class="">Lightning Liquidity Management Guide</a>
   
 
         </li>
@@ -2653,20 +2614,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/likvidnost-v-lajtning/" class="">Руководство по управлению ликвидностью в сети Lightning</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/mutiny/" class="">Кошелек Mutiny</a>
+    <a href="/mutiny/" class="">Starting with Mutiny Wallet</a>
   
 
         </li>
@@ -2691,84 +2639,12 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-d286fdc9558f9b3466aa6f3d4805be77" class="toggle"  />
     <label for="section-d286fdc9558f9b3466aa6f3d4805be77" class="flex justify-between">
-      <a href="/rabbithole/" class="">Кроличья нора</a>
+      <a href="/rabbithole/" class="">Rabbithole</a>
     </label>
   
 
           
   <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/books/" class="">Книги</a>
-  
-
-          
-  <ul>
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/videos/" class="">Видео</a>
-  
-
-          
-  <ul>
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/audiobooks/" class="">Аудиокниги</a>
-  
-
-          
-  <ul>
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/pods/" class="">Подкасты</a>
-  
-
-          
-  <ul>
-    
-  </ul>
-
-        </li>
-      
     
   </ul>
 
@@ -2799,37 +2675,9 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/posts/" class="">Блог</a>
-  
-
-        
-    
-  </li>
-  
-  <li>
-    
-        
-  
-  
-
-  
-    <a href="/calendar/" class="">Биткоин-календарь</a>
-  
-
-        
-    
-  </li>
-  
-  <li>
-    
-        
-  
-  
-
-  
     <input type="checkbox" id="section-9329cf488076ba9f91ca728aef24f607" class="toggle"  />
     <label for="section-9329cf488076ba9f91ca728aef24f607" class="flex justify-between">
-      <a href="/contribute/" class="">Принять участие</a>
+      <a href="/contribute/" class="">Contribute</a>
     </label>
   
 
@@ -2844,33 +2692,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/syntax/" class="">Оформление статей</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/github/" class="">Как добавить статью?</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/obsidian/" class="">Публикация статей через Obsidian</a>
+    <a href="/github/" class="">Adding an Article</a>
   
 
         </li>
@@ -2889,7 +2711,21 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/feedback/" class="">Обратная связь</a>
+    <span>Blog</span>
+  
+
+        
+    
+  </li>
+  
+  <li>
+    
+        
+  
+  
+
+  
+    <a href="/feedback/" class="">Feedback</a>
   
 
         
@@ -2967,46 +2803,14 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>SHA256 и майнинг в сети Биткоин</strong>
+  <strong>SHA256 and Bitcoin Mining Walkthrough</strong>
 
   <label for="toc-control">
-    
-    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
     
   </label>
 </div>
 
 
-  
-  <aside class="hidden clearfix">
-    
-  
-<nav id="TableOfContents">
-  <ul>
-    <li>
-      <ul>
-        <li><a href="#хэш-функции">Хэш-функции</a></li>
-        <li><a href="#майнинг">Майнинг</a></li>
-        <li><a href="#выигрыш-блока">Выигрыш блока</a></li>
-        <li><a href="#корректировка-сложности">Корректировка сложности</a></li>
-        <li><a href="#халвинг">Халвинг</a></li>
-        <li><a href="#комиссии-за-транзакции">Комиссии за транзакции</a></li>
-        <li><a href="#может-ли-блок-быть-перезаписан">Может ли блок быть перезаписан?</a></li>
-        <li><a href="#что-произойдет-если-два-майнера-одновременно-найдут-блок">Что произойдет, если два майнера одновременно найдут блок?</a></li>
-        <li><a href="#приложение">Приложение</a>
-          <ul>
-            <li><a href="#почему-блок-майнера-занявшего-второе-место-является-недействительным">Почему блок майнера, занявшего второе место, является недействительным</a></li>
-            <li><a href="#поддержите-переводчика">Поддержите переводчика</a></li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-  </ul>
-</nav>
-
-
-
-  </aside>
   
  
       </header>
@@ -3023,219 +2827,204 @@ https://github.com/alex-shpak/hugo-book
 
 <h1>
     
-    Как SHA256 и майнинг защищают сеть Биткоина
+    How SHA256 And Mining Protect The Bitcoin Network
     
 </h1>
 <div class="pageDate">
-    24 февраля 2022 г.
+    February 24, 2022
 </div>
 
-  <article class="markdown"><p>Как Биткоин защищен с помощью энергии? И что такое &ldquo;нонс&rdquo;? На эти и другие вопросы ответит эта статья.</p>
+  <article class="markdown"><p>How is Bitcoin defended by energy? And what is a nonce? These questions and more are answered within!</p>
 <blockquote class="book-hint btc">
-  <p>Перевод <a href="https://bitcoinmagazine.com/technical/how-mining-protects-the-bitcoin-network">статьи</a> <a href="https://twitter.com/parman_the">Arman The Parman</a>, опубликованной в Bitcoin Magazine.</p>
-<p><a href="/contribute">Поддержать проект</a>.</p>
+  <p>This article by <a href="https://twitter.com/parman_the">Arman The Parman</a> was published in <a href="https://bitcoinmagazine.com/technical/how-mining-protects-the-bitcoin-network">Bitcoin Magazine</a>.</p>
+<p><a href="/contribute/">Contribute</a>.</p>
 
 </blockquote>
 
-<p>То, как работает майнинг, просто завораживает. Когда я объясняю это людям, мне нравится видеть их лица в тот момент, когда у них сносит крышу. Я объясню процесс майнинга в сегодняшней статье, но знайте, что я представляю себе ваши лица, когда ваши умы взрываются!</p>
-<p>Я начну с хэш-функций. Без хэш-функций Биткоин был бы невозможен. Позвольте мне сначала объяснить, что это такое, не только для того, чтобы вы могли покозырять на вечеринках, но и потому, что это имеет фундаментальное значение для понимания того, как работает Биткоин под капотом – как осуществляются биткоин-транзакции, но, в особенной степени, как майнинг обеспечивает безопасность сети. Если вам интересно узнать, как вычислить хэш SHA256 с помощью ручки и бумаги, ознакомьтесь <a href="https://armantheparman.com/sha256/">это руководство</a>.</p>
-<p>Чтобы извлечь пользу из Биткоина, не нужно понимать, как он работает, точно так же, как не нужно понимать, как работает TCP/IP, чтобы пользоваться Интернетом. Но все-таки прочтите эту статью, потому что это довольно интересно, и я обещаю, что понять принципы майнинга будет не сложно.</p>
-<h2 id="хэш-функции">
-  Хэш-функции
-  <a class="anchor" href="#%d1%85%d1%8d%d1%88-%d1%84%d1%83%d0%bd%d0%ba%d1%86%d0%b8%d0%b8">#</a>
+<p>How mining works is fascinating. When I explain it to people, I enjoy seeing their face the moment their mind is blown. I’ll explain it here, but just know, I’m imagining all your faces as your minds blow!</p>
+<p>I have to start with hash functions. Without hash functions, Bitcoin would not be possible. Let me explain what they are first, not only so you can sound cool at parties, but also because it’s fundamental to understanding how Bitcoin works — particularly mining but also transactions — under the hood <a href="https://armantheparman.com/sha256/">(If interested to learn how to perform a SHA256 hash with pen and paper, see this guide)</a>.</p>
+<p>You don’t need to understand how Bitcoin works in order to benefit from it, just like how you don’t need to understand how TCP/IP works to use the internet. But do go on, because it’s quite interesting and I’ll make it easy to understand, I promise.</p>
+<h2 id="hash-functions">
+  Hash Functions
+  <a class="anchor" href="#hash-functions">#</a>
 </h2>
-<p>Начнем со схемы, которую я объясню ниже&hellip;</p>
+<p>Let’s start with a schematic which I’ll explain below…</p>
 <div class="imageWrapper">
-    <img src="/img/mining/02-ru.png">
-<p><em>(Источник изображения: <a href="https://twitter.com/jirols_btc">@jirols_btc</a>)</em></p>
+    <img src="/img/mining/02.webp">
+<p><em>(Image by <a href="https://twitter.com/jirols_btc">@jirols_btc</a>)</em></p>
 </div>
-<p>Слева – вход, в центре – функция, а справа – выход. На входе могут быть любые данные, лишь бы они были цифровыми. Они могут быть любого объема, до тех пор пока ваш компьютер сможет их обработать. Данные передаются в функцию SHA256. Функция принимает данные и вычисляет случайное число, но с опредёленными свойствами (о них мы поговорим позже).</p>
-<p>Первый алгоритм безопасного хэширования (Secure Hash Algorithm – SHA) был изначально <a href="https://ru.wikipedia.org/wiki/SHA-1">разработан АНБ</a>, и сейчас существует множество его различных версий (в Биткоине используется SHA256). Это набор инструкций по перемешиванию данных очень сложным, но определенным способом. Инструкции по хэшированию не являются секретом, и это даже можно сделать вручную, хотя процесс весьма утомителен.</p>
-<p>Данные, пропущенные через алгоритм SHA256 на выходе представляют собой 256-битное число.</p>
-<p><em>256-битное число может быть представлено в двоичном формате с использованием 256 цифр. Двоичный формат означает, что значение представлено двумя символами, либо 0, либо 1. Двоичные числа можно преобразовать в любой другой формат, например, в десятичный, с которым все мы хорошо знакомы.</em></p>
-<p>Хотя функция возвращает 256-разрядное двоичное число, значение обычно выражается в шестнадцатеричном формате, длиной 64 цифры.</p>
-<p><em>Шестнадцатеричная система означает, что вместо 10 возможных символов, к которым мы привыкли в десятичной системе (от 0 до 9), используется 16 символов (привычные нам десять – 0-9, плюс буквы a, b, c, d, e и f, которым присваиваются значения от 11 до 15). Например, чтобы представить десятичное значение 15 в шестнадцатеричной системе, мы просто напишем &ldquo;f&rdquo;. Если вам понадобится более подробная информация на эту тему, ее можно получить в интернете, бегло поискав в Google.</em></p>
-<p>Чтобы продемонстрировать SHA256 в действии, я могу взять число 1 и прогнать его через <a href="https://emn178.github.io/online-tools/sha256.html">онлайн-калькулятор расчета хэшей</a>, получив следующий результат (в шестнадцатеричном виде):</p>
+<p>On the left is the input, the center is the function, and on the right is the output. The input can be any data, as long as it’s digital. It can be of any size, provided your computer can handle it. The data is passed to the SHA256 function. The function takes the data and calculates a random-looking number, but with special properties (discussed later).</p>
+<p>The first Secure Hash Algorithm (SHA) was originally <a href="https://en.wikipedia.org/wiki/SHA-1">developed by the NSA</a> and there are many different versions now (Bitcoin uses SHA256). It’s a set of instructions for how to jumble up the data in a very complicated but specified way. The instructions are not a secret and it’s even possible to do it by hand, but it is very tedious.</p>
+<p>For SHA256, the output is a 256-bit number (not a coincidence).</p>
+<p><em>A 256-bit number means a binary number 256 digits long. Binary means the value is represented with two symbols, either 0 or 1. Binary numbers can be converted to any other format, for example decimal numbers, which are what we are familiar with.</em></p>
+<p>Although the function returns a 256-digit binary number, the value is usually expressed in hexadecimal format, 64 digits long.</p>
+<p><em>Hexadecimal means that instead of 10 possible symbols like we are used to with decimal (0 to 9), we have 16 symbols (The ten we are used to, 0-9, plus the letters a, b, c, d, e, and f; which have the values 11 to 15). As an example, to represent the value of decimal 15 in hexadecimal, we just write “f” and it’s the same value. There’s plenty of information available online with a quick Google search if you need more elaboration.</em></p>
+<p>To demonstrate SHA256 in action, I can take the number 1 and run it through an <a href="https://emn178.github.io/online-tools/sha256.html">online hash calculator</a>, and got this output (in hexadecimal):</p>
 <div class="imageWrapper">
     <img src="/img/mining/03.webp">
 </div>
-<p>Верхняя область – входные данные, нижняя – результат хэширования.</p>
-<p>Обратите внимание, что все компьютеры в мире использующие одни и те же входные данные и функцию SHA256, выдадут тот же результат.</p>
-<p>Если преобразовать шестнадцатеричное число в десятичное, то получится (обратите внимание, что для записи требуется больше цифр):</p>
+<p>The top box is the input, the bottom box is the resulting output.</p>
+<p>Note that all computers in the world will produce the same output, provided the input is the same and the SHA256 function is used.</p>
+<p>The hexadecimal number output, if converted to decimal, is (notice it takes more digits to write):</p>
 <p>48,635,463,943,209,834,798,109,814,161,294,753,926,839,975,257,569,795,305,637,098,542,720,658,922,315</p>
-<p>А при переводе в двоичную систему это выглядит так:</p>
+<p>And converted to binary it is:</p>
 <p>11010111000011010110010011100111111111100110100111111001110000110011101011010111000000001001110111111110101101000111111010101110100011110101101101001001110101010100010001011110001110101001001110000000001111001010010110111011011011110000111010110110100101111010111001101011100110101110011010111001101011100110101110011010111001101011100111</p>
-<p>Просто для интереса, вот то же самое значение в <a href="https://ru.wikipedia.org/wiki/Base64">base 64</a>:</p>
+<p>Just out of interest, here is the same value in <a href="https://en.wikipedia.org/wiki/Base64">base 64</a>:</p>
 <p>1w1k5/5p+cM61wCd/rR+ro9bSdVEXjqTgDylu28OtpY=</p>
-<p>Наименьшее возможное значение, которое может вернуть SHA256, – это ноль, но ДЛИНА строки все равно равна 256 битам. Вот как выглядит ноль:</p>
+<p>Note that the smallest possible value SHA256 could return is zero, but the LENGTH is still 256 bits. This is how zero is represented:</p>
 <p>0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</p>
-<p>А наибольшее возможное значение:</p>
+<p>And the largest possible value is:</p>
 <p>1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111</p>
-<p>В десятичной системе это:</p>
+<p>In decimal, that’s:</p>
 <p>115,792,089,237,316,195,423,570,985,008,687,907,853,269,984,665,640,564,039,457,584,007,913,129,639,935</p>
-<p>В шестнадцатеричной:</p>
+<p>In hexadecimal, it is:</p>
 <p>FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF</p>
-<p>Здесь ровно 64 символа &ldquo;F&rdquo;.</p>
-<p>Ноль в шестнадцатеричной системе может быть записан как один единственный ноль, но для вывода хэша их нужно 64, чтобы соблюсти требование фиксированного размера вывода:</p>
+<p>Note there are exactly 64 F’s.</p>
+<p>Zero in hexadecimal can simply be written as one single zero, but for hash output, it’s 64 of them to keep to the requirement of a fixed size output:</p>
 <p>0000000000000000000000000000000000000000000000000000000000000000</p>
-<p>Ниже приведены некоторые факты о хэш-функции, которые важно знать:</p>
+<p>Here is a summary of some facts about the hash function that are vital to appreciate:</p>
 <ul>
-<li>Вход не может быть определен из выхода (имея результат хэширования, нет возможности вычислить входные данные)</li>
-<li>Входные данные могут быть любой длины</li>
-<li>Выходные данные всегда имеют одинаковую длину</li>
-<li>Выходные данные всегда будут неизменными, если вы предоставите одинаковые входные данные</li>
-<li>Любое изменение входных данных, сколь бы незначительным оно ни было, приведет к непредсказуемым и кардинально отличающимся данным на выходе</li>
-<li>Результат кажется случайным, но на самом деле он детерминирован (то есть был вычислен и является воспроизводимым)</li>
-<li>Выход нельзя предсказать. Его можно только вычислить, а это требует ощутимого объема компьютерных вычислений (или часов работы с карандашом и бумагой – не делайте этого!).</li>
+<li>The input cannot be determined from the output</li>
+<li>The input can be any length</li>
+<li>The output is always the same length</li>
+<li>The output will always be reproduced identically if you provide the same input.</li>
+<li>Any change to the input, no matter how small, will cause an unpredictable and wildly different output</li>
+<li>The output is seemingly random, but is actually deterministic (meaning it is calculated and reproducible)</li>
+<li>The output cannot be predicted. It can only be calculated and this takes a measurable amount of work by a computer (and hours with pencil and paper! Don’t do it.)</li>
 </ul>
-<p>Теперь, когда вы поняли основную концепцию того, что такое хэш, вы сможете понять принцип работы майнинга Биткоина.</p>
-<p>Но прежде чем двигаться дальше, я рекомендую вам открыть онлайн-калькулятор расчета хэшей, немного поиграть с ним и проверить на практике то, что я рассказал о хэш-функциях. Я советую <a href="https://emn178.github.io/online-tools/sha256.html">этот калькулятор</a>.</p>
-<h2 id="майнинг">
-  Майнинг
-  <a class="anchor" href="#%d0%bc%d0%b0%d0%b9%d0%bd%d0%b8%d0%bd%d0%b3">#</a>
+<p>Now that you understand the basic concept of what a hash is, you can understand the explanation of how Bitcoin mining works.</p>
+<p>But before you move on, I recommend you go to an online hash calculator and play with it a little and test for yourself what I’ve said about hash functions. <a href="https://emn178.github.io/online-tools/sha256.html">I like this one.</a></p>
+<h2 id="mining">
+  Mining
+  <a class="anchor" href="#mining">#</a>
 </h2>
-<p>Я начну с демонстрации концепции, откуда берет начало &ldquo;доказательство работы&rdquo; (Proof-of-Work) в Биткоине.</p>
-<p>Откройте онлайн-калькулятор расчета хэшей и введите: “I am creating 50 bitcoins and paying myself this amount.” <em>(&ldquo;Я создаю 50 биткоинов и плачу себе эту сумму&rdquo;).</em></p>
-<p>Введите эту фразу без изменений, с учетом регистра, включая точку. Вы должны получить следующее сообщение:</p>
+<p>I will start by demonstrating a concept of work, which is where “proof-of-work” in Bitcoin comes from.</p>
+<p>Go to the online hash calculator and type “I am creating 50 bitcoins and paying myself this amount.”</p>
+<p>Type it exactly, case sensitive, including the full stop. You should get this output:</p>
 <div class="imageWrapper">
     <img src="/img/mining/04.webp">
 </div>
-<p>Теперь давайте создадим правило, согласно которому для того, чтобы сообщение о платеже было действительным, нужно, чтобы хэш начинался с одного нуля. Для этого нам нужно как-то изменить входные данные. Но, как вы уже поняли, невозможно предсказать, каким будет выход для разных входных данных. Что же мы можем изменить, чтобы хэш начинался с нуля?</p>
-<p>Нам придется добавлять данные методом проб и ошибок. Но мы также не хотим менять смысл входного сообщения. Поэтому создадим поле (выделенный раздел) под названием &ldquo;нонс&rdquo; <em>(от английского <strong>nonce</strong> – прим. пер.)</em>, которое будет содержать бессмысленное значение.</p>
-<p>Термин &ldquo;нонс&rdquo; предположительно происходит от “number only used once” (&ldquo;число, используемое только один раз&rdquo;).</p>
-<p>Обратите внимание, как простое добавление <code>Nonce:</code> в качестве заголовка дополнительного поля изменяет результат хэширования.</p>
+<p>Now, let’s create a rule that says for this payment message to be valid, we need the hash to start with one zero. To do that, we have to change the input somehow. But, as you’ve learned, it’s not predictable what the output would be for a given input. What modification can we make to ensure a hash starting with zero?</p>
+<p>We have to add data using trial-and-error. But we also don’t want to change the meaning of the input message. So, let’s create a field (an allocated section) called a “nonce” which will hold a nonsense value.</p>
+<p>The word “Nonce” is supposed to be derived from “number only used once,” but I don’t see it.</p>
+<p>Notice below how just adding “Nonce:” as an extra field heading changes the hash output.</p>
 <div class="imageWrapper">
     <img src="/img/mining/05.webp">
 </div>
-<p>Вывод по-прежнему не начинается с &ldquo;0&rdquo;, поэтому давайте добавим немного данных (я добавил &ldquo;x&rdquo;):</p>
+<p>The output still doesn’t start with a “0”, so let’s add some nonsense (I added a meaningless “x”):</p>
 <div class="imageWrapper">
     <img src="/img/mining/06.webp">
 </div>
-<p>Вывод по-прежнему не начинается с нуля. Я добавил еще несколько символов, пока хэш не стал начинаться с нуля:</p>
+<p>It still doesn’t start with a zero. I tried some more characters until the hash started with a zero:</p>
 <div class="imageWrapper">
     <img src="/img/mining/07.webp">
 </div>
-<p>Вот так. Теперь, согласно произвольным правилам, которые я установил для этой воображаемой версии Биткоина, текст в окне для входных данных – это действительный блок с одной транзакцией, заплатившей мне 50 биткоинов.</p>
-<p><em>Блоки биткоина – это, по сути, страницы бухгалтерской книги. Каждый блок пронумерован и создает новые биткоины, а также записывает транзакции между пользователями. Эти записи – место, где хранятся биткоины.</em></p>
-<p>Теперь новое правило. В следующий блок должен быть включен хэш предыдущего блока. Я немного усложню задачу и добавлю еще несколько полей, чтобы приблизить вид наших импровизированных блоков к настоящим блокам Биткоина.</p>
+<p>There we go. Now, according to the arbitrary rules I set for this pretend version of Bitcoin, the text in the input window is a valid block with a single transaction paying me 50 bitcoin.</p>
+<p><em>Note that Bitcoin blocks are essentially pages of a ledger. Each block is numbered and creates new bitcoin, along with listing the transactions between users. This record is where bitcoin lives.</em></p>
+<p>Now a new rule. For the next block, the hash of the previous block must be included. I’ll add a little complexity and add a few more fields to approach what a real Bitcoin block has.</p>
 <div class="imageWrapper">
     <img src="/img/mining/08.webp">
 </div>
-<p>Хэш начинается с &ldquo;f&rdquo;, а не с &ldquo;0&rdquo;, поэтому мне придется попробовать несколько значений в поле нонс:</p>
+<p>The hash starts with an “f” not “0”, so I’ll have to try some values in the nonce field:</p>
 <div class="imageWrapper">
     <img src="/img/mining/09.webp">
 </div>
-<p>На этот раз мне повезло больше, и я нашел подходящий нонс всего после четырех попыток. Напомню, что для первого блока потребовалось 22 попытки. Здесь есть некоторая случайность, но в целом найти подходящий хэш не так уж сложно, если мы пытаемся получить только один ноль в начале. Для первой цифры хэша существует 16 возможных значений, поэтому у меня есть 1 шанс к 16, что любое изменение, которое я внесу в поле для входных данных, приведет к тому, что первой цифрой хэша будет &ldquo;0&rdquo;.</p>
-<p>Обратите внимание, что поля в блоке Биткоина выглядят примерно так же, но есть и другие детали, которые я не стал добавлять. Это просто иллюстрация, а не детальная модель того, как выглядит блок Биткоина.</p>
-<p>Я добавлю поле времени в следующий блок, так как оно мне нужно для объяснения &ldquo;корректировки сложности&rdquo;:</p>
+<p>This time I was luckier and found a suitable nonce after only four tries. Recall that for the first block it took 22 tries. There is some randomness here, but generally it’s not too difficult to find a valid hash if all we’re trying to get is one zero. There are 16 possible values for the first hash digit so I have a 1 in 16 chance that any modification I make to the input field will result in the first hash digit being “0.”</p>
+<p>Note that Bitcoin’s fields are like this, but there’s more detail that I haven’t added. This is just to illustrate a point, not necessarily to detail exactly what a Bitcoin block looks like.</p>
+<p>I will add a time field to the next block as I need that to explain the “difficulty adjustment” next:</p>
 <div class="imageWrapper">
     <img src="/img/mining/10.webp">
 </div>
-<p>Выше представлен блок номер три. Он включает в себя хэш предыдущего блока, а теперь я также начал включать в него время. Найденный мною нонс успешно заставил хэш начинаться с нуля (я просто продолжал добавлять &ldquo;1&rdquo;, пока цель хэширования не была достигнута).</p>
-<p>Я полагаю, предоставленной информации достаточно, чтобы начать объяснять несколько интересных концепций, в контексте блокчейна Биткоина и майнинга.</p>
-<h2 id="выигрыш-блока">
-  Выигрыш блока
-  <a class="anchor" href="#%d0%b2%d1%8b%d0%b8%d0%b3%d1%80%d1%8b%d1%88-%d0%b1%d0%bb%d0%be%d0%ba%d0%b0">#</a>
+<p>Above is block number three. It includes the previous block’s hash and now I’ve also started to include the time. The nonce I found successfully made the hash start with a zero (I just kept typing a “1” until the hash target was met).</p>
+<p>There’s enough here now that I can start explaining a few interesting concepts about the Bitcoin <a href="https://bitcoinmagazine.com/guides/what-is-blockchain">blockchain</a> and mining.</p>
+<h2 id="winning-a-block">
+  Winning A Block
+  <a class="anchor" href="#winning-a-block">#</a>
 </h2>
-<p>Процесс майнинга является конкурентным. Тот, кто первым производит действительный блок, получает установленное за него вознаграждение. Майнер, добывший блок с тем же номером немного позже, не получает ничего – этот блок отклоняется. Объяснять, почему это так, сейчас слишком утомительно, поэтому я расскажу об этом в <a href="/mining-walkthrough/#%d0%bf%d1%80%d0%b8%d0%bb%d0%be%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5">приложении ниже</a>.</p>
-<p>После того как блок 3 найден и передан всем узлам Биткоина, все майнеры прекращают работу над тем, что было бы их версией блока 3. Они переносят хэш блока 3 в новый блок и начинают работать над поиском подходящего нонса для блока 4. Победитель публикует результат, после чего все начинают работать над пятым блоком и т. д.</p>
-<p>С каждым блоком создаются новые биткоины, которые в совокупности составляют общее предложение на данный момент. Если майнеров много, то по статистике мы должны ожидать, что блоки будут создаваться быстрее, а значит, и биткоины будут производиться быстрее. Проблема, верно?</p>
-<p>Стремясь к ограниченному предложению Биткоина, обладающему предсказуемой эмиссией с течением времени, Сатоши Накамото ввел отрицательную обратную связь, чтобы поддерживать темп выпуска блоков на отметке около 10 минут. Как? Попробуйте придумать решение сами. Остановитесь на мгновение и подумайте, сможете ли вы придумать такое же гениальное решение, а когда сдадитесь, читайте дальше.</p>
-<p><em>УЗЛЫ: Я упоминаю &ldquo;действительные&rdquo; блоки. Что? Кто их проверяет? Валидность блоков проверяют узлы Биткоина. Узел Биткоина <strong>хранит копию блокчейна</strong>, актуальную на данный момент, и, следуя набору правил, проверяет, соответствуют ли новые блоки правилам. Узел отклоняет блоки, которые не соответствуют правилам протокола Биткоин. Где указаны эти правила? В коде. Компьютер, на котором запущен код Биткоина, является узлом, хранящим в том числе и правила протокола.</em></p>
-<h2 id="корректировка-сложности">
-  Корректировка сложности
-  <a class="anchor" href="#%d0%ba%d0%be%d1%80%d1%80%d0%b5%d0%ba%d1%82%d0%b8%d1%80%d0%be%d0%b2%d0%ba%d0%b0-%d1%81%d0%bb%d0%be%d0%b6%d0%bd%d0%be%d1%81%d1%82%d0%b8">#</a>
+<p>The mining process is competitive. Whoever produces a valid block first gets to pay themselves a set block reward. A miner that produces the same block number a bit later gets nothing — that block is rejected. Explaining why that is will cause too much of a diversion now, so I’ll explain it in the appendix.</p>
+<p>After block three is found and broadcasted to everybody (all the Bitcoin nodes), all the miners stop working on what would have been their version of block three. They begin to build on top of that successful block three (by pulling its block hash forward into a new block) and start working on finding a suitable nonce for block four. The winner publishes the result and then everyone starts working on block five, etc.</p>
+<p>With each block, new bitcoin are being created and collectively make up the total supply so far. If there are many miners, then statistically we should expect that blocks will be produced faster, and therefore bitcoin will be created faster. Problem, right?</p>
+<p>Seeking a limited supply of bitcoin with a predictable issuance over time, Satoshi Nakamoto thought of this problem and introduced a negative feedback loop to keep block production at 10-minute intervals on average. How? See if you can think of a way. Pause for a moment and ponder — see if you can come up with the same genius solution and read on when you give up.</p>
+<p><em>NODES: I mention “valid” blocks. So what? Who’s checking? The Bitcoin nodes are. A Bitcoin node <strong>keeps a copy of the blockchain</strong> so far and follows a set of rules to check that new blocks are within the rules and reject those that aren’t. Where are the rules? In the code. A computer that downloads the Bitcoin code is a node.</em></p>
+<h2 id="the-difficulty-adjustment">
+  The Difficulty Adjustment
+  <a class="anchor" href="#the-difficulty-adjustment">#</a>
 </h2>
-<p>Среднее время создания новых блоков Биткоина рассчитывается каждым узлом через каждые 2016 блоков (вот почему необходимо поле, указывающее время). Это часть протокола и правил, которым следуют узлы. Формула применяется для корректировки количества нулей, с которых должен начинаться хэш каждого действительного блока.</p>
-<p><em>Строго говоря, корректируется не количество нулей, а целевое значение (target), ниже которого должен быть хэш, но, используя нули в начале хэша, происходящее проще объяснить.</em></p>
-<p>Если блоки создаются слишком быстро, то цель хэширования корректируется в соответствии с заранее установленными правилами, которым все узлы следуют одинаково (это прописано в их коде).</p>
-<p>Упрощая для примера, скажем, что я не единственный участник этой вымышленной сети и за создание блоков со мной соревнуются другие люди. Блоки начинают появляться слишком быстро, и теперь, согласно вымышленному расчету, чтобы четвертый блок считался действительным, его хэш должен начинаться с двух нулей, а не с одного.</p>
-<p>Мне потребуется немного больше времени, чтобы получить два нуля в начале хэша, но не забывайте, что помимо меня хэш подбирает множество других участников сети, поэтому общее время, затрачиваемое каждым на поиск блока, не превышает заданного.</p>
-<p>Вот следующий блок:</p>
+<p>The average time to create new Bitcoin blocks is calculated by every node every 2016 blocks (this is why the time field is needed). This is part of the protocol and rules that the nodes follow. A formula is applied to adjust the number of zeros each block hash must start with in order to be valid.</p>
+<p><em>Strictly, it’s not the number of zeros that is adjusted but a target value the hash has to be below, but thinking of leading zeros is simpler to explain.</em></p>
+<p>If blocks are being produced too fast, then the hash target is adjusted according to pre-defined rules that all nodes follow identically (it’s in their code).</p>
+<p>Keeping it simple for my example, let’s say other people are competing with me, blocks are happening too quickly, and now the fourth block needs two zeros instead of one, according to an imaginary calculation.</p>
+<p>It’s going to take me a bit longer to get two zeros, but we’re imagining that there are many other people competing with me so the total time taken for anyone to find a block is kept to a target.</p>
+<p>Here is the next block:</p>
 <div class="imageWrapper">
     <img src="/img/mining/11.webp">
 </div>
-<p>Обратите внимание на время. С момента предыдущего блока прошло более 10 минут (я просто указал выдуманное время для примера). Цель в 10 минут является вероятностной; никогда не известно, когда именно будет найден следующий блок.</p>
-<p>Я с минуту возился с блоком, пока не появились два нуля. Это было в геометрической прогрессии сложнее, чем найти хэш с одним нулём в начале. Шанс найти два нуля подряд составляет 1 к 16<sup>2</sup>, или 1 к 256.</p>
-<p>Если все больше людей будут участвовать в майнинге и соревновании за новые биткоины, то в конце концов потребуются три нуля.</p>
-<p>Я только что просмотрел последний реальный блок Биткоина, который содержит хэш предыдущего блока. Хеш был таким:</p>
+<p>Notice the time. More than 10 minutes passed since the previous block (I just made the time up to demonstrate). The 10-minute target is probabilistic; it is never known exactly when the next block will be found.</p>
+<p>I messed around on the keyboard for a minute until two zeros showed up. This was exponentially harder than finding a single zero. The chance of finding two zeros in a row is 1 in 16<sup>2</sup>, or a 1 in 256 chance.</p>
+<p>If more people were to join in the mining and competition for new bitcoin, then eventually three zeros will be required.</p>
+<p>I just looked up the last real Bitcoin block, which contains the hash of the previous block. The hash was:</p>
 <p>000000000000000000084d31772619ee08e21b232f755a506bc5d09f3f1a43a1</p>
-<p>Это 19 нулей! Вероятность найти такой блок при каждой попытке – 1 к 16<sup>19</sup>. Биткоин-майнеры выполняют много, много попыток в секунду, коллективно по всему миру.</p>
-<p>Количество попыток в секунду известно как &ldquo;хэшрейт&rdquo;. В настоящее время мировой хэшрейт составляет чуть менее 200 миллионов терахэшей в секунду (один терахэш – это триллион хэшей). При таком количестве попыток в секунду блок с хэшем, начинающимся с 19 нулей, находится примерно каждые 10 минут.</p>
-<p>В будущем, когда к работе присоединится больше майнеров, хэшрейт вырастет, блоки будут находиться быстрее, а сложность Биткоина изменится так, чтобы требовать 20 нулей, что приведет к восстановлению времени создания блока примерно до 10 минут.</p>
-<blockquote class="book-hint btc">
-  Подробнее о корректировке сложности Биткоина можно узнать из <a href="/difficulty">этой нашей статьи</a>.
-</blockquote>
-
-<h2 id="халвинг">
-  Халвинг
-  <a class="anchor" href="#%d1%85%d0%b0%d0%bb%d0%b2%d0%b8%d0%bd%d0%b3">#</a>
+<p>That’s 19 zeros! There’s a 1 in 16<sup>19</sup> chance of finding such a block with each attempt. Bitcoin miners do many, many attempts per second, collectively all over the world.</p>
+<p>The number of attempts per second is known as the “hash rate.” Currently, the estimated world hash rate is just under 200 million terahashes per second ( one terahash is a trillion hashes). With that many attempts per second, a block with a hash starting with 19 zeros is found around every 10 minutes.</p>
+<p>In the future, as more miners join in, the hash rate will go up, blocks will be found faster, and Bitcoin’s difficulty will adjust to require 20 zeros, which will push block production back down to around 10 minutes.</p>
+<h2 id="the-halving">
+  The Halving
+  <a class="anchor" href="#the-halving">#</a>
 </h2>
-<p>Когда биткоин только появился, за каждый блок выплачивалось 50 биткоинов. Правила блокчейна Биткоина гласят, что после каждых 210 000 блоков вознаграждение сокращается вдвое. Этот явление известно как &ldquo;халвинг&rdquo; и происходит примерно раз в четыре года. Халвинг в сочетании с корректировкой сложности для сохранения десятиминутных интервалов между блоками означает, что примерно в 2140 году вознаграждение за блок составит 0,00000001, или 1 сатоши, наименьшую единицу Биткоина, и больше не сможет быть уменьшено вдвое. Майнинг не прекратится, но вознаграждение за блок будет равно нулю. С этого момента новые биткоины больше не будут создаваться, а количество биткоинов математически вычисляемо и немногим меньше 21 миллиона монет. Именно поэтому известно общее предложение – оно задается программно.</p>
-<p>Даже если вознаграждение за блок будет равно нулю, у майнеров все равно будет стимул продолжать работать, чтобы получать комиссии за транзакции.</p>
-<p><em>Как именно вознаграждение за блок сокращается вдвое? Это заложено в коде, запущенном на узлах. Они знают, что нужно отклонить любой новый блок после 210 000, где майнер платит себе более 25 биткоинов. А затем отклонять любые блоки после 420 000, где майнер платит себе более 12,5 биткоина, и так далее.</em></p>
-<blockquote class="book-hint btc">
-  Подробнее о халвинге Биткоина можно узнать из <a href="/halving">этой нашей статьи</a>.
-</blockquote>
-
-<h2 id="комиссии-за-транзакции">
-  Комиссии за транзакции
-  <a class="anchor" href="#%d0%ba%d0%be%d0%bc%d0%b8%d1%81%d1%81%d0%b8%d0%b8-%d0%b7%d0%b0-%d1%82%d1%80%d0%b0%d0%bd%d0%b7%d0%b0%d0%ba%d1%86%d0%b8%d0%b8">#</a>
+<p>When Bitcoin first started, 50 bitcoin were produced with every block. The rules of the Bitcoin blockchain specify that after every 210,000 blocks the reward will be cut in half. This moment is known as “the halving,” and happens roughly every four years. The halving, combined with the difficulty adjustment keeping blocks at 10-minute intervals, means that around the year 2140, the block reward will be 0.00000001, or 1 satoshi, the smallest unit of a bitcoin, and can’t be halved anymore. Mining won’t stop, but the block reward will be zero. From that moment, no new bitcoin will be created going forward and the number of bitcoin is mathematically calculable and close enough to 21 million coins. This is how the total supply is known — it is programmatically set.</p>
+<p>Even with the block reward at zero, the miners will still be incentivized to keep working in order to earn transaction fees.</p>
+<p><em>How exactly is the block reward cut in half? It’s in the code held by the nodes. They know to reject any new block after 210,000 where a miner pays himself over 25 bitcoin. And then to reject any blocks after 420,000 where a miner pays himself over 12.5 bitcoin, and so on.</em></p>
+<h2 id="transaction-fees">
+  Transaction Fees
+  <a class="anchor" href="#transaction-fees">#</a>
 </h2>
-<p>До сих пор я показывал только воображаемые блоки с одной транзакцией – транзакцией, в которой майнер получает вознаграждение. Это называется &ldquo;coinbase-транзакция&rdquo;.</p>
-<p><em>Она названа не в честь компании Coinbase. Компания назвала себя в честь coinbase-транзакций, а не наоборот. Не путайте.</em></p>
-<p>Помимо coinbase-транзакций, блок содержит транзакции, в которых люди платят друг другу. Вот воображаемый пример:</p>
+<p>So far I’ve only shown imaginary blocks with a single transaction — the transaction where the miner gets paid a reward. This is called the “coinbase transaction.”</p>
+<p><em>It’s not named after the company, Conbase, I mean Coinbase. The company named itself after the coinbase transaction, not the other way around. Don’t get confused.</em></p>
+<p>In addition to the coinbase transaction, there are transactions of people paying each other. Here’s an imagined example:</p>
 <div class="imageWrapper">
     <img src="/img/mining/12.webp">
 </div>
-<p>На этот раз я не стал утруждать себя поиском настоящего хэша (на самом деле настоящий хэш указан в блоке 200 001). Нонс я придумал просто для развлечения, но обратите внимание, что в него можно вложить сообщение.</p>
-<p><em>Многим известно, что Сатоши включил слова “Chancellor on brink of second bailout for banks” (&ldquo;Канцлер на грани повторного спасения банков&rdquo;) из газетного заголовка того дня в первый блок Биткоина (генезис-блок).</em></p>
+<p>I didn’t bother finding a real hash this time (It’s actually the real hash reported in block 200,001). The nonce I just made up for fun, but notice a message can be embedded there.</p>
+<p><em>Satoshis famously included the words, “Chancellor on Brink of Second Bailout for Banks” in the first Bitcoin block (The Genesis Block), after the newspaper headline for the day.</em></p>
 <div class="imageWrapper">
     <img src="/img/mining/13.webp">
 </div>
-<p>Важно то, что в блок, используемый нами в качестве примера, включены 132 транзакции (показаны не все). Посмотрите на транзакцию #132 – 2.3 биткоина тратятся, чтобы перевести 2.1 биткоина на один адрес, а также на 0.1 – на второй (я использовал точки, чтобы сократить длину адресов).</p>
-<p>Таким образом, источник с 2.3 биткоина отправляет в общей сложности 2.2 биткоина (2.1 + 0.1 = 2.2). Пропала ли 0.1 биткоина? Нет, эту разницу забирает себе майнер, и я сейчас объясню в чем дело.</p>
-<p>Майнеру разрешено выплатить себе 25 биткоинов в качестве вознаграждения за блок (поскольку прошло 210 000 блоков, вознаграждение уменьшилось вдвое – с 50 до 25). Но если вы присмотритесь к coinbase-транзакции, то увидите, что она равна 27.33880022 BTC. Дополнительные 2.33880022 биткоина поступают из 132 транзакций в блоке – сумма входов при отправке монет немного первышает сумму выходов. Таким образом, майнер получает возможность забрать эти &ldquo;брошенные&rdquo; биткоины себе в качестве оплаты. Это считается комиссией за транзакции, выплачиваемой майнеру.</p>
-<p><em>Размер блока ограничен. Когда Биткоин только появился, пользователи могли отправлять транзакции без комиссии, и майнеры включали их в блок. Но теперь пользователей стало гораздо больше, и, поскольку попадание в следующий блок является конкурентным, пользователи добавляют к транзакции комиссию, чтобы побудить майнера выбрать именно их транзакцию.</em></p>
-<p>Поэтому, когда вознаграждение за блок неуклонно снижается, уменьшаясь вдвое каждые четыре года и стремясь к нулю, майнеры все равно получают оплату за проделанную работу.</p>
-<p><em>Некоторые предполагают, что в один прекрасный день вознаграждение майнеров станет недостаточным и приведет к краху Биткоина. Это предположение было полностью <a href="/21-million-ne-podlezhit-obsuzhdeniyu/">опровергнуто</a>, и я не буду возвращаться к этой теме.</em></p>
-<h2 id="может-ли-блок-быть-перезаписан">
-  Может ли блок быть перезаписан?
-  <a class="anchor" href="#%d0%bc%d0%be%d0%b6%d0%b5%d1%82-%d0%bb%d0%b8-%d0%b1%d0%bb%d0%be%d0%ba-%d0%b1%d1%8b%d1%82%d1%8c-%d0%bf%d0%b5%d1%80%d0%b5%d0%b7%d0%b0%d0%bf%d0%b8%d1%81%d0%b0%d0%bd">#</a>
+<p>The point here is that there are 132 transactions included (not all shown). Look at transaction #132 – 2.3 bitcoin from an address is paying 2.1 bitcoin to another address and also to a second address the amount 0.1 bitcoin (I’ve used dots to shorten the length of the address).</p>
+<p>So a source of 2.3 bitcoin pays a total of 2.2 bitcoin (2.1 + 0.1 = 2.2). Is there 0.1 bitcoin missing? No, the difference is claimed by the miner, as I’ll explain.</p>
+<p>The miner is allowed to pay himself 25 bitcoin as the block reward (because 210,000 blocks have passed so the reward has been halved from 50 to 25). But if you look, the coinbase transaction is 27.33880022. The extra 2.33880022 bitcoin comes from the other 132 transactions in the block – the inputs will all be slightly greater than the total of the outputs. So the miner gets to claim this “abandoned” bitcoin as payment to himself. These are considered transaction fees paid to the miner.</p>
+<p><em>The block space is limited. When Bitcoin was new, users could send transactions with no fee and the miners would include the transaction in the block. But now there are more users and since getting on the next block is competitive, users include a fee in the transaction to entice the miner to choose their transaction over others’.</em></p>
+<p>So when the block reward steadily goes down, halving every four years and eventually to zero, miners still get paid in this way.</p>
+<p><em>Some have suggested that one day the reward to miners will not be enough and will cause Bitcoin to fail. This concern has been thoroughly debunked and I won’t repeat it here.</em></p>
+<h2 id="can-a-block-be-re-written">
+  Can A Block Be Re-written?
+  <a class="anchor" href="#can-a-block-be-re-written">#</a>
 </h2>
-<p>Это крайне маловероятно, и стоит понять, почему. Тогда вы поймете, почему транзакции Биткоина являются необратимыми.</p>
-<p>Ранее я объяснял, что хэш предыдущего блока включается в текущий блок. Таким образом, любое редактирование транзакций в старом блоке изменяет хэш этого отредактированного блока. Но этот хэш записывается в следующий блок, а значит, следующий блок тоже нужно обновлять. Но если вы измените хэш, записанный в следующем блоке, то и его хэш изменится, и так далее.</p>
-<p>При любом изменении вы потеряете все эти прекрасные нули в хэше и получите хэш случайного вида. Вам придется проделать всю работу заново, чтобы подобрать хэш с нужным количеством нолей. Если вы сделаете это для блока, который вы пытались отредактировать, вам придется повторить работу для следующего блока, и следующего, и так до самого последнего блока. Вы не можете просто остановиться на старом блоке, потому что правила Биткоина таковы, что самая длинная цепочка блоков является настоящей историей Биткоина. Если вы вернетесь на 10 блоков назад и отредактируете блок, у вас больше не будет самой длинной цепочки. Вам придется добавить еще 10 блоков, а затем еще немного, потому что, пока вы создавали эти 10 блоков, реальная цепочка, вероятно, стала немного длиннее. Вам придется участвовать в гонке, чтобы обогнать реальную цепочку. Если это удастся, то новая версия станет настоящей.</p>
-<p>Повторение коллективных усилий всего мира по хэшированию от редактируемого блока до последнего блока – это барьер для редактирования истории Биткоина. Энергия была потрачена на создание этих хэшей со невероятными количеством нолей, и чтобы отредактировать Биткоин, эти энергозатраты необходимо повторить. Вот почему энергия, используемая для добычи Биткоина, не является &ldquo;потраченной впустую&rdquo;; она используется для защиты реестра Биткоина от редактирования, чтобы сделать бухгалтерскую книгу неизменяемой без необходимости доверять центральному органу.</p>
-<h2 id="что-произойдет-если-два-майнера-одновременно-найдут-блок">
-  Что произойдет, если два майнера одновременно найдут блок?
-  <a class="anchor" href="#%d1%87%d1%82%d0%be-%d0%bf%d1%80%d0%be%d0%b8%d0%b7%d0%be%d0%b9%d0%b4%d0%b5%d1%82-%d0%b5%d1%81%d0%bb%d0%b8-%d0%b4%d0%b2%d0%b0-%d0%bc%d0%b0%d0%b9%d0%bd%d0%b5%d1%80%d0%b0-%d0%be%d0%b4%d0%bd%d0%be%d0%b2%d1%80%d0%b5%d0%bc%d0%b5%d0%bd%d0%bd%d0%be-%d0%bd%d0%b0%d0%b9%d0%b4%d1%83%d1%82-%d0%b1%d0%bb%d0%be%d0%ba">#</a>
+<p>This is extremely unlikely and it’s worth understanding why. You’ll then appreciate why Bitcoin transactions are immutable (unchangeable).</p>
+<p>I explained earlier that the hash of the previous block is included in the current block. That means any editing of transactions in an old block changes the hash of that edited block. But that hash is recorded down in the next block, so that means that the next block needs to be updated, too. But if you change the hash recorded in that next block, then its hash needs to change, and so on.</p>
+<p>Note that any time a hash is changed, you lose all these lovely zeros and will just be left with a random-looking hash — and have to do all the work again to get the zeros back. If you do that for the block you tried to edit, you then have to redo the work for the next block, and the next all the way to the most recent block. You can’t simply stop at the old block, because the rules of Bitcoin are such that the longest chain of blocks is the real Bitcoin record. If you go back and edit a block 10 blocks ago, you no longer have the longest chain. You have to add 10 more blocks and then a bit more because as you were creating those 10 blocks, the real chain probably became a bit longer. You have to race to overtake the real chain. If successful, then the new version becomes the real version.</p>
+<p>Repeating the entire world’s collective hashing effort from the edited block to the latest block is the barrier to editing Bitcoin. The energy was expended to create those hashes with all those improbable zeros and that energy expenditure must be repeated to edit Bitcoin. This is why energy used to mine Bitcoin is not “wasted”; it is there to defend Bitcoin from edits, to make the ledger immutable without needing to trust a central authority.</p>
+<h2 id="what-happens-if-two-miners-find-a-block-at-the-same-time">
+  What happens if two miners find a block at the same time?
+  <a class="anchor" href="#what-happens-if-two-miners-find-a-block-at-the-same-time">#</a>
 </h2>
-<p>Это действительно происходит время от времени, и всегда все решается следующим образом.</p>
-<p>Каждый узел получит один из новых почти одновременных блоков, примет его и отвергнет тот, что придет несколько мгновений спустя. Это приводит к расколу сети, но это временно.</p>
-<p>Для примера назовем один из блоков синим, а другой – красным (у них нет цвета, просто представьте, что я их временно окрасил).</p>
-<p>Затем майнеры работают над следующим блоком, но при часть майнеров строит продлевает цепочку поверх синего блока, а часть – поверх красного.</p>
-<p>Допустим, выигравший майнер нашел блок, используя синюю цепочку. Он отправит новый блок всем узлам, и самая длинная цепочка станет очевидной. Узлы, изначально принявшие красную цепочку, откажутся от нее и примут синюю. Все майнеры, работавшие над красной цепочкой, прекратят работу над ней и теперь будут работать над самой длинной цепочкой, которой является синяя. Красная цепочка мертва.</p>
-<h2 id="приложение">
-  Приложение
-  <a class="anchor" href="#%d0%bf%d1%80%d0%b8%d0%bb%d0%be%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5">#</a>
+<p>This actually happens every now and then, and it always sorts itself out as follows:</p>
+<p>Every node will receive either one of the new nearly-simultaneous blocks first and will accept that one and reject the one arriving just moments later. This results in a split of the network, but it’s temporary.</p>
+<p>To illustrate, let’s call one of the blocks blue and the other red (they have no color, just bear with me).</p>
+<p>Miners then work on the next block, but there will be a split as to which block they extend the chain from.</p>
+<p>Let’s say the winning miner found a block using the blue chain. They will send the new block to all the nodes and the longest chain will be apparent. The nodes that had accepted the red chain will then drop it and adopt the blue chain.</p>
+<p>All miners that were working on the red chain will stop and will now work on the longer chain, which is the blue chain. The red chain is dead.</p>
+<h2 id="appendix">
+  Appendix
+  <a class="anchor" href="#appendix">#</a>
 </h2>
-<h3 id="почему-блок-майнера-занявшего-второе-место-является-недействительным">
-  Почему блок майнера, занявшего второе место, является недействительным
-  <a class="anchor" href="#%d0%bf%d0%be%d1%87%d0%b5%d0%bc%d1%83-%d0%b1%d0%bb%d0%be%d0%ba-%d0%bc%d0%b0%d0%b9%d0%bd%d0%b5%d1%80%d0%b0-%d0%b7%d0%b0%d0%bd%d1%8f%d0%b2%d1%88%d0%b5%d0%b3%d0%be-%d0%b2%d1%82%d0%be%d1%80%d0%be%d0%b5-%d0%bc%d0%b5%d1%81%d1%82%d0%be-%d1%8f%d0%b2%d0%bb%d1%8f%d0%b5%d1%82%d1%81%d1%8f-%d0%bd%d0%b5%d0%b4%d0%b5%d0%b9%d1%81%d1%82%d0%b2%d0%b8%d1%82%d0%b5%d0%bb%d1%8c%d0%bd%d1%8b%d0%bc">#</a>
+<h3 id="why-a-runner-up-miners-block-is-invalid">
+  Why A Runner Up Miner’s Block Is Invalid
+  <a class="anchor" href="#why-a-runner-up-miners-block-is-invalid">#</a>
 </h3>
-<p>Предположим, что блок 700 000 только что был найден Майнером-A. Тридцать секунд спустя Майнер-B также создал другую версию блока 700 000. Когда Майнер-B опубликует этот вариант, каждый узел отвергнет его, потому что они уже видели и приняли блок от Майнера-A. Более того, за эти 30 секунд, допустим, Майнер-C нашел блок 700 001. Учитывая, что конкурирующий 700 000-й блок Майнера-B не удлиняет текущую цепочку (которая уже дошла до 700 001), он будет отклонен и по этой причине.</p>
-<p>Еще интереснее то, что если бы Майнер-B работал над блоком 700 001, а не над конкурирующей версией 700 000, у него было бы столько же шансов найти действительный блок 700 001, сколько и найти в итоге альтернативный блок 700 000. Поэтому, как только майнер видит новый блок, он должен направить свои усилия на построение следующего.</p>
-<p>Однако если Майнер-B нашел блок 700 000 через секунду после Майнера-A, то, в зависимости от географического положения и скорости интернета, возможно, что одни узлы увидят первым блок Майнера-A, а другие – блок Майнера-B. В этом случае возникает временная развилка, и некоторые майнеры будут работать над продлением одной версии, в то время как другие майнеры будут работать над продлением другой. Как объяснялось ранее с помощью терминов &ldquo;синяя цепочка&rdquo; и &ldquo;красная цепочка&rdquo;, в конечном итоге одна из версий продвинется дальше другой и единогласно станет действительной версией.</p>
-<h3 id="поддержите-переводчика">
-  Поддержите переводчика
-  <a class="anchor" href="#%d0%bf%d0%be%d0%b4%d0%b4%d0%b5%d1%80%d0%b6%d0%b8%d1%82%d0%b5-%d0%bf%d0%b5%d1%80%d0%b5%d0%b2%d0%be%d0%b4%d1%87%d0%b8%d0%ba%d0%b0">#</a>
-</h3>
-<p>Поддержать переводчика можно, отправив немного сат в сети Лайтнинг:</p>
-<div class="imageWrapper">
-    <img src="/img/btclinux-ln-qr.jpg">
-<p><code>lnurl1dp68gurn8ghj7ampd3kx2ar0veekzar0wd5xjtnrdakj7tnhv4kxctttdehhwm30d3h82unvwqhk7mnv093kcmm4v3unxwg6jxyqf</code></p>
-</div></article>
+<p>Suppose block 700,000 just got mined by MINER-A. Thirty seconds later, MINER-B also created a different version of block 700,000. When MINER-B broadcasts this alternative, every node is going to reject it because they have already seen and accepted the block by MINER-A. What’s more, in that 30 seconds, let’s say that MINER-C found block 700,001. Given that MINER-B’s competing 700,000th block does not extend the current chain (which is up to 700,001), it is also rejected for that reason.</p>
+<p>Even more interesting is that if MINER-B had been working on block 700,001 instead of a competing version of 700,000, they would have had just as much chance of mining a valid block 700,001 as they would have to finally find an alternate block 700,000. So as soon as any miner sees a new block, they should set their effort on the next block.</p>
+<p>If, however, Miner-B found block 700,000 one second after MINER-A did, then it’s possible that some nodes see MINER-A’s block first while others see MINER-B’s block first, depending on geographic locations and internet speeds. In that case, there is a temporary fork, and some miners will be working to extend one version while other miners will be working to extend the other. As explained earlier using the “blue chain” and “red chain” descriptors, eventually one of the versions will extend further before the other and become the valid version unanimously.</p>
+</article>
   <hr>
 
 <i>Connect to our relay to leave a comment. <a href="https://21ideas.org/en/comments/">Details</a>. <br> Подключитесь к нашему релею, чтобы оставить комментарий. <a href="https://21ideas.org/comments/">Подробнее</a>.</i> 
@@ -3277,38 +3066,6 @@ https://github.com/alex-shpak/hugo-book
       <label for="menu-control" class="hidden book-menu-overlay"></label>
     </div>
 
-    
-    <aside class="book-toc">
-      <div class="book-toc-content">
-        
-  
-<nav id="TableOfContents">
-  <ul>
-    <li>
-      <ul>
-        <li><a href="#хэш-функции">Хэш-функции</a></li>
-        <li><a href="#майнинг">Майнинг</a></li>
-        <li><a href="#выигрыш-блока">Выигрыш блока</a></li>
-        <li><a href="#корректировка-сложности">Корректировка сложности</a></li>
-        <li><a href="#халвинг">Халвинг</a></li>
-        <li><a href="#комиссии-за-транзакции">Комиссии за транзакции</a></li>
-        <li><a href="#может-ли-блок-быть-перезаписан">Может ли блок быть перезаписан?</a></li>
-        <li><a href="#что-произойдет-если-два-майнера-одновременно-найдут-блок">Что произойдет, если два майнера одновременно найдут блок?</a></li>
-        <li><a href="#приложение">Приложение</a>
-          <ul>
-            <li><a href="#почему-блок-майнера-занявшего-второе-место-является-недействительным">Почему блок майнера, занявшего второе место, является недействительным</a></li>
-            <li><a href="#поддержите-переводчика">Поддержите переводчика</a></li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-  </ul>
-</nav>
-
-
- 
-      </div>
-    </aside>
     
   </main>
 

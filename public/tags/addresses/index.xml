@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Addresses on 21ideas</title>
+    <link>http://localhost:1313/tags/addresses/</link>
+    <description>Recent content in Addresses on 21ideas</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 16 Mar 2024 18:57:30 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/addresses/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How Lightning Address Works</title>
+      <link>http://localhost:1313/how-lightning-address-works/</link>
+      <pubDate>Sat, 03 Sep 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/how-lightning-address-works/</guid>
+      <description>More experienced users know, that nowadays you can send satoshis directly to Lightning Address in user@domain format. But how exactly does this work?&#xA;In this short article I would like to explain it to those who do not know it. At the same time, I will describe the basics of Lightning invoices and LNURL-pay protocol.&#xA;This article by @heisenberg was published on stacker.news website.&#xA;Contribute.&#xA;Lightning invoices basics # Lightning Invoices are nowadays the standard for sending and receiving funds on the Lightning Network.</description>
+    </item>
+  </channel>
+</rss>

@@ -7,21 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="The Segregated Witness (SegWit) upgrade in 2017 changed the structure of transaction data in Bitcoin.
 The main reason for this upgrade was to fix transaction malleability (I&rsquo;ll explain this in a moment). The other significant change included a block size increase.
-
-  This article by Greg Walker was published on learnmeabitcoin.com website.
+This article by Greg Walker was published on learnmeabitcoin.com website.
 Contribute.
-
-
-
-
-  What was the main change?
-  #
-
-
-  Legacy transaction
-  #
-
-In a legacy transaction, the unlocking code (and signatures) sit next to each input, so the unlocking code is spread throughout the transaction data.">
+What was the main change? # Legacy transaction # In a legacy transaction, the unlocking code (and signatures) sit next to each input, so the unlocking code is spread throughout the transaction data.">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark">
 <meta name="lightning" content="21ideas@getalby.com"><meta property="og:title" content="What Is SegWit" />
@@ -3023,22 +3011,22 @@ Total Weight      = 2,200,000 weight units
 </h3>
 <p>Yes, this was the activation window:</p>
 <table>
-  <thead>
-      <tr>
-          <th style="text-align: left"></th>
-          <th style="text-align: left"></th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td style="text-align: left"><strong>Start Time:</strong></td>
-          <td style="text-align: left">15th November 2016, 00:00</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><strong>Timeout:</strong></td>
-          <td style="text-align: left">15th November 2017, 00:00</td>
-      </tr>
-  </tbody>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Start Time:</strong></td>
+<td>15th November 2016, 00:00</td>
+</tr>
+<tr>
+<td><strong>Timeout:</strong></td>
+<td>15th November 2017, 00:00</td>
+</tr>
+</tbody>
 </table>
 <p>If not enough miners signalled readiness for the Segregated Witness upgrade by midnight 15th November 2017, the proposal would have expired.</p>
 <h3 id="activation-timeline">
@@ -3047,159 +3035,159 @@ Total Weight      = 2,200,000 weight units
 </h3>
 <p>Here&rsquo;s a table showing the number of blocks signalling for SegWit across each target period leading up to the activation:</p>
 <table>
-  <thead>
-      <tr>
-          <th style="text-align: left">Start Time</th>
-          <th style="text-align: left">Target Period</th>
-          <th style="text-align: left">Signalling Blocks</th>
-          <th style="text-align: left">Percentage</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td style="text-align: left">18 Nov 2016, 08:30:15</td>
-          <td style="text-align: left"><a href="https://learnmeabitcoin.com/explorer/439488#blockchain">439,488</a> to <a href="https://learnmeabitcoin.com/explorer/441503#blockchain">441,503</a></td>
-          <td style="text-align: left">451/2016</td>
-          <td style="text-align: left">22.37%</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">02 Dec 2016, 02:46:26</td>
-          <td style="text-align: left"><a href="https://learnmeabitcoin.com/explorer/441504#blockchain">441,504</a> to <a href="https://learnmeabitcoin.com/explorer/443519#blockchain">443,519</a></td>
-          <td style="text-align: left">487/2016</td>
-          <td style="text-align: left">24.16%</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">15 Dec 2016, 01:28:33</td>
-          <td style="text-align: left"><a href="https://learnmeabitcoin.com/explorer/443520#blockchain">443,520</a> to <a href="https://learnmeabitcoin.com/explorer/445535#blockchain">445,535</a></td>
-          <td style="text-align: left">520/2016</td>
-          <td style="text-align: left">25.79%</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">28 Dec 2016, 17:40:55</td>
-          <td style="text-align: left"><a href="https://learnmeabitcoin.com/explorer/445536#blockchain">445,536</a> to <a href="https://learnmeabitcoin.com/explorer/447551#blockchain">447,551</a></td>
-          <td style="text-align: left">521/2016</td>
-          <td style="text-align: left">25.84%</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">10 Jan 2017, 22:40:52</td>
-          <td style="text-align: left"><a href="https://learnmeabitcoin.com/explorer/447552#blockchain">447,552</a> to <a href="https://learnmeabitcoin.com/explorer/449567#blockchain">449,567</a></td>
-          <td style="text-align: left">489/2016</td>
-          <td style="text-align: left">24.26%</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">22 Jan 2017, 22:52:52</td>
-          <td style="text-align: left"><a href="https://learnmeabitcoin.com/explorer/449568#blockchain">449,568</a> to <a href="https://learnmeabitcoin.com/explorer/451583#blockchain">451,583</a></td>
-          <td style="text-align: left">468/2016</td>
-          <td style="text-align: left">23.21%</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">04 Feb 2017, 23:38:49</td>
-          <td style="text-align: left"><a href="https://learnmeabitcoin.com/explorer/451584#blockchain">451,584</a> to <a href="https://learnmeabitcoin.com/explorer/453599#blockchain">453,599</a></td>
-          <td style="text-align: left">485/2016</td>
-          <td style="text-align: left">24.06%</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">18 Feb 2017, 09:38:26</td>
-          <td style="text-align: left"><a href="https://learnmeabitcoin.com/explorer/453600#blockchain">453,600</a> to <a href="https://learnmeabitcoin.com/explorer/455615#blockchain">455,615</a></td>
-          <td style="text-align: left">537/2016</td>
-          <td style="text-align: left">26.64%</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">03 Mar 2017, 19:04:46</td>
-          <td style="text-align: left"><a href="https://learnmeabitcoin.com/explorer/455616#blockchain">455,616</a> to <a href="https://learnmeabitcoin.com/explorer/457631#blockchain">457,631</a></td>
-          <td style="text-align: left">532/2016</td>
-          <td style="text-align: left">26.39%</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">17 Mar 2017, 08:36:15</td>
-          <td style="text-align: left"><a href="https://learnmeabitcoin.com/explorer/457632#blockchain">457,632</a> to <a href="https://learnmeabitcoin.com/explorer/459647#blockchain">459,647</a></td>
-          <td style="text-align: left">582/2016</td>
-          <td style="text-align: left">28.87%</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">30 Mar 2017, 16:39:08</td>
-          <td style="text-align: left"><a href="https://learnmeabitcoin.com/explorer/459648#blockchain">459,648</a> to <a href="https://learnmeabitcoin.com/explorer/461663#blockchain">461,663</a></td>
-          <td style="text-align: left">614/2016</td>
-          <td style="text-align: left">30.46%</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">13 Apr 2017, 02:59:50</td>
-          <td style="text-align: left"><a href="https://learnmeabitcoin.com/explorer/461664#blockchain">461,664</a> to <a href="https://learnmeabitcoin.com/explorer/463679#blockchain">463,679</a></td>
-          <td style="text-align: left">671/2016</td>
-          <td style="text-align: left">33.28%</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">27 Apr 2017, 02:20:01</td>
-          <td style="text-align: left"><a href="https://learnmeabitcoin.com/explorer/463680#blockchain">463,680</a> to <a href="https://learnmeabitcoin.com/explorer/465695#blockchain">465,695</a></td>
-          <td style="text-align: left">698/2016</td>
-          <td style="text-align: left">34.62%</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">10 May 2017, 03:40:48</td>
-          <td style="text-align: left"><a href="https://learnmeabitcoin.com/explorer/465696#blockchain">465,696</a> to <a href="https://learnmeabitcoin.com/explorer/467711#blockchain">467,711</a></td>
-          <td style="text-align: left">663/2016</td>
-          <td style="text-align: left">32.89%</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">23 May 2017, 07:29:52</td>
-          <td style="text-align: left"><a href="https://learnmeabitcoin.com/explorer/467712#blockchain">467,712</a> to <a href="https://learnmeabitcoin.com/explorer/469727#blockchain">469,727</a></td>
-          <td style="text-align: left">622/2016</td>
-          <td style="text-align: left">30.85%</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">04 Jun 2017, 14:35:07</td>
-          <td style="text-align: left"><a href="https://learnmeabitcoin.com/explorer/469728#blockchain">469,728</a> to <a href="https://learnmeabitcoin.com/explorer/471743#blockchain">471,743</a></td>
-          <td style="text-align: left">642/2016</td>
-          <td style="text-align: left">31.85%</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">17 Jun 2017, 23:18:53</td>
-          <td style="text-align: left"><a href="https://learnmeabitcoin.com/explorer/471744#blockchain">471,744</a> to <a href="https://learnmeabitcoin.com/explorer/473759#blockchain">473,759</a></td>
-          <td style="text-align: left">825/2016</td>
-          <td style="text-align: left">40.92%</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">02 Jul 2017, 00:47:17</td>
-          <td style="text-align: left"><a href="https://learnmeabitcoin.com/explorer/473760#blockchain">473,760</a> to <a href="https://learnmeabitcoin.com/explorer/475775#blockchain">475,775</a></td>
-          <td style="text-align: left">917/2016</td>
-          <td style="text-align: left">45.49%</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">14 Jul 2017, 08:45:42</td>
-          <td style="text-align: left"><a href="https://learnmeabitcoin.com/explorer/475776#blockchain">475,776</a> to <a href="https://learnmeabitcoin.com/explorer/477791#blockchain">477,791</a></td>
-          <td style="text-align: left">1440/2016</td>
-          <td style="text-align: left">71.43%</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">27 Jul 2017, 11:03:54</td>
-          <td style="text-align: left"><a href="https://learnmeabitcoin.com/explorer/477792#blockchain">477,792</a> to <a href="https://learnmeabitcoin.com/explorer/479807#blockchain">479,807</a></td>
-          <td style="text-align: left">2016/2016</td>
-          <td style="text-align: left">100.00%</td>
-      </tr>
-  </tbody>
+<thead>
+<tr>
+<th>Start Time</th>
+<th>Target Period</th>
+<th>Signalling Blocks</th>
+<th>Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>18 Nov 2016, 08:30:15</td>
+<td><a href="https://learnmeabitcoin.com/explorer/439488#blockchain">439,488</a> to <a href="https://learnmeabitcoin.com/explorer/441503#blockchain">441,503</a></td>
+<td>451/2016</td>
+<td>22.37%</td>
+</tr>
+<tr>
+<td>02 Dec 2016, 02:46:26</td>
+<td><a href="https://learnmeabitcoin.com/explorer/441504#blockchain">441,504</a> to <a href="https://learnmeabitcoin.com/explorer/443519#blockchain">443,519</a></td>
+<td>487/2016</td>
+<td>24.16%</td>
+</tr>
+<tr>
+<td>15 Dec 2016, 01:28:33</td>
+<td><a href="https://learnmeabitcoin.com/explorer/443520#blockchain">443,520</a> to <a href="https://learnmeabitcoin.com/explorer/445535#blockchain">445,535</a></td>
+<td>520/2016</td>
+<td>25.79%</td>
+</tr>
+<tr>
+<td>28 Dec 2016, 17:40:55</td>
+<td><a href="https://learnmeabitcoin.com/explorer/445536#blockchain">445,536</a> to <a href="https://learnmeabitcoin.com/explorer/447551#blockchain">447,551</a></td>
+<td>521/2016</td>
+<td>25.84%</td>
+</tr>
+<tr>
+<td>10 Jan 2017, 22:40:52</td>
+<td><a href="https://learnmeabitcoin.com/explorer/447552#blockchain">447,552</a> to <a href="https://learnmeabitcoin.com/explorer/449567#blockchain">449,567</a></td>
+<td>489/2016</td>
+<td>24.26%</td>
+</tr>
+<tr>
+<td>22 Jan 2017, 22:52:52</td>
+<td><a href="https://learnmeabitcoin.com/explorer/449568#blockchain">449,568</a> to <a href="https://learnmeabitcoin.com/explorer/451583#blockchain">451,583</a></td>
+<td>468/2016</td>
+<td>23.21%</td>
+</tr>
+<tr>
+<td>04 Feb 2017, 23:38:49</td>
+<td><a href="https://learnmeabitcoin.com/explorer/451584#blockchain">451,584</a> to <a href="https://learnmeabitcoin.com/explorer/453599#blockchain">453,599</a></td>
+<td>485/2016</td>
+<td>24.06%</td>
+</tr>
+<tr>
+<td>18 Feb 2017, 09:38:26</td>
+<td><a href="https://learnmeabitcoin.com/explorer/453600#blockchain">453,600</a> to <a href="https://learnmeabitcoin.com/explorer/455615#blockchain">455,615</a></td>
+<td>537/2016</td>
+<td>26.64%</td>
+</tr>
+<tr>
+<td>03 Mar 2017, 19:04:46</td>
+<td><a href="https://learnmeabitcoin.com/explorer/455616#blockchain">455,616</a> to <a href="https://learnmeabitcoin.com/explorer/457631#blockchain">457,631</a></td>
+<td>532/2016</td>
+<td>26.39%</td>
+</tr>
+<tr>
+<td>17 Mar 2017, 08:36:15</td>
+<td><a href="https://learnmeabitcoin.com/explorer/457632#blockchain">457,632</a> to <a href="https://learnmeabitcoin.com/explorer/459647#blockchain">459,647</a></td>
+<td>582/2016</td>
+<td>28.87%</td>
+</tr>
+<tr>
+<td>30 Mar 2017, 16:39:08</td>
+<td><a href="https://learnmeabitcoin.com/explorer/459648#blockchain">459,648</a> to <a href="https://learnmeabitcoin.com/explorer/461663#blockchain">461,663</a></td>
+<td>614/2016</td>
+<td>30.46%</td>
+</tr>
+<tr>
+<td>13 Apr 2017, 02:59:50</td>
+<td><a href="https://learnmeabitcoin.com/explorer/461664#blockchain">461,664</a> to <a href="https://learnmeabitcoin.com/explorer/463679#blockchain">463,679</a></td>
+<td>671/2016</td>
+<td>33.28%</td>
+</tr>
+<tr>
+<td>27 Apr 2017, 02:20:01</td>
+<td><a href="https://learnmeabitcoin.com/explorer/463680#blockchain">463,680</a> to <a href="https://learnmeabitcoin.com/explorer/465695#blockchain">465,695</a></td>
+<td>698/2016</td>
+<td>34.62%</td>
+</tr>
+<tr>
+<td>10 May 2017, 03:40:48</td>
+<td><a href="https://learnmeabitcoin.com/explorer/465696#blockchain">465,696</a> to <a href="https://learnmeabitcoin.com/explorer/467711#blockchain">467,711</a></td>
+<td>663/2016</td>
+<td>32.89%</td>
+</tr>
+<tr>
+<td>23 May 2017, 07:29:52</td>
+<td><a href="https://learnmeabitcoin.com/explorer/467712#blockchain">467,712</a> to <a href="https://learnmeabitcoin.com/explorer/469727#blockchain">469,727</a></td>
+<td>622/2016</td>
+<td>30.85%</td>
+</tr>
+<tr>
+<td>04 Jun 2017, 14:35:07</td>
+<td><a href="https://learnmeabitcoin.com/explorer/469728#blockchain">469,728</a> to <a href="https://learnmeabitcoin.com/explorer/471743#blockchain">471,743</a></td>
+<td>642/2016</td>
+<td>31.85%</td>
+</tr>
+<tr>
+<td>17 Jun 2017, 23:18:53</td>
+<td><a href="https://learnmeabitcoin.com/explorer/471744#blockchain">471,744</a> to <a href="https://learnmeabitcoin.com/explorer/473759#blockchain">473,759</a></td>
+<td>825/2016</td>
+<td>40.92%</td>
+</tr>
+<tr>
+<td>02 Jul 2017, 00:47:17</td>
+<td><a href="https://learnmeabitcoin.com/explorer/473760#blockchain">473,760</a> to <a href="https://learnmeabitcoin.com/explorer/475775#blockchain">475,775</a></td>
+<td>917/2016</td>
+<td>45.49%</td>
+</tr>
+<tr>
+<td>14 Jul 2017, 08:45:42</td>
+<td><a href="https://learnmeabitcoin.com/explorer/475776#blockchain">475,776</a> to <a href="https://learnmeabitcoin.com/explorer/477791#blockchain">477,791</a></td>
+<td>1440/2016</td>
+<td>71.43%</td>
+</tr>
+<tr>
+<td>27 Jul 2017, 11:03:54</td>
+<td><a href="https://learnmeabitcoin.com/explorer/477792#blockchain">477,792</a> to <a href="https://learnmeabitcoin.com/explorer/479807#blockchain">479,807</a></td>
+<td>2016/2016</td>
+<td>100.00%</td>
+</tr>
+</tbody>
 </table>
 <p>As you can see, the 95% threshold of miners signalling readiness for SegWit was exceeded during the target adjustment period between blocks <a href="https://learnmeabitcoin.com/explorer/block/00000000000000000016ba7786309176445b838b36a16bd1ef3c3e3020473206">477,792</a> and <a href="https://learnmeabitcoin.com/explorer/block/00000000000000000053e2d10bd703ad5b7787614965711d6170b69b133aa366">479,807</a>.</p>
 <p>Consequently, the SegWit upgrade was activated 2,016 blocks (roughly 2 weeks) later at block <a href="https://learnmeabitcoin.com/explorer/block/0000000000000000001c8018d9cb3b742ef25114f27563e3fc4a1902167f9893">481,824</a>:</p>
 <table>
-  <thead>
-      <tr>
-          <th style="text-align: left">Start Time</th>
-          <th style="text-align: left">Target Period</th>
-          <th style="text-align: left">Note</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td style="text-align: left">09 Aug 2017, 12:36:50</td>
-          <td style="text-align: left"><a href="https://learnmeabitcoin.com/explorer/479808#blockchain">479,808</a> to <a href="https://learnmeabitcoin.com/explorer/481823#blockchain">481,823</a></td>
-          <td style="text-align: left">Segwit Locked In</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">24 Aug 2017, 01:57:37</td>
-          <td style="text-align: left"><a href="https://learnmeabitcoin.com/explorer/481824#blockchain">481,824</a> onwards</td>
-          <td style="text-align: left">SegWit Activated</td>
-      </tr>
-  </tbody>
+<thead>
+<tr>
+<th>Start Time</th>
+<th>Target Period</th>
+<th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>09 Aug 2017, 12:36:50</td>
+<td><a href="https://learnmeabitcoin.com/explorer/479808#blockchain">479,808</a> to <a href="https://learnmeabitcoin.com/explorer/481823#blockchain">481,823</a></td>
+<td>Segwit Locked In</td>
+</tr>
+<tr>
+<td>24 Aug 2017, 01:57:37</td>
+<td><a href="https://learnmeabitcoin.com/explorer/481824#blockchain">481,824</a> onwards</td>
+<td>SegWit Activated</td>
+</tr>
+</tbody>
 </table>
 <blockquote class="book-hint info">
   <ul>
