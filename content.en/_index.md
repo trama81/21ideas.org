@@ -6,7 +6,7 @@ h1: "Educational Bitcoin-Only Resource"
 description: "Educational Bitcoin-Only Resource"
 ---
 
-21ideas is an open-source project curated by enthusiasts. It provides free access to the most comprehensive library of Bitcoin knowledge for anyone interested.
+21ideas is an forked open-source project curated by Pisu. It provides free access to the most comprehensive library of Bitcoin knowledge for anyone interested.
 
 {{< tabs "explanation" >}}
 {{< tab "Study" >}}
